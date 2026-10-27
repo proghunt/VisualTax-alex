@@ -1,2 +1,0 @@
-signtool.exe sign /f VisualTax.pfx /p vtSecret2015 /v /t http://timestamp.sectigo.com "..\..\BIN\vtCourier.exe"
-signtool.exe sign /f VisualTax.pfx /p vtSecret2015 /v /t http://timestamp.sectigo.com "..\..\BIN\vtSignPDF.exe"

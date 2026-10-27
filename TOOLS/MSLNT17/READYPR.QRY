@@ -1,7 +1,0 @@
-Select
-clients.*
-From "CLIENTS.DBF"
-As clients
-WHERE Prp_Status = "04"
-Order By corp_Name
-

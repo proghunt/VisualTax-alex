@@ -1,7 +1,0 @@
-YrSum
-YrSum2
-T2125Sum
-T2042Sum
-T776Sum
-T1163Sum
-T1273SUM

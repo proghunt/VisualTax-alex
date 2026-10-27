@@ -1,3 +1,0 @@
-C:\VT\T3-2026\T3CERT26
-C:\vt\T3-2025\certif25-sp
-

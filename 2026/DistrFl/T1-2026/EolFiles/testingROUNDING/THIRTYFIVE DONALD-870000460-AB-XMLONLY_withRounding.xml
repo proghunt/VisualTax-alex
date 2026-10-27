@@ -1,165 +1,0 @@
-    <t1rq:EfileReturnRequest
-       xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0"
-       xmlns:comm="http://www.cra-arc.gc.ca/xmlns/comm/2025/1-0-0"
-       xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2025/1-0-0"
-       xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
-       xmlns:sfd="http://www.cra-arc.gc.ca/xmlns/sfd/2025/1-0-0"
-       xmlns:t1="http://www.cra-arc.gc.ca/xmlns/t1/2025/1-0-0"
-       xmlns:t1135="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0"
-       xmlns:t1rq="http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0"
-       xmlns:tp="http://www.cra-arc.gc.ca/xmlns/tp/2025/1-0-0"
-       xmlns:xml="http://www.w3.org/XML/1998/namespace"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0 t1wsefilerequest.xsd">
-       <ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
-       <ef:PasswordID>767AJ5X</ef:PasswordID>
-       <tp:TaxYear>2024</tp:TaxYear>
-       <ef:EfileData>
-           <ef:PasswordID>767AJ5X</ef:PasswordID>
-           <ef:DocumentControlNumber>
-               <ef:TaxPreparerEfilerNumber>B0865</ef:TaxPreparerEfilerNumber>
-               <ef:TaxPreparerReturnControlNumber>24154891</ef:TaxPreparerReturnControlNumber>
-           </ef:DocumentControlNumber>
-           <ef:EfilerNOARetrievalAuthorizationIndicator>0</ef:EfilerNOARetrievalAuthorizationIndicator>
-           <ef:TaxPreparerPreAssessmentReviewContactCode>3</ef:TaxPreparerPreAssessmentReviewContactCode>
-           <ef:TaxPreparerPostAssessmentReviewContactCode>3</ef:TaxPreparerPostAssessmentReviewContactCode>
-      <ef:T183ElectronicSignatureData>
-         <ef:T183ElectronicSignatureIndicator>0</ef:T183ElectronicSignatureIndicator>
-      </ef:T183ElectronicSignatureData>
-         <ef:RepresentativeID>123456A</ef:RepresentativeID>
-       </ef:EfileData>
-       <comm:FirstTimeFilerIndicator>0</comm:FirstTimeFilerIndicator>
-       <comm:OriginatingIP>0.0.0.0</comm:OriginatingIP>
-       <t1rq:TaxReturnForm>
-      <t1:T1Return>
-            <comm:SoftwareID>064F</comm:SoftwareID>
-            <comm:SoftwareRevisionDate>2024-12-23</comm:SoftwareRevisionDate>
-      <t1:AutoFillData>
-            <t1:AutoFillReturnIndicator>0</t1:AutoFillReturnIndicator>
-      </t1:AutoFillData>
-         <t1:TaxpayerData>
-            <tp:TaxpayerBasicData>
-              <tp:TaxpayerSocialInsuranceNumber>870000460</tp:TaxpayerSocialInsuranceNumber>
-              <tp:TaxYear>2024</tp:TaxYear>
-              <tp:TaxpayerBirthDate>1960-08-29</tp:TaxpayerBirthDate>
-              <tp:SelfEmployedSpouseDeadlineIndicator>0</tp:SelfEmployedSpouseDeadlineIndicator>
-              </tp:TaxpayerBasicData>
-              <tp:TaxpayerMaritalStatusData>
-              <tp:TaxpayerMaritalStatusCode>6</tp:TaxpayerMaritalStatusCode>
-              <tp:TaxpayerMaritalStatusChangeIndicator>2</tp:TaxpayerMaritalStatusChangeIndicator>
-              </tp:TaxpayerMaritalStatusData>
-            <tp:TaxpayerResidenceData>
-              <tp:TaxpayerYearEndResidenceProvinceCode>AB</tp:TaxpayerYearEndResidenceProvinceCode>
-              <tp:CCRRuralSupplementIndicator>2</tp:CCRRuralSupplementIndicator>
-            </tp:TaxpayerResidenceData>
-            <tp:TaxpayerContactData>
-              <comm:TaxpayerName>
-                 <comm:GivenName>DONALD</comm:GivenName>
-                 <comm:FamilyName>THIRTYFIVE</comm:FamilyName>
-              </comm:TaxpayerName>
-              <tp:ResidencyType>1</tp:ResidencyType>
-            <tp:TaxpayerMailingAddress>
-              <comm:CanadianMailingAddress>
-              <comm:AddressStreetText>35 EDWOOD STREET</comm:AddressStreetText>
-              <comm:AddressMunicipalityName>AIRDRIE</comm:AddressMunicipalityName>
-              <comm:AddressProvinceCode>AB</comm:AddressProvinceCode>
-              <comm:AddressPostalCode>T4A1R3</comm:AddressPostalCode>
-              </comm:CanadianMailingAddress>
-              <tp:HomeAddressSameAsMailingAddressIndicator>1</tp:HomeAddressSameAsMailingAddressIndicator>
-              </tp:TaxpayerMailingAddress>
-            <tp:TaxpayerHomeTelephoneNumber>
-              <comm:TelephoneAreaCode>403</comm:TelephoneAreaCode>
-              <comm:TelephoneLocalNumber>5632215</comm:TelephoneLocalNumber>
-              </tp:TaxpayerHomeTelephoneNumber>
-              <tp:CorrespondenceLanguageCode>1</tp:CorrespondenceLanguageCode>
-            </tp:TaxpayerContactData>
-            </t1:TaxpayerData>
-            <t1:RelatedProgramData>
-            <t1:CanadianCitizenshipIndicator>1</t1:CanadianCitizenshipIndicator>
-            <t1:ElectionsCanadaAuthorizationIndicator>02</t1:ElectionsCanadaAuthorizationIndicator>
-            <t1:IncomeTaxExemptIndianActIndicator>0</t1:IncomeTaxExemptIndianActIndicator>
-            </t1:RelatedProgramData>
-            <comm:ReturnLine><comm:FieldCode>10400</comm:FieldCode><comm:FieldValue>11000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>12100</comm:FieldCode><comm:FieldValue>3000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>13010</comm:FieldCode><comm:FieldValue>2000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>14099</comm:FieldCode><comm:FieldValue>173000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>14100</comm:FieldCode><comm:FieldValue>1997</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>14299</comm:FieldCode><comm:FieldValue>98320</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>14300</comm:FieldCode><comm:FieldValue>1753</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>15000</comm:FieldCode><comm:FieldValue>19750</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>22200</comm:FieldCode><comm:FieldValue>1738</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>26000</comm:FieldCode><comm:FieldValue>19733</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>26600</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>30000</comm:FieldCode><comm:FieldValue>15705</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>31000</comm:FieldCode><comm:FieldValue>1238</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>31260</comm:FieldCode><comm:FieldValue>1433</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>33500</comm:FieldCode><comm:FieldValue>17150</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>33800</comm:FieldCode><comm:FieldValue>2573</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>34000</comm:FieldCode><comm:FieldValue>600</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>34900</comm:FieldCode><comm:FieldValue>146</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>35000</comm:FieldCode><comm:FieldValue>2719</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38100</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38101</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38102</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38103</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38120</comm:FieldCode><comm:FieldValue>50000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>40600</comm:FieldCode><comm:FieldValue>10680</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>41500</comm:FieldCode><comm:FieldValue>50000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>41700</comm:FieldCode><comm:FieldValue>10680</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>42100</comm:FieldCode><comm:FieldValue>2975</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>43100</comm:FieldCode><comm:FieldValue>80000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>43300</comm:FieldCode><comm:FieldValue>11000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>43500</comm:FieldCode><comm:FieldValue>63655</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>45300</comm:FieldCode><comm:FieldValue>170400</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>47556</comm:FieldCode><comm:FieldValue>12000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>48400</comm:FieldCode><comm:FieldValue>118745</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>49000</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>52730</comm:FieldCode><comm:FieldValue>4000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>52740</comm:FieldCode><comm:FieldValue>4000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>52750</comm:FieldCode><comm:FieldValue>3000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>52770</comm:FieldCode><comm:FieldValue>30000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>52780</comm:FieldCode><comm:FieldValue>20000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>52790</comm:FieldCode><comm:FieldValue>30000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>55070</comm:FieldCode><comm:FieldValue>1753</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58040</comm:FieldCode><comm:FieldValue>21885</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58280</comm:FieldCode><comm:FieldValue>1238</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58800</comm:FieldCode><comm:FieldValue>21897</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58840</comm:FieldCode><comm:FieldValue>2190</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58969</comm:FieldCode><comm:FieldValue>204</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>61500</comm:FieldCode><comm:FieldValue>2394</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>67082</comm:FieldCode><comm:FieldValue>12000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>68100</comm:FieldCode><comm:FieldValue>1753</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>9909</comm:FieldCode><comm:FieldValue>3000</comm:FieldValue></comm:ReturnLine>
-         <t1:SelectedFinancialDataRecordCount>02</t1:SelectedFinancialDataRecordCount>
-         <sfd:SelectedFinancialData>
-         <sfd:FishingActivityData>
-            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
-            <sfd:NAICSCode>114113</sfd:NAICSCode>
-            <sfd:BoatName>DEBBIE&apos;S FISHERY</sfd:BoatName>
-            <sfd:PartnershipNumber>131313131</sfd:PartnershipNumber>
-            <sfd:TaxShelterNumber>TS191191</sfd:TaxShelterNumber>
-            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
-            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
-            <sfd:BusinessOwnershipPercent>1500</sfd:BusinessOwnershipPercent>
-            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>98320</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>1753</comm:FieldValue>            </comm:ReturnLine>
-         </sfd:FishingActivityData>
-         </sfd:SelectedFinancialData>
-         <sfd:SelectedFinancialData>
-         <sfd:FarmingActivityData>
-            <sfd:AccountingMethodCode>2</sfd:AccountingMethodCode>
-            <sfd:NAICSCode>115110</sfd:NAICSCode>
-            <sfd:FarmName>D&apos;S GREEN PRODUCTS</sfd:FarmName>
-            <sfd:PartnershipNumber>121212121</sfd:PartnershipNumber>
-            <sfd:TaxShelterNumber>TS141141</sfd:TaxShelterNumber>
-            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
-            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
-            <sfd:BusinessOwnershipPercent>1000</sfd:BusinessOwnershipPercent>
-            <comm:ReturnLine>               <comm:FieldCode>9659</comm:FieldCode>               <comm:FieldValue>173000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9951</comm:FieldCode>               <comm:FieldValue>120</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>1997</comm:FieldValue>            </comm:ReturnLine>
-         </sfd:FarmingActivityData>
-         </sfd:SelectedFinancialData>
-      </t1:T1Return>
-</t1rq:TaxReturnForm>
-</t1rq:EfileReturnRequest>

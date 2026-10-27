@@ -1,1 +1,0 @@
-<P>PAID &gt; 0 AND&nbsp; PROVINCE = 'BC' and EMAIL NOT LIKE '%sympatico%'&nbsp; AND EMAIL NOT LIKE '%hotmail%' and&nbsp;&nbsp;EMAIL NOT LIKE '%outlook%' </P>

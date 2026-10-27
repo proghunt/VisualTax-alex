@@ -1,1 +1,0 @@
-BRCC32 T1_NOA.RC

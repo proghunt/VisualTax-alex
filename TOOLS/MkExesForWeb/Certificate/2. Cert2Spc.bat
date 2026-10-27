@@ -1,1 +1,0 @@
-cert2spc.exe VisualTax.cer VisualTax.spc

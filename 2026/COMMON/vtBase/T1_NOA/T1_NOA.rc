@@ -1,7 +1,0 @@
-BANNER_HTML             T1_NOA     "banner.html"
-BANNER_FR_HTML          T1_NOA     "banner.fr.html"
-FOOTER_HTML             T1_NOA     "footer.html"
-FOOTER_FR_HTML          T1_NOA     "footer.fr.html"
-HEADER_HTML             T1_NOA     "header.html"
-NOTICE_HTML_XSL         T1_NOA     "notice-html.xsl"
-NOTICE_REPLACE_XSL      T1_NOA     "notice-replace.xsl"

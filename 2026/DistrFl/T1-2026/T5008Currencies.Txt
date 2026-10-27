@@ -1,9 +1,0 @@
-USD 	United States, dollar 1.3269
-JPY 	Japan, yen            0.01217
-HKD 	Hong Kong, dollar     0.1693
-AUD 	Australia, dollar     0.9228
-NZD 	New Zealand, dollar   0.8747
-GBP 	United Kingdom, pound 1.6945
-EUR 	European, euro        1.4856
-USA                           ??.??????
-AUS                           ??.??????

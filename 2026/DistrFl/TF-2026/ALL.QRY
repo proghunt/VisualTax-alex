@@ -1,6 +1,0 @@
-Select
-clients.*
-from "Clients.DBF"
-As clients
-Order By CORP_Name
-

@@ -1,4 +1,0 @@
-﻿[main]
-ADHOME=$(HOME)/FireDAC
-ConnectionDefFile=$(ADHOME)/DB/ADConnectionDefs.ini
-DriverFile=$(ADHOME)/DB/ADDrivers.ini

@@ -1,2 +1,0 @@
-Insert into Agents (AgentCode,BranchPassword) values ("ADMIN","ADMIN");
-

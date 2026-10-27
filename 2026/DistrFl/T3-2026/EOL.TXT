@@ -1,4 +1,0 @@
-BBBBB
-767AJ5X
-https://apps.cra-arc.gc.ca/ebci/pfeo/ws/services/EolService?wsdl
-C:\vtPrograms\2025\DistrFl\T3-2025\EolFiles

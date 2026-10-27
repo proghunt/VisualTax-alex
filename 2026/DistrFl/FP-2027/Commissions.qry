@@ -1,8 +1,0 @@
-Select * From Transactions
-WHERE Trim(AgentCode) = :ThisAgent
-and Trim(Status) = :St1
-and Trim(TransactionType) = :Purch
-and Trim(TransactionTypeDetail) = :RealPurch
-and Trim(DateSettled) >= :FromDt
-and Trim(DateSettled) <= :ToDt
-ORDER BY AgentCode

@@ -1,867 +1,0 @@
-    <t1rq:EfileReturnRequest
-       xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0"
-       xmlns:comm="http://www.cra-arc.gc.ca/xmlns/comm/2026/1-0-0"
-       xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2026/1-0-0"
-       xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
-       xmlns:sfd="http://www.cra-arc.gc.ca/xmlns/sfd/2026/1-0-0"
-       xmlns:t1="http://www.cra-arc.gc.ca/xmlns/t1/2026/1-0-0"
-       xmlns:t1135="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0"
-       xmlns:t1rq="http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0"
-       xmlns:tp="http://www.cra-arc.gc.ca/xmlns/tp/2026/1-0-0"
-       xmlns:xml="http://www.w3.org/XML/1998/namespace"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0 t1wsefilerequest.xsd">
-       <ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
-<ef:PasswordID>*redacted*</ef:PasswordID>
-       <tp:TaxYear>2025</tp:TaxYear>
-       <ef:EfileData>
-<ef:PasswordID>*redacted*</ef:PasswordID>
-           <ef:DocumentControlNumber>
-               <ef:TaxPreparerEfilerNumber>B0865</ef:TaxPreparerEfilerNumber>
-               <ef:TaxPreparerReturnControlNumber>25275816</ef:TaxPreparerReturnControlNumber>
-           </ef:DocumentControlNumber>
-           <ef:TaxPreparerPreAssessmentReviewContactCode>3</ef:TaxPreparerPreAssessmentReviewContactCode>
-           <ef:TaxPreparerPostAssessmentReviewContactCode>3</ef:TaxPreparerPostAssessmentReviewContactCode>
-      <ef:T183ElectronicSignatureData>
-         <ef:T183ElectronicSignatureIndicator>0</ef:T183ElectronicSignatureIndicator>
-      </ef:T183ElectronicSignatureData>
-         <ef:RepresentativeID>123456A</ef:RepresentativeID>
-       </ef:EfileData>
-       <comm:TestCaseIdentifier>117</comm:TestCaseIdentifier> 
-       <comm:FirstTimeFilerIndicator>0</comm:FirstTimeFilerIndicator>
-       <comm:OriginatingIP>0.0.0.0</comm:OriginatingIP>
-       <t1rq:TaxReturnForm>
-      <t1:T1Return>
-            <comm:SoftwareID>064F</comm:SoftwareID>
-            <comm:SoftwareRevisionDate>2025-06-13</comm:SoftwareRevisionDate>
-      <t1:AutoFillData>
-            <t1:AutoFillReturnIndicator>0</t1:AutoFillReturnIndicator>
-      </t1:AutoFillData>
-         <t1:TaxpayerData>
-            <tp:TaxpayerBasicData>
-              <tp:TaxpayerSocialInsuranceNumber>870000205</tp:TaxpayerSocialInsuranceNumber>
-              <tp:TaxYear>2025</tp:TaxYear>
-              <tp:TaxpayerBirthDate>1961-09-21</tp:TaxpayerBirthDate>
-              <tp:SelfEmployedSpouseDeadlineIndicator>0</tp:SelfEmployedSpouseDeadlineIndicator>
-              </tp:TaxpayerBasicData>
-              <tp:TaxpayerMaritalStatusData>
-              <tp:TaxpayerMaritalStatusCode>1</tp:TaxpayerMaritalStatusCode>
-              <tp:TaxpayerMaritalStatusChangeIndicator>2</tp:TaxpayerMaritalStatusChangeIndicator>
-              </tp:TaxpayerMaritalStatusData>
-            <tp:TaxpayerResidenceData>
-              <tp:TaxpayerYearEndResidenceProvinceCode>NS</tp:TaxpayerYearEndResidenceProvinceCode>
-            </tp:TaxpayerResidenceData>
-            <tp:TaxpayerSpouseData>
-               <tp:SpouseSocialInsuranceNumber>870000213</tp:SpouseSocialInsuranceNumber>
-               <tp:SpouseGivenName>MARC</tp:SpouseGivenName>
-               <tp:SpouseNetIncomeAmount>4700</tp:SpouseNetIncomeAmount>
-               <tp:SpouseUniversalChildCareBenefitAmount>0</tp:SpouseUniversalChildCareBenefitAmount>
-               <tp:SpouseUniversalChildCareRepaymentAmount>0</tp:SpouseUniversalChildCareRepaymentAmount>
-            </tp:TaxpayerSpouseData>
-            <tp:TaxpayerContactData>
-              <comm:TaxpayerName>
-                 <comm:GivenName>DARLENE O</comm:GivenName>
-                 <comm:FamilyName>FIFTEEN</comm:FamilyName>
-              </comm:TaxpayerName>
-              <tp:ResidencyType>1</tp:ResidencyType>
-            <tp:TaxpayerMailingAddress>
-              <comm:CanadianMailingAddress>
-              <comm:AddressStreetText>15 BALSAM CRES</comm:AddressStreetText>
-              <comm:AddressMunicipalityName>WHITEHORSE</comm:AddressMunicipalityName>
-              <comm:AddressProvinceCode>YT</comm:AddressProvinceCode>
-              <comm:AddressPostalCode>Y1A4V6</comm:AddressPostalCode>
-              </comm:CanadianMailingAddress>
-              </tp:TaxpayerMailingAddress>
-            <tp:TaxpayerHomeTelephoneNumber>
-              <comm:TelephoneAreaCode>902</comm:TelephoneAreaCode>
-              <comm:TelephoneLocalNumber>6245414</comm:TelephoneLocalNumber>
-              </tp:TaxpayerHomeTelephoneNumber>
-              <tp:CorrespondenceLanguageCode>1</tp:CorrespondenceLanguageCode>
-            </tp:TaxpayerContactData>
-            </t1:TaxpayerData>
-            <t1:RelatedProgramData>
-            <t1:CanadianCitizenshipIndicator>1</t1:CanadianCitizenshipIndicator>
-            <t1:ElectionsCanadaAuthorizationIndicator>02</t1:ElectionsCanadaAuthorizationIndicator>
-            <t1:IncomeTaxExemptIndianActIndicator>0</t1:IncomeTaxExemptIndianActIndicator>
-            </t1:RelatedProgramData>
-            <comm:ReturnLine><comm:FieldCode>10100</comm:FieldCode><comm:FieldValue>19800</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>10105</comm:FieldCode><comm:FieldValue>1000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>10120</comm:FieldCode><comm:FieldValue>2000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>12100</comm:FieldCode><comm:FieldValue>10300</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>13000</comm:FieldCode><comm:FieldValue>11413</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>14099</comm:FieldCode><comm:FieldValue>35400</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>14100</comm:FieldCode><comm:FieldValue>7400</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>15000</comm:FieldCode><comm:FieldValue>48913</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>20600</comm:FieldCode><comm:FieldValue>1500</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>20700</comm:FieldCode><comm:FieldValue>500</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>21400</comm:FieldCode><comm:FieldValue>19400</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>22200</comm:FieldCode><comm:FieldValue>51430</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>22215</comm:FieldCode><comm:FieldValue>16013</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>22900</comm:FieldCode><comm:FieldValue>750</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>26000</comm:FieldCode><comm:FieldValue>27589</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>26600</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>30000</comm:FieldCode><comm:FieldValue>16129</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>30300</comm:FieldCode><comm:FieldValue>9929</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>30800</comm:FieldCode><comm:FieldValue>79264</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>31000</comm:FieldCode><comm:FieldValue>36630</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>31200</comm:FieldCode><comm:FieldValue>32001</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>31260</comm:FieldCode><comm:FieldValue>1471</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>33500</comm:FieldCode><comm:FieldValue>29008</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>33800</comm:FieldCode><comm:FieldValue>4206</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>34000</comm:FieldCode><comm:FieldValue>480</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>34900</comm:FieldCode><comm:FieldValue>110</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>35000</comm:FieldCode><comm:FieldValue>4316</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38100</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38101</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38102</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38103</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38104</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38105</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38108</comm:FieldCode><comm:FieldValue>4700</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>38110</comm:FieldCode><comm:FieldValue>6200</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>42100</comm:FieldCode><comm:FieldValue>88060</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>42800</comm:FieldCode><comm:FieldValue>3165</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>43500</comm:FieldCode><comm:FieldValue>91225</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>43700</comm:FieldCode><comm:FieldValue>360000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>45300</comm:FieldCode><comm:FieldValue>281300</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>47900</comm:FieldCode><comm:FieldValue>52637</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>48400</comm:FieldCode><comm:FieldValue>602712</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>49000</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>50280</comm:FieldCode><comm:FieldValue>32001</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>50339</comm:FieldCode><comm:FieldValue>19513</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>50340</comm:FieldCode><comm:FieldValue>95277</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>53450</comm:FieldCode><comm:FieldValue>900</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>53680</comm:FieldCode><comm:FieldValue>1500</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>54780</comm:FieldCode><comm:FieldValue>19513</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>55300</comm:FieldCode><comm:FieldValue>1000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58040</comm:FieldCode><comm:FieldValue>11744</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58120</comm:FieldCode><comm:FieldValue>6418</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58240</comm:FieldCode><comm:FieldValue>79264</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58280</comm:FieldCode><comm:FieldValue>36630</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58300</comm:FieldCode><comm:FieldValue>32001</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58800</comm:FieldCode><comm:FieldValue>19641</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58840</comm:FieldCode><comm:FieldValue>1726</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>58969</comm:FieldCode><comm:FieldValue>76</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>60999</comm:FieldCode><comm:FieldValue>4</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>61500</comm:FieldCode><comm:FieldValue>1803</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>61950</comm:FieldCode><comm:FieldValue>300</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>61970</comm:FieldCode><comm:FieldValue>300</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>62100</comm:FieldCode><comm:FieldValue>200</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>62150</comm:FieldCode><comm:FieldValue>480</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>62400</comm:FieldCode><comm:FieldValue>500</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>62410</comm:FieldCode><comm:FieldValue>300</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>67926</comm:FieldCode><comm:FieldValue>175</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>67950</comm:FieldCode><comm:FieldValue>20000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>67954</comm:FieldCode><comm:FieldValue>20000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>67980</comm:FieldCode><comm:FieldValue>24000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>9902</comm:FieldCode><comm:FieldValue>4</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>9903</comm:FieldCode><comm:FieldValue>20000</comm:FieldValue></comm:ReturnLine>
-            <comm:ReturnLine><comm:FieldCode>9909</comm:FieldCode><comm:FieldValue>10300</comm:FieldValue></comm:ReturnLine>
-         <t1:SelectedFinancialDataRecordCount>03</t1:SelectedFinancialDataRecordCount>
-         <sfd:SelectedFinancialData>
-         <sfd:AgriStabilityAgriInvestProgramFarmingData>
-            <sfd:MainFarmsteadProvinceCode>NS</sfd:MainFarmsteadProvinceCode>
-            <sfd:AccountingMethodCode>2</sfd:AccountingMethodCode>
-            <sfd:NAICSCode>111999</sfd:NAICSCode>
-            <sfd:FarmName>US R CROPS</sfd:FarmName>
-            <sfd:FarmAddress>
-            <comm:BusinessAddressStreetText>15 BALSAM STREET</comm:BusinessAddressStreetText>
-            <comm:AddressPostalCode>B3R2K9</comm:AddressPostalCode>
-            </sfd:FarmAddress>
-            <sfd:ClientCellPhoneNumber>
-            <comm:TelephoneAreaCode>902</comm:TelephoneAreaCode>
-            <comm:TelephoneLocalNumber>6245414</comm:TelephoneLocalNumber>
-            </sfd:ClientCellPhoneNumber>
-            <sfd:ClientFaxNumber>
-            <comm:TelephoneAreaCode>902</comm:TelephoneAreaCode>
-            <comm:TelephoneLocalNumber>6248888</comm:TelephoneLocalNumber>
-            </sfd:ClientFaxNumber>
-            <sfd:FeederAssociationMemberIndicator>0</sfd:FeederAssociationMemberIndicator>
-            <sfd:LandlordCropShareIndicator>0</sfd:LandlordCropShareIndicator>
-            <sfd:TenantCropShareIndicator>0</sfd:TenantCropShareIndicator>
-            <sfd:FiscalPeriodStartDate>2025-01-01</sfd:FiscalPeriodStartDate>
-            <sfd:FiscalPeriodEndDate>2025-12-31</sfd:FiscalPeriodEndDate>
-            <sfd:AgriStabilityAgriInvestProgramBusinessTypeCode>1</sfd:AgriStabilityAgriInvestProgramBusinessTypeCode>
-            <sfd:ContactData>
-            <sfd:ContactPersonIndicator>1</sfd:ContactPersonIndicator>
-            <sfd:ContactName>
-              <comm:GivenName>Donald</comm:GivenName>
-              <comm:FamilyName>Thirtyone</comm:FamilyName>
-            </sfd:ContactName>
-            <sfd:ContactBusinessName>DONALD THIRTYONE'S CERTIFIED A</sfd:ContactBusinessName>
-            <sfd:ContactAddress>
-            <comm:BusinessAddressStreetText>Unit 310-3 Edwood Street North</comm:BusinessAddressStreetText>
-            <comm:AddressMunicipalityName>Halifax</comm:AddressMunicipalityName>
-            <comm:AddressProvinceCode>NS</comm:AddressProvinceCode>
-            <comm:AddressPostalCode>B3R2K9</comm:AddressPostalCode>
-            </sfd:ContactAddress>
-            <sfd:ContactTelephoneNumber>
-            <comm:TelephoneAreaCode>902</comm:TelephoneAreaCode>
-            <comm:TelephoneLocalNumber>5632215</comm:TelephoneLocalNumber>
-            </sfd:ContactTelephoneNumber>
-            <sfd:ContactCellPhoneNumber>
-            <comm:TelephoneAreaCode>902</comm:TelephoneAreaCode>
-            <comm:TelephoneLocalNumber>5632247</comm:TelephoneLocalNumber>
-            </sfd:ContactCellPhoneNumber>
-            <sfd:ContactFaxNumber>
-            <comm:TelephoneAreaCode>902</comm:TelephoneAreaCode>
-            <comm:TelephoneLocalNumber>5632260</comm:TelephoneLocalNumber>
-            </sfd:ContactFaxNumber>
-            <sfd:CalculationOfBenefitsContactCopyIndicator>1</sfd:CalculationOfBenefitsContactCopyIndicator>
-            </sfd:ContactData>
-            <sfd:FarmedYearCount>01</sfd:FarmedYearCount>
-            <sfd:AgriStabilityAgriInvestProgramParticipantIDNumber>23375223</sfd:AgriStabilityAgriInvestProgramParticipantIDNumber>
-            <sfd:PublicOfficeAAFCEmployeeIndicator>1</sfd:PublicOfficeAAFCEmployeeIndicator>
-            <sfd:DistrictCountyMunicipalityName>Lunenburg</sfd:DistrictCountyMunicipalityName>
-            <sfd:DistrictCountyMunicipalityNumber>006</sfd:DistrictCountyMunicipalityNumber>
-            <sfd:CombinedFarmOperationData>
-            <sfd:CombinedFarmOperationIndicator>1</sfd:CombinedFarmOperationIndicator>
-            <sfd:CombinedFarmOperationChange>
-            <sfd:CombinedFarmOperationPIN>23370935</sfd:CombinedFarmOperationPIN>
-            <sfd:CombinedFarmOperationChangeCode>1</sfd:CombinedFarmOperationChangeCode>
-            </sfd:CombinedFarmOperationChange>
-            <sfd:CombinedFarmOperationChange>
-            <sfd:CombinedFarmOperationPIN>02076040</sfd:CombinedFarmOperationPIN>
-            <sfd:CombinedFarmOperationChangeCode>1</sfd:CombinedFarmOperationChangeCode>
-            </sfd:CombinedFarmOperationChange>
-            <sfd:CombinedFarmOperationChange>
-            <sfd:CombinedFarmOperationPIN>23389554</sfd:CombinedFarmOperationPIN>
-            <sfd:CombinedFarmOperationChangeCode>2</sfd:CombinedFarmOperationChangeCode>
-            </sfd:CombinedFarmOperationChange>
-            </sfd:CombinedFarmOperationData>
-            <sfd:ProductionCycleCompletionIndicator>2</sfd:ProductionCycleCompletionIndicator>
-            <sfd:ProductionCycleDisasterIndicator>1</sfd:ProductionCycleDisasterIndicator>
-            <sfd:CommodityTotalReturnLine>
-            <sfd:CommodityTotalFieldCode>9950</sfd:CommodityTotalFieldCode>
-            <sfd:FieldAmount>29400</sfd:FieldAmount>
-            <sfd:Commodity>            <sfd:CommodityCode>048</sfd:CommodityCode>            <sfd:CommodityAmount>2000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>572</sfd:CommodityCode>            <sfd:CommodityAmount>3800</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>770</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>010</sfd:CommodityCode>            <sfd:CommodityAmount>3600</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>011</sfd:CommodityCode>            <sfd:CommodityAmount>4000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>670</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>023</sfd:CommodityCode>            <sfd:CommodityAmount>2000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>672</sfd:CommodityCode>            <sfd:CommodityAmount>500</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>673</sfd:CommodityCode>            <sfd:CommodityAmount>500</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>243</sfd:CommodityCode>            <sfd:CommodityAmount>2000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>782</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>147</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>246</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>781</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>407</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>784</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>803</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>787</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>788</sfd:CommodityCode>            <sfd:CommodityAmount>1000</sfd:CommodityAmount>            </sfd:Commodity>
-            </sfd:CommodityTotalReturnLine>
-            <sfd:CommodityTotalReturnLine>
-            <sfd:CommodityTotalFieldCode>9960</sfd:CommodityTotalFieldCode>
-            <sfd:FieldAmount>3000</sfd:FieldAmount>
-            <sfd:Commodity>            <sfd:CommodityCode>575</sfd:CommodityCode>            <sfd:CommodityAmount>200</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>574</sfd:CommodityCode>            <sfd:CommodityAmount>250</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>570</sfd:CommodityCode>            <sfd:CommodityAmount>350</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>573</sfd:CommodityCode>            <sfd:CommodityAmount>200</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>783</sfd:CommodityCode>            <sfd:CommodityAmount>400</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>792</sfd:CommodityCode>            <sfd:CommodityAmount>400</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>771</sfd:CommodityCode>            <sfd:CommodityAmount>100</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>772</sfd:CommodityCode>            <sfd:CommodityAmount>100</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>793</sfd:CommodityCode>            <sfd:CommodityAmount>500</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>804</sfd:CommodityCode>            <sfd:CommodityAmount>250</sfd:CommodityAmount>            </sfd:Commodity>
-            <sfd:Commodity>            <sfd:CommodityCode>688</sfd:CommodityCode>            <sfd:CommodityAmount>250</sfd:CommodityAmount>            </sfd:Commodity>
-            </sfd:CommodityTotalReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9540</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9544</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9611</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9600</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9764</comm:FieldCode>               <comm:FieldValue>1600</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9799</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9836</comm:FieldCode>               <comm:FieldValue>5000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9760</comm:FieldCode>               <comm:FieldValue>2500</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9765</comm:FieldCode>               <comm:FieldValue>2500</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9795</comm:FieldCode>               <comm:FieldValue>1500</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9796</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9805</comm:FieldCode>               <comm:FieldValue>3000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9810</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9811</comm:FieldCode>               <comm:FieldValue>1500</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9819</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9896</comm:FieldCode>               <comm:FieldValue>1400</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9959</comm:FieldCode>               <comm:FieldValue>35400</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9968</comm:FieldCode>               <comm:FieldValue>28000</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9969</comm:FieldCode>               <comm:FieldValue>7400</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9944</comm:FieldCode>               <comm:FieldValue>7400</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>7400</comm:FieldValue>            </comm:ReturnLine>
-         </sfd:AgriStabilityAgriInvestProgramFarmingData>
-         </sfd:SelectedFinancialData>
-         <sfd:SelectedFinancialData>
-         <sfd:AgriStabilityAgriInvestProgramHarmonizedData>
-            <sfd:FarmingOperationData>
-            <sfd:CropDisasterIndicator>1</sfd:CropDisasterIndicator>
-            <sfd:LivestockDisasterIndicator>2</sfd:LivestockDisasterIndicator>
-            <sfd:ProductionInsuranceContractNumber>223456789012</sfd:ProductionInsuranceContractNumber>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5031</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>04</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>2000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>1350000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>0000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>25000</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5078</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>07</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>16000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>1000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>45678901123</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>4800000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>32500</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5200</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>02</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>45678901123</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>2442666</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>1058222</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>4583</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5270</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>02</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>45678901123</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>2442666</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>1058222</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>4583</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5268</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>10</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>55000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>505000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>45678901123</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>160000</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5072</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>08</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>56000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>3000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>223000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>0000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>45678901212</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5316</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>04</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>22000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>250000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>250000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>50000</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5316</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>01</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>47000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>6565500</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>350500</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>47532</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5968</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>05</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>50000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>4800000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>650000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>5872</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5432</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>16</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>10000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>4500000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>0000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>2530</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>4000</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>64</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>10000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>3000000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>452000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>20210</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5736</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>01</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>10000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>467088</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>250000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>27558</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5464</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>04</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>10000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>287000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>985788</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>39254</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5544</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>01</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>5000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>486588</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>1087000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>78255</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5566</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>07</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>46000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>43085</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>480558</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>89200</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5750</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>08</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>24000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>25000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>1454000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>87600</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5752</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>02</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>42500</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>299000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>565000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>584200</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5886</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>05</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>58000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>522000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>545005</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>49900</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>6820</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>04</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>10000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>287000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>185788</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>27600</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>6825</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>04</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>5000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>550000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>25000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>11654</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>7083</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>05</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>15000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>84000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>0000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>58450</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>7087</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>05</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>18000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>87565</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>0000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>57900</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>7099</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>05</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>59000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>580055</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>0000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>84800</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5000</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>05</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>35000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>100000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>0000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>23800</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5516</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>05</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>10000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>25020</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>3000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>16500</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5830</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>05</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>1000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>4000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>1000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>7500</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>6920</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>02</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>56000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>300000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>0000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>5000</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropInventoryValuationData>
-              <sfd:CropTypeCode>5082</sfd:CropTypeCode>
-              <sfd:CropMeasurementUnitCode>01</sfd:CropMeasurementUnitCode>
-              <sfd:CropAcreQuantity>6000</sfd:CropAcreQuantity>
-              <sfd:CropUnseedableAcreQuantity>0000</sfd:CropUnseedableAcreQuantity>
-              <sfd:CropProducedQuantity>73000</sfd:CropProducedQuantity>
-              <sfd:CropYearEndQuantity>4000</sfd:CropYearEndQuantity>
-              <sfd:CropYearEndPriceAmount>69420</sfd:CropYearEndPriceAmount>
-            </sfd:CropInventoryValuationData>
-            <sfd:CropFixedData>
-              <sfd:CropTypeCode>17</sfd:CropTypeCode>
-              <sfd:CropAcreQuantity>2750</sfd:CropAcreQuantity>
-            </sfd:CropFixedData>
-            <sfd:CropFixedData>
-              <sfd:CropTypeCode>18</sfd:CropTypeCode>
-              <sfd:CropAcreQuantity>3250</sfd:CropAcreQuantity>
-            </sfd:CropFixedData>
-            <sfd:CropFixedData>
-              <sfd:CropTypeCode>19</sfd:CropTypeCode>
-              <sfd:CropAcreQuantity>127645</sfd:CropAcreQuantity>
-            </sfd:CropFixedData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8791</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>2333333</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>100000</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7871</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>20000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>600000</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8910</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>40000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>42500</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8691</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>16000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>45678901212</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7680</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>19000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>68000</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8693</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>45678901123</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>6500</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7873</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>250000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>87500</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7682</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>253000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>246600</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7902</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>588000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>548855</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8423</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>877000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>92200</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7842</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>20000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>600000</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8434</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>16000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>58050</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8922</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>19000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>68000</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7552</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>3500000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>6500</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7554</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>250000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>87500</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8071</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>253000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>246600</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8402</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>588000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>548855</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8404</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>877000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>92200</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8550</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>488000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>86800</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8752</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>316000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>862000</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8421</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>30000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>56800</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>8422</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>25000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>34500</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7894</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>45000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>122000</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockInventoryValuationData>
-              <sfd:LivestockTypeCode>7895</sfd:LivestockTypeCode>
-              <sfd:LivestockYearEndQuantity>5000</sfd:LivestockYearEndQuantity>
-              <sfd:LivestockYearEndPriceAmount>15000</sfd:LivestockYearEndPriceAmount>
-            </sfd:LivestockInventoryValuationData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>104</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>322000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>123</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>75000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>145</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>80000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>105</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>100000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>106</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>5665000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>125</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>550000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>124</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>8006000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>141</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>56689255</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>142</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>225553588</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>113</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>3255000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>108</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>45678901123</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>109</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>1257000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>143</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>2345155</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>144</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>4759325</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>159</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>177000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>193</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>425000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>116</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>227000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>174</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>25000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:LivestockProductiveCapacityData>
-              <sfd:LivestockTypeCode>132</sfd:LivestockTypeCode>
-              <sfd:LivestockQuantity>55000</sfd:LivestockQuantity>
-            </sfd:LivestockProductiveCapacityData>
-            <sfd:PurchasedInputData>
-              <sfd:PurchasedInputTypeCode>9662</sfd:PurchasedInputTypeCode>
-              <sfd:PurchasedInputYearEndAmount>655665556</sfd:PurchasedInputYearEndAmount>
-            </sfd:PurchasedInputData>
-            <sfd:PurchasedInputData>
-              <sfd:PurchasedInputTypeCode>9663</sfd:PurchasedInputTypeCode>
-              <sfd:PurchasedInputYearEndAmount>25000</sfd:PurchasedInputYearEndAmount>
-            </sfd:PurchasedInputData>
-            <sfd:PurchasedInputData>
-              <sfd:PurchasedInputTypeCode>9661</sfd:PurchasedInputTypeCode>
-              <sfd:PurchasedInputYearEndAmount>1500</sfd:PurchasedInputYearEndAmount>
-            </sfd:PurchasedInputData>
-            <sfd:PurchasedInputData>
-              <sfd:PurchasedInputTypeCode>9714</sfd:PurchasedInputTypeCode>
-              <sfd:PurchasedInputYearEndAmount>200</sfd:PurchasedInputYearEndAmount>
-            </sfd:PurchasedInputData>
-            <sfd:PurchasedInputData>
-              <sfd:PurchasedInputTypeCode>9801</sfd:PurchasedInputTypeCode>
-              <sfd:PurchasedInputYearEndAmount>1555</sfd:PurchasedInputYearEndAmount>
-            </sfd:PurchasedInputData>
-            <sfd:PurchasedInputData>
-              <sfd:PurchasedInputTypeCode>9764</sfd:PurchasedInputTypeCode>
-              <sfd:PurchasedInputYearEndAmount>5666</sfd:PurchasedInputYearEndAmount>
-            </sfd:PurchasedInputData>
-            <sfd:PurchasedInputData>
-              <sfd:PurchasedInputTypeCode>4002</sfd:PurchasedInputTypeCode>
-              <sfd:PurchasedInputYearEndAmount>4550</sfd:PurchasedInputYearEndAmount>
-            </sfd:PurchasedInputData>
-            <sfd:PurchasedInputData>
-              <sfd:PurchasedInputTypeCode>382</sfd:PurchasedInputTypeCode>
-              <sfd:PurchasedInputYearEndAmount>5000</sfd:PurchasedInputYearEndAmount>
-            </sfd:PurchasedInputData>
-            <sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableTypeCode>044</sfd:DeferredIncomeReceivableTypeCode>
-            <sfd:DeferredIncomeReceivableYearEndAmount>55665556</sfd:DeferredIncomeReceivableYearEndAmount>
-            </sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableTypeCode>401</sfd:DeferredIncomeReceivableTypeCode>
-            <sfd:DeferredIncomeReceivableYearEndAmount>500</sfd:DeferredIncomeReceivableYearEndAmount>
-            </sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableTypeCode>406</sfd:DeferredIncomeReceivableTypeCode>
-            <sfd:DeferredIncomeReceivableYearEndAmount>500</sfd:DeferredIncomeReceivableYearEndAmount>
-            </sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableTypeCode>412</sfd:DeferredIncomeReceivableTypeCode>
-            <sfd:DeferredIncomeReceivableYearEndAmount>15000</sfd:DeferredIncomeReceivableYearEndAmount>
-            </sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableTypeCode>427</sfd:DeferredIncomeReceivableTypeCode>
-            <sfd:DeferredIncomeReceivableYearEndAmount>500</sfd:DeferredIncomeReceivableYearEndAmount>
-            </sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableTypeCode>672</sfd:DeferredIncomeReceivableTypeCode>
-            <sfd:DeferredIncomeReceivableYearEndAmount>250</sfd:DeferredIncomeReceivableYearEndAmount>
-            </sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableData>
-            <sfd:DeferredIncomeReceivableTypeCode>794</sfd:DeferredIncomeReceivableTypeCode>
-            <sfd:DeferredIncomeReceivableYearEndAmount>250</sfd:DeferredIncomeReceivableYearEndAmount>
-            </sfd:DeferredIncomeReceivableData>
-            <sfd:AccountsPayableData>
-            <sfd:AccountsPayableTypeCode>680</sfd:AccountsPayableTypeCode>
-            <sfd:AccountsPayableYearEndAmount>1000</sfd:AccountsPayableYearEndAmount>
-            </sfd:AccountsPayableData>
-            <sfd:AccountsPayableData>
-            <sfd:AccountsPayableTypeCode>681</sfd:AccountsPayableTypeCode>
-            <sfd:AccountsPayableYearEndAmount>1000</sfd:AccountsPayableYearEndAmount>
-            </sfd:AccountsPayableData>
-            <sfd:AccountsPayableData>
-            <sfd:AccountsPayableTypeCode>682</sfd:AccountsPayableTypeCode>
-            <sfd:AccountsPayableYearEndAmount>1000</sfd:AccountsPayableYearEndAmount>
-            </sfd:AccountsPayableData>
-            <sfd:AccountsPayableData>
-            <sfd:AccountsPayableTypeCode>782</sfd:AccountsPayableTypeCode>
-            <sfd:AccountsPayableYearEndAmount>1000</sfd:AccountsPayableYearEndAmount>
-            </sfd:AccountsPayableData>
-            <sfd:AccountsPayableData>
-            <sfd:AccountsPayableTypeCode>800</sfd:AccountsPayableTypeCode>
-            <sfd:AccountsPayableYearEndAmount>400</sfd:AccountsPayableYearEndAmount>
-            </sfd:AccountsPayableData>
-            <sfd:AccountsPayableData>
-            <sfd:AccountsPayableTypeCode>802</sfd:AccountsPayableTypeCode>
-            <sfd:AccountsPayableYearEndAmount>5161</sfd:AccountsPayableYearEndAmount>
-            </sfd:AccountsPayableData>
-            <sfd:AccountsPayableData>
-            <sfd:AccountsPayableTypeCode>803</sfd:AccountsPayableTypeCode>
-            <sfd:AccountsPayableYearEndAmount>1000</sfd:AccountsPayableYearEndAmount>
-            </sfd:AccountsPayableData>
-            <sfd:AccountsPayableData>
-            <sfd:AccountsPayableTypeCode>804</sfd:AccountsPayableTypeCode>
-            <sfd:AccountsPayableYearEndAmount>400</sfd:AccountsPayableYearEndAmount>
-            </sfd:AccountsPayableData>
-            </sfd:FarmingOperationData>
-         </sfd:AgriStabilityAgriInvestProgramHarmonizedData>
-         </sfd:SelectedFinancialData>
-         <sfd:SelectedFinancialData>
-         <sfd:EmploymentExpenseData>
-            <comm:ReturnLine>               <comm:FieldCode>8862</comm:FieldCode>               <comm:FieldValue>175</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>8910</comm:FieldCode>               <comm:FieldValue>100</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>8810</comm:FieldCode>               <comm:FieldValue>300</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9270</comm:FieldCode>               <comm:FieldValue>175</comm:FieldValue>            </comm:ReturnLine>
-            <comm:ReturnLine>               <comm:FieldCode>9368</comm:FieldCode>               <comm:FieldValue>750</comm:FieldValue>            </comm:ReturnLine>
-         </sfd:EmploymentExpenseData>
-         </sfd:SelectedFinancialData>
-      </t1:T1Return>
-</t1rq:TaxReturnForm>
-</t1rq:EfileReturnRequest>

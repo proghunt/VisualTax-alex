@@ -1,5 +1,0 @@
-01(USD = US Dollar)
-02(GBP = GB Pound Sterling)
-03(AUD = AU Dollar)
-04(EUR = Euro)
-05(JPY = Yen)
