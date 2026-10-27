@@ -1,0 +1,267 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{52D6FC4D-10C7-4891-A4D5-913176CF4C9D}</ProjectGuid>
+        <MainSource>TDDGetData.DPR</MainSource>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+        <ProjectVersion>14.6</ProjectVersion>
+        <FrameworkType>VCL</FrameworkType>
+        <Base>True</Base>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_DcuOutput>..\DCU</DCC_DcuOutput>
+        <Manifest_File>None</Manifest_File>
+        <PostBuildEvent><![CDATA[xcopy "$(OUTPUTPATH)" "$(VT_PATH)\2015\DistrFl" /Y
+xcopy "$(OUTPUTPATH)" "$(VT_PATH)\2016\DistrFl" /Y
+xcopy "$(OUTPUTPATH)" "$(VT_PATH)\2017\DistrFl" /Y
+xcopy "$(OUTPUTPATH)" "$(VT_PATH)\2018\DistrFl" /Y
+xcopy "$(OUTPUTPATH)" "$(VT_PATH)\2019\DistrFl" /Y
+xcopy "$(OUTPUTPATH)" "$(VT_PATH)\2020\DistrFl" /Y
+$(PostBuildEvent)]]></PostBuildEvent>
+        <DCC_ExeOutput>..\BIN</DCC_ExeOutput>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+        <DCC_DependencyCheckOutputName>SDIAPP.exe</DCC_DependencyCheckOutputName>
+        <DCC_Platform>x86</DCC_Platform>
+        <DCC_N>true</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_K>false</DCC_K>
+        <DCC_E>false</DCC_E>
+        <DCC_F>false</DCC_F>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <Debugger_RunParams>&quot;T&quot; &quot;D:\POLAK\PROJECTS\OUTSORCE\Customers\VisualTax\VisualTax_V2\2016\DistrFl\T1-2016&quot; &quot;D:\POLAK\PROJECTS\OUTSORCE\Customers\VisualTax\VisualTax_V2\2016\DistrFl\T1-2016\TddData&quot; &quot;2016&quot;</Debugger_RunParams>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>false</DCC_DebugInformation>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <Debugger_RunParams>&quot;T&quot; &quot;c:\Projects\Outsource\Customers\VisualTax\VisualTax_V2\2019\DistrFl\T1-2019&quot; &quot;c:\Projects\Outsource\Customers\VisualTax\VisualTax_V2\2019\DistrFl\T1-2019\TddData&quot; &quot;2019&quot;</Debugger_RunParams>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=Microsophic Inc;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=TDD;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="ABOUT.PAS">
+            <Form>AboutBox</Form>
+        </DCCReference>
+        <DCCReference Include="Crypt2.pas"/>
+        <DCCReference Include="JediWinApi\Source\JwaNtStatus.pas"/>
+        <DCCReference Include="JediWinApi\Source\JwaWinBase.pas"/>
+        <DCCReference Include="JediWinApi\Source\JwaWinCrypt.pas"/>
+        <DCCReference Include="JediWinApi\Source\JwaWinDLLNames.pas"/>
+        <DCCReference Include="JediWinApi\Source\JwaWinNT.pas"/>
+        <DCCReference Include="JediWinApi\Source\JwaWinType.pas"/>
+        <DCCReference Include="UTDDMain.PAS">
+            <Form>TDDMain</Form>
+        </DCCReference>
+        <DCCReference Include="Reminder.pas">
+            <Form>frmReminder</Form>
+        </DCCReference>
+        <DCCReference Include="..\vtBase\vtShowMessageHTML.pas">
+            <Form>fShowMessageHTML</Form>
+        </DCCReference>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">TDDGetData.DPR</Source>
+                </Source>
+                <Parameters>
+                    <Parameters Name="UseLauncher">False</Parameters>
+                    <Parameters Name="LoadAllSymbols">True</Parameters>
+                    <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+                </Parameters>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1033</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k180.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp180.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfs18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfs18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxIntIO18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxIntIO18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxIntIOIndy18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxIntIOIndy18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxcs18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxcs18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxTee18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxTee18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfsTee18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfsTee18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfsDB18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfsDB18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxADO18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxADO18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfsADO18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfsADO18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxDBX18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxDBX18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxIBX18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfrxIBX18.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfsIBX18.bpl">File C:\Program Files (x86)\FastReport 6 VCL Trial\LibD18\dclfsIBX18.bpl not found</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <PropertyGroup Condition="'$(Config)'=='Release' And '$(Platform)'=='Win32'">
+        <PreBuildEvent/>
+        <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
+        <PreLinkEvent/>
+        <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
+        <PostBuildEvent>xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2015\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2016\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2017\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2018\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2019\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2020\DistrFl&quot; /Y
+</PostBuildEvent>
+        <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' And '$(Platform)'=='Win64'">
+        <PreBuildEvent/>
+        <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
+        <PreLinkEvent/>
+        <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
+        <PostBuildEvent>xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2015\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2016\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2017\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2018\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2019\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2020\DistrFl&quot; /Y
+</PostBuildEvent>
+        <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' And '$(Platform)'=='Win32'">
+        <PreBuildEvent/>
+        <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
+        <PreLinkEvent/>
+        <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
+        <PostBuildEvent>xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2015\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2016\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2017\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2018\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2019\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2020\DistrFl&quot; /Y
+</PostBuildEvent>
+        <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' And '$(Platform)'=='Win64'">
+        <PreBuildEvent/>
+        <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
+        <PreLinkEvent/>
+        <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
+        <PostBuildEvent>xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2015\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2016\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2017\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2018\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2019\DistrFl&quot; /Y
+&amp;&amp;xcopy &quot;$(OUTPUTPATH)&quot; &quot;$(VT_PATH)\2020\DistrFl&quot; /Y
+</PostBuildEvent>
+        <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
+    </PropertyGroup>
+</Project>
+
+<!-- EurekaLog First Line
+[Exception Log]
+EurekaLog Version=7007
+Activate=0
+atVCL=1
+DeleteMapAfterCompile=0
+edoSendErrorReportChecked=0
+edoShowSendErrorReportOption=0
+Encrypt Password=""
+idEurekaLog=1
+idEurekaLogDetailed=1
+idMSClassic=1
+idStepsToReproduce=1
+Output Path=".\\"
+ProjectID="{C48930A0-8AD6-4C5A-82B9-F1386B3179A9}"
+EurekaLog Last Line -->

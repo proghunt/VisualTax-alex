@@ -1,0 +1,219 @@
+{
+  "header":  
+  {
+    "trustNumber":"A00000637",
+    "softwareId":"064",
+    "softwareRevisionDate":"2025-02-01",
+    "firstTimeFilerIndicator":false,
+    "additionalTaxReturnIndicator":false,
+    "testCaseIdentifier":    1064,
+    "originatingIp":"0.0.0.0",
+    "taxProfessionalData":    
+    {
+      "transmitterEFilerNumber":"B0865",
+      "passwordId":"767AJ5X",
+      "taxPreparerEfilerNumber":"B0865",
+      "taxPreparerEfilerPassword":"767AJ5X",
+      "taxPreparerReturnControlNumber":"23195146",
+      "taxPreparerAuthorizationIndicator":true,
+      "taxPreparerAuthorizationExpiryDate":"2025-09-18",
+      "taxPreparerPreAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "taxPreparerPostAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "representativeId":"JL3R2RC",
+      "t183ElectronicSignature":      
+      {
+        "t183ElectronicSignatureIndicator":true,
+        "t183ElectronicSignatureDate":"2025-09-18",
+        "t183ElectronicSignatureTime":"13:21:01"      
+      }    
+    }  
+  },
+  "trustIdentification":  
+  {
+    "trustIdentifier":    
+    {
+      "countryOfResidence":"CAN",
+      "provinceOfResidence":"BC",
+      "trustName":"KAT MEYERS TRUST",
+      "trustAccountNumber":"A00000637"    
+    },
+    "primaryTrusteeContactInformation":    
+    {
+      "trusteeNameChangeIndicator":false,
+      "isIndividualIndicator":true,
+      "trusteeContactInformation":      
+      {
+        "individualName":        
+        {
+          "firstName":"MIKE",
+          "lastName":"PATCHES"        
+        },
+        "address":        
+        {
+          "addressLineOne":"15303 31ST AVE",
+          "city":"SURREY",
+          "provinceTerritoryState":"BC",
+          "globalPostalZipCode":"V3Z6X2",
+          "country":"CAN"        
+        },
+        "telephoneNumber":        
+        {
+          "countryCode":"1",
+          "areaCode":"604",
+          "localNumber":"5367614"        
+        }      
+      }    
+    },
+    "trustResidencyInformation":    
+    {
+      "trustDeemedCanadianResidentIndicator":false,
+      "languageOfCorrespondence":"ENGLISH"    
+    }  
+  },
+  "trustTypeInformation":  
+  {
+    "trustType":"TYPE_334",
+    "trustCreationDate":"2010-11-23"  
+  },
+  "filingInformation":  
+  {
+    "trustFiscalPeriodStart":"2025-01-01",
+    "trustFiscalPeriodEnd":"2025-12-31",
+    "firstYearFilingIndicator":false,
+    "previousFilingYear":    2024,
+    "trustFinalReturnIndicator":false  
+  },
+  "foreignPropertyInExcessOf100000":false,
+  "otherInformation":  
+  {
+    "electingTrustIndicator":false,
+    "trustIncomePaymentToBeneficiariesRequired":false,
+    "trustDistributedNonCashAssetsToBeneficiary":false,
+    "trustBeneficiariesChanged":false,
+    "trustDeemedDispositionBeneficiaryDeathIndicator":false,
+    "trustNonArmsLengthDebtTransactionIndicator":false,
+    "trustCapitalIncomeInterestOwnershipChangeIndicator":false,
+    "trustHoldsSharesInPrivateCorporation":false,
+    "trustAdditionalContributionPropertyReceiptIndicator":false,
+    "publicTrust":false,
+    "trustUsedInternationalFinancialReportingStandards":false,
+    "trustLossRestrictionEventIndicator":false,
+    "assetsHeldListedUnderParagraph150NotExceeding50kIndicator":true,
+    "trustRequiredToHoldFundsUnderRelevantRulesIndicator":true,
+    "interestOrFinancingExpensesIndicator":false,
+    "unitTrustUnderSubSection108Indicator":false,
+    "trustWhichAllUnitsListedOnStockExchangeIndicator":false,
+    "trustMeetConditionsInParagraph150Indicator":true,
+    "propertyForSpecifiedPurposeIndicator":true,
+    "indigenousGroupsIndicator":false  
+  },
+  "memoIndicators":  
+  {
+    "alterEgoIndicator":false,
+    "preferredBeneficiaryIndicator":false,
+    "mutualFundReorganizatonIndicator":false,
+    "mutualFundExtensionApprovalIndicator":false,
+    "insuranceSegregatedFundReorganizationIndicator":false,
+    "insuranceSegregatedFundExtensionApprovalIndicator":false,
+    "mutualFundElectingDec15FPEIndicator":false  
+  },
+  "returnLines":  
+  [
+    {
+      "fieldCode":"04",
+      "fieldValue":      315    
+    },
+    {
+      "fieldCode":"05",
+      "fieldValue":      5222    
+    },
+    {
+      "fieldCode":"19",
+      "fieldValue":      3578    
+    },
+    {
+      "fieldCode":"20",
+      "fieldValue":      9115    
+    },
+    {
+      "fieldCode":"21",
+      "fieldValue":      609    
+    },
+    {
+      "fieldCode":"22",
+      "fieldValue":      10000    
+    },
+    {
+      "fieldCode":"23",
+      "fieldValue":      10000    
+    },
+    {
+      "fieldCode":"50",
+      "fieldValue":      8506    
+    },
+    {
+      "fieldCode":"56",
+      "fieldValue":      8506    
+    },
+    {
+      "fieldCode":"81",
+      "fieldValue":2806.98    
+    },
+    {
+      "fieldCode":"82",
+      "fieldValue":1743.73    
+    },
+    {
+      "fieldCode":"84",
+      "fieldValue":4550.71    
+    },
+    {
+      "fieldCode":"94",
+      "fieldValue":4550.71    
+    },
+    {
+      "fieldCode":"1031",
+      "fieldValue":      105425    
+    },
+    {
+      "fieldCode":"1032",
+      "fieldValue":      -5933    
+    },
+    {
+      "fieldCode":"1220",
+      "fieldValue":      -2967    
+    },
+    {
+      "fieldCode":"8170",
+      "fieldValue":      609    
+    },
+    {
+      "fieldCode":"11080",
+      "fieldValue":2806.98    
+    },
+    {
+      "fieldCode":"12270",
+      "fieldValue":      8506    
+    },
+    {
+      "fieldCode":"14601",
+      "fieldValue":1743.73    
+    },
+    {
+      "fieldCode":"66100",
+      "fieldValue":"20251231"    
+    },
+    {
+      "fieldCode":"66380",
+      "fieldValue":      2000    
+    },
+    {
+      "fieldCode":"66800",
+      "fieldValue":      2    
+    },
+    {
+      "fieldCode":"66810",
+      "fieldValue":      2    
+    }  
+  ]
+}

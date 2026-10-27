@@ -1,0 +1,108 @@
+unit ufpsum;
+interface
+uses
+  SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask;
+type
+Tfpsum = class(TForm)
+    vtfpsumShape8:TvtShape;
+    vtfpsumShape7:TvtShape;
+    vtfpsumShape11:TvtShape;
+    vtfpsumShape1:TvtShape;
+    vtfpsumLabel1:TvtLabel;
+    vtfpsumLabel2:TvtLabel;
+    vtfpsumLabel3:TvtLabel;
+    vtfpsumLabel5:TvtLabel;
+    vtfpsumLabel6:TvtLabel;
+    vtfpsumLabel7:TvtLabel;
+    vtfpsumLabel8:TvtLabel;
+    vtfpsumLabel9:TvtLabel;
+    vtfpsumLabel10:TvtLabel;
+    vtfpsumLabel11:TvtLabel;
+    vtfpsumLabel14:TvtLabel;
+    vtfpsumLabel18:TvtLabel;
+    vtfpsumLabel19:TvtLabel;
+    vtfpsumLabel21:TvtLabel;
+    vtfpsumLabel23:TvtLabel;
+    vtfpsumLabel29:TvtLabel;
+    vtfpsumLabel30:TvtLabel;
+    vtfpsumLabel31:TvtLabel;
+    vtfpsumLabel32:TvtLabel;
+    vtfpsumLabel66:TvtLabel;
+    vtfpsumLabel35:TvtLabel;
+    vtfpsumLabel13:TvtLabel;
+    vtfpsumShape6:TvtShape;
+    vtfpsumShape10:TvtShape;
+    vtfpsumShape5:TvtShape;
+    vtfpsumShape2:TvtShape;
+    vtfpsumShape3:TvtShape;
+    vtfpsumShape4:TvtShape;
+    vtfpsumShape9:TvtShape;
+    vtfpsumLabel45:TvtLabel;
+    vtfpsumLabel20:TvtLabel;
+    vtfpsumLabel38:TvtLabel;
+    vtfpsumLabel15:TvtLabel;
+    vtfpsumLabel16:TvtLabel;
+    vtfpsumLabel17:TvtLabel;
+    vtfpsumLabel22:TvtLabel;
+    vtfpsumLabel24:TvtLabel;
+    vtfpsumLabel12:TvtLabel;
+    vtfpsumLabel4:TvtLabel;
+    vtfpsumLabel25:TvtLabel;
+    vtfpsumShape12:TvtShape;
+    vtfpsumShape13:TvtShape;
+    vtfpsumLabel26:TvtLabel;
+    vtfpsumShape14:TvtShape;
+    vtfpsumShape15:TvtShape;
+    vtfpsumLabel27:TvtLabel;
+    vtfpsumLabel28:TvtLabel;
+    vtEdit1:TvtEdit;
+    vtEdit2:TvtEdit;
+    vtEdit4:TvtEdit;
+    vtEdit5:TvtEdit;
+    vtEdit6:TvtEdit;
+    vtEdit7:TvtEdit;
+    vtEdit8:TvtEdit;
+    vtEdit9:TvtEdit;
+    vtEdit10:TvtEdit;
+    vtEdit11:TvtEdit;
+    vtEdit12:TvtEdit;
+    vtEdit13:TvtEdit;
+    vtEdit14:TvtEdit;
+    vtEdit15:TvtEdit;
+    vtEdit16:TvtEdit;
+    vtEdit17:TvtEdit;
+    vtEdit18:TvtEdit;
+    vtEdit30:TvtEdit;
+    vtEdit31:TvtEdit;
+    vtEdit32:TvtEdit;
+    vtEdit33:TvtEdit;
+    vtEdit35:TvtEdit;
+    vtEdit36:TvtEdit;
+    vtEdit37:TvtEdit;
+    vtEdit38:TvtEdit;
+    vtEdit39:TvtEdit;
+    vtEdit3:TvtEdit;
+    vtEdit41:TvtEdit;
+    vtEdit42:TvtEdit;
+    vtEdit43:TvtEdit;
+    vtEdit50:TvtEdit;
+    vtEdit45:TvtEdit;
+    vtEdit46:TvtEdit;
+    vtEdit47:TvtEdit;
+    vtEdit48:TvtEdit;
+    vtEdit49:TvtEdit;
+    vtEdit55:TvtEdit;
+    vtEdit56:TvtEdit;
+    vtEdit57:TvtEdit;
+    vtEdit58:TvtEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+fpsum: Tfpsum;
+implementation
+{$R *.DFM}
+end.

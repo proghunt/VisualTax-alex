@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Description: T106 Schema - Information Return Of Non-Arms Length Transactions With Non-Residents
+Contact: CRA, ITB, Solutions, IRBD, Assessment Processing Division, Electronic Filing
+Date created: November 2016
+-->
+<xsd:schema xmlns:t106="http://www.cra-arc.gc.ca/xmlns/t106/2025/1-0-0"
+    xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+    xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.cra-arc.gc.ca/xmlns/t106/2025/1-0-0"
+    elementFormDefault="qualified" attributeFormDefault="unqualified" version="t106/2025/1-0-0">
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" schemaLocation="standarddatatypes.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" schemaLocation="cracommonstructures.xsd"/>
+
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Schema  element ++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="NonArmsLengthTransactionWithNonResidentInformationReturn" type="t106:NonArmsLengthTransactionWithNonResidentInformationReturnType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">There can be only one t106 return in a file</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Il ne peut y avoir qu?un formulaire t106 dans un fichier</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <!-- t106 Form structure  -->
+    <xsd:complexType name="NonArmsLengthTransactionWithNonResidentInformationReturnType">
+        <xsd:sequence>
+            <xsd:element ref="t106:NonArmsLengthWithNonResidentTransactionSummary"/>
+            <xsd:element ref="t106:NonArmsLengthWithNonResidentTransactionSlip" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="NonArmsLengthWithNonResidentTransactionSummary" type="t106:NonArmsLengthWithNonResidentTransactionSummaryType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">There can be only one t106 return in a file</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Il ne peut y avoir qu?un formulaire t106 dans un fichier</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <!-- t106 Summary Form structure  -->
+    <xsd:complexType name="NonArmsLengthWithNonResidentTransactionSummaryType">
+        <xsd:sequence>
+
+            <xsd:element ref="t106:SummaryActionCode"/>
+
+             <!-- Top of Form Identification -->
+
+            <xsd:element ref="t106:FunctionalCurrencyCode" minOccurs="0"/>
+            <xsd:element ref="t106:AmendedReturnIndicator" minOccurs="0"/>
+
+            <!-- Section 1 - Reporting person/partnership identification -->
+            <xsd:element ref="t106:ReportingTaxpayerIdentification"/>
+            <xsd:element ref="t106:ReportingTaxpayerAddress" minOccurs="0"/>
+
+            <!-- Section 2 - Summary Information -->
+            <xsd:element ref="t106:TaxationYearData"/>
+            <xsd:element ref="t106:FirstTimeFilerIndicator"/>
+            <xsd:element ref="t106:LastReturnFilingPeriodEndDate" minOccurs="0"/>
+            <xsd:element ref="t106:DeclaredSlipCount"/>
+            <xsd:element ref="t106:SlipBoxTotalAmount" />
+            <xsd:element ref="t106:ReportingTaxpayerGrossRevenueAmount"/>
+            <xsd:element ref="t106:NorthAmericanIndustryClassificationSystem"/>
+            <xsd:element ref="t106:AffectedReportedAmountCompetentAuthorityIndicator"/>
+            <xsd:element ref="t106:AdjustedReportedAmountForeignTaxAdministrationAssessmentIndicator"/>
+			<xsd:element ref="t106:ReportingTaxpayerUltimateParentIndicator"/>
+			<xsd:element ref="t106:UltimateParentCountry" minOccurs="0"/>
+			<xsd:element ref="t106:ReportingTaxpayerMNEIndicator"/>
+			<xsd:element ref="t106:MNEName" minOccurs="0"/>
+			<xsd:element ref="t106:MNECbCRRequiredIndicator" minOccurs="0"/>
+			<xsd:element ref="t106:CbCRJurisdiction" minOccurs="0"/>
+			<xsd:element ref="t106:ReportingTaxpayerFileOtherReturnIndicator"/>
+            <xsd:element ref="t106:PrimaryAccount" minOccurs="0"/>
+
+            <!-- Section 3 - Non-monetary or nil consideration -->
+            <xsd:element ref="t106:ReportingTaxpayerNonResidentNonMonetaryConsiderationIndicator"/>
+            <xsd:element ref="t106:ReportingTaxpayerNonResidentNilConsiderationIndicator"/>
+
+            <!-- Section 4 - Certification -->
+            <xsd:element ref="t106:CertificationDetail" minOccurs="0"/>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- t106 Slip Structure -->
+    <xsd:element name="NonArmsLengthWithNonResidentTransactionSlip" type="t106:NonArmsLengthWithNonResidentTransactionSlipType"/>
+    <xsd:complexType name="NonArmsLengthWithNonResidentTransactionSlipType">
+        <xsd:sequence>
+
+            <xsd:element ref="t106:SlipSequenceIdentifier"/>
+            <xsd:element ref="t106:SlipActionCode"/>
+            <xsd:element ref="t106:SlipDeleteReasonCode" minOccurs="0"/>
+
+             <!-- Part I - Reporting person/partnership information -->
+             <!-- Already provided in the Summary -->
+
+            <!-- Part II - Non-resident information -->
+            <xsd:element ref="t106:NonResidentName"/>
+			<xsd:element ref="t106:TaxpayerIdentificationNumber" minOccurs="0"/>
+            <xsd:element ref="t106:NonResidentAddress"/>
+            <xsd:element ref="t106:NonResidentCountryCode"/>
+			<xsd:element ref="t106:NonResidentTypeCode"/>
+			<xsd:element ref="t106:DifferentClassificationIndicator"/>
+            <xsd:element ref="t106:RelationshipTypeCode"/>
+			<xsd:element ref="t106:NorthAmericanIndustryClassificationSystem"/>
+            <xsd:element ref="t106:Country"/>
+            <xsd:element ref="t106:ContemporaneousDocumentationIndicator"/>
+            <xsd:element ref="t106:TransferPricingMethodologyChangeIndicator"/>
+
+            <!-- Part III - Transaction between reporting person/partnership and non-resident-->
+            <xsd:element ref="t106:TangiblePropertyStockInTradeRawMaterial" minOccurs="0"/>
+            <xsd:element ref="t106:TangiblePropertyOther"      minOccurs="0"/>
+            <xsd:element ref="t106:Rent"                       minOccurs="0"/>
+            <xsd:element ref="t106:Royalty"                    minOccurs="0"/>
+            <xsd:element ref="t106:LicenseOrFranchiseFee"      minOccurs="0"/>
+            <xsd:element ref="t106:IntangiblePropertyOrRights" minOccurs="0"/>
+            <xsd:element ref="t106:Management"                 minOccurs="0"/>
+            <xsd:element ref="t106:Engineering"                minOccurs="0"/>
+            <xsd:element ref="t106:ResearchAndDevelopment"     minOccurs="0"/>
+            <xsd:element ref="t106:Commission"                 minOccurs="0"/>
+            <xsd:element ref="t106:Interest"                   minOccurs="0"/>
+            <xsd:element ref="t106:Dividend"                   minOccurs="0"/>
+            <xsd:element ref="t106:SaleOfFinancialProperty"    minOccurs="0"/>
+            <xsd:element ref="t106:LeasePayment"               minOccurs="0"/>
+            <xsd:element ref="t106:SecuritiesLending"          minOccurs="0"/>
+            <xsd:element ref="t106:Insurance"                  minOccurs="0"/>
+            <xsd:element ref="t106:FinancialOther"             minOccurs="0"/>
+            <xsd:element ref="t106:ReimbursementOfExpense"     minOccurs="0"/>
+            <xsd:element ref="t106:OtherTransaction"           minOccurs="0"/>
+            <xsd:element ref="t106:NonArmsLengthNonResidentSaleRevenueTotalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:NonArmsLengthNonResidentPurchaseExpenditureTotalAmount" minOccurs="0"/>
+
+            <!-- Part IV - Loans, advances, investments and similar amounts -->
+            <xsd:element ref="t106:OwedByReportingTaxpayerAmount" minOccurs="0"/>
+            <xsd:element ref="t106:OwedToReportingTaxpayerAmount" minOccurs="0"/>
+            <xsd:element ref="t106:InvestmentInNonResident"       minOccurs="0"/>
+			<xsd:element ref="t106:InvestmentInReportEntity"      minOccurs="0"/>
+            <xsd:element ref="t106:NonArmsLengthNonResidentLoanAdvanceInvestmentIncreaseTotalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:NonArmsLengthNonResidentLoanAdvanceInvestmentDecreaseTotalAmount" minOccurs="0"/>
+			<xsd:element ref="t106:PLOIElectionMade"			  minOccurs="0"/>
+			<xsd:element ref="t106:PLOIInterestAmount"			  minOccurs="0"/>
+			
+
+            <!-- Part V - Derivatives -->
+            <xsd:element ref="t106:InterestRateContract"    minOccurs="0"/>
+            <xsd:element ref="t106:ForeignExchangeContract" minOccurs="0"/>
+            <xsd:element ref="t106:CreditContract"          minOccurs="0"/>
+            <xsd:element ref="t106:EquityContract"          minOccurs="0"/>
+            <xsd:element ref="t106:CommodityContract"       minOccurs="0"/>
+            <xsd:element ref="t106:IndexContract"           minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeFee"           minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeOtherPayment"  minOccurs="0"/>
+            <xsd:element ref="t106:NonArmsLengthNonResidentDerivativeContractTotalCount"     minOccurs="0"/>
+            <xsd:element ref="t106:NonArmsLengthNonResidentDerivativeNotionalTotalAmount"    minOccurs="0"/>
+            <xsd:element ref="t106:NonArmsLengthNonResidentDerivativeRevenueTotalAmount"     minOccurs="0"/>
+            <xsd:element ref="t106:NonArmsLengthNonResidentDerivativeExpenditureTotalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:BoxTotalAmount"          minOccurs="0"/>
+
+            <!-- Part VI - Current accounts -->
+            <xsd:element ref="t106:AccountPayableAmount"    minOccurs="0"/>
+            <xsd:element ref="t106:AccountReceivableAmount" minOccurs="0"/>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Top of Form Identification -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="SummaryActionCode" type="t106:ActionCodeType"/>
+
+    <xsd:element name="FunctionalCurrencyCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Acceptable currency codes include the following: USD-U.S. dollar; AUD-Australian dollar; GBP-U.K. dollar; EUR-the Euro; JPY-Japanese Yen; OR leave blank.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Codes des monnaies acceptables sont les suivants: USD-dollar américain; AUD-dollar australien; GBP-pour la livre sterling du Royaume-Uni; EUR-pour l'euro; JPY-Yen japonais OU laisser en blanc</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:length value="3"/>
+                <xsd:enumeration value="USD"/>
+                <xsd:enumeration value="usd"/>
+                <xsd:enumeration value="AUD"/>
+                <xsd:enumeration value="aud"/>
+                <xsd:enumeration value="GBP"/>
+                <xsd:enumeration value="gbp"/>
+                <xsd:enumeration value="EUR"/>
+                <xsd:enumeration value="eur"/>
+				<xsd:enumeration value="JPY"/>
+                <xsd:enumeration value="jpy"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="AmendedReturnIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Indication that the t106 is for an amended form - Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Indication que le t160 est une déclaration modifiée - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Section 1 - Reporting person/partnership identification -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+     <xsd:element name="ReportingTaxpayerIdentification" type="t106:ReportingTaxpayerIdentificationType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">A T106 form can be transmitted for Individual, Corporation, Trust, or Partnership taxpayers.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Un formulaire T106 peut être transmis pour Particulier, Société, Fiducie, ou Société de personnes.</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:complexType name="ReportingTaxpayerIdentificationType">
+        <xsd:choice>
+            <xsd:element name="Corporation" type="t106:CorporationType"/>
+            <xsd:element name="Individual"  type="t106:IndividualType"/>
+            <xsd:element name="Trust"       type="t106:TrustType"/>
+            <xsd:element name="Partnership" type="t106:PartnershipType"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <!-- CORPORATION -->
+    <xsd:complexType name="CorporationType">
+        <xsd:sequence>
+            <xsd:element ref="t106:CorporationName" minOccurs="0"/>
+            <xsd:element ref="t106:BusinessNumber"  minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="CorporationName" type="t106:NameDescription"/>
+
+    <!-- INDIVIDUAL -->
+    <xsd:complexType name="IndividualType">
+        <xsd:sequence>
+            <xsd:element ref="t106:TaxpayerName"                 minOccurs="0"/>
+            <xsd:element ref="ccms:SocialInsuranceNumber"        minOccurs="0"/>
+            <xsd:element ref="t106:IndividualSelfEmploymentCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="IndividualSelfEmploymentCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Valid Codes are 1 or 2. 1=self-employed or spouse of a self-employed individual. 2=not self-employed</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Les codes valides sont 1 ou 2. 1=revenu d’un travail indépendant ou conjoint d’un particulier ayant un revenu de travail indépendant. 2= pas revenu d’un travail indépendant</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:enumeration value="1"/>
+                <xsd:enumeration value="2"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!-- TRUST -->
+    <xsd:complexType name="TrustType">
+        <xsd:sequence>
+            <xsd:element ref="t106:TrustName"   minOccurs="0"/>
+            <xsd:element ref="ccms:TrustNumber" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="TrustName" type="t106:NameDescription"/>
+
+    <!-- PARTNERSHIP -->
+    <xsd:complexType name="PartnershipType">
+        <xsd:sequence>
+            <xsd:element ref="t106:PartnershipName"   minOccurs="0"/>
+            <xsd:element ref="t106:PartnershipNumber" minOccurs="0"/>
+            <xsd:element ref="t106:PartnershipCode"   minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="PartnershipName" type="t106:NameDescription"/>
+
+    <xsd:element name="PartnershipCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Valid codes are 1, 2 or 3.  1=Individuals or Trusts. 2=Corporations. 3=Combination of Individuals, Trusts or Corporations</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Les codes valides sont 1, 2 ou 3. 1=Particuliers ou Fiducies. 2=Sociétés. 3=Combinaison de Particuliers, Fiducies ou Sociétés</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:enumeration value="1"/>
+                <xsd:enumeration value="2"/>
+                <xsd:enumeration value="3"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!-- TAXPAYER ADDRESS -->
+    <xsd:element name="ReportingTaxpayerAddress" type="t106:ReportingTaxpayerAddressType"/>
+    <xsd:complexType name="ReportingTaxpayerAddressType">
+        <xsd:sequence>
+            <xsd:element ref="t106:AddressStreetText"/>
+            <xsd:element ref="t106:AddressMunicipalityName"/>
+            <xsd:element ref="t106:GlobalProvinceTerritoryStateCode"/>
+            <xsd:element ref="t106:GlobalPostalZipCode"/>
+            <xsd:element ref="t106:CountryCode"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Section 2 - Summary Information -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- Taxation Year Start End Dates      -->
+    <xsd:element name="TaxationYearData" type="t106:TaxationYearDataType"/>
+    <xsd:complexType name="TaxationYearDataType">
+        <xsd:sequence>
+            <xsd:element ref="t106:TaxationYearStartDate"/>
+            <xsd:element ref="t106:TaxationYearEndDate"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="TaxationYearStartDate" type="sdt:DateType"/>
+    <xsd:element name="TaxationYearEndDate"   type="sdt:DateType"/>
+
+
+
+    <xsd:element name="FirstTimeFilerIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="LastReturnFilingPeriodEndDate" type="sdt:DateType"/>
+
+    <xsd:element name="DeclaredSlipCount">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Number of slips associated with this form. Optional if there are no slips. </xsd:documentation>
+            <xsd:documentation xml:lang="fr">?????? </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CountType">
+                <xsd:totalDigits value="4"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="SlipBoxTotalAmount" type="t106:ThousandTrillionAmountType"/>
+
+    <xsd:element name="ReportingTaxpayerGrossRevenueAmount" type="t106:PositiveThousandTrillionAmountType"/>
+
+    <xsd:element name="AffectedReportedAmountCompetentAuthorityIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="AdjustedReportedAmountForeignTaxAdministrationAssessmentIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="ReportingTaxpayerUltimateParentIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+	
+	<xsd:element name="UltimateParentCountry" type="ccms:CountryCodeType"/>
+    	
+	<xsd:element name="ReportingTaxpayerMNEIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+	
+	<xsd:element name="MNEName" type="t106:NameDescription"/>
+	
+	<xsd:element name="MNECbCRRequiredIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+	
+	<xsd:element name="CbCRJurisdiction" type="t106:CbCRCountryCodeType"/>
+	
+	<xsd:element name="ReportingTaxpayerFileOtherReturnIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="PrimaryAccount" type="t106:PrimaryAccountType"/>
+    <xsd:complexType name="PrimaryAccountType">
+        <xsd:sequence>
+            <xsd:element ref="t106:PrimaryNRAccountNumber" minOccurs="0" maxOccurs="3"/>
+			<xsd:element ref="t106:PrimaryRPAccountNumber" minOccurs="0" maxOccurs="3"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="PrimaryNRAccountNumber" type="t106:PrimaryNRAccountCode"/>
+	<xsd:element name="PrimaryRPAccountNumber" type="t106:PrimaryRPAccountCode"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Section 3 - Non-monetary or nil consideration -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="ReportingTaxpayerNonResidentNonMonetaryConsiderationIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="ReportingTaxpayerNonResidentNilConsiderationIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Section 4 - Certificaiton Section  -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="CertificationDetail" type="t106:CertificationDetailType"/>
+    <xsd:complexType name="CertificationDetailType">
+        <xsd:sequence>
+            <xsd:element ref="t106:ContactPersonFirstName"   minOccurs="0"/>
+            <xsd:element ref="t106:ContactPersonLastName"    minOccurs="0"/>
+            <xsd:element ref="t106:ContactPersonPhoneNumber" minOccurs="0"/>
+            <xsd:element ref="t106:CertifierName"/>
+            <xsd:element ref="t106:CertificationDate"/>
+            <xsd:element ref="t106:CertifierPositionTitle"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ContactPersonFirstName"   type="ccms:Name60CharacterType"/>
+    <xsd:element name="ContactPersonLastName"    type="ccms:Name60CharacterType"/>
+    <xsd:element name="ContactPersonPhoneNumber" type="t106:PhoneNumberType"/>
+    <xsd:element name="CertifierName"            type="ccms:Name150CharacterType"/>
+    <xsd:element name="CertificationDate"        type="sdt:DateType"/>
+    <xsd:element name="CertifierPositionTitle"   type="ccms:Name60CharacterType"/>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- t106 slip -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="SlipSequenceIdentifier" type="t106:SlipSequenceIdentifierType"/>
+    <xsd:element name="SlipActionCode"         type="t106:ActionCodeType"/>
+    <xsd:element name="SlipDeleteReasonCode"   type="t106:SlipDeleteReasonCodeType"/>
+
+    <!-- Part II - Non-resident information -->
+
+    <xsd:element name="NonResidentName"    type="t106:NameDescription"/>
+	<xsd:element name="TaxpayerIdentificationNumber"	type="ccms:Name50CharacterType"/>
+    <xsd:element name="NonResidentAddress" type="t106:NameDescription"/>
+
+    <xsd:element name="NonResidentCountryCode" type="ccms:CountryCodeType"/>
+	
+	<xsd:element name="NonResidentTypeCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">1-Non-resident is a Corporation; 2-Non-resident is a Partnership; 3-Non-resident is a Trust; 4-Non-resident is an Individual; 5-Others.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">1-Le non-résident est une personne morale; 2-Le non-résident est une société de personnes; 3-Le non-résident est une fiducie; 4-Le non-résident est un particulier; 5-Autres.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:enumeration value="1"/>
+                <xsd:enumeration value="2"/>
+                <xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+				<xsd:enumeration value="5"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+   <xsd:element name="DifferentClassificationIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="RelationshipTypeCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Acceptable relationship type codes include the following: 1 - NR is a controlled foreign affiliate (CFA) of the reporting person/partnership, 2 - NR  is a foreign affiliate of the reporting person/partnership other than a CFA, 3 - NR controls the reporting person/partnership, 4 - Other.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Les valeurs valides sont : 1 - NR est une société étrangère affiliée contrôlée (SEAC) du déclarant ou de la société de personnes, 2 - NR est une société étrangère affiliée du déclarant ou de la société de personnes autre qu'une SEAC, 3 - NR contrôle le déclarant ou la société de personnes, 4 - Autres.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:enumeration value="1"/>
+                <xsd:enumeration value="2"/>
+                <xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+	
+	<xsd:element name="Country" type="t106:CountryType"/>
+    <xsd:complexType name="CountryType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Top four countries based on the maximum cost amount of specified foreign property held during the year.</xsd:documentation>
+            <xsd:documentation xml:lang="fr"></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="t106:CountryCode" maxOccurs="4"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+     <xsd:element name="ContemporaneousDocumentationIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="TransferPricingMethodologyChangeIndicator">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!-- Part III - Transacations between reporting person/partnership and non-resident-->
+
+    <xsd:element name="TangiblePropertyStockInTradeRawMaterial" type="t106:TangiblePropertyStockInTradeRawMaterialType"/>
+    <xsd:complexType name="TangiblePropertyStockInTradeRawMaterialType">
+        <xsd:sequence>
+            <xsd:element ref="t106:SoldToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:SoldToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:PurchaseFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:PurchaseFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="TangiblePropertyOther" type="t106:TangiblePropertyOtherType"/>
+    <xsd:complexType name="TangiblePropertyOtherType">
+        <xsd:sequence>
+            <xsd:element ref="t106:OtherTangiblePropertyDescription" minOccurs="0"/>
+            <xsd:element ref="t106:SoldToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:SoldToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:PurchaseFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:PurchaseFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Rent" type="t106:RentType"/>
+    <xsd:complexType name="RentType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Royalty" type="t106:RoyaltyType"/>
+    <xsd:complexType name="RoyaltyType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="LicenseOrFranchiseFee" type="t106:LicenseOrFranchiseFeeType"/>
+    <xsd:complexType name="LicenseOrFranchiseFeeType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="IntangiblePropertyOrRights" type="t106:IntangiblePropertyOrRightsType"/>
+    <xsd:complexType name="IntangiblePropertyOrRightsType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Management" type="t106:ManagementType"/>
+    <xsd:complexType name="ManagementType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Engineering" type="t106:EngineeringType"/>
+    <xsd:complexType name="EngineeringType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ResearchAndDevelopment" type="t106:ResearchAndDevelopmentType"/>
+    <xsd:complexType name="ResearchAndDevelopmentType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Commission" type="t106:CommissionType"/>
+    <xsd:complexType name="CommissionType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Interest" type="t106:InterestType"/>
+    <xsd:complexType name="InterestType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Dividend" type="t106:DividendType"/>
+    <xsd:complexType name="DividendType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="SaleOfFinancialProperty" type="t106:SaleOfFinancialPropertyType"/>
+    <xsd:complexType name="SaleOfFinancialPropertyType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="LeasePayment" type="t106:LeasePaymentType"/>
+    <xsd:complexType name="LeasePaymentType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="SecuritiesLending" type="t106:SecuritiesLendingType"/>
+    <xsd:complexType name="SecuritiesLendingType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Insurance" type="t106:InsuranceType"/>
+    <xsd:complexType name="InsuranceType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="FinancialOther" type="t106:FinancialOtherType"/>
+    <xsd:complexType name="FinancialOtherType">
+        <xsd:sequence>
+            <xsd:element ref="t106:FinancialOtherDescription" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ReimbursementOfExpense" type="t106:ReimbursementOfExpenseType"/>
+    <xsd:complexType name="ReimbursementOfExpenseType">
+        <xsd:sequence>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="OtherTransaction" type="t106:OtherTransactionType"/>
+    <xsd:complexType name="OtherTransactionType">
+        <xsd:sequence>
+            <xsd:element ref="t106:OtherTransactionDescription" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:RevenueFromNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:ExpenditureToNonResidentTransferPricingMethodologyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="NonArmsLengthNonResidentSaleRevenueTotalAmount" type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="NonArmsLengthNonResidentPurchaseExpenditureTotalAmount" type="t106:PositiveThousandTrillionAmountType"/>
+
+
+    <!-- Part IV - Indebtedness, investments and similar amounts -->
+
+    <xsd:element name="OwedByReportingTaxpayerAmount" type="t106:OwedByReportingTaxpayerAmountType"/>
+    <xsd:complexType name="OwedByReportingTaxpayerAmountType">
+        <xsd:sequence>
+            <xsd:element ref="t106:BeginningBalanceAmount" minOccurs="0"/>
+            <xsd:element ref="t106:IncreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DecreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:EndingBalanceAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="OwedToReportingTaxpayerAmount" type="t106:OwedToReportingTaxpayerAmountType"/>
+    <xsd:complexType name="OwedToReportingTaxpayerAmountType">
+        <xsd:sequence>
+            <xsd:element ref="t106:BeginningBalanceAmount" minOccurs="0"/>
+            <xsd:element ref="t106:IncreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DecreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:EndingBalanceAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="InvestmentInNonResident" type="t106:InvestmentInNonResidentType"/>
+    <xsd:complexType name="InvestmentInNonResidentType">
+        <xsd:sequence>
+            <xsd:element ref="t106:BeginningBalanceAmount" minOccurs="0"/>
+            <xsd:element ref="t106:IncreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DecreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:EndingBalanceAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+	
+	<xsd:element name="InvestmentInReportEntity" type="t106:InvestmentInReportEntitType"/>
+    <xsd:complexType name="InvestmentInReportEntitType">
+        <xsd:sequence>
+            <xsd:element ref="t106:BeginningBalanceAmount" minOccurs="0"/>
+            <xsd:element ref="t106:IncreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DecreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:EndingBalanceAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="NonArmsLengthNonResidentLoanAdvanceInvestmentIncreaseTotalAmount" type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="NonArmsLengthNonResidentLoanAdvanceInvestmentDecreaseTotalAmount" type="t106:PositiveThousandTrillionAmountType"/>
+	
+	<xsd:element name="PLOIElectionMade">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:IndicatorType"/>
+        </xsd:simpleType>
+    </xsd:element>
+	
+	<xsd:element name="PLOIInterestAmount"  type="t106:PositiveThousandTrillionAmountType"/>
+
+
+    <!-- Part V - Derivatives -->
+
+    <xsd:element name="InterestRateContract" type="t106:InterestRateContractType"/>
+    <xsd:complexType name="InterestRateContractType">
+        <xsd:sequence>
+            <xsd:element ref="t106:ContractCount" minOccurs="0"/>
+            <xsd:element ref="t106:NotionalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeRevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ForeignExchangeContract" type="t106:ForeignExchangeContractType"/>
+    <xsd:complexType name="ForeignExchangeContractType">
+        <xsd:sequence>
+            <xsd:element ref="t106:ContractCount" minOccurs="0"/>
+            <xsd:element ref="t106:NotionalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeRevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="CreditContract" type="t106:CreditContractType"/>
+    <xsd:complexType name="CreditContractType">
+        <xsd:sequence>
+            <xsd:element ref="t106:ContractCount" minOccurs="0"/>
+            <xsd:element ref="t106:NotionalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeRevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="EquityContract" type="t106:EquityContractType"/>
+    <xsd:complexType name="EquityContractType">
+        <xsd:sequence>
+            <xsd:element ref="t106:ContractCount" minOccurs="0"/>
+            <xsd:element ref="t106:NotionalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeRevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="CommodityContract" type="t106:CommodityContractType"/>
+    <xsd:complexType name="CommodityContractType">
+        <xsd:sequence>
+            <xsd:element ref="t106:ContractCount" minOccurs="0"/>
+            <xsd:element ref="t106:NotionalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeRevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="IndexContract" type="t106:IndexContractType"/>
+    <xsd:complexType name="IndexContractType">
+        <xsd:sequence>
+            <xsd:element ref="t106:ContractCount" minOccurs="0"/>
+            <xsd:element ref="t106:NotionalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeRevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="DerivativeFee" type="t106:DerivativeFeeType"/>
+    <xsd:complexType name="DerivativeFeeType">
+        <xsd:sequence>
+            <xsd:element ref="t106:ContractCount" minOccurs="0"/>
+            <xsd:element ref="t106:NotionalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeRevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="DerivativeOtherPayment" type="t106:DerivativeOtherPaymentType"/>
+    <xsd:complexType name="DerivativeOtherPaymentType">
+        <xsd:sequence>
+            <xsd:element ref="t106:DerivativeOtherPaymentDescription" minOccurs="0"/>
+			<xsd:element ref="t106:ContractCount" minOccurs="0"/>
+            <xsd:element ref="t106:NotionalAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeRevenueFromNonResidentAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DerivativeExpenditureToNonResidentAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="NonArmsLengthNonResidentDerivativeContractTotalCount">
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CountType">
+                <xsd:totalDigits value="9"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="NonArmsLengthNonResidentDerivativeNotionalTotalAmount"    type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="NonArmsLengthNonResidentDerivativeRevenueTotalAmount"     type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="NonArmsLengthNonResidentDerivativeExpenditureTotalAmount" type="t106:PositiveThousandTrillionAmountType"/>
+
+    <xsd:element name="BoxTotalAmount" type="t106:PositiveThousandTrillionAmountType"/>
+
+    <!-- Part VI - Current accounts -->
+
+    <xsd:element name="AccountPayableAmount" type="t106:AccountPayableAmountType"/>
+    <xsd:complexType name="AccountPayableAmountType">
+        <xsd:sequence>
+            <xsd:element ref="t106:BeginningBalanceAmount" minOccurs="0"/>
+            <xsd:element ref="t106:IncreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DecreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:EndingBalanceAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="AccountReceivableAmount" type="t106:AccountReceivableAmountType"/>
+    <xsd:complexType name="AccountReceivableAmountType">
+        <xsd:sequence>
+            <xsd:element ref="t106:BeginningBalanceAmount" minOccurs="0"/>
+            <xsd:element ref="t106:IncreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:DecreaseAmount" minOccurs="0"/>
+            <xsd:element ref="t106:EndingBalanceAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <!-- COMMON TYPES USED IN THIS SCHEMA FILE -->
+
+    <xsd:simpleType name="CbCRCountryCodeType">
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:length value="3"/>
+            <xsd:pattern value="[A-Za-z0-9]{3}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+	
+	<xsd:simpleType name="PrimaryNRAccountCode">
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:length value="9"/>
+            <xsd:pattern value="(NR[A-Za-z][0-9]{6})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+	
+	<xsd:simpleType name="PrimaryRPAccountCode">
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:length value="15"/>
+            <xsd:pattern value="([0-9]{9}RP[0-9]{4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="SlipSequenceIdentifierType">
+        <xsd:restriction base="sdt:IDType">
+            <xsd:pattern value="[1-9]([0-9])*"/>
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="4"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="ActionCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Valid Codes are: 1=new; 2=unmodified; 3=amended; 4=delete</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Les codes valides sont: 1=nouveau; 2=non modifié; 3=modifié; 4=détruit  </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:enumeration value="1"/>
+            <xsd:enumeration value="2"/>
+            <xsd:enumeration value="3"/>
+            <xsd:enumeration value="4"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="SlipDeleteReasonCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Valid Codes are: 1=duplicate; 2=filed in error; 3=other</xsd:documentation>
+            <xsd:documentation xml:lang="fr">  </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:enumeration value="1"/>
+            <xsd:enumeration value="2"/>
+            <xsd:enumeration value="3"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="NorthAmericanIndustryClassificationSystem" type="t106:NorthAmericanIndustryClassificationSystemType"/>
+    <xsd:complexType name="NorthAmericanIndustryClassificationSystemType">
+        <xsd:sequence>
+            <xsd:element ref="t106:NorthAmericanIndustryClassificationSystemCode" maxOccurs="4"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="NorthAmericanIndustryClassificationSystemCode" type="t106:NorthAmericanIndustryClassificationSystemCodeType"/>
+    <xsd:simpleType name="NorthAmericanIndustryClassificationSystemCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Must be valid North American Industry Classification System (NAICS) Code from list provided</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Doit être un code valide du Système de Classification des Industries de l'Amérique du Nord (SCIAN) de la liste fournie.</xsd:documentation>
+        </xsd:annotation>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:maxLength value="6"/>
+                <xsd:pattern value="[0-9][0-9]([0-9])*"/>
+            </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <xsd:element name="GlobalProvinceTerritoryStateCode">
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:minLength value="1"/>
+                <xsd:maxLength value="100"/>
+                <xsd:pattern value="([A-Za-z])*"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="CountryCode" type="ccms:CountryCodeType"/>
+
+    <xsd:element name="GlobalAddress" type="t106:NameDescription"/>
+	
+	<xsd:element name="DerivativeOtherPaymentDescription" type="t106:NameDescription"/> 
+
+    <xsd:element name="GlobalPostalZipCode">
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:minLength value="1"/>
+                <xsd:maxLength value="20"/>
+                <xsd:pattern value="([A-Za-z0-9\-])*"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:complexType name="NameDescription">
+        <xsd:simpleContent>
+            <xsd:restriction base="sdt:NameType">
+                <xsd:maxLength value="255"/>
+                <xsd:whiteSpace value="collapse"/>
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:element name="SoldToNonResidentAmount"       type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="PurchaseFromNonResidentAmount" type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="BeginningBalanceAmount"        type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="IncreaseAmount"                type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="DecreaseAmount"                type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="EndingBalanceAmount"           type="t106:PositiveThousandTrillionAmountType"/>
+
+    <xsd:element name="ContractCount">
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CountType">
+                <xsd:totalDigits value="9"/>
+				<xsd:minInclusive value="0"/>
+				<xsd:maxInclusive value="999999999"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="NotionalAmount"                 type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="RevenueFromNonResidentAmount"   type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="ExpenditureToNonResidentAmount" type="t106:PositiveThousandTrillionAmountType"/>
+	<xsd:element name="DerivativeRevenueFromNonResidentAmount"   type="t106:PositiveThousandTrillionAmountType"/>
+    <xsd:element name="DerivativeExpenditureToNonResidentAmount" type="t106:PositiveThousandTrillionAmountType"/>
+
+    <xsd:simpleType name="ThousandTrillionAmountType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">The field is used to capture the dollar amount (no decimals).  The dollar value cannot exceed +/- $99,999,999,999,999. </xsd:documentation>
+            <xsd:documentation xml:lang="fr">Le champ est utilisé pour capturer le montant en dollar (pas de décimales). La valeur en dollar ne peut pas dépasser +/- 99.999.999.999.999 $.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:AmountDollarsOnlyType">
+            <xsd:totalDigits value="15"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+	
+	<xsd:simpleType name="PositiveThousandTrillionAmountType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">The field is used to capture the dollar amount (no decimals).  The dollar value cannot exceed +/- $999,999,999,999,999. </xsd:documentation>
+            <xsd:documentation xml:lang="fr">Le champ est utilisé pour capturer le montant en dollar (pas de décimales). La valeur en dollar ne peut pas dépasser +/- 999.999.999.999.999 $.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:AmountDollarsOnlyType">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="999999999999999"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="OtherTangiblePropertyDescription" type="t106:NameDescription"/>
+    <xsd:element name="FinancialOtherDescription"        type="t106:NameDescription"/>
+    <xsd:element name="OtherTransactionDescription"      type="t106:NameDescription"/>
+
+    <xsd:element name="SoldToNonResidentTransferPricingMethodologyCode"        type="t106:TransferPricingMethodologyCodeType"/>
+    <xsd:element name="PurchaseFromNonResidentTransferPricingMethodologyCode"  type="t106:TransferPricingMethodologyCodeType"/>
+    <xsd:element name="RevenueFromNonResidentTransferPricingMethodologyCode"   type="t106:TransferPricingMethodologyCodeType"/>
+    <xsd:element name="ExpenditureToNonResidentTransferPricingMethodologyCode" type="t106:TransferPricingMethodologyCodeType"/>
+
+    <xsd:simpleType name="TransferPricingMethodologyCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Transfer pricing methodology codes:
+                01 - Comparable Uncontrolled Prince
+                02 - Cost-Plus
+                03 - Resale
+                04 - Profile Split
+                05 - Transactional Net Margin
+                06 - Qualifying Cost Contribution Arrangement
+				07 - Advanced Pricing Arrangement
+                08 - Other
+            </xsd:documentation>
+            <xsd:documentation xml:lang="fr">Les valeurs valides sont les suivantes :
+                01 – Méthode du prix comparable sur le marché libre
+                02 – Méthode du prix de revient majoré
+                03 – Méthode du prix de revente
+                04 – Méthode du partage des bénéfices
+                05 – Méthode transactionnelle de la marge nette
+                06 – Arrangement admissible de participation au coût
+				07 – Arrangement tarifaire avancé
+                08 – Autre
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:CodeType">
+                <xsd:length value="2"/>
+                <xsd:enumeration value="01"/>
+                <xsd:enumeration value="02"/>
+                <xsd:enumeration value="03"/>
+                <xsd:enumeration value="04"/>
+                <xsd:enumeration value="05"/>
+                <xsd:enumeration value="06"/>
+                <xsd:enumeration value="07"/>
+				<xsd:enumeration value="08"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="PhoneNumberType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">To capture any North American or International phone number with (possible) extension.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Pour capturer tout numéro de téléphone nord-américain ou international avec (possible) l'extension.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+            <xsd:pattern value="([0-9xX\(\)\-\.])*"/>
+            <xsd:maxLength value="20"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="BusinessNumber" type="t106:BNRCType"/>
+    <xsd:simpleType name="BNRCType">
+        <xsd:restriction base="sdt:NumberType">
+            <xsd:pattern value="([0-9]{9}RC[0-9]{4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="PartnershipNumber" type="t106:BNRZType"/>
+    <xsd:simpleType name="BNRZType">
+        <xsd:restriction base="sdt:NumberType">
+            <xsd:pattern value="([0-9]{9}RZ[0-9]{4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+	
+	<xsd:element name="TaxpayerName" type="t106:CompleteIndividualNameType"/>
+    <xsd:complexType name="CompleteIndividualNameType">
+        <xsd:sequence>
+            <xsd:element ref="t106:GivenName"/>
+            <xsd:element ref="t106:FamilyName"/>
+        </xsd:sequence>
+    </xsd:complexType>
+	
+	<xsd:element name="GivenName" type="ccms:Name60CharacterType"/>
+	<xsd:element name="FamilyName" type="ccms:Name60CharacterType"/>
+	
+	<xsd:element name="AddressStreetText">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Valid characters include Alpha/numeric, space*, hyphen, apostrophe, slash, ampersand, diacritic, pound symbol (#), brackets ( ) and period*.  A period or space is a valid character at any position except at the first position. The bracket can be in the last position.  It must not contain "A/S: ", "C/O: ", "A/S ", "C/O ", "A/S:", "C/O:", "A/S", "C/O".  The following characters are not allowed in the first or last position:  hyphen, apostrophe, slash, ampersand, brackets, pound symbol.</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> Les caractères valides comprennent Alphabétique/numérique, espace *, trait d'union, apostrophe, barre oblique, esperluette, signe accentué, symbole dièse (#), parenthèses () et le point *. Un point ou espace est un caractère valide à n'importe quelle position sauf au niveau de la première position. La parenthèse peut être à la dernière position. Il ne doit pas contenir «A / S: », «C / O: », «A / S », «C / O », «A / S:», «C / O:», «A / S», «C / O». Les caractères suivants ne sont pas autorisés dans la première ou dernière position: trait d'union, apostrophe, barre oblique, esperluette, parenthèses, symbole dièse.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:restriction base="sdt:TextType">
+                    <xsd:maxLength value="60"/>
+                </xsd:restriction>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+	
+	<xsd:element name="AddressMunicipalityName">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:restriction base="sdt:NameType">
+                    <xsd:maxLength value="50"/>
+                </xsd:restriction>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

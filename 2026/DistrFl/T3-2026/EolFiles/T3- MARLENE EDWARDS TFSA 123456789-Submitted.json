@@ -1,0 +1,222 @@
+{
+  "header":  
+  {
+    "trustNumber":"A00000306",
+    "softwareId":"064",
+    "softwareRevisionDate":"2025-02-01",
+    "firstTimeFilerIndicator":false,
+    "additionalTaxReturnIndicator":false,
+    "testCaseIdentifier":    1057,
+    "originatingIp":"0.0.0.0",
+    "taxProfessionalData":    
+    {
+      "transmitterEFilerNumber":"B0865",
+      "passwordId":"767AJ5X",
+      "taxPreparerEfilerNumber":"B0865",
+      "taxPreparerEfilerPassword":"767AJ5X",
+      "taxPreparerReturnControlNumber":"21052344",
+      "taxPreparerAuthorizationIndicator":true,
+      "taxPreparerAuthorizationExpiryDate":"2025-09-18",
+      "taxPreparerPreAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "taxPreparerPostAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "representativeId":"JL3R2RC",
+      "t183ElectronicSignature":      
+      {
+        "t183ElectronicSignatureIndicator":true,
+        "t183ElectronicSignatureDate":"2025-09-18",
+        "t183ElectronicSignatureTime":"12:54:30"      
+      }    
+    }  
+  },
+  "trustIdentification":  
+  {
+    "trustIdentifier":    
+    {
+      "countryOfResidence":"CAN",
+      "provinceOfResidence":"ON",
+      "trustName":"MARLENE EDWARDS TFSA 123456789",
+      "trustAccountNumber":"A00000306"    
+    },
+    "primaryTrusteeContactInformation":    
+    {
+      "trusteeNameChangeIndicator":false,
+      "isNonIndividualIndicator":true,
+      "nonIndividualTrusteeContactInformation":      
+      {
+        "nonIndividualName":"ROYAL TRUST",
+        "contactPerson":        
+        {
+          "firstName":"MICHELLE",
+          "lastName":"WATTS"        
+        },
+        "address":        
+        {
+          "addressLineOne":"4102 SPRUCE AVENUE",
+          "city":"BURLINGTON",
+          "provinceTerritoryState":"ON",
+          "globalPostalZipCode":"L7L1K5",
+          "country":"CAN"        
+        }      
+      }    
+    },
+    "trustResidencyInformation":    
+    {
+      "trustDeemedCanadianResidentIndicator":false,
+      "languageOfCorrespondence":"ENGLISH"    
+    }  
+  },
+  "trustTypeInformation":  
+  {
+    "trustType":"TYPE_318",
+    "trustCreationDate":"2009-04-30"  
+  },
+  "filingInformation":  
+  {
+    "trustFiscalPeriodStart":"2025-01-01",
+    "trustFiscalPeriodEnd":"2025-12-31",
+    "firstYearFilingIndicator":false,
+    "previousFilingYear":    2024,
+    "trustFinalReturnIndicator":false  
+  },
+  "foreignPropertyInExcessOf100000":false,
+  "otherInformation":  
+  {
+    "electingTrustIndicator":false,
+    "trustIncomePaymentToBeneficiariesRequired":false,
+    "trustDistributedNonCashAssetsToBeneficiary":false,
+    "trustBeneficiariesChanged":false,
+    "trustDeemedDispositionBeneficiaryDeathIndicator":false,
+    "trustNonArmsLengthDebtTransactionIndicator":false,
+    "trustCapitalIncomeInterestOwnershipChangeIndicator":false,
+    "trustHoldsSharesInPrivateCorporation":false,
+    "trustAdditionalContributionPropertyReceiptIndicator":false,
+    "publicTrust":false,
+    "trustUsedInternationalFinancialReportingStandards":true,
+    "trustLossRestrictionEventIndicator":false,
+    "assetsHeldListedUnderParagraph150NotExceeding50kIndicator":false,
+    "trustRequiredToHoldFundsUnderRelevantRulesIndicator":false,
+    "interestOrFinancingExpensesIndicator":false,
+    "unitTrustUnderSubSection108Indicator":false,
+    "trustWhichAllUnitsListedOnStockExchangeIndicator":false,
+    "trustMeetConditionsInParagraph150Indicator":false,
+    "propertyForSpecifiedPurposeIndicator":false,
+    "indigenousGroupsIndicator":false  
+  },
+  "memoIndicators":  
+  {
+    "alterEgoIndicator":false,
+    "preferredBeneficiaryIndicator":false,
+    "mutualFundReorganizatonIndicator":false,
+    "mutualFundExtensionApprovalIndicator":false,
+    "insuranceSegregatedFundReorganizationIndicator":false,
+    "insuranceSegregatedFundExtensionApprovalIndicator":false,
+    "mutualFundElectingDec15FPEIndicator":false  
+  },
+  "returnLines":  
+  [
+    {
+      "fieldCode":"01",
+      "fieldValue":      2    
+    },
+    {
+      "fieldCode":"03",
+      "fieldValue":      5    
+    },
+    {
+      "fieldCode":"04",
+      "fieldValue":      3    
+    },
+    {
+      "fieldCode":"05",
+      "fieldValue":      9    
+    },
+    {
+      "fieldCode":"20",
+      "fieldValue":      19    
+    },
+    {
+      "fieldCode":"49",
+      "fieldValue":      2    
+    },
+    {
+      "fieldCode":"50",
+      "fieldValue":      21    
+    },
+    {
+      "fieldCode":"56",
+      "fieldValue":      21    
+    },
+    {
+      "fieldCode":"81",
+      "fieldValue":5.89    
+    },
+    {
+      "fieldCode":"82",
+      "fieldValue":3.6    
+    },
+    {
+      "fieldCode":"84",
+      "fieldValue":9.49    
+    },
+    {
+      "fieldCode":"94",
+      "fieldValue":9.49    
+    },
+    {
+      "fieldCode":"1100",
+      "fieldValue":      4    
+    },
+    {
+      "fieldCode":"1220",
+      "fieldValue":      2    
+    },
+    {
+      "fieldCode":"8120",
+      "fieldValue":      5    
+    },
+    {
+      "fieldCode":"11080",
+      "fieldValue":6.93    
+    },
+    {
+      "fieldCode":"11108",
+      "fieldValue":1.04    
+    },
+    {
+      "fieldCode":"12270",
+      "fieldValue":      21    
+    },
+    {
+      "fieldCode":"13401",
+      "fieldValue":4.29    
+    },
+    {
+      "fieldCode":"13418",
+      "fieldValue":0.69    
+    }  
+  ],
+  "benoSubmission":  
+  {
+    "firstTrustDeclaration":false,
+    "trustChanged":true,
+    "finalTransmissionIndicator":true,
+    "benoReportableEntities":    
+    [
+      {
+        "reportableEntityAction":"ADD_REPORTABLE_ENTITY",
+        "reportableEntityType":"TRUSTEE",
+        "entityClassification":"CORPORATION",
+        "notNaturalPersonEntityName":"ROYAL TRUST",
+        "benoAddress":        
+        {
+          "addressLineOne":"4102 SPRUCE AVENUE",
+          "city":"BURLINGTON",
+          "provinceTerritoryState":"ON",
+          "globalPostalZipCode":"L7L1K5",
+          "country":"CAN"        
+        },
+        "entityAssociationEndAction":false      
+      }    
+    ]  
+  }
+}

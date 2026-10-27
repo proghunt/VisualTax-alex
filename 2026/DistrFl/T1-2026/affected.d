@@ -1,0 +1,42 @@
+SNRESA    SNRESB    INFO
+S2        INFO
+AJCTC     T2038     T2038
+CFR       T657      T657      T657      T1
+CFR       T657      T657      T657      T1        DEATH
+TOOLEXP   T777      T777      OTHINC    OTHDED    T1
+AUTOEXP   T777      T777      OTHINC    OTHDED    T1
+DEPEND    S5        TRANSF    S5PRV     PTRANSF   S1        CTB       
+MEDSUPL   MEDICAL   S5        S5PRV
+TRANSF    PTRANF
+T776      T776      T776
+T3        S3        T657      T657      T657      FORINC    OTHDED    T2209#1
+T3        T2036     S1
+T5008#1   S3
+T5008#2   S3
+ABIL      T1        S3
+T5008     T657      T657      T657      FORINC    OTHDED    T2209#1   T2036
+T5MULT    S3        S4
+T5MULT    T657      T657      T657      FORINC    OTHDED    FORINC    T2209#1   T2036     EFMEMO
+T5013     S3        T657      T657      T657      FORINC    OTHDED    T2209#1   T2036
+T5013     T1241     RESEXP    RESINC    
+S3        T657      T657      T657      CFR
+T1A       CFR       CFR
+T1A       CFR       DEATH
+T5007     MB479
+T777#1    GST37     GST37     AUTO777  AUTO777
+T101      T1241     RESEXP    RESINC
+T102      RESEXP    RESINC
+T4        T1223     T1223     T2121#1
+T4PS      S3
+T4PS      FORINC    T2209#1   T2036     RC359#1
+FLTHRU    S3        T657      T657      T657
+T2042     T2042
+T2121     T2121
+LABORSP   RRSP
+FORINC    OTHDED    T2209#1   T2036
+FPENS     FORINC    OTHDED    T2209#1   T2036
+ONEETC    T1238     T1238     ON479
+T1175     T1163     T1175     T1163     T1163
+T2091     T2091     T209W     T209W
+T2038     T691      T691      T691
+

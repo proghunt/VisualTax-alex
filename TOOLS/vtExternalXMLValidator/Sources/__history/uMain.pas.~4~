@@ -1,0 +1,288 @@
+unit uMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ComCtrls;
+
+type
+  TfmMain = class(TForm)
+    OpenDialog1: TOpenDialog;
+    btnStart: TButton;
+    rgVTModule: TRadioGroup;
+    pcMain: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
+    TabSheet4: TTabSheet;
+    TabSheet5: TTabSheet;
+    GroupBox1: TGroupBox;
+    eFilePath: TEdit;
+    Button1: TButton;
+    Label1: TLabel;
+    rgTaxTypeT2: TRadioGroup;
+    Label2: TLabel;
+    rgTaxTypeT1: TRadioGroup;
+    rgTaxTypeT4T5: TRadioGroup;
+    rgTaxTypeTF: TRadioGroup;
+    procedure Button1Click(Sender: TObject);
+    procedure btnStartClick(Sender: TObject);
+    procedure rgVTModuleClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure pcMainChange(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fmMain: TfmMain;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  uT1XMLValidator, uT2XMLValidator, uT4T5XMLValidator, uTFXMLValidator;
+
+procedure TfmMain.Button1Click(Sender: TObject);
+var
+  ExeDir: string;
+begin
+  ExeDir:= ExtractFilePath(ParamStr(0)) + '\Files';
+
+  OpenDialog1.Title:= 'Open XML file';
+  OpenDialog1.Filter:= 'XML files (*.xml)|*.xml|All files (*.*)|*.*';
+  OpenDialog1.InitialDir:= ExeDir;
+  OpenDialog1.DefaultExt:= 'xml';
+  OpenDialog1.Options:= OpenDialog1.Options + [ofFileMustExist, ofPathMustExist];
+
+  if OpenDialog1.Execute then
+  begin
+    eFilePath.Text:= OpenDialog1.FileName;
+  end;
+end;
+
+procedure TfmMain.FormShow(Sender: TObject);
+begin
+  rgVTModule.ItemIndex:= 0; // T1 selected as default
+  Label1.Caption:= 'Please select the T1 XML file to analyze:';
+  pcMain.TabIndex:= 0;
+end;
+
+procedure TfmMain.pcMainChange(Sender: TObject);
+begin
+  pcMain.TabIndex:= rgVTModule.ItemIndex;
+end;
+
+procedure TfmMain.rgVTModuleClick(Sender: TObject);
+begin
+  case TRadioGroup(Sender).ItemIndex of
+    0: // T1
+    begin
+      Label1.Caption:= 'Please select the T1 XML file to analyze:';
+    end;
+    1: // T2
+    begin
+      Label1.Caption:= 'Please select the T2 XML file to analyze:';
+    end;
+    2: // T3
+    begin
+      Label1.Caption:= 'Please select the T3 XML file to analyze:';
+    end;
+    3: // T4T5
+    begin
+      Label1.Caption:= 'Please select the T4T5 XML file to analyze:';
+    end;
+    4: // TF
+    begin
+      Label1.Caption:= 'Please select the TF XML file to analyze:';
+    end;
+  end;
+
+  pcMain.TabIndex:= TRadioGroup(Sender).ItemIndex;
+end;
+
+procedure TfmMain.btnStartClick(Sender: TObject);
+var
+  DataTypeCode: String;
+  lXMLValidationErrorList: TStringList;
+  ifor: Integer;
+  lErrorsString: string;
+  lXSDFilesList: TStringList;
+  lSpecialXSDTypes: string;
+begin
+  if (eFilePath.Text = '') then
+  begin
+    ShowMessage('Please select a file to analyze.');
+    exit;
+  end;
+  lSpecialXSDTypes:= '';
+
+  lXMLValidationErrorList:= TStringList.Create;
+  lXSDFilesList:= TStringList.Create;
+  try
+    if (rgVTModule.ItemIndex = 0) then // If T1 selected
+    begin
+      case rgTaxTypeT1.ItemIndex of
+        0: // T1
+        begin
+          lXSDFilesList.Add('http://www.w3.org/XML/1998/namespace,xml.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0,standarddatatypes.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0,cracommonstructures.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/comm/2026/1-0-0,electronicfilingcommon.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/sfd/2026/1-0-0,sfd.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ef/2026/1-0-0,efilecommon.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1/2026/1-0-0,t1return.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0,t1wsefilerequest.xsd');
+        end;
+        1: //T2057
+        begin
+          lSpecialXSDTypes:= '\SERS';
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0,standarddatatypes.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0,sresCommonTypes.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/sres/1-0-0,fileReturnRequest.xsd');
+        end;
+        2: // T1134
+        begin
+          lXSDFilesList.Add('http://www.w3.org/XML/1998/namespace,xml.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0,standarddatatypes.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0,cracommonstructures.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/comm/2026/1-0-0,electronicfilingcommon.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/sfd/2026/1-0-0,sfd.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ef/2026/1-0-0,efilecommon.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1134/2021/1-0-0,ControlledAndNotControlledForeignAffiliateReturn2021.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0,t1wsefilerequest.xsd');
+        end;
+        3: //T1135
+        begin
+          lXSDFilesList.Add('http://www.w3.org/XML/1998/namespace,xml.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0,standarddatatypes.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0,cracommonstructures.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/comm/2026/1-0-0,electronicfilingcommon.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ef/2026/1-0-0,efilecommon.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0,ForeignIncomeVerificationStatement.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0,t1wsefilerequest.xsd');
+        end;
+      end;
+
+      TT1XMLValidator.XMLValidate(ExtractFilePath(ParamStr(0)) + 'DistrFl\T1' + lSpecialXSDTypes, lXSDFilesList, eFilePath.Text, lXMLValidationErrorList);
+
+      if (lXMLValidationErrorList.Count > 0) and not lXMLValidationErrorList[0].StartsWith('XSD file not found:') then
+      begin
+       TT1XMLValidator.ShowErrorsInHTML(lXMLValidationErrorList);
+      end else
+        TT1XMLValidator.ShowSuccessInHTML(lXMLValidationErrorList);
+    end else
+    if (rgVTModule.ItemIndex = 1) then // If T2 selected
+    begin
+      case rgTaxTypeT2.ItemIndex of
+        0: // T1134
+        begin
+          lXSDFilesList.Add('http://www.w3.org/XML/1998/namespace,xml.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0,standarddatatypes.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0,cracommonstructures.xsd');
+          lXSDFilesList.Add('urn:oecd:ties:isocbctypes:v1,isocbctypes_v1.1.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/cbc/2019/1-0-0,CountryByCountryReport2019.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/comm/2025/1-0-0,electronicfilingcommon.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ef/2025/1-0-0,efilecommon.xsd'); // 20251104 Igor
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0,ForeignIncomeVerificationStatement.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1134/2021/1-0-0,ControlledAndNotControlledForeignAffiliateReturn2021.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t106/2025/1-0-0,NonArmsLengthTransactionWithNonResidentInformationReturn.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0,t2efilefrrmsrequest.xsd');
+        end;
+        1: //T1135
+        begin
+          lXSDFilesList.Add('http://www.w3.org/XML/1998/namespace,xml.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0,standarddatatypes.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0,cracommonstructures.xsd');
+          lXSDFilesList.Add('urn:oecd:ties:isocbctypes:v1,isocbctypes_v1.1.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/cbc/2019/1-0-0,CountryByCountryReport2019.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/comm/2025/1-0-0,electronicfilingcommon.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/ef/2025/1-0-0,efilecommon.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0,ForeignIncomeVerificationStatement.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t1134/2021/1-0-0,ControlledAndNotControlledForeignAffiliateReturn2021.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t106/2025/1-0-0,NonArmsLengthTransactionWithNonResidentInformationReturn.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0,t2efilefrrmsrequest.xsd');
+        end;
+      end;
+
+      TT2XMLValidator.XMLValidate(ExtractFilePath(ParamStr(0)) + 'DistrFl\T2', lXSDFilesList, eFilePath.Text, lXMLValidationErrorList);
+
+      if (lXMLValidationErrorList.Count > 0) and not lXMLValidationErrorList[0].StartsWith('XSD file not found:') then
+      begin
+       TT2XMLValidator.ShowErrorsInHTML(lXMLValidationErrorList);
+      end else
+        TT2XMLValidator.ShowSuccessInHTML(lXMLValidationErrorList);
+    end else
+    if (rgVTModule.ItemIndex = 2) then // If T3 selected
+    begin
+
+    end else
+    if (rgVTModule.ItemIndex = 3) then // If T4T5 selected
+    begin
+      case rgTaxTypeT4T5.ItemIndex of
+        0: // T4
+        begin
+          lXSDFilesList.Add(',T619_T4.xsd');
+          lXSDFilesList.Add(',T4.xsd');
+        end;
+        1: // T4A
+        begin
+          lXSDFilesList.Add(',T619_T4A.xsd');
+          lXSDFilesList.Add(',T4A.xsd');
+        end;
+        2: // T5
+        begin
+          lXSDFilesList.Add(',T619_T5.xsd');
+          lXSDFilesList.Add(',T5.xsd');
+        end;
+      end;
+
+      TT4T5XMLValidator.XMLValidate(ExtractFilePath(ParamStr(0)) + 'DistrFl\T4T5', lXSDFilesList, eFilePath.Text, lXMLValidationErrorList);
+
+      if (lXMLValidationErrorList.Count > 0) and not lXMLValidationErrorList[0].StartsWith('XSD file not found:') then
+      begin
+       TT4T5XMLValidator.ShowErrorsInHTML(lXMLValidationErrorList);
+      end else
+        TT4T5XMLValidator.ShowSuccessInHTML(lXMLValidationErrorList);
+    end else
+    if (rgVTModule.ItemIndex = 4) then // If TF selected
+    begin
+      case rgTaxTypeTF.ItemIndex of
+        0: // T5013
+        begin
+          lXSDFilesList.Add(',T619_T5013main.xsd');
+          lXSDFilesList.Add('http://www.cra-arc.gc.ca/enov/ol/interfaces/efile/partnership/ols/1-0-1,t5013fin.xsd');
+          //lXSDFilesList.Add('http://www.cra-arc.gc.ca/enov/ol/interfaces/efile/partnership/olsbr/1-0-1,t5013main.xsd');
+        end;
+        1: //NR4
+        begin
+          lXSDFilesList.Add(',T619_NR4.xsd');
+          lXSDFilesList.Add(',nr4.xsd');
+        end;
+        2: //T5018
+        begin
+          lXSDFilesList.Add(',T619_T5018.xsd');
+          lXSDFilesList.Add(',t5018.xsd');
+        end;
+      end;
+
+      TTFXMLValidator.XMLValidate(ExtractFilePath(ParamStr(0)) + 'DistrFl\TF', lXSDFilesList, eFilePath.Text, lXMLValidationErrorList);
+
+      if (lXMLValidationErrorList.Count > 0) and not lXMLValidationErrorList[0].StartsWith('XSD file not found:') then
+      begin
+       TTFXMLValidator.ShowErrorsInHTML(lXMLValidationErrorList);
+      end else
+        TTFXMLValidator.ShowSuccessInHTML(lXMLValidationErrorList);
+    end;
+  finally
+    lXMLValidationErrorList.Free;
+    lXSDFilesList.Free;
+  end;
+
+end;
+
+end.

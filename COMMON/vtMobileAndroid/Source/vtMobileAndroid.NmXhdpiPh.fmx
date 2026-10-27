@@ -1,0 +1,97 @@
+inherited MainForm_NmXhdpiPh: TMainForm_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited ClientsListView: TListView
+    Size.Width = 400.000000000000000000
+    Size.Height = 550.000000000000000000
+  end
+  inherited HeaderPanel: TPanel
+    Size.Width = 400.000000000000000000
+    Size.Height = 65.000000000000000000
+    inherited HeaderColorBox: TColorBox
+      Size.Width = 400.000000000000000000
+      Size.Height = 65.000000000000000000
+    end
+    inherited HeaderLabel: TLabel
+      Size.Width = 400.000000000000000000
+      Size.Height = 35.000000000000000000
+    end
+    inherited Label1: TLabel
+      Size.Width = 400.000000000000000000
+    end
+    inherited BackButton: TButton
+      Position.X = 4.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited DocumentsListView: TListView
+    Size.Width = 400.000000000000000000
+    Size.Height = 550.000000000000000000
+  end
+  inherited LoginPanel: TPanel
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    Visible = False
+    inherited LoginScaledLayout: TScaledLayout
+      OriginalWidth = 400.000000000000000000
+      OriginalHeight = 615.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 615.000000000000000000
+      Visible = False
+      inherited LoginLabel: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 117.000000000000000000
+      end
+      inherited LoginEdit: TEdit
+        Position.Y = 293.000000000000000000
+      end
+      inherited PasswordLabel: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 214.000000000000000000
+      end
+      inherited PasswordEdit: TEdit
+        Position.X = 32.000000000000000000
+        Position.Y = 246.000000000000000000
+      end
+      inherited LogInButton: TButton
+        Position.X = 144.000000000000000000
+        Position.Y = 318.000000000000000000
+      end
+    end
+  end
+  inherited StyleBook1: TStyleBook [4]
+  end
+  inherited vtMobileConnection: TFDConnection [5]
+  end
+  inherited FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink [6]
+  end
+  inherited FDGUIxWaitCursor1: TFDGUIxWaitCursor [7]
+  end
+  inherited LoginQuery: TFDQuery [8]
+  end
+  inherited ClientsDS: TDataSource [9]
+  end
+  inherited ClientsBindSource: TBindSourceDB [10]
+  end
+  inherited ClientsQuery: TFDQuery [11]
+  end
+  inherited BindingsList1: TBindingsList [12]
+  end
+  inherited DocumentsBindSource: TBindSourceDB [13]
+  end
+  inherited DocumentsQuery: TFDQuery [14]
+  end
+  inherited OAuth2_DropBox: TOAuth2Authenticator [15]
+  end
+  inherited RESTClient: TRESTClient [16]
+  end
+  inherited RESTRequest: TRESTRequest [17]
+  end
+  inherited RESTResponse: TRESTResponse [18]
+  end
+  inherited RESTResponseDataSetAdapter: TRESTResponseDataSetAdapter [19]
+  end
+end

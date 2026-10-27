@@ -1,0 +1,102 @@
+package QR506RunDXE4;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $10000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'QuickReport 5.05 Runtime Package'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  Vcldb,
+  vclx,
+  vclimg,
+  bdertl;
+
+contains
+  qrextra in 'qrextra.pas',
+  qrcomped in 'qrcomped.pas',
+  qrabout in 'qrabout.pas',
+  QuickRpt in 'QuickRpt.pas',
+  qrctrls in 'qrctrls.pas',
+  qrprgres in 'qrprgres.pas',
+  qrexpbld in 'qrexpbld.pas',
+  qrprntr in 'qrprntr.pas',
+  qrprev in 'qrprev.pas',
+  qrwizard in 'qrwizard.pas',
+  qrdatawz in 'qrdatawz.pas',
+  qrlablwz in 'qrlablwz.pas',
+  qrexpred in 'qrexpred.pas' {QRExprEditorForm},
+  qrexpr in 'qrexpr.pas',
+  qrenved in 'qrenved.pas',
+  qrexport in 'qrexport.pas',
+  qrmdsu in 'qrmdsu.pas' {QRSubdetailSetup},
+  Qrlabled in 'Qrlabled.pas' {QRLabelEditorForm},
+  qrdatasu in 'qrdatasu.pas',
+  QREditor in 'QREditor.pas' {QReportEditor},
+  QRSearchDlg in 'QRSearchDlg.pas' {SearchDlg},
+  qrpdffilt in 'qrpdffilt.pas',
+  pdfconst in 'pdfconst.pas',
+  pdfobjs in 'pdfobjs.pas',
+  grimgctrl in 'grimgctrl.pas',
+  QRXMLSFilt in 'QRXMLSFilt.pas',
+  QRWebFilt in 'QRWebFilt.pas',
+  qrabsdatas in 'qrabsdatas.pas',
+  qrFramelines in 'qrFramelines.pas',
+  QRXDocument in 'QRXDocument.pas',
+  QRXSearchFrm in 'QRXSearchFrm.pas' {QRXSearchDlg},
+  QRXBrowser in 'QRXBrowser.pas' {QRXStandardViewer},
+  qrpctrls in 'qrpctrls.pas',
+  qrpBaseCtrls in 'qrpBaseCtrls.pas',
+  csProp in 'csProp.pas',
+  qrpexpr in 'qrpexpr.pas',
+  SupComps in 'SupComps.pas',
+  MSXML_TLB in 'MSXML_TLB.pas',
+  lzw in 'lzw.pas',
+  qrprnsu in 'qrprnsu.pas',
+  QRXLSXFilt in 'QRXLSXFilt.pas',
+  ECC200Consts in 'ECC200Consts.pas',
+  ECC200procs in 'ECC200procs.pas',
+  ECC200ReedSolomon in 'ECC200ReedSolomon.pas',
+  QRDMBarcode in 'QRDMBarcode.pas',
+  QRMetricLab in 'QRMetricLab.pas',
+  QRGraphcon in 'QRGraphcon.pas',
+  qr5const in 'qr5const.pas',
+  QRJpegImage in 'QRJpegImage.pas';
+
+end.
+
+
+
+
+
+
+
+
+
+
+

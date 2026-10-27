@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <wsse:Security S:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsse:UsernameToken wsu:Id="unt_TgQvS3nJUk2tJZgN" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsse:Username>064J</wsse:Username>
+        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">zPWc84r8i1y0tBRmZMk6R+0qBw0=</wsse:Password>
+        <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">MDcwMDUxMTExLzA3LzIwMTUxNjowNTozNC41OTc=</wsse:Nonce>
+        <wsu:Created>2015-11-07T21:05:27Z</wsu:Created>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </S:Header>
+  <S:Body>
+    <getTDD xmlns="http://www.cra-arc.gc.ca/xmlns/tdd/1-0-0" xmlns:ns2="http://www.cra-arc.gc.ca/xmlns/ccms/1-0-0">
+      <Token>TCAcU9BPwNzcYD/RoYZ2XfdwFO1ruUUmAFu</Token>
+      <TaxYear>2014</TaxYear>
+    </getTDD>
+  </S:Body>
+</S:Envelope>

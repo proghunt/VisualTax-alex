@@ -1,0 +1,7 @@
+Select
+clients.*
+FROM clients
+As clients
+where T1013OL = "Y"
+Order By Last_Name
+

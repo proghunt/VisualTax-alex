@@ -1,0 +1,56 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <t2rq:T2EfileReturnRequest 
+   xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" 
+   xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2024/1-0-0" 
+   xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" 
+   xmlns:t1135="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0" 
+   xmlns:t2rq="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0" 
+   xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0 t2efilefrrmsrequest.xsd ">
+  <ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
+  <ef:PasswordID>A67AJ5</ef:PasswordID>
+  <ef:RepresentativeID>C4SD3QH</ef:RepresentativeID>
+  <t2rq:TaxYear>2023</t2rq:TaxYear>
+  <t2rq:SoftwareID>VT49</t2rq:SoftwareID>
+    <t2rq:TaxForm>
+      <t1135:ForeignIncomeVerificationStatement>
+        <t1135:AmendedReturnIndicator>0</t1135:AmendedReturnIndicator>
+        <t1135:TaxpayerIdentification>
+          <t1135:CorporationTaxpayer>
+            <t1135:CorporationName>ATEST-2024</t1135:CorporationName>
+            <t1135:BusinessNumber>111111118RC0001</t1135:BusinessNumber>
+          </t1135:CorporationTaxpayer>
+        </t1135:TaxpayerIdentification>
+        <t1135:TaxpayerAddress>
+          <t1135:AddressStreetText>1283 GRYPHON </t1135:AddressStreetText>
+          <t1135:AddressMunicipalityName>TORONTO</t1135:AddressMunicipalityName>
+          <t1135:GlobalProvinceTerritoryStateCode>ON</t1135:GlobalProvinceTerritoryStateCode>
+          <t1135:CountryCode>CAN</t1135:CountryCode>
+        </t1135:TaxpayerAddress>
+        <t1135:TaxationYearData>
+          <t1135:TaxationYearStartDate>2023-01-01</t1135:TaxationYearStartDate>
+          <t1135:TaxationYearEndDate>2023-12-31</t1135:TaxationYearEndDate>
+        </t1135:TaxationYearData>
+        <t1135:ForeignPropertyIdentification>
+          <t1135:ForeignPropertyCostCategoryTwo>
+            <t1135:ForeignPropertyDetailedData>
+            </t1135:ForeignPropertyDetailedData>
+          </t1135:ForeignPropertyCostCategoryTwo>
+        </t1135:ForeignPropertyIdentification>
+        <t1135:CertificationDetail>
+          <t1135:CertifierName>
+            <t1135:TaxpayerName>
+              <t1135:GivenName> </t1135:GivenName>
+              <t1135:FamilyName></t1135:FamilyName>
+            </t1135:TaxpayerName>
+          </t1135:CertifierName>
+          <t1135:CertifierPhoneNumber>1()</t1135:CertifierPhoneNumber>
+          <t1135:CertificationDate>2025-05-14</t1135:CertificationDate>
+        </t1135:CertificationDetail>
+      </t1135:ForeignIncomeVerificationStatement>
+ </t2rq:TaxForm>
+ </t2rq:T2EfileReturnRequest>
+</soapenv:Body>
+</soapenv:Envelope>

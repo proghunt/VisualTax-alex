@@ -1,0 +1,274 @@
+{
+  "header":  
+  {
+    "trustNumber":"A00000835",
+    "softwareId":"064",
+    "softwareRevisionDate":"2025-02-01",
+    "firstTimeFilerIndicator":false,
+    "additionalTaxReturnIndicator":false,
+    "testCaseIdentifier":    1024,
+    "originatingIp":"0.0.0.0",
+    "taxProfessionalData":    
+    {
+      "transmitterEFilerNumber":"B0865",
+      "passwordId":"767AJ5X",
+      "taxPreparerEfilerNumber":"B0865",
+      "taxPreparerEfilerPassword":"767AJ5X",
+      "taxPreparerReturnControlNumber":"23120380",
+      "taxPreparerAuthorizationIndicator":true,
+      "taxPreparerAuthorizationExpiryDate":"2025-11-17",
+      "taxPreparerPreAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "taxPreparerPostAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "representativeId":"JL3R2RC",
+      "t183ElectronicSignature":      
+      {
+        "t183ElectronicSignatureIndicator":true,
+        "t183ElectronicSignatureDate":"2025-11-17",
+        "t183ElectronicSignatureTime":"13:11:34"      
+      }    
+    }  
+  },
+  "trustIdentification":  
+  {
+    "trustIdentifier":    
+    {
+      "countryOfResidence":"CAN",
+      "provinceOfResidence":"MB",
+      "trustName":"THE ESTATE OF ROLAND TRUDEL",
+      "trustAccountNumber":"A00000835"    
+    },
+    "primaryTrusteeContactInformation":    
+    {
+      "trusteeNameChangeIndicator":false,
+      "isNonIndividualIndicator":true,
+      "nonIndividualTrusteeContactInformation":      
+      {
+        "nonIndividualName":"ASHLEY MARY KAY CPGA",
+        "contactPerson":        
+        {
+          "firstName":"ASHLEY",
+          "lastName":"KAY"        
+        },
+        "address":        
+        {
+          "addressLineOne":"614-18 LAKESHORE ROAD",
+          "city":"POINTE-CLAIRE",
+          "provinceTerritoryState":"QC",
+          "globalPostalZipCode":"H9S5X9",
+          "country":"CAN"        
+        }      
+      }    
+    },
+    "trustResidencyInformation":    
+    {
+      "trustDeemedCanadianResidentIndicator":false,
+      "languageOfCorrespondence":"ENGLISH"    
+    }  
+  },
+  "trustTypeInformation":  
+  {
+    "trustType":"TYPE_903",
+    "testatorDeathDate":"2024-04-24",
+    "deceasedSocialInsuranceNumber":"870034212"  
+  },
+  "filingInformation":  
+  {
+    "trustFiscalPeriodStart":"2025-01-01",
+    "trustFiscalPeriodEnd":"2025-12-31",
+    "firstYearFilingIndicator":false,
+    "previousFilingYear":    2024,
+    "trustFinalReturnIndicator":false  
+  },
+  "foreignPropertyInExcessOf100000":false,
+  "otherInformation":  
+  {
+    "electingTrustIndicator":false,
+    "trustIncomePaymentToBeneficiariesRequired":false,
+    "trustDistributedNonCashAssetsToBeneficiary":false,
+    "trustBeneficiariesChanged":false,
+    "trustDeemedDispositionBeneficiaryDeathIndicator":false,
+    "trustNonArmsLengthDebtTransactionIndicator":false,
+    "trustCapitalIncomeInterestOwnershipChangeIndicator":false,
+    "trustHoldsSharesInPrivateCorporation":true,
+    "trustAdditionalContributionPropertyReceiptIndicator":false,
+    "publicTrust":false,
+    "trustUsedInternationalFinancialReportingStandards":false,
+    "trustLossRestrictionEventIndicator":false,
+    "assetsHeldListedUnderParagraph150NotExceeding50kIndicator":true,
+    "trustRequiredToHoldFundsUnderRelevantRulesIndicator":true,
+    "interestOrFinancingExpensesIndicator":false,
+    "unitTrustUnderSubSection108Indicator":false,
+    "trustWhichAllUnitsListedOnStockExchangeIndicator":false,
+    "trustMeetConditionsInParagraph150Indicator":true,
+    "propertyForSpecifiedPurposeIndicator":true,
+    "indigenousGroupsIndicator":false  
+  },
+  "memoIndicators":  
+  {
+    "alterEgoIndicator":false,
+    "preferredBeneficiaryIndicator":false,
+    "mutualFundReorganizatonIndicator":false,
+    "mutualFundExtensionApprovalIndicator":false,
+    "insuranceSegregatedFundReorganizationIndicator":false,
+    "insuranceSegregatedFundExtensionApprovalIndicator":false,
+    "mutualFundElectingDec15FPEIndicator":false  
+  },
+  "returnLines":  
+  [
+    {
+      "fieldCode":"03",
+      "fieldValue":      81500    
+    },
+    {
+      "fieldCode":"07",
+      "fieldValue":      7689    
+    },
+    {
+      "fieldCode":"19",
+      "fieldValue":      2500    
+    },
+    {
+      "fieldCode":"20",
+      "fieldValue":      91689    
+    },
+    {
+      "fieldCode":"49",
+      "fieldValue":      18320    
+    },
+    {
+      "fieldCode":"50",
+      "fieldValue":      110009    
+    },
+    {
+      "fieldCode":"56",
+      "fieldValue":      110009    
+    },
+    {
+      "fieldCode":"81",
+      "fieldValue":7905.08    
+    },
+    {
+      "fieldCode":"82",
+      "fieldValue":10153.91    
+    },
+    {
+      "fieldCode":"84",
+      "fieldValue":18058.99    
+    },
+    {
+      "fieldCode":"91",
+      "fieldValue":9900    
+    },
+    {
+      "fieldCode":"94",
+      "fieldValue":8158.99    
+    },
+    {
+      "fieldCode":"97",
+      "fieldValue":      100000    
+    },
+    {
+      "fieldCode":"918",
+      "fieldValue":9900    
+    },
+    {
+      "fieldCode":"8110",
+      "fieldValue":      55000    
+    },
+    {
+      "fieldCode":"8120",
+      "fieldValue":      26500    
+    },
+    {
+      "fieldCode":"11080",
+      "fieldValue":19109.35    
+    },
+    {
+      "fieldCode":"11108",
+      "fieldValue":5492.73    
+    },
+    {
+      "fieldCode":"11109",
+      "fieldValue":5711.54    
+    },
+    {
+      "fieldCode":"67061",
+      "fieldValue":      92311    
+    },
+    {
+      "fieldCode":"14021",
+      "fieldValue":13575.07    
+    },
+    {
+      "fieldCode":"14015",
+      "fieldValue":495.56    
+    },
+    {
+      "fieldCode":"14018",
+      "fieldValue":2925.6    
+    }  
+  ],
+  "refundCode":"ISSUE_OVERPAYMENT_00",
+  "t2042Submissions":  
+  [
+    {
+      "fullName":"ROLAND TRUDEL",
+      "socialInsuranceNumber":"870034212",
+      "farmName":"MALTESERS",
+      "businessAddress":      
+      {
+        "streetAddress":"RR1",
+        "city":"Ashville",
+        "province":"MB",
+        "postalCode":"R0L0A0"      
+      },
+      "businessAccountNumber":"123456789RT0001",
+      "fiscalPeriodStart":"2025-01-01",
+      "fiscalPeriodEnd":"2025-12-31",
+      "lastYearOfFarmingIndicator":false,
+      "mainProductOrService":"Corn Farming",
+      "naicsCode":"111150",
+      "accountingMethodType":"ACCRUAL",
+      "partnershipPercent":      100,
+      "returnLines":      
+      [
+        {
+          "fieldCode":"9375",
+          "fieldValue":          100000        
+        },
+        {
+          "fieldCode":"9659",
+          "fieldValue":          100000        
+        },
+        {
+          "fieldCode":"9662",
+          "fieldValue":          23000        
+        },
+        {
+          "fieldCode":"9663",
+          "fieldValue":          23000        
+        },
+        {
+          "fieldCode":"9664",
+          "fieldValue":          23000        
+        },
+        {
+          "fieldCode":"9760",
+          "fieldValue":          23311        
+        },
+        {
+          "fieldCode":"9898",
+          "fieldValue":          92311        
+        },
+        {
+          "fieldCode":"9899",
+          "fieldValue":          7689        
+        },
+        {
+          "fieldCode":"9946",
+          "fieldValue":          7689        
+        }      
+      ]    
+    }  
+  ]
+}

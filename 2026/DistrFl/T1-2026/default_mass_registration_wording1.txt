@@ -1,0 +1,38 @@
+To:  %PAYER_NAME%,<br><br>
+
+The vicious and stubborn COVID-19 has changed the way we interact with each other in our every-day life. As Tax Preparers we are also taking measures to fight the pandemic, provide you with fast and efficient service and also save you time and money by avoiding when possible our face-to-face meetings that we enjoyed doing in the past!... 
+
+<br>
+As a result, in addition to our brick and mortar office, we can also use our new 'Virtual Office' in the Virtual Office Tower. The Virtual Office Tower is managed by Microsophic, a Canadian company known for its VisualTax software. This company offered us free registration of all our clients that allows you to enter and use the facilities of our Virtual Office.<br>
+Our Virtual Tax Office service offers several benefits to all of us, especially this season by enabling a remote by highly secure way during the tax preparation time.<br>
+This includes Electronic signatures, facilities to open and read encrypted files we send you, exchange of files such as T183, your actual Tax return, your expense receipts, virtual meetings, etc.<br><br>
+
+
+We are now members of the Virtual Office Tower and we both have a Virtual Id and Password as shown below.<br>
+
+Our Company Name -  %OFFICE_NAME%<br>
+Virtual ID -  %OFFICE_VIRTUAL_ID%<br>
+Preparer Name -  %PREPARER_NAME%<br>
+Phone -  %OFFICE_PHONE%<br>
+
+Your Virtual ID -  %VIRTUAL_ID%<br>
+Your initial password -  %TEMP_PASSWORD%<br>
+It is strongly recommended to change this password<br><br>
+        
+Please click <a href=%ACTIVATION_LINK% target='_blank'>here</a> to activate your registration and have access to the Virtual Tax Office service.<br><br>
+
+You may need to download the following tools: <a href='https://www.teamviewer.com/en/download/windows/'>Teamviewer</a> or <a href='https://ultraviewer.net/en/download.html'>Ultraviewer</a>or both. They will help you to hold Virtual meetings.<br>
+If you are a Virtual Client of a Virtual Office, please Download the <a href='https://www.visualtax.com/downloads/vtClient2020setupfull.exe'>vtClient2020</a>. It helps you to Sign forms with your Electronic Signature such as T183.<br><br>
+
+
+Membership fee: Your registration/membership is FREE. However, if you need to encrypt the files you send us, there is a $5 plus GST/HST. This allows you to encrypt the files before sending it to us. We encourage you to subsribe to this feature, so the privacy of your files are secured by the vtCourier facility of the Virtual Office Tower.<br>
+
+We will be happy to reduce our tax preparation fee by the same amount if you wish to recover this expense. Link to the Registration page: href='https://www.Visualtaxcloud.com/' target='_blank'>Virtual Tax Office service</a><br>
+and then click the Pay button on the second page.<br>
+
+
+
+Kind regards,
+<br>
+Microsophic Inc.<br>
+<a href='https://www.visualtax.com/' target='_blank'>VisualTax</a>

@@ -1,0 +1,420 @@
+object BarDataGenT2_2027: TBarDataGenT2_2027
+  Left = 144
+  Top = 172
+  Caption = 'BarDataGen - Efile'
+  ClientHeight = 910
+  ClientWidth = 975
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'System'
+  Font.Style = []
+  OldCreateOrder = True
+  Position = poScreenCenter
+  Scaled = False
+  OnCreate = FormCreate
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 16
+  object RsiFrmList: TListBox
+    Left = 0
+    Top = 218
+    Width = 975
+    Height = 692
+    Style = lbOwnerDrawFixed
+    Align = alClient
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Style = []
+    ItemHeight = 14
+    ParentFont = False
+    TabOrder = 0
+    OnClick = RsiFrmListClick
+    OnDrawItem = RsiFrmListDrawItem
+  end
+  object HeaderBox: TPanel
+    Left = 0
+    Top = 0
+    Width = 975
+    Height = 25
+    Align = alTop
+    BevelOuter = bvLowered
+    Caption = 'Print or Efile to CRA'
+    Color = 11301888
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 10930928
+    Font.Height = -21
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 25
+    Width = 975
+    Height = 193
+    Align = alTop
+    Caption = 'email'
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 14
+      Top = 6
+      Width = 111
+      Height = 16
+      Caption = 'Important Notes: '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -13
+      Font.Name = 'System'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 427
+      Top = 62
+      Width = 119
+      Height = 12
+      Caption = 'Location of data to be Efiled'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      Visible = False
+    end
+    object Label3: TLabel
+      Left = 14
+      Top = 41
+      Width = 521
+      Height = 15
+      Caption = 
+        '- Do not use a PDF driver for printing. It may distort the Bar C' +
+        'ode. Just select your normal printer.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 14
+      Top = 27
+      Width = 357
+      Height = 15
+      Caption = 
+        '- The CRA filing copy consists of 2-3 pages of the barcoded retu' +
+        'rn'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 14
+      Top = 55
+      Width = 374
+      Height = 15
+      Caption = 
+        '- Set your printer at 600 DPI (via the Control panel, Printer/Pr' +
+        'operties)'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+    end
+    object corFileClickLbl: TvtLabel
+      Left = 651
+      Top = 123
+      Width = 92
+      Height = 57
+      Hint = 'Click here to create .cor file'
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'create COR'
+      Color = clBtnFace
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      Transparent = True
+      OnClick = corFileClickLblClick
+      vtIsPrintable = False
+      vtBorderType = vtlblFull
+    end
+    object Label6: TLabel
+      Left = 403
+      Top = 143
+      Width = 18
+      Height = 15
+      Caption = 'OR'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+    end
+    object ShowBarCodeDataBtn: TBitBtn
+      Left = 77
+      Top = 123
+      Width = 134
+      Height = 57
+      Caption = 'Show Filing Data'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnClick = ShowBarCodeDataBtnClick
+    end
+    object BitBtn1: TBitBtn
+      Left = 240
+      Top = 123
+      Width = 148
+      Height = 57
+      Caption = 'Print the CRA filing copy '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      Glyph.Data = {
+        56020000424D5602000000000000760000002800000024000000180000000100
+        040000000000E001000000000000000000001000000000000000000000000000
+        8000008000000080800080000000800080008080000080808000C0C0C0000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00888888888888
+        8888888888888888888888880000888888888888888888888888888888888888
+        0000888888888888888888888888888888888888000088888888888888888888
+        8888888888888888000088888877000000000000000007788888888800008888
+        8800000000000000000000078888888800008888877777777777777777777770
+        788888880000888887F888888888888888888777078888880000888887F88888
+        8888888889988777707888880000888887F88888888888888998877777088888
+        0000888887F8CCCC8888888889988777770888880000888887F8888888888888
+        88888877770888880000888887FFFFFFFFFFFFFFFFF888877708888800008888
+        878FFFFFFFFFFFFFFFF8888877088888000088888878FF000000000000008888
+        870888880000888888878FF07FFFFFFFFF707888880888880000888888887888
+        74444444FF7007888708888800008888888887007FFFFFFFFF70000000888888
+        00008888888888887F4444444F7888888888888800008888888888887FFFFFFF
+        FF78888888888888000088888888888887F4444444F788888888888800008888
+        8888888887FFFFFFFFF788888888888800008888888888888888888888888888
+        8888888800008888888888888888888888888888888888880000}
+      Layout = blGlyphTop
+      ParentFont = False
+      TabOrder = 3
+      OnClick = PrntBarCodedBtnClick
+    end
+    object CancelBtn: TBitBtn
+      Left = 573
+      Top = 123
+      Width = 72
+      Height = 57
+      Caption = 'Exit'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      Kind = bkCancel
+      Layout = blGlyphTop
+      NumGlyphs = 2
+      ParentFont = False
+      TabOrder = 0
+      OnClick = CancelBtnClick
+    end
+    object FileNameBox: TEdit
+      Left = 559
+      Top = 52
+      Width = 99
+      Height = 23
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+      Visible = False
+    end
+    object WebServiceEfileBtn: TBitBtn
+      Left = 440
+      Top = 123
+      Width = 113
+      Height = 57
+      Caption = 'EFILE NOW'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      Glyph.Data = {
+        DA080000424DDA08000000000000360400002800000022000000210000000100
+        080000000000A404000000000000000000000001000000010000000000000000
+        80000080000000808000800000008000800080800000C0C0C000C0DCC000F0CA
+        A600FFF3FF0000006600000099000000CC000033000000333300003366000033
+        99000033CC000033FF00006600000066330000666600006699000066CC000066
+        FF000099330000996600009999000099CC000099FF0000CC000000CC330000CC
+        660000CC990000CCCC0000CCFF0000FF330000FF660000FF990000FFCC003300
+        00003300330033006600330099003300CC003300FF0033330000333333003333
+        6600333399003333CC003333FF00336600003366330033666600336699003366
+        CC003366FF00339900003399330033996600339999003399CC003399FF0033CC
+        000033CC330033CC66000099000033CC990033CCCC0033CCFF0033FF000033FF
+        330033FF660033FF990033FFCC0033FFFF006600000066003300660066006600
+        99006600CC006600FF00663300006633330066336600663399006633CC006633
+        FF00666600006666330066666600666699006666CC006666FF00669900006699
+        330066996600669999006699CC006699FF0066CC000066CC330066CC660066CC
+        990066CCCC0066CCFF0066FF000066FF330066FF660066FF990066FFCC0066FF
+        FF00990000009900330099006600990099009900CC009900FF00993300009933
+        330099336600993399009933CC009933FF009966000099663300996666009966
+        99009966CC009966FF00999900009999330099996600999999009999CC009999
+        FF0099CC000099CC330099CC660099CC990099CCCC0099CCFF0099FF000099FF
+        330099FF660099FF990099FFCC0099FFFF00CC000000CC003300CC006600CC00
+        9900CC00CC00CC00FF00CC330000CC333300CC336600CC339900CC33CC00CC33
+        FF00CC660000CC663300CC666600CC669900CC66CC00CC66FF00CC990000CC99
+        3300CC996600CC999900CC99CC00CC99FF00CCCC0000CCCC3300CCCC6600CCCC
+        9900CCCCCC00CCCCFF00CCFF0000CCFF3300CCFF6600CCFF9900CCFFCC00CCFF
+        FF00FF003300FF006600FF009900FF00CC00FF330000FF333300FF336600FF33
+        9900FF33CC00FF33FF00FF660000FF663300FF666600FF669900FF66CC00FF66
+        FF00FF990000FF993300FF996600FF999900FF99CC00FF99FF00FFCC0000FFCC
+        3300FFCC6600FFCC9900FFCCCC00FFCCFF00FFFF3300FFFF6600FFFF9900FFFF
+        CC007D7D7D0061285500249D2C0018008D006D79610091102C0034DA3400B24C
+        9D00754C6500442038000000A5009D309100000095009D488D00004BB400004C
+        B300004DB200004EB100004FB0000050AF000051AE000052AD000053AC000054
+        AB000055AA000056A9000048B7000049B600F0FBFF00A4A0A000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFCFCFCFCFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF
+        FFFFFFFFFFFFFFFFFFFCFCFCFCFCFCFCFCFCFCFCFCFFFFFFFFFFFFFFFFFFFFFF
+        0000FFFFFFFFFFFFFFFFFFFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFFFFFFFFFF
+        FFFFFFFF0000FFFFFFFFFFFFFFFFFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFC
+        FFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFCFCFCFCFC07FA07FCFCFCFCFCFCFCFC
+        FCFCFCFCFCFCFFFFFFFFFFFF0000FFFFFFFFFFFCFCFCFCFC07FA07FCFCFCFCFC
+        FCFCFCFCFCFCFCFCFCFCFCFFFFFFFFFF0000FFFFFFFFFFFCFCFCFCFC07FAFA07
+        FCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFFFFFFFFFF0000FFFFFFFFFCFCFCFCFCFC
+        07FAFA07FCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFFFFFFFF0000FFFFFFFCFCFC
+        FCFCFCFCFAFAFAFAFAFCFCFCFCFCFCFCFCFCFCFCFC0707FCFCFFFFFF0000FFFF
+        FFFCFCFCFCFCFCFCFAFAFAFAFA07FCFCFCFCFCFCFCFCFCFCFC07FA07FCFFFFFF
+        0000FFFFFCFCFCFCFCFCFC07FAFAFAFAFAFAFA07FCFCFCFCFCFCFCFCFCFCFAFA
+        07FCFFFF0000FFFFFCFCFCFCFCFCFCFAFAFAFAFAFAFAFAFAFCFCFCFCFCFCFCFC
+        FCFC07FAFAFCFFFF0000FFFFFCFCFCFCFCFC07FAFAFAFAFAFAFAFAFAFCFCFCFC
+        FCFCFCFCFCFC07FAFAFCFFFF0000FFFCFCFCFCFCFCFAFAFAFAFAFAFAFAFAFAFA
+        07FCFCFCFCFCFCFCFCFC07FAFAFCFCFF0000FFFCFCFCFCFC07FAFAFAFAFAFAFA
+        FAFAFAFAFAFCFCFCFCFCFCFCFCFC07FAFAFCFCFF0000FFFCFCFCFCFC07FAFAFA
+        FAFAFAFAFAFAFA0707FCFCFCFCFCFCFCFCFC07FAFAFCFCFF0000FFFCFCFCFCFC
+        FCFAFAFAFAFAFAFAFAFAFCFCFCFCFCFCFCFCFCFCFCFCFAFAFAFAFCFF0000FFFC
+        FCFCFCFCFCFAFAFAFAFAFA0707FCFCFCFCFCFCFCFCFC07FAFAFAFAFAFAFAFCFF
+        0000FFFCFCFCFCFCFAFAFAFAFAFAFCFCFCFCFCFCFCFCFCFCFC07FAFAFAFAFAFA
+        FAFCFCFF0000FFFFFCFCFC07FA0707FA0707FCFCFCFCFCFCFCFCFCFC07FAFAFA
+        FAFAFAFAFAFCFFFF0000FFFFFCFCFAFAFAFAFCFCFCFCFCFCFCFCFCFCFCFCFCFC
+        07FAFAFAFAFAFAFAFAFCFFFF0000FFFFFC07FAFA07FC07FAFAFCFCFCFCFCFCFC
+        FCFCFCFC07FAFAFAFAFAFAFA07FCFFFF0000FFFFFF07FA07FC07FCFCFCFCFCFC
+        FCFCFCFCFCFCFCFCFCFAFAFAFAFAFAFAFCFFFFFF0000FFFFFFFAFAFAFAFA07FC
+        FCFCFCFCFCFCFCFCFCFCFCFCFC07FAFAFAFAFAFCFCFFFFFF0000FFFFFFFAFAFA
+        FAFAFA07FCFCFCFCFCFCFCFCFCFCFCFCFC0707FAFA07FCFCFFFFFFFF0000FFFF
+        FFFFFFFAFAFAFAFAFA07FCFCFCFCFCFCFCFCFCFCFCFAFAFCFAFA07FFFFFFFFFF
+        0000FFFFFFFFFFFAFAFAFAFAFAFA07FCFCFCFCFCFCFCFCFCFC07FAFAFA07FCFF
+        FFFFFFFF0000FFFFFFFFFFFFFAFA0707FAFAFA0707FC07FCFCFCFC07FAFAFAFA
+        07FCFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFCFAFA07FAFAFC07FAFAFCFCFCFA
+        FAFAFAFCFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFC07FAFAFA0707FAFA
+        07FC07FA0707FCFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFCFAFA
+        FA07FAFCFCFCFCFCFCFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFAFAFCFCFCFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000}
+      Layout = blGlyphTop
+      ParentFont = False
+      TabOrder = 4
+      OnClick = WebServiceEfileBtnClick
+    end
+    object URLForWebServices: TEdit
+      Left = 329
+      Top = 81
+      Width = 414
+      Height = 23
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object BitBtn5: TBitBtn
+      Left = 664
+      Top = 34
+      Width = 79
+      Height = 25
+      Caption = 'Install MSXML 6.0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      Visible = False
+      OnClick = BitBtn5Click
+    end
+    object BitBtn4: TBitBtn
+      Left = 665
+      Top = 6
+      Width = 78
+      Height = 22
+      Caption = '1. Install SOAP'
+      TabOrder = 9
+      Visible = False
+    end
+    object WebBrowser1: TWebBrowser
+      Left = 616
+      Top = 6
+      Width = 1
+      Height = 22
+      TabOrder = 7
+      ControlData = {
+        4C0000001A000000460200000000000000000000000000000000000000000000
+        000000004C000000000000000000000001000000E0D057007335CF11AE690800
+        2B2E126200000000000000004C0000000114020000000000C000000000000046
+        8000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000100000000000000000000000000000000000000}
+    end
+    object ProductionOrTestGroup: TRadioGroup
+      Left = 21
+      Top = 76
+      Width = 302
+      Height = 41
+      Caption = #39'0'#39
+      Columns = 2
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      Items.Strings = (
+        'Production (End User)'
+        'Test (Software developer)')
+      ParentFont = False
+      TabOrder = 8
+      OnClick = ProductionOrTestGroupClick
+    end
+  end
+  object PrintDialog1: TPrintDialog
+    Left = 223
+    Top = 203
+  end
+end

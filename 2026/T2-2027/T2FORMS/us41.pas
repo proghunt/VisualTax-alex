@@ -1,0 +1,155 @@
+unit uS41;
+interface
+uses
+  SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask, vtEditBox, vtShape,
+  vtLabel, uFlagFrameCan;
+type
+TS41 = class(TForm)
+    vtS41Shape5:TvtShape;
+    vtS41Label5:TvtLabel;
+    vtS41Label6:TvtLabel;
+    vtS41Label7:TvtLabel;
+    vtS41Label8:TvtLabel;
+    vtS41Label9:TvtLabel;
+    vtS41Label10:TvtLabel;
+    vtS41Label11:TvtLabel;
+    vtS41Label12:TvtLabel;
+    vtS41Label13:TvtLabel;
+    vtS41Label14:TvtLabel;
+    vtS41Label15:TvtLabel;
+    vtS41Label16:TvtLabel;
+    vtS41Label17:TvtLabel;
+    vtS41Label18:TvtLabel;
+    vtS41Label21:TvtLabel;
+    vtS41Label22:TvtLabel;
+    vtS41Label23:TvtLabel;
+    vtS41Label24:TvtLabel;
+    vtS41Label25:TvtLabel;
+    vtS41Label26:TvtLabel;
+    vtS41Label27:TvtLabel;
+    vtS41Label28:TvtLabel;
+    vtS41Label29:TvtLabel;
+    vtS41Label30:TvtLabel;
+    vtS41Label31:TvtLabel;
+    vtS41Label32:TvtLabel;
+    vtS41Label33:TvtLabel;
+    vtS41Label34:TvtLabel;
+    vtS41Label35:TvtLabel;
+    vtS41Label36:TvtLabel;
+    vtS41Label37:TvtLabel;
+    vtS41Label38:TvtLabel;
+    vtS41Label39:TvtLabel;
+    vtS41Label40:TvtLabel;
+    vtS41Label43:TvtLabel;
+    vtS41Label44:TvtLabel;
+    vtS41Label45:TvtLabel;
+    vtS41Label46:TvtLabel;
+    vtS41Label47:TvtLabel;
+    vtS41Label48:TvtLabel;
+    vtS41Label49:TvtLabel;
+    vtS41Label50:TvtLabel;
+    vtS41Label52:TvtLabel;
+    vtS41Label53:TvtLabel;
+    vtS41Label54:TvtLabel;
+    vtS41Label55:TvtLabel;
+    vtS41Label56:TvtLabel;
+    vtS41Shape4:TvtShape;
+    vtS41Label57:TvtLabel;
+    vtS41Shape6:TvtShape;
+    vtS41Shape7:TvtShape;
+    vtS41Shape8:TvtShape;
+    vtS41Label1:TvtLabel;
+    vtS41Label3:TvtLabel;
+    vtEdit1:TvtEdit;
+    vtEdit2:TvtEdit;
+    vtEdit3:TvtEdit;
+    vtEdit4:TvtEdit;
+    vtEdit5:TvtEdit;
+    vtEdit6:TvtEdit;
+    vtEdit7:TvtEdit;
+    vtEdit8:TvtEdit;
+    vtEdit9:TvtEdit;
+    vtEdit10:TvtEdit;
+    vtEdit11:TvtEdit;
+    vtEdit12:TvtEdit;
+    vtEdit13:TvtEdit;
+    vtEdit14:TvtEdit;
+    vtEdit15:TvtEdit;
+    vtEdit16:TvtEdit;
+    vtEdit17:TvtEdit;
+    vtEdit18:TvtEdit;
+    vtEdit19:TvtEdit;
+    vtEdit20:TvtEdit;
+    vtEdit21:TvtEdit;
+    vtEdit22:TvtEdit;
+    vtEdit23:TvtEdit;
+    vtEdit24:TvtEdit;
+    vtEdit25:TvtEdit;
+    vtEdit26:TvtEdit;
+    vtEdit27:TvtEdit;
+    vtEdit28:TvtEdit;
+    vtEdit29:TvtEdit;
+    vtEdit30:TvtEdit;
+    vtEdit31:TvtEdit;
+    vtEdit32:TvtEdit;
+    vtEdit33:TvtEdit;
+    vtEdit34:TvtEdit;
+    vtEdit35:TvtEdit;
+    vtEdit36:TvtEdit;
+    vtEdit37:TvtEdit;
+    vtEdit38:TvtEdit;
+    vtEdit39:TvtEdit;
+    vtEdit40:TvtEdit;
+    vtEdit41:TvtEdit;
+    vtEdit42:TvtEdit;
+    vtEdit43:TvtEdit;
+    vtEdit44:TvtEdit;
+    vtEdit45:TvtEdit;
+    vtEdit46:TvtEdit;
+    vtEdit47:TvtEdit;
+    vtEdit48:TvtEdit;
+    vtEdit49:TvtEdit;
+    vtEdit50:TvtEdit;
+    vtEdit51:TvtEdit;
+    vtEdit52:TvtEdit;
+    vtEdit53:TvtEdit;
+    vtEdit54:TvtEdit;
+    vtEdit55:TvtEdit;
+    vtEdit56:TvtEdit;
+    vtEdit57:TvtEdit;
+    vtEdit58:TvtEdit;
+    vtEdit59:TvtEdit;
+    vtEdit60:TvtEdit;
+    vtEdit61:TvtEdit;
+    vtEdit62:TvtEdit;
+    vtEdit63:TvtEdit;
+    vtEdit64:TvtEdit;
+    vtEdit65:TvtEdit;
+    vtEdit66:TvtEdit;
+    vtEdit67:TvtEdit;
+    vtEdit68:TvtEdit;
+    vtEdit69:TvtEdit;
+    vtEdit70:TvtEdit;
+    vtEdit71:TvtEdit;
+    vtEdit72:TvtEdit;
+    vtEdit73:TvtEdit;
+    vtEdit74:TvtEdit;
+    vtEdit75:TvtEdit;
+    vtEdit76:TvtEdit;
+    vtEdit77:TvtEdit;
+    FlagFrameCan1: TFlagFrameCan;
+    vtShape19: TvtShape;
+    vtLabel3: TvtLabel;
+    vtShapePB1: TvtShape;
+    vtLabel80: TvtLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+S41: TS41;
+implementation
+{$R *.DFM}
+end.

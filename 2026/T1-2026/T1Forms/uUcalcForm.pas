@@ -1,0 +1,17 @@
+unit uUcalcForm;
+interface
+uses
+  SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask;
+type
+TUcalcForm = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+UcalcForm: TUcalcForm
+implementation
+{$R *.DFM}
+end.

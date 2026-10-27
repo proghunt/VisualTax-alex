@@ -1,0 +1,3120 @@
+// ******************************************************************************
+// * This is an automatically generated file containing the ribbon resource for *
+// * your application.                                                          *
+// ******************************************************************************
+
+#include ".\RibbonMarkup.h"
+
+STRINGTABLE 
+BEGIN
+    CmdTabHome_LabelTitle_RESID L"Home" /* LabelTitle CmdTabHome_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdGroupClipboard_LabelTitle_RESID L"Clipboard" /* LabelTitle CmdGroupClipboard_LabelTitle_RESID: (null) */
+END
+
+CmdGroupClipboard_SmallImages_RESID    BITMAP    "Res\\Paste_S096.bmp" /* SmallImages CmdGroupClipboard_SmallImages_RESID: (null) */
+CmdGroupClipboard_SmallImages_120__RESID    BITMAP    "Res\\Paste_S120.bmp" /* SmallImages CmdGroupClipboard_SmallImages_120__RESID: (null) */
+CmdGroupClipboard_SmallImages_144__RESID    BITMAP    "Res\\Paste_S144.bmp" /* SmallImages CmdGroupClipboard_SmallImages_144__RESID: (null) */
+CmdGroupClipboard_SmallImages_192__RESID    BITMAP    "Res\\Paste_S192.bmp" /* SmallImages CmdGroupClipboard_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdPaste_LabelTitle_RESID L"Paste" /* LabelTitle CmdPaste_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPaste_TooltipTitle_RESID L"Paste (Ctrl+V)" /* TooltipTitle CmdPaste_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPaste_TooltipDescription_RESID L"Paste the contents of the Clipboard." /* TooltipDescription CmdPaste_TooltipDescription_RESID: (null) */
+END
+
+CmdPaste_SmallImages_RESID    BITMAP    "Res\\Paste_S096.bmp" /* SmallImages CmdPaste_SmallImages_RESID: (null) */
+CmdPaste_SmallImages_120__RESID    BITMAP    "Res\\Paste_S120.bmp" /* SmallImages CmdPaste_SmallImages_120__RESID: (null) */
+CmdPaste_SmallImages_144__RESID    BITMAP    "Res\\Paste_S144.bmp" /* SmallImages CmdPaste_SmallImages_144__RESID: (null) */
+CmdPaste_SmallImages_192__RESID    BITMAP    "Res\\Paste_S192.bmp" /* SmallImages CmdPaste_SmallImages_192__RESID: (null) */
+CmdPaste_LargeImages_RESID    BITMAP    "Res\\Paste_L096.bmp" /* LargeImages CmdPaste_LargeImages_RESID: (null) */
+CmdPaste_LargeImages_120__RESID    BITMAP    "Res\\Paste_L120.bmp" /* LargeImages CmdPaste_LargeImages_120__RESID: (null) */
+CmdPaste_LargeImages_144__RESID    BITMAP    "Res\\Paste_L144.bmp" /* LargeImages CmdPaste_LargeImages_144__RESID: (null) */
+CmdPaste_LargeImages_192__RESID    BITMAP    "Res\\Paste_L192.bmp" /* LargeImages CmdPaste_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdPasteSpecial_LabelTitle_RESID L"Paste special" /* LabelTitle CmdPasteSpecial_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPasteSpecial_TooltipDescription_RESID L"Paste special (Alt+Ctrl+V)" /* TooltipDescription CmdPasteSpecial_TooltipDescription_RESID: (null) */
+END
+
+CmdPasteSpecial_SmallImages_RESID    BITMAP    "Res\\PasteSpecial_S096.bmp" /* SmallImages CmdPasteSpecial_SmallImages_RESID: (null) */
+CmdPasteSpecial_SmallImages_120__RESID    BITMAP    "Res\\PasteSpecial_S120.bmp" /* SmallImages CmdPasteSpecial_SmallImages_120__RESID: (null) */
+CmdPasteSpecial_SmallImages_144__RESID    BITMAP    "Res\\PasteSpecial_S144.bmp" /* SmallImages CmdPasteSpecial_SmallImages_144__RESID: (null) */
+CmdPasteSpecial_SmallImages_192__RESID    BITMAP    "Res\\PasteSpecial_S192.bmp" /* SmallImages CmdPasteSpecial_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdCut_LabelTitle_RESID L"Cut" /* LabelTitle CmdCut_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdCut_TooltipTitle_RESID L"Cut (Ctrl+X)" /* TooltipTitle CmdCut_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdCut_TooltipDescription_RESID L"Cut the selection from the document and put it on the Clipboard." /* TooltipDescription CmdCut_TooltipDescription_RESID: (null) */
+END
+
+CmdCut_SmallImages_RESID    BITMAP    "Res\\Cut_S096.bmp" /* SmallImages CmdCut_SmallImages_RESID: (null) */
+CmdCut_SmallImages_120__RESID    BITMAP    "Res\\Cut_S120.bmp" /* SmallImages CmdCut_SmallImages_120__RESID: (null) */
+CmdCut_SmallImages_144__RESID    BITMAP    "Res\\Cut_S144.bmp" /* SmallImages CmdCut_SmallImages_144__RESID: (null) */
+CmdCut_SmallImages_192__RESID    BITMAP    "Res\\Cut_S192.bmp" /* SmallImages CmdCut_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdCopy_LabelTitle_RESID L"Copy" /* LabelTitle CmdCopy_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdCopy_TooltipTitle_RESID L"Copy (Ctrl+C)" /* TooltipTitle CmdCopy_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdCopy_TooltipDescription_RESID L"Copy the selection and put it on the Clipboard" /* TooltipDescription CmdCopy_TooltipDescription_RESID: (null) */
+END
+
+CmdCopy_SmallImages_RESID    BITMAP    "Res\\Copy_S096.bmp" /* SmallImages CmdCopy_SmallImages_RESID: (null) */
+CmdCopy_SmallImages_120__RESID    BITMAP    "Res\\Copy_S120.bmp" /* SmallImages CmdCopy_SmallImages_120__RESID: (null) */
+CmdCopy_SmallImages_144__RESID    BITMAP    "Res\\Copy_S144.bmp" /* SmallImages CmdCopy_SmallImages_144__RESID: (null) */
+CmdCopy_SmallImages_192__RESID    BITMAP    "Res\\Copy_S192.bmp" /* SmallImages CmdCopy_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdGroupFont_LabelTitle_RESID L"Font" /* LabelTitle CmdGroupFont_LabelTitle_RESID: (null) */
+END
+
+CmdGroupFont_SmallImages_RESID    BITMAP    "Res\\TextColor_S096.bmp" /* SmallImages CmdGroupFont_SmallImages_RESID: (null) */
+CmdGroupFont_SmallImages_120__RESID    BITMAP    "Res\\TextColor_S120.bmp" /* SmallImages CmdGroupFont_SmallImages_120__RESID: (null) */
+CmdGroupFont_SmallImages_144__RESID    BITMAP    "Res\\TextColor_S144.bmp" /* SmallImages CmdGroupFont_SmallImages_144__RESID: (null) */
+CmdGroupFont_SmallImages_192__RESID    BITMAP    "Res\\TextColor_S192.bmp" /* SmallImages CmdGroupFont_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdFont_LabelTitle_RESID L"Font" /* LabelTitle CmdFont_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdGroupParagraph_LabelTitle_RESID L"Paragraph" /* LabelTitle CmdGroupParagraph_LabelTitle_RESID: (null) */
+END
+
+CmdGroupParagraph_SmallImages_RESID    BITMAP    "Res\\Paragraph_S096.bmp" /* SmallImages CmdGroupParagraph_SmallImages_RESID: (null) */
+CmdGroupParagraph_SmallImages_120__RESID    BITMAP    "Res\\Paragraph_S120.bmp" /* SmallImages CmdGroupParagraph_SmallImages_120__RESID: (null) */
+CmdGroupParagraph_SmallImages_144__RESID    BITMAP    "Res\\Paragraph_S144.bmp" /* SmallImages CmdGroupParagraph_SmallImages_144__RESID: (null) */
+CmdGroupParagraph_SmallImages_192__RESID    BITMAP    "Res\\Paragraph_S192.bmp" /* SmallImages CmdGroupParagraph_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdOutdent_LabelTitle_RESID L"Decrease indent" /* LabelTitle CmdOutdent_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdOutdent_TooltipTitle_RESID L"Decrease indent" /* TooltipTitle CmdOutdent_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdOutdent_TooltipDescription_RESID L"Decrease the indent level of the paragraph." /* TooltipDescription CmdOutdent_TooltipDescription_RESID: (null) */
+END
+
+CmdOutdent_SmallImages_RESID    BITMAP    "Res\\Outdent_S096.bmp" /* SmallImages CmdOutdent_SmallImages_RESID: (null) */
+CmdOutdent_SmallImages_120__RESID    BITMAP    "Res\\Outdent_S120.bmp" /* SmallImages CmdOutdent_SmallImages_120__RESID: (null) */
+CmdOutdent_SmallImages_144__RESID    BITMAP    "Res\\Outdent_S144.bmp" /* SmallImages CmdOutdent_SmallImages_144__RESID: (null) */
+CmdOutdent_SmallImages_192__RESID    BITMAP    "Res\\Outdent_S192.bmp" /* SmallImages CmdOutdent_SmallImages_192__RESID: (null) */
+CmdOutdent_SmallHighContrastImages_RESID    BITMAP    "Res\\Outdent_SHC.bmp" /* SmallHighContrastImages CmdOutdent_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdIndent_LabelTitle_RESID L"Increase indent" /* LabelTitle CmdIndent_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdIndent_TooltipTitle_RESID L"Increase indent" /* TooltipTitle CmdIndent_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdIndent_TooltipDescription_RESID L"Increase the indent level of the paragraph." /* TooltipDescription CmdIndent_TooltipDescription_RESID: (null) */
+END
+
+CmdIndent_SmallImages_RESID    BITMAP    "Res\\Indent_S096.bmp" /* SmallImages CmdIndent_SmallImages_RESID: (null) */
+CmdIndent_SmallImages_120__RESID    BITMAP    "Res\\Indent_S120.bmp" /* SmallImages CmdIndent_SmallImages_120__RESID: (null) */
+CmdIndent_SmallImages_144__RESID    BITMAP    "Res\\Indent_S144.bmp" /* SmallImages CmdIndent_SmallImages_144__RESID: (null) */
+CmdIndent_SmallImages_192__RESID    BITMAP    "Res\\Indent_S192.bmp" /* SmallImages CmdIndent_SmallImages_192__RESID: (null) */
+CmdIndent_SmallHighContrastImages_RESID    BITMAP    "Res\\Indent_SHC.bmp" /* SmallHighContrastImages CmdIndent_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdList_LabelTitle_RESID L"List" /* LabelTitle CmdList_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdList_TooltipTitle_RESID L"Start a list" /* TooltipTitle CmdList_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdList_TooltipDescription_RESID L"Click the arrow to choose different list styles." /* TooltipDescription CmdList_TooltipDescription_RESID: (null) */
+END
+
+CmdList_SmallImages_RESID    BITMAP    "Res\\List_S096.bmp" /* SmallImages CmdList_SmallImages_RESID: (null) */
+CmdList_SmallImages_120__RESID    BITMAP    "Res\\List_S120.bmp" /* SmallImages CmdList_SmallImages_120__RESID: (null) */
+CmdList_SmallImages_144__RESID    BITMAP    "Res\\List_S144.bmp" /* SmallImages CmdList_SmallImages_144__RESID: (null) */
+CmdList_SmallImages_192__RESID    BITMAP    "Res\\List_S192.bmp" /* SmallImages CmdList_SmallImages_192__RESID: (null) */
+CmdList_SmallHighContrastImages_RESID    BITMAP    "Res\\List_SHC.bmp" /* SmallHighContrastImages CmdList_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdLineSpacing_LabelTitle_RESID L"Line spacing" /* LabelTitle CmdLineSpacing_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdLineSpacing_TooltipTitle_RESID L"Line spacing" /* TooltipTitle CmdLineSpacing_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdLineSpacing_TooltipDescription_RESID L"Change the spacing between lines of text. Add or remove the space after paragraphs." /* TooltipDescription CmdLineSpacing_TooltipDescription_RESID: (null) */
+END
+
+CmdLineSpacing_SmallImages_RESID    BITMAP    "Res\\LineSpacing_S096.bmp" /* SmallImages CmdLineSpacing_SmallImages_RESID: (null) */
+CmdLineSpacing_SmallImages_120__RESID    BITMAP    "Res\\LineSpacing_S120.bmp" /* SmallImages CmdLineSpacing_SmallImages_120__RESID: (null) */
+CmdLineSpacing_SmallImages_144__RESID    BITMAP    "Res\\LineSpacing_S144.bmp" /* SmallImages CmdLineSpacing_SmallImages_144__RESID: (null) */
+CmdLineSpacing_SmallImages_192__RESID    BITMAP    "Res\\LineSpacing_S192.bmp" /* SmallImages CmdLineSpacing_SmallImages_192__RESID: (null) */
+CmdLineSpacing_SmallHighContrastImages_RESID    BITMAP    "Res\\LineSpacing_SHC.bmp" /* SmallHighContrastImages CmdLineSpacing_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdLineSpacing1_0_LabelTitle_RESID L"1.0" /* LabelTitle CmdLineSpacing1_0_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdLineSpacing1_15_LabelTitle_RESID L"1.15" /* LabelTitle CmdLineSpacing1_15_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdLineSpacing1_5_LabelTitle_RESID L"1.5" /* LabelTitle CmdLineSpacing1_5_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdLineSpacing2_LabelTitle_RESID L"2" /* LabelTitle CmdLineSpacing2_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdLineSpacingAfter_LabelTitle_RESID L"Add 10pt space after paragraphs" /* LabelTitle CmdLineSpacingAfter_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdAlignLeft_LabelTitle_RESID L"Align left" /* LabelTitle CmdAlignLeft_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdAlignLeft_TooltipTitle_RESID L"Align text left (Ctrl+L)" /* TooltipTitle CmdAlignLeft_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdAlignLeft_TooltipDescription_RESID L"Align text to the left." /* TooltipDescription CmdAlignLeft_TooltipDescription_RESID: (null) */
+END
+
+CmdAlignLeft_SmallImages_RESID    BITMAP    "Res\\AlignLeft_S096.bmp" /* SmallImages CmdAlignLeft_SmallImages_RESID: (null) */
+CmdAlignLeft_SmallImages_120__RESID    BITMAP    "Res\\AlignLeft_S120.bmp" /* SmallImages CmdAlignLeft_SmallImages_120__RESID: (null) */
+CmdAlignLeft_SmallImages_144__RESID    BITMAP    "Res\\AlignLeft_S144.bmp" /* SmallImages CmdAlignLeft_SmallImages_144__RESID: (null) */
+CmdAlignLeft_SmallImages_192__RESID    BITMAP    "Res\\AlignLeft_S192.bmp" /* SmallImages CmdAlignLeft_SmallImages_192__RESID: (null) */
+CmdAlignLeft_SmallHighContrastImages_RESID    BITMAP    "Res\\AlignLeft_SHC.bmp" /* SmallHighContrastImages CmdAlignLeft_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdAlignCenter_LabelTitle_RESID L"Center" /* LabelTitle CmdAlignCenter_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdAlignCenter_TooltipTitle_RESID L"Center (Ctrl+E)" /* TooltipTitle CmdAlignCenter_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdAlignCenter_TooltipDescription_RESID L"Center text." /* TooltipDescription CmdAlignCenter_TooltipDescription_RESID: (null) */
+END
+
+CmdAlignCenter_SmallImages_RESID    BITMAP    "Res\\AlignCenter_S096.bmp" /* SmallImages CmdAlignCenter_SmallImages_RESID: (null) */
+CmdAlignCenter_SmallImages_120__RESID    BITMAP    "Res\\AlignCenter_S120.bmp" /* SmallImages CmdAlignCenter_SmallImages_120__RESID: (null) */
+CmdAlignCenter_SmallImages_144__RESID    BITMAP    "Res\\AlignCenter_S144.bmp" /* SmallImages CmdAlignCenter_SmallImages_144__RESID: (null) */
+CmdAlignCenter_SmallImages_192__RESID    BITMAP    "Res\\AlignCenter_S192.bmp" /* SmallImages CmdAlignCenter_SmallImages_192__RESID: (null) */
+CmdAlignCenter_SmallHighContrastImages_RESID    BITMAP    "Res\\AlignCenter_SHC.bmp" /* SmallHighContrastImages CmdAlignCenter_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdAlignRight_LabelTitle_RESID L"Align right" /* LabelTitle CmdAlignRight_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdAlignRight_TooltipTitle_RESID L"Align text right (Ctrl+R)" /* TooltipTitle CmdAlignRight_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdAlignRight_TooltipDescription_RESID L"Align text to the right." /* TooltipDescription CmdAlignRight_TooltipDescription_RESID: (null) */
+END
+
+CmdAlignRight_SmallImages_RESID    BITMAP    "Res\\AlignRight_S096.bmp" /* SmallImages CmdAlignRight_SmallImages_RESID: (null) */
+CmdAlignRight_SmallImages_120__RESID    BITMAP    "Res\\AlignRight_S120.bmp" /* SmallImages CmdAlignRight_SmallImages_120__RESID: (null) */
+CmdAlignRight_SmallImages_144__RESID    BITMAP    "Res\\AlignRight_S144.bmp" /* SmallImages CmdAlignRight_SmallImages_144__RESID: (null) */
+CmdAlignRight_SmallImages_192__RESID    BITMAP    "Res\\AlignRight_S192.bmp" /* SmallImages CmdAlignRight_SmallImages_192__RESID: (null) */
+CmdAlignRight_SmallHighContrastImages_RESID    BITMAP    "Res\\AlignRight_SHC.bmp" /* SmallHighContrastImages CmdAlignRight_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdAlignJustify_LabelTitle_RESID L"Justify" /* LabelTitle CmdAlignJustify_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdAlignJustify_TooltipTitle_RESID L"Justify (Ctrl+J)" /* TooltipTitle CmdAlignJustify_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdAlignJustify_TooltipDescription_RESID L"Align text to both left and right margins, adding extra space between words as necessary. This creates a clean look along the left and right side of the page." /* TooltipDescription CmdAlignJustify_TooltipDescription_RESID: (null) */
+END
+
+CmdAlignJustify_SmallImages_RESID    BITMAP    "Res\\AlignJustify_S096.bmp" /* SmallImages CmdAlignJustify_SmallImages_RESID: (null) */
+CmdAlignJustify_SmallImages_120__RESID    BITMAP    "Res\\AlignJustify_S120.bmp" /* SmallImages CmdAlignJustify_SmallImages_120__RESID: (null) */
+CmdAlignJustify_SmallImages_144__RESID    BITMAP    "Res\\AlignJustify_S144.bmp" /* SmallImages CmdAlignJustify_SmallImages_144__RESID: (null) */
+CmdAlignJustify_SmallImages_192__RESID    BITMAP    "Res\\AlignJustify_S192.bmp" /* SmallImages CmdAlignJustify_SmallImages_192__RESID: (null) */
+CmdAlignJustify_SmallHighContrastImages_RESID    BITMAP    "Res\\AlignJustify_SHC.bmp" /* SmallHighContrastImages CmdAlignJustify_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdParagraph_LabelTitle_RESID L"Paragraph" /* LabelTitle CmdParagraph_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdParagraph_TooltipTitle_RESID L"Paragraph" /* TooltipTitle CmdParagraph_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdParagraph_TooltipDescription_RESID L"Show the Paragraph dialog box." /* TooltipDescription CmdParagraph_TooltipDescription_RESID: (null) */
+END
+
+CmdParagraph_SmallImages_RESID    BITMAP    "Res\\Paragraph_S096.bmp" /* SmallImages CmdParagraph_SmallImages_RESID: (null) */
+CmdParagraph_SmallImages_120__RESID    BITMAP    "Res\\Paragraph_S120.bmp" /* SmallImages CmdParagraph_SmallImages_120__RESID: (null) */
+CmdParagraph_SmallImages_144__RESID    BITMAP    "Res\\Paragraph_S144.bmp" /* SmallImages CmdParagraph_SmallImages_144__RESID: (null) */
+CmdParagraph_SmallImages_192__RESID    BITMAP    "Res\\Paragraph_S192.bmp" /* SmallImages CmdParagraph_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdGroupInsert_LabelTitle_RESID L"Insert" /* LabelTitle CmdGroupInsert_LabelTitle_RESID: (null) */
+END
+
+CmdGroupInsert_SmallImages_RESID    BITMAP    "Res\\Picture_S096.bmp" /* SmallImages CmdGroupInsert_SmallImages_RESID: (null) */
+CmdGroupInsert_SmallImages_120__RESID    BITMAP    "Res\\Picture_S120.bmp" /* SmallImages CmdGroupInsert_SmallImages_120__RESID: (null) */
+CmdGroupInsert_SmallImages_144__RESID    BITMAP    "Res\\Picture_S144.bmp" /* SmallImages CmdGroupInsert_SmallImages_144__RESID: (null) */
+CmdGroupInsert_SmallImages_192__RESID    BITMAP    "Res\\Picture_S192.bmp" /* SmallImages CmdGroupInsert_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdInsertPicture_LabelTitle_RESID L"Picture" /* LabelTitle CmdInsertPicture_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdInsertPicture_TooltipTitle_RESID L"Insert picture" /* TooltipTitle CmdInsertPicture_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdInsertPicture_TooltipDescription_RESID L"Insert a picture from a file." /* TooltipDescription CmdInsertPicture_TooltipDescription_RESID: (null) */
+END
+
+CmdInsertPicture_SmallImages_RESID    BITMAP    "Res\\Picture_S096.bmp" /* SmallImages CmdInsertPicture_SmallImages_RESID: (null) */
+CmdInsertPicture_SmallImages_120__RESID    BITMAP    "Res\\Picture_S120.bmp" /* SmallImages CmdInsertPicture_SmallImages_120__RESID: (null) */
+CmdInsertPicture_SmallImages_144__RESID    BITMAP    "Res\\Picture_S144.bmp" /* SmallImages CmdInsertPicture_SmallImages_144__RESID: (null) */
+CmdInsertPicture_SmallImages_192__RESID    BITMAP    "Res\\Picture_S192.bmp" /* SmallImages CmdInsertPicture_SmallImages_192__RESID: (null) */
+CmdInsertPicture_LargeImages_RESID    BITMAP    "Res\\Picture_L096.bmp" /* LargeImages CmdInsertPicture_LargeImages_RESID: (null) */
+CmdInsertPicture_LargeImages_120__RESID    BITMAP    "Res\\Picture_L120.bmp" /* LargeImages CmdInsertPicture_LargeImages_120__RESID: (null) */
+CmdInsertPicture_LargeImages_144__RESID    BITMAP    "Res\\Picture_L144.bmp" /* LargeImages CmdInsertPicture_LargeImages_144__RESID: (null) */
+CmdInsertPicture_LargeImages_192__RESID    BITMAP    "Res\\Picture_L192.bmp" /* LargeImages CmdInsertPicture_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdChangePicture_LabelTitle_RESID L"Change picture" /* LabelTitle CmdChangePicture_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdChangePicture_TooltipTitle_RESID L"Change picture" /* TooltipTitle CmdChangePicture_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdChangePicture_TooltipDescription_RESID L"Change to a different picture, preserving the formatting and size of the current picture." /* TooltipDescription CmdChangePicture_TooltipDescription_RESID: (null) */
+END
+
+CmdChangePicture_SmallImages_RESID    BITMAP    "Res\\PictureChange_S096.bmp" /* SmallImages CmdChangePicture_SmallImages_RESID: (null) */
+CmdChangePicture_SmallImages_120__RESID    BITMAP    "Res\\PictureChange_S120.bmp" /* SmallImages CmdChangePicture_SmallImages_120__RESID: (null) */
+CmdChangePicture_SmallImages_144__RESID    BITMAP    "Res\\PictureChange_S144.bmp" /* SmallImages CmdChangePicture_SmallImages_144__RESID: (null) */
+CmdChangePicture_SmallImages_192__RESID    BITMAP    "Res\\PictureChange_S192.bmp" /* SmallImages CmdChangePicture_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdResizePicture_LabelTitle_RESID L"Resize picture" /* LabelTitle CmdResizePicture_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdResizePicture_TooltipTitle_RESID L"Resize picture" /* TooltipTitle CmdResizePicture_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdResizePicture_TooltipDescription_RESID L"Scale height and width of current picture with aspect ratio locked or independently." /* TooltipDescription CmdResizePicture_TooltipDescription_RESID: (null) */
+END
+
+CmdResizePicture_SmallImages_RESID    BITMAP    "Res\\PictureResize_S096.bmp" /* SmallImages CmdResizePicture_SmallImages_RESID: (null) */
+CmdResizePicture_SmallImages_120__RESID    BITMAP    "Res\\PictureResize_S120.bmp" /* SmallImages CmdResizePicture_SmallImages_120__RESID: (null) */
+CmdResizePicture_SmallImages_144__RESID    BITMAP    "Res\\PictureResize_S144.bmp" /* SmallImages CmdResizePicture_SmallImages_144__RESID: (null) */
+CmdResizePicture_SmallImages_192__RESID    BITMAP    "Res\\PictureResize_S192.bmp" /* SmallImages CmdResizePicture_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdPaintDrawing_LabelTitle_RESID L"Paint drawing" /* LabelTitle CmdPaintDrawing_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPaintDrawing_TooltipTitle_RESID L"Insert Paint drawing (Ctrl+D)" /* TooltipTitle CmdPaintDrawing_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPaintDrawing_TooltipDescription_RESID L"Insert draing created in Microsoft Paint." /* TooltipDescription CmdPaintDrawing_TooltipDescription_RESID: (null) */
+END
+
+CmdPaintDrawing_SmallImages_RESID    BITMAP    "Res\\PaintDrawing_S096.bmp" /* SmallImages CmdPaintDrawing_SmallImages_RESID: (null) */
+CmdPaintDrawing_SmallImages_120__RESID    BITMAP    "Res\\PaintDrawing_S120.bmp" /* SmallImages CmdPaintDrawing_SmallImages_120__RESID: (null) */
+CmdPaintDrawing_SmallImages_144__RESID    BITMAP    "Res\\PaintDrawing_S144.bmp" /* SmallImages CmdPaintDrawing_SmallImages_144__RESID: (null) */
+CmdPaintDrawing_SmallImages_192__RESID    BITMAP    "Res\\PaintDrawing_S192.bmp" /* SmallImages CmdPaintDrawing_SmallImages_192__RESID: (null) */
+CmdPaintDrawing_LargeImages_RESID    BITMAP    "Res\\PaintDrawing_L096.bmp" /* LargeImages CmdPaintDrawing_LargeImages_RESID: (null) */
+CmdPaintDrawing_LargeImages_120__RESID    BITMAP    "Res\\PaintDrawing_L120.bmp" /* LargeImages CmdPaintDrawing_LargeImages_120__RESID: (null) */
+CmdPaintDrawing_LargeImages_144__RESID    BITMAP    "Res\\PaintDrawing_L144.bmp" /* LargeImages CmdPaintDrawing_LargeImages_144__RESID: (null) */
+CmdPaintDrawing_LargeImages_192__RESID    BITMAP    "Res\\PaintDrawing_L192.bmp" /* LargeImages CmdPaintDrawing_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdDateAndTime_LabelTitle_RESID L"Date and time" /* LabelTitle CmdDateAndTime_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdDateAndTime_TooltipTitle_RESID L"Insert date and time" /* TooltipTitle CmdDateAndTime_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdDateAndTime_TooltipDescription_RESID L"Click here for date and time format options" /* TooltipDescription CmdDateAndTime_TooltipDescription_RESID: (null) */
+END
+
+CmdDateAndTime_SmallImages_RESID    BITMAP    "Res\\DateAndTime_S096.bmp" /* SmallImages CmdDateAndTime_SmallImages_RESID: (null) */
+CmdDateAndTime_SmallImages_120__RESID    BITMAP    "Res\\DateAndTime_S120.bmp" /* SmallImages CmdDateAndTime_SmallImages_120__RESID: (null) */
+CmdDateAndTime_SmallImages_144__RESID    BITMAP    "Res\\DateAndTime_S144.bmp" /* SmallImages CmdDateAndTime_SmallImages_144__RESID: (null) */
+CmdDateAndTime_SmallImages_192__RESID    BITMAP    "Res\\DateAndTime_S192.bmp" /* SmallImages CmdDateAndTime_SmallImages_192__RESID: (null) */
+CmdDateAndTime_LargeImages_RESID    BITMAP    "Res\\DateAndTime_L096.bmp" /* LargeImages CmdDateAndTime_LargeImages_RESID: (null) */
+CmdDateAndTime_LargeImages_120__RESID    BITMAP    "Res\\DateAndTime_L120.bmp" /* LargeImages CmdDateAndTime_LargeImages_120__RESID: (null) */
+CmdDateAndTime_LargeImages_144__RESID    BITMAP    "Res\\DateAndTime_L144.bmp" /* LargeImages CmdDateAndTime_LargeImages_144__RESID: (null) */
+CmdDateAndTime_LargeImages_192__RESID    BITMAP    "Res\\DateAndTime_L192.bmp" /* LargeImages CmdDateAndTime_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdInsertObject_LabelTitle_RESID L"Insert object" /* LabelTitle CmdInsertObject_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdInsertObject_TooltipTitle_RESID L"Insert object" /* TooltipTitle CmdInsertObject_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdInsertObject_TooltipDescription_RESID L"Show the Insert object dialog box." /* TooltipDescription CmdInsertObject_TooltipDescription_RESID: (null) */
+END
+
+CmdInsertObject_SmallImages_RESID    BITMAP    "Res\\InsertObject_S096.bmp" /* SmallImages CmdInsertObject_SmallImages_RESID: (null) */
+CmdInsertObject_SmallImages_120__RESID    BITMAP    "Res\\InsertObject_S120.bmp" /* SmallImages CmdInsertObject_SmallImages_120__RESID: (null) */
+CmdInsertObject_SmallImages_144__RESID    BITMAP    "Res\\InsertObject_S144.bmp" /* SmallImages CmdInsertObject_SmallImages_144__RESID: (null) */
+CmdInsertObject_SmallImages_192__RESID    BITMAP    "Res\\InsertObject_S192.bmp" /* SmallImages CmdInsertObject_SmallImages_192__RESID: (null) */
+CmdInsertObject_LargeImages_RESID    BITMAP    "Res\\InsertObject_L096.bmp" /* LargeImages CmdInsertObject_LargeImages_RESID: (null) */
+CmdInsertObject_LargeImages_120__RESID    BITMAP    "Res\\InsertObject_L120.bmp" /* LargeImages CmdInsertObject_LargeImages_120__RESID: (null) */
+CmdInsertObject_LargeImages_144__RESID    BITMAP    "Res\\InsertObject_L144.bmp" /* LargeImages CmdInsertObject_LargeImages_144__RESID: (null) */
+CmdInsertObject_LargeImages_192__RESID    BITMAP    "Res\\InsertObject_L192.bmp" /* LargeImages CmdInsertObject_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdGroupEditing_LabelTitle_RESID L"Editing" /* LabelTitle CmdGroupEditing_LabelTitle_RESID: (null) */
+END
+
+CmdGroupEditing_SmallImages_RESID    BITMAP    "Res\\Find_S096.bmp" /* SmallImages CmdGroupEditing_SmallImages_RESID: (null) */
+CmdGroupEditing_SmallImages_120__RESID    BITMAP    "Res\\Find_S120.bmp" /* SmallImages CmdGroupEditing_SmallImages_120__RESID: (null) */
+CmdGroupEditing_SmallImages_144__RESID    BITMAP    "Res\\Find_S144.bmp" /* SmallImages CmdGroupEditing_SmallImages_144__RESID: (null) */
+CmdGroupEditing_SmallImages_192__RESID    BITMAP    "Res\\Find_S192.bmp" /* SmallImages CmdGroupEditing_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdFind_LabelTitle_RESID L"Find" /* LabelTitle CmdFind_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdFind_TooltipTitle_RESID L"Find (Ctrl+F)" /* TooltipTitle CmdFind_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdFind_TooltipDescription_RESID L"Find text in the document." /* TooltipDescription CmdFind_TooltipDescription_RESID: (null) */
+END
+
+CmdFind_SmallImages_RESID    BITMAP    "Res\\Find_S096.bmp" /* SmallImages CmdFind_SmallImages_RESID: (null) */
+CmdFind_SmallImages_120__RESID    BITMAP    "Res\\Find_S120.bmp" /* SmallImages CmdFind_SmallImages_120__RESID: (null) */
+CmdFind_SmallImages_144__RESID    BITMAP    "Res\\Find_S144.bmp" /* SmallImages CmdFind_SmallImages_144__RESID: (null) */
+CmdFind_SmallImages_192__RESID    BITMAP    "Res\\Find_S192.bmp" /* SmallImages CmdFind_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdReplace_LabelTitle_RESID L"Replace" /* LabelTitle CmdReplace_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdReplace_TooltipTitle_RESID L"Replace (Ctrl+H)" /* TooltipTitle CmdReplace_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdReplace_TooltipDescription_RESID L"Replace text in the document." /* TooltipDescription CmdReplace_TooltipDescription_RESID: (null) */
+END
+
+CmdReplace_SmallImages_RESID    BITMAP    "Res\\Replace_S096.bmp" /* SmallImages CmdReplace_SmallImages_RESID: (null) */
+CmdReplace_SmallImages_120__RESID    BITMAP    "Res\\Replace_S120.bmp" /* SmallImages CmdReplace_SmallImages_120__RESID: (null) */
+CmdReplace_SmallImages_144__RESID    BITMAP    "Res\\Replace_S144.bmp" /* SmallImages CmdReplace_SmallImages_144__RESID: (null) */
+CmdReplace_SmallImages_192__RESID    BITMAP    "Res\\Replace_S192.bmp" /* SmallImages CmdReplace_SmallImages_192__RESID: (null) */
+CmdReplace_SmallHighContrastImages_RESID    BITMAP    "Res\\Replace_SHC.bmp" /* SmallHighContrastImages CmdReplace_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdSelectAll_LabelTitle_RESID L"Select all" /* LabelTitle CmdSelectAll_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdSelectAll_TooltipDescription_RESID L"Select all (Ctrl+H)" /* TooltipDescription CmdSelectAll_TooltipDescription_RESID: (null) */
+END
+
+CmdSelectAll_SmallImages_RESID    BITMAP    "Res\\SelectAll_S096.bmp" /* SmallImages CmdSelectAll_SmallImages_RESID: (null) */
+CmdSelectAll_SmallImages_120__RESID    BITMAP    "Res\\SelectAll_S120.bmp" /* SmallImages CmdSelectAll_SmallImages_120__RESID: (null) */
+CmdSelectAll_SmallImages_144__RESID    BITMAP    "Res\\SelectAll_S144.bmp" /* SmallImages CmdSelectAll_SmallImages_144__RESID: (null) */
+CmdSelectAll_SmallImages_192__RESID    BITMAP    "Res\\SelectAll_S192.bmp" /* SmallImages CmdSelectAll_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdTabView_LabelTitle_RESID L"View" /* LabelTitle CmdTabView_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdGroupZoom_LabelTitle_RESID L"Zoom" /* LabelTitle CmdGroupZoom_LabelTitle_RESID: (null) */
+END
+
+CmdGroupZoom_SmallImages_RESID    BITMAP    "Res\\Zoom_S096.bmp" /* SmallImages CmdGroupZoom_SmallImages_RESID: (null) */
+CmdGroupZoom_SmallImages_120__RESID    BITMAP    "Res\\Zoom_S120.bmp" /* SmallImages CmdGroupZoom_SmallImages_120__RESID: (null) */
+CmdGroupZoom_SmallImages_144__RESID    BITMAP    "Res\\Zoom_S144.bmp" /* SmallImages CmdGroupZoom_SmallImages_144__RESID: (null) */
+CmdGroupZoom_SmallImages_192__RESID    BITMAP    "Res\\Zoom_S192.bmp" /* SmallImages CmdGroupZoom_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdZoomIn_LabelTitle_RESID L"Zoom in" /* LabelTitle CmdZoomIn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdZoomIn_TooltipTitle_RESID L"Zoom in" /* TooltipTitle CmdZoomIn_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdZoomIn_TooltipDescription_RESID L"Zoom in on the document." /* TooltipDescription CmdZoomIn_TooltipDescription_RESID: (null) */
+END
+
+CmdZoomIn_SmallImages_RESID    BITMAP    "Res\\ZoomIn_S096.bmp" /* SmallImages CmdZoomIn_SmallImages_RESID: (null) */
+CmdZoomIn_SmallImages_120__RESID    BITMAP    "Res\\ZoomIn_S120.bmp" /* SmallImages CmdZoomIn_SmallImages_120__RESID: (null) */
+CmdZoomIn_SmallImages_144__RESID    BITMAP    "Res\\ZoomIn_S144.bmp" /* SmallImages CmdZoomIn_SmallImages_144__RESID: (null) */
+CmdZoomIn_SmallImages_192__RESID    BITMAP    "Res\\ZoomIn_S192.bmp" /* SmallImages CmdZoomIn_SmallImages_192__RESID: (null) */
+CmdZoomIn_LargeImages_RESID    BITMAP    "Res\\ZoomIn_L096.bmp" /* LargeImages CmdZoomIn_LargeImages_RESID: (null) */
+CmdZoomIn_LargeImages_120__RESID    BITMAP    "Res\\ZoomIn_L120.bmp" /* LargeImages CmdZoomIn_LargeImages_120__RESID: (null) */
+CmdZoomIn_LargeImages_144__RESID    BITMAP    "Res\\ZoomIn_L144.bmp" /* LargeImages CmdZoomIn_LargeImages_144__RESID: (null) */
+CmdZoomIn_LargeImages_192__RESID    BITMAP    "Res\\ZoomIn_L192.bmp" /* LargeImages CmdZoomIn_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdZoomOut_LabelTitle_RESID L"Zoom out" /* LabelTitle CmdZoomOut_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdZoomOut_TooltipTitle_RESID L"Zoom out" /* TooltipTitle CmdZoomOut_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdZoomOut_TooltipDescription_RESID L"Zoom out on the document." /* TooltipDescription CmdZoomOut_TooltipDescription_RESID: (null) */
+END
+
+CmdZoomOut_SmallImages_RESID    BITMAP    "Res\\ZoomOut_S096.bmp" /* SmallImages CmdZoomOut_SmallImages_RESID: (null) */
+CmdZoomOut_SmallImages_120__RESID    BITMAP    "Res\\ZoomOut_S120.bmp" /* SmallImages CmdZoomOut_SmallImages_120__RESID: (null) */
+CmdZoomOut_SmallImages_144__RESID    BITMAP    "Res\\ZoomOut_S144.bmp" /* SmallImages CmdZoomOut_SmallImages_144__RESID: (null) */
+CmdZoomOut_SmallImages_192__RESID    BITMAP    "Res\\ZoomOut_S192.bmp" /* SmallImages CmdZoomOut_SmallImages_192__RESID: (null) */
+CmdZoomOut_LargeImages_RESID    BITMAP    "Res\\ZoomOut_L096.bmp" /* LargeImages CmdZoomOut_LargeImages_RESID: (null) */
+CmdZoomOut_LargeImages_120__RESID    BITMAP    "Res\\ZoomOut_L120.bmp" /* LargeImages CmdZoomOut_LargeImages_120__RESID: (null) */
+CmdZoomOut_LargeImages_144__RESID    BITMAP    "Res\\ZoomOut_L144.bmp" /* LargeImages CmdZoomOut_LargeImages_144__RESID: (null) */
+CmdZoomOut_LargeImages_192__RESID    BITMAP    "Res\\ZoomOut_L192.bmp" /* LargeImages CmdZoomOut_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdZoom100Percent_LabelTitle_RESID L"100%" /* LabelTitle CmdZoom100Percent_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdZoom100Percent_TooltipTitle_RESID L"100%" /* TooltipTitle CmdZoom100Percent_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdZoom100Percent_TooltipDescription_RESID L"Zoom the document to 100% of the normal size." /* TooltipDescription CmdZoom100Percent_TooltipDescription_RESID: (null) */
+END
+
+CmdZoom100Percent_SmallImages_RESID    BITMAP    "Res\\Zoom100_S096.bmp" /* SmallImages CmdZoom100Percent_SmallImages_RESID: (null) */
+CmdZoom100Percent_SmallImages_120__RESID    BITMAP    "Res\\Zoom100_S120.bmp" /* SmallImages CmdZoom100Percent_SmallImages_120__RESID: (null) */
+CmdZoom100Percent_SmallImages_144__RESID    BITMAP    "Res\\Zoom100_S144.bmp" /* SmallImages CmdZoom100Percent_SmallImages_144__RESID: (null) */
+CmdZoom100Percent_SmallImages_192__RESID    BITMAP    "Res\\Zoom100_S192.bmp" /* SmallImages CmdZoom100Percent_SmallImages_192__RESID: (null) */
+CmdZoom100Percent_LargeImages_RESID    BITMAP    "Res\\Zoom100_L096.bmp" /* LargeImages CmdZoom100Percent_LargeImages_RESID: (null) */
+CmdZoom100Percent_LargeImages_120__RESID    BITMAP    "Res\\Zoom100_L120.bmp" /* LargeImages CmdZoom100Percent_LargeImages_120__RESID: (null) */
+CmdZoom100Percent_LargeImages_144__RESID    BITMAP    "Res\\Zoom100_L144.bmp" /* LargeImages CmdZoom100Percent_LargeImages_144__RESID: (null) */
+CmdZoom100Percent_LargeImages_192__RESID    BITMAP    "Res\\Zoom100_L192.bmp" /* LargeImages CmdZoom100Percent_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdGroupShowOrHide_LabelTitle_RESID L"Show or hide" /* LabelTitle CmdGroupShowOrHide_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdRuler_LabelTitle_RESID L"Ruler" /* LabelTitle CmdRuler_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdRuler_TooltipTitle_RESID L"Ruler" /* TooltipTitle CmdRuler_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdRuler_TooltipDescription_RESID L"Show or hide ruler. You can use ruler to measure and line up text and objects in the document." /* TooltipDescription CmdRuler_TooltipDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdStatusBar_LabelTitle_RESID L"Status bar" /* LabelTitle CmdStatusBar_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdStatusBar_TooltipTitle_RESID L"Status bar" /* TooltipTitle CmdStatusBar_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdStatusBar_TooltipDescription_RESID L"Show or hide status bar at the bottom of the window." /* TooltipDescription CmdStatusBar_TooltipDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdGroupSettings_LabelTitle_RESID L"Settings" /* LabelTitle CmdGroupSettings_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdWordWrap_LabelTitle_RESID L"Word wrap" /* LabelTitle CmdWordWrap_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdWordWrap_TooltipTitle_RESID L"Word wrap" /* TooltipTitle CmdWordWrap_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdWordWrap_TooltipDescription_RESID L"Select word wrapping option to change how text appears on your screen. This does not affect how the document looks when you print it." /* TooltipDescription CmdWordWrap_TooltipDescription_RESID: (null) */
+END
+
+CmdWordWrap_SmallImages_RESID    BITMAP    "Res\\WordWrap_S096.bmp" /* SmallImages CmdWordWrap_SmallImages_RESID: (null) */
+CmdWordWrap_SmallImages_120__RESID    BITMAP    "Res\\WordWrap_S120.bmp" /* SmallImages CmdWordWrap_SmallImages_120__RESID: (null) */
+CmdWordWrap_SmallImages_144__RESID    BITMAP    "Res\\WordWrap_S144.bmp" /* SmallImages CmdWordWrap_SmallImages_144__RESID: (null) */
+CmdWordWrap_SmallImages_192__RESID    BITMAP    "Res\\WordWrap_S192.bmp" /* SmallImages CmdWordWrap_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdNoWrap_LabelTitle_RESID L"No wrap" /* LabelTitle CmdNoWrap_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdNoWrap_TooltipTitle_RESID L"No wrap" /* TooltipTitle CmdNoWrap_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdNoWrap_TooltipDescription_RESID L"No text wrapping." /* TooltipDescription CmdNoWrap_TooltipDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdWrapToWindow_LabelTitle_RESID L"Wrap to window" /* LabelTitle CmdWrapToWindow_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdWrapToWindow_TooltipTitle_RESID L"Wrap to window" /* TooltipTitle CmdWrapToWindow_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdWrapToWindow_TooltipDescription_RESID L"Wrap text to window." /* TooltipDescription CmdWrapToWindow_TooltipDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdWrapToRuler_LabelTitle_RESID L"Wrap to ruler" /* LabelTitle CmdWrapToRuler_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdWrapToRuler_TooltipTitle_RESID L"Wrap to ruler" /* TooltipTitle CmdWrapToRuler_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdWrapToRuler_TooltipDescription_RESID L"Wrap text to ruler." /* TooltipDescription CmdWrapToRuler_TooltipDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdMeasurementUnits_LabelTitle_RESID L"Measurement units" /* LabelTitle CmdMeasurementUnits_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdMeasurementUnits_TooltipTitle_RESID L"Measurement units" /* TooltipTitle CmdMeasurementUnits_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdMeasurementUnits_TooltipDescription_RESID L"Select measurement units for ruler and page setup." /* TooltipDescription CmdMeasurementUnits_TooltipDescription_RESID: (null) */
+END
+
+CmdMeasurementUnits_SmallImages_RESID    BITMAP    "Res\\MeasurementUnits_S096.bmp" /* SmallImages CmdMeasurementUnits_SmallImages_RESID: (null) */
+CmdMeasurementUnits_SmallImages_120__RESID    BITMAP    "Res\\MeasurementUnits_S120.bmp" /* SmallImages CmdMeasurementUnits_SmallImages_120__RESID: (null) */
+CmdMeasurementUnits_SmallImages_144__RESID    BITMAP    "Res\\MeasurementUnits_S144.bmp" /* SmallImages CmdMeasurementUnits_SmallImages_144__RESID: (null) */
+CmdMeasurementUnits_SmallImages_192__RESID    BITMAP    "Res\\MeasurementUnits_S192.bmp" /* SmallImages CmdMeasurementUnits_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdInches_LabelTitle_RESID L"Inches" /* LabelTitle CmdInches_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdCentimeters_LabelTitle_RESID L"Centimeters" /* LabelTitle CmdCentimeters_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPoints_LabelTitle_RESID L"Points" /* LabelTitle CmdPoints_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPicas_LabelTitle_RESID L"Picas" /* LabelTitle CmdPicas_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdRecentItems_LabelTitle_RESID L"Recent documents" /* LabelTitle CmdRecentItems_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdNew_LabelTitle_RESID L"&New" /* LabelTitle CmdNew_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdNew_TooltipTitle_RESID L"New (Ctrl+N)" /* TooltipTitle CmdNew_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdNew_TooltipDescription_RESID L"Create a new document." /* TooltipDescription CmdNew_TooltipDescription_RESID: (null) */
+END
+
+CmdNew_SmallImages_RESID    BITMAP    "Res\\New_S096.bmp" /* SmallImages CmdNew_SmallImages_RESID: (null) */
+CmdNew_SmallImages_120__RESID    BITMAP    "Res\\New_S120.bmp" /* SmallImages CmdNew_SmallImages_120__RESID: (null) */
+CmdNew_SmallImages_144__RESID    BITMAP    "Res\\New_S144.bmp" /* SmallImages CmdNew_SmallImages_144__RESID: (null) */
+CmdNew_SmallImages_192__RESID    BITMAP    "Res\\New_S192.bmp" /* SmallImages CmdNew_SmallImages_192__RESID: (null) */
+CmdNew_LargeImages_RESID    BITMAP    "Res\\New_L096.bmp" /* LargeImages CmdNew_LargeImages_RESID: (null) */
+CmdNew_LargeImages_120__RESID    BITMAP    "Res\\New_L120.bmp" /* LargeImages CmdNew_LargeImages_120__RESID: (null) */
+CmdNew_LargeImages_144__RESID    BITMAP    "Res\\New_L144.bmp" /* LargeImages CmdNew_LargeImages_144__RESID: (null) */
+CmdNew_LargeImages_192__RESID    BITMAP    "Res\\New_L192.bmp" /* LargeImages CmdNew_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdOpen_LabelTitle_RESID L"&Open" /* LabelTitle CmdOpen_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdOpen_TooltipTitle_RESID L"Open (Ctrl+O)" /* TooltipTitle CmdOpen_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdOpen_TooltipDescription_RESID L"Open an existing document." /* TooltipDescription CmdOpen_TooltipDescription_RESID: (null) */
+END
+
+CmdOpen_SmallImages_RESID    BITMAP    "Res\\Open_S096.bmp" /* SmallImages CmdOpen_SmallImages_RESID: (null) */
+CmdOpen_SmallImages_120__RESID    BITMAP    "Res\\Open_S120.bmp" /* SmallImages CmdOpen_SmallImages_120__RESID: (null) */
+CmdOpen_SmallImages_144__RESID    BITMAP    "Res\\Open_S144.bmp" /* SmallImages CmdOpen_SmallImages_144__RESID: (null) */
+CmdOpen_SmallImages_192__RESID    BITMAP    "Res\\Open_S192.bmp" /* SmallImages CmdOpen_SmallImages_192__RESID: (null) */
+CmdOpen_LargeImages_RESID    BITMAP    "Res\\Open_L096.bmp" /* LargeImages CmdOpen_LargeImages_RESID: (null) */
+CmdOpen_LargeImages_120__RESID    BITMAP    "Res\\Open_L120.bmp" /* LargeImages CmdOpen_LargeImages_120__RESID: (null) */
+CmdOpen_LargeImages_144__RESID    BITMAP    "Res\\Open_L144.bmp" /* LargeImages CmdOpen_LargeImages_144__RESID: (null) */
+CmdOpen_LargeImages_192__RESID    BITMAP    "Res\\Open_L192.bmp" /* LargeImages CmdOpen_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdSave_LabelTitle_RESID L"&Save" /* LabelTitle CmdSave_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdSave_TooltipTitle_RESID L"Save (Ctrl+S)" /* TooltipTitle CmdSave_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdSave_TooltipDescription_RESID L"Save the active document." /* TooltipDescription CmdSave_TooltipDescription_RESID: (null) */
+END
+
+CmdSave_SmallImages_RESID    BITMAP    "Res\\Save_S096.bmp" /* SmallImages CmdSave_SmallImages_RESID: (null) */
+CmdSave_SmallImages_120__RESID    BITMAP    "Res\\Save_S120.bmp" /* SmallImages CmdSave_SmallImages_120__RESID: (null) */
+CmdSave_SmallImages_144__RESID    BITMAP    "Res\\Save_S144.bmp" /* SmallImages CmdSave_SmallImages_144__RESID: (null) */
+CmdSave_SmallImages_192__RESID    BITMAP    "Res\\Save_S192.bmp" /* SmallImages CmdSave_SmallImages_192__RESID: (null) */
+CmdSave_LargeImages_RESID    BITMAP    "Res\\Save_L096.bmp" /* LargeImages CmdSave_LargeImages_RESID: (null) */
+CmdSave_LargeImages_120__RESID    BITMAP    "Res\\Save_L120.bmp" /* LargeImages CmdSave_LargeImages_120__RESID: (null) */
+CmdSave_LargeImages_144__RESID    BITMAP    "Res\\Save_L144.bmp" /* LargeImages CmdSave_LargeImages_144__RESID: (null) */
+CmdSave_LargeImages_192__RESID    BITMAP    "Res\\Save_L192.bmp" /* LargeImages CmdSave_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdSaveAs_LabelTitle_RESID L"Save &as" /* LabelTitle CmdSaveAs_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdSaveAs_TooltipDescription_RESID L"Save the document with a new name or format." /* TooltipDescription CmdSaveAs_TooltipDescription_RESID: (null) */
+END
+
+CmdSaveAs_SmallImages_RESID    BITMAP    "Res\\SaveAs_S096.bmp" /* SmallImages CmdSaveAs_SmallImages_RESID: (null) */
+CmdSaveAs_SmallImages_120__RESID    BITMAP    "Res\\SaveAs_S120.bmp" /* SmallImages CmdSaveAs_SmallImages_120__RESID: (null) */
+CmdSaveAs_SmallImages_144__RESID    BITMAP    "Res\\SaveAs_S144.bmp" /* SmallImages CmdSaveAs_SmallImages_144__RESID: (null) */
+CmdSaveAs_SmallImages_192__RESID    BITMAP    "Res\\SaveAs_S192.bmp" /* SmallImages CmdSaveAs_SmallImages_192__RESID: (null) */
+CmdSaveAs_LargeImages_RESID    BITMAP    "Res\\SaveAs_L096.bmp" /* LargeImages CmdSaveAs_LargeImages_RESID: (null) */
+CmdSaveAs_LargeImages_120__RESID    BITMAP    "Res\\SaveAs_L120.bmp" /* LargeImages CmdSaveAs_LargeImages_120__RESID: (null) */
+CmdSaveAs_LargeImages_144__RESID    BITMAP    "Res\\SaveAs_L144.bmp" /* LargeImages CmdSaveAs_LargeImages_144__RESID: (null) */
+CmdSaveAs_LargeImages_192__RESID    BITMAP    "Res\\SaveAs_L192.bmp" /* LargeImages CmdSaveAs_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdHeaderSave_LabelTitle_RESID L"Save a copy of the document" /* LabelTitle CmdHeaderSave_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdRichTextDocument_LabelTitle_RESID L"&Rich Text document" /* LabelTitle CmdRichTextDocument_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdRichTextDocument_LabelDescription_RESID L"Save the document in the Rich Text format." /* LabelDescription CmdRichTextDocument_LabelDescription_RESID: (null) */
+END
+
+CmdRichTextDocument_SmallImages_RESID    BITMAP    "Res\\RichText_S096.bmp" /* SmallImages CmdRichTextDocument_SmallImages_RESID: (null) */
+CmdRichTextDocument_SmallImages_120__RESID    BITMAP    "Res\\RichText_S120.bmp" /* SmallImages CmdRichTextDocument_SmallImages_120__RESID: (null) */
+CmdRichTextDocument_SmallImages_144__RESID    BITMAP    "Res\\RichText_S144.bmp" /* SmallImages CmdRichTextDocument_SmallImages_144__RESID: (null) */
+CmdRichTextDocument_SmallImages_192__RESID    BITMAP    "Res\\RichText_S192.bmp" /* SmallImages CmdRichTextDocument_SmallImages_192__RESID: (null) */
+CmdRichTextDocument_LargeImages_RESID    BITMAP    "Res\\RichText_L096.bmp" /* LargeImages CmdRichTextDocument_LargeImages_RESID: (null) */
+CmdRichTextDocument_LargeImages_120__RESID    BITMAP    "Res\\RichText_L120.bmp" /* LargeImages CmdRichTextDocument_LargeImages_120__RESID: (null) */
+CmdRichTextDocument_LargeImages_144__RESID    BITMAP    "Res\\RichText_L144.bmp" /* LargeImages CmdRichTextDocument_LargeImages_144__RESID: (null) */
+CmdRichTextDocument_LargeImages_192__RESID    BITMAP    "Res\\RichText_L192.bmp" /* LargeImages CmdRichTextDocument_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdOfficeOpenXMLDocument_LabelTitle_RESID L"Office Open &XML document" /* LabelTitle CmdOfficeOpenXMLDocument_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdOfficeOpenXMLDocument_LabelDescription_RESID L"Save the document in the Office Open XML format." /* LabelDescription CmdOfficeOpenXMLDocument_LabelDescription_RESID: (null) */
+END
+
+CmdOfficeOpenXMLDocument_SmallImages_RESID    BITMAP    "Res\\OfficeXmlDocument_S096.bmp" /* SmallImages CmdOfficeOpenXMLDocument_SmallImages_RESID: (null) */
+CmdOfficeOpenXMLDocument_SmallImages_120__RESID    BITMAP    "Res\\OfficeXmlDocument_S120.bmp" /* SmallImages CmdOfficeOpenXMLDocument_SmallImages_120__RESID: (null) */
+CmdOfficeOpenXMLDocument_SmallImages_144__RESID    BITMAP    "Res\\OfficeXmlDocument_S144.bmp" /* SmallImages CmdOfficeOpenXMLDocument_SmallImages_144__RESID: (null) */
+CmdOfficeOpenXMLDocument_SmallImages_192__RESID    BITMAP    "Res\\OfficeXmlDocument_S192.bmp" /* SmallImages CmdOfficeOpenXMLDocument_SmallImages_192__RESID: (null) */
+CmdOfficeOpenXMLDocument_LargeImages_RESID    BITMAP    "Res\\OfficeXmlDocument_L096.bmp" /* LargeImages CmdOfficeOpenXMLDocument_LargeImages_RESID: (null) */
+CmdOfficeOpenXMLDocument_LargeImages_120__RESID    BITMAP    "Res\\OfficeXmlDocument_L120.bmp" /* LargeImages CmdOfficeOpenXMLDocument_LargeImages_120__RESID: (null) */
+CmdOfficeOpenXMLDocument_LargeImages_144__RESID    BITMAP    "Res\\OfficeXmlDocument_L144.bmp" /* LargeImages CmdOfficeOpenXMLDocument_LargeImages_144__RESID: (null) */
+CmdOfficeOpenXMLDocument_LargeImages_192__RESID    BITMAP    "Res\\OfficeXmlDocument_L192.bmp" /* LargeImages CmdOfficeOpenXMLDocument_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdOpenDocumentText_LabelTitle_RESID L"Open&Document text" /* LabelTitle CmdOpenDocumentText_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdOpenDocumentText_LabelDescription_RESID L"Save the document in the OpenDocument format." /* LabelDescription CmdOpenDocumentText_LabelDescription_RESID: (null) */
+END
+
+CmdOpenDocumentText_SmallImages_RESID    BITMAP    "Res\\OpenDocumentText_S096.bmp" /* SmallImages CmdOpenDocumentText_SmallImages_RESID: (null) */
+CmdOpenDocumentText_SmallImages_120__RESID    BITMAP    "Res\\OpenDocumentText_S120.bmp" /* SmallImages CmdOpenDocumentText_SmallImages_120__RESID: (null) */
+CmdOpenDocumentText_SmallImages_144__RESID    BITMAP    "Res\\OpenDocumentText_S144.bmp" /* SmallImages CmdOpenDocumentText_SmallImages_144__RESID: (null) */
+CmdOpenDocumentText_SmallImages_192__RESID    BITMAP    "Res\\OpenDocumentText_S192.bmp" /* SmallImages CmdOpenDocumentText_SmallImages_192__RESID: (null) */
+CmdOpenDocumentText_LargeImages_RESID    BITMAP    "Res\\OpenDocumentText_L096.bmp" /* LargeImages CmdOpenDocumentText_LargeImages_RESID: (null) */
+CmdOpenDocumentText_LargeImages_120__RESID    BITMAP    "Res\\OpenDocumentText_L120.bmp" /* LargeImages CmdOpenDocumentText_LargeImages_120__RESID: (null) */
+CmdOpenDocumentText_LargeImages_144__RESID    BITMAP    "Res\\OpenDocumentText_L144.bmp" /* LargeImages CmdOpenDocumentText_LargeImages_144__RESID: (null) */
+CmdOpenDocumentText_LargeImages_192__RESID    BITMAP    "Res\\OpenDocumentText_L192.bmp" /* LargeImages CmdOpenDocumentText_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdPlainTextDocument_LabelTitle_RESID L"&Plain text document" /* LabelTitle CmdPlainTextDocument_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPlainTextDocument_LabelDescription_RESID L"Save the document as plain text without line breaks or formatting." /* LabelDescription CmdPlainTextDocument_LabelDescription_RESID: (null) */
+END
+
+CmdPlainTextDocument_SmallImages_RESID    BITMAP    "Res\\PlainText_S096.bmp" /* SmallImages CmdPlainTextDocument_SmallImages_RESID: (null) */
+CmdPlainTextDocument_SmallImages_120__RESID    BITMAP    "Res\\PlainText_S120.bmp" /* SmallImages CmdPlainTextDocument_SmallImages_120__RESID: (null) */
+CmdPlainTextDocument_SmallImages_144__RESID    BITMAP    "Res\\PlainText_S144.bmp" /* SmallImages CmdPlainTextDocument_SmallImages_144__RESID: (null) */
+CmdPlainTextDocument_SmallImages_192__RESID    BITMAP    "Res\\PlainText_S192.bmp" /* SmallImages CmdPlainTextDocument_SmallImages_192__RESID: (null) */
+CmdPlainTextDocument_LargeImages_RESID    BITMAP    "Res\\PlainText_L096.bmp" /* LargeImages CmdPlainTextDocument_LargeImages_RESID: (null) */
+CmdPlainTextDocument_LargeImages_120__RESID    BITMAP    "Res\\PlainText_L120.bmp" /* LargeImages CmdPlainTextDocument_LargeImages_120__RESID: (null) */
+CmdPlainTextDocument_LargeImages_144__RESID    BITMAP    "Res\\PlainText_L144.bmp" /* LargeImages CmdPlainTextDocument_LargeImages_144__RESID: (null) */
+CmdPlainTextDocument_LargeImages_192__RESID    BITMAP    "Res\\PlainText_L192.bmp" /* LargeImages CmdPlainTextDocument_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdOtherFormats_LabelTitle_RESID L"&Other formats" /* LabelTitle CmdOtherFormats_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdOtherFormats_LabelDescription_RESID L"Open the Save as dialog box to select from all possible file types." /* LabelDescription CmdOtherFormats_LabelDescription_RESID: (null) */
+END
+
+CmdOtherFormats_SmallImages_RESID    BITMAP    "Res\\SaveAs_S096.bmp" /* SmallImages CmdOtherFormats_SmallImages_RESID: (null) */
+CmdOtherFormats_SmallImages_120__RESID    BITMAP    "Res\\SaveAs_S120.bmp" /* SmallImages CmdOtherFormats_SmallImages_120__RESID: (null) */
+CmdOtherFormats_SmallImages_144__RESID    BITMAP    "Res\\SaveAs_S144.bmp" /* SmallImages CmdOtherFormats_SmallImages_144__RESID: (null) */
+CmdOtherFormats_SmallImages_192__RESID    BITMAP    "Res\\SaveAs_S192.bmp" /* SmallImages CmdOtherFormats_SmallImages_192__RESID: (null) */
+CmdOtherFormats_LargeImages_RESID    BITMAP    "Res\\SaveAs_L096.bmp" /* LargeImages CmdOtherFormats_LargeImages_RESID: (null) */
+CmdOtherFormats_LargeImages_120__RESID    BITMAP    "Res\\SaveAs_L120.bmp" /* LargeImages CmdOtherFormats_LargeImages_120__RESID: (null) */
+CmdOtherFormats_LargeImages_144__RESID    BITMAP    "Res\\SaveAs_L144.bmp" /* LargeImages CmdOtherFormats_LargeImages_144__RESID: (null) */
+CmdOtherFormats_LargeImages_192__RESID    BITMAP    "Res\\SaveAs_L192.bmp" /* LargeImages CmdOtherFormats_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdPrint_LabelTitle_RESID L"&Print" /* LabelTitle CmdPrint_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPrint_LabelDescription_RESID L"Select printer, number of copies and other printing options before printing." /* LabelDescription CmdPrint_LabelDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPrint_TooltipTitle_RESID L"Print (Ctrl+P)" /* TooltipTitle CmdPrint_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPrint_TooltipDescription_RESID L"Print the current document." /* TooltipDescription CmdPrint_TooltipDescription_RESID: (null) */
+END
+
+CmdPrint_SmallImages_RESID    BITMAP    "Res\\Print_S096.bmp" /* SmallImages CmdPrint_SmallImages_RESID: (null) */
+CmdPrint_SmallImages_120__RESID    BITMAP    "Res\\Print_S120.bmp" /* SmallImages CmdPrint_SmallImages_120__RESID: (null) */
+CmdPrint_SmallImages_144__RESID    BITMAP    "Res\\Print_S144.bmp" /* SmallImages CmdPrint_SmallImages_144__RESID: (null) */
+CmdPrint_SmallImages_192__RESID    BITMAP    "Res\\Print_S192.bmp" /* SmallImages CmdPrint_SmallImages_192__RESID: (null) */
+CmdPrint_LargeImages_RESID    BITMAP    "Res\\Print_L096.bmp" /* LargeImages CmdPrint_LargeImages_RESID: (null) */
+CmdPrint_LargeImages_120__RESID    BITMAP    "Res\\Print_L120.bmp" /* LargeImages CmdPrint_LargeImages_120__RESID: (null) */
+CmdPrint_LargeImages_144__RESID    BITMAP    "Res\\Print_L144.bmp" /* LargeImages CmdPrint_LargeImages_144__RESID: (null) */
+CmdPrint_LargeImages_192__RESID    BITMAP    "Res\\Print_L192.bmp" /* LargeImages CmdPrint_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdHeaderPrint_LabelTitle_RESID L"Preview and print the document" /* LabelTitle CmdHeaderPrint_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdQuickPrint_LabelTitle_RESID L"&Quick print" /* LabelTitle CmdQuickPrint_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdQuickPrint_LabelDescription_RESID L"Send the document directly to the default printer without making changes." /* LabelDescription CmdQuickPrint_LabelDescription_RESID: (null) */
+END
+
+CmdQuickPrint_SmallImages_RESID    BITMAP    "Res\\PrintQuick_S096.bmp" /* SmallImages CmdQuickPrint_SmallImages_RESID: (null) */
+CmdQuickPrint_SmallImages_120__RESID    BITMAP    "Res\\PrintQuick_S120.bmp" /* SmallImages CmdQuickPrint_SmallImages_120__RESID: (null) */
+CmdQuickPrint_SmallImages_144__RESID    BITMAP    "Res\\PrintQuick_S144.bmp" /* SmallImages CmdQuickPrint_SmallImages_144__RESID: (null) */
+CmdQuickPrint_SmallImages_192__RESID    BITMAP    "Res\\PrintQuick_S192.bmp" /* SmallImages CmdQuickPrint_SmallImages_192__RESID: (null) */
+CmdQuickPrint_LargeImages_RESID    BITMAP    "Res\\PrintQuick_L096.bmp" /* LargeImages CmdQuickPrint_LargeImages_RESID: (null) */
+CmdQuickPrint_LargeImages_120__RESID    BITMAP    "Res\\PrintQuick_L120.bmp" /* LargeImages CmdQuickPrint_LargeImages_120__RESID: (null) */
+CmdQuickPrint_LargeImages_144__RESID    BITMAP    "Res\\PrintQuick_L144.bmp" /* LargeImages CmdQuickPrint_LargeImages_144__RESID: (null) */
+CmdQuickPrint_LargeImages_192__RESID    BITMAP    "Res\\PrintQuick_L192.bmp" /* LargeImages CmdQuickPrint_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdPrintPreview_LabelTitle_RESID L"Print pre&view" /* LabelTitle CmdPrintPreview_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPrintPreview_LabelDescription_RESID L"Preview and make changes to pages before printing." /* LabelDescription CmdPrintPreview_LabelDescription_RESID: (null) */
+END
+
+CmdPrintPreview_SmallImages_RESID    BITMAP    "Res\\PrintPreview_S096.bmp" /* SmallImages CmdPrintPreview_SmallImages_RESID: (null) */
+CmdPrintPreview_SmallImages_120__RESID    BITMAP    "Res\\PrintPreview_S120.bmp" /* SmallImages CmdPrintPreview_SmallImages_120__RESID: (null) */
+CmdPrintPreview_SmallImages_144__RESID    BITMAP    "Res\\PrintPreview_S144.bmp" /* SmallImages CmdPrintPreview_SmallImages_144__RESID: (null) */
+CmdPrintPreview_SmallImages_192__RESID    BITMAP    "Res\\PrintPreview_S192.bmp" /* SmallImages CmdPrintPreview_SmallImages_192__RESID: (null) */
+CmdPrintPreview_LargeImages_RESID    BITMAP    "Res\\PrintPreview_L096.bmp" /* LargeImages CmdPrintPreview_LargeImages_RESID: (null) */
+CmdPrintPreview_LargeImages_120__RESID    BITMAP    "Res\\PrintPreview_L120.bmp" /* LargeImages CmdPrintPreview_LargeImages_120__RESID: (null) */
+CmdPrintPreview_LargeImages_144__RESID    BITMAP    "Res\\PrintPreview_L144.bmp" /* LargeImages CmdPrintPreview_LargeImages_144__RESID: (null) */
+CmdPrintPreview_LargeImages_192__RESID    BITMAP    "Res\\PrintPreview_L192.bmp" /* LargeImages CmdPrintPreview_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdPageSetup_LabelTitle_RESID L"Pa&ge setup" /* LabelTitle CmdPageSetup_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPageSetup_TooltipDescription_RESID L"Change page layout settings." /* TooltipDescription CmdPageSetup_TooltipDescription_RESID: (null) */
+END
+
+CmdPageSetup_SmallImages_RESID    BITMAP    "Res\\PageSetup_S096.bmp" /* SmallImages CmdPageSetup_SmallImages_RESID: (null) */
+CmdPageSetup_SmallImages_120__RESID    BITMAP    "Res\\PageSetup_S120.bmp" /* SmallImages CmdPageSetup_SmallImages_120__RESID: (null) */
+CmdPageSetup_SmallImages_144__RESID    BITMAP    "Res\\PageSetup_S144.bmp" /* SmallImages CmdPageSetup_SmallImages_144__RESID: (null) */
+CmdPageSetup_SmallImages_192__RESID    BITMAP    "Res\\PageSetup_S192.bmp" /* SmallImages CmdPageSetup_SmallImages_192__RESID: (null) */
+CmdPageSetup_LargeImages_RESID    BITMAP    "Res\\PageSetup_L096.bmp" /* LargeImages CmdPageSetup_LargeImages_RESID: (null) */
+CmdPageSetup_LargeImages_120__RESID    BITMAP    "Res\\PageSetup_L120.bmp" /* LargeImages CmdPageSetup_LargeImages_120__RESID: (null) */
+CmdPageSetup_LargeImages_144__RESID    BITMAP    "Res\\PageSetup_L144.bmp" /* LargeImages CmdPageSetup_LargeImages_144__RESID: (null) */
+CmdPageSetup_LargeImages_192__RESID    BITMAP    "Res\\PageSetup_L192.bmp" /* LargeImages CmdPageSetup_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdEmail_LabelTitle_RESID L"Sen&d in e-mail" /* LabelTitle CmdEmail_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdEmail_TooltipDescription_RESID L"Send a copy of the document in an e-mail message as an attachment." /* TooltipDescription CmdEmail_TooltipDescription_RESID: (null) */
+END
+
+CmdEmail_SmallImages_RESID    BITMAP    "Res\\E-mail_S096.bmp" /* SmallImages CmdEmail_SmallImages_RESID: (null) */
+CmdEmail_SmallImages_120__RESID    BITMAP    "Res\\E-mail_S120.bmp" /* SmallImages CmdEmail_SmallImages_120__RESID: (null) */
+CmdEmail_SmallImages_144__RESID    BITMAP    "Res\\E-mail_S144.bmp" /* SmallImages CmdEmail_SmallImages_144__RESID: (null) */
+CmdEmail_SmallImages_192__RESID    BITMAP    "Res\\E-mail_S192.bmp" /* SmallImages CmdEmail_SmallImages_192__RESID: (null) */
+CmdEmail_LargeImages_RESID    BITMAP    "Res\\E-mail_L096.bmp" /* LargeImages CmdEmail_LargeImages_RESID: (null) */
+CmdEmail_LargeImages_120__RESID    BITMAP    "Res\\E-mail_L120.bmp" /* LargeImages CmdEmail_LargeImages_120__RESID: (null) */
+CmdEmail_LargeImages_144__RESID    BITMAP    "Res\\E-mail_L144.bmp" /* LargeImages CmdEmail_LargeImages_144__RESID: (null) */
+CmdEmail_LargeImages_192__RESID    BITMAP    "Res\\E-mail_L192.bmp" /* LargeImages CmdEmail_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdAbout_LabelTitle_RESID L"Abou&t WordPad" /* LabelTitle CmdAbout_LabelTitle_RESID: (null) */
+END
+
+CmdAbout_SmallImages_RESID    BITMAP    "Res\\About_S096.bmp" /* SmallImages CmdAbout_SmallImages_RESID: (null) */
+CmdAbout_SmallImages_120__RESID    BITMAP    "Res\\About_S120.bmp" /* SmallImages CmdAbout_SmallImages_120__RESID: (null) */
+CmdAbout_SmallImages_144__RESID    BITMAP    "Res\\About_S144.bmp" /* SmallImages CmdAbout_SmallImages_144__RESID: (null) */
+CmdAbout_SmallImages_192__RESID    BITMAP    "Res\\About_S192.bmp" /* SmallImages CmdAbout_SmallImages_192__RESID: (null) */
+CmdAbout_LargeImages_RESID    BITMAP    "Res\\About_L096.bmp" /* LargeImages CmdAbout_LargeImages_RESID: (null) */
+CmdAbout_LargeImages_120__RESID    BITMAP    "Res\\About_L120.bmp" /* LargeImages CmdAbout_LargeImages_120__RESID: (null) */
+CmdAbout_LargeImages_144__RESID    BITMAP    "Res\\About_L144.bmp" /* LargeImages CmdAbout_LargeImages_144__RESID: (null) */
+CmdAbout_LargeImages_192__RESID    BITMAP    "Res\\About_L192.bmp" /* LargeImages CmdAbout_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdExit_LabelTitle_RESID L"E&xit" /* LabelTitle CmdExit_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdExit_TooltipDescription_RESID L"Exit WordPad" /* TooltipDescription CmdExit_TooltipDescription_RESID: (null) */
+END
+
+CmdExit_SmallImages_RESID    BITMAP    "Res\\Exit_S096.bmp" /* SmallImages CmdExit_SmallImages_RESID: (null) */
+CmdExit_SmallImages_120__RESID    BITMAP    "Res\\Exit_S120.bmp" /* SmallImages CmdExit_SmallImages_120__RESID: (null) */
+CmdExit_SmallImages_144__RESID    BITMAP    "Res\\Exit_S144.bmp" /* SmallImages CmdExit_SmallImages_144__RESID: (null) */
+CmdExit_SmallImages_192__RESID    BITMAP    "Res\\Exit_S192.bmp" /* SmallImages CmdExit_SmallImages_192__RESID: (null) */
+CmdExit_LargeImages_RESID    BITMAP    "Res\\Exit_L096.bmp" /* LargeImages CmdExit_LargeImages_RESID: (null) */
+CmdExit_LargeImages_120__RESID    BITMAP    "Res\\Exit_L120.bmp" /* LargeImages CmdExit_LargeImages_120__RESID: (null) */
+CmdExit_LargeImages_144__RESID    BITMAP    "Res\\Exit_L144.bmp" /* LargeImages CmdExit_LargeImages_144__RESID: (null) */
+CmdExit_LargeImages_192__RESID    BITMAP    "Res\\Exit_L192.bmp" /* LargeImages CmdExit_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdTabPrintPreview_LabelTitle_RESID L"Print preview" /* LabelTitle CmdTabPrintPreview_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdGroupPrint_LabelTitle_RESID L"Print" /* LabelTitle CmdGroupPrint_LabelTitle_RESID: (null) */
+END
+
+CmdGroupPrint_SmallImages_RESID    BITMAP    "Res\\Print_S096.bmp" /* SmallImages CmdGroupPrint_SmallImages_RESID: (null) */
+CmdGroupPrint_SmallImages_120__RESID    BITMAP    "Res\\Print_S120.bmp" /* SmallImages CmdGroupPrint_SmallImages_120__RESID: (null) */
+CmdGroupPrint_SmallImages_144__RESID    BITMAP    "Res\\Print_S144.bmp" /* SmallImages CmdGroupPrint_SmallImages_144__RESID: (null) */
+CmdGroupPrint_SmallImages_192__RESID    BITMAP    "Res\\Print_S192.bmp" /* SmallImages CmdGroupPrint_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdViewOnePage_LabelTitle_RESID L"One page" /* LabelTitle CmdViewOnePage_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdViewOnePage_TooltipTitle_RESID L"One page" /* TooltipTitle CmdViewOnePage_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdViewOnePage_TooltipDescription_RESID L"Zoom the document so that an entire page fits in the window." /* TooltipDescription CmdViewOnePage_TooltipDescription_RESID: (null) */
+END
+
+CmdViewOnePage_SmallImages_RESID    BITMAP    "Res\\ViewOnePage_S096.bmp" /* SmallImages CmdViewOnePage_SmallImages_RESID: (null) */
+CmdViewOnePage_SmallImages_120__RESID    BITMAP    "Res\\ViewOnePage_S120.bmp" /* SmallImages CmdViewOnePage_SmallImages_120__RESID: (null) */
+CmdViewOnePage_SmallImages_144__RESID    BITMAP    "Res\\ViewOnePage_S144.bmp" /* SmallImages CmdViewOnePage_SmallImages_144__RESID: (null) */
+CmdViewOnePage_SmallImages_192__RESID    BITMAP    "Res\\ViewOnePage_S192.bmp" /* SmallImages CmdViewOnePage_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdViewTwoPages_LabelTitle_RESID L"Two pages" /* LabelTitle CmdViewTwoPages_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdViewTwoPages_TooltipTitle_RESID L"Two pages" /* TooltipTitle CmdViewTwoPages_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdViewTwoPages_TooltipDescription_RESID L"Zoom the document so that two pages fit in the window." /* TooltipDescription CmdViewTwoPages_TooltipDescription_RESID: (null) */
+END
+
+CmdViewTwoPages_SmallImages_RESID    BITMAP    "Res\\ViewTwoPages_S096.bmp" /* SmallImages CmdViewTwoPages_SmallImages_RESID: (null) */
+CmdViewTwoPages_SmallImages_120__RESID    BITMAP    "Res\\ViewTwoPages_S120.bmp" /* SmallImages CmdViewTwoPages_SmallImages_120__RESID: (null) */
+CmdViewTwoPages_SmallImages_144__RESID    BITMAP    "Res\\ViewTwoPages_S144.bmp" /* SmallImages CmdViewTwoPages_SmallImages_144__RESID: (null) */
+CmdViewTwoPages_SmallImages_192__RESID    BITMAP    "Res\\ViewTwoPages_S192.bmp" /* SmallImages CmdViewTwoPages_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdGroupPreview_LabelTitle_RESID L"Preview" /* LabelTitle CmdGroupPreview_LabelTitle_RESID: (null) */
+END
+
+CmdGroupPreview_SmallImages_RESID    BITMAP    "Res\\Preview_S096.bmp" /* SmallImages CmdGroupPreview_SmallImages_RESID: (null) */
+CmdGroupPreview_SmallImages_120__RESID    BITMAP    "Res\\Preview_S120.bmp" /* SmallImages CmdGroupPreview_SmallImages_120__RESID: (null) */
+CmdGroupPreview_SmallImages_144__RESID    BITMAP    "Res\\Preview_S144.bmp" /* SmallImages CmdGroupPreview_SmallImages_144__RESID: (null) */
+CmdGroupPreview_SmallImages_192__RESID    BITMAP    "Res\\Preview_S192.bmp" /* SmallImages CmdGroupPreview_SmallImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdPreviousPage_LabelTitle_RESID L"Previous page" /* LabelTitle CmdPreviousPage_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPreviousPage_TooltipTitle_RESID L"Previous page" /* TooltipTitle CmdPreviousPage_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdPreviousPage_TooltipDescription_RESID L"Navigate to the previous page of the document." /* TooltipDescription CmdPreviousPage_TooltipDescription_RESID: (null) */
+END
+
+CmdPreviousPage_SmallImages_RESID    BITMAP    "Res\\PagePrevious_S096.bmp" /* SmallImages CmdPreviousPage_SmallImages_RESID: (null) */
+CmdPreviousPage_SmallImages_120__RESID    BITMAP    "Res\\PagePrevious_S120.bmp" /* SmallImages CmdPreviousPage_SmallImages_120__RESID: (null) */
+CmdPreviousPage_SmallImages_144__RESID    BITMAP    "Res\\PagePrevious_S144.bmp" /* SmallImages CmdPreviousPage_SmallImages_144__RESID: (null) */
+CmdPreviousPage_SmallImages_192__RESID    BITMAP    "Res\\PagePrevious_S192.bmp" /* SmallImages CmdPreviousPage_SmallImages_192__RESID: (null) */
+CmdPreviousPage_LargeImages_RESID    BITMAP    "Res\\PagePrevious_L096.bmp" /* LargeImages CmdPreviousPage_LargeImages_RESID: (null) */
+CmdPreviousPage_LargeImages_120__RESID    BITMAP    "Res\\PagePrevious_L120.bmp" /* LargeImages CmdPreviousPage_LargeImages_120__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdNextPage_LabelTitle_RESID L"Next page" /* LabelTitle CmdNextPage_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdNextPage_TooltipTitle_RESID L"Next page" /* TooltipTitle CmdNextPage_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdNextPage_TooltipDescription_RESID L"Navigate to the next page in the document." /* TooltipDescription CmdNextPage_TooltipDescription_RESID: (null) */
+END
+
+CmdNextPage_SmallImages_RESID    BITMAP    "Res\\PageNext_S096.bmp" /* SmallImages CmdNextPage_SmallImages_RESID: (null) */
+CmdNextPage_SmallImages_120__RESID    BITMAP    "Res\\PageNext_S120.bmp" /* SmallImages CmdNextPage_SmallImages_120__RESID: (null) */
+CmdNextPage_SmallImages_144__RESID    BITMAP    "Res\\PageNext_S144.bmp" /* SmallImages CmdNextPage_SmallImages_144__RESID: (null) */
+CmdNextPage_SmallImages_192__RESID    BITMAP    "Res\\PageNext_S192.bmp" /* SmallImages CmdNextPage_SmallImages_192__RESID: (null) */
+CmdNextPage_LargeImages_RESID    BITMAP    "Res\\PageNext_L096.bmp" /* LargeImages CmdNextPage_LargeImages_RESID: (null) */
+CmdNextPage_LargeImages_120__RESID    BITMAP    "Res\\PageNext_L120.bmp" /* LargeImages CmdNextPage_LargeImages_120__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdGroupClose_LabelTitle_RESID L"Close" /* LabelTitle CmdGroupClose_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdClosePrintPreview_LabelTitle_RESID L"Close print preview" /* LabelTitle CmdClosePrintPreview_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdClosePrintPreview_TooltipTitle_RESID L"Close print preview" /* TooltipTitle CmdClosePrintPreview_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdClosePrintPreview_TooltipDescription_RESID L"Close print preview and return to editing the document." /* TooltipDescription CmdClosePrintPreview_TooltipDescription_RESID: (null) */
+END
+
+CmdClosePrintPreview_SmallImages_RESID    BITMAP    "Res\\Close_S096.bmp" /* SmallImages CmdClosePrintPreview_SmallImages_RESID: (null) */
+CmdClosePrintPreview_SmallImages_120__RESID    BITMAP    "Res\\Close_S120.bmp" /* SmallImages CmdClosePrintPreview_SmallImages_120__RESID: (null) */
+CmdClosePrintPreview_SmallImages_144__RESID    BITMAP    "Res\\Close_S144.bmp" /* SmallImages CmdClosePrintPreview_SmallImages_144__RESID: (null) */
+CmdClosePrintPreview_SmallImages_192__RESID    BITMAP    "Res\\Close_S192.bmp" /* SmallImages CmdClosePrintPreview_SmallImages_192__RESID: (null) */
+CmdClosePrintPreview_LargeImages_RESID    BITMAP    "Res\\Close_L096.bmp" /* LargeImages CmdClosePrintPreview_LargeImages_RESID: (null) */
+CmdClosePrintPreview_LargeImages_120__RESID    BITMAP    "Res\\Close_L120.bmp" /* LargeImages CmdClosePrintPreview_LargeImages_120__RESID: (null) */
+CmdClosePrintPreview_LargeImages_144__RESID    BITMAP    "Res\\Close_L144.bmp" /* LargeImages CmdClosePrintPreview_LargeImages_144__RESID: (null) */
+CmdClosePrintPreview_LargeImages_192__RESID    BITMAP    "Res\\Close_L192.bmp" /* LargeImages CmdClosePrintPreview_LargeImages_192__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdQuickAccessToolbar_LabelTitle_RESID L"Quick Access Toolbar" /* LabelTitle CmdQuickAccessToolbar_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdUndo_LabelTitle_RESID L"Undo" /* LabelTitle CmdUndo_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdUndo_TooltipTitle_RESID L"Undo (Ctrl+Z)" /* TooltipTitle CmdUndo_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdUndo_TooltipDescription_RESID L"Reverses the last action." /* TooltipDescription CmdUndo_TooltipDescription_RESID: (null) */
+END
+
+CmdUndo_SmallImages_RESID    BITMAP    "Res\\Undo_S096.bmp" /* SmallImages CmdUndo_SmallImages_RESID: (null) */
+CmdUndo_SmallImages_120__RESID    BITMAP    "Res\\Undo_S120.bmp" /* SmallImages CmdUndo_SmallImages_120__RESID: (null) */
+CmdUndo_SmallImages_144__RESID    BITMAP    "Res\\Undo_S144.bmp" /* SmallImages CmdUndo_SmallImages_144__RESID: (null) */
+CmdUndo_SmallImages_192__RESID    BITMAP    "Res\\Undo_S192.bmp" /* SmallImages CmdUndo_SmallImages_192__RESID: (null) */
+CmdUndo_SmallHighContrastImages_RESID    BITMAP    "Res\\Undo_SHC.bmp" /* SmallHighContrastImages CmdUndo_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdRedo_LabelTitle_RESID L"Redo" /* LabelTitle CmdRedo_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdRedo_TooltipTitle_RESID L"Redo (Ctrl+Y)" /* TooltipTitle CmdRedo_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdRedo_TooltipDescription_RESID L"Repeats the last action." /* TooltipDescription CmdRedo_TooltipDescription_RESID: (null) */
+END
+
+CmdRedo_SmallImages_RESID    BITMAP    "Res\\Redo_S096.bmp" /* SmallImages CmdRedo_SmallImages_RESID: (null) */
+CmdRedo_SmallImages_120__RESID    BITMAP    "Res\\Redo_S120.bmp" /* SmallImages CmdRedo_SmallImages_120__RESID: (null) */
+CmdRedo_SmallImages_144__RESID    BITMAP    "Res\\Redo_S144.bmp" /* SmallImages CmdRedo_SmallImages_144__RESID: (null) */
+CmdRedo_SmallImages_192__RESID    BITMAP    "Res\\Redo_S192.bmp" /* SmallImages CmdRedo_SmallImages_192__RESID: (null) */
+CmdRedo_SmallHighContrastImages_RESID    BITMAP    "Res\\Redo_SHC.bmp" /* SmallHighContrastImages CmdRedo_SmallHighContrastImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    CmdHelp_LabelTitle_RESID L"Help" /* LabelTitle CmdHelp_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdHelp_TooltipTitle_RESID L"WordPad Help (F1)" /* TooltipTitle CmdHelp_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdHelp_TooltipDescription_RESID L"Get help using WordPad." /* TooltipDescription CmdHelp_TooltipDescription_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdObjectProperties_LabelTitle_RESID L"Object properties" /* LabelTitle CmdObjectProperties_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdOpenObject_LabelTitle_RESID L"Open object" /* LabelTitle CmdOpenObject_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdLinks_LabelTitle_RESID L"Links" /* LabelTitle CmdLinks_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    CmdTabPrintPreview1_LabelTitle_RESID L"Label:CmdTabPrintPreview1" /* LabelTitle CmdTabPrintPreview1_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd2_LabelTitle_RESID L"Label:InternalCmd2" /* LabelTitle InternalCmd2_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd4_LabelTitle_RESID L"Label:InternalCmd4" /* LabelTitle InternalCmd4_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd6_LabelTitle_RESID L"Label:InternalCmd6" /* LabelTitle InternalCmd6_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd8_LabelTitle_RESID L"Label:InternalCmd8" /* LabelTitle InternalCmd8_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd10_LabelTitle_RESID L"Label:InternalCmd10" /* LabelTitle InternalCmd10_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd12_LabelTitle_RESID L"Label:InternalCmd12" /* LabelTitle InternalCmd12_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd14_LabelTitle_RESID L"Label:InternalCmd14" /* LabelTitle InternalCmd14_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd16_LabelTitle_RESID L"Label:InternalCmd16" /* LabelTitle InternalCmd16_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd18_LabelTitle_RESID L"Label:InternalCmd18" /* LabelTitle InternalCmd18_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd20_LabelTitle_RESID L"Label:InternalCmd20" /* LabelTitle InternalCmd20_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd22_LabelTitle_RESID L"Label:InternalCmd22" /* LabelTitle InternalCmd22_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd24_LabelTitle_RESID L"Label:InternalCmd24" /* LabelTitle InternalCmd24_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd26_LabelTitle_RESID L"Label:InternalCmd26" /* LabelTitle InternalCmd26_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd28_LabelTitle_RESID L"Label:InternalCmd28" /* LabelTitle InternalCmd28_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd30_LabelTitle_RESID L"Label:InternalCmd30" /* LabelTitle InternalCmd30_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd32_LabelTitle_RESID L"Label:InternalCmd32" /* LabelTitle InternalCmd32_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd34_LabelTitle_RESID L"Label:InternalCmd34" /* LabelTitle InternalCmd34_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd36_LabelTitle_RESID L"Label:InternalCmd36" /* LabelTitle InternalCmd36_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd38_LabelTitle_RESID L"Label:InternalCmd38" /* LabelTitle InternalCmd38_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd40_LabelTitle_RESID L"Label:InternalCmd40" /* LabelTitle InternalCmd40_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd42_LabelTitle_RESID L"Label:InternalCmd42" /* LabelTitle InternalCmd42_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd44_LabelTitle_RESID L"Label:InternalCmd44" /* LabelTitle InternalCmd44_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd46_LabelTitle_RESID L"Label:InternalCmd46" /* LabelTitle InternalCmd46_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd48_LabelTitle_RESID L"Label:InternalCmd48" /* LabelTitle InternalCmd48_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd50_LabelTitle_RESID L"Label:InternalCmd50" /* LabelTitle InternalCmd50_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd52_LabelTitle_RESID L"Label:InternalCmd52" /* LabelTitle InternalCmd52_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd54_LabelTitle_RESID L"Label:InternalCmd54" /* LabelTitle InternalCmd54_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd56_LabelTitle_RESID L"Label:InternalCmd56" /* LabelTitle InternalCmd56_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd58_LabelTitle_RESID L"Label:InternalCmd58" /* LabelTitle InternalCmd58_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd60_LabelTitle_RESID L"Label:InternalCmd60" /* LabelTitle InternalCmd60_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd62_LabelTitle_RESID L"Label:InternalCmd62" /* LabelTitle InternalCmd62_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd64_LabelTitle_RESID L"Label:InternalCmd64" /* LabelTitle InternalCmd64_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd66_LabelTitle_RESID L"Label:InternalCmd66" /* LabelTitle InternalCmd66_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd68_LabelTitle_RESID L"Label:InternalCmd68" /* LabelTitle InternalCmd68_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd70_LabelTitle_RESID L"Label:InternalCmd70" /* LabelTitle InternalCmd70_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd72_LabelTitle_RESID L"Label:InternalCmd72" /* LabelTitle InternalCmd72_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd74_LabelTitle_RESID L"Label:InternalCmd74" /* LabelTitle InternalCmd74_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd76_LabelTitle_RESID L"Label:InternalCmd76" /* LabelTitle InternalCmd76_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd78_LabelTitle_RESID L"Label:InternalCmd78" /* LabelTitle InternalCmd78_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd80_LabelTitle_RESID L"Label:InternalCmd80" /* LabelTitle InternalCmd80_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd82_LabelTitle_RESID L"Label:InternalCmd82" /* LabelTitle InternalCmd82_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd84_LabelTitle_RESID L"Label:InternalCmd84" /* LabelTitle InternalCmd84_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd86_LabelTitle_RESID L"Label:InternalCmd86" /* LabelTitle InternalCmd86_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd88_LabelTitle_RESID L"Label:InternalCmd88" /* LabelTitle InternalCmd88_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd90_LabelTitle_RESID L"Label:InternalCmd90" /* LabelTitle InternalCmd90_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd92_LabelTitle_RESID L"Label:InternalCmd92" /* LabelTitle InternalCmd92_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd94_LabelTitle_RESID L"Label:InternalCmd94" /* LabelTitle InternalCmd94_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd96_LabelTitle_RESID L"Label:InternalCmd96" /* LabelTitle InternalCmd96_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd98_LabelTitle_RESID L"Label:InternalCmd98" /* LabelTitle InternalCmd98_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd100_LabelTitle_RESID L"Label:InternalCmd100" /* LabelTitle InternalCmd100_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd102_LabelTitle_RESID L"Label:InternalCmd102" /* LabelTitle InternalCmd102_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd104_LabelTitle_RESID L"Label:InternalCmd104" /* LabelTitle InternalCmd104_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd106_LabelTitle_RESID L"Label:InternalCmd106" /* LabelTitle InternalCmd106_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd108_LabelTitle_RESID L"Label:InternalCmd108" /* LabelTitle InternalCmd108_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd110_LabelTitle_RESID L"Label:InternalCmd110" /* LabelTitle InternalCmd110_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd112_LabelTitle_RESID L"Label:InternalCmd112" /* LabelTitle InternalCmd112_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd114_LabelTitle_RESID L"Label:InternalCmd114" /* LabelTitle InternalCmd114_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd116_LabelTitle_RESID L"Label:InternalCmd116" /* LabelTitle InternalCmd116_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd118_LabelTitle_RESID L"Label:InternalCmd118" /* LabelTitle InternalCmd118_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd120_LabelTitle_RESID L"Label:InternalCmd120" /* LabelTitle InternalCmd120_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd122_LabelTitle_RESID L"Label:InternalCmd122" /* LabelTitle InternalCmd122_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd124_LabelTitle_RESID L"Label:InternalCmd124" /* LabelTitle InternalCmd124_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd126_LabelTitle_RESID L"Label:InternalCmd126" /* LabelTitle InternalCmd126_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd128_LabelTitle_RESID L"Label:InternalCmd128" /* LabelTitle InternalCmd128_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd130_LabelTitle_RESID L"Label:InternalCmd130" /* LabelTitle InternalCmd130_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd132_LabelTitle_RESID L"Label:InternalCmd132" /* LabelTitle InternalCmd132_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd134_LabelTitle_RESID L"Label:InternalCmd134" /* LabelTitle InternalCmd134_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd136_LabelTitle_RESID L"Label:InternalCmd136" /* LabelTitle InternalCmd136_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd138_LabelTitle_RESID L"Label:InternalCmd138" /* LabelTitle InternalCmd138_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd140_LabelTitle_RESID L"Label:InternalCmd140" /* LabelTitle InternalCmd140_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd142_LabelTitle_RESID L"Label:InternalCmd142" /* LabelTitle InternalCmd142_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd144_LabelTitle_RESID L"Label:InternalCmd144" /* LabelTitle InternalCmd144_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd146_LabelTitle_RESID L"Label:InternalCmd146" /* LabelTitle InternalCmd146_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd148_LabelTitle_RESID L"Label:InternalCmd148" /* LabelTitle InternalCmd148_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd150_LabelTitle_RESID L"Label:InternalCmd150" /* LabelTitle InternalCmd150_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd152_LabelTitle_RESID L"Label:InternalCmd152" /* LabelTitle InternalCmd152_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd154_LabelTitle_RESID L"Label:InternalCmd154" /* LabelTitle InternalCmd154_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd156_LabelTitle_RESID L"Label:InternalCmd156" /* LabelTitle InternalCmd156_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd158_LabelTitle_RESID L"Label:InternalCmd158" /* LabelTitle InternalCmd158_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd160_LabelTitle_RESID L"Label:InternalCmd160" /* LabelTitle InternalCmd160_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd162_LabelTitle_RESID L"Label:InternalCmd162" /* LabelTitle InternalCmd162_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd164_LabelTitle_RESID L"Label:InternalCmd164" /* LabelTitle InternalCmd164_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd166_LabelTitle_RESID L"Label:InternalCmd166" /* LabelTitle InternalCmd166_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd168_LabelTitle_RESID L"Label:InternalCmd168" /* LabelTitle InternalCmd168_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd170_LabelTitle_RESID L"Label:InternalCmd170" /* LabelTitle InternalCmd170_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd172_LabelTitle_RESID L"Label:InternalCmd172" /* LabelTitle InternalCmd172_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd174_LabelTitle_RESID L"Label:InternalCmd174" /* LabelTitle InternalCmd174_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd176_LabelTitle_RESID L"Label:InternalCmd176" /* LabelTitle InternalCmd176_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd178_LabelTitle_RESID L"Label:InternalCmd178" /* LabelTitle InternalCmd178_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd180_LabelTitle_RESID L"Label:InternalCmd180" /* LabelTitle InternalCmd180_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd182_LabelTitle_RESID L"Label:InternalCmd182" /* LabelTitle InternalCmd182_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd184_LabelTitle_RESID L"Label:InternalCmd184" /* LabelTitle InternalCmd184_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd186_LabelTitle_RESID L"Label:InternalCmd186" /* LabelTitle InternalCmd186_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd188_LabelTitle_RESID L"Label:InternalCmd188" /* LabelTitle InternalCmd188_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd190_LabelTitle_RESID L"Label:InternalCmd190" /* LabelTitle InternalCmd190_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd192_LabelTitle_RESID L"Label:InternalCmd192" /* LabelTitle InternalCmd192_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd194_LabelTitle_RESID L"Label:InternalCmd194" /* LabelTitle InternalCmd194_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd196_LabelTitle_RESID L"Label:InternalCmd196" /* LabelTitle InternalCmd196_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd198_LabelTitle_RESID L"Label:InternalCmd198" /* LabelTitle InternalCmd198_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd200_LabelTitle_RESID L"Label:InternalCmd200" /* LabelTitle InternalCmd200_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd202_LabelTitle_RESID L"Label:InternalCmd202" /* LabelTitle InternalCmd202_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd204_LabelTitle_RESID L"Label:InternalCmd204" /* LabelTitle InternalCmd204_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd206_LabelTitle_RESID L"Label:InternalCmd206" /* LabelTitle InternalCmd206_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd208_LabelTitle_RESID L"Label:InternalCmd208" /* LabelTitle InternalCmd208_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd210_LabelTitle_RESID L"Label:InternalCmd210" /* LabelTitle InternalCmd210_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd212_LabelTitle_RESID L"Label:InternalCmd212" /* LabelTitle InternalCmd212_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd214_LabelTitle_RESID L"Label:InternalCmd214" /* LabelTitle InternalCmd214_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd216_LabelTitle_RESID L"Label:InternalCmd216" /* LabelTitle InternalCmd216_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd218_LabelTitle_RESID L"Label:InternalCmd218" /* LabelTitle InternalCmd218_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd220_LabelTitle_RESID L"Label:InternalCmd220" /* LabelTitle InternalCmd220_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd222_LabelTitle_RESID L"Label:InternalCmd222" /* LabelTitle InternalCmd222_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd224_LabelTitle_RESID L"Label:InternalCmd224" /* LabelTitle InternalCmd224_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd226_LabelTitle_RESID L"Label:InternalCmd226" /* LabelTitle InternalCmd226_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd228_LabelTitle_RESID L"Label:InternalCmd228" /* LabelTitle InternalCmd228_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd230_LabelTitle_RESID L"Label:InternalCmd230" /* LabelTitle InternalCmd230_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd232_LabelTitle_RESID L"Label:InternalCmd232" /* LabelTitle InternalCmd232_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd234_LabelTitle_RESID L"Label:InternalCmd234" /* LabelTitle InternalCmd234_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd236_LabelTitle_RESID L"Label:InternalCmd236" /* LabelTitle InternalCmd236_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd238_LabelTitle_RESID L"Label:InternalCmd238" /* LabelTitle InternalCmd238_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd240_LabelTitle_RESID L"Label:InternalCmd240" /* LabelTitle InternalCmd240_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd242_LabelTitle_RESID L"Label:InternalCmd242" /* LabelTitle InternalCmd242_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd244_LabelTitle_RESID L"Label:InternalCmd244" /* LabelTitle InternalCmd244_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd246_LabelTitle_RESID L"Label:InternalCmd246" /* LabelTitle InternalCmd246_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd248_LabelTitle_RESID L"Label:InternalCmd248" /* LabelTitle InternalCmd248_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd250_LabelTitle_RESID L"Label:InternalCmd250" /* LabelTitle InternalCmd250_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd252_LabelTitle_RESID L"Label:InternalCmd252" /* LabelTitle InternalCmd252_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd254_LabelTitle_RESID L"Label:InternalCmd254" /* LabelTitle InternalCmd254_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd256_LabelTitle_RESID L"Label:InternalCmd256" /* LabelTitle InternalCmd256_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd258_LabelTitle_RESID L"Label:InternalCmd258" /* LabelTitle InternalCmd258_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd260_LabelTitle_RESID L"Label:InternalCmd260" /* LabelTitle InternalCmd260_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd262_LabelTitle_RESID L"Label:InternalCmd262" /* LabelTitle InternalCmd262_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd264_LabelTitle_RESID L"Label:InternalCmd264" /* LabelTitle InternalCmd264_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd266_LabelTitle_RESID L"Label:InternalCmd266" /* LabelTitle InternalCmd266_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd268_LabelTitle_RESID L"Label:InternalCmd268" /* LabelTitle InternalCmd268_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd270_LabelTitle_RESID L"Label:InternalCmd270" /* LabelTitle InternalCmd270_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd272_LabelTitle_RESID L"Label:InternalCmd272" /* LabelTitle InternalCmd272_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd274_LabelTitle_RESID L"Label:InternalCmd274" /* LabelTitle InternalCmd274_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd276_LabelTitle_RESID L"Label:InternalCmd276" /* LabelTitle InternalCmd276_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd278_LabelTitle_RESID L"Label:InternalCmd278" /* LabelTitle InternalCmd278_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd280_LabelTitle_RESID L"Label:InternalCmd280" /* LabelTitle InternalCmd280_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd282_LabelTitle_RESID L"Label:InternalCmd282" /* LabelTitle InternalCmd282_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd284_LabelTitle_RESID L"Label:InternalCmd284" /* LabelTitle InternalCmd284_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd286_LabelTitle_RESID L"Label:InternalCmd286" /* LabelTitle InternalCmd286_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd288_LabelTitle_RESID L"Label:InternalCmd288" /* LabelTitle InternalCmd288_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd290_LabelTitle_RESID L"Label:InternalCmd290" /* LabelTitle InternalCmd290_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd292_LabelTitle_RESID L"Label:InternalCmd292" /* LabelTitle InternalCmd292_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd294_LabelTitle_RESID L"Label:InternalCmd294" /* LabelTitle InternalCmd294_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd296_LabelTitle_RESID L"Label:InternalCmd296" /* LabelTitle InternalCmd296_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd298_LabelTitle_RESID L"Label:InternalCmd298" /* LabelTitle InternalCmd298_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd300_LabelTitle_RESID L"Label:InternalCmd300" /* LabelTitle InternalCmd300_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd302_LabelTitle_RESID L"Label:InternalCmd302" /* LabelTitle InternalCmd302_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd304_LabelTitle_RESID L"Label:InternalCmd304" /* LabelTitle InternalCmd304_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd306_LabelTitle_RESID L"Label:InternalCmd306" /* LabelTitle InternalCmd306_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd308_LabelTitle_RESID L"Label:InternalCmd308" /* LabelTitle InternalCmd308_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd310_LabelTitle_RESID L"Label:InternalCmd310" /* LabelTitle InternalCmd310_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd312_LabelTitle_RESID L"Label:InternalCmd312" /* LabelTitle InternalCmd312_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd314_LabelTitle_RESID L"Label:InternalCmd314" /* LabelTitle InternalCmd314_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd316_LabelTitle_RESID L"Label:InternalCmd316" /* LabelTitle InternalCmd316_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd318_LabelTitle_RESID L"Label:InternalCmd318" /* LabelTitle InternalCmd318_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd320_LabelTitle_RESID L"Label:InternalCmd320" /* LabelTitle InternalCmd320_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd322_LabelTitle_RESID L"Label:InternalCmd322" /* LabelTitle InternalCmd322_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd324_LabelTitle_RESID L"Label:InternalCmd324" /* LabelTitle InternalCmd324_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd326_LabelTitle_RESID L"Label:InternalCmd326" /* LabelTitle InternalCmd326_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd328_LabelTitle_RESID L"Label:InternalCmd328" /* LabelTitle InternalCmd328_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd330_LabelTitle_RESID L"Label:InternalCmd330" /* LabelTitle InternalCmd330_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd332_LabelTitle_RESID L"Label:InternalCmd332" /* LabelTitle InternalCmd332_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd334_LabelTitle_RESID L"Label:InternalCmd334" /* LabelTitle InternalCmd334_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd336_LabelTitle_RESID L"Label:InternalCmd336" /* LabelTitle InternalCmd336_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd338_LabelTitle_RESID L"Label:InternalCmd338" /* LabelTitle InternalCmd338_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd340_LabelTitle_RESID L"Label:InternalCmd340" /* LabelTitle InternalCmd340_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd342_LabelTitle_RESID L"Label:InternalCmd342" /* LabelTitle InternalCmd342_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd344_LabelTitle_RESID L"Label:InternalCmd344" /* LabelTitle InternalCmd344_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd346_LabelTitle_RESID L"Label:InternalCmd346" /* LabelTitle InternalCmd346_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd348_LabelTitle_RESID L"Label:InternalCmd348" /* LabelTitle InternalCmd348_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd350_LabelTitle_RESID L"Label:InternalCmd350" /* LabelTitle InternalCmd350_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd352_LabelTitle_RESID L"Label:InternalCmd352" /* LabelTitle InternalCmd352_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd354_LabelTitle_RESID L"Label:InternalCmd354" /* LabelTitle InternalCmd354_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd356_LabelTitle_RESID L"Label:InternalCmd356" /* LabelTitle InternalCmd356_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd358_LabelTitle_RESID L"Label:InternalCmd358" /* LabelTitle InternalCmd358_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd360_LabelTitle_RESID L"Label:InternalCmd360" /* LabelTitle InternalCmd360_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd362_LabelTitle_RESID L"Label:InternalCmd362" /* LabelTitle InternalCmd362_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd364_LabelTitle_RESID L"Label:InternalCmd364" /* LabelTitle InternalCmd364_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd366_LabelTitle_RESID L"Label:InternalCmd366" /* LabelTitle InternalCmd366_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd368_LabelTitle_RESID L"Label:InternalCmd368" /* LabelTitle InternalCmd368_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd370_LabelTitle_RESID L"Label:InternalCmd370" /* LabelTitle InternalCmd370_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd372_LabelTitle_RESID L"Label:InternalCmd372" /* LabelTitle InternalCmd372_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd374_LabelTitle_RESID L"Label:InternalCmd374" /* LabelTitle InternalCmd374_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd376_LabelTitle_RESID L"Label:InternalCmd376" /* LabelTitle InternalCmd376_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd378_LabelTitle_RESID L"Label:InternalCmd378" /* LabelTitle InternalCmd378_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd380_LabelTitle_RESID L"Label:InternalCmd380" /* LabelTitle InternalCmd380_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd382_LabelTitle_RESID L"Label:InternalCmd382" /* LabelTitle InternalCmd382_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd384_LabelTitle_RESID L"Label:InternalCmd384" /* LabelTitle InternalCmd384_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd386_LabelTitle_RESID L"Label:InternalCmd386" /* LabelTitle InternalCmd386_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd388_LabelTitle_RESID L"Label:InternalCmd388" /* LabelTitle InternalCmd388_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd390_LabelTitle_RESID L"Label:InternalCmd390" /* LabelTitle InternalCmd390_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd392_LabelTitle_RESID L"Label:InternalCmd392" /* LabelTitle InternalCmd392_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd394_LabelTitle_RESID L"Label:InternalCmd394" /* LabelTitle InternalCmd394_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd396_LabelTitle_RESID L"Label:InternalCmd396" /* LabelTitle InternalCmd396_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd398_LabelTitle_RESID L"Label:InternalCmd398" /* LabelTitle InternalCmd398_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd400_LabelTitle_RESID L"Label:InternalCmd400" /* LabelTitle InternalCmd400_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd402_LabelTitle_RESID L"Label:InternalCmd402" /* LabelTitle InternalCmd402_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd404_LabelTitle_RESID L"Label:InternalCmd404" /* LabelTitle InternalCmd404_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd406_LabelTitle_RESID L"Label:InternalCmd406" /* LabelTitle InternalCmd406_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd408_LabelTitle_RESID L"Label:InternalCmd408" /* LabelTitle InternalCmd408_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd410_LabelTitle_RESID L"Label:InternalCmd410" /* LabelTitle InternalCmd410_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd412_LabelTitle_RESID L"Label:InternalCmd412" /* LabelTitle InternalCmd412_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd414_LabelTitle_RESID L"Label:InternalCmd414" /* LabelTitle InternalCmd414_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd416_LabelTitle_RESID L"Label:InternalCmd416" /* LabelTitle InternalCmd416_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd418_LabelTitle_RESID L"Label:InternalCmd418" /* LabelTitle InternalCmd418_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd420_LabelTitle_RESID L"Label:InternalCmd420" /* LabelTitle InternalCmd420_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd422_LabelTitle_RESID L"Label:InternalCmd422" /* LabelTitle InternalCmd422_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd424_LabelTitle_RESID L"Label:InternalCmd424" /* LabelTitle InternalCmd424_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd426_LabelTitle_RESID L"Label:InternalCmd426" /* LabelTitle InternalCmd426_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd428_LabelTitle_RESID L"Label:InternalCmd428" /* LabelTitle InternalCmd428_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd430_LabelTitle_RESID L"Label:InternalCmd430" /* LabelTitle InternalCmd430_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd432_LabelTitle_RESID L"Label:InternalCmd432" /* LabelTitle InternalCmd432_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd434_LabelTitle_RESID L"Label:InternalCmd434" /* LabelTitle InternalCmd434_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd436_LabelTitle_RESID L"Label:InternalCmd436" /* LabelTitle InternalCmd436_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd438_LabelTitle_RESID L"Label:InternalCmd438" /* LabelTitle InternalCmd438_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd440_LabelTitle_RESID L"Label:InternalCmd440" /* LabelTitle InternalCmd440_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd442_LabelTitle_RESID L"Label:InternalCmd442" /* LabelTitle InternalCmd442_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd444_LabelTitle_RESID L"Label:InternalCmd444" /* LabelTitle InternalCmd444_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd446_LabelTitle_RESID L"Label:InternalCmd446" /* LabelTitle InternalCmd446_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd448_LabelTitle_RESID L"Label:InternalCmd448" /* LabelTitle InternalCmd448_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd450_LabelTitle_RESID L"Label:InternalCmd450" /* LabelTitle InternalCmd450_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd452_LabelTitle_RESID L"Label:InternalCmd452" /* LabelTitle InternalCmd452_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd454_LabelTitle_RESID L"Label:InternalCmd454" /* LabelTitle InternalCmd454_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd456_LabelTitle_RESID L"Label:InternalCmd456" /* LabelTitle InternalCmd456_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd458_LabelTitle_RESID L"Label:InternalCmd458" /* LabelTitle InternalCmd458_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd460_LabelTitle_RESID L"Label:InternalCmd460" /* LabelTitle InternalCmd460_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd462_LabelTitle_RESID L"Label:InternalCmd462" /* LabelTitle InternalCmd462_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd464_LabelTitle_RESID L"Label:InternalCmd464" /* LabelTitle InternalCmd464_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd466_LabelTitle_RESID L"Label:InternalCmd466" /* LabelTitle InternalCmd466_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd468_LabelTitle_RESID L"Label:InternalCmd468" /* LabelTitle InternalCmd468_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd470_LabelTitle_RESID L"Label:InternalCmd470" /* LabelTitle InternalCmd470_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd472_LabelTitle_RESID L"Label:InternalCmd472" /* LabelTitle InternalCmd472_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd474_LabelTitle_RESID L"Label:InternalCmd474" /* LabelTitle InternalCmd474_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd476_LabelTitle_RESID L"Label:InternalCmd476" /* LabelTitle InternalCmd476_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd478_LabelTitle_RESID L"Label:InternalCmd478" /* LabelTitle InternalCmd478_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd480_LabelTitle_RESID L"Label:InternalCmd480" /* LabelTitle InternalCmd480_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd482_LabelTitle_RESID L"Label:InternalCmd482" /* LabelTitle InternalCmd482_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd484_LabelTitle_RESID L"Label:InternalCmd484" /* LabelTitle InternalCmd484_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd486_LabelTitle_RESID L"Label:InternalCmd486" /* LabelTitle InternalCmd486_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd488_LabelTitle_RESID L"Label:InternalCmd488" /* LabelTitle InternalCmd488_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd490_LabelTitle_RESID L"Label:InternalCmd490" /* LabelTitle InternalCmd490_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd492_LabelTitle_RESID L"Label:InternalCmd492" /* LabelTitle InternalCmd492_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd494_LabelTitle_RESID L"Label:InternalCmd494" /* LabelTitle InternalCmd494_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd496_LabelTitle_RESID L"Label:InternalCmd496" /* LabelTitle InternalCmd496_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd498_LabelTitle_RESID L"Label:InternalCmd498" /* LabelTitle InternalCmd498_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd500_LabelTitle_RESID L"Label:InternalCmd500" /* LabelTitle InternalCmd500_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd502_LabelTitle_RESID L"Label:InternalCmd502" /* LabelTitle InternalCmd502_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd504_LabelTitle_RESID L"Label:InternalCmd504" /* LabelTitle InternalCmd504_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd506_LabelTitle_RESID L"Label:InternalCmd506" /* LabelTitle InternalCmd506_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd508_LabelTitle_RESID L"Label:InternalCmd508" /* LabelTitle InternalCmd508_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd510_LabelTitle_RESID L"Label:InternalCmd510" /* LabelTitle InternalCmd510_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd512_LabelTitle_RESID L"Label:InternalCmd512" /* LabelTitle InternalCmd512_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd514_LabelTitle_RESID L"Label:InternalCmd514" /* LabelTitle InternalCmd514_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd516_LabelTitle_RESID L"Label:InternalCmd516" /* LabelTitle InternalCmd516_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd518_LabelTitle_RESID L"Label:InternalCmd518" /* LabelTitle InternalCmd518_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd520_LabelTitle_RESID L"Label:InternalCmd520" /* LabelTitle InternalCmd520_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd522_LabelTitle_RESID L"Label:InternalCmd522" /* LabelTitle InternalCmd522_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd524_LabelTitle_RESID L"Label:InternalCmd524" /* LabelTitle InternalCmd524_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd526_LabelTitle_RESID L"Label:InternalCmd526" /* LabelTitle InternalCmd526_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd528_LabelTitle_RESID L"Label:InternalCmd528" /* LabelTitle InternalCmd528_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd530_LabelTitle_RESID L"Label:InternalCmd530" /* LabelTitle InternalCmd530_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd532_LabelTitle_RESID L"Label:InternalCmd532" /* LabelTitle InternalCmd532_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd534_LabelTitle_RESID L"Label:InternalCmd534" /* LabelTitle InternalCmd534_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd536_LabelTitle_RESID L"Label:InternalCmd536" /* LabelTitle InternalCmd536_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd538_LabelTitle_RESID L"Label:InternalCmd538" /* LabelTitle InternalCmd538_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd540_LabelTitle_RESID L"Label:InternalCmd540" /* LabelTitle InternalCmd540_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd542_LabelTitle_RESID L"Label:InternalCmd542" /* LabelTitle InternalCmd542_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd544_LabelTitle_RESID L"Label:InternalCmd544" /* LabelTitle InternalCmd544_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd546_LabelTitle_RESID L"Label:InternalCmd546" /* LabelTitle InternalCmd546_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd548_LabelTitle_RESID L"Label:InternalCmd548" /* LabelTitle InternalCmd548_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd550_LabelTitle_RESID L"Label:InternalCmd550" /* LabelTitle InternalCmd550_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd552_LabelTitle_RESID L"Label:InternalCmd552" /* LabelTitle InternalCmd552_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd554_LabelTitle_RESID L"Label:InternalCmd554" /* LabelTitle InternalCmd554_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd556_LabelTitle_RESID L"Label:InternalCmd556" /* LabelTitle InternalCmd556_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd558_LabelTitle_RESID L"Label:InternalCmd558" /* LabelTitle InternalCmd558_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd560_LabelTitle_RESID L"Label:InternalCmd560" /* LabelTitle InternalCmd560_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd562_LabelTitle_RESID L"Label:InternalCmd562" /* LabelTitle InternalCmd562_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd564_LabelTitle_RESID L"Label:InternalCmd564" /* LabelTitle InternalCmd564_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd566_LabelTitle_RESID L"Label:InternalCmd566" /* LabelTitle InternalCmd566_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd568_LabelTitle_RESID L"Label:InternalCmd568" /* LabelTitle InternalCmd568_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd570_LabelTitle_RESID L"Label:InternalCmd570" /* LabelTitle InternalCmd570_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd572_LabelTitle_RESID L"Label:InternalCmd572" /* LabelTitle InternalCmd572_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd574_LabelTitle_RESID L"Label:InternalCmd574" /* LabelTitle InternalCmd574_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd576_LabelTitle_RESID L"Label:InternalCmd576" /* LabelTitle InternalCmd576_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd578_LabelTitle_RESID L"Label:InternalCmd578" /* LabelTitle InternalCmd578_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd580_LabelTitle_RESID L"Label:InternalCmd580" /* LabelTitle InternalCmd580_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd582_LabelTitle_RESID L"Label:InternalCmd582" /* LabelTitle InternalCmd582_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd584_LabelTitle_RESID L"Label:InternalCmd584" /* LabelTitle InternalCmd584_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd586_LabelTitle_RESID L"Label:InternalCmd586" /* LabelTitle InternalCmd586_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd588_LabelTitle_RESID L"Label:InternalCmd588" /* LabelTitle InternalCmd588_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd590_LabelTitle_RESID L"Label:InternalCmd590" /* LabelTitle InternalCmd590_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd592_LabelTitle_RESID L"Label:InternalCmd592" /* LabelTitle InternalCmd592_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd594_LabelTitle_RESID L"Label:InternalCmd594" /* LabelTitle InternalCmd594_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd596_LabelTitle_RESID L"Label:InternalCmd596" /* LabelTitle InternalCmd596_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd598_LabelTitle_RESID L"Label:InternalCmd598" /* LabelTitle InternalCmd598_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd600_LabelTitle_RESID L"Label:InternalCmd600" /* LabelTitle InternalCmd600_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd602_LabelTitle_RESID L"Label:InternalCmd602" /* LabelTitle InternalCmd602_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd604_LabelTitle_RESID L"Label:InternalCmd604" /* LabelTitle InternalCmd604_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd606_LabelTitle_RESID L"Label:InternalCmd606" /* LabelTitle InternalCmd606_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd608_LabelTitle_RESID L"Label:InternalCmd608" /* LabelTitle InternalCmd608_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd610_LabelTitle_RESID L"Label:InternalCmd610" /* LabelTitle InternalCmd610_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd612_LabelTitle_RESID L"Label:InternalCmd612" /* LabelTitle InternalCmd612_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd614_LabelTitle_RESID L"Label:InternalCmd614" /* LabelTitle InternalCmd614_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd616_LabelTitle_RESID L"Label:InternalCmd616" /* LabelTitle InternalCmd616_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd618_LabelTitle_RESID L"Label:InternalCmd618" /* LabelTitle InternalCmd618_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd620_LabelTitle_RESID L"Label:InternalCmd620" /* LabelTitle InternalCmd620_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd622_LabelTitle_RESID L"Label:InternalCmd622" /* LabelTitle InternalCmd622_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd624_LabelTitle_RESID L"Label:InternalCmd624" /* LabelTitle InternalCmd624_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd626_LabelTitle_RESID L"Label:InternalCmd626" /* LabelTitle InternalCmd626_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd628_LabelTitle_RESID L"Label:InternalCmd628" /* LabelTitle InternalCmd628_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd630_LabelTitle_RESID L"Label:InternalCmd630" /* LabelTitle InternalCmd630_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd632_LabelTitle_RESID L"Label:InternalCmd632" /* LabelTitle InternalCmd632_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd634_LabelTitle_RESID L"Label:InternalCmd634" /* LabelTitle InternalCmd634_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd636_LabelTitle_RESID L"Label:InternalCmd636" /* LabelTitle InternalCmd636_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd638_LabelTitle_RESID L"Label:InternalCmd638" /* LabelTitle InternalCmd638_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd640_LabelTitle_RESID L"Label:InternalCmd640" /* LabelTitle InternalCmd640_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd642_LabelTitle_RESID L"Label:InternalCmd642" /* LabelTitle InternalCmd642_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd644_LabelTitle_RESID L"Label:InternalCmd644" /* LabelTitle InternalCmd644_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd646_LabelTitle_RESID L"Label:InternalCmd646" /* LabelTitle InternalCmd646_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd648_LabelTitle_RESID L"Label:InternalCmd648" /* LabelTitle InternalCmd648_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd650_LabelTitle_RESID L"Label:InternalCmd650" /* LabelTitle InternalCmd650_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd652_LabelTitle_RESID L"Label:InternalCmd652" /* LabelTitle InternalCmd652_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd654_LabelTitle_RESID L"Label:InternalCmd654" /* LabelTitle InternalCmd654_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd656_LabelTitle_RESID L"Label:InternalCmd656" /* LabelTitle InternalCmd656_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd658_LabelTitle_RESID L"Label:InternalCmd658" /* LabelTitle InternalCmd658_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd660_LabelTitle_RESID L"Label:InternalCmd660" /* LabelTitle InternalCmd660_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd662_LabelTitle_RESID L"Label:InternalCmd662" /* LabelTitle InternalCmd662_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd664_LabelTitle_RESID L"Label:InternalCmd664" /* LabelTitle InternalCmd664_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd666_LabelTitle_RESID L"Label:InternalCmd666" /* LabelTitle InternalCmd666_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd668_LabelTitle_RESID L"Label:InternalCmd668" /* LabelTitle InternalCmd668_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd670_LabelTitle_RESID L"Label:InternalCmd670" /* LabelTitle InternalCmd670_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd672_LabelTitle_RESID L"Label:InternalCmd672" /* LabelTitle InternalCmd672_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd674_LabelTitle_RESID L"Label:InternalCmd674" /* LabelTitle InternalCmd674_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd676_LabelTitle_RESID L"Label:InternalCmd676" /* LabelTitle InternalCmd676_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd678_LabelTitle_RESID L"Label:InternalCmd678" /* LabelTitle InternalCmd678_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd680_LabelTitle_RESID L"Label:InternalCmd680" /* LabelTitle InternalCmd680_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd682_LabelTitle_RESID L"Label:InternalCmd682" /* LabelTitle InternalCmd682_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd684_LabelTitle_RESID L"Label:InternalCmd684" /* LabelTitle InternalCmd684_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd686_LabelTitle_RESID L"Label:InternalCmd686" /* LabelTitle InternalCmd686_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd688_LabelTitle_RESID L"Label:InternalCmd688" /* LabelTitle InternalCmd688_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd690_LabelTitle_RESID L"Label:InternalCmd690" /* LabelTitle InternalCmd690_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd692_LabelTitle_RESID L"Label:InternalCmd692" /* LabelTitle InternalCmd692_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd694_LabelTitle_RESID L"Label:InternalCmd694" /* LabelTitle InternalCmd694_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd696_LabelTitle_RESID L"Label:InternalCmd696" /* LabelTitle InternalCmd696_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd698_LabelTitle_RESID L"Label:InternalCmd698" /* LabelTitle InternalCmd698_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd700_LabelTitle_RESID L"Label:InternalCmd700" /* LabelTitle InternalCmd700_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd702_LabelTitle_RESID L"Label:InternalCmd702" /* LabelTitle InternalCmd702_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd704_LabelTitle_RESID L"Label:InternalCmd704" /* LabelTitle InternalCmd704_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd706_LabelTitle_RESID L"Label:InternalCmd706" /* LabelTitle InternalCmd706_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd708_LabelTitle_RESID L"Label:InternalCmd708" /* LabelTitle InternalCmd708_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd710_LabelTitle_RESID L"Label:InternalCmd710" /* LabelTitle InternalCmd710_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd712_LabelTitle_RESID L"Label:InternalCmd712" /* LabelTitle InternalCmd712_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd714_LabelTitle_RESID L"Label:InternalCmd714" /* LabelTitle InternalCmd714_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd716_LabelTitle_RESID L"Label:InternalCmd716" /* LabelTitle InternalCmd716_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd718_LabelTitle_RESID L"Label:InternalCmd718" /* LabelTitle InternalCmd718_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd720_LabelTitle_RESID L"Label:InternalCmd720" /* LabelTitle InternalCmd720_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd722_LabelTitle_RESID L"Label:InternalCmd722" /* LabelTitle InternalCmd722_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd724_LabelTitle_RESID L"Label:InternalCmd724" /* LabelTitle InternalCmd724_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd726_LabelTitle_RESID L"Label:InternalCmd726" /* LabelTitle InternalCmd726_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd728_LabelTitle_RESID L"Label:InternalCmd728" /* LabelTitle InternalCmd728_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd730_LabelTitle_RESID L"Label:InternalCmd730" /* LabelTitle InternalCmd730_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd732_LabelTitle_RESID L"Label:InternalCmd732" /* LabelTitle InternalCmd732_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd734_LabelTitle_RESID L"Label:InternalCmd734" /* LabelTitle InternalCmd734_LabelTitle_RESID: (null) */
+END
+
+APPLICATION_RIBBON    UIFILE    "C:\\Projects\\Outsource\\Customers\\VisualTax\\VisualTax_V2\\COMMON\\RibbonFramework\\Samples\\High Level\\06 Text Pad\\Ribbon\\RibbonMarkup.bml"

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<UPDATE>
+  <ELEMENT>
+    <NAME>vt2015</NAME>
+    <RELEASE>2.0.0</RELEASE>
+    <DATEUPDATE>2016/09/11</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/Vt-UpdS11.exe</FILE>
+  </ELEMENT>
+  <ELEMENT>
+    <NAME>Visual Tax - T1</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2016/09/11</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-T1UpdS11.exe</FILE>
+  </ELEMENT>
+  <ELEMENT>
+    <NAME>Visual Tax - T2</NAME>
+    <RELEASE>2.0</RELEASE>
+    <DATEUPDATE>2016/09/11</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-T2UpdS11.exe</FILE>
+  </ELEMENT>
+  <ELEMENT>
+    <NAME>Visual Tax - TF</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2016/09/11</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-TFUpdS11.exe</FILE>
+  </ELEMENT>
+  <ELEMENT>
+    <NAME>Visual Tax - FP</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2016/09/11</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-FPUpdS11.exe</FILE>
+  </ELEMENT>
+</UPDATE>

@@ -1,0 +1,13 @@
+#brand-container-cra {
+	background:#335075 none repeat scroll 0 0;
+}
+
+#brand-text-cra {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.1;
+	color: #fff;
+	margin-bottom: 6px;
+	margin-top: 8px;
+	padding: 6px 0 6px 15px;
+}

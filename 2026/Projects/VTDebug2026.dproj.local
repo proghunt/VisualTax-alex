@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.194,C:\VtPrograms\2024\Projects\VTDebug2024.dproj=C:\VtPrograms\2024\Projects\VTDebug2024.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.376,D:\IHOR\VisualTax\VisualTax_V2\2026\Projects\VTDebug2026.dproj=D:\IHOR\VisualTax\VisualTax_V2\2026\Projects\VTDebug2025.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.039,C:\VtPrograms\2024\Projects\VTDebug2024.dproj=C:\VtPrograms\2024\Projects\VTDebug2024.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.237,D:\IHOR\VisualTax\VisualTax_V2\2025\Projects\VTDebug2024.dproj=D:\IHOR\VisualTax\VisualTax_V2\2025\Projects\VTDebug2025.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.521,C:\VtPrograms\2024\Projects\VTDebug2024.dproj=C:\VtPrograms\2024\Projects\VTDebug2024.dproj</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\2026"/>
+    <File Path="..\COMMON"/>
+    <File Path="..\COMMON\vtBase"/>
+    <File Path="..\COMMON\vtBase\Dialogs"/>
+    <File Path="..\COMMON\vtBase\Dialogs\fSplash.pas"/>
+    <File Path="..\COMMON\vtBase\Dialogs\fSplash.dfm"/>
+    <File Path="..\COMMON\vtMain"/>
+    <File Path="..\COMMON\vtMain\fMainBase.pas"/>
+    <File Path="..\COMMON\vtMain\fMainBase.dfm"/>
+    <File Path="..\COMMON\vtMain\fVTnoSplash.pas"/>
+    <File Path="..\FP-2027"/>
+    <File Path="..\FP-2027\FP_2027.pas"/>
+    <File Path="..\T1-2026"/>
+    <File Path="..\T1-2026\T1_2026.pas"/>
+    <File Path="..\T2-2027"/>
+    <File Path="..\T2-2027\T2_2027.pas"/>
+    <File Path="..\T3-2026"/>
+    <File Path="..\T3-2026\T3_2026.pas"/>
+    <File Path="..\T4T5-2026"/>
+    <File Path="..\T4T5-2026\T4T5_2026.pas"/>
+    <File Path="..\TF-2026"/>
+    <File Path="..\TF-2026\TF_2026.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>

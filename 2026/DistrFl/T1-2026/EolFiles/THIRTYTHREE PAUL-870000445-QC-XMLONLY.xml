@@ -1,0 +1,368 @@
+    <t1rq:EfileReturnRequest
+       xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0"
+       xmlns:comm="http://www.cra-arc.gc.ca/xmlns/comm/2025/1-0-0"
+       xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2025/1-0-0"
+       xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+       xmlns:sfd="http://www.cra-arc.gc.ca/xmlns/sfd/2025/1-0-0"
+       xmlns:t1="http://www.cra-arc.gc.ca/xmlns/t1/2025/1-0-0"
+       xmlns:t1135="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0"
+       xmlns:t1rq="http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0"
+       xmlns:tp="http://www.cra-arc.gc.ca/xmlns/tp/2025/1-0-0"
+       xmlns:xml="http://www.w3.org/XML/1998/namespace"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0 t1wsefilerequest.xsd">
+       <ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
+       <ef:PasswordID>767AJ5X</ef:PasswordID>
+       <tp:TaxYear>2024</tp:TaxYear>
+       <ef:EfileData>
+           <ef:PasswordID>767AJ5X</ef:PasswordID>
+           <ef:DocumentControlNumber>
+               <ef:TaxPreparerEfilerNumber>B0865</ef:TaxPreparerEfilerNumber>
+               <ef:TaxPreparerReturnControlNumber>24154694</ef:TaxPreparerReturnControlNumber>
+           </ef:DocumentControlNumber>
+           <ef:EfilerNOARetrievalAuthorizationIndicator>0</ef:EfilerNOARetrievalAuthorizationIndicator>
+           <ef:TaxPreparerPreAssessmentReviewContactCode>3</ef:TaxPreparerPreAssessmentReviewContactCode>
+           <ef:TaxPreparerPostAssessmentReviewContactCode>3</ef:TaxPreparerPostAssessmentReviewContactCode>
+      <ef:T183ElectronicSignatureData>
+         <ef:T183ElectronicSignatureIndicator>0</ef:T183ElectronicSignatureIndicator>
+      </ef:T183ElectronicSignatureData>
+       </ef:EfileData>
+       <comm:FirstTimeFilerIndicator>0</comm:FirstTimeFilerIndicator>
+       <comm:OriginatingIP>0.0.0.0</comm:OriginatingIP>
+       <t1rq:TaxReturnForm>
+      <t1:T1Return>
+            <comm:SoftwareID>064F</comm:SoftwareID>
+            <comm:SoftwareRevisionDate>2024-12-23</comm:SoftwareRevisionDate>
+      <t1:AutoFillData>
+            <t1:AutoFillReturnIndicator>0</t1:AutoFillReturnIndicator>
+      </t1:AutoFillData>
+         <t1:TaxpayerData>
+            <tp:TaxpayerBasicData>
+              <tp:TaxpayerSocialInsuranceNumber>870000445</tp:TaxpayerSocialInsuranceNumber>
+              <tp:TaxYear>2024</tp:TaxYear>
+              <tp:TaxpayerBirthDate>1960-01-29</tp:TaxpayerBirthDate>
+              <tp:SelfEmployedSpouseDeadlineIndicator>0</tp:SelfEmployedSpouseDeadlineIndicator>
+              </tp:TaxpayerBasicData>
+              <tp:TaxpayerMaritalStatusData>
+              <tp:TaxpayerMaritalStatusCode>6</tp:TaxpayerMaritalStatusCode>
+              <tp:TaxpayerMaritalStatusChangeIndicator>2</tp:TaxpayerMaritalStatusChangeIndicator>
+              </tp:TaxpayerMaritalStatusData>
+            <tp:TaxpayerResidenceData>
+              <tp:TaxpayerYearEndResidenceProvinceCode>QC</tp:TaxpayerYearEndResidenceProvinceCode>
+            </tp:TaxpayerResidenceData>
+            <tp:TaxpayerContactData>
+              <comm:TaxpayerName>
+                 <comm:GivenName>PAUL</comm:GivenName>
+                 <comm:FamilyName>THIRTYTHREE</comm:FamilyName>
+              </comm:TaxpayerName>
+              <tp:ResidencyType>1</tp:ResidencyType>
+            <tp:TaxpayerMailingAddress>
+              <comm:CanadianMailingAddress>
+              <comm:AddressStreetText>33 AV DES PINS</comm:AddressStreetText>
+              <comm:AddressMunicipalityName>MONTREAL</comm:AddressMunicipalityName>
+              <comm:AddressProvinceCode>QC</comm:AddressProvinceCode>
+              <comm:AddressPostalCode>H1B2A1</comm:AddressPostalCode>
+              </comm:CanadianMailingAddress>
+              </tp:TaxpayerMailingAddress>
+            <tp:TaxpayerHomeTelephoneNumber>
+              <comm:TelephoneAreaCode>514</comm:TelephoneAreaCode>
+              <comm:TelephoneLocalNumber>3533541</comm:TelephoneLocalNumber>
+              </tp:TaxpayerHomeTelephoneNumber>
+              <tp:CorrespondenceLanguageCode>1</tp:CorrespondenceLanguageCode>
+            </tp:TaxpayerContactData>
+            </t1:TaxpayerData>
+            <t1:RelatedProgramData>
+            <t1:CanadianCitizenshipIndicator>1</t1:CanadianCitizenshipIndicator>
+            <t1:ElectionsCanadaAuthorizationIndicator>02</t1:ElectionsCanadaAuthorizationIndicator>
+            <t1:IncomeTaxExemptIndianActIndicator>0</t1:IncomeTaxExemptIndianActIndicator>
+            </t1:RelatedProgramData>
+            <comm:ReturnLine><comm:FieldCode>12599</comm:FieldCode><comm:FieldValue>7800</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>12600</comm:FieldCode><comm:FieldValue>6000</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>13000</comm:FieldCode><comm:FieldValue>41500</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>13499</comm:FieldCode><comm:FieldValue>305500</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>13500</comm:FieldCode><comm:FieldValue>73900</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>13699</comm:FieldCode><comm:FieldValue>1800000</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>13700</comm:FieldCode><comm:FieldValue>10000</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>13899</comm:FieldCode><comm:FieldValue>50000</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>13900</comm:FieldCode><comm:FieldValue>-7000</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>15000</comm:FieldCode><comm:FieldValue>124400</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>22100</comm:FieldCode><comm:FieldValue>1800</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>22200</comm:FieldCode><comm:FieldValue>518599</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>22300</comm:FieldCode><comm:FieldValue>29530</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>26000</comm:FieldCode><comm:FieldValue>122305</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>26600</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>30000</comm:FieldCode><comm:FieldValue>15705</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>31215</comm:FieldCode><comm:FieldValue>37988</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>31217</comm:FieldCode><comm:FieldValue>83424</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>32000</comm:FieldCode><comm:FieldValue>1555</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>32010</comm:FieldCode><comm:FieldValue>4</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>32300</comm:FieldCode><comm:FieldValue>53501</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>33500</comm:FieldCode><comm:FieldValue>73930</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>33800</comm:FieldCode><comm:FieldValue>11090</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>35000</comm:FieldCode><comm:FieldValue>11090</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>40600</comm:FieldCode><comm:FieldValue>1149170</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>41700</comm:FieldCode><comm:FieldValue>1149170</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>43500</comm:FieldCode><comm:FieldValue>1232594</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>43700</comm:FieldCode><comm:FieldValue>705000</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>44000</comm:FieldCode><comm:FieldValue>189613</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>48500</comm:FieldCode><comm:FieldValue>337981</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>49000</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>50320</comm:FieldCode><comm:FieldValue>351000</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>50371</comm:FieldCode><comm:FieldValue>76900</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>53450</comm:FieldCode><comm:FieldValue>50500</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>54375</comm:FieldCode><comm:FieldValue>76900</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>67650</comm:FieldCode><comm:FieldValue>9800</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>67820</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>67830</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>67840</comm:FieldCode><comm:FieldValue>9800</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>67860</comm:FieldCode><comm:FieldValue>1</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>68100</comm:FieldCode><comm:FieldValue>300</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>68110</comm:FieldCode><comm:FieldValue>100</comm:FieldValue></comm:ReturnLine>
+         <t1:SelectedFinancialDataRecordCount>12</t1:SelectedFinancialDataRecordCount>
+         <sfd:SelectedFinancialData>
+         <sfd:BusinessActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:BusinessNumber>876543219RT0001</sfd:BusinessNumber>
+            <sfd:NAICSCode>313110</sfd:NAICSCode>
+            <sfd:BusinessName>ACME CO.</sfd:BusinessName>
+            <sfd:BusinessAddress>
+            <comm:BusinessAddressStreetText>2-37 FRASER AVE</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>H1H3E6</comm:AddressPostalCode>
+            </sfd:BusinessAddress>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <comm:ReturnLine>               <comm:FieldCode>8000</comm:FieldCode>               <comm:FieldValue>68400</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8230</comm:FieldCode>               <comm:FieldValue>10500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>78900</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8519</comm:FieldCode>               <comm:FieldValue>78900</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8521</comm:FieldCode>               <comm:FieldValue>2700</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8690</comm:FieldCode>               <comm:FieldValue>3500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8860</comm:FieldCode>               <comm:FieldValue>650</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9180</comm:FieldCode>               <comm:FieldValue>3000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9220</comm:FieldCode>               <comm:FieldValue>500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9275</comm:FieldCode>               <comm:FieldValue>350</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9270</comm:FieldCode>               <comm:FieldValue>1300</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9368</comm:FieldCode>               <comm:FieldValue>12000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9369</comm:FieldCode>               <comm:FieldValue>66900</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>66900</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9933</comm:FieldCode>               <comm:FieldValue>6900</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:BusinessActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:BusinessActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>441120</sfd:NAICSCode>
+            <sfd:BusinessName>PAUL&amp;apos;S ACCOUNTING</sfd:BusinessName>
+            <sfd:BusinessAddress>
+            <comm:BusinessAddressStreetText>2-39 FRASER AVE</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>H1H3E6</comm:AddressPostalCode>
+            </sfd:BusinessAddress>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <comm:ReturnLine>               <comm:FieldCode>8000</comm:FieldCode>               <comm:FieldValue>10000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>10000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8519</comm:FieldCode>               <comm:FieldValue>10000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8521</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8690</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9180</comm:FieldCode>               <comm:FieldValue>3000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9200</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9270</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9368</comm:FieldCode>               <comm:FieldValue>8000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9369</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:BusinessActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:BusinessActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>441210</sfd:NAICSCode>
+            <sfd:BusinessName>PAUL&amp;apos;S PRINTING</sfd:BusinessName>
+            <sfd:BusinessAddress>
+            <comm:BusinessAddressStreetText>2-40 FRASER AVE</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>H1H3E6</comm:AddressPostalCode>
+            </sfd:BusinessAddress>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <comm:ReturnLine>               <comm:FieldCode>8000</comm:FieldCode>               <comm:FieldValue>5500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>5500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8519</comm:FieldCode>               <comm:FieldValue>5500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8521</comm:FieldCode>               <comm:FieldValue>700</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8690</comm:FieldCode>               <comm:FieldValue>500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8860</comm:FieldCode>               <comm:FieldValue>650</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9180</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9275</comm:FieldCode>               <comm:FieldValue>1350</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9270</comm:FieldCode>               <comm:FieldValue>300</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9368</comm:FieldCode>               <comm:FieldValue>4500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9369</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:BusinessActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:ProfessionalActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>541310</sfd:NAICSCode>
+            <sfd:BusinessName>EXPERT ARCHITECTS</sfd:BusinessName>
+            <sfd:PartnershipNumber>565656565</sfd:PartnershipNumber>
+            <sfd:TaxShelterNumber>TS565656</sfd:TaxShelterNumber>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <sfd:BusinessOwnershipPercent>1000</sfd:BusinessOwnershipPercent>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>600000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>5000</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:ProfessionalActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:BusinessActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>416310</sfd:NAICSCode>
+            <sfd:BusinessName>B PARTNERSHIP</sfd:BusinessName>
+            <sfd:PartnershipNumber>787878787</sfd:PartnershipNumber>
+            <sfd:TaxShelterNumber>TS787878</sfd:TaxShelterNumber>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <sfd:BusinessOwnershipPercent>2000</sfd:BusinessOwnershipPercent>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>50000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>-7000</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:BusinessActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:BusinessActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>337121</sfd:NAICSCode>
+            <sfd:BusinessName>C DEVELOPMENTS</sfd:BusinessName>
+            <sfd:PartnershipNumber>343434343</sfd:PartnershipNumber>
+            <sfd:TaxShelterNumber>TS434343</sfd:TaxShelterNumber>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <sfd:BusinessOwnershipPercent>4000</sfd:BusinessOwnershipPercent>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>200000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>-1000</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:BusinessActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:ProfessionalActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>541690</sfd:NAICSCode>
+            <sfd:BusinessName>D ENTERPRISES</sfd:BusinessName>
+            <sfd:PartnershipNumber>898989898</sfd:PartnershipNumber>
+            <sfd:TaxShelterNumber>TS696969</sfd:TaxShelterNumber>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <sfd:BusinessOwnershipPercent>1000</sfd:BusinessOwnershipPercent>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>1200000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>5000</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:ProfessionalActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:BusinessActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>323114</sfd:NAICSCode>
+            <sfd:BusinessName>BEE ONE</sfd:BusinessName>
+            <sfd:BusinessAddress>
+            <comm:BusinessAddressStreetText>2-34 Fraser Ave</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>H1H3E6</comm:AddressPostalCode>
+            </sfd:BusinessAddress>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <comm:ReturnLine>               <comm:FieldCode>8000</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8519</comm:FieldCode>               <comm:FieldValue>2000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8521</comm:FieldCode>               <comm:FieldValue>250</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8690</comm:FieldCode>               <comm:FieldValue>300</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9180</comm:FieldCode>               <comm:FieldValue>450</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9368</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9369</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:BusinessActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:BusinessActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>323113</sfd:NAICSCode>
+            <sfd:BusinessName>BEE TWO</sfd:BusinessName>
+            <sfd:BusinessAddress>
+            <comm:BusinessAddressStreetText>2-35 Fraser Ave</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>H1H3E6</comm:AddressPostalCode>
+            </sfd:BusinessAddress>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <comm:ReturnLine>               <comm:FieldCode>8000</comm:FieldCode>               <comm:FieldValue>2250</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>2250</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8519</comm:FieldCode>               <comm:FieldValue>2250</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8960</comm:FieldCode>               <comm:FieldValue>400</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9180</comm:FieldCode>               <comm:FieldValue>300</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9220</comm:FieldCode>               <comm:FieldValue>150</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9368</comm:FieldCode>               <comm:FieldValue>850</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9369</comm:FieldCode>               <comm:FieldValue>1400</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>1400</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:BusinessActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:BusinessActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>419120</sfd:NAICSCode>
+            <sfd:BusinessName>BEE THREE</sfd:BusinessName>
+            <sfd:BusinessAddress>
+            <comm:BusinessAddressStreetText>2-36 FRASER AVE</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>H1H3E6</comm:AddressPostalCode>
+            </sfd:BusinessAddress>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <comm:ReturnLine>               <comm:FieldCode>8000</comm:FieldCode>               <comm:FieldValue>2750</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>2750</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8519</comm:FieldCode>               <comm:FieldValue>2750</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8521</comm:FieldCode>               <comm:FieldValue>350</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8690</comm:FieldCode>               <comm:FieldValue>400</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9180</comm:FieldCode>               <comm:FieldValue>500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9220</comm:FieldCode>               <comm:FieldValue>500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9368</comm:FieldCode>               <comm:FieldValue>1750</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9369</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>1000</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:BusinessActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:BusinessActivityData>
+            <sfd:AccountingMethodCode>1</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>441110</sfd:NAICSCode>
+            <sfd:BusinessName>PAUL AND CO.</sfd:BusinessName>
+            <sfd:BusinessAddress>
+            <comm:BusinessAddressStreetText>2-38 FRASER AVE</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>H1H3E6</comm:AddressPostalCode>
+            </sfd:BusinessAddress>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <comm:ReturnLine>               <comm:FieldCode>8000</comm:FieldCode>               <comm:FieldValue>4100</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>4100</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8519</comm:FieldCode>               <comm:FieldValue>4100</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8521</comm:FieldCode>               <comm:FieldValue>450</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8690</comm:FieldCode>               <comm:FieldValue>500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9180</comm:FieldCode>               <comm:FieldValue>1050</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9220</comm:FieldCode>               <comm:FieldValue>500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9368</comm:FieldCode>               <comm:FieldValue>2500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9369</comm:FieldCode>               <comm:FieldValue>1600</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>1600</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:BusinessActivityData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:RealEstateRentalData>
+            <sfd:NAICSCode>531111</sfd:NAICSCode>
+            <sfd:FiscalPeriodStartDate>2024-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2024-12-31</sfd:FiscalPeriodEndDate>
+            <sfd:BusinessAddress>
+            <comm:BusinessAddressStreetText>33 FRASER AVE</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>H1H3E6</comm:AddressPostalCode>
+            </sfd:BusinessAddress>
+            <comm:ReturnLine>               <comm:FieldCode>8141</comm:FieldCode>               <comm:FieldValue>7800</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>7800</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8521</comm:FieldCode>               <comm:FieldValue>400</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8690</comm:FieldCode>               <comm:FieldValue>350</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8960</comm:FieldCode>               <comm:FieldValue>500</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9180</comm:FieldCode>               <comm:FieldValue>450</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9220</comm:FieldCode>               <comm:FieldValue>100</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9369</comm:FieldCode>               <comm:FieldValue>6000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>6000</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:RealEstateRentalData>
+         </sfd:SelectedFinancialData>
+      </t1:T1Return>
+</t1rq:TaxReturnForm>
+</t1rq:EfileReturnRequest>

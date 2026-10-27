@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Description: Country By Country Domestic Report based on the OECD schema as of : April 15, 2016 (Version 1)
+Contact: CRA, ITB, Solutions, IRBD, Assessment Processing Division, Electronic Filing
+Date created: July 2016
+Updates:
+Users of this schema: T1 Efile, T1 Netfile
+-->
+
+<xsd:schema xmlns:cbc="http://www.cra-arc.gc.ca/xmlns/cbc/2019/1-0-0"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:iso="urn:oecd:ties:isocbctypes:v1"
+        xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0"
+        xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+        targetNamespace="http://www.cra-arc.gc.ca/xmlns/cbc/2019/1-0-0"
+        elementFormDefault="qualified" attributeFormDefault="unqualified" version="cbc/2019/1-2-0">
+    <xsd:import namespace="urn:oecd:ties:isocbctypes:v1" schemaLocation="isocbctypes_v1.1.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" schemaLocation="cracommonstructures.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" schemaLocation="standarddatatypes.xsd"/>
+
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Schema  element ++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- CBC Message structure  -->
+    <xsd:element name="CountryByCountryReport" type="cbc:CountryByCountryReportType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">The domestic implementation of version 1 of the OECD CbC Schema (CbcXML_v10.xsd)</xsd:documentation>
+        </xsd:annotation>
+
+        <xsd:unique name="UniqueTaxJurisdictionKey">
+            <xsd:selector xpath="CbcReport" />
+            <xsd:field xpath="MultinationalEnterpriseReportTaxJurisdiction" />
+        </xsd:unique>
+
+    </xsd:element>
+
+    <!-- CBC Body Type - CBC Reporting  -->
+    <xsd:complexType name="CountryByCountryReportType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">A country-by-country report filed by a multinational enterprise group.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+
+            <!-- TOP OF FORM INFO -->
+            <xsd:element ref="cbc:FunctionalCurrencyCode" minOccurs="0"/>
+            <xsd:element ref="cbc:AmendedReportIndicator"/>
+            <xsd:element ref="cbc:ReportingPeriod"/>
+
+            <!-- PART I -->
+            <!-- Section 1 -->
+            <xsd:element ref="cbc:ReportingEntityIdentification"/>
+            <xsd:element ref="cbc:MultinationalEnterpriseGroupName"/>
+            <xsd:element ref="cbc:ReportingEntityAddress"/>
+
+            <!-- Section 2 -->
+            <xsd:element ref="cbc:RoleOfTheReportingEntity"/>
+
+            <!-- Section 3 -->
+            <xsd:element ref="cbc:Certification"/>
+            <xsd:element ref="cbc:Contact" minOccurs="0"/>
+
+            <!-- PART II - CbC Report Section -->
+            <xsd:element ref="cbc:CbcReport" minOccurs="2" maxOccurs="unbounded"/>
+
+            <!-- PART III - Table 3 -->
+            <xsd:element ref="cbc:AdditionalInformation" minOccurs="0"/>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- TOP OF FORM INFO -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="FunctionalCurrencyCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Acceptable currency codes include the following: USD-U.S. dollar; AUD-Australian dollar; GBP-U.K. dollar; EUR-the Euro; JPY-Japanese Yen; OR leave blank.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Codes des monnaies acceptables sont les suivants: USD-dollar américain; AUD-dollar australien; GBP-pour la livre sterling du Royaume-Uni; EUR-pour l'euro; JPY-Yen japonais OU laisser en blanc</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:length value="3"/>
+                <xsd:enumeration value="USD"/>
+                <xsd:enumeration value="usd"/>
+                <xsd:enumeration value="AUD"/>
+                <xsd:enumeration value="aud"/>
+                <xsd:enumeration value="GBP"/>
+                <xsd:enumeration value="gbp"/>
+                <xsd:enumeration value="EUR"/>
+                <xsd:enumeration value="eur"/>
+				<xsd:enumeration value="JPY"/>
+                <xsd:enumeration value="jpy"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="AmendedReportIndicator" type="sdt:IndicatorType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Indication that the CbC is for an amended form - Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Indication que le CbC est une déclaration modifiée - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:element name="ReportingPeriod" type="cbc:ReportingPeriodType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Indicate the reporting period, include a start date and end date for a fiscal year.</xsd:documentation>
+            <xsd:documentation xml:lang="fr"/>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:complexType name="ReportingPeriodType">
+        <xsd:sequence>
+            <xsd:element name="ReportingFiscalYearStartDate" type="xsd:date">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">The first date of a fiscal year.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ReportingFiscalYearEndDate" type="xsd:date">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">The last date of a fiscal year.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- PART I, Section 1 -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="ReportingEntityIdentification" type="cbc:ReportingEntityIdentificationType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">A Country by Country report can be transmitted for Corporation, Trust, or Partnership entities.  For fiscal year ending in 2016/2017, only Corporation Entities reports will be accepted.</xsd:documentation>
+            <xsd:documentation xml:lang="fr"/>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:complexType name="ReportingEntityIdentificationType">
+        <xsd:choice>
+            <xsd:element name="CorporationEntity" type="cbc:CorporationEntityType"/>
+            <xsd:element name="TrustEntity" type="cbc:TrustEntityType"/>
+            <xsd:element name="PartnershipEntity" type="cbc:PartnershipEntityType"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <!-- CORPORATION -->
+    <xsd:complexType name="CorporationEntityType">
+        <xsd:sequence>
+            <xsd:element ref="cbc:CorporationName" minOccurs="0"/>
+            <xsd:element ref="cbc:BusinessNumber" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="CorporationName" type="cbc:NameDescription"/>
+
+    <xsd:element name="BusinessNumber" type="cbc:BNRCType" />
+    <xsd:simpleType name="BNRCType">
+        <xsd:restriction base="sdt:NumberType">
+            <xsd:pattern value="([0-9]{9}RC[0-9]{4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- TRUST -->
+    <xsd:complexType name="TrustEntityType">
+        <xsd:sequence>
+            <xsd:element ref="cbc:TrustName" minOccurs="0"/>
+            <xsd:element ref="ccms:TrustNumber" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="TrustName" type="cbc:NameDescription"/>
+
+    <!-- PARTNERSHIP -->
+    <xsd:complexType name="PartnershipEntityType">
+        <xsd:sequence>
+            <xsd:element ref="cbc:PartnershipName" minOccurs="0"/>
+            <xsd:element ref="cbc:PartnershipNumber" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="PartnershipName" type="cbc:NameDescription"/>
+
+    <xsd:element name="PartnershipNumber" type="cbc:BNRZType" />
+    <xsd:simpleType name="BNRZType">
+        <xsd:restriction base="sdt:NumberType">
+            <xsd:pattern value="([0-9]{9}RZ[0-9]{4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="MultinationalEnterpriseGroupName" type="cbc:NameDescription"/>
+
+    <xsd:element name="ReportingEntityAddress" type="cbc:ReportingEntityAddressType"/>
+    <xsd:complexType name="ReportingEntityAddressType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">
+                Structure of the address for a party broken down into its
+                logical parts, recommended for easy matching. The 'City'
+                element is the only required subelement. All of the
+                subelements are simple text - data type 'string'.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="StreetNumber" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="9"/>
+                        <xsd:minLength value="0"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="StreetName" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="60"/>
+                        <xsd:minLength value="0"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="CityName">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element ref="cbc:GlobalProvinceTerritoryStateCode" minOccurs="0"/>
+            <xsd:element name="CountryCode" type="iso:CountryCode_Type"/>
+            <xsd:element ref="cbc:GlobalPostalZipCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- PART I, Section 2 -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="RoleOfTheReportingEntity" type="cbc:RoleOfTheReportingEntityType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"/>
+            <xsd:documentation xml:lang="fr"/>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:complexType name="RoleOfTheReportingEntityType">
+        <xsd:sequence>
+            <xsd:element name="EntityReportingRoleCode" type="cbc:CbcReportingRole_EnumType"/>
+            <xsd:element ref="cbc:ConstituentEntityFilesForAllIndicator" minOccurs="0"/>
+            <xsd:element ref="cbc:MultinationalEnterpriseUltimateParentEntityName" minOccurs="0"/>
+            <xsd:element ref="cbc:MultinationalEnterpriseUltimateParentEntityResidencyCountryCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="CbcReportingRole_EnumType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">
+                Reporting Role
+
+                Identifies a role of an entity of a
+                multinational enterprise group that prepares and
+                files a report.
+
+                Sample Values:
+                CBC701 - Ultimate Parent Entity
+                CBC702 - Surrogate Parent Entity
+                CBC703 - Constituent Entity Filing
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="CBC701">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Ultimate Parent Entity</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC702">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Surrogate Parent Entity</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC703">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Constituent Entity filing</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="ConstituentEntityFilesForAllIndicator" type="sdt:IndicatorType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Constituent Entity filed report on behalf of all Constituent Entities of the MNE Group in Canada for the Reporting Fiscal Year - Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:element name="MultinationalEnterpriseUltimateParentEntityName" type="cbc:NameDescription">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">
+                The name of the ultimate parent entity of a
+                multinational enterprise (MNE) group. The ultimate
+                parent entity of a MNE group is a constituent entity
+                that meets the following criteria:
+
+                1. It owns directly or indirectly a sufficient
+                interest in one or more other constituent entities
+                of such MNE group such that it is required to
+                prepare consolidated financial statements under
+                accounting principles generally applied in its
+                jurisdiction of tax residence, or would be so
+                required if its equity interests were traded on a
+                public securities exchange in its jurisdiction of
+                tax residence. 2. There is no other constituent
+                entity of such MNE group that owns directly or
+                indirectly an interest to this constituent entity.
+
+                Authoritative Reference: Action 13:
+                Country-by-Country Reporting Implementation Package
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="MultinationalEnterpriseUltimateParentEntityResidencyCountryCode" type="iso:CountryCode_Type">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">
+                Uniquely identifies a country of residency for the
+                ultimate parent entity of a multinational enterprise
+                group.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- PART I, Section 3 -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="Certification" type="cbc:CertificationType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">An individual who certifies the information.</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:complexType name="CertificationType">
+        <xsd:sequence>
+            <xsd:element name="CertifierName" type="cbc:NameDescription"/>
+            <xsd:element name="CertifierPositionTitle">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="60"/>
+                        <xsd:whiteSpace value="collapse"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="CertifierTelephoneNumber" type="cbc:PhoneNumberType"/>
+            <xsd:element name="CertificationDate" type="xsd:date" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Contact" type="cbc:ContactType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">An individual or organization to contact.</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:complexType name="ContactType">
+        <xsd:sequence>
+            <xsd:element name="ContactName" type="cbc:NameDescription" minOccurs="0"/>
+            <xsd:element name="ContactAddressText" type="cbc:NameDescription" minOccurs="0"/>
+            <xsd:element name="ContactTelephoneNumber" type="cbc:PhoneNumberType" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- PART II - CbC Report Section - Tables 1 and 2 -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="CbcReport" type="cbc:CbcReportType"/>
+
+    <xsd:complexType name="CbcReportType">
+        <xsd:sequence>
+            <xsd:element name="TaxJurisdictionCode" type="iso:CountryCode_Type">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Uniquely identifies a country associated with a
+                        report filed by a multinational enterprise
+                        group.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="IncomeTaxBusinessAllocationByTaxJurisdiction" type="cbc:IncomeTaxBusinessAllocationByTaxJurisdictionType">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        TABLE 1 - An allocation of the resources, revenues, and/or expenses, etc., of a multinational enterprise group into a certain country.
+                        The CbC Report element contains, for each Tax Jurisdiction in which the MNE Group operates, the summary of key indicators, as well as a list
+                        of all Constituent Entities and their business activities.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ConstituentEntityPerTaxJurisdiction" type="cbc:ConstituentEntityPerTaxJurisdictionType" maxOccurs="unbounded">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        TABLE 2 - A constituent entity associated with a specific country of a multinational enterprise (MNE) group.
+                        A constituent entity refers to any separate business unit of the MNE group, e.g., company,
+                        corporation, trust, partnership, permanent establishment, that is included in the consolidated
+                        group for financial reporting purposes.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- PART II, Table 1 -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:complexType name="IncomeTaxBusinessAllocationByTaxJurisdictionType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">
+                An allocation of the resources, revenues, and/or expenses, etc., of a multinational enterprise group into a certain country.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="UnrelatedPartyRevenue">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">The revenue from unrelated parties.
+                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="cbc:AmountType"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" fixed="CBC601">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="RelatedPartyRevenue">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">The revenue from related parties.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="cbc:AmountType"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" fixed="CBC602">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="TotalRevenue">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Total Revenues
+                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="cbc:AmountType"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" default="CBC603">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="ProfitOrLoss">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Profit (Loss) Before Income Tax
+                    </xsd:documentation>
+                </xsd:annotation>
+
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="cbc:AmountType"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" fixed="CBC604">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="TaxPaid">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Income Tax Paid (on cash basis)
+                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="cbc:AmountType"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" fixed="CBC605">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="TaxAccrued">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Income Tax Accrued - Current Year
+                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="cbc:AmountType"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" fixed="CBC606">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Capital">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Stated capital
+                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="cbc:AmountType"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" fixed="CBC607">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Earning">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Accumulated earnings
+                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="cbc:AmountType"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" fixed="CBC608">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="EmployeeCount">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Number of Employees
+                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="xsd:integer"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" fixed="CBC609">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Asset">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Tangible Assets other than Cash and Cash
+                        Equivalents
+                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Amount" type="cbc:AmountType"/>
+                    </xsd:sequence>
+                    <xsd:attribute name="MultinationalEnterpriseAllocationTypeCode" type="xsd:string" fixed="CBC610">
+                    </xsd:attribute>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- PART II, Table 2 -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:complexType name="ConstituentEntityPerTaxJurisdictionType">
+        <xsd:sequence>
+            <xsd:element name="ConstituentEntityName" type="cbc:NameDescription"/>
+            <xsd:element name="ConstituentEntityRole" type="cbc:ConstituentEntityRoleType_EnumType">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Valid values are: CBC801 - Ultimate Parent Entity; CBC802 - Reporting Entity; CBC803 - Both Ultimate Parent Entity and Reporting Entity; blank - none </xsd:documentation>
+                    <xsd:documentation xml:lang="fr"/>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="TaxIdentificationNumber" type="ccms:Name50CharacterType"/>
+            <xsd:element name="TaxIdentificationNumberCountryCode" type="iso:CountryCode_Type" minOccurs="0"/>
+            <xsd:element name="IncorporationCountryCode" type="iso:CountryCode_Type" minOccurs="0"/>
+            <xsd:element name="AddressCityName">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="AddressCountryCode" type="iso:CountryCode_Type"/>
+
+            <xsd:element name="BusinessActivityTypeCode" type="cbc:ConstituentEntityBusinessActivityType" maxOccurs="13">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Identifies a type of business activity carried out by a constituent entity of a multinational enterprise group.
+
+                        Sample Values:
+                        CBC501 - Research and Development
+                        CBC502 - Holding or Managing intellectual property
+                        CBC503 - Purchasing or Procurement
+                        CBC504 - Manufacturing or Production
+                        CBC505 - Sales, Marketing or Distribution
+                        CBC506 - Administrative, Management or Support Services
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="OtherInformationText" type="cbc:StringMaxLengthForLongTextType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">A text that describes any further relevant information relating to a
+                        constituent entity of a multinational enterprise group (such as when the business
+                        activity "Other" is selected).</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- CBC Constituent Entity Role -->
+    <xsd:simpleType name="ConstituentEntityRoleType_EnumType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Constituent Entity Roles
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="CBC801">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Ultimate Parent Entity</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC802">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Reporting Entity</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC803">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Both Ultimate Parent Entity and Reporting Entity</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">none</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- CBC Main business activities Type -->
+    <xsd:simpleType name="ConstituentEntityBusinessActivityType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Main business activities
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="CBC501">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Research and Development</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC502">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Holding or Managing intellectual property</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC503">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Purchasing or Procurement</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC504">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Manufacturing or Production</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC505">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Sales, Marketing or Distribution</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC506">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Administrative, Management or Support Services</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC507">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Provision of Services to unrelated parties</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC508">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Internal Group Finance</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC509">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Regulated Financial Services</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC510">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Insurance</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC511">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Holding shares or other equity instruments</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC512">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Dormant</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC513">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Other</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- PART III, Additional Information -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="AdditionalInformation" type="cbc:AdditionalInformationType"/>
+
+    <xsd:complexType name="AdditionalInformationType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">
+                The Additional Info element allows entering any
+                additional information on the CbC Report that
+                the Reporting Entity wishes to make available to
+                the receiving Competent Authorities in a free
+                text format.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="AdditionalInformationList" type="cbc:AdditionalInformationListType" minOccurs="0" maxOccurs="100">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">List of Additional Information items</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Additional Info -->
+    <xsd:complexType name="AdditionalInformationListType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">The additional information that is deemed to facilitate the understanding of the
+                country-by-country report of a multinational enterprise group.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="AdditionalInformationLanguageCode" type="iso:LanguageCode_Type">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">
+                        Identifies a language in which the additional
+                        information is written.
+
+                        Sample Values: cs - Czech de - German en -
+                        English fr - French pl - Polish
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="AdditionalInformationText" type="cbc:StringMaxLengthForLongTextType">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">The text of a piece of additional information.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="RelevantCountryCodeAndSummaryReference" type="cbc:RelevantCountryCodeAndSummaryReferenceType" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="RelevantCountryCodeAndSummaryReferenceType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">The additional information that is deemed to facilitate the understanding of the
+                country-by-country report of a multinational enterprise group.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="AdditionalInformationRelevantCountryCode" type="iso:CountryCode_Type" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">A country that is associated with a piece of additional information
+                        that is deemed to facilitate the understanding of the country-by-country report of a
+                        multinational enterprise group.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="AdditionalInformationSummaryReference" type="cbc:CbcSummaryListElementsType_EnumType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Identifies a type of allocation (i.e. resources, expenses, revenue,
+                        etc.) associated with a piece of additional information.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- List of Summary elements, for reference in AdditionalInfo - 6 -->
+    <xsd:simpleType name="CbcSummaryListElementsType_EnumType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">List of Summary elements
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="CBC601">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Revenues - Unrelated</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC602">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Revenues - Related</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC603">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Revenues - Total</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC604">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Profit or Loss</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC605">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Tax Paid</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC606">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Tax Accrued</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC607">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Capital</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC608">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Earnings</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC609">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Number of Employees</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="CBC610">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Assets</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- END OF FORM -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!--+++++++++++++++++++++++  Reusable Simple types ++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- String with maximum length of 4000 to avoid too long text values -->
+    <xsd:simpleType name="StringMaxLengthForLongTextType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">String with maximum length of 4000</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="PartyFreeFormAddressType">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1024"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="AmountType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">The field is used to capture the dollar amount (no decimals).  The dollar value cannot exceed +/- $999,999,999,999,999. </xsd:documentation>
+            <xsd:documentation xml:lang="fr">Le champ est utilisé pour capturer le montant en dollar (pas de décimales). La valeur en dollar ne peut pas dépasser +/- 999.999.999.999.999 $.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:integer">
+            <xsd:totalDigits value='15'/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="GlobalProvinceTerritoryStateCode">
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:minLength value="1"/>
+                <xsd:maxLength value="100"/>
+                <xsd:pattern value="([A-Za-z])*"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="GlobalPostalZipCode">
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:minLength value="1"/>
+                <xsd:maxLength value="20"/>
+                <xsd:pattern value="([A-Za-z0-9\-])*"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:simpleType name="PhoneNumberType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">To capture any North American or International phone number with (possible) extension.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Pour capturer tout numéro de téléphone nord-américain ou international avec (possible) l'extension.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+            <xsd:pattern value="([0-9xX\(\)\-\.])*"/>
+            <xsd:maxLength value="20"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <!--+++++++++++++++++++++++  Reusable Complex types ++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:complexType name="NameDescription">
+        <xsd:simpleContent>
+            <xsd:restriction base="sdt:NameType">
+                <xsd:minLength value="1"/>
+                <xsd:maxLength value="200"/>
+                <xsd:whiteSpace value="collapse"/>
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+
+</xsd:schema>
+
+

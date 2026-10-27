@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Submission xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <T619>
+          <TransmitterAccountNumber>
+          <bn15>11111111rp0001</bn15>
+          </TransmitterAccountNumber>
+               <sbmt_ref_id>25021017</sbmt_ref_id>
+               <summ_cnt>1</summ_cnt>
+               <lang_cd>E</lang_cd>
+               <TransmitterName>
+                    <l1_nm>Test Company</l1_nm>
+               </TransmitterName>
+                    <TransmitterCountryCode>CAN</TransmitterCountryCode>
+               <CNTC>
+                    <cntc_nm>Con</cntc_nm>
+                    <cntc_area_cd>905</cntc_area_cd>
+                    <cntc_phn_nbr>233-6159</cntc_phn_nbr>
+                    <cntc_phn_nbr>233-6159</cntc_phn_nbr>
+               </CNTC>
+          </T619>
+          <Return>
+               <T4A>
+                    <T4ASlip>
+                         <RCPNT_NM>
+                              <snm>zant</snm>
+                              <gvn_nm>con</gvn_nm>
+                         </RCPNT_NM>
+                         <sin>666666664</sin>
+                         <rcpnt_bn>000000000RP0000</rcpnt_bn>
+                         <RCPNT_ADDR>
+                              <addr_l1_txt>str1</addr_l1_txt>
+                              <cty_nm>city1</cty_nm>
+                              <prov_cd>ON</prov_cd>
+                              <pstl_cd>l4w3e5</pstl_cd>
+                         </RCPNT_ADDR>
+                         <bn>111111118rp0001</bn>
+                         <rpt_tcd>O</rpt_tcd>
+                         <T4A_AMT>
+                              <pens_spran_amt>20000.00</pens_spran_amt>
+                              <self_empl_cmsn_amt>3000.00</self_empl_cmsn_amt>
+                         </T4A_AMT>
+                    </T4ASlip>
+                    <T4ASlip>
+                         <RCPNT_NM>
+                              <snm>LastNM</snm>
+                              <gvn_nm>Yurie</gvn_nm>
+                         </RCPNT_NM>
+                         <sin>111111118</sin>
+                         <rcpnt_bn>000000000RP0000</rcpnt_bn>
+                         <RCPNT_ADDR>
+                              <addr_l1_txt>str 1</addr_l1_txt>
+                              <cty_nm>City 1</cty_nm>
+                              <prov_cd>NL</prov_cd>
+                              <pstl_cd>L4W3E5</pstl_cd>
+                         </RCPNT_ADDR>
+                         <bn>111111118rp0001</bn>
+                         <rpt_tcd>O</rpt_tcd>
+                         <T4A_AMT>
+                              <pens_spran_amt>7000.00</pens_spran_amt>
+                         </T4A_AMT>
+                         <OTH_INFO>
+                              <pr_71_acr_lsp_amt>1100.00</pr_71_acr_lsp_amt>
+                         </OTH_INFO>
+                    </T4ASlip>
+                    <T4ASummary>
+                         <bn>111111118rp0001</bn>
+                         <PAYR_NM>
+                              <l1_nm>t4 company</l1_nm>
+                         </PAYR_NM>
+                         <PAYR_ADDR>
+                              <addr_l1_txt>123 yonmge</addr_l1_txt>
+                              <cty_nm>toronto</cty_nm>
+                              <prov_cd>ON</prov_cd>
+                              <cntry_cd>CAN</cntry_cd>
+                              <pstl_cd>M4W5E4</pstl_cd>
+                         </PAYR_ADDR>
+                         <CNTC>
+                              <cntc_nm>con zanters</cntc_nm>
+                              <cntc_area_cd>905</cntc_area_cd>
+                              <cntc_phn_nbr>625-9610</cntc_phn_nbr>
+                         </CNTC>
+                              <tx_yr>2024</tx_yr>
+                              <slp_cnt></slp_cnt>
+                         <rpt_tcd>O</rpt_tcd>
+                         <T4A_TAMT>
+                              <tot_pens_spran_amt>27000.00</tot_pens_spran_amt>
+                              <tot_self_cmsn_amt>3000.00</tot_self_cmsn_amt>
+                              <rpt_tot_oth_info_amt>1100.00</rpt_tot_oth_info_amt>
+                         </T4A_TAMT>
+                    </T4ASummary>
+               </T4A>
+          </Return>
+</Submission>

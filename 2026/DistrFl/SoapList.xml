@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Header>
+    <wsse:Security S:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsse:Username>064J</wsse:Username>
+        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">4Mc+8Zf82jMld0SIGHMY8K9oFkU=</wsse:Password>
+        <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">MDY2NTY5MzMvMTEvMjAyNjE2OjI5OjMyLjE5NA==</wsse:Nonce>
+        <wsu:Created>2026-03-11T20:29:32.392Z</wsu:Created>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </S:Header>
+  <S:Body>
+    <GetTDDEFile xmlns="http://www.cra-arc.gc.ca/xmlns/tdd/2-10-1" xmlns:ns2="http://www.cra-arc.gc.ca/xmlns/ccms/1-0-0">
+      <TokenIdentifier>FX662ZviTlznWsVwXiIDrGpGVzkJffAm</TokenIdentifier>
+      <TaxYear>2025</TaxYear>
+    </GetTDDEFile>
+  </S:Body>
+</S:Envelope>

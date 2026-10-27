@@ -1,0 +1,80 @@
+object OutlnList: TOutlnList
+  Left = 227
+  Top = 151
+  BorderIcons = [biSystemMenu, biMaximize]
+  ClientHeight = 322
+  ClientWidth = 424
+  Color = 15269887
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'System'
+  Font.Style = []
+  OldCreateOrder = True
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 16
+  object Outline1: TOutline
+    Left = 14
+    Top = 14
+    Width = 473
+    Height = 323
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    OutlineStyle = osTreeText
+    ItemHeight = 14
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Style = []
+    TabOrder = 0
+    OnDblClick = Outline1DblClick
+    OnKeyPress = Outline1KeyPress
+    ItemSeparator = '\'
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 152
+    Top = 344
+    Width = 233
+    Height = 49
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    BorderStyle = bsSingle
+    TabOrder = 1
+    object OKBtn: TBitBtn
+      Left = 32
+      Top = 8
+      Width = 65
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Kind = bkOK
+      NumGlyphs = 2
+      TabOrder = 0
+      OnClick = OKBtnClick
+    end
+    object CancelBtn: TBitBtn
+      Left = 112
+      Top = 8
+      Width = 89
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Kind = bkCancel
+      NumGlyphs = 2
+      TabOrder = 1
+      OnClick = CancelBtnClick
+    end
+  end
+end

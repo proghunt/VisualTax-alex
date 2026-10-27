@@ -1,0 +1,216 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C1389E95-43CC-41B1-8595-F2CF0729EE87}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\..\COMMON\vtCtrls\vtCtrls.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\COMMON\vtCtrls\vtCtrlsIDE.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\COMMON\vtBase\vtBase.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\COMMON\vtUpdater\vtchkupd.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="vtT1_2026.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="vtT2_2027.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="vtT3_2026.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="vtTF_2026.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="vtFP_2027.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="vtT4T5_2026.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VTDebug2026.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VT2026.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="vtClient2026.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\COMMON\ForDFM\ForDFM.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\COMMON\mkEFdb\EFERR.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\TR-2026\TR2026.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="vtCtrls">
+        <MSBuild Projects="..\..\COMMON\vtCtrls\vtCtrls.dproj"/>
+    </Target>
+    <Target Name="vtCtrls:Clean">
+        <MSBuild Projects="..\..\COMMON\vtCtrls\vtCtrls.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtCtrls:Make">
+        <MSBuild Projects="..\..\COMMON\vtCtrls\vtCtrls.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtCtrlsIDE">
+        <MSBuild Projects="..\..\COMMON\vtCtrls\vtCtrlsIDE.dproj"/>
+    </Target>
+    <Target Name="vtCtrlsIDE:Clean">
+        <MSBuild Projects="..\..\COMMON\vtCtrls\vtCtrlsIDE.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtCtrlsIDE:Make">
+        <MSBuild Projects="..\..\COMMON\vtCtrls\vtCtrlsIDE.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtBase">
+        <MSBuild Projects="..\COMMON\vtBase\vtBase.dproj"/>
+    </Target>
+    <Target Name="vtBase:Clean">
+        <MSBuild Projects="..\COMMON\vtBase\vtBase.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtBase:Make">
+        <MSBuild Projects="..\COMMON\vtBase\vtBase.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtchkupd">
+        <MSBuild Projects="..\..\COMMON\vtUpdater\vtchkupd.dproj"/>
+    </Target>
+    <Target Name="vtchkupd:Clean">
+        <MSBuild Projects="..\..\COMMON\vtUpdater\vtchkupd.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtchkupd:Make">
+        <MSBuild Projects="..\..\COMMON\vtUpdater\vtchkupd.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtT1_2026">
+        <MSBuild Projects="vtT1_2026.dproj"/>
+    </Target>
+    <Target Name="vtT1_2026:Clean">
+        <MSBuild Projects="vtT1_2026.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtT1_2026:Make">
+        <MSBuild Projects="vtT1_2026.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtT2_2027">
+        <MSBuild Projects="vtT2_2027.dproj"/>
+    </Target>
+    <Target Name="vtT2_2027:Clean">
+        <MSBuild Projects="vtT2_2027.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtT2_2027:Make">
+        <MSBuild Projects="vtT2_2027.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtT3_2026">
+        <MSBuild Projects="vtT3_2026.dproj"/>
+    </Target>
+    <Target Name="vtT3_2026:Clean">
+        <MSBuild Projects="vtT3_2026.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtT3_2026:Make">
+        <MSBuild Projects="vtT3_2026.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtTF_2026">
+        <MSBuild Projects="vtTF_2026.dproj"/>
+    </Target>
+    <Target Name="vtTF_2026:Clean">
+        <MSBuild Projects="vtTF_2026.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtTF_2026:Make">
+        <MSBuild Projects="vtTF_2026.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtFP_2027">
+        <MSBuild Projects="vtFP_2027.dproj"/>
+    </Target>
+    <Target Name="vtFP_2027:Clean">
+        <MSBuild Projects="vtFP_2027.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtFP_2027:Make">
+        <MSBuild Projects="vtFP_2027.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtT4T5_2026">
+        <MSBuild Projects="vtT4T5_2026.dproj"/>
+    </Target>
+    <Target Name="vtT4T5_2026:Clean">
+        <MSBuild Projects="vtT4T5_2026.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtT4T5_2026:Make">
+        <MSBuild Projects="vtT4T5_2026.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VTDebug2026">
+        <MSBuild Projects="VTDebug2026.dproj"/>
+    </Target>
+    <Target Name="VTDebug2026:Clean">
+        <MSBuild Projects="VTDebug2026.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VTDebug2026:Make">
+        <MSBuild Projects="VTDebug2026.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VT2026">
+        <MSBuild Projects="VT2026.dproj"/>
+    </Target>
+    <Target Name="VT2026:Clean">
+        <MSBuild Projects="VT2026.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VT2026:Make">
+        <MSBuild Projects="VT2026.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vtClient2026">
+        <MSBuild Projects="vtClient2026.dproj"/>
+    </Target>
+    <Target Name="vtClient2026:Clean">
+        <MSBuild Projects="vtClient2026.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtClient2026:Make">
+        <MSBuild Projects="vtClient2026.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ForDFM">
+        <MSBuild Projects="..\..\COMMON\ForDFM\ForDFM.dproj"/>
+    </Target>
+    <Target Name="ForDFM:Clean">
+        <MSBuild Projects="..\..\COMMON\ForDFM\ForDFM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ForDFM:Make">
+        <MSBuild Projects="..\..\COMMON\ForDFM\ForDFM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EFERR">
+        <MSBuild Projects="..\..\COMMON\mkEFdb\EFERR.dproj"/>
+    </Target>
+    <Target Name="EFERR:Clean">
+        <MSBuild Projects="..\..\COMMON\mkEFdb\EFERR.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EFERR:Make">
+        <MSBuild Projects="..\..\COMMON\mkEFdb\EFERR.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TR2026">
+        <MSBuild Projects="..\TR-2026\TR2026.dproj"/>
+    </Target>
+    <Target Name="TR2026:Clean">
+        <MSBuild Projects="..\TR-2026\TR2026.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TR2026:Make">
+        <MSBuild Projects="..\TR-2026\TR2026.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="vtCtrls;vtCtrlsIDE;vtBase;vtchkupd;vtT1_2026;vtT2_2027;vtT3_2026;vtTF_2026;vtFP_2027;vtT4T5_2026;VTDebug2026;VT2026;vtClient2026;ForDFM;EFERR;TR2026"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="vtCtrls:Clean;vtCtrlsIDE:Clean;vtBase:Clean;vtchkupd:Clean;vtT1_2026:Clean;vtT2_2027:Clean;vtT3_2026:Clean;vtTF_2026:Clean;vtFP_2027:Clean;vtT4T5_2026:Clean;VTDebug2026:Clean;VT2026:Clean;vtClient2026:Clean;ForDFM:Clean;EFERR:Clean;TR2026:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="vtCtrls:Make;vtCtrlsIDE:Make;vtBase:Make;vtchkupd:Make;vtT1_2026:Make;vtT2_2027:Make;vtT3_2026:Make;vtTF_2026:Make;vtFP_2027:Make;vtT4T5_2026:Make;VTDebug2026:Make;VT2026:Make;vtClient2026:Make;ForDFM:Make;EFERR:Make;TR2026:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

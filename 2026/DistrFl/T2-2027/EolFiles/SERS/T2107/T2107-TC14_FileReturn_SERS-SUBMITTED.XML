@@ -1,0 +1,228 @@
+<FileReturnRequest xmlns="http://www.cra-arc.gc.ca/xmlns/sres/1-0-0" xmlns:common="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0">
+   <common:SoftwareCode>VT51</common:SoftwareCode>
+   <common:ClientId>599480803RC0001</common:ClientId>
+   <Form>
+      <common:FormSequenceNumber>1</common:FormSequenceNumber>
+      <common:FormNumber>2107</common:FormNumber>
+      <FieldCode>
+         <Line>0002</Line>
+         <Row>0</Row>
+         <Value>CANADIAN CORPORATIONS TESTING NO 14</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0003</Line>
+         <Row>0</Row>
+         <Value>2024/12/31</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0019</Line>
+         <Row>0</Row>
+         <Value>Randy Johnson</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0022</Line>
+         <Row>0</Row>
+         <Value>565666-8796</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0024</Line>
+         <Row>0</Row>
+         <Value>Johnson&apos;s Donuts</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0031</Line>
+         <Row>0</Row>
+         <Value>Harry&apos;s Handyman Service</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0032</Line>
+         <Row>0</Row>
+         <Value>774458866</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0033</Line>
+         <Row>0</Row>
+         <Value>1841 Argyle St</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0034</Line>
+         <Row>0</Row>
+         <Value>NS  Nova Scotia</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0036</Line>
+         <Row>0</Row>
+         <Value>Halifax</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0037</Line>
+         <Row>0</Row>
+         <Value>CA Canada</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0038</Line>
+         <Row>0</Row>
+         <Value>2023/12/31</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0041</Line>
+         <Row>0</Row>
+         <Value>T63678612</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0042</Line>
+         <Row>0</Row>
+         <Value>Bob&apos;s Golf course</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0043</Line>
+         <Row>0</Row>
+         <Value>3848 Main St</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0044</Line>
+         <Row>0</Row>
+         <Value>ON  Ontario</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0045</Line>
+         <Row>0</Row>
+         <Value>L2G 6B2</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0046</Line>
+         <Row>0</Row>
+         <Value>Niagara Falls</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0047</Line>
+         <Row>0</Row>
+         <Value>CA Canada</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0320</Line>
+         <Row>0</Row>
+         <Value>5575.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0400</Line>
+         <Row>0</Row>
+         <Value>5575.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0200</Line>
+         <Row>0</Row>
+         <Value>2</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0215</Line>
+         <Row>0</Row>
+         <Value>Common Stock</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0220</Line>
+         <Row>0</Row>
+         <Value>2023/10/31</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0225</Line>
+         <Row>0</Row>
+         <Value>500.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0230</Line>
+         <Row>0</Row>
+         <Value>100.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0235</Line>
+         <Row>0</Row>
+         <Value>30.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0245</Line>
+         <Row>0</Row>
+         <Value>15.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0250</Line>
+         <Row>0</Row>
+         <Value>7500.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0255</Line>
+         <Row>0</Row>
+         <Value>5000.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0260</Line>
+         <Row>0</Row>
+         <Value>2500.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0265</Line>
+         <Row>0</Row>
+         <Value>Liz McGill</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0270</Line>
+         <Row>0</Row>
+         <Value>T85627946</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0275</Line>
+         <Row>0</Row>
+         <Value>199 Queen St</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0276</Line>
+         <Row>0</Row>
+         <Value>PE  Prince Edward Island</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0277</Line>
+         <Row>0</Row>
+         <Value>C1A 4B7</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0278</Line>
+         <Row>0</Row>
+         <Value>Charlottetown</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0279</Line>
+         <Row>0</Row>
+         <Value>CA Canada</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0285</Line>
+         <Row>0</Row>
+         <Value>2</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0290</Line>
+         <Row>0</Row>
+         <Value>2</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0960</Line>
+         <Row>0</Row>
+         <Value>Jim Jefferson</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0961</Line>
+         <Row>0</Row>
+         <Value>Owner</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0962</Line>
+         <Row>0</Row>
+         <Value>1</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0963</Line>
+         <Row>0</Row>
+         <Value>2024/06/30</Value>
+      </FieldCode>
+   </Form>
+</FileReturnRequest>

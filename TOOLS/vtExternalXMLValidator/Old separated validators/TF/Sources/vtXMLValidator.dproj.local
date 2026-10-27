@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.909,C:\Users\progh\OneDrive\Documents\RAD Studio\Projects\Unit1.pas=D:\IHOR\VisualTax\VisualTax_V2\TOOLS\vtExternalXMLValidator\T4T5\Sources\uMain.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.909,C:\Users\progh\OneDrive\Documents\RAD Studio\Projects\Unit1.dfm=D:\IHOR\VisualTax\VisualTax_V2\TOOLS\vtExternalXMLValidator\T4T5\Sources\uMain.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.075,=D:\IHOR\VisualTax\VisualTax_V2\TOOLS\vtExternalXMLValidator\T4T5\Sources\vtShowMessageHTML.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.273,=C:\Users\progh\OneDrive\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.961,C:\Users\progh\OneDrive\Documents\RAD Studio\Projects\Project1.dproj=D:\IHOR\VisualTax\VisualTax_V2\TOOLS\vtExternalXMLValidator\T4T5\Sources\vtXMLValidator.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.310,=D:\IHOR\VisualTax\VisualTax_V2\TOOLS\vtExternalXMLValidator\T4T5\Sources\uT4T5XMLValidator.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.849,=C:\Users\progh\OneDrive\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026.02.20 15:16:33.849,D:\IHOR\VisualTax\VisualTax_V2\TOOLS\vtExternalXMLValidator\TF\Sources\uTFXMLValidator.pas=D:\IHOR\VisualTax\VisualTax_V2\TOOLS\vtExternalXMLValidator\TF\Sources\uT4T5XMLValidator.pas</Transaction>
+  </Transactions>
+</BorlandProject>

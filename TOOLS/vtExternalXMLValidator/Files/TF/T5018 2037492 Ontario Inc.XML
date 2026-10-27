@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Submission xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <T619>
+      <TransmitterAccountNumber>
+         <bn15>111111118rp0001</bn15>
+      </TransmitterAccountNumber>
+      <sbmt_ref_id>26072127</sbmt_ref_id>
+      <summ_cnt>1</summ_cnt>
+      <lang_cd>E</lang_cd>
+      <TransmitterName>
+         <l1_nm>12345678901234567890123456789012345</l1_nm>
+      </TransmitterName>
+      <TransmitterCountryCode>CAN</TransmitterCountryCode>
+      <CNTC>
+         <cntc_nm>NM</cntc_nm>
+         <cntc_area_cd>905</cntc_area_cd>
+         <cntc_phn_nbr>999-9999</cntc_phn_nbr>
+         <cntc_email_area>aaa@yahoo.ca</cntc_email_area>
+      </CNTC>
+   </T619>
+   <Return>
+     <T5018>
+       <T5018Slip>
+         <RCPNT_NM>
+           <snm>Wang</snm>
+           <gvn_nm>Hong Cheng</gvn_nm>
+         </RCPNT_NM>
+         <rcpnt_tcd>1</rcpnt_tcd>
+         <RCPNT_ADDR>
+            <addr_l1_txt>83 Mintwood Dr</addr_l1_txt>
+           <cty_nm>North York</cty_nm>
+           <prov_cd>ON</prov_cd>
+           <cntry_cd>CAN</cntry_cd>
+           <pstl_cd>M2M3A6</pstl_cd>
+         </RCPNT_ADDR>
+         <sin>531414407</sin>
+         <rcpnt_bn>000000000RZ0000</rcpnt_bn>
+         <bn>868266503RZ0001</bn>
+         <sbctrcr_amt>3500.00</sbctrcr_amt>
+         <rpt_tcd>O</rpt_tcd>
+       </T5018Slip>
+       <T5018Summary>
+         <bn>868266503RZ0001</bn>
+         <PAYR_NM>
+           <l1_nm>2037492 Ontario Inc.</l1_nm>
+         </PAYR_NM>
+         <PAYR_ADDR>
+           <addr_l1_txt>40 Lena Dr</addr_l1_txt>
+           <cty_nm>Richmond Hill</cty_nm>
+           <prov_cd>ON</prov_cd>
+           <pstl_cd>L4S2V1</pstl_cd>
+         </PAYR_ADDR>
+         <CNTC>
+           <cntc_nm>Yao Jian Huang</cntc_nm>
+           <cntc_area_cd>416</cntc_area_cd>
+           <cntc_phn_nbr>271-1268</cntc_phn_nbr>
+         </CNTC>
+         <PRD_END_DT>
+           <dy>31</dy>
+           <mo>12</mo>
+           <yr>2025</yr>
+         </PRD_END_DT>
+         <slp_cnt>1</slp_cnt>
+         <tot_sbctrcr_amt>3500.00</tot_sbctrcr_amt>
+         <rpt_tcd>O</rpt_tcd>
+       </T5018Summary>
+     </T5018>
+   </Return>
+</Submission>

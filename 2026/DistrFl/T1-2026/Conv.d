@@ -1,0 +1,419 @@
+[General]
+Conversion=T1
+FileExtension=00T
+Input=I:\Profile\2000T1
+Output=F:\DELPHI\T1\TempDir
+OutputFileExtension=EXP
+[Fields]
+T1Info.S[1]=sin^PAGE_1^3
+T1[5]=Birthdate^PAGE_1^9
+T1Info.S[2]=Title^PAGE_1^33
+T1Info.S[3]=FirstNM^PAGE_1^2
+T1Info.S[4]=LastNm^PAGE_1^5
+T1Info.S[5]=Apartment^PAGE_1^22
+T1Info.S[6]=CareOf^PAGE_1^8
+T1Info.S[7]=Street^PAGE_1^6
+T1Info.S[8]=City^PAGE_1^10
+T1Info.S[9]=Province^PAGE_1^14
+T1Info.S[10]=Postal^PAGE_1^15
+T1Info.S[11]=PhoneArea^PAGE_1^54
+T1Info.S[11]=PhoneNo^PAGE_1^55
+T1Info.B[23]=Gender^PAGE_1^23
+T1Info.B[4]=NOA^PAGE_1^49
+T1Info.B[10]=MarStatus^PAGE_1^11
+T1Info.B[11]=ProvResidence^PAGE_1^1
+T1Info.S[12]=ProvSelfEmpl^PAGE_1^21
+T1Info.B[1]=EfileIt^PAGE_1^46
+T1Info.B[15]=RepresentClient^PAGE_1^58
+T1Info.B[25]=ContactIndicator^PAGE_1^53
+T1Info.B[2]=Discounted^PAGE_1^47
+T1Info.B[14]=Elections^PAGE_1^43
+T1Info.S[21]=SpouseSin^PAGE_1^4
+T1Info.S[23]=SpouseFirstName^PAGE_1^20
+T1Info.S[24]=SpouseLastName???^PAGE_1^45
+T1Info[1]=SpouseBirthDate^PAGE_1^59
+T1Info.S[36]=FaxArea^PAGE_1^62
+T1Info.S[36]=FaxNo^PAGE_1^63
+T1Info.S[37]=EMail^PAGE_1^64
+T1Info.S[38]=ClientId^PAGE_1^67
+T1DependantTable.S[0,0]=DepSin1^DEPEND^7
+T1DependantTable.S[0,1]=DepFirstName1^DEPEND^5
+T1DependantTable.S[0,2]=DepLastName1^DEPEND^6
+T1DependantTable.B[0,1]=DepRelationship1^DEPEND^11
+T1DependantTable[0,1]=DepBirthDate1^DEPEND^10
+T1DependantTable.S[0,4]=Infirmity^DEPEND^12
+
+T1DependantTable.S[1,0]=DepSin2^DEPEND^22
+T1DependantTable.S[1,1]=DepFirstName2^DEPEND^20
+T1DependantTable.S[1,2]=DepLastName2^DEPEND^21
+T1DependantTable.B[1,1]=DepRelationship2^DEPEND^26
+T1DependantTable[1,1]=DepBirthDate2^DEPEND^25
+T1DependantTable.S[1,4]=Infirmity2^DEPEND^27
+
+T1DependantTable.S[2,0]=DepSin3^DEPEND^37
+T1DependantTable.S[2,1]=DepFirstName3^DEPEND^35
+T1DependantTable.S[2,2]=DepLastName3^DEPEND^36
+T1DependantTable.B[2,1]=DepRelationship3^DEPEND^41
+T1DependantTable[2,1]=DepBirthDate3^DEPEND^40
+T1DependantTable.S[2,4]=Infirmity3^DEPEND^42
+
+T1DependantTable.S[3,0]=DepSin4^DEPEND^52
+T1DependantTable.S[3,1]=DepFirstName4^DEPEND^50
+T1DependantTable.S[3,2]=DepLastName4^DEPEND^51
+T1DependantTable.B[3,1]=DepRelationship4^DEPEND^56
+T1DependantTable[3,1]=DepBirthDate4^DEPEND^55
+T1DependantTable.S[3,4]=Infirmity4^DEPEND^57
+
+EndingCF[1]=RspDedLimit2001^RRSP^1
+EndingCF[2]=UndeductedContr^CFR_1^31
+EndingCF[3]=NetCapitalLoss^CFR_2^183
+EndingCF[7]=LtdPartnershipLoss^DIRECT^6
+EndingCF[8]=ListedPersPropLoss^S3^98
+EndingCF[17]=CNILExpensesPriorYrs^CFR_1^29
+EndingCF[18]=CNILIncomePriorYears^CFR_1^30
+EndingCF[26]=Tuition^S11^13
+EndingCF[32]=InterestStLoan^DIRECT^14
+EndingCF[27]=MovingExpenses^CFR_1^38
+EndingCF[30]=MinTaxCarryOver^CFR_1^39
+EndingCF[33]=InvTaxCredit^T2038_1^37
+EndingCF[34]=CEE^RESEXP^1
+EndingCF[35]=CDE^RESEXP^2
+EndingCF[36]=COGPE^RESEXP^3
+EndingCF[38]=ForExplAndDev^RESEXP^4
+EndingCF[39]=Depletion^RESEXP^48
+
+T1NonCapitalLosses[7]=NonCapLoss94^CFR_2^2
+T1NonCapitalLosses[10]=NonCapLoss95^CFR_2^7
+T1NonCapitalLosses[13]=NonCapLoss96^CFR_2^12
+T1NonCapitalLosses[16]=NonCapLoss97^CFR_2^17
+T1NonCapitalLosses[19]=NonCapLoss98^CFR_2^22
+T1NonCapitalLosses[22]=NonCapLoss99^CFR_2^27
+T1NonCapitalLosses[23]=NonCapLoss2000^CFR_2^32
+T1NonCapitalLosses[47]=RestrFarmLoss91^CFR_2^105
+T1NonCapitalLosses[50]=RestrFarmLoss92^CFR_2^110
+T1NonCapitalLosses[53]=RestrFarmLoss93^CFR_2^115
+T1NonCapitalLosses[56]=RestrFarmLoss94^CFR_2^120
+T1NonCapitalLosses[59]=RestrFarmLoss95^CFR_2^125
+T1NonCapitalLosses[62]=RestrFarmLoss96^CFR_2^130
+T1NonCapitalLosses[65]=RestrFarmLoss97^CFR_2^135
+T1NonCapitalLosses[68]=RestrFarmLoss98^CFR_2^140
+T1NonCapitalLosses[71]=RestrFarmLoss99^CFR_2^145
+T1NonCapitalLosses[72]=RestrFarmLoss2000^CFR_2^150
+T1NonCapitalLosses[97]=FarmLoss91^CFR_2^46
+T1NonCapitalLosses[100]=FarmLoss92^CFR_2^51
+T1NonCapitalLosses[103]=FarmLoss93^CFR_2^56
+T1NonCapitalLosses[106]=FarmLoss94^CFR_2^61
+T1NonCapitalLosses[109]=FarmLoss95^CFR_2^66
+T1NonCapitalLosses[112]=FarmLoss96^CFR_2^71
+T1NonCapitalLosses[115]=FarmLoss97^CFR_2^76
+T1NonCapitalLosses[118]=FarmLoss98^CFR_2^81
+T1NonCapitalLosses[121]=FarmLoss99^CFR_2^86
+T1NonCapitalLosses[122]=FarmLoss2000^CFR_2^91
+T1NetCapitalLosses[21]=CapLoss-PreMay23To85^CFR_2^163
+T1NetCapitalLosses[22]=CapLoss-May2285ToBefr88^CFR_2^168
+T1NetCapitalLosses[23]=CapLoss-88and89^CFR_2^173
+T1NetCapitalLosses[24]=CapLoss-90to99^CFR_2^178
+
+Schedule3[214]=InclusuionRate2000^CFR_2^203
+
+T1Donations[25]=Donations96^DON^136
+T1Donations[28]=Donations97^DON^141
+T1Donations[31]=Donations98^DON^90
+T1Donations[34]=Donations99^DON^95
+T1Donations[35]=Donations2000^DON^100
+
+T1139.S[0,3]=T1139#1-Bus name^T1139_1#1^38
+T1139[0,2]=T1139#1-ReservLYr1^T1139_1#1^8
+T1139[0,4]=T1139#1-AddIncLYr1^T1139_1#1^10
+T1139[0,10]=T1139#1-1995Inc1^T1139_1#1^12
+T1139[0,22]=T1139#1-ReservLYr2^T1139_1#1^20
+T1139[0,24]=T1139#1-AddIncLYr2^T1139_1#1^22
+T1139[0,30]=T1139#1-1995Inc2^T1139_1#1^24
+
+T1139.S[1,3]=T1139#2-Bus name^T1139_1#2^38
+T1139[1,2]=T1139#2-ReservLYr1^T1139_1#2^8
+T1139[1,4]=T1139#2-AddIncLYr1^T1139_1#2^10
+T1139[1,10]=T1139#2-1995Inc1^T1139_1#2^12
+T1139[1,22]=T1139#2-ReservLYr2^T1139_1#2^20
+T1139[1,24]=T1139#2-AddIncLYr2^T1139_1#2^22
+T1139[1,30]=T1139#2-1995Inc2^T1139_1#2^24
+
+T2124[0,1]=T2124#1-Fiscal1^T2124_1#1^4
+T2124[0,2]=T2124#1-Fiscal2^T2124_1#1^5
+T2124.B[0,2]=T2124#1-BusOrComm^T2124_1#1^73
+T2124.S[0,3]=T2124#1-Bus name^T2124_1#1^8
+T2124.S[0,5]=T2124#1-adress1^T2124_1#1^10
+T2124.S[0,7]=T2124#1-City^T2124_1#1^13
+T2124.S[0,8]=T2124#1-postal^T2124_1#1^14
+T2124.S[0,4]=T2124#1-main Product^T2124_1#1^9
+T2124.S[0,9]=T2124#1-partnership id^T2124_1#1^15
+T2124.S[0,11]=T2124#1-taxShelterNo^T2124_1#1^16
+T2124.S[0,12]=T2124#1-BusNum1^T2124_1#1^19
+T2124.S[0,12]=T2124#1-BusNum2^T2124_1#1^20
+T2124.S[0,12]=T2124#1-BusNum3^T2124_1#1^21
+T2124[0,114]=T2124#1-Percent^T2124_1#1^18
+T2124[0,12]=T2124#1-GrossInc^T2124_1#1^23
+
+T2124[0,90]=T2124#1-CFHomeUseCF^T2124_2#1^31
+T2124CEC[0,8]=T2124#1-CFCEC^T2124_4#1^42
+
+T2124.S[0,22]=T2124#1-Partn1FirstNm^T2124_2#1^58
+T2124.S[0,33]=T2124#1-Partn1LastNm^T2124_2#1^48
+T2124.S[0,39]=T2124#1-Partn1Sin^T2124_2#1^62
+T2124.S[0,23]=T2124#1-Partn1Adress1^T2124_2#1^45
+
+T2124.S[0,24]=T2124#1-Partn2FirstNm^T2124_2#1^59
+T2124.S[0,34]=T2124#1-Partn2LastNm^T2124_2#1^64
+T2124.S[0,40]=T2124#1-Partn2Sin^T2124_2#1^65
+T2124.S[0,25]=T2124#1-Partn2dress1^T2124_2#1^63
+
+T2124.S[0,26]=T2124#1-Partn3FirstNm^T2124_2#1^60
+T2124.S[0,35]=T2124#1-Partn3LastNm^T2124_2#1^67
+T2124.S[0,41]=T2124#1-Partn3Sin^T2124_2#1^68
+T2124.S[0,27]=T2124#1-Partn3dress1^T2124_2#1^66
+
+T2124.S[0,28]=T2124#1-Partn4FirstNm^T2124_2#1^61
+T2124.S[0,36]=T2124#1-Partn4LastNm^T2124_2#1^70
+T2124.S[0,42]=T2124#1-Partn4Sin^T2124_2#1^71
+T2124.S[0,29]=T2124#1-Partn4dress1^T2124_2#1^69
+
+T2124[0,101]=T2124#1-SpousePercent^T2124_2#1^38
+T2124[0,103]=T2124#1-Partn1Percent^T2124_2#1^41
+T2124[0,105]=T2124#1-Partn2Percent^T2124_2#1^44
+T2124[0,107]=T2124#1-Partn3Percent^T2124_2#1^47
+T2124[0,109]=T2124#1-Partn4Percent^T2124_2#1^50
+
+T2124[1,1]=T2124#2-Fiscal1^T2124_1#2^4
+T2124[1,2]=T2124#2-Fiscal2^T2124_1#2^5
+T2124.B[1,2]=T2124#2-BusOrComm^T2124_1#2^73
+T2124.S[1,3]=T2124#2-Bus name^T2124_1#2^8
+T2124.S[1,5]=T2124#2-adress1^T2124_1#2^10
+T2124.S[1,7]=T2124#2-City^T2124_1#2^13
+T2124.S[1,8]=T2124#2-postal^T2124_1#2^14
+T2124.S[1,4]=T2124#2-main Product^T2124_1#2^9
+T2124.S[1,9]=T2124#2-partnership id^T2124_1#2^15
+T2124.S[1,11]=T2124#2-taxShelterNo^T2124_1#2^16
+T2124.S[1,12]=T2124#2-BusNum1^T2124_1#2^19
+T2124.S[1,12]=T2124#2-BusNum2^T2124_1#2^20
+T2124.S[1,12]=T2124#2-BusNum3^T2124_1#2^21
+T2124[1,114]=T2124#2-Percent^T2124_1#2^18
+T2124[1,12]=T2124#2-GrossInc^T2124_1#2^23
+
+T2124[1,90]=T2124#2-CFHomeUseCF^T2124_2#2^31
+T2124CEC[1,8]=T2124#2-CFCEC^T2124_4#2^42
+
+T2124.S[1,22]=T2124#2-Partn1FirstNm^T2124_2#2^58
+T2124.S[1,33]=T2124#2-Partn1LastNm^T2124_2#2^48
+T2124.S[1,39]=T2124#2-Partn1Sin^T2124_2#2^62
+T2124.S[1,23]=T2124#2-Partn1Adress1^T2124_2#2^45
+
+T2124.S[1,24]=T2124#2-Partn2FirstNm^T2124_2#2^59
+T2124.S[1,34]=T2124#2-Partn2LastNm^T2124_2#2^64
+T2124.S[1,40]=T2124#2-Partn2Sin^T2124_2#2^65
+T2124.S[1,25]=T2124#2-Partn2dress1^T2124_2#2^63
+
+T2124.S[1,26]=T2124#2-Partn3FirstNm^T2124_2#2^60
+T2124.S[1,35]=T2124#2-Partn3LastNm^T2124_2#2^67
+T2124.S[1,41]=T2124#2-Partn3Sin^T2124_2#2^68
+T2124.S[1,27]=T2124#2-Partn3dress1^T2124_2#2^66
+
+T2124.S[1,28]=T2124#2-Partn4FirstNm^T2124_2#2^61
+T2124.S[1,36]=T2124#2-Partn4LastNm^T2124_2#2^70
+T2124.S[1,42]=T2124#2-Partn4Sin^T2124_2#2^71
+T2124.S[1,29]=T2124#2-Partn4dress1^T2124_2#2^69
+
+T2124[1,101]=T2124#2-SpousePercent^T2124_2#2^38
+T2124[1,103]=T2124#2-Partn1Percent^T2124_2#2^41
+T2124[1,105]=T2124#2-Partn2Percent^T2124_2#2^44
+T2124[1,107]=T2124#2-Partn3Percent^T2124_2#2^47
+T2124[1,109]=T2124#2-Partn4Percent^T2124_2#2^50
+
+T2124CCATable[0,0]=T2124#1-class1^T2124_3#1^1
+T2124CCATable[0,10]=T2124#1-UCC1^T2124_3#1^2
+T2124CCATable[1,0]=T2124#1-class2^T2124_3#1^11
+T2124CCATable[1,10]=T2124#1-UCC2^T2124_3#1^12
+T2124CCATable[2,0]=T2124#1-class3^T2124_3#1^21
+T2124CCATable[2,10]=T2124#1-UCC3^T2124_3#1^22
+T2124CCATable[3,0]=T2124#1-class4^T2124_3#1^31
+T2124CCATable[3,10]=T2124#1-UCC4^T2124_3#1^32
+T2124CCATable[4,0]=T2124#1-class5^T2124_3#1^41
+T2124CCATable[4,10]=T2124#1-UCC5^T2124_3#1^42
+
+T776[0,1]=T776_1#1-from date^T776_1#1^3
+T776[0,2]=T776_1#1-to date^T776_1#1^6
+T776.S[0,6]=T776_1#1-partnershId^T776_1#1^11
+T776.S[0,7]=T776_1#1-tax sh no^T776_1#1^13
+T776.S[0,8]=T776_1#1-bus no^T776_1#1^15
+T776[0,3]=T776_1#1-percent^T776_1#1^18
+T776[0,31]=T776_1#1-Income^T776_1#1^47
+
+T776IncomeTable.S[0,0]=T776_1#1-str^T776_1#1^45
+T776IncomeTable.S[0,1]=T776_1#1-city^T776_1#1^45
+T776IncomeTable.S[0,2]=T776_1#1-Prov^T776_1#1^45
+T776IncomeTable.S[0,3]=T776_1#1-postal^T776_1#1^45
+T776IncomeTable[0,0]=T776_1#1-Units_1^T776_1#1^46
+
+T776IncomeTable.S[1,0]=T776_1#1-str^T776_1#1^48
+T776IncomeTable.S[1,1]=T776_1#1-city^T776_1#1^48
+T776IncomeTable.S[1,2]=T776_1#1-Prov^T776_1#1^48
+T776IncomeTable.S[1,3]=T776_1#1-postal^T776_1#1^48
+T776IncomeTable[1,0]=T776_1#1-Units^T776_1#1^49
+
+T776IncomeTable.S[2,0]=T776_1#1-str^T776_1#1^51
+T776IncomeTable.S[2,1]=T776_1#1-city^T776_1#1^51
+T776IncomeTable.S[2,2]=T776_1#1-Prov^T776_1#1^51
+T776IncomeTable.S[2,3]=T776_1#1-postal^T776_1#1^51
+T776IncomeTable[2,0]=T776_1#1-Units^T776_1#1^52
+
+T776.S[0,15]=T776_1#1-sp f-name^T776_1#1^22
+T776.S[0,16]=T776_1#1-sp addr^T776_1#1^119
+T776.S[0,27]=T776_1#1-sp l-name^T776_1#1^117
+T776.S[0,33]=T776_1#1-sp sin^T776_1#1^118
+T776[0,10]=T776_1#1-sp percent^T776_1#1^24
+
+T776.S[0,17]=T776_1#1-prtn1 f-name^T776_1#1^25
+T776.S[0,18]=T776_1#1-prtn1 addr^T776_1#1^121
+T776.S[0,28]=T776_1#1-prtn1 l-name^T776_1#1^26
+T776.S[0,34]=T776_1#1-prtn1 sin^T776_1#1^120
+T776[0,12]=T776_1#1-prtnr1 percent^T776_1#1^28
+
+T776.S[0,19]=T776_1#1-prtn2 f-name^T776_1#1^29
+T776.S[0,20]=T776_1#1-prtn2 addr^T776_1#1^123
+T776.S[0,29]=T776_1#1-prtn2 l-name^T776_1#1^30
+T776.S[0,35]=T776_1#1-prtn2 sin^T776_1#1^122
+T776[0,14]=T776_1#1-prtnr2 percent^T776_1#1^32
+
+T776.S[0,21]=T776_1#1-prtn3 f-name^T776_1#1^33
+T776.S[0,22]=T776_1#1-prtn3 addr^T776_1#1^125
+T776.S[0,30]=T776_1#1-prtn3 l-name^T776_1#1^34
+T776.S[0,36]=T776_1#1-prtn3 sin^T776_1#1^124
+T776[0,16]=T776_1#1-prtnr3 percent^T776_1#1^36
+
+T776.S[0,23]=T776_1#1-prtn4 f-name^T776_1#1^37
+T776.S[0,24]=T776_1#1-prtn4 addr^T776_1#1^127
+T776.S[0,31]=T776_1#1-prtn4 l-name^T776_1#1^38
+T776.S[0,37]=T776_1#1-prtn4 sin^T776_1#1^126
+T776[0,18]=T776_1#1-prtnr4 percent^T776_1#1^40
+
+T776.S[0,25]=T776_1#1-prtn5 f-name^T776_1#1^41
+T776.S[0,26]=T776_1#1-prtn5 addr^T776_1#1^129
+T776.S[0,32]=T776_1#1-prtn5 l-name^T776_1#1^42
+T776.S[0,38]=T776_1#1-prtn5 sin^T776_1#1^128
+T776[0,20]=T776_1#1-prtnr5 percent^T776_1#1^44
+
+T776CCATable[0,0]=T776_2#1-Class^T776_2#1^1
+T776CCATable[1,0]=T776_2#1-Class^T776_2#1^10
+T776CCATable[2,0]=T776_2#1-Class^T776_2#1^19
+T776CCATable[3,0]=T776_2#1-Class^T776_2#1^28
+T776CCATable[4,0]=T776_2#1-Class^T776_2#1^37
+
+T776CCATable[0,10]=T776_2#1-UCC^T776_2#1^2
+T776CCATable[1,10]=T776_2#1-UCC^T776_2#1^11
+T776CCATable[2,10]=T776_2#1-UCC^T776_2#1^20
+T776CCATable[3,10]=T776_2#1-UCC^T776_2#1^29
+T776CCATable[4,10]=T776_2#1-UCC^T776_2#1^38
+
+T776[1,1]=T776_1#2-from date^T776_1#2^3
+T776[1,2]=T776_1#2-to date^T776_1#2^6
+T776.S[1,6]=T776_1#2-partnershId^T776_1#2^11
+T776.S[1,7]=T776_1#2-tax sh no^T776_1#2^13
+T776.S[1,8]=T776_1#2-bus no^T776_1#2^15
+T776[1,3]=T776_1#2-percent^T776_1#2^18
+T776[1,31]=T776_1#2-Income^T776_1#2^47
+
+T776.S[1,15]=T776_1#2-sp f-name^T776_1#2^22
+T776.S[1,16]=T776_1#2-sp addr^T776_1#2^119
+T776.S[1,27]=T776_1#2-sp l-name^T776_1#2^117
+T776.S[1,33]=T776_1#2-sp sin^T776_1#2^118
+T776[1,10]=T776_1#2-sp percent^T776_1#2^24
+
+T776.S[1,17]=T776_1#2-prtn1 f-name^T776_1#2^25
+T776.S[1,18]=T776_1#2-prtn1 addr^T776_1#2^121
+T776.S[1,28]=T776_1#2-prtn1 l-name^T776_1#2^26
+T776.S[1,34]=T776_1#2-prtn1 sin^T776_1#2^120
+T776[1,12]=T776_1#2-prtnr1 percent^T776_1#2^28
+
+T776.S[1,19]=T776_1#2-prtn2 f-name^T776_1#2^29
+T776.S[1,20]=T776_1#2-prtn2 addr^T776_1#2^123
+T776.S[1,29]=T776_1#2-prtn2 l-name^T776_1#2^30
+T776.S[1,35]=T776_1#2-prtn2 sin^T776_1#2^122
+T776[1,14]=T776_1#2-prtnr2 percent^T776_1#2^32
+
+T776.S[1,21]=T776_1#2-prtn3 f-name^T776_1#2^33
+T776.S[1,22]=T776_1#2-prtn3 addr^T776_1#2^125
+T776.S[1,30]=T776_1#2-prtn3 l-name^T776_1#2^34
+T776.S[1,36]=T776_1#2-prtn3 sin^T776_1#2^124
+T776[1,16]=T776_1#2-prtnr3 percent^T776_1#2^36
+
+T776.S[1,23]=T776_1#2-prtn4 f-name^T776_1#2^37
+T776.S[1,24]=T776_1#2-prtn4 addr^T776_1#2^127
+T776.S[1,31]=T776_1#2-prtn4 l-name^T776_1#2^38
+T776.S[1,37]=T776_1#2-prtn4 sin^T776_1#2^126
+T776[1,18]=T776_1#2-prtnr4 percent^T776_1#2^40
+
+T776.S[1,25]=T776_1#2-prtn5 f-name^T776_1#2^41
+T776.S[1,26]=T776_1#2-prtn5 addr^T776_1#2^129
+T776.S[1,32]=T776_1#2-prtn5 l-name^T776_1#2^42
+T776.S[1,38]=T776_1#2-prtn5 sin^T776_1#2^128
+T776[1,20]=T776_1#2-prtnr5 percent^T776_1#2^44
+
+T2032[0,1]=T2032#1-Fiscal1^T2032_1#1^4
+T2032[0,2]=T2032#1-Fiscal2^T2032_1#1^7
+T2032.S[0,3]=T2032#1-Bus name^T2032_1#1^12
+T2032.S[0,5]=T2032#1-adress1^T2032_1#1^14
+T2032.S[0,7]=T2032#1-City^T2032_1#1^16
+T2032.S[0,8]=T2032#1-postal^T2032_1#1^17
+T2032.S[0,4]=T2032#1-main Product^T2032_1#1^13
+T2032.S[0,9]=T2032#1-partnership id^T2032_1#1^18
+T2032.S[0,11]=T2032#1-taxShelterNo^T2032_1#1^19
+T2032.S[0,12]=T2032#1-BusNum^T2032_1#1^22
+T2032[0,5]=T2032#1-Percent^T2032_1#1^21
+T2032[0,19]=T2032#1-Income^T2032_1#1^26
+
+T2032[0,78]=T2032#1-CFHomeUseCF^T2032_2#1^27
+T2032CEC[0,8]=T2032#1-CFCEC^T2032_4#1^42
+
+T2032.S[0,20]=T2032#1-Partn1FirstNm^T2032_2#1^35
+T2032.S[0,31]=T2032#1-Partn1LastNm^T2032_2#1^57
+T2032.S[0,37]=T2032#1-Partn1Sin^T2032_2#1^58
+T2032.S[0,21]=T2032#1-Partn1Adress1^T2032_2#1^59
+
+T2032.S[0,22]=T2032#1-Partn2FirstNm^T2032_2#1^38
+T2032.S[0,32]=T2032#1-Partn2LastNm^T2032_2#1^60
+T2032.S[0,38]=T2032#1-Partn2Sin^T2032_2#1^61
+T2032.S[0,23]=T2032#1-Partn2dress1^T2032_2#1^62
+
+T2032.S[0,24]=T2032#1-Partn3FirstNm^T2032_2#1^41
+T2032.S[0,33]=T2032#1-Partn3LastNm^T2032_2#1^63
+T2032.S[0,39]=T2032#1-Partn3Sin^T2032_2#1^64
+T2032.S[0,25]=T2032#1-Partn3dress1^T2032_2#1^65
+
+T2032.S[0,26]=T2032#1-Partn4FirstNm^T2032_2#1^44
+T2032.S[0,34]=T2032#1-Partn4LastNm^T2032_2#1^66
+T2032.S[0,40]=T2032#1-Partn4Sin^T2032_2#1^67
+T2032.S[0,27]=T2032#1-Partn4dress1^T2032_2#1^68
+
+T2032[0,90]=T2032#1-SpousePercent^T2032_2#1^52
+T2032[0,92]=T2032#1-Partn1Percent^T2032_2#1^37
+T2032[0,94]=T2032#1-Partn2Percent^T2032_2#1^40
+T2032[0,96]=T2032#1-Partn3Percent^T2032_2#1^43
+T2032[0,98]=T2032#1-Partn4Percent^T2032_2#1^46
+
+T2032CCATable[0,0]=T2032#1-class1^T2032_3#1^1
+T2032CCATable[0,10]=T2032#1-UCC1^T2032_3#1^2
+T2032CCATable[1,0]=T2032#1-class2^T2032_3#1^11
+T2032CCATable[1,10]=T2032#1-UCC2^T2032_3#1^12
+T2032CCATable[2,0]=T2032#1-class3^T2032_3#1^21
+T2032CCATable[2,10]=T2032#1-UCC3^T2032_3#1^22
+T2032CCATable[3,0]=T2032#1-class4^T2032_3#1^31
+T2032CCATable[3,10]=T2032#1-UCC4^T2032_3#1^32
+T2032CCATable[4,0]=T2032#1-class5^T2032_3#1^41
+T2032CCATable[4,10]=T2032#1-UCC5^T2032_3#1^42
+
+
+[Security]
+Key=ADEL
+SelectedFiles=1
+ConvertedFiles=1
+ReturnStatus=0
+ReturnMessage=SUCCESSFUL TERMINATION

@@ -1,0 +1,474 @@
+object frmADGUIxFormsFormatOptions: TfrmADGUIxFormsFormatOptions
+  Left = 0
+  Height = 553
+  Hint = 'Format Options'
+  Top = 0
+  Width = 577
+  ClientHeight = 553
+  ClientWidth = 577
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  ParentFont = False
+  TabOrder = 0
+  TabStop = True
+  object mo_GroupBox1: TPanel
+    Left = 0
+    Height = 194
+    Top = 0
+    Width = 561
+    Caption = ' Data Mapping Rules '
+    ClientHeight = 194
+    ClientWidth = 561
+    TabOrder = 2
+    object mo_Panel3: TPanel
+      Left = 1
+      Height = 167
+      Top = 26
+      Width = 559
+      Align = alClient
+      BevelOuter = bvNone
+      BorderWidth = 12
+      ClientHeight = 167
+      ClientWidth = 559
+      TabOrder = 0
+      object mo_sgMapRules: TStringGrid
+        Left = 12
+        Height = 113
+        Top = 12
+        Width = 535
+        Align = alClient
+        ColCount = 9
+        DefaultRowHeight = 19
+        FixedCols = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing]
+        TabOrder = 0
+        TitleFont.CharSet = RUSSIAN_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        OnEnter = mo_sgMapRulesEnter
+        OnKeyDown = mo_sgMapRulesKeyDown
+        OnSelectCell = mo_sgMapRulesSelectCell
+        OnTopLeftChanged = mo_sgMapRulesTopLeftChanged
+      end
+      object mo_cbxDataType: TComboBox
+        Left = 76
+        Height = 21
+        Top = 30
+        Width = 66
+        ItemHeight = 13
+        Items.Strings = (
+          'dtUnknown'
+          'dtBoolean'
+          'dtSByte'
+          'dtInt16'
+          'dtInt32'
+          'dtInt64'
+          'dtByte'
+          'dtUInt16'
+          'dtUInt32'
+          'dtUInt64'
+          'dtSingle'
+          'dtDouble'
+          'dtExtended'
+          'dtCurrency'
+          'dtBCD'
+          'dtFmtBCD'
+          'dtDateTime'
+          'dtTime'
+          'dtDate'
+          'dtDateTimeStamp'
+          'dtTimeIntervalFull'
+          'dtTimeIntervalYM'
+          'dtTimeIntervalDS'
+          'dtAnsiString'
+          'dtWideString'
+          'dtByteString'
+          'dtBlob'
+          'dtMemo'
+          'dtWideMemo'
+          'dtXML'
+          'dtHBlob'
+          'dtHMemo'
+          'dtWideHMemo'
+          'dtHBFile'
+          'dtRowSetRef'
+          'dtCursorRef'
+          'dtRowRef'
+          'dtArrayRef'
+          'dtParentRowRef'
+          'dtGUID'
+          'dtObject'
+        )
+        OnExit = mo_cbxDataTypeExit
+        OnKeyDown = mo_cbxDataTypeKeyDown
+        Style = csDropDownList
+        TabOrder = 1
+        Visible = False
+      end
+      object mo_Panel2: TPanel
+        Left = 12
+        Height = 30
+        Top = 125
+        Width = 535
+        Align = alBottom
+        BevelOuter = bvNone
+        ClientHeight = 30
+        ClientWidth = 535
+        TabOrder = 2
+        object mo_btnAddRule: TSpeedButton
+          Left = 0
+          Height = 22
+          Top = 8
+          Width = 77
+          Caption = '&Add Rule'
+          Flat = True
+          NumGlyphs = 0
+          OnClick = mo_btnAddRuleClick
+        end
+        object mo_btnRemRule: TSpeedButton
+          Left = 82
+          Height = 22
+          Top = 8
+          Width = 77
+          Caption = '&Delete Rule'
+          Flat = True
+          NumGlyphs = 0
+          OnClick = mo_btnRemRuleClick
+        end
+      end
+    end
+    object mo_Panel5: TPanel
+      Left = 1
+      Height = 25
+      Top = 1
+      Width = 559
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 25
+      ClientWidth = 559
+      TabOrder = 1
+      object mo_cbOwnMapRules: TCheckBox
+        Left = 11
+        Height = 17
+        Top = 7
+        Width = 121
+        Caption = 'I&gnore inherited rules'
+        OnClick = mo_cbOwnMapRulesClick
+        TabOrder = 0
+      end
+    end
+  end
+  object mo_gb1: TPanel
+    Left = 250
+    Height = 83
+    Top = 200
+    Width = 244
+    Caption = ' Handling BCD / FmtBCD Type '
+    ClientHeight = 83
+    ClientWidth = 244
+    TabOrder = 0
+    object mo_Label2: TLabel
+      Left = 11
+      Height = 14
+      Top = 35
+      Width = 94
+      Caption = 'Maximum &precision:'
+      FocusControl = mo_edtMaxBcdPrecision
+      ParentColor = False
+    end
+    object mo_Label3: TLabel
+      Left = 11
+      Height = 14
+      Top = 10
+      Width = 76
+      Caption = 'Maximum &scale:'
+      FocusControl = mo_edtMaxBcdScale
+      ParentColor = False
+    end
+    object mo_edtMaxBcdPrecision: TEdit
+      Left = 107
+      Height = 21
+      Top = 32
+      Width = 125
+      OnChange = mo_Change
+      TabOrder = 1
+    end
+    object mo_edtMaxBcdScale: TEdit
+      Left = 107
+      Height = 21
+      Top = 7
+      Width = 125
+      OnChange = mo_Change
+      TabOrder = 0
+    end
+    object mo_cbDataSnapCompatibility: TCheckBox
+      Left = 11
+      Height = 17
+      Top = 57
+      Width = 129
+      Caption = '&DataSnap Compatibility'
+      OnClick = mo_Change
+      TabOrder = 2
+    end
+  end
+  object mo_gb2: TPanel
+    Left = 0
+    Height = 138
+    Top = 199
+    Width = 244
+    Caption = ' Handling String Type '
+    ClientHeight = 138
+    ClientWidth = 244
+    TabOrder = 1
+    object mo_Label1: TLabel
+      Left = 11
+      Height = 27
+      Top = 3
+      Width = 97
+      Caption = 'Convert to memo if '#13#10'size is greater than:'
+      FocusControl = mo_edtMaxStringSize
+      ParentColor = False
+    end
+    object mo_Label10: TLabel
+      Left = 11
+      Height = 27
+      Top = 30
+      Width = 96
+      Caption = 'Store data &Inline if '#13#10'size is less or equal:'
+      FocusControl = mo_edtInlineDataSize
+      ParentColor = False
+    end
+    object mo_cbStrsEmpty2Null: TCheckBox
+      Left = 11
+      Height = 17
+      Top = 63
+      Width = 158
+      Caption = '&Convert empty strings to Null'
+      OnClick = mo_Change
+      TabOrder = 2
+    end
+    object mo_cbStrsTrim: TCheckBox
+      Left = 11
+      Height = 17
+      Top = 88
+      Width = 133
+      Caption = '&Trim fixed length strings'
+      OnClick = mo_Change
+      TabOrder = 3
+    end
+    object mo_edtMaxStringSize: TEdit
+      Left = 107
+      Height = 21
+      Top = 7
+      Width = 125
+      OnChange = mo_Change
+      TabOrder = 0
+    end
+    object mo_edtInlineDataSize: TEdit
+      Left = 107
+      Height = 21
+      Top = 34
+      Width = 125
+      OnChange = mo_Change
+      TabOrder = 1
+    end
+    object mo_cbStrsTrim2Len: TCheckBox
+      Left = 11
+      Height = 17
+      Top = 113
+      Width = 166
+      Caption = 'T&rim strings at maximum length'
+      OnClick = mo_Change
+      TabOrder = 4
+    end
+  end
+  object mo_Panel6: TPanel
+    Left = 304
+    Height = 40
+    Top = 289
+    Width = 244
+    Caption = ' Parameters Default Type '
+    ClientHeight = 40
+    ClientWidth = 244
+    TabOrder = 3
+    object mo_Label6: TLabel
+      Left = 11
+      Height = 14
+      Top = 10
+      Width = 53
+      Caption = 'Data t&ype:'
+      FocusControl = mo_cbDefaultParamDataType
+      ParentColor = False
+    end
+    object mo_cbDefaultParamDataType: TComboBox
+      Left = 107
+      Height = 21
+      Top = 7
+      Width = 125
+      ItemHeight = 13
+      Items.Strings = (
+        'ftUnknown'
+        'ftString'
+        'ftSmallint'
+        'ftInteger'
+        'ftWord'
+        'ftBoolean'
+        'ftFloat'
+        'ftCurrency'
+        'ftBCD'
+        'ftDate'
+        'ftTime'
+        'ftDateTime'
+        'ftBytes'
+        'ftVarBytes'
+        'ftAutoInc'
+        'ftBlob'
+        'ftMemo'
+        'ftGraphic'
+        'ftFmtMemo'
+        'ftParadoxOle'
+        'ftDBaseOle'
+        'ftTypedBinary'
+        'ftCursor'
+        'ftFixedChar'
+        'ftWideString'
+        'ftLargeint'
+        'ftADT'
+        'ftArray'
+        'ftReference'
+        'ftDataSet'
+        'ftOraBlob'
+        'ftOraClob'
+        'ftVariant'
+        'ftInterface'
+        'ftIDispatch'
+        'ftGuid'
+        'ftTimeStamp'
+        'ftFMTBcd'
+        'ftFixedWideChar'
+        'ftWideMemo'
+        'ftOraTimeStamp'
+        'ftOraInterval'
+      )
+      OnChange = mo_Change
+      TabOrder = 0
+    end
+  end
+  object mo_Panel7: TPanel
+    Left = 13
+    Height = 39
+    Top = 359
+    Width = 244
+    Caption = ' Values Preprocessing'
+    ClientHeight = 39
+    ClientWidth = 244
+    TabOrder = 4
+    object mo_cbRound2Scale: TCheckBox
+      Left = 11
+      Height = 17
+      Top = 12
+      Width = 191
+      Caption = 'Round time values to specified scale'
+      OnClick = mo_Change
+      TabOrder = 0
+    end
+  end
+  object mo_Panel1: TPanel
+    Left = 13
+    Height = 146
+    Top = 404
+    Width = 244
+    Caption = ' Default Field Formats'
+    ClientHeight = 146
+    ClientWidth = 244
+    TabOrder = 5
+    object mo_Label15: TLabel
+      Left = 11
+      Height = 14
+      Top = 10
+      Width = 64
+      Caption = 'Date display:'
+      FocusControl = mo_edtFmtDisplayDate
+      ParentColor = False
+    end
+    object mo_Label16: TLabel
+      Left = 11
+      Height = 14
+      Top = 37
+      Width = 63
+      Caption = 'Time display:'
+      FocusControl = mo_edtFmtDisplayTime
+      ParentColor = False
+    end
+    object mo_Label17: TLabel
+      Left = 11
+      Height = 14
+      Top = 64
+      Width = 86
+      Caption = 'DateTime display:'
+      FocusControl = mo_edtFmtDisplayDateTime
+      ParentColor = False
+    end
+    object mo_Label18: TLabel
+      Left = 11
+      Height = 14
+      Top = 91
+      Width = 79
+      Caption = 'Numeric display:'
+      FocusControl = mo_edtFmtDisplayNum
+      ParentColor = False
+    end
+    object mo_Label19: TLabel
+      Left = 11
+      Height = 14
+      Top = 118
+      Width = 64
+      Caption = 'Numeric edit:'
+      FocusControl = mo_edtFmtEditNum
+      ParentColor = False
+    end
+    object mo_edtFmtDisplayDate: TEdit
+      Left = 107
+      Height = 21
+      Top = 7
+      Width = 125
+      OnChange = mo_Change
+      TabOrder = 0
+    end
+    object mo_edtFmtDisplayTime: TEdit
+      Left = 107
+      Height = 21
+      Top = 34
+      Width = 125
+      OnChange = mo_Change
+      TabOrder = 1
+    end
+    object mo_edtFmtDisplayDateTime: TEdit
+      Left = 107
+      Height = 21
+      Top = 61
+      Width = 125
+      OnChange = mo_Change
+      TabOrder = 2
+    end
+    object mo_edtFmtDisplayNum: TEdit
+      Left = 107
+      Height = 21
+      Top = 88
+      Width = 125
+      OnChange = mo_Change
+      TabOrder = 3
+    end
+    object mo_edtFmtEditNum: TEdit
+      Left = 107
+      Height = 21
+      Top = 115
+      Width = 125
+      OnChange = mo_Change
+      TabOrder = 4
+    end
+  end
+end

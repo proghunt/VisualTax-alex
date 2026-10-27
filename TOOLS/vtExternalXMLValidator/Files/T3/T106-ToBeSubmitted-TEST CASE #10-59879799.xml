@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<soapenv:Envelope 
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:t3rq="http://www.cra-arc.gc.ca/xmlns/t3rq/t3efilerequest/1-0-0">
+<soapenv:Body>
+<t3rq:T3EfileReturnRequest 
+xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" 
+xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2025/1-0-0" 
+xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" 
+xmlns:t106="http://www.cra-arc.gc.ca/xmlns/t106/2025/1-0-0" 
+xmlns:t3rq="http://www.cra-arc.gc.ca/xmlns/t3rq/t3efilerequest/1-0-0" 
+xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t3rq/t3efilerequest/1-0-0 t3efilefrrmsrequest.xsd">
+<ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
+<ef:PasswordID>767AJ5X</ef:PasswordID>
+<t3rq:TaxYear>2025-12-31</t3rq:TaxYear>
+<t3rq:SoftwareID>VT52</t3rq:SoftwareID>
+<t3rq:TaxForm>
+<t106:NonArmsLengthTransactionWithNonResidentInformationReturn>
+    <t106:NonArmsLengthWithNonResidentTransactionSummary>
+        <t106:SummaryActionCode>1</t106:SummaryActionCode>
+        <t106:AmendedReturnIndicator>0</t106:AmendedReturnIndicator>
+        <t106:ReportingTaxpayerIdentification>
+            <t106:Trust>
+                <t106:TrustName>TEST CASE #10</t106:TrustName>
+                <ccms:TrustNumber>59879799</ccms:TrustNumber>
+            </t106:Trust>
+        </t106:ReportingTaxpayerIdentification>
+        <t106:ReportingTaxpayerAddress>
+            <t106:AddressStreetText>275 WATER</t106:AddressStreetText>
+            <t106:AddressMunicipalityName>SUMMERSIDE</t106:AddressMunicipalityName>
+            <t106:GlobalProvinceTerritoryStateCode>PE</t106:GlobalProvinceTerritoryStateCode>
+            <t106:GlobalPostalZipCode>c1b1z9</t106:GlobalPostalZipCode>
+            <t106:CountryCode>CAN</t106:CountryCode>
+        </t106:ReportingTaxpayerAddress>
+        <t106:TaxationYearData>
+            <t106:TaxationYearStartDate>2025-01-01</t106:TaxationYearStartDate>
+            <t106:TaxationYearEndDate>2025-12-31</t106:TaxationYearEndDate>
+        </t106:TaxationYearData>
+        <t106:FirstTimeFilerIndicator>0</t106:FirstTimeFilerIndicator>
+        <t106:LastReturnFilingPeriodEndDate>2024-12-31</t106:LastReturnFilingPeriodEndDate>
+        <t106:DeclaredSlipCount>1</t106:DeclaredSlipCount>
+        <t106:SlipBoxTotalAmount>0</t106:SlipBoxTotalAmount>
+        <t106:ReportingTaxpayerGrossRevenueAmount>0</t106:ReportingTaxpayerGrossRevenueAmount>
+        <t106:NorthAmericanIndustryClassificationSystem>
+            <t106:NorthAmericanIndustryClassificationSystemCode>322111</t106:NorthAmericanIndustryClassificationSystemCode>
+        </t106:NorthAmericanIndustryClassificationSystem>
+        <t106:AffectedReportedAmountCompetentAuthorityIndicator>1</t106:AffectedReportedAmountCompetentAuthorityIndicator>
+        <t106:AdjustedReportedAmountForeignTaxAdministrationAssessmentIndicator>1</t106:AdjustedReportedAmountForeignTaxAdministrationAssessmentIndicator>
+        <t106:ReportingTaxpayerUltimateParentIndicator>0</t106:ReportingTaxpayerUltimateParentIndicator>
+        <t106:UltimateParentCountry>QAT</t106:UltimateParentCountry>
+        <t106:ReportingTaxpayerMNEIndicator>1</t106:ReportingTaxpayerMNEIndicator>
+        <t106:MNEName>MN Enterprise XYZ</t106:MNEName>
+        <t106:MNECbCRRequiredIndicator>1</t106:MNECbCRRequiredIndicator>
+        <t106:CbCRJurisdiction>CAN</t106:CbCRJurisdiction>
+        <t106:ReportingTaxpayerFileOtherReturnIndicator>0</t106:ReportingTaxpayerFileOtherReturnIndicator>
+        <t106:ReportingTaxpayerNonResidentNonMonetaryConsiderationIndicator>0</t106:ReportingTaxpayerNonResidentNonMonetaryConsiderationIndicator>
+        <t106:ReportingTaxpayerNonResidentNilConsiderationIndicator>0</t106:ReportingTaxpayerNonResidentNilConsiderationIndicator>
+        <t106:CertificationDetail>
+            <t106:ContactPersonFirstName>Chad</t106:ContactPersonFirstName>
+            <t106:ContactPersonLastName>Walker</t106:ContactPersonLastName>
+            <t106:ContactPersonPhoneNumber>(902)888-2253X2334</t106:ContactPersonPhoneNumber>
+            <t106:CertifierName>Chand Walker</t106:CertifierName>
+            <t106:CertificationDate>2026-08-21</t106:CertificationDate>
+            <t106:CertifierPositionTitle>Director</t106:CertifierPositionTitle>
+        </t106:CertificationDetail>
+    </t106:NonArmsLengthWithNonResidentTransactionSummary>
+    <t106:NonArmsLengthWithNonResidentTransactionSlip>
+        <t106:SlipSequenceIdentifier>1</t106:SlipSequenceIdentifier>
+        <t106:SlipActionCode>1</t106:SlipActionCode>
+        <t106:NonResidentName>Non-Resident corp. #1</t106:NonResidentName>
+        <t106:NonResidentAddress>9 Seawoods West, Maharashta 400706, Mumbai, India</t106:NonResidentAddress>
+        <t106:NonResidentCountryCode>IN</t106:NonResidentCountryCode>
+        <t106:NonResidentTypeCode>1</t106:NonResidentTypeCode>
+        <t106:DifferentClassificationIndicator>0</t106:DifferentClassificationIndicator>
+        <t106:RelationshipTypeCode>4</t106:RelationshipTypeCode>
+        <t106:NorthAmericanIndustryClassificationSystem>
+            <t106:NorthAmericanIndustryClassificationSystemCode>526</t106:NorthAmericanIndustryClassificationSystemCode>
+        </t106:NorthAmericanIndustryClassificationSystem>
+        <t106:Country>
+            <t106:CountryCode>IND</t106:CountryCode>
+        </t106:Country>
+        <t106:ContemporaneousDocumentationIndicator>0</t106:ContemporaneousDocumentationIndicator>
+        <t106:TransferPricingMethodologyChangeIndicator>1</t106:TransferPricingMethodologyChangeIndicator>
+        <t106:TangiblePropertyStockInTradeRawMaterial>
+            <t106:SoldToNonResidentAmount>1016345</t106:SoldToNonResidentAmount>
+            <t106:SoldToNonResidentTransferPricingMethodologyCode>07</t106:SoldToNonResidentTransferPricingMethodologyCode>
+        </t106:TangiblePropertyStockInTradeRawMaterial>
+        <t106:TangiblePropertyOther>
+            <t106:OtherTangiblePropertyDescription>Equipment</t106:OtherTangiblePropertyDescription>
+            <t106:SoldToNonResidentAmount>512633</t106:SoldToNonResidentAmount>
+            <t106:SoldToNonResidentTransferPricingMethodologyCode>08</t106:SoldToNonResidentTransferPricingMethodologyCode>
+        </t106:TangiblePropertyOther>
+        <t106:Rent>
+            <t106:RevenueFromNonResidentAmount>40231</t106:RevenueFromNonResidentAmount>
+            <t106:RevenueFromNonResidentTransferPricingMethodologyCode>01</t106:RevenueFromNonResidentTransferPricingMethodologyCode>
+            <t106:ExpenditureToNonResidentAmount>612440</t106:ExpenditureToNonResidentAmount>
+            <t106:ExpenditureToNonResidentTransferPricingMethodologyCode>01</t106:ExpenditureToNonResidentTransferPricingMethodologyCode>
+        </t106:Rent>
+        <t106:LicenseOrFranchiseFee>
+            <t106:ExpenditureToNonResidentAmount>2031411</t106:ExpenditureToNonResidentAmount>
+            <t106:ExpenditureToNonResidentTransferPricingMethodologyCode>06</t106:ExpenditureToNonResidentTransferPricingMethodologyCode>
+        </t106:LicenseOrFranchiseFee>
+        <t106:Management>
+            <t106:RevenueFromNonResidentAmount>2461728</t106:RevenueFromNonResidentAmount>
+            <t106:RevenueFromNonResidentTransferPricingMethodologyCode>03</t106:RevenueFromNonResidentTransferPricingMethodologyCode>
+        </t106:Management>
+        <t106:ResearchAndDevelopment>
+           <t106:RevenueFromNonResidentAmount>637331</t106:RevenueFromNonResidentAmount>
+           <t106:RevenueFromNonResidentTransferPricingMethodologyCode>05</t106:RevenueFromNonResidentTransferPricingMethodologyCode>
+           <t106:ExpenditureToNonResidentAmount>69236</t106:ExpenditureToNonResidentAmount>
+           <t106:ExpenditureToNonResidentTransferPricingMethodologyCode>02</t106:ExpenditureToNonResidentTransferPricingMethodologyCode>
+       </t106:ResearchAndDevelopment>
+        <t106:Commission>
+            <t106:RevenueFromNonResidentAmount>15666</t106:RevenueFromNonResidentAmount>
+            <t106:RevenueFromNonResidentTransferPricingMethodologyCode>04</t106:RevenueFromNonResidentTransferPricingMethodologyCode>
+        </t106:Commission>
+        <t106:Interest>
+            <t106:ExpenditureToNonResidentAmount>12331</t106:ExpenditureToNonResidentAmount>
+        </t106:Interest>
+        <t106:Dividend>
+            <t106:ExpenditureToNonResidentAmount>181679</t106:ExpenditureToNonResidentAmount>
+        </t106:Dividend>
+        <t106:LeasePayment>
+            <t106:RevenueFromNonResidentAmount>341226</t106:RevenueFromNonResidentAmount>
+        </t106:LeasePayment>
+        <t106:Insurance>
+            <t106:RevenueFromNonResidentAmount>98346</t106:RevenueFromNonResidentAmount>
+            <t106:RevenueFromNonResidentTransferPricingMethodologyCode>01</t106:RevenueFromNonResidentTransferPricingMethodologyCode>
+        </t106:Insurance>
+        <t106:FinancialOther>
+            <t106:FinancialOtherDescription>Hybrid financials</t106:FinancialOtherDescription>
+            <t106:ExpenditureToNonResidentAmount>80001</t106:ExpenditureToNonResidentAmount>
+            <t106:ExpenditureToNonResidentTransferPricingMethodologyCode>04</t106:ExpenditureToNonResidentTransferPricingMethodologyCode>
+        </t106:FinancialOther>
+        <t106:ReimbursementOfExpense>
+            <t106:ExpenditureToNonResidentAmount>212374</t106:ExpenditureToNonResidentAmount>
+        </t106:ReimbursementOfExpense>
+        <t106:OtherTransaction>
+            <t106:OtherTransactionDescription>Advanced payment discount</t106:OtherTransactionDescription>
+            <t106:RevenueFromNonResidentAmount>4316212</t106:RevenueFromNonResidentAmount>
+            <t106:RevenueFromNonResidentTransferPricingMethodologyCode>06</t106:RevenueFromNonResidentTransferPricingMethodologyCode>
+        </t106:OtherTransaction>
+        <t106:NonArmsLengthNonResidentSaleRevenueTotalAmount>9439718</t106:NonArmsLengthNonResidentSaleRevenueTotalAmount>
+        <t106:NonArmsLengthNonResidentPurchaseExpenditureTotalAmount>3199472</t106:NonArmsLengthNonResidentPurchaseExpenditureTotalAmount>
+        <t106:OwedByReportingTaxpayerAmount>
+            <t106:BeginningBalanceAmount>1702431</t106:BeginningBalanceAmount>
+            <t106:DecreaseAmount>501672</t106:DecreaseAmount>
+            <t106:EndingBalanceAmount>1200759</t106:EndingBalanceAmount>
+        </t106:OwedByReportingTaxpayerAmount>
+        <t106:OwedToReportingTaxpayerAmount>
+            <t106:IncreaseAmount>6127469</t106:IncreaseAmount>
+            <t106:EndingBalanceAmount>6127469</t106:EndingBalanceAmount>
+        </t106:OwedToReportingTaxpayerAmount>
+        <t106:InvestmentInNonResident>
+            <t106:BeginningBalanceAmount>3216441</t106:BeginningBalanceAmount>
+            <t106:DecreaseAmount>413111</t106:DecreaseAmount>
+            <t106:EndingBalanceAmount>2803330</t106:EndingBalanceAmount>
+        </t106:InvestmentInNonResident>
+        <t106:InvestmentInReportEntity>
+            <t106:BeginningBalanceAmount>99999999999</t106:BeginningBalanceAmount>
+            <t106:IncreaseAmount>11000000000</t106:IncreaseAmount>
+            <t106:DecreaseAmount>199999</t106:DecreaseAmount>
+            <t106:EndingBalanceAmount>110999800000</t106:EndingBalanceAmount>
+        </t106:InvestmentInReportEntity>
+        <t106:NonArmsLengthNonResidentLoanAdvanceInvestmentIncreaseTotalAmount>11006127469</t106:NonArmsLengthNonResidentLoanAdvanceInvestmentIncreaseTotalAmount>
+        <t106:NonArmsLengthNonResidentLoanAdvanceInvestmentDecreaseTotalAmount>1114782</t106:NonArmsLengthNonResidentLoanAdvanceInvestmentDecreaseTotalAmount>
+        <t106:PLOIElectionMade>1</t106:PLOIElectionMade>
+        <t106:PLOIInterestAmount>800000</t106:PLOIInterestAmount>
+        <t106:InterestRateContract>
+            <t106:ContractCount>7</t106:ContractCount>
+            <t106:NotionalAmount>9457</t106:NotionalAmount>
+            <t106:DerivativeRevenueFromNonResidentAmount>2314</t106:DerivativeRevenueFromNonResidentAmount>
+        </t106:InterestRateContract>
+        <t106:CreditContract>
+            <t106:ContractCount>16</t106:ContractCount>
+            <t106:NotionalAmount>5712</t106:NotionalAmount>
+        </t106:CreditContract>
+        <t106:EquityContract>
+            <t106:ContractCount>1</t106:ContractCount>
+            <t106:NotionalAmount>10000</t106:NotionalAmount>
+            <t106:DerivativeRevenueFromNonResidentAmount>2500</t106:DerivativeRevenueFromNonResidentAmount>
+        </t106:EquityContract>
+        <t106:CommodityContract>
+            <t106:ContractCount>10</t106:ContractCount>
+            <t106:NotionalAmount>81272</t106:NotionalAmount>
+        </t106:CommodityContract>
+        <t106:IndexContract>
+            <t106:ContractCount>3</t106:ContractCount>
+            <t106:NotionalAmount>7677</t106:NotionalAmount>
+        </t106:IndexContract>
+        <t106:DerivativeFee>
+            <t106:ContractCount>101</t106:ContractCount>
+            <t106:NotionalAmount>54618</t106:NotionalAmount>
+            <t106:DerivativeExpenditureToNonResidentAmount>4731</t106:DerivativeExpenditureToNonResidentAmount>
+        </t106:DerivativeFee>
+        <t106:DerivativeOtherPayment>
+            <t106:DerivativeOtherPaymentDescription>Contractual</t106:DerivativeOtherPaymentDescription>
+            <t106:ContractCount>2401</t106:ContractCount>
+            <t106:NotionalAmount>203517</t106:NotionalAmount>
+            <t106:DerivativeRevenueFromNonResidentAmount>47203</t106:DerivativeRevenueFromNonResidentAmount>
+            <t106:DerivativeExpenditureToNonResidentAmount>52141</t106:DerivativeExpenditureToNonResidentAmount>
+        </t106:DerivativeOtherPayment>
+        <t106:NonArmsLengthNonResidentDerivativeContractTotalCount>2539</t106:NonArmsLengthNonResidentDerivativeContractTotalCount>
+        <t106:NonArmsLengthNonResidentDerivativeNotionalTotalAmount>372253</t106:NonArmsLengthNonResidentDerivativeNotionalTotalAmount>
+        <t106:NonArmsLengthNonResidentDerivativeRevenueTotalAmount>52017</t106:NonArmsLengthNonResidentDerivativeRevenueTotalAmount>
+        <t106:NonArmsLengthNonResidentDerivativeExpenditureTotalAmount>56872</t106:NonArmsLengthNonResidentDerivativeExpenditureTotalAmount>
+        <t106:BoxTotalAmount>11019990330</t106:BoxTotalAmount>
+        <t106:AccountPayableAmount>
+            <t106:BeginningBalanceAmount>121333</t106:BeginningBalanceAmount>
+            <t106:EndingBalanceAmount>121333</t106:EndingBalanceAmount>
+        </t106:AccountPayableAmount>
+        <t106:AccountReceivableAmount>
+            <t106:BeginningBalanceAmount>76401</t106:BeginningBalanceAmount>
+            <t106:DecreaseAmount>4501</t106:DecreaseAmount>
+            <t106:EndingBalanceAmount>71900</t106:EndingBalanceAmount>
+        </t106:AccountReceivableAmount>
+    </t106:NonArmsLengthWithNonResidentTransactionSlip>
+</t106:NonArmsLengthTransactionWithNonResidentInformationReturn>
+ </t3rq:TaxForm>
+ </t3rq:T3EfileReturnRequest>
+</soapenv:Body>
+</soapenv:Envelope>

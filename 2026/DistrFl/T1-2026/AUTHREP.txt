@@ -1,0 +1,16 @@
+3   A
+4   TEST-2043 MULT
+8   mygrp
+9   870001237
+10  G
+12  T
+13  tel ephone
+20  X
+26  X
+32  1
+34  con
+35  zantiris
+36  mygrp  name
+40  X
+131 2022-02-20
+133 A TEST-2043 MULT

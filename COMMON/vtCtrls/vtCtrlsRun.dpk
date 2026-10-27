@@ -1,0 +1,48 @@
+package vtCtrlsRun;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS ON}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'VT Controls'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  vtButton in 'vtButton.pas',
+  vtEditBox in 'vtEditBox.pas',
+  vtForm in 'vtForm.pas',
+  vtlabel in 'vtlabel.pas',
+  vtMemoBox in 'vtMemoBox.pas',
+  vtPanel in 'vtPanel.pas',
+  vtShape in 'vtShape.pas',
+  EZTWAIN in 'EZTWAIN.PAS',
+  vtRichmemobox in 'vtRichmemobox.pas',
+  MSXML2_TLB in 'MSXML2_TLB.pas';
+
+end.

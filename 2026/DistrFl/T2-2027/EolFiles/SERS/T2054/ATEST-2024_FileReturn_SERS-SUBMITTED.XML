@@ -1,0 +1,33 @@
+<FileReturnRequest xmlns="http://www.cra-arc.gc.ca/xmlns/sres/1-0-0" xmlns:common="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0">
+   <common:SoftwareCode>VT50</common:SoftwareCode>
+   <common:ClientId>111111118RC0001</common:ClientId>
+   <Form>
+      <common:FormSequenceNumber>1</common:FormSequenceNumber>
+      <common:FormNumber>2054</common:FormNumber>
+      <FieldCode>
+         <Line>0002</Line>
+         <Row>0</Row>
+         <Value>a general test- s6</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0019</Line>
+         <Row>0</Row>
+         <Value/>
+      </FieldCode>
+      <FieldCode>
+         <Line>0100</Line>
+         <Row>0</Row>
+         <Value>10000.00</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0150</Line>
+         <Row>0</Row>
+         <Value>2</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0200</Line>
+         <Row>0</Row>
+         <Value>2</Value>
+      </FieldCode>
+   </Form>
+</FileReturnRequest>

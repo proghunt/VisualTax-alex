@@ -1,0 +1,27 @@
+INFO      2   2   1   FIRSTNM.TXT
+INFO      20  20  1   FIRSTNM.TXT
+DEPEND    5   125 15  FirstNm.txt
+INFO      10  10  1   CITIES.TXT
+T5MULT    1   89  22  BANKS.TXT
+T3MULT    17  21  1   Banks.txt
+T5        1   1   1   Banks.txt
+T4RIF     1   1   1   Banks.txt
+T4RSP     1   1   1   Banks.txt
+UNIOND    2   12  2   Banks.txt
+RRSP      9   9   1   Banks.txt
+RRSP      20  36  4   Banks.txt
+RRSP      43  63  4   Banks.txt
+RRSP      79  79  1   Banks.txt
+MEDICAL   7   107 5   DOCTORS.TXT
+MEDSUPL   7   107 5   DOCTORS.TXT
+MEDICAL   8   108 5   MedExp.txt
+MEDSUPL   8   108 5   MedExp.txt
+DON       16  82  6   Charity.txt
+DON       3   13  5   Charity.txt
+DON       19  85  6   Charity.txt
+DONSUPL   1   85  3   Charity.txt
+DONSUPL   88  172 3   Charity.txt
+T4        1   1   1   Employers.txt
+T4A       81  81  1   Employers.txt
+S12       2   157 5   Employers.txt
+

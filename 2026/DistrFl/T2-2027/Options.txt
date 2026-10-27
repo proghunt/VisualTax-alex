@@ -1,0 +1,92 @@
+Dir_Cur             C:\VT\T2-2027\SERs
+Dir_ClientDocs      C:\VT\T2-2027\Client Documents
+BackupFrequency     5
+BackupDir           C:\VT\T2-2027\BackUp
+LastBackupDir       C:\VT\T2-2027\BackUp\BackUp3
+Dir_Deflt           C:\VT\T2-2027\SERs
+Dir_LastYr          C:\CompareTaxCycle\T2-2026
+Dir_PgmLastYr       
+Dir_DBFData         c:\
+Prp_Name            MICROSOPHINC INC
+Prp_ContactFn       Con
+Prp_ContactLn       Zantiris
+Prp_ContactPos      President
+Prp_RepId           C4SD3QH
+Prp_Email           support@visualtax.com
+Prp_OrgType         1 CORPORATION
+Prp_BusNo           103678595RC0001
+Reviewer_EMail      
+Reviewer_Name       
+Reviewer_Area       
+Reviewer_Tel        
+Prp_Street          5225 Orbitor Drive
+Prp_City            Mississauga
+Prp_Prov            ON
+Prp_Postal          L4W 4Y8
+Prp_Countr          CA
+Prp_Area            905
+Prp_Tel             238-6159
+Prp_FxArea          905
+Prp_Fax             238-6159
+Prp_GstNo           
+Prp_Bill            2
+Prp_VSFee           200
+Prp_SFee            400
+Prp_AFee            600
+Prp_CFee            1000
+Prp_VCFee           
+Prp_Hour            60
+Prp_Dates           
+Nfl_Prov            ON
+Nfl_City            TORONTO
+Capitalization      UpperCase
+DecimalAssume       
+Nfl_Efile           X
+Ef_ThirdParty       X
+Prn_NameH           X
+Prn_SinH            X
+Prn_DateH           X
+Prn_Disclm          Prepared without Audit from information supplied by the taxpayer
+Opr_Close           X
+Opr_GstHst          
+UseFastPrint        X
+ShowUsedForms       X
+OpenAtLastForm      X
+UseProperName       
+NoTypeAhead         
+ShowInvoiceWarning  X
+InvFoot1            
+InvFoot2            
+InvFoot3            
+InvFoot4            
+InvFoot5            
+DataInBold          
+NoBarCode           
+RolloverProgram     TaxCycle
+ActiveBoxColor      8421631
+FileNameFormat      0
+PRP_ELECT           X
+PRP_EFREPR          X
+NFL_DISCED          1
+EF_METHOD           EOL
+SHOWCONSULTANTONINV 
+USEFORMSEARCH       X
+FIRSTRETURNCOLOR    16777155
+ESCOPTION           CloseForm
+OPR-GSTHST          6
+FORMZOOM            120
+OTHERSLIPSBUTTONS   X
+PRN_LMARGIN         0
+PRN_RMARGIN         0
+PRN_FONTINCR        0
+HIDEMOSTRECENT      
+T1013AUTHORLEVEL    2
+CVSETTING           2
+SHOWFINWARNING      
+USECONDOMINIUMLINE  
+ROLLOVERT4T5        X
+SHOWINVOICEEFCHARGE X
+SHOWSALUTEWARNING   X
+UPDATEFREQUENCY     20
+AUTOSENIORDISCOUNT  
+DISCOUNTFORSENIORS  0

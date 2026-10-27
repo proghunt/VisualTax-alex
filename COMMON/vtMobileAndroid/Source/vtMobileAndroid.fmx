@@ -1,0 +1,693 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MainForm'
+  ClientHeight = 561
+  ClientWidth = 508
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 7'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060C50616E656C315374796C653103D60106
+          1148656164657250616E656C5374796C653103D20100545046300A5452656374
+          616E676C6500095374796C654E616D65060C50616E656C315374796C65310946
+          696C6C2E4B696E6407084772616469656E741446696C6C2E4772616469656E74
+          2E506F696E74730E0105436F6C6F720709784646303235443839064F66667365
+          740500000000000000000000000105436F6C6F72070978464646324632463206
+          4F6666736574050000000000B29085FE3F000105436F6C6F7207097846463032
+          35443839064F6666736574050000000000000080FF3F00001D46696C6C2E4772
+          616469656E742E5374617274506F736974696F6E2E59050000000000000080FE
+          3F1C46696C6C2E4772616469656E742E53746F70506F736974696F6E2E580500
+          00000000000080FF3F1C46696C6C2E4772616469656E742E53746F70506F7369
+          74696F6E2E59050000000000000080FE3F0748697454657374080A506F736974
+          696F6E2E580500000000000000A307400A506F736974696F6E2E590500000000
+          000000B307400A53697A652E57696474680500000000000000FE07400B53697A
+          652E4865696768740500000000000000A205401453697A652E506C6174666F72
+          6D44656661756C74080C5374726F6B652E436F6C6F7207097846463937393739
+          370756697369626C65080000545046300A5452656374616E676C650009537479
+          6C654E616D65061148656164657250616E656C5374796C65310946696C6C2E4B
+          696E6407084772616469656E741446696C6C2E4772616469656E742E506F696E
+          74730E0105436F6C6F720709784646303235423839064F666673657405000000
+          00000000000000000105436F6C6F720709784646463246324632064F66667365
+          74050000000000C7A3F9FD3F000105436F6C6F72070978464630323542383906
+          4F6666736574050000000000000080FF3F00001D46696C6C2E4772616469656E
+          742E5374617274506F736974696F6E2E59050000000000000080FE3F1C46696C
+          6C2E4772616469656E742E53746F70506F736974696F6E2E5805000000000000
+          0080FF3F1C46696C6C2E4772616469656E742E53746F70506F736974696F6E2E
+          59050000000000000080FE3F0748697454657374080A506F736974696F6E2E58
+          0500000000000000A307400A506F736974696F6E2E590500000000000000B907
+          400A53697A652E57696474680500000000000000FE07400B53697A652E486569
+          6768740500000000000000E404401453697A652E506C6174666F726D44656661
+          756C74080C5374726F6B652E436F6C6F7207097846463937393739370000}
+      end>
+  end
+  object tcMain: TTabControl
+    Align = Client
+    Size.Width = 508.000000000000000000
+    Size.Height = 561.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 70
+    TabPosition = None
+    object tiStart: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiStart'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object LoginPanel: TPanel
+        Align = Contents
+        Size.Width = 508.000000000000000000
+        Size.Height = 561.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'LoginPanelStyle1'
+        TabOrder = 0
+        object LoginScaledLayout: TScaledLayout
+          Align = Contents
+          OriginalWidth = 508.000000000000000000
+          OriginalHeight = 561.000000000000000000
+          Size.Width = 508.000000000000000000
+          Size.Height = 561.000000000000000000
+          Size.PlatformDefault = False
+          object WrongLabel: TLabel
+            Align = Horizontal
+            StyledSettings = [Family, Size, Style]
+            Position.Y = 60.000000000000000000
+            Size.Width = 521.000000000000000000
+            Size.Height = 29.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = xFFFA1010
+            TextSettings.HorzAlign = Center
+            Text = 'Wrong Login or Password'
+            Visible = False
+          end
+          object Layout1: TLayout
+            Align = Top
+            Position.Y = 93.000000000000000000
+            Size.Width = 508.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object LoginEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Center
+              TabOrder = 0
+              Text = 'Admin'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 28.000000000000000000
+              TextSettings.FontColor = xFF005078
+              TextSettings.HorzAlign = Center
+              Size.Width = 321.000000000000000000
+              Size.Height = 43.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+            end
+          end
+          object Layout2: TLayout
+            Align = Top
+            Position.Y = 67.000000000000000000
+            Size.Width = 508.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Label2: TLabel
+              Align = HorzCenter
+              Anchors = [akTop, akRight, akBottom]
+              StyledSettings = [Family, Style]
+              Position.X = 98.000000000000000000
+              Size.Width = 312.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.FontColor = xFF005078
+              Text = 'Login'
+            end
+          end
+          object Layout3: TLayout
+            Align = Top
+            Position.Y = 153.000000000000000000
+            Size.Width = 508.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            object PasswordLabel: TLabel
+              Align = HorzCenter
+              StyledSettings = [Family, Style]
+              Position.X = 95.000000000000000000
+              Size.Width = 318.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.FontColor = xFF005078
+              Text = 'Password'
+            end
+          end
+          object Layout4: TLayout
+            Align = Top
+            Position.Y = 178.000000000000000000
+            Size.Width = 508.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object PasswordEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Center
+              TabOrder = 0
+              Password = True
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 28.000000000000000000
+              TextSettings.FontColor = xFF005078
+              TextSettings.HorzAlign = Center
+              Size.Width = 321.000000000000000000
+              Size.Height = 43.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = []
+            end
+          end
+          object Layout5: TLayout
+            Align = Top
+            Position.Y = 297.000000000000000000
+            Size.Width = 508.000000000000000000
+            Size.Height = 104.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            object LogInButton: TButton
+              Align = Center
+              StyledSettings = []
+              Size.Width = 219.000000000000000000
+              Size.Height = 72.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Log In'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 24.000000000000000000
+              TextSettings.FontColor = xFF005078
+              OnClick = LogInButtonClick
+            end
+          end
+          object Layout6: TLayout
+            Align = Top
+            Position.Y = 238.000000000000000000
+            Size.Width = 508.000000000000000000
+            Size.Height = 59.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            object chbCheckDropBox: TCheckBox
+              Align = Center
+              StyledSettings = []
+              Size.Width = 299.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Check DropBox'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.FontColor = xFF005078
+            end
+          end
+          object Panel1: TPanel
+            Align = Top
+            Size.Width = 508.000000000000000000
+            Size.Height = 67.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'Panel1Style1'
+            TabOrder = 8
+            object Label3: TLabel
+              Align = Top
+              StyledSettings = []
+              Size.Width = 508.000000000000000000
+              Size.Height = 42.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 32.000000000000000000
+              TextSettings.FontColor = claRed
+              TextSettings.HorzAlign = Center
+              TextSettings.VertAlign = Trailing
+              TextSettings.WordWrap = False
+              Text = 'VisualTax'
+            end
+            object Label4: TLabel
+              Align = Top
+              StyledSettings = []
+              Position.Y = 42.000000000000000000
+              Size.Width = 508.000000000000000000
+              Size.Height = 20.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.FontColor = xFF005078
+              TextSettings.HorzAlign = Center
+              Text = 'Mobile edition'
+            end
+          end
+          object aiCheck: TAniIndicator
+            Position.X = 24.000000000000000000
+            Position.Y = 242.000000000000000000
+            Visible = False
+          end
+        end
+      end
+    end
+    object tiWork: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiWork'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object tcWork: TTabControl
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabIndex = 0
+        TabOrder = 0
+        TabPosition = None
+        OnChange = tcWorkChange
+        object tiClient: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Clients'
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          object ClientsListView: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnItemClick = ClientsListViewItemClick
+          end
+        end
+        object tiDocument: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Documents'
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          object DocumentsListView: TListView
+            ItemAppearanceClassName = 'TImageListItemAppearance'
+            ItemEditAppearanceClassName = 'TImageListItemShowCheck'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnItemClick = DocumentsListViewItemClick
+          end
+        end
+      end
+      object HeaderPanel: TPanel
+        Align = Top
+        Size.Width = 50.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'HeaderPanelStyle1'
+        TabOrder = 1
+        object HeaderLabel: TLabel
+          Align = Client
+          StyledSettings = [Size]
+          Size.Width = 50.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxheaderlabel'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.FontColor = xFF005078
+          TextSettings.HorzAlign = Center
+          TextSettings.WordWrap = False
+          Text = 'HeaderLabel'
+        end
+        object Label1: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 24.000000000000000000
+          TextSettings.FontColor = claRed
+          TextSettings.HorzAlign = Center
+          Text = 'VisualTax'
+        end
+        object BackButton: TButton
+          StyledSettings = [Size]
+          Position.X = 3.000000000000000000
+          Position.Y = 3.000000000000000000
+          Size.Width = 54.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 0
+          Text = 'Back'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.FontColor = xFFF2F2F2
+          OnClick = BackButtonClick
+        end
+      end
+    end
+    object tiREST: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiREST'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object wbREST: TWebBrowser
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object vtMobileConnection: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\POLAK\PROJECT\OUTSORCE\Customers\VisualTax\vtMobile\' +
+        'DataBase\vtMobile.sdb'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    AfterConnect = vtMobileConnectionAfterConnect
+    BeforeConnect = vtMobileConnectionBeforeConnect
+    Left = 112
+    Top = 32
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 152
+    Top = 32
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 352
+    Top = 72
+  end
+  object LoginQuery: TFDQuery
+    Connection = vtMobileConnection
+    SQL.Strings = (
+      'select * from users')
+    Left = 24
+    Top = 128
+  end
+  object ClientsDS: TDataSource
+    DataSet = ClientsQuery
+    Left = 72
+    Top = 233
+  end
+  object ClientsBindSource: TBindSourceDB
+    DataSet = ClientsQuery
+    ScopeMappings = <>
+    Left = 80
+    Top = 168
+  end
+  object ClientsQuery: TFDQuery
+    Connection = vtMobileConnection
+    SQL.Strings = (
+      'select'
+      '  C.ID,'
+      '  (C.FIRST_NAME|| '#39' '#39' || C.LAST_NAME) as Name'
+      'from'
+      '  Users U'
+      '  LEFT Outer Join ClientUsers CU ON U.Id = CU.UserId'
+      '  Inner Join Clients C ON CU.ClientId = C.Id OR U.IsAdmin = 1'
+      'WHERE'
+      '  U.Id = :UserId')
+    Left = 80
+    Top = 120
+    ParamData = <
+      item
+        Name = 'USERID'
+        DataType = ftInteger
+        FDDataType = dtInt32
+        ParamType = ptInput
+      end>
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 28
+    Top = 77
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = ClientsBindSource
+      FieldName = 'ID'
+      Control = ClientsListView
+      Track = True
+      FillDataSource = ClientsBindSource
+      FillValueFieldName = 'ID'
+      FillDisplayFieldName = 'Name'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField2: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = DocumentsBindSource
+      FieldName = 'ID'
+      Control = DocumentsListView
+      Track = True
+      FillDataSource = DocumentsBindSource
+      FillValueFieldName = 'ID'
+      FillDisplayFieldName = 'DocumentName'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'FileExtension'
+      FillBreakGroups = <>
+    end
+  end
+  object DocumentsBindSource: TBindSourceDB
+    DataSet = DocumentsQuery
+    ScopeMappings = <>
+    Left = 160
+    Top = 168
+  end
+  object DocumentsQuery: TFDQuery
+    IndexFieldNames = 'ClientID'
+    MasterSource = ClientsDS
+    MasterFields = 'ID'
+    Connection = vtMobileConnection
+    SQL.Strings = (
+      
+        'select Documents.ID, Documents.DocumentName, Documents.DocumentD' +
+        'ata, DocumentFormat.FileExtension, DocumentFormat.Picture, Docum' +
+        'ents.ClientID from Documents join DocumentFormat on DocumentForm' +
+        'at.ID = Documents.DocumentFormatID')
+    Left = 160
+    Top = 120
+  end
+  object OAuth2_DropBox: TOAuth2Authenticator
+    AccessTokenEndpoint = 'https://api.dropbox.com/1/oauth2/token'
+    AuthorizationEndpoint = 'https://www.dropbox.com/1/oauth2/authorize'
+    RedirectionEndpoint = 'http://localhost'
+    ResponseType = rtTOKEN
+    Left = 120
+    Top = 369
+  end
+  object RESTClient: TRESTClient
+    Authenticator = OAuth2_DropBox
+    Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Params = <>
+    HandleRedirects = True
+    Left = 24
+    Top = 456
+  end
+  object RESTRequest: TRESTRequest
+    Client = RESTClient
+    Params = <>
+    Response = RESTResponse
+    SynchronizedEvents = False
+    OnHTTPProtocolError = RESTRequestHTTPProtocolError
+    Left = 96
+    Top = 456
+  end
+  object RESTResponse: TRESTResponse
+    Left = 152
+    Top = 456
+  end
+  object RESTResponseDataSetAdapter: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = mdDropBox
+    FieldDefs = <
+      item
+        Name = 'rev'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'thumb_exists'
+        DataType = ftBoolean
+      end
+      item
+        Name = 'path'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'is_dir'
+        DataType = ftBoolean
+      end
+      item
+        Name = 'client_mtime'
+        DataType = ftDateTime
+      end
+      item
+        Name = 'icon'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'bytes'
+        DataType = ftInteger
+      end
+      item
+        Name = 'modified'
+        DataType = ftDateTime
+      end
+      item
+        Name = 'size'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'root'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'mime_type'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'revision'
+        DataType = ftInteger
+      end>
+    Response = RESTResponse
+    RootElement = 'contents'
+    OnBeforeOpenDataSet = RESTResponseDataSetAdapterBeforeOpenDataSet
+    Left = 288
+    Top = 445
+  end
+  object mdDropBox: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'rev'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'thumb_exists'
+        DataType = ftBoolean
+      end
+      item
+        Name = 'path'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'is_dir'
+        DataType = ftBoolean
+      end
+      item
+        Name = 'client_mtime'
+        DataType = ftDateTime
+      end
+      item
+        Name = 'icon'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'bytes'
+        DataType = ftInteger
+      end
+      item
+        Name = 'modified'
+        DataType = ftDateTime
+      end
+      item
+        Name = 'size'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'root'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'mime_type'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'revision'
+        DataType = ftInteger
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 344
+    Top = 448
+  end
+  object qWork: TFDQuery
+    Connection = vtMobileConnection
+    Left = 16
+    Top = 241
+  end
+end

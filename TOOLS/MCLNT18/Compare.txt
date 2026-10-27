@@ -1,0 +1,1479 @@
+ 20180517  E    177.45                                       RANA CONSULTANCY 1925219 ALBERTA LTD    
+**** Did not pay this year: 1475
+**** New last yer. Did not come back 77
+**** Total paid last year 708,530.35
+N  N  1   78.75                                        YEIL ACCOUNTING AMERICA LLP             
+N  N  P   1                                            CRA (T2 Development)                    
+N  N  P   563.87                                       THE LEPTON GROUP INC                    
+N  N E    177.45                                       DAVID MURRAY                            
+N  N L    103.95                                       JOHNSON & CO                            
+N  N PPP  1                                            LOUIS PAVLAKOS CA                       
+N  N PPP  1                                            MICROSOPHIC INC                         
+N  N S    281.37                                       CHRIS WOOD                              
+N 	20180718 N  1   84.75                                        SERGE PAVLOVIC                          
+N 0180416 N L    117.46                                       PRAMOD KUMAR ANAND                      
+N 201-0219 N S    281.37                                       MARY STEPHEN                            
+N 20171102 N  4   339                                          PDI ACCOUNTING SERVICES                 
+N 20171103 N  1   86.25                                        BRUCE A MACLEAN, CFP, BBA               
+N 20171105 N EP   754.84                                       MARILYN HANSON CGA                      
+N 20171106 N PP   1,080.28                                     PT ACCOUNTING & TAXATION                
+N 20171110 N PP   816.9                                        AJR ACCOUNTING INC                      
+N 20171113 N PP   1,125.48                                     SMITH & SONS BOOKKEEPING                
+N 20171113 N PP   816.9                                        TR RETURNS INC                          
+N 20171113 N PP   894.7                                        PAUL WILLS CPA CMA                      
+N 20171115 N PP   816.9                                        DIANE F CARPENTER CGA                   
+N 20171115 N PP   991.01                                       ACCOUNTING OFFICE                       
+N 20171115 N S P  433.92                                       GERRY JAMES                             
+N 20171116 N P P  633.15                                       JTOS TAX                                
+N 20171118 N P P  652.01                                       JAKE'S BOOKKEEPING & TAX SERVICES       
+N 20171119 N PPP  2                                            FRED WALKER                             
+N 20171119 N S4   576.45                                       TAXMOBILE                               
+N 20171121 N  5   444.95                                       ANIL BEDI                               
+N 20171122 N PPP  1,133.9                                      PAUL WEEKS ACCOUNTING                   
+N 20171123 N L4   641.84                                       JBD BOOKKEEPING SERVICES                
+N 20171126 N E    302.84                                       MCKAY ACCOUNTING SERVICES               
+N 20171126 N P    428.27                                       ABDI ABDI HASSAN                        
+N 20171127 N  2   157.5                                        CANTIN BOOKKEEPING SERVICES INC         
+N 20171127 N P    428.27                                       ALEX ENTERPRISES LTD                    
+N 20171127 N PP   921.9                                        GSM ACCOUNTING LTD                      
+N 20171127 N S    281.37                                       LARRY WATTS                             
+N 20171129 N E2P  624.89                                       BARBARA E LIPNICKI CPA CMA              
+N 20171201 N PPP  1,114.18                                     CENTRAL TAX SERVICE                     
+N 20171202 N E1   260.14                                       TOTAL BUSINESS SYSTEMS LTD              
+N 20171203 N PP   879.14                                       AZIZ JUMA                               
+N 20171204 N P    540.14                                       MARY BROEDERS                           
+N 20171204 N PPP  1,102.88                                     MEL'S ACCOUNTING & TAX SERVICES INC     
+N 20171204 N PPP  977.92                                       HANSEN TAX SERVICE                      
+N 20171205 N PP   879.14                                       INAM HAQUE                              
+N 20171205 N PP   920.85                                       GV SWEEZEY ACCOUNTING SERVICES          
+N 20171205 N PPP  1,114.18                                     GLENN W LEWIS CPA CA                    
+N 20171206 N EP   768.2                                        ROSE SERVICES INC                       
+N 20171206 N PP   991.01                                       EXPERTAX FINANCIAL SERVICES INC         
+N 20171206 N PPP  1,114.18                                     MARLIES Y HENDRICKS  CPA                
+N 20171206 N PPP  941.85                                       DOMINION TAX INC                        
+N 20171207 N  1   84.75                                        1055165 ONTARIO CORP                    
+N 20171207 N  2   145.95                                       ALBERT BAKER                            
+N 20171207 N  P   523.95                                       ESA EXCEL SOFTWARE ASSISTANCE LTD       
+N 20171207 N E1   294.63                                       INTREPID FINANCIAL SERVICES INC         
+N 20171207 N PP   1,326.62                                     NIJJER CONSULTING SERVICES INC          
+N 20171207 N PPP  1,349.22                                     ACCUTAX DIV OF SDITAX & ACCOUNTING SERVICES INC
+N 20171208 N PP   1,045.8                                      KEN GOSS FRPA                           
+N 20171210 N  2   165.38                                       NPI SYSTEMS LTD                         
+N 20171211 N  P   563.87                                       MANAGEMENT INITIATIVES INC              
+N 20171212 N PP   879.14                                       DAVID LAM CGA CPA                       
+N 20171212 N PP   879.14                                       JG TAX SERVICES INC                     
+N 20171213 N  3   266.96                                       COMSTAR MOBILITY INC                    
+N 20171213 N PP   1,045.8                                      THE FFP GROUP FINANCIAL SERVICES        
+N 20171213 N PP   966.89                                       SHAHID NASIR CPA CGA                    
+N 20171213 N PPP  1,118.25                                     COMPAC FINANCIAL INC                    
+N 20171214 N E2   360.47                                       123 ACCOUNTING INC                      
+N 20171214 N P2   597.77                                       MAPLERIDGE ACCOUNTING                   
+N 20171214 N PP   879.14                                       THE COUNTING DEPARTMENT INC             
+N 20171215 N  P   563.87                                       CHRIS S UN CPA                          
+N 20171215 N PP   879.14                                       ASHA SRIKANTH                           
+N 20171216 N PP   879.14                                       MANDARIN FINANCIAL INC                  
+N 20171217 N E    190.97                                       ROBERT HALL                             
+N 20171217 N SP   845.24                                       CLIPS ACCOUNTING AND TAX SERVICES LTD   
+N 20171217 N SS   788.74                                       RAVEEN TAX                              
+N 20171218 N E    190.97                                       AFFORDABLE BOOKKEEPING                  
+N 20171218 N PP   816.9                                        KEETS MANAGEMENT INC                    
+N 20171218 N PP   879.14                                       RAHEEL SIDDIQI                          
+N 20171218 N PP   879.14                                       TAX ORGANIZATION INC                    
+N 20171218 N PPP  1,083.28                                     TAX TOWN ACCOUNTING SERVICES - 1        
+N 20171219 N  P   563.87                                       SEAN HOLTOM                             
+N 20171219 N  PP  665.7                                        EIDSVIK & COMPANY                       
+N 20171220 N PP   879.14                                       LISA RITCHIE CPA                        
+N 20171220 N PPP  1,002.31                                     BLAIR STOTESBURY CPA CGA                
+N 20171220 N PPP  1,349.22                                     EUGENE FELSKE CA                        
+N 20171220 N S2P  650.21                                       COMPUTAX SYSTEMS                        
+N 20171221 N   P  152.55                                       PLATINUM FINANCIAL                      
+N 20171221 N E    190.97                                       VIVANN BUSINESS SERVICES INC            
+N 20171221 N E    200.52                                       DEEPAK GUPTA                            
+N 20171221 N MPP  1,137.91                                     LLS FINANCIAL SERVICES INC              
+N 20171221 N P    428.27                                       TAXFILE SERVICES                        
+N 20171221 N PP   1,004.01                                     ABEL ACCOUNTING & TAX SERVICES  INC     
+N 20171221 N PP   1,125.48                                     MARK GOSSIN CA CPA                      
+N 20171221 N PP   816.9                                        C S OFFICE SERVICES                     
+N 20171221 N PPP  1,002.31                                     ADRIAN SHORT CGA  PROF CORP             
+N 20171221 N S    261.45                                       Mrs H McKENZIE                          
+N 20171221 N S    281.37                                       BELEM TRAVEL SERVICES INC               
+N 20171222 N  P   523.95                                       GIBSON ACCOUNTING 0883884 BC LTD        
+N 20171222 N P    428.27                                       ELIZABETH ROSS                          
+N 20171222 N P P  551.44                                       JOHANNE'S BOOKKEEPING & INCOME TAX      
+N 20171222 N PP   879.14                                       AMAX GROUP INC                          
+N 20171222 N PPP  1,002.31                                     RICHARD WARD                            
+N 20171223 N PP   991.01                                       PAUL LOCHAB CA                          
+N 20171224 N PP   1,091.58                                     GBBS - GREY BRUCE BUSINESS SERVICE      
+N 20171226 N E    177.45                                       WP ACCOUNTING & TAX SERVICES            
+N 20171226 N E    190.97                                       HOWARD WALTON CPA CMA                   
+N 20171226 N PP   879.14                                       XUBO HE                                 
+N 20171227 N      157.07                                       TODAY EMPLOYMENT & HR LTD               
+N 20171227 N E    177.45                                       DAVID PETKAU                            
+N 20171227 N E    177.45                                       LORNA WIGHTMAN                          
+N 20171227 N E    186.32                                       MOES BOOKKEEPING                        
+N 20171227 N LP   627.9                                        LEONARD LOONG                           
+N 20171227 N P    449.68                                       THERESA DE CALUWE                       
+N 20171227 N PP   816.9                                        BENNY RUAN CPA                          
+N 20171227 N PP   991.14                                       R & M TAX CONSULTANTS                   
+N 20171228 N E    190.97                                       BRENT STEELE CPA CA                     
+N 20171228 N E    190.97                                       LINDA WRIGHT                            
+N 20171228 N E    190.97                                       S & S FINANCIAL SERVICES                
+N 20171228 N LS   619.24                                       LAVIDA CORPORATION                      
+N 20171228 N P    428.27                                       ILENE LEVEQUE                           
+N 20171228 N PP   1,125.48                                     MONEY MATTER$                           
+N 20171228 N PP   879.14                                       BRANTFORD TAX & BOOKKEEPING             
+N 20171228 N PP   879.14                                       COMPUACCT SERVICES                      
+N 20171228 N S    261.45                                       HELEN CONACHER                          
+N 20171228 N SP   850                                          CASH SHOP 12 - JANE                     
+N 20171229 N  2   169.5                                        M VIRTUDE CARDOSO                       
+N 20171229 N E    177.45                                       COUNTRY IN THE CITY INCOME TAX SERVICES 
+N 20171229 N E    190.97                                       GEORGE AUBREY CA                        
+N 20171229 N EP   754.84                                       JACK PEACOCK CA                         
+N 20171229 N P    428.27                                       TAX BREAKS II                           
+N 20171229 N P P  538.02                                       ASTRA TAX SERVICES                      
+N 20171229 N PP   879.14                                       ACTAX-CANADA (ONTARIO)                  
+N 20171229 N PP   923.1                                        RASHID EBRAHIM                          
+N 20171229 N PP   991.01                                       IIT FINANCIALS INC                      
+N 20171229 N PP   991.01                                       SUN ACCOUNTAX                           
+N 20171229 N PPP  1,114.18                                     PETER L McMULLEN CA LLB                 
+N 20171229 N S    261.45                                       CLARK & ASSOCIATES                      
+N 20171229 N S    281.37                                       DOUG KELCEY                             
+N 20171229 N S    281.37                                       GONNY FRECH                             
+N 20171229 N S3   535.62                                       DANIEL K C WONG CPA                     
+N 20171230 N  P   523.95                                       AG TAX SERVICES LTD                     
+N 2017-12-30 N E    177.45                                       JOHN M COWIE CPA CGA                    
+N 20171230 N P    397.95                                       ROBERT POLLOCK & ASSOCIATES             
+N 20171230 N PP   1,047.51                                     TAVINGWOOD INVESTMENTS INC              
+N 20171230 N PP   879.14                                       IRYNA SHARAMET                          
+N 20171230 N S    281.37                                       ADD MORE GOODWILL INC                   
+N 20171230 N S    281.37                                       STAN WIGG                               
+N 20171230 N S    281.37                                       TERESA A McCOOMB CPA CMA                
+N 20171231 N  5   423.75                                       DC CONSULTING INC                       
+N 20171231 N E2   334.95                                       DAVID SHIELDS CA                        
+N 20171231 N P    428.27                                       FASTAX FINANCIAL SERVICES               
+N 20171231 N PP   1,125.48                                     INSTANT EFILE TAX SERVICES              
+N 20171231 N PP   816.9                                        A-ONE DATA INC                          
+N 20171231 N PP   991.01                                       SAL GENEROSO SERVICES INC               
+N 20171231 N PP   991.01                                       UNISOGO FINANCIAL CORPORATION           
+N 20171231 N S    261.45                                       F & S TAX CONSULTING                    
+N 201800304 N PP   879.14                                       INTEGRITY PLUS ACCOUNTING SERVICES      
+N 20180101 N E2   360.47                                       MATTHEW J SPENCER CGA                   
+N 20180101 N PP   857.75                                       HAYDON ACCOUNTING SERVICES              
+N 20180101 N PPP  1,035.3                                      KOZMECH & ASSOCIATES LTD                
+N 20180101 N PPP  991.01                                       CHAN & HUANG CPA PC                     
+N 20180101 N S    261.45                                       BOOKS BY HELEN                          
+N 20180102 N      113.85                                       TES ACCOUNTING SERVICES INC             
+N 20180102 N      157.07                                       ED GIRARDI PROFESSIONAL CORPORATION     
+N 20180102 N  P   523.95                                       MACKEY ACCOUNTING SERVICES LTD          
+N 20180102 N  P   573.85                                       LEVI R TEMPLE & COMPANY LTD             
+N 20180102 N E    177.45                                       ELSIE HELENA MCELROY                    
+N 20180102 N E    190.97                                       JEFFREY PARENT                          
+N 20180102 N E1   256.2                                        WRIGHT'S ACCOUNTING MANITOBA INC        
+N 20180102 N PP   1,080.28                                     MARIA CRUZADO & ASSOCIATES ACCOUNTING&TAX SERVICES
+N 20180102 N PP   879.14                                       MSC FORTUNE DEVELOPMENT INC             
+N 20180102 N PP   879.14                                       TAX-RITE INC                            
+N 20180102 N PP   879.14                                       VICTORIA MEI YANG                       
+N 20180102 N PP   923.1                                        M M CPA PROFESSIONAL CORPORATION        
+N 20180102 N PPP  1,035.3                                      VISOR CONSULTING SERVICES INC           
+N 20180102 N PPP  931.35                                       SANDHU & COMPANY CPA                    
+N 20180102 N S    261.45                                       HEPBURN AGENCIES LTD                    
+N 20180102 N S    281.37                                       ASC ACCOUNTING SERVICES                 
+N 20180103 N PP   1,125.48                                     SOFTPLUS PROFESSIONAL CORPORATION       
+N 20180103 N PP   816.9                                        JWF ACCOUNTING & TAX SERVICES LTD       
+N 20180103 N PP   879.14                                       TRANSILVANIA BOOKKEEPING & INCOME TAX INC
+N 20180103 N PP   920.85                                       TAXMATTERS CONSULTING INC               
+N 20180103 N PP   941.85                                       HUAN M DU CPA INC                       
+N 20180103 N PP   991.01                                       GUPTA ACCOUNTING & TAX SERVICES         
+N 20180103 N PPP  1,056.3                                      IRA MULLIN                              
+N 20180103 N PPP  1,349.22                                     LINDA BULANDA CPA PROFESSIONAL CORP     
+N 20180103 N S    261.45                                       BY GRACE ACCOUNTING SERVICES            
+N 20180104 N      157.07                                       COLIN GRAY CA                           
+N 20180104 N PP   816.9                                        NILO ALMODAL CPA                        
+N 20180104 N PP   879.14                                       A & R BOOKKEEPING                       
+N 20180104 N PP   879.14                                       RNK PROFESSIONAL                        
+N 20180104 N PP   880                                          OMA TAX SERVICES                        
+N 20180104 N PP   991.01                                       DEVENDER MUNJAL CPA CGA                 
+N 20180104 N PPP  1,002.31                                     TOM JONES CONSULTING                    
+N 20180104 N S    281.37                                       CORA F MONTES                           
+N 20180104 N S    281.37                                       THE SISTERS OF ST JOSEPH OF SAULT STE MARIE
+N 20180104 N SP   845.24                                       P KRIS TABLER                           
+N 20180105 N      157.07                                       NARESH BANSAL CPA PROFESSIONAL CORPORATION
+N 20180105 N      164.92                                       SAJEELA AFZAL                           
+N 20180105 N E    190.97                                       ROBERT WALKER                           
+N 20180105 N P    428.27                                       VINOD K GURIJALA                        
+N 20180105 N P P  551.44                                       DOUGLAS E SMITH                         
+N 20180105 N PP   879.14                                       FISHER BOOKKEEPING SERVICE              
+N 20180105 N PP   920.85                                       ELLEN WEI CPA                           
+N 20180105 N S    300.67                                       D B CONRAD RESEARCH & ACCOUNTING        
+N 20180105 N S2   418.95                                       GAYLA THIESSEN GABUL                    
+N 20180106 N P P  652.01                                       TRACEY MCINDOO                          
+N 20180106 N PP   879.14                                       R S BOOKKEEPING & ACCOUNTING            
+N 20180106 N PP   991.01                                       END TO END BUSINESS SOLUTIONS           
+N 20180106 N S    261.45                                       FAMILY INCOME TAX                       
+N 20180106 N S    281.37                                       NILESH TAILOR                           
+N 20180106 N SP   845.24                                       PAUL FOYSTER BUSINESS CONSULTING        
+N 2018-01-07 N  P   523.95                                       GRANDTRUST CONSULTING LTD               
+N 20180107 N EP   699.47                                       LI ZHANG ACCOUNTING                     
+N 20180107 N EP   754.84                                       ALAN FERR PROFESSIONAL CORP             
+N 20180107 N EP   754.84                                       ARUL & ASSOCIATES INC                   
+N 20180107 N P    674.61                                       TONY LEE ACCOUNTING SERVICES            
+N 20180107 N PP   1,013.61                                     TOMISLAV ROKI CGA                       
+N 20180107 N PP   879.14                                       KAPADIA & ASSOCIATES                    
+N 20180107 N PP   879.14                                       RPM ACCOUNTING & INCOME TAX             
+N 20180107 N PP   879.14                                       TPMVK TAX AND FINANCIAL SERVICES        
+N 20180107 N PPP  1,002.31                                     DBJ ACCOUNTING SERVICES INC             
+N 20180107 N S    281.37                                       JAY ASSOCIATES                          
+N 20180107 N S    281.37                                       KELLEY YATES                            
+N 20180108 N  1   78.75                                        EDWARD C ROPER                          
+N 20180108 N  5   413.44                                       JACKIE ZHU                              
+N 20180108 N E    177.45                                       MERVYN CHENG                            
+N 20180108 N E    281.4                                        FAMILY INCOME TAX 2                     
+N 20180108 N E1   275.72                                       MNS ELKHASHAB                           
+N 20180108 N PP   879.14                                       BUSINESS MINDING SERVICES               
+N 20180108 N PP   979.71                                       QWIK TAX SERVICES INC                   
+N 20180108 N PP   991.01                                       1937847 ONTARIO INC CINDY'S BOOKKEEPING 
+N 20180108 N PPP  1,114.18                                     WICKHAM & ASSOCIATES                    
+N 20180108 N PPP  1,248.65                                     IRELAND YOUNG COMPANY - 2163071 ONT (CAMBRIDGE)
+N 20180108 N S    253.23                                       2102091 ONTARIO INC                     
+N 20180108 N S    365.4                                        DMB TAX SERVICES                        
+N 20180108 N S1   366.12                                       JB ACCOUNTING SERVICES INC              
+N 20180108 N S2   450.87                                       SYED SANWAR ALI                         
+N 20180108 N S5   705.12                                       QUIMBY FINANCIAL GROUP LTD              
+N 20180109 N E    190.97                                       BARRY CAMERON                           
+N 20180109 N EP   754.84                                       MG CPA PROFESSIONAL CORP                
+N 20180109 N P    397.95                                       LEAGH SINCLARE                          
+N 20180109 N P    435.85                                       DEE DAVIS INCOME TAX SERVICES           
+N 20180109 N P P  551.44                                       MICHELLE DULONG                         
+N 20180109 N PP   879.14                                       VESNA BULOVAN                           
+N 20180109 N PP   879.3                                        MIRO JAKUSZ-GOSTOMSKI                   
+N 20180109 N PP   991.01                                       PRITHIPAL S DHILLON CPA                 
+N 20180109 N S    261.45                                       EG TAX SERVICE                          
+N 20180109 N S    281.37                                       PAWAN K SHARMA  CPA                     
+N 20180110 N      157.07                                       KENNETH R CRAVEN CPA                    
+N 20180110 N  P   732.24                                       LIMRA TAX & ACCOUNTING LTD              
+N 20180110 N E    177.45                                       WOLFGANG MUSSLICK                       
+N 20180110 N E1   256.2                                        CAN-AM TAXATION SERVICES                
+N 20180110 N P    428.27                                       A & E TAX SERVICES                      
+N 20180110 N P    528.84                                       ADVANTAX LTD                            
+N 20180110 N PP   1,145.4                                      DURDLE'S BOOKKEEPING & TAX              
+N 20180110 N PP   791.2                                        AVH CONSULTING INC                      
+N 20180110 N PP   816.9                                        LEINSTER ACCOUNTING INC                 
+N 20180110 N PP   816.9                                        NUMERA TAX AND ACCOUNTING SERVICES LTD  
+N 20180110 N PP   879.14                                       CITY ACCOUNTING & TAX SERVICES          
+N 20180110 N PP   879.14                                       SIMPLIFIED FINANCIAL MANAGEMENT SERVICES
+N 20180110 N PP   923.1                                        9591176 CANADA LTD                      
+N 20180110 N PP   992.14                                       JOHN MARTYNUK TAX ACCOUNTANT            
+N 20180110 N S    253.23                                       CASH SHOP 04 -  BRAMPTON (KENNEDY) 2112598 ON INC
+N 20180110 N S    261.45                                       WILLIAM VANTRIET                        
+N 20180110 N S    281.37                                       PROGRESSIVE COMPUTER SOLUTIONS          
+N 20180110 N SS   788.74                                       ROSEWOOD FINANCIAL SERVICES             
+N 20180111 N E1   267.95                                       DONNA WALSH                             
+N 20180111 N L    103.95                                       FONS TAX & ACCOUNTING                   
+N 20180111 N P    385.45                                       CASH SHOP-214 - OTTAWA 2213227 ONTARIO INC
+N 20180111 N P2   701.4                                        FAY PURDIE'S BOOKKEEPING                
+N 20180111 N PP   1,091.58                                     KIM OANH TRINH                          
+N 20180111 N PP   428.27                                       CLEAR RETURN 10072818 CANADA INC        
+N 20180111 N PP   816.9                                        LOGISTIC BOOKKEEPING SOLUTIONS          
+N 20180111 N PP   979.71                                       A&L ACCOUNTING SERVICES INC             
+N 20180111 N PS   1,068.98                                     PC DIRECT GROUP                         
+N 20180111 N S    274.52                                       RICHARD SEXTON                          
+N 20180111 N S    274.52                                       SAVE-A-LOT INCOME TAX SERVICES          
+N 20180111 N S    281.37                                       AK ASSOCIATES                           
+N 20180111 N S    281.37                                       BERESFORD SOMERVILLE                    
+N 20180112 N      157.07                                       DOREEN CORSTORPHINE                     
+N 20180112 N  2   169.5                                        BEDFORD BOOKKEEPING                     
+N 20180112 N E    177.45                                       PAUL HANSEN                             
+N 20180112 N E    190.97                                       ANTHONY CHO                             
+N 20180112 N E    190.97                                       EDWARD E BARICHELLO CPA CA              
+N 20180112 N E4   529.97                                       LPM OFFICE MANAGEMENT                   
+N 20180112 N L    111.87                                       GERMANO BAIROS                          
+N 20180112 N L    111.87                                       JACK MAY                                
+N 20180112 N L    111.87                                       KEVIN CARTER                            
+N 20180112 N L1   182.7                                        MEWHORT TAX SOLUTIONS LLC               
+N 20180112 N P    397.95                                       TJ TAX SERVICES                         
+N 20180112 N P    428.27                                       ANTONIO MASI                            
+N 20180112 N P    428.27                                       LESLIE ELLINS                           
+N 20180112 N P2   597.77                                       ZOFIA ADAMCZYK INCOME TAX AND BUS CONSULTING
+N 20180112 N PP   816.9                                        ANTHONY ADENIJI                         
+N 20180112 N PP   816.9                                        FILACC CPA PC LTD                       
+N 20180112 N PP   816.9                                        PWP ACCOUNTING INC                      
+N 20180112 N PP   879.14                                       APRIL'S ACCOUNTING SERVICES             
+N 20180112 N PP   879.14                                       OLAYA MANAGEMENT & ACCOUNTING INC       
+N 20180112 N PP   879.14                                       OPTIMAL ACCOUNTING & TAX SOLUTIONS      
+N 20180112 N PP   879.14                                       RH ACCOUNTING & TAX                     
+N 20180112 N PP   894.7                                        CONDON E MACDONALD                      
+N 20180112 N PP   894.7                                        MICHAEL F BRENNAN CPA                   
+N 20180112 N PP   991.01                                       ORIENTEC TAX & ACCOUNTING SERVICES      
+N 20180112 N PP   991.01                                       PERFECT ACCOUNTING & TAX SERVICES       
+N 20180112 N PP   991.01                                       TAX DA$H CANADA INC                     
+N 20180112 N PPP  1,002.31                                     ARANY CONSULTANTS INC                   
+N 20180112 N PPP  1,031.69                                     SLONGO ACCOUNTING & TAX SERVICE         
+N 20180112 N PPP  1,114.18                                     BETTY KUPEIAN CPA                       
+N 20180112 N PPP  1,114.18                                     MIKE L SCHOENHALS CPA CGA               
+N 20180112 N PPP  1,248.65                                     G FARKAS CPA                            
+N 20180112 N S    261.45                                       CAYS INCOME TAX SERVICE                 
+N 20180112 N S    261.45                                       PENNER TAX                              
+N 20180112 N S    261.45                                       THERESE PRUD'HOMME                      
+N 20180112 N S    281.37                                       ANDREW N HARRISON FCSI FMA CPA CGA      
+N 20180112 N S    281.37                                       BARBARA GOLAB                           
+N 20180112 N S    281.37                                       ITZA PINELL INCOME TAX                  
+N 20180112 N S    281.37                                       JCS TAX PREP                            
+N 20180112 N S    286.35                                       JOANNE M BARRETT                        
+N 20180112 N SP   845.24                                       7726643 CANADA INC                      
+N 20180113 N E    177.45                                       AGH ACCOUNTING                          
+N 20180113 N E    190.97                                       J AND R FINANCIAL SERVICES              
+N 20180113 N PP   816.9                                        SUNSHINE ACCOUNTING & TAX SERVICES AB   
+N 20180113 N S    261.45                                       BACCUTAX                                
+N 2018-01-14 N P    397.95                                       THE HELPERS (MULTI SERVICES)            
+N 20180114 N SP   860.2                                        WAGNER ACCOUNTING LTD                   
+N 20180115 N E    190.97                                       TAX BAX SERVICE                         
+N 2018-01-15 N L    111.87                                       COMPLETE TAX                            
+N 20180115 N L2   281.37                                       GITU PARIKH                             
+N 20180115 N L4   458.85                                       OGNJEN VASILJEVIC                       
+N 20180115 N LS   776.31                                       GILBERT NG                              
+N 20180115 N P    428.27                                       50 & PIU FENACOM 2000 INC 1             
+N 20180115 N P    540.14                                       EMERALD TAX SERVICE                     
+N 20180115 N P    540.14                                       SYM BOOKKEEPING SERVICE                 
+N 20180115 N P1   624.89                                       JAMES ROSLER                            
+N 20180115 N PP   879.14                                       DUSAN DRAGOZEVIC CGA                    
+N 2018-01-15 N PP   879.14                                       PEMEX MANAGEMENT INC                    
+N 20180115 N PP   920.85                                       BMS MANAGEMENT ASSOCIATES               
+N 20180115 N PP   991.01                                       SALHA CPA PROFESSIONAL CORPORATION      
+N 20180115 N PPP  1,200.74                                     BRIAN ARTELLE CPA CA                    
+N 20180115 N PPP  1,248.65                                     LENORE FRIESEN CPA CA                   
+N 20180115 N S    281.37                                       MF ACCOUNTING SERVICES                  
+N 20180115 N S3   787.22                                       CASH SHOP 03 - PICKERING                
+N 20180115 N SS   768.82                                       RAS ACCOUNTING SERVICES                 
+N 20180116 N  5   444.94                                       FIROZ SHIVJI                            
+N 20180116 N E    177.45                                       GEORGE DIMSDALE CMA CGA                 
+N 20180116 N PP   1,091.58                                     MERCHANTS FINANCIAL PLANNING INC        
+N 20180116 N PP   879.14                                       TAX PROFESSIONAL OF CANADA LTD          
+N 20180116 N PPP  1,114.18                                     KIM TRAN                                
+N 20180116 N S    281.37                                       LETICIA MERCADO-TORIO                   
+N 20180117 N  P   563.87                                       SHPRESA JAHNKE                          
+N 20180117 N E    190.97                                       JACK F WARD CPA CMA                     
+N 20180117 N P    397.95                                       ITALIAN CANADIAN ASSISTANCE INC 5 B     
+N 20180117 N P    428.27                                       ITALIAN CANADIAN ASSISTANCE INC 2 T     
+N 20180117 N P    428.27                                       ITALIAN CANADIAN ASSISTANCE INC 3 H     
+N 20180117 N P    428.27                                       ITALIAN CANADIAN ASSISTANCE INC 4 O     
+N 20180117 N P    528.84                                       ITALIAN CANADIAN ASSISTANCE INC 1 W     
+N 20180117 N P P  820.38                                       BARBARA'$ TAX SERVICE                   
+N 20180117 N P4P  1,002.31                                     W RALPH THACKER CPA-CGA                 
+N 20180117 N PP   1,008.55                                     LEWIS FOSTER                            
+N 20180117 N PP   816.9                                        LATINA PROFESSIONAL CORPORATION         
+N 20180117 N PP   816.9                                        OFFICE ALTERNATIVES                     
+N 20180117 N PP   879.14                                       FRANK PRO ACCOUNTING SERVICES           
+N 20180117 N PP   920.85                                       CRYSTAL FORTUNE HOLDINGS INC            
+N 20180117 N S    261.45                                       HELENE KERN                             
+N 20180117 N S    281.37                                       BURLINGTON BOOKKEEPING & BUSINESS SERVICES
+N 20180117 N S5   655.2                                        BA BILLESBERGER RPA                     
+N 20180117 N SP   889.35                                       GL ACCOUNTING SERVICES LTD              
+N 20180118 N  2   157.5                                        DARCY HUMENIUK                          
+N 20180118 N  2   169.5                                        IGOR KYRYCHENKO                         
+N 20180118 N P    281.37                                       MICHAEL'S TAX PREPARATION & FINANCIAL PLANNING INC
+N 20180118 N P    428.27                                       MAX TAXES                               
+N 20180118 N P    428.27                                       ZUBER & ZUBER TAX SERVICES              
+N 20180118 N PP   879.14                                       MOAAZ MAHMOOD SHEIKH CPA                
+N 20180118 N PP   920.85                                       MICHAEL F ELL CPA                       
+N 20180118 N PPP  1,114.18                                     BRETT RUSHLOW CPA CMA                   
+N 20180118 N PPP  1,159.38                                     BRIAN GUNNING CPA - CGA                 
+N 20180118 N S    261.45                                       HELMUT O DETSCHELT                      
+N 20180118 N SP   845.24                                       BARBARA SCHEMBRI CGA CPA                
+N 20180118 N SP   845.24                                       GENUINE FINANCIAL & TAX SOLUTIONS       
+N 20180118 N SP   874.52                                       JOHN LIVINGSTONE ACCOUNTING SERVICES    
+N 20180119 N  3   236.25                                       TERRY LOVELACE                          
+N 20180119 N E    190.97                                       AT HOME BKKG                            
+N 20180119 N LS   575.4                                        ZOLTAN J CSUPAK CPA CA                  
+N 20180119 N P    428.27                                       IDEAL ACCOUNTING SERVICES               
+N 20180119 N PP   879.14                                       BLUEKAT FINANCIAL SERVICES              
+N 20180119 N PPP  1,114.18                                     RESHMA SHARMA CPA PROFESSIONAL CORPORATION
+N 20180119 N PPP  1,248.65                                     ECO ACOR CONSULTANTS                    
+N 20180119 N S    281.37                                       FOURNIER TAX AND BOOKKEEPING SERVICES   
+N 20180119 N S    281.37                                       GEORGE KALLU                            
+N 20180119 N S2   450.85                                       PRECISION TAX SERVICES                  
+N 20180120 N E3   434.39                                       MARK MCMILLAN                           
+N 20180120 N P    428.27                                       TED PETER TAX SERVICE                   
+N 20180120 N PP   879.14                                       KHUSHI ACCOUNTING SERVICES INC          
+N 20180120 N PP   879.14                                       SM TAX & ACCOUNTING SERVICES            
+N 20180120 N S    281.37                                       ESSKAYEN SERVICES INTERNATIONAL         
+N 20180120 N S    295.44                                       OMOR DAVIS                              
+N 20180120 N S2   366.12                                       KATHRYN AUCOIN CPA                      
+N 20180121 N  2   157.5                                        HELEN CHAU                              
+N 20180121 N E    190.97                                       JULIE-ANNE HERTEIS                      
+N 20180121 N E    190.97                                       ROBERT MINIOU CA                        
+N 20180121 N E    200.52                                       JUST #'S SERVICES                       
+N 20180121 N P    428.27                                       CLELA ROESLER                           
+N 20180121 N PP   1,170.68                                     BRAD PACKHAM CMA CPA                    
+N 20180121 N PP   879.14                                       PHN ACCOUNTING & TAX SERVICES           
+N 20180121 N PP   894.7                                        MARK McNAMARA PROFESSIONAL CORPORATION  
+N 20180121 N S    261.45                                       WAYNE'S TAX SERVICE                     
+N 20180122 N  3   266.96                                       SORIN ATANASOAIE                        
+N 20180122 N  PP  863.26                                       YALETOWN PARTNERS INC                   
+N 20180122 N E    177.45                                       ALLEN FAYE                              
+N 20180122 N E    190.97                                       ABACCUS FINANCIAL                       
+N 20180122 N E    190.97                                       NANCY DESAULNIERS                       
+N 20180122 N E    190.97                                       STEN T ROED CPA CGA                     
+N 20180122 N P    428.27                                       CLAUDE E GRENON                         
+N 20180122 N P P  580.82                                       G NEIL PAGE CPA CA                      
+N 20180122 N P1   513.02                                       MANS CONSULTING                         
+N 20180122 N PP   879.14                                       CONTANGO GROUP LTD                      
+N 20180122 N PP   879.14                                       FUTURE ACCOUNTING & FINANCIAL           
+N 20180122 N PP   991.01                                       SERGIO TOPATIGH                         
+N 20180122 N PPP  1,087.07                                     RDK CHARTERED PROFESSIONAL ACCOUNTANT LTD
+N 20180122 N PPP  1,114.18                                     ROBERT J DE LEEBEECK CPA CA             
+N 20180122 N PPP  1,253.7                                      GRANT McMASTER & CO INC                 
+N 20180122 N S    281.37                                       BILLIS ROBINSON                         
+N 20180122 N S    281.37                                       MARGARET CLIPPERTON                     
+N 20180122 N S4   576.45                                       CAROL'S TAX PREP                        
+N 20180122 N SP   845.24                                       GREG BROWN                              
+N 20180123 N      111.87                                       SAMY OUANOUNOU                          
+N 20180123 N  P   563.87                                       JENNIFER HU                             
+N 20180123 N E    200.52                                       EC TAX CONSULTING SERVICES              
+N 20180123 N PP   879.14                                       9049746 CANADA INC                      
+N 20180123 N PP   879.14                                       ACCO FINANCIAL SERVICES INC             
+N 20180123 N PPP  1,187.55                                     MG ERICKSON CPA                         
+N 20180123 N S    281.37                                       HANK A VANDEN HEUVEL                    
+N 20180123 N S    281.37                                       RALPH DONER ACCOUNTING                  
+N 20180123 N S3   535.62                                       L A McAULEY ACCOUNTING SERVICES         
+N 20180123 N SP   845.24                                       UNIVERSAL BUSINESS SOLUTIONS INC        
+N 20180124 N E    177.45                                       G EVANELL JACOBS                        
+N 20180124 N E    190.97                                       CYNTHIA IRVING 3247352 NOVA SCOTIA LTD  
+N 20180124 N E    190.97                                       LAURA DUNCAN                            
+N 20180124 N E    190.97                                       MARINA DORFMAN                          
+N 20180124 N E    190.97                                       TAX SOLUTIONS LTD                       
+N 20180124 N E1   275.72                                       KIRANDEEP SOHAL                         
+N 20180124 N PP   816.9                                        MAJOR OAK ACCOUNTING INC                
+N 20180124 N PP   879.14                                       SNS ACCOUNTING                          
+N 20180124 N S    281.37                                       HA TAX & ACCOUNTING CONSULTANTS7060408 CANADA  LTD
+N 20180124 N S    281.37                                       JEB BOOKKEEPING SERVICES                
+N 20180124 N S2   450.87                                       DISCREET TAX                            
+N 20180124 N SP   845.24                                       AOD TAX SERVICES                        
+N 20180125 N  2   164.92                                       VIPULKUMAR PANCHOLI                     
+N 20180125 N  2   169.5                                        MAY POON                                
+N 20180125 N  P   523.95                                       RONALD A. RONNEBERG CA                  
+N 20180125 N E2   334.95                                       KATHY L MCMAHON PROFESSIONAL CORPORATION
+N 20180125 N PP   1,045.8                                      MAHBUB & COMPANY                        
+N 20180125 N PP   857.75                                       HIGHLIFE ACCOUNTING                     
+N 20180125 N PP   879.14                                       MERIDIAN ACCOUNTING & TAX SERVICES PC   
+N 20180125 N PP   879.14                                       PATRICK KUA PRFESSIONAL CORPORATION     
+N 20180125 N PP   894.7                                        CLARITY ACCOUNTING & BUSINESS           
+N 20180125 N PP   991                                          ELIE BENATAR CA CPA CFE DFA             
+N 20180125 N S    281.37                                       BARCLEYS BUSINESS SERVICES              
+N 20180125 N S    286.35                                       ANGELA LEBLANC                          
+N 20180125 N S P  433.92                                       REFUNDS INCOME TAX SERVICES             
+N 20180126 N E    190.97                                       AIRNS BOOKKEEPING                       
+N 20180126 N E    200.52                                       CHARLES YOUNG                           
+N 20180126 N E    200.52                                       PAUL O TAX & FINANCIAL SERVICES         
+N 20180126 N E2   360.47                                       INTACTICA BUSINESS SOLUTIONS INC        
+N 20180126 N P    428.27                                       GRANT MALE                              
+N 20180126 N P    428.27                                       PLUMB TAX SERVICES                      
+N 20180126 N P    430                                          NANANOM FINANCIAL GROUP                 
+N 20180126 N P    567.15                                       TAX TOWN ACCOUNTING SERVICES - 2        
+N 20180126 N PP   991.01                                       TRIVEDI & ASSOCIATES INC                
+N 20180126 N PPP  1,020.05                                     DARREN HANSON                           
+N 20180126 N S    281.37                                       ALL EASY TAX SERVIICE                   
+N 20180126 N S    281.37                                       DONNA HO                                
+N 20180126 N S    281.37                                       GOOD PLANS                              
+N 20180126 N S    281.37                                       JAN TWEDDLE ADMINISTRATIVE SERVICES INC 
+N 20180126 N S    281.37                                       SNEZANA KALABA                          
+N 20180127 N  P   563.87                                       DENISE GUERRIERO                        
+N 20180127 N E1   256.2                                        CIM BOOKKEEPING & ACCOUNTING SERVICES   
+N 20180127 N P    397.95                                       LYNN TRUONG                             
+N 20180127 N P    428.27                                       DENNIS E GINGRICH                       
+N 20180127 N PP   1,013.61                                     SEA MGMT & MKTG ENTERPRICE              
+N 20180127 N PP   1,125.48                                     DAVID C LEMIEUX BA                      
+N 20180127 N PP   816.9                                        LUTE'S ACCOUNTING & BOOKKEEPING         
+N 20180127 N S    261.45                                       DG EDWARDS                              
+N 20180127 N S    281.37                                       GOODTAX                                 
+N 20180127 N S2   450.87                                       KHOAN VU B COMM                         
+N 20180128 N  P   563.87                                       FORUM FINANCIAL                         
+N 20180128 N E    177.45                                       DP COLE INC INC                         
+N 20180128 N E    190.97                                       JEAN HUGHES                             
+N 20180128 N EP   754.84                                       VERSICO FINANCIAL INC                   
+N 20180128 N PP   879.14                                       WG GAO ACCOUNTING & TAX SERVICES LTD    
+N 20180128 N PP   894.7                                        G&G ACCOUNTING SERVICES                 
+N 20180128 N PPP  1,002.31                                     KARENA'S CALCULATIONS                   
+N 20180128 N PPP  1,248.65                                     LBRUYNS ACCOUNTANTS LLP                 
+N 20180128 N S    261.45                                       GREGMS TAX SERVICES                     
+N 20180128 N S    261.45                                       SFC CONSULTANTS                         
+N 20180128 N S    281.37                                       FINANCIAL PLANNERS                      
+N 20180129 N  P   563.87                                       ALLIED PROFESSIONAL SERVICES LTD        
+N 20180129 N E    190.97                                       PC TAX SERVICES                         
+N 20180129 N L    117.46                                       ROMEO WAWROW                            
+N 20180129 N P    428.27                                       CARMEN DOIRE                            
+N 20180129 N P4   879.14                                       RAY ACCT & TAX SERVICES                 
+N 20180129 N PP   816.9                                        JIAN MIN MAI CPA CPA                    
+N 20180129 N PP   879.14                                       LOTUS ACCOUNTING FIRM                   
+N 20180129 N PP   991.01                                       IRFAN USMAN                             
+N 20180129 N PPP  1,018.53                                     R WOODCOCK BOOKKEEPING                  
+N 20180129 N S    274.52                                       MAXIM TAX SERVICE                       
+N 20180129 N S    281.37                                       DONNA ENGEL                             
+N 20180129 N S    281.37                                       JACQUELINE WESTCOTT                     
+N 20180129 N S    281.37                                       KANTILAL BHATT                          
+N 20180129 N S    281.37                                       NURUL MANNAN                            
+N 20180130 N      164.92                                       NAUTICAL LANDS GROUP                    
+N 20180130 N   P  163.01                                       BCJ TAX CENTRE1                         
+N 20180130 N  1   88.99                                        MICHAEL NICHOLSON CGA                   
+N 20180130 N E    186.32                                       KHALIL UR-REHMAN                        
+N 20180130 N E    190.97                                       SARIS TAX SERVICES                      
+N 20180130 N L    111.87                                       ROWDEN & CO CGA                         
+N 20180130 N L1   182.7                                        ELEANOR DAWSON                          
+N 20180130 N P    428.27                                       MLS TAX SERVICES                        
+N 20180130 N P2   597.77                                       DHARMESH PATEL                          
+N 20180130 N PP   879.14                                       MOHAMMED ABJI                           
+N 20180130 N S    281.37                                       A & P INCOME TAX SERVICES               
+N 20180130 N S    281.37                                       MICHEL RAYMOND                          
+N 20180130 N S    281.37                                       YUSUFF NOSIMOHOMED                      
+N 20180130 N S    286.35                                       CATHY WARD                              
+N 20180130 N S    286.35                                       CHRISTINE MOULAISON                     
+N 20180130 N S5   732.24                                       LIBOR CANADA INC                        
+N 20180131 N   P  152.55                                       MICHAEL GREENAWAY PROFESSIONAL CORP     
+N 20180131 N E    191                                          WINDALE FINANCIAL & TAX SERVICES        
+N 20180131 N E2P  476.7                                        RJ & COMPANY                            
+N 20180131 N P    428.27                                       FRANCINE GAUTHIER                       
+N 20180131 N PP   778.57                                       BMCO TAX                                
+N 20180131 N PP   816.9                                        ACCUBUSINESS                            
+N 20180131 N PP   879.14                                       ANSAF ACCOUNTING INC                    
+N 20180131 N PP   879.14                                       RON'S TAX PREP                          
+N 20180131 N PS   822.64                                       SATURDAY J OTON                         
+N 20180131 N S    281.37                                       EVELYNE JELINCIC                        
+N 20180131 N S    281.37                                       GEORGE HIPLOYLEE                        
+N 2018-0131 N S1P  518.67                                       BILL HUMMEL                             
+N 20180131 N SP   845.24                                       ROY NEARY INCOME TAX AND ACCOUNTING     
+N 20180201 N  P   523.95                                       RODERICK D MURRAY CPA                   
+N 20180201 N E1   275.72                                       DG CONSULTING SERVICES                  
+N 20180201 N L1   196.62                                       IAN JACKA                               
+N 20180201 N P    428.27                                       C STACEY & ASSOCIATES                   
+N 20180201 N P P  551.44                                       ELIZABETH PROSPERO CFP                  
+N 20180201 N PP   822.64                                       ON THE MARK BUSINESS SOLUTIONS          
+N 20180201 N PP   879.14                                       CASTLER BUSINESS CONSULTING             
+N 20180201 N PP   879.14                                       VINOD MISTRY                            
+N 20180201 N PP   991.01                                       NABI KHANDAKER CPA CMA                  
+N 20180201 N PPP  1,350                                        JW ASSOCIATES INC                       
+N 20180201 N S    281.37                                       LUBNA ALAM                              
+N 20180202 N      111.87                                       MICHAEL SAWH                            
+N 20180202 N  2   157.5                                        DEER LAKE ENGINEERING & ASSOCIATES INC  
+N 20180202 N  4   355.95                                       OUI INC                                 
+N 20180202 N  P   675.74                                       WE DO INCOME TAX INC                    
+N 20180202 N E    177.45                                       CHARLENE JUNKIN CPA CGA                 
+N 20180202 N E    194.35                                       WB BUDGE CA                             
+N 20180202 N E2   334.95                                       RONALD WONG                             
+N 20180202 N E2   334.95                                       SILVER RAVEN CONSULTING LTD             
+N 20180202 N E3P  613.59                                       MICHAELG G PINNOCK CPA CA CGMA MBA BSc  
+N 20180202 N E4   529.97                                       LANE RADBURN                            
+N 20180202 N EP   754.84                                       ACCUSPEED ACCOUNTING INC                
+N 2018-02-02 N P    435.85                                       B & R DELIVERIES                        
+N 20180202 N PP   816.9                                        NATH ACCOUNTING & TAX SERVICE           
+N 20180202 N PP   879.14                                       KANG TAX & FINANCIAL SERVICES           
+N 20180202 N PP   879.14                                       YIN LEE CPA CGA                         
+N 20180202 N PP   881.74                                       CASH NOW MALTON (1583357 ONTARIO INC)   
+N 20180202 N PP   920.85                                       LI-HAI WANG, CPA                        
+N 20180202 N PP   991.01                                       2534858 ONTARIO INC O-A BATAVIA ACCOUNTING & TAX
+N 20180202 N PP   991.01                                       AHMED IBRAHIM                           
+N 20180202 N PP   991.01                                       COATES ACCOUNTING                       
+N 20180202 N S    281.37                                       CHRISTINE BRUTIN                        
+N 20180202 N S    281.37                                       JEFF PARKS TAX SERVICES                 
+N 20180202 N S    281.37                                       NN CONSULTING SERVICES                  
+N 20180202 N S    295.44                                       WANDA MCINNIS                           
+N 20180202 N S2   450.87                                       AMD ACCOUNTING & TAX SERVICES           
+N 20180202 N SS   732.9                                        J ROLKE ACCOUNTING                      
+N 20180203 N  2P  322.05                                       6824137 CANADA  LTD                     
+N 20180203 N  4   315                                          OMB BUSINESS SERVICES                   
+N 20180203 N  S   507.37                                       ST TAX SERVICE                          
+N 20180203 N E    190.97                                       ACCURATE BOOKKEEPING                    
+N 20180203 N E    190.97                                       FERNANDO LARREA                         
+N 20180203 N E    190.97                                       KANE WANG                               
+N 20180203 N P    397.95                                       PETER J FORBES                          
+N 20180203 N PP   1,125.48                                     JAY ABRAHAM CPA CGA                     
+N 20180203 N PP   879.14                                       TAX MATE                                
+N 20180203 N S    261.45                                       LIS TAX SERVICES                        
+N 20180203 N S    261.45                                       MEHAR STUDIOS                           
+N 20180203 N S    281.37                                       NORMAN A GILLIES INCOME TAX SERVICES    
+N 20180203 N S    395                                          STEVE HIRJI & ASSOCIATES                
+N 20180204 N E    190.97                                       GERD WIENCKE                            
+N 20180204 N E2   334.95                                       LEONARD SMITH                           
+N 20180204 N L    111.87                                       JANET I McNAIRN                         
+N 20180204 N PP   1,203.45                                     HEMANI CHARTERED PROFESSIONAL ACCOUNTANT
+N 20180204 N S    281.37                                       DAVE J DUNDAS TAX SERVICES              
+N 20180204 N S    281.37                                       HOWELL &  ASSOCIATES                    
+N 20180204 N S    281.37                                       WALTER BUZZELLI                         
+N 20180204 N S    286.35                                       MAUDE McSORLEY BOOKKEEPING              
+N 20180205 N E    190.97                                       BESTAX & ASSOCIATES                     
+N 20180205 N E    190.97                                       PATSY IKERT CMA                         
+N 20180205 N E    190.97                                       PLACIDO F LOPES                         
+N 20180205 N E1   275.72                                       EILEEN BABKIRK                          
+N 20180205 N P    428.27                                       K SURI                                  
+N 20180205 N P1   513.02                                       GREGORY WINKLER CGA CPA                 
+N 20180205 N P1   513.02                                       LB CONSULTING                           
+N 20180205 N PP   816.9                                        BRAD W OUCHI CPA CGA                    
+N 20180205 N PP   816.9                                        KEY ACCOUNTING & MGMT                   
+N 20180205 N PP   879.14                                       SEUNGJOO JI  CA                         
+N 20180205 N PP   918.69                                       JOHN VARGHESE & ASSOCIATES              
+N 20180205 N PP   923.1                                        AMAL FINANCIAL SERVICES                 
+N 20180205 N S    281.37                                       ANITA HANDRAHAN                         
+N 20180205 N S    281.37                                       CLS RECEIVABLE MANAGEMENT SERVICES      
+N 20180205 N S1   386.63                                       SYDNEE LYNN MCKAY                       
+N 2018-02-06 N E    177.45                                       SHELLEY HORON                           
+N 20180206 N E    200.52                                       BALJIT SINGH BRAR                       
+N 20180206 N M    513.97                                       MONEY EXCHANGE WORLD 2093808 ONTARIO INC
+N 20180206 N P    428.27                                       FASTAX SERVICES                         
+N 2018-0206 N PP   1,083.13                                     ASSOCIATED ACCOUNTING SERVICES INC      
+N 20180206 N PP   816.9                                        LODGE PU CPA                            
+N 20180206 N PP   816.9                                        MELANIE DARES BOOKKEEPING               
+N 20180206 N PP   816.9                                        TERRIOLA INC                            
+N 20180206 N PP   879.14                                       BG FINANCIAL SERVICES                   
+N 20180206 N PP   879.14                                       KRISTIN LI                              
+N 20180206 N PP   879.14                                       MONYWISE SOLUTIONS LTD                  
+N 20180206 N PP   920.85                                       SPEARS BOOKKEEPING & FINANCIAL CONSULTING INC
+N 20180206 N PPP  1,002.31                                     CONROY ACCOUNTING & INCOME TAX 772337 ONTARIO INC
+N 20180206 N PPP  1,114.18                                     GREGORY BADLEY                          
+N 20180206 N PS   934.51                                       TIM KOKER CMA                           
+N 20180206 N S    261.45                                       AVA'S TAX SERVICE                       
+N 20180206 N S    261.45                                       DONNA'S BOOKKEEPING & TAX SERVICE       
+N 20180206 N S    281.37                                       MKP BOOKKEEPING &TAX SERVICES           
+N 20180206 N S    281.37                                       TOTAL TAX SERVICE                       
+N 20180206 N S    286.35                                       SUSAN'S BOOKKEEPING & BEYOND            
+N 20180206 N S P  433.92                                       JULIE NOBES                             
+N 20180206 N S2   562.74                                       MORRISON ACCOUNTING & BUSINESS SERVICE  
+N 20180206 N S2P  560.52                                       LAURIE WYLES INC                        
+N 20180206 N S4   620.37                                       PURI ACCOUNTING & TAX SERVICES          
+N 20180207 N      168.37                                       B & B DRYWALL INC                       
+N 20180207 N E    190.97                                       CHERYL ARCHIBALD                        
+N 20180207 N E    190.97                                       HELEN PAGE ACCOUNTING SERVICES          
+N 20180207 N E    190.97                                       JUAN AGUILAR GOMEZ                      
+N 20180207 N E    190.97                                       TOM G STOTT                             
+N 20180207 N L1   182.7                                        DRB TAX SERVICE                         
+N 20180207 N P    417.85                                       TAX BUSTERS                             
+N 20180207 N P    428.27                                       GORD'S TAX SERVICES                     
+N 20180207 N P    428.27                                       KINGSLEY APPAH                          
+N 20180207 N P    435.85                                       SMARTER CHOICE TAX SERVICES             
+N 20180207 N PP   1,125.48                                     SOURCE POINT BUSINESS GROUP2            
+N 20180207 N PP   816.9                                        G JOHN BOWES CPA CA                     
+N 20180207 N PP   816.9                                        IFTIN ACCOUNTING 7348363 CANADA LTD     
+N 20180207 N PP   816.9                                        JACK BURTON BATIK BOOKKEEPING LTD       
+N 20180207 N PP   879.14                                       R&H ACCOUNTING                          
+N 20180207 N PP   894.7                                        McMULLIN & ASSOCIATES LTD               
+N 20180207 N PP   894.7                                        MILLER ACCOUNTING SERVICES              
+N 20180207 N PP   966.89                                       HBS MANAGEMENT CONSULTANTS              
+N 20180207 N PPP  1,035.3                                      0919988 BC LTD JOSEPH WONG              
+N 20180207 N PPP  1,102.88                                     SHARON LAMERS                           
+N 20180207 N S    164.92                                       JAMES KOKKOROS                          
+N 20180207 N S    261.45                                       DAVID W FIEBELKORN CGA                  
+N 20180207 N S    281.37                                       DEBORAH'S BOOKKEEPING                   
+N 20180207 N S    281.37                                       JOHN CAMPANELLA                         
+N 20180207 N S    281.37                                       MARILYN VAN MOOK                        
+N 20180207 N S    281.37                                       ROBERT A DEMEESTER                      
+N 20180207 N S    393.24                                       WORK WISE INC                           
+N 20180207 N S P  433.92                                       FIRST CHOICE ACCOUNTING                 
+N 20180207 N SP   785.4                                        MOBILE ACCOUNTING & TAX                 
+N 20180208 N  PP  665.7                                        PMG                                     
+N 20180208 N E    190.97                                       ACCOMPLISHED BOOKKEEPING                
+N 20180208 N E    190.97                                       PHILLIP EDWARDS BOOKKEEPING & TAX PREPARATION
+N 20180208 N E P  319.2                                        MARIA ELDER CPA CGA                     
+N 20180208 N P2   555.45                                       MELIOR ACCOUNTIING  INCOME TAX SERVICES 
+N 20180208 N P2   844.11                                       CN HUGHES & CO                          
+N 20180208 N PP   1,013.61                                     SERVE U ACCOUNTING INC                  
+N 20180208 N PP   816.9                                        PRICE ACCOUNTING SERVICES               
+N 20180208 N PP   879.14                                       MAYNES FINANCIAL SERVICES               
+N 20180208 N S    261.45                                       A VICUNA & ASSOCIATES LTD               
+N 20180208 N S    261.45                                       ESTHER'S BOOKKEEPING                    
+N 20180208 N S    281.37                                       A TASTE OF HOME                         
+N 20180208 N S    281.37                                       P&S FAST-TAX                            
+N 20180208 N S    281.37                                       YORK MART COPY INC                      
+N 20180208 N S    295.44                                       ACCURATE TAX                            
+N 20180208 N SPP  899.85                                       KIM GOOLIA CPA INC                      
+N 20180209 N  2   169.5                                        DOLORES ROMANUK                         
+N 20180209 N  P   563.87                                       EL TAX &  ACCOUNTING SOLUTIONS          
+N 20180209 N E    177.45                                       GREENTOUCH FINANCIAL SOLUTIONS          
+N 20180209 N E    190.97                                       RJ OFFICE SERVICES                      
+N 20180209 N E    200.52                                       JOE SOLTIS - TAX PREPARATION            
+N 20180209 N P    428.27                                       BABCOCK INCOME TAX                      
+N 20180209 N P2   638.77                                       KEVIN CLIFFORD                          
+N 20180209 N PP   816.9                                        SAMUEL OLANLOYE                         
+N 20180209 N PP   879.14                                       JMD ACCOUNTING & TAX                    
+N 20180209 N PP   879.14                                       NADEEM AMIN                             
+N 20180209 N PP   920.85                                       TAXRMB LTD                              
+N 20180209 N S    274.52                                       GREGORY HARRIS                          
+N 20180209 N S    281.37                                       TRAVELPRO SOFTWARE SYSTEMS              
+N 20180209 N S    295.44                                       JERRY BEER                              
+N 20180209 N SP   748                                          KRNR TAX & ACCOUNTING                   
+N 20180210 N  P   592.06                                       THOMAS & ASSOCIATES                     
+N 20180210 N E    190.97                                       ALLAN WOODS                             
+N 20180210 N E    190.97                                       JAI NAIPAUL                             
+N 20180210 N E    190.97                                       KENNSULT                                
+N 20180210 N E    190.97                                       ZHE GAO                                 
+N 20180210 N L    111.87                                       ZENON DUVALKO                           
+N 20180210 N P    428.27                                       THE STAR INCOME TAX SERVICES            
+N 20180210 N P3   682.52                                       RELEVANT ACCOUNTING SERVICES            
+N 20180210 N PP   879.14                                       PACHECO & ASSOCIATES                    
+N 20180210 N PP   879.14                                       YOGI & ASSOCIATES CPA                   
+N 20180210 N S    261.45                                       EMILY HARDER                            
+N 20180210 N S    274.52                                       ROBERT MULLEN                           
+N 20180210 N S    281.37                                       HOSEA MPOFU                             
+N 20180210 N S    281.37                                       MA TAX &  ACCOUNTING                    
+N 20180210 N S    281.37                                       MARINASOL TRAVEL                        
+N 20180210 N S    281.37                                       VI ACCOUNTING                           
+N 20180210 N S    295.44                                       BETTIE BARKER BOOKKEEPING               
+N 20180211 N  P   573.85                                       JANES & COMPANY                         
+N 20180211 N E    177.45                                       MICHELLE MCROBERT                       
+N 20180211 N E1   360.15                                       KAREN TURNER ACCOUNTING                 
+N 20180211 N P    397.95                                       SHVET ACCOUNTING LTD                    
+N 20180211 N PP   816.9                                        SK ACCOUNTING & FINANCIAL SERVICES LTD  
+N 20180211 N PP   816.9                                        XIAO XU PROFESSIONAL FINANCIAL          
+N 20180211 N S    261.45                                       THE THIRD HAND                          
+N 20180211 N S    281.37                                       HAO LE                                  
+N 20180211 N S    295.44                                       MVP TAX SERVICES                        
+N 20180212 N  P   550.15                                       PRUDENT ACCOUNTING & BOOKKEEPING SERVICES INC
+N 20180212 N E    177.45                                       SUKHI'S BUSINESS SERVICES               
+N 20180212 N E    190.97                                       BLOOMFIELD BOOKKEEPING                  
+N 20180212 N E    190.97                                       JMA INFORMATION SYSTEMS                 
+N 20180212 N E    190.97                                       JULIO CRISTALES                         
+N 20180212 N E    190.97                                       THOMAS THOMAS                           
+N 20180212 N P    397.95                                       CRYSTAL FINANCIAL CONSULTANTS           
+N 20180212 N P    428.27                                       DIANE KIRBY MAY'S INCOME TAX            
+N 20180212 N P    428.27                                       PAULETTE E DIONNE                       
+N 20180212 N P    562.74                                       SDITAX & ACCOUNTING SERVICES INC        
+N 20180212 N P3   794.39                                       PATHMINI VIJAYABALAN - HOMETAX SERVICES 
+N 20180212 N PP   879.14                                       MSW FINANCIAL SERVICES                  
+N 20180212 N PP   879.14                                       OSBORNE ACCOUNTING 1649187 ONTARIO LTD  
+N 20180212 N PP   881                                          BELIVERZ ACCOUNTING INC                 
+N 20180212 N PPP  1,056.3                                      JOHN GERLE & ASSOCIATES                 
+N 20180212 N S    274.52                                       DENNIS CAMPBELL                         
+N 20180212 N S P  416.27                                       MONA  L BASSET CPA CGA                  
+N 20180213 N E    190.97                                       RETIRE RIGHT WEALTH MANAGEMENT          
+N 20180213 N P    428.27                                       CCUE TAX INC                            
+N 20180213 N PP   879.14                                       LOGAN'S ACCOUNTING & TAX SOLUTIONS      
+N 20180213 N PPP  1,160.25                                     LO TAX ACCOUNTING & TAX INC             
+N 20180213 N S    261.45                                       SUBHASH DHOOPAR                         
+N 20180213 N S    281.37                                       IBS BOOKKEEPING & TAX                   
+N 20180213 N S    281.37                                       JOHN VAN DEN HAM                        
+N 20180213 N S    281.37                                       PAPERTRAILS BOOKKEEPING & TAXATION SERVICES
+N 20180213 N S    290.92                                       NICOLE RAU CPA CA                       
+N 20180213 N S    295.44                                       KENNETH CARRUTHERS                      
+N 20180213 N S1P  518.67                                       THE TAX OFFICE                          
+N 20180213 N S2   450.87                                       KHALEEK YUSUF                           
+N 20180214 N  2   177.98                                       NADIYA GUSYEV                           
+N 20180214 N E    190.97                                       HRAIR YOUSEFIAN                         
+N 20180214 N E1   275.72                                       DONALD WHITEHEAD CMA                    
+N 2018-02-14 N P2   555.45                                       ALEXANDER INCOME TAX                    
+N 20180214 N PP   816.9                                        DAYOG & ASSOCIATES                      
+N 20180214 N PP   857.75                                       ACTIVEDGE ACCOUNTING & TAX SERVICES     
+N 20180214 N PP   879.14                                       ACTAXCOMP BUSINESS SOLUTIONS            
+N 20180214 N PP   879.14                                       MANPIRZADA & CO INC                     
+N 20180214 N PP   923.1                                        MACDONALD BUSINESS SOLUTIONS            
+N 20180214 N S    261.45                                       DIANA FAULKNER                          
+N 20180214 N S    281.37                                       HENRY PEDROZA                           
+N 20180214 N S    281.37                                       JIM DESLIPPE                            
+N 20180214 N S    286.35                                       HRS COMPUTER SERVICES                   
+N 20180214 N SP   784.9                                        JAMES A PETERS                          
+N 20180214 N SP   845.24                                       WEST HIGHLAND CONSULTIG INC             
+N 20180214 N SP   957.11                                       ATB ACCOUNTING                          
+N 20180215 N  4   315                                          TAX SHARED SERVICES INC1                
+N 20180215 N  P   720.94                                       MNM BOOKKEEPING SERVICES INC            
+N 20180215 N E    177.45                                       CLAIRE LIVINGSTON CA                    
+N 20180215 N E    190.97                                       DAVID R G MAYNARD                       
+N 20180215 N E    200.52                                       ALLA VINKLER                            
+N 20180215 N E2   334.95                                       SE WATKINS BOOKKEEPING & TAXES          
+N 20180215 N E2   360.47                                       CHERYL HARRIS CA CPA                    
+N 20180215 N L    111.87                                       TAB n TALLY                             
+N 20180215 N PP   1,226.05                                     SILVER LAKE ACCOUNTING                  
+N 20180215 N PP   879.14                                       MY BUSINESS SOLUTIONS                   
+N 20180215 N PP   879.14                                       WEBPRO BOOKKEEPING                      
+N 20180215 N PP   991.01                                       INDER MOHAN SINGH                       
+N 20180215 N PPP  1,006.59                                     JM HOBBS ACCOUNTING                     
+N 20180215 N S    261.45                                       VAUSE HOLDINGS LTD                      
+N 20180215 N S    281.37                                       GUERIN BOOKKEEPING & INCOME TAX         
+N 20180215 N S    281.37                                       HOURGLASS RESOURCES - GOVE              
+N 20180215 N S    281.37                                       OFFICETOGO                              
+N 20180215 N S    300.67                                       MJD BOOKKEEPING SERVICES S              
+N 20180216 N E    186.32                                       RDK SERVICES                            
+N 20180216 N E    190.97                                       ANITA GASKIN                            
+N 20180216 N E    191                                          KALAMAZAD HOSEIN                        
+N 20180216 N E2   334.95                                       REGINA FOWLER                           
+N 20180216 N E3   422.57                                       AJITPAL SANGHA CPA                      
+N 20180216 N P    417.85                                       KATERINA SEBEK                          
+N 20180216 N P    428.27                                       JIE HU                                  
+N 20180216 N P    449.68                                       BLUECARIBOU CA'S                        
+N 20180216 N PP   879.14                                       P&P CONSULTING INTERNATIONAL INC        
+N 20180216 N PP   879.14                                       TSS CONSULTING                          
+N 20180216 N S    261.45                                       TARAS KICHMA                            
+N 20180216 N S    281.37                                       PRIYANKA JANI                           
+N 20180216 N S    290.92                                       SIMPLY TAX                              
+N 20180216 N S    295.44                                       ALBERT GENYS                            
+N 20180216 N S2   418.95                                       TONDERAI GUMBO                          
+N 20180216 N S2   439.9                                        MNR INCOME TAX SERVICE                  
+N 20180217 N  3   254.25                                       RHEO HACQUARD                           
+N 20180217 N  P   563.87                                       TG TAX & ACCOUNTING SERVICES INC        
+N 20180217 N E    177.45                                       HMH BOOKKEEPING SERVICES LTD            
+N 20180217 N E    177.45                                       THE MACDONALD'S                         
+N 20180217 N E    190.97                                       LAURA  AUSTIN PALOD                     
+N 20180217 N E    190.97                                       NANCY'S BOOKKEEPING                     
+N 20180217 N E4   529.97                                       BETTER BOOKKEEPING & TAX SERVICES       
+N 20180217 N E5   614.72                                       LARRY GATTI CGA CPA CGA CFP             
+N 20180217 N L    103.95                                       REGENA  BREZSNYAK                       
+N 20180217 N P    428.27                                       INDERJIT SINGH SODHI                    
+N 20180217 N P    428.27                                       WHITBY TAX SERVICE LTD                  
+N 20180217 N P P  640.71                                       RICHARD KENNEDY                         
+N 20180217 N P3   634.2                                        ALKARIM TAX SERVICES                    
+N 20180217 N PP   879.14                                       LJS & ASSOCIATES CONSULTING INC         
+N 20180217 N PP   879.14                                       MOUNT SINAI PROFESSIONALCORPORATION     
+N 20180217 N PP   879.14                                       RELSHEDWOOD TAX & ACCOUNTING            
+N 20180217 N PP   968.41                                       PAUL OMOROGIEVA                         
+N 20180217 N S    274.52                                       KN & CO ACCOUNTING & TAXATION           
+N 20180217 N S    281.37                                       E-ZEE FILE                              
+N 20180217 N S    281.37                                       RESHMA PRABHAKAR                        
+N 20180217 N S    281.37                                       THRIFTAX SERVICES                       
+N 20180217 N SP   860.2                                        GOOD BOOKS ACCOUNTING                   
+N 20180217 N SP   887.5                                        THOMAS P DOHERTY CA                     
+N 20180218 N E    177.45                                       SMC BOOKKEEPING                         
+N 20180218 N E    186.32                                       BEVERLEY MCGREGOR                       
+N 20180218 N E    190.97                                       JANN NICOLAS                            
+N 20180218 N E    190.97                                       SHAHAB NAQVI                            
+N 20180218 N E    190.97                                       SYLVAIN LAVOIE                          
+N 20180218 N E    190.97                                       TRUE ACCOUNT LTD                        
+N 20180218 N E    200.52                                       JERRY FARANDATOS CPA CGA                
+N 20180218 N E    200.52                                       MARILYN HAID                            
+N 20180218 N E1   256.2                                        MR SIMPSON CMA                          
+N 20180218 N P    428.27                                       JIM MASON                               
+N 20180218 N P    663.31                                       DG TAX SERVICE                          
+N 20180218 N PP   1,013.61                                     CONSOLIDATED FINANCIAL & INVESTMENT     
+N 20180218 N PP   879.14                                       ED ACCOUNTING & TAX                     
+N 20180218 N PP   879.14                                       SHAMMI SINGAL                           
+N 20180218 N S    274.52                                       BEANCOUNTERS INC                        
+N 20180218 N S    281.37                                       G PARSONS ACCOUNTING                    
+N 20180218 N S    281.37                                       GHOUSEULLAH AHMED                       
+N 20180218 N S    281.37                                       JAMES WOODWORTH                         
+N 20180218 N S    281.37                                       LENA NAVE                               
+N 20180218 N S    281.37                                       MICHAEL OGBOLE                          
+N 20180218 N S2   418.95                                       NICOLE NEUFELD CPA                      
+N 20180218 N SP   785.4                                        LEON ZUVIC TAX SERVICES                 
+N 20180219 N  2   172.5                                        GFS FINANCIAL PLANNING                  
+N 20180219 N  S   507.37                                       METROPRO BOOKKEEPING AND TAX            
+N 20180219 N E    200.52                                       PACIFIC ACCOUNTING SERVICES             
+N 20180219 N E1   256.2                                        MCEWEN HOLDINGS INC                     
+N 20180219 N E3   445                                          BHARAT KUMAR AUNDHIA CPA CA             
+N 20180219 N P    449.68                                       DIANE HUNTER BOOKKEEPING & TAX SERVICES 
+N 20180219 N P    449.68                                       WILLIAM H JENSEN                        
+N 20180219 N PP   816.9                                        DAYO CGA                                
+N 20180219 N PP   879.14                                       LYNORR                                  
+N 20180219 N PP   894.7                                        3R ACCOUNTING & TAX LTD                 
+N 20180219 N PP   920.85                                       INSPIRED MANAGEMENT CONSULTING          
+N 20180219 N PPP  931.35                                       CK ACCOUNTING                           
+N 20180219 N S    274.52                                       BRETT SCOTT                             
+N 20180219 N S    281.37                                       BONART TAX PREPARATION                  
+N 20180219 N S    281.37                                       DB BUSINESS MANAGEMENT                  
+N 20180219 N S    281.37                                       DOUG DRINKILL                           
+N 20180219 N S    281.37                                       JESUTHASAN GEORGE                       
+N 20180219 N S    281.37                                       LUDLOO M BARKER                         
+N 20180219 N S    281.37                                       RICHARD MOY                             
+N 20180219 N S    290.92                                       NUMBER$                                 
+N 20180219 N S2   481.79                                       DAVIES ACCOUNTING & FINANCIAL SERVICES  
+N 20180219 N SP   785.4                                        ADANAC BUSINESS SERVICES                
+N 2018022 N S    281.37                                       AVS ACCOUNTING SERVICES                 
+N 20180220 N  P   573.85                                       WENDY ROCKWELL                          
+N 20180220 N E    190.97                                       JOHN D HOGG                             
+N 20180220 N E    190.97                                       ROBERT G SCHOENHALS                     
+N 20180220 N E2   360.47                                       ACCOUNTING TAX & COMPUTER SERVICES LTD  
+N 20180220 N EP   754.84                                       YASAR KHAN                              
+N 20180220 N L5   535.62                                       WILLIAMS ACCOUNTING SERVICES            
+N 20180220 N P    397.95                                       BONNIE AUBICHOM                         
+N 20180220 N PP   879.14                                       MEZED FINANCIAL SERVICES INC            
+N 20180220 N PP   879.14                                       OLEKSANDR BRYANSKYKH                    
+N 20180220 N PP   894.7                                        CUSTOM BUSINESS & TAX SERVICES INC      
+N 20180220 N PP   991.01                                       ACCUACCOUNTING SOLUTIONS                
+N 20180220 N PP   991.01                                       GILZENE'S ACCOUNTING SERVICES           
+N 20180220 N S    274.52                                       T FOUR TAX SERVICE                      
+N 20180220 N S    281.37                                       ACCOUNTING PORT                         
+N 20180220 N S    281.37                                       GLOBAL FINANCIAL SERVICES               
+N 20180220 N S    281.37                                       LISA'S BOOKKEEPING SERVICES             
+N 20180220 N S    282                                          CASPER ENTERPRISES                      
+N 20180220 N S1   366.12                                       CARON ACCOUNTING SERVICES               
+N 20180221 N   P  336.97                                       WINDSOR REGIONAL HOSPITAL               
+N 20180221 N  P   592.06                                       AKBAR SHEIKHZADEH                       
+N 20180221 N EP   754.84                                       GL PLUS ACCOUNTING SOLUTIONS            
+N 20180221 N LS   767.66                                       GHS & ASSOCIATES FINANCIAL SERVICES INC 
+N 20180221 N P    428.27                                       TAX & FINANCIAL SERVICES                
+N 20180221 N P    449.68                                       ABEY - CONSULT                          
+N 20180221 N PP   1,013.61                                     AUGIMERI & THEVA PROFESSIONAL CORPORATION
+N 20180221 N PP   879.14                                       AJ FINANCIAL SERVICES INC               
+N 20180221 N PP   879.14                                       DANIEL K FOSTER CPA CA                  
+N 20180221 N PP   879.14                                       HUMMINGBIRD FINANCIAL CORP              
+N 20180221 N PPP  1,136.78                                     SSP CONSULTING                          
+N 20180221 N S    261.45                                       SHAHRYAR KARIM                          
+N 20180221 N S    281.37                                       BEN ASARE                               
+N 20180221 N S    281.37                                       HUNTER A  ACCOUNTING INC                
+N 20180221 N S P  455.62                                       C CAIRD TAX                             
+N 20180222 N  P   602.54                                       ROBERT B GEORGE CPA PROFESSIONAL CORPORATION
+N 20180222 N E    177.45                                       JCL ACCOUNTING &  BOOKKEEPING SERVICES  
+N 20180222 N E    177.45                                       WILLIAM THOMAS                          
+N 20180222 N E    190.97                                       POUNDER ACCOUNTING SERVICES             
+N 20180222 N E    190.97                                       PRO-BOOKS                               
+N 20180222 N E    190.97                                       SANDERS K SAKAGUCHI FINANCIAL GROUP     
+N 20180222 N E    200.52                                       ANTHONY'S ACCOUNTING SERVICES           
+N 20180222 N E1   256.2                                        MULLER & ASSOCIATES                     
+N 20180222 N E1   275.72                                       GLOBAL MONEY SHOP (JANE)                
+N 20180222 N E5   614.72                                       TIBOR FLEISCHER                         
+N 20180222 N P    428.27                                       CAPRICORN FINANCIAL SERVICES            
+N 20180222 N P    428.27                                       JAMES MCVEY                             
+N 20180222 N PP   791.22                                       CASH SHOP 32 - BRAMPTON                 
+N 20180222 N PP   879.14                                       CINDY JAYNE ACTG & ADMIN SERVICES       
+N 20180222 N PP   879.14                                       JAYDEEP PATEL                           
+N 20180222 N PP   879.14                                       WPBS BOOKKEEPING&TAX SERVICES 1842704 ONTARIO INC
+N 20180222 N PP   923.1                                        FAST ACCOUNTING & INCOME TAX SERVICE    
+N 20180222 N PP   939.44                                       JOHN McCARA ACCOUNTANT                  
+N 20180222 N S    261.45                                       ACCENT ON TAX                           
+N 20180222 N S    278.88                                       MELNICK FINANCIAL                       
+N 20180222 N S    281.37                                       GERARD RAINVILLE                        
+N 20180222 N S    281.37                                       SANDRA LEWIS LO                         
+N 20180222 N S    295.44                                       NORTH AMERICAN PROMOTION                
+N 20180222 N S3   535.62                                       JW FINANCIAL                            
+N 20180223 N  2   169.5                                        ANNA YANG                               
+N 20180223 N E    186.32                                       SEB MANAGEMENT                          
+N 20180223 N E    190.97                                       GENERAL BOOKKEEPING                     
+N 20180223 N E    190.97                                       ROBERT TROTTER CPA CA                   
+N 20180223 N L    117.46                                       ERLE MOFFATT                            
+N 20180223 N P    528.84                                       LINA S GIANNOTTA                        
+N 20180223 N PP   879.14                                       CASSAMAN BUSINESS SERVICES INC          
+N 20180223 N PP   879.14                                       MCNEIL ACCOUNTIN & TAX SERVICES         
+N 20180223 N PP   879.14                                       PAUL ACCOUNTING ASSOCIATES LTD          
+N 20180223 N PP   879.14                                       SHAJI PALACKEAL                         
+N 20180223 N S    281.37                                       BARRY CAMPBELL                          
+N 20180223 N S    281.37                                       MHM ACCOUNTING SERVICES                 
+N 20180223 N S    281.37                                       RAJIV SHARDA                            
+N 20180223 N S    286.35                                       EDDIE G RIOUX BOOKKEEPING SERVICES      
+N 20180224 N  2   157.5                                        RJK MANAGEMENT LTD                      
+N 20180224 N E    181.87                                       WILLIAM SUTHERLAND                      
+N 20180224 N E    190.97                                       AL KUHN TAX PREPARATION SERVICES        
+N 20180224 N E    190.97                                       HAROLD ALLEN                            
+N 20180224 N E    190.97                                       LIS HOOD ACCOUNTING                     
+N 20180224 N E    190.97                                       NDC ACCOUNTING SOLUTIONS                
+N 20180224 N E    190.97                                       WILLIAM E BRENNAN                       
+N 20180224 N E1   275.72                                       WILLOW CREEK ENTERPRISES LTD            
+N 20180224 N E2P  476.7                                        PRECISION TAX SERVICE                   
+N 20180224 N E4   492.45                                       LB DAWSON & CO LTD                      
+N 20180224 N LP   681.33                                       PAUL STARK ACCOUNTANT                   
+N 20180224 N P    528.84                                       ALWYN STACHEL                           
+N 20180224 N PP   1,013.61                                     SHANIA ACCOUNTING & FINANCIAL SERVICES TAX MASTERS
+N 20180224 N PP   879.14                                       ARIB FINANCIAL SOLUTIONS                
+N 20180224 N PP   879.14                                       MINIMUM TAX                             
+N 20180224 N PP   879.14                                       SIMPLE ACCOUNTING                       
+N 20180224 N PP   879.14                                       SULAIMAN NAUFER PROFESSIONAL CORPORATION
+N 20180224 N PP   941.85                                       MIYAZAWA  & CO                          
+N 20180224 N PP   979.71                                       AROKIUM'S TAX CLINIC                    
+N 20180224 N S    281.37                                       LAW'S BOOKKEEPING SERVICES              
+N 20180224 N S    281.37                                       RIAD FATHALLAH                          
+N 20180224 N S    295.44                                       AJ ENTERPRISE                           
+N 20180224 N S    295.44                                       JOHN ZIMANY                             
+N 2018-02-24 N S2   413.95                                       PAYLESS INCOME TAX INC                  
+N 20180224 N S3   535.62                                       CANWEST ACCOUNTING & TAX                
+N 20180225 N  3   248.07                                       KIM D THIELE                            
+N 20180225 N E    177.45                                       DAVID MAKI TAX SERVICE                  
+N 20180225 N E    177.45                                       WRM CPA CA                              
+N 20180225 N E    190.97                                       APPACHERIL GROUP                        
+N 20180225 N E    200.52                                       NICOLE LEBLANC                          
+N 20180225 N E1   280.6                                        E REGAN LEWIS CPA CA                    
+N 20180225 N S    261.45                                       BIRD COMPUTER SERVICES                  
+N 20180225 N S    274.52                                       MOBILE TAX SERVICE                      
+N 20180225 N S    281.37                                       BANDY HUI                               
+N 20180225 N S2   450.87                                       KA BOOKKEEPING                          
+N 20180225 N S4   620.37                                       CAROLINE ZAWADZKI CPC CA                
+N 20180226 N  2   169.5                                        SHAW ACCOUNTING SERVICES                
+N 20180226 N E    177.45                                       DAVID N PRIMROSE CGA                    
+N 20180226 N E    190.97                                       VICKIE MANUGE                           
+N 20180226 N E P  343.52                                       ONESOURCE ACCOUNTING & TAX INC          
+N 20180226 N E2   360.47                                       MARY LEUNG                              
+N 20180226 N PP   879.14                                       ARUN GARG                               
+N 20180226 N PP   879.14                                       FAST ACTION TAXATION INC                
+N 20180226 N PP   879.14                                       HV BOOKKEEPING SERVICES                 
+N 20180226 N PP   879.14                                       JAYEOBA ACCOUNTING PROFESSIONAL CORPORATION
+N 20180226 N PP   879.14                                       NICHOLAS BROWN                          
+N 20180226 N PP   879.14                                       ROYAL ACCOUNTING AND & SERVICES INC     
+N 20180226 N PP   935.64                                       JOHN GABRIEL                            
+N 20180226 N S    249                                          ROLANDA'S INCOME TAX SERVICE            
+N 20180226 N S    274.52                                       MMR ACCOUNTING SERVICES                 
+N 20180226 N S    274.52                                       VELIBOR SPASOJEVIC                      
+N 20180226 N SP   845.24                                       MARILYN SMITH                           
+N 20180227 N E    177.45                                       ALL ACCOUNTS BOOKKEEPING                
+N 20180227 N E    177.45                                       COMKAY TAX SERVICES                     
+N 20180227 N EP   754.84                                       SHIU HING PAUL LAM                      
+N 20180227 N L    103.95                                       TRAVIS WILLIAM MC CALLUM                
+N 20180227 N PP   816.9                                        BRULOTTE BOOKKEEPING & TAX SERVICES     
+N 20180227 N S    281.37                                       PRATIBHA JOSHI                          
+N 20180227 N S    281.37                                       TAXSMART ACCOUNTING SERVICES            
+N 20180228 N  P   563.87                                       2' SUCCEED                              
+N 20180228 N  P   563.87                                       PRASHANT PATEL                          
+N 20180228 N  S   507.37                                       SUPERIOR SIGMA SOLUTIONS INC            
+N 20180228 N E    177.45                                       MISSION HILLS BOOKKEEPING & TAX SERVICE 
+N 20180228 N E    190.97                                       BONNIE MEEK                             
+N 20180228 N E    190.97                                       CANADA TAX                              
+N 20180228 N E    190.97                                       JOYCE WANG                              
+N 20180228 N E    190.97                                       RACHEL F KRUYF ACCOUNTING               
+N 20180228 N E    190.97                                       TADDELE MEGERSA KITABA                  
+N 20180228 N E1   289.51                                       STEPHEN STEWART CPA CA                  
+N 20180228 N E2   360.47                                       INDEPENDENT ACCOUNTANT                  
+N 20180228 N E4   529.97                                       FCL CONSULTING + FINANCIAL SERVICES     
+N 20180228 N L    111.87                                       AHLAM SHADID                            
+N 20180228 N L2   393.24                                       DOUBLE-EDGE FINANCIAL SOLUTIONS         
+N 20180228 N PP   1,104.01                                     LEO DEMARCE                             
+N 20180228 N PP   879.14                                       D&B ACCOUNTING SOLUTIONS                
+N 20180228 N PP   894.7                                        ANTHONY J SMITH CPA                     
+N 20180228 N PP   935.64                                       AJOY CHAKRABARTY CGA                    
+N 20180228 N S    261.45                                       TRACY WILLIAMS-DUERR CMA                
+N 20180228 N S    281.37                                       ANA MARIA BARBOSA                       
+N 20180228 N S    281.37                                       ARM TAX SERVICES                        
+N 20180228 N S    281.37                                       HK ACCOUNTING & TAX SERVICES            
+N 20180228 N S    281.37                                       JENNIFER WHITTIER-HASWELL               
+N 20180228 N S    281.37                                       MURDUFF & ASSOCIATES                    
+N 20180228 N S    295.44                                       NHIN TANG                               
+N 20180228 N S3   535.62                                       R WOODHOUSE                             
+N 20180228 N SP   845.24                                       TOSA ACCOUNTING & TAX SERVICES          
+N 201802-6 N S    281.37                                       CMO REJOICE TAX                         
+N 201802-7 N S    281.37                                       ACTION TAX BOOKKEEPING SERVICE          
+N 20180301 N      109.15                                       JDM SERVICES                            
+N 20180301 N E    186.32                                       HARPREET KAUR THIND                     
+N 20180301 N E    190.97                                       BOATENG INSURANCE & FINANCIAL SERVICES  
+N 20180301 N E    190.97                                       CATHERINE MARTIN                        
+N 20180301 N E    190.97                                       ERIC MARIANAYAGAM                       
+N 20180301 N E    190.97                                       MANAGEMENT INFORMATION                  
+N 20180301 N E    190.97                                       ROSALIE PARKER                          
+N 20180301 N E    190.97                                       SALLY'S FINANCIAL SUPPORT SERVICE       
+N 20180301 N E    190.97                                       TWINN                                   
+N 20180301 N E    190.97                                       WILSON LIU                              
+N 20180301 N E2   360.47                                       DEVRAM & COMPANY                        
+N 20180301 N L    111.87                                       YOLANDA LORIA                           
+N 20180301 N L    117.46                                       TURN-R-TECH LTD                         
+N 20180301 N L1   206.45                                       ORGANIZED LIFE TAX & FINANCIAL SERVICES 
+N 20180301 N P    435.85                                       BELINDA JACKSON                         
+N 20180301 N P    449.68                                       GEORGE GUBAREVICH                       
+N 20180301 N P    449.68                                       SOLID LINKS ACCOUNTING SERVICES         
+N 20180301 N P1   513.02                                       JOCELYN GORDON CGA                      
+N 20180301 N S    282                                          INFINITY ACCOUNTING & TAX SERVICE       
+N 20180301 N S    282                                          RAGUNATHAN MAHESU                       
+N 20180301 N S4   620.37                                       RM ACCOUNTING & TAX SERVICES            
+N 20180301 N SP   845.24                                       BUTTONS BOOKKEEPING SERVICE LTD         
+N 20180302 N E    190.97                                       ARUN SENATHIRAJAH                       
+N 20180302 N E2   334.95                                       PC WINS BOOKKEEPING & ACCOUNTING        
+N 20180302 N E2   334.95                                       YVONNE PEITZSCHE                        
+N 20180302 N EP   701.4                                        CONLEE ACCOUNTING SERVICE               
+N 20180302 N L    113.85                                       FREDERICK TURNER                        
+N 20180302 N P    449.68                                       CHERYL OVAS CGA                         
+N 20180302 N PP   816.9                                        DONE RIGHT BOOKKEEPING SERVICES         
+N 20180302 N PP   816.9                                        NEIGHBORHOOD TAX INC                    
+N 20180302 N PP   879.14                                       H&J PROTAX                              
+N 20180302 N PP   879.14                                       XIAO DONG TAN                           
+N 20180302 N PP   923.1                                        R WALTER FINLAY &  ASSOCIATES           
+N 20180302 N PP   941.85                                       PYRAMID ACCOUNTING SERVICES             
+N 20180302 N PP   992                                          FLAVIAN PINTO CPA CGA                   
+N 20180302 N S    281.37                                       KAP PROFESSIONAL SERVICES               
+N 20180302 N S    281.37                                       MAPLE LEGAL CONSULTANCY CENTER          
+N 20180302 N S1   366.12                                       NU-ARCH GROUP INC                       
+N 20180302 N SP   785.4                                        WILLIAM HAROLD GILBERTSON               
+N 20180303 N  P   523.95                                       POSTCO BUSINESS SERVICES                
+N 20180303 N E    177.45                                       VISIONS BOOKKEEPING & INCOME TAX SERVICES
+N 20180303 N E    186.32                                       CINDY MOORE ACCOUNTING                  
+N 20180303 N E    190.97                                       SELECT TAX SERVICES                     
+N 20180303 N L4   450.87                                       AMBIKA  CORP                            
+N 20180303 N P    428.27                                       DAVID C ENTERPRISE                      
+N 20180303 N PP   879.14                                       CA SIMONS & ASSOCIATES                  
+N 20180304 N  2   169.5                                        LOVE KUMAR AGGARWAL                     
+N 20180304 N E    190.97                                       EGAN SERVICES                           
+N 20180304 N E    190.97                                       JOSEPH NTOW-DUKU                        
+N 20180304 N E    190.97                                       MARIA THROOP CPA CGA                    
+N 20180304 N E    190.97                                       NAFISA MOHAMED                          
+N 20180304 N E    190.97                                       OAKLINGTON TAX SERVICES                 
+N 20180304 N E3   445.22                                       MIDDLETON CONTROLLERSHIP SERVICES LTD   
+N 20180304 N P    397.95                                       EPNR CONSULTING                         
+N 20180304 N P    428.27                                       BLUE RIBBON SERVICES                    
+N 20180304 N P1   476.7                                        TROY HIBBS                              
+N 20180304 N P2   698.34                                       MH INCOME TAX SERVICE                   
+N 20180304 N PP   816.9                                        20 20 ACCOUNTING INC                    
+N 20180304 N PP   879.14                                       MCCRAE ACCOUNTING INC                   
+N 20180304 N PS   822.64                                       TOM PLATSKO CPA                         
+N 20180304 N S    281.37                                       1841802 ONTARIO INC SHERRY T MORLEY     
+N 20180304 N S    281.37                                       TEJ PRASAD KHATIWADA                    
+N 20180304 N S1   340.2                                        CECILIA BABINGAO                        
+N 20180305 N  2   169.5                                        ANGELA & ASSOCIATES                     
+N 20180305 N E    177.45                                       JIANFEI MA                              
+N 20180305 N E    186.32                                       ANNE RAVENHILL                          
+N 20180305 N E    186.32                                       CANPAK TAX & ACCOUNTING SERVIES         
+N 20180305 N E    190.97                                       ADEOLA ADEYEMO                          
+N 20180305 N E    190.97                                       MS BUSINESS MANAGEMENT SOLUTIONS        
+N 20180305 N E    190.97                                       PERAMPALAM KOYILAN                      
+N 20180305 N E    190.97                                       PROFILE ACCOUNTING & TAX SERVICES       
+N 20180305 N E P  319.2                                        SM SVENSSON CPA                         
+N 20180305 N E3   445.22                                       KIRANJIT THANDI                         
+N 2018-03-05 N E5   571.2                                        1646888 ALBERTA LTD                     
+N 20180305 N L2   281.37                                       KIMBERLEY JACKSON                       
+N 20180305 N L2   281.37                                       VIVIAN A WATSON                         
+N 20180305 N P    428.27                                       ROBERT S ROODE                          
+N 20180305 N PP   816.9                                        BACKSPIN ENTERTAINMENT                  
+N 20180305 N PP   923.1                                        WAPITI BUSINESS SERVICES                
+N 20180305 N PS   863.77                                       SUPERIOR FINANCIAL MANAGEMENT           
+N 20180305 N S    281.37                                       FREDDY OLID AMADOR                      
+N 20180305 N S P  507.15                                       GC ACCOUNTING                           
+N 20180305 N S1   340.2                                        DAVE GIESBRECHT FINANCIAL SERVICES      
+N 20180306 N E    186.32                                       DIETER ENDRUSCHAT TAX SERVICES          
+N 20180306 N E1   275.72                                       ROY D BALOGH CGA CPA                    
+N 20180306 N L    111.87                                       AMIR MIRZA                              
+N 20180306 N L    111.87                                       GEORGETTE ARANIBAR CPA                  
+N 20180306 N L    117.46                                       LOUIS S LEVY CPA                        
+N 20180306 N P    428.27                                       EBHOTE FRANCIS IDIAKHEUA                
+N 20180306 N P    428.27                                       JANE'S INCOME TAX                       
+N 20180306 N PP   816.9                                        FRANCOEUR HOLDINGS INC                  
+N 20180306 N S    365.4                                        DAVID MELONE CFP                        
+N 20180306 N S4   619.97                                       MARYANNE LEACH MARYA BUSINESS SERVICES  
+N 20180307 N   P  148.84                                       SUSAN YOUNGHANS                         
+N 20180307 N  1   84.75                                        EASY TAX CONSULTING                     
+N 20180307 N  3   248.06                                       KEYROCK INC                             
+N 20180307 N  P   563.87                                       XIAO LEI MAO                            
+N 20180307 N E    190.97                                       ALCHEMY TAX SOLUTIONS                   
+N 20180307 N E2   360.47                                       VENANCIA CHAKABVEYO CPA CGA             
+N 20180307 N L    117.46                                       SHANNON'S BOOKKEEPING SERVICE           
+N 20180307 N P    428.27                                       EZRA H BROWN                            
+N 20180307 N P    554.4                                        DFH INVENTURE$ LTD                      
+N 20180307 N PP   879.14                                       GEORGIAN BUSINESS SOLUTIONS             
+N 20180307 N PS   822.64                                       GALLARDO & ASSOCIATES INC               
+N 20180307 N S    281.37                                       YAO SUN                                 
+N 20180307 N SS   945.64                                       JASWANT JOSSON                          
+N 20180308 N  2   169.5                                        MICHAEL W CHAN BUSINESS CONSULTING INC  
+N 20180308 N  P   563.87                                       8764425 CANADA INC                      
+N 20180308 N E    190.97                                       C NANCY BIRTCH CPA CGA CA               
+N 20180308 N E2   360.47                                       JWF PROFESSIONAL CONSULTING             
+N 20180308 N L    117.46                                       WILLIAM WINSLOW                         
+N 20180308 N LPP  828.29                                       HARRISON & PARTNERS FINANCE GROUP       
+N 20180308 N S    281.37                                       BOOKSMART ACCOUNTING & CONSULTIING SERVICES
+N 20180308 N S2   450.87                                       TAX WIZARDS                             
+N 20180308 N SP   887.5                                        ROSS IRELAND                            
+N 20180309 N  2   248.03                                       OLENA ANDRUSHCHENKO                     
+N 20180309 N E    177.45                                       CASCADE TAX SERVICES                    
+N 20180309 N E    190.97                                       JULIO SANTOS                            
+N 20180309 N E    190.97                                       KANAIYALAL PATEL                        
+N 20180309 N E    200.52                                       RSM CHARTERED PROFESSIONAL ACCOUNTANT   
+N 20180309 N L2   261.45                                       FRAN CUSTANCE                           
+N 20180309 N P1   522.1                                        VICKIE FISHER                           
+N 20180309 N S    261.45                                       MARGARET BALAK                          
+N 20180310 N  P   563.87                                       CARL NUSSEY 9456686 CANADA INC          
+N 20180310 N E    190.97                                       ACCOUNTING SOLUTIONS JG                 
+N 20180310 N E    190.97                                       CLIVE DASILVA                           
+N 20180310 N PP   1,013.61                                     CROWN TAX AND ACCOUNTING                
+N 20180310 N PP   879.14                                       C R GREENHAM CPA CGA                    
+N 20180310 N PP   920.85                                       STEPHEN CAMPBELL INC                    
+N 20180310 N SS   732.9                                        ACCOUNTING SOLUTIONS                    
+N 20180311 N  2   177.98                                       PRANAV ANAND                            
+N 20180311 N E    190.97                                       HARJIT GREWAL                           
+N 20180311 N E    190.97                                       JIA LI ACCOUNTING & TAX SERVICE         
+N 20180311 N L    111.87                                       WARREN T JACKSON                        
+N 20180311 N L    113.85                                       STONEGATE PRIVATE COUNSEL               
+N 20180312 N  5   423.75                                       MAFY CONSULTING                         
+N 20180312 N  P   523.95                                       1102592 BC LTD                          
+N 20180312 N E1   256.2                                        BG ACCOUNTING SERVICES                  
+N 20180312 N E1   275.72                                       MARY PENNER - BOOKKEEPING MADE SIMPLE   
+N 20180312 N L    111.87                                       JOSLIN'S INVESTIGATIVE ACCOUNTING INC   
+N 2018-03-12 N L    111.87                                       THE TAX GUYS                            
+N 20180312 N PP   879.14                                       TOM A TSIOKOS CPA CA CBV                
+N 20180312 N PPP  1,002.31                                     E COM CONSULTANT                        
+N 20180312 N S1   366.12                                       ALGONQUIN BOOKKEEPING                   
+N 20180312 N SP   845.24                                       DOLLARS & SENCE ACCOUNTING SERVICES     
+N 20180313 N E    190.97                                       CORINNE O'BRIEN-SALES                   
+N 20180313 N E    190.97                                       JJ'S BOOKKEEPING                        
+N 20180313 N S    295.44                                       ANTONIO BARONE                          
+N 20180313 N S    295.44                                       DAVE DUFFY                              
+N 20180313 N S    295.44                                       M & R BOOKKEEPING & TAX SERVICES        
+N 20180314 N   P  141.75                                       BRENT BOLLEMAN                          
+N 20180314 N  4   315                                          ASSET PRO SOLUTIONS INC                 
+N 20180314 N  P   563.87                                       CORRECT GROUP OF COMPANIES              
+N 20180314 N E    177.45                                       NICK OLEYNICK FINANCIAL SERVICES        
+N 20180314 N L    111.87                                       BARBARA SRIVASTAVA                      
+N 20180314 N L    111.87                                       BRIAN MAGID                             
+N 20180314 N L1   188.15                                       BRIJ PERSAUD CGA                        
+N 20180314 N S    281.37                                       MARSH TAXES                             
+N 20180315 N  1   84.75                                        ERPTEK CONSULTING INC                   
+N 20180315 N  2   169.5                                        NISHA KARKARE                           
+N 20180315 N E    177.45                                       FOURNIER BOOKKEEPING & TAX SERVICES     
+N 20180315 N E    190.97                                       A + BUSINESS SERVICES                   
+N 20180315 N E    190.97                                       GEMMA REGINIO CGA                       
+N 20180315 N EP   754.84                                       XUESONG MA                              
+N 20180315 N PP   816.9                                        JESSICA L SWEETMAN                      
+N 20180316 N   P  336.97                                       MCKECHNIE & CO                          
+N 20180316 N  P   523.95                                       RICHARD LEE LTD                         
+N 20180316 N  P   563.87                                       COMPUTAX A1 INC                         
+N 20180316 N E    177.45                                       L F NICKISCH CPA CGA                    
+N 20180316 N E    186.32                                       POWER TAX                               
+N 20180316 N E3   445.22                                       LOUIE A SMEYERS                         
+N 20180316 N EP   754.84                                       OPTIMUM BUSINESS SERVICES               
+N 20180316 N L    111.87                                       ROYAL FINANCIAL SOLUTIONS INC           
+N 20180316 N S    281.37                                       PROGRESSIVE TAX & ACCOUNTING            
+N 20180317 N E    177.45                                       BRIAN PRIES CA                          
+N 20180317 N E    190.97                                       EDWIN HALL                              
+N 20180317 N E    190.97                                       GRANT PARSON CPA                        
+N 20180317 N E2   378.49                                       ESSENTIAL BUSINESS SERVICES             
+N 20180317 N S    261.45                                       LEN MITCHELL                            
+N 20180318 N  4   339                                          MITRA WINATA CGA                        
+N 20180318 N  P   563.87                                       RAYMOND CHENG CGA                       
+N 20180318 N E    177.45                                       ESTHER PARADOSKI TAX SERVICES           
+N 20180318 N E    190.97                                       RESULTS ACCOUNTING                      
+N 20180318 N E3   445.22                                       LEEWAY TAX SERVICE INC                  
+N 20180318 N L    111.87                                       LIBERATO ZAPPITELLI                     
+N 20180318 N L    117.46                                       STEVE DORIS                             
+N 20180319 N E    190.97                                       MILA STAPELLS CMA CPA                   
+N 20180319 N E    204.07                                       JEAN ADAMS                              
+N 20180319 N E2   334.95                                       CLINT CONNER                            
+N 20180319 N L    111.87                                       PETER REGIER                            
+N 20180319 N LP   675.74                                       KP ACCOUNTING SERVICES                  
+N 20180320 N E    177.45                                       PLUTUS CONSULTING                       
+N 20180320 N E    190.97                                       KARRIE SIMMS BOOKKEEPING                
+N 20180320 N L    117.46                                       SAROJ MASEN                             
+N 20180320 N P    397.95                                       WESTERN PACIFIC INSURANCE               
+N 20180320 N PP   991.01                                       MERIDIAN BUSINESS SOLUTIONS             
+N 20180320 N S    274.52                                       BEANCOUNTERS BOOKKEEPING SERVICES LTD   
+N 20180320 N S    274.52                                       R B TAX SERVICE                         
+N 20180321 N E    190.97                                       CALTAX                                  
+N 20180321 N E    190.97                                       MARLIS TAX SERVICES                     
+N 20180321 N E2   360.47                                       GRIFFIN ACCOUNTING SERVICES             
+N 20180321 N L    103.95                                       DONNA B LAMBOO ACCOUNTING & TAX SERVICES
+N 20180321 N L    111.87                                       LAURA SNIVELY                           
+N 20180322 N  P   563.87                                       2214901 ONTARIO INC                     
+N 20180322 N  P   563.87                                       FENGHUA  ACCOUNTING & TAX SERVICES      
+N 20180322 N E    190.97                                       HAMILTON & ASSOCIATES                   
+N 20180322 N L    111.87                                       LESTER SMITH                            
+N 20180322 N P    435.85                                       BEVERLY A GALLAGHER                     
+N 20180323 N E    200.52                                       MARTIN J HERZOG                         
+N 20180323 N E    200.52                                       NOEL GORDON CPA                         
+N 20180323 N PP   894.7                                        HUBERT BURDEN CA                        
+N 20180324 N  2   169.5                                        WING HING RENOVATION CO                 
+N 20180324 N  P   563.87                                       VIJAY JOSHI                             
+N 20180324 N E    190.97                                       ENNIO FLUMIANI CPA CA                   
+N 20180324 N EP   754.84                                       KEN TAM CPA                             
+N 20180324 N L1   182.7                                        SHUYAN HEBDEN                           
+N 20180324 N PP   1,013.61                                     ROBERT B PHILLIPS TAX CONSULTANTS INC   
+N 20180324 N PP   816.9                                        JUST TAX SOLUTIONS INC                  
+N 20180325 N  1   84.75                                        L & M CORPORATION                       
+N 20180325 N  3   258.75                                       PAUL SUMMERS CPA                        
+N 20180325 N  5   423.75                                       DELIA DI BATTISTA CPA CGA               
+N 20180325 N S    295.44                                       S&I ACCOUNTING SOLUTIONS                
+N 20180326 N  1   78.75                                        AMA MANAGEMENT LTD                      
+N 20180326 N  P   523.95                                       ALAAEDDINE KADRI                        
+N 20180326 N E    190.97                                       DG CALLAGHAN                            
+N 20180326 N E    190.97                                       PS BOOKKEEPING SERVICES                 
+N 20180326 N E    200.52                                       TANVEER KHAN                            
+N 20180326 N E P  319.2                                        DONALD N PAUL                           
+N 20180326 N E4   492.45                                       BOLANLE BELLO TAX & ACCOUNTING SERVICES 
+N 20180326 N E5   614.72                                       NLN ACCOUNTING                          
+N 20180326 N EP   701.4                                        GBC INTERNATIONAL                       
+N 20180327 N   P  152.25                                       ZHS PROFESSIONAL CORP                   
+N 20180327 N  S   507.37                                       MVK TAX                                 
+N 20180327 N PP   923.1                                        ANDRIS K GUNARSONS CPA CA               
+N 20180327 N S    261.45                                       NORMS TAX PREPARATION                   
+N 20180328 N L    111.87                                       ALLAN LOISELLE                          
+N 20180328 N PP   879.14                                       TAX AND ACCOUNTING SERVICES             
+N 20180328 N PP   985.55                                       MARNEE BRACKETT CPA CA                  
+N 20180328 N S    281.37                                       ABHISHEK JANSARI                        
+N 20180328 N S    281.37                                       DOMINION ACCOUNTING & TAX SERVICES      
+N 20180329 N  1   78.75                                        LGL HOLDINGS LTD                        
+N 20180329 N  1   84.75                                        JINHUA LIU                              
+N 20180329 N E    190.97                                       ANUDEEP THIND                           
+N 20180329 N E    190.97                                       WILLIAM NETHERTON                       
+N 20180329 N L2   281.37                                       JHAMAN PERSAUD                          
+N 20180330 N E1   275.72                                       TSZ ACCOUNTING & TAX SOLUTIONS INC      
+N 20180330 N EP   701.4                                        JOAL CONSULTING INC                     
+N 20180330 N P    427.28                                       S&T ACCOUNTING & TAX SERVICES           
+N 20180330 N S    281.37                                       OLGA BAEVSKAIA                          
+N 20180401 N   P  157.07                                       IRM CONSULTING                          
+N 20180402 N  P   563.87                                       GUS CHOULI                              
+N 20180402 N E    190.97                                       0COMPUTERIZED PERSONAL SERVICES (CPS)   
+N 20180402 N L    111.87                                       SAIFEE DOCTOR                           
+N 20180402 N P    435.85                                       EDWARD TOWLE CPA CA                     
+N 20180403 N PP   879.14                                       VIRGINIA LEE NEELY CGA CPA              
+N 20180404 N E    190.97                                       SP HAMILTON BOOKKEEPING                 
+N 20180404 N E1   275.72                                       LINDSAY & ASSOCIATES                    
+N 20180404 N L    109.15                                       HOLLY BANNER                            
+N 20180404 N L    109.15                                       KIMM'S BUSINESS SERVICES                
+N 20180405 N E2   360.47                                       JOHN FOGLIETTA PROFESSIONAL CORP        
+N 20180406 N  2   165.38                                       HELMM BUSINESS SERVICES                 
+N 20180406 N E    190.97                                       CINDY LIU                               
+N 20180406 N E    190.97                                       IAN DRUMMOND CPA CMA                    
+N 20180406 N E P  360.7                                        JEFF ALBIN                              
+N 20180409 N E    177.45                                       DIGITS BOOKKEEPING SERVICES             
+N 20180409 N E    190.97                                       MURRAY HENDERSON                        
+N 20180409 N E2   360.47                                       IVAN F MATSALLA                         
+N 20180409 N L    111.87                                       TAX OPTIONS                             
+N 20180409 N PP   816.9                                        THOMAS HARMON                           
+N 20180410 N E    190.97                                       LLOYD WALLEN                            
+N 20180410 N L    103.95                                       KHALID M CHOUDHRY                       
+N 20180410 N L    111.87                                       NELSON'S ACCOUNTING                     
+N 20180411 N  P   523.95                                       WY ACCOUNTING                           
+N 20180412 N L    117.46                                       WARREN PATTERSON                        
+N 20180413 N E    177.45                                       ALEJANDRA ALMEIDA                       
+N 20180413 N E    190.97                                       DEBITS & CREDITS                        
+N 20180413 N L    109.15                                       ZR TAN & ASSOCIATES                     
+N 20180413 N L    111.87                                       LAURA CAVAZZON                          
+N 20180415 N E    190.97                                       JDT ACCOUNTING & TAX SERVICES           
+N 20180415 N L1   196.62                                       ANNA KHOMENKO                           
+N 20180416 N E2   334.95                                       BARRY &  ASSOCIATES                     
+N 20180417 N E    194.35                                       TONY DINGWELL CPA                       
+N 20180417 N E2   360.47                                       544869 ONTARIO LTD                      
+N 20180417 N L    113.85                                       DAVID ALEXANDER SMITH                   
+N 20180418 N  2   172.5                                        CONTOURS LTD                            
+N 20180419 N   P  148.84                                       JAMES McKILLOP                          
+N 20180419 N  P   732.24                                       MCKAY'S TAX & BOOKKEEPING SERVICES      
+N 20180420 N P    428.27                                       SK SINGH CPA CMA                        
+N 20180420 N PP   879.14                                       OUTSOURCED PROFESSIONALS.COM INC        
+N 20180421 N E    177.45                                       GARRY G BOAK CPA CGA                    
+N 20180424 N  3   254.25                                       GARY SAGE                               
+N 20180425 N  1   88.99                                        MARTA LIVELLARA                         
+N 20180426 N L    230.74                                       EFCC ACCOUNTING SYSTEMS CORP            
+N 20180428 N  1   78.75                                        BANG CHIEM & ASSOCIATES                 
+N 20180428 N  2   157.5                                        SULAIMAN OSENI                          
+N 20180429 N E    190.97                                       ROHIT JAIN                              
+N 20180430 N  S   507.37                                       JOSEPH LEE                              
+N 20180503 N S    274.52                                       JAY CHAUDHARY                           
+N 20180504 N  P   523.95                                       ARMIER BOOKKEEPING                      
+N 20180506 N  1   78.75                                        NAND THAKKAR                            
+N 20180508 N  1   84.75                                        DAVID PANG                              
+N 20180510 N L2   281.37                                       RAY O FOURNIER TAX ACCOUNTANT           
+N 20180511 N E    190.97                                       MAC FINANCIAL SERVICES                  
+N 20180516 N  1   76.28                                        CASH SHOP 16 - KEELE 2106674 ON INC     
+N 20180516 N  1   84.75                                        DALE MOYSE BOOKKEEPING                  
+N 20180516 N  P   563.87                                       KRM INTERNATIONAL INVESTMENT INC        
+N 20180519 N  1   78.75                                        RON CRAWFORD                            
+N 20180519 N E    190.97                                       LISA CEFARATTI CA                       
+N 20180521 N E    200.52                                       PRO TAX AND BUSINESS SERVICES           
+N 20180522 N  1   86.25                                        AMANDA HIRTLE                           
+N 20180528 N  1   88.99                                        LINDA MIGLIACCIO CPA, CGA               
+N 20180529 N  1   88.99                                        1916919 ONTARIO INC                     
+N 20180529 N  P   592.06                                       ACCUTYPE BUSINESS SOLUTIONS             
+N 20180530 N  1   82.69                                        MODERN RESOURCES INC                    
+N 20180531 N   P  160.18                                       MICHAEL DEBRINCAT                       
+N 20180605 N  2   169.5                                        HEMA SHAH                               
+N 20180605 N  3   157.5                                        BIZMAX TAX CONSULTING                   
+N 20180605 N  4   345                                          KELLY A RICHARD BOOKKEEPING SERVICES LTD
+N 20180605 N  P   563.87                                       MATTHEWS AND ASSOCIATES                 
+N 20180606 N  3   271.69                                       ROGER DUBE                              
+N 20180607 N  2   169.5                                        IHSAN KHAN                              
+N 20180607 N E    190.97                                       VIA TAX & ACCOUNTING SERVICES           
+N 20180609 N  3   236.25                                       BRYDEC HOLDINGS INC                     
+N 20180610 N  1   82.69                                        JOHNSON NG                              
+N 20180611 N  1   78.75                                        BRENDA KOBLEY PROFESSIONAL CORP         
+N 20180611	 N  P   521.21                                       CAROLE BELANGER                         
+N 20180613 N  1   84.75                                        CONCEPT TO LIFE SOLUTIONS INC           
+N 20180613 N  1   84.75                                        Li TAX & ACCOUNTING CENTRE              
+N 20180613 N  2   157.5                                        TRANS-CANADA AUDIT CORP                 
+N 20180613 N  P   563.87                                       LOUIS MARCHESE CPA CGA                  
+N 20180614 N  1   78.75                                        NANCY MURRAY                            
+N 20180615 N  2   177.98                                       TRIPP LITE OF CANADA CORPORATION        
+N 20180616 N  4   339                                          RM TAX SERVICES                         
+N 20180617 N  1   88.99                                        BECKY CHAN CPA CGA                      
+N 20180620 N  1   84.75                                        AUGUST SALES LTD                        
+N 20180621 N  1   78.75                                        DAVE CANDY ACCOUNTING                   
+N 20180621 N  2   169.5                                        DAVID GNAM CPA CGA LLB                  
+N 20180621 N  P   523.95                                       DONNA-JOY TUPLIN                        
+N 20180623 N  1   82.69                                        LOTHIAN FINANCIAL LTD                   
+N 20180624 N  P   550.15                                       PROPERTY CONSULTING CORPORATION         
+N 20180624 N  P   563.87                                       JOHN E HOLT CPA CGA                     
+N 20180625 N  1   84.75                                        RDFOSTY ACCOUNTING SERVICES             
+N 20180625 N  2   165.38                                       BILL CAMPBELL                           
+N 20180625 N  2   165.38                                       OSVALDO IADAROLA                        
+N 20180627 N  4   339                                          DAVID HIGGINS                           
+N 20180627 N  P   523.95                                       NATIONAL ACCOUNTING                     
+N 20180628 N  2   169.5                                        AAA HARDWOOD FLOORING INC               
+N 20180628 N  P   523.95                                       KANWAL INCOME TAX                       
+N 20180703 N  P   592.06                                       BASDEO KEVIN RAMSAHOYE                  
+N 20180709 N  1   84.75                                        TERESA EMINOWICZ                        
+N 20180712 N  1   84.75                                        CONROY FINANCIAL SERVICES               
+N 20180714 N  1   84.75                                        TADEUSZ M PLAWINSKI                     
+N 20180816 N      176.79                                       VON CANADA                              
+N 20180820 N  2   169.5                                        ANNETTE GODZIEK                         
+N 20180821 N  2   169.5                                        ROBERT BOLER                            
+N 20180829 N  1   84.75                                        CLIFF NORTH INC                         
+N 20180909 N  S   507.37                                       GS CORP                                 
+N 20180910 N  1   84.75                                        YUANXIA GAO                             
+N 20180913 N  2   157.5                                        664732 BC LTD CASH ADVANTAGE            
+N 20180917 N E    177.45                                       XOM ACCOUNTING SERVICES                 
+N 20180920 N  P   675.74                                       HAMLET BENYAMEN                         
+N 20180922 N  3   266.96                                       JAMES BANGHART CPA CMA                  
+N 20180924 N  4   315                                          YUSUF NURDIN                            
+N 20180929 N  3   254.25                                       ISFAHAN CADER (CFTC)                    
+N 2018-10-10 N  1   78.75                                        1938585 Alberta Inc.                    
+N 2018-10-17 N L    117.46                                       BHUPINDER SINGH                         
+N 2018-10-18 N  3   254.25                                       KSBSOFT Inc.                            
+N 20181020 N   P  148.84                                       RAY BARNES CPA                          
+N 2018126 N PPP  1,248.65                                     DISIMINO & MAZZA LLP                    
+N 20189213 N PP   816.9                                        JS CONSULTANTS INC                      
+Paid previous year but not this year
+Y 201-0422 Y  2   165.38                                       DIANE WALTON                            
+Y 20171122 Y  P   563.87                                       GREEN FORTUNE ACCOUNTING                
+Y 20171122 Y PP   923.1                                        TENNECO CANADA  INC                     
+Y 20171124 Y E    302.84                                       GEMTERRA DEVELOPMENTS CORPORATION       
+Y 20171214 Y  1   84.75                                        JAMIL NOWWARAH                          
+Y 20171214 Y  1   88.99                                        PETER BARTLETT                          
+Y 20171214 Y PP   879.14                                       MNI TAXATION & FRAUD INVESTIGATION SERVICES
+Y 20171217 Y P    428.27                                       CASH LAND                               
+Y 20171217 Y PPP  1,046.27                                     GD BUSINESS CONSULTING INC              
+Y 20171231 Y PP   1,125.48                                     VISHWA SHARMA PROFESSIONAL CORPORATION  
+Y 20180102 Y PP   968.41                                       CANLIFE BUSINESS SOLUTIONS              
+Y 20180105 Y  P   563.87                                       2604800 ONTARIO CORPORATION             
+Y 20180108 Y P    428.27                                       JNVILLAVERDE CONSULTING                 
+Y 20180112 Y  1   82.69                                        RLS SERVICES INC                        
+Y 20180112 Y  P   563.87                                       EASYLIFE FINANCIAL INC                  
+Y 20180115 Y PP   879.14                                       XI ZHANG                                
+Y 20180117 Y E2   360.47                                       A&C ACCOUNTING SOLUTIONS LTD            
+Y 20180118 Y SP   824.67                                       MICHELLE SMITH                          
+Y 20180120 Y E    190.97                                       ROB MURRAY                              
+Y 20180127 Y E    190.97                                       ANIL KUMAR EPPAKAYALA                   
+Y 20180127 Y S    274.52                                       TAXRMB2 LTD                             
+Y 20180128 Y E2   334.95                                       LORETTA CZARNOTA O-A ESSENCE ACCOUNTING SERVICES
+Y 20180129 Y PP   939.44                                       KIM JONES                               
+Y 20180129 Y S    261.45                                       L MITHRUSH                              
+Y 20180129 Y S    393.24                                       DILPREET JUNEJA                         
+Y 20180129 Y S2   432.02                                       YONG XIA DUAN                           
+Y 20180131 Y S    393.24                                       CHERYL MAXWELL                          
+Y 20180202 Y  1   78.75                                        CANADIAN BUSINESS ADVISORS LTD          
+Y 20180202 Y  1   90.56                                        NASHWAAK WATERSHED ASSOCIATION INC      
+Y 20180207 Y E    190.97                                       DAWN RUMBLE                             
+Y 20180207 Y L    234.93                                       BRIJESH RANA                            
+Y 20180209 Y E    190.97                                       RUIZHEN QIAN                            
+Y 20180214 Y PP   879.14                                       CRACCOUNTING & TAXATION SRVICES CORPORATION
+Y 20180216 Y P    449.68                                       FRANCESCA DE FAZIO                      
+Y 20180218 Y E5   614.72                                       AR ACCOUNTING & TAX SERVICES            
+Y 20180221 Y      157.07                                       DAYMAK INC                              
+Y 20180221 Y P    397.95                                       THE ACCOUNTABLES                        
+Y 20180221 Y S    281.37                                       BARBARA FONTAINE                        
+Y 20180223 Y   P  152.55                                       LDA INCOME TAX BOOKKEEPING              
+Y 20180225 Y  1   84.75                                        MAHMOOD TARIQ                           
+Y 20180225 Y E    190.97                                       SAKIDAR CHARTERED PROFESSIONAL ACCOUNTANT
+Y 20180227 Y S    295.44                                       MARITES LEAL                            
+Y 20180301 Y P1P  773.6                                        2335429 ONTARIO INC                     
+Y 20180301 Y PP   879.14                                       TOPNOTCH ACCOUNTING & FINANCIAL SERVICES
+Y 20180302 Y PP   816.9                                        RAMAN SMAGH CPA PROFESSIONAL CORPORATION
+Y 20180303 Y E4   517.07                                       JOHN ARIENZALE                          
+Y 20180305 Y E    177.45                                       LT TAX & ACCOUNTING SERVICES            
+Y 20180307 Y      156.45                                       OPTIMUM WELLNESS CENTRES INC            
+Y 20180307 Y PP   944.84                                       LEAVE IT TO LISA BOOKKEEPING SERVICES   
+Y 20180309 Y  1   84.75                                        VP FINANCIAL GROUP                      
+Y 20180309 Y PP   985.55                                       SCENIC VIEW FINANCIAL                   
+Y 20180311 Y E    200.52                                       COLLEEN'S BOOKKEEPING SERVICES          
+Y 2018-03-11 Y L    103.95                                       MB                                      
+Y 20180316 Y   P  141.75                                       CATHY GOETZ                             
+Y 20180317 Y L    117.46                                       SUBHASISH DUTTA                         
+Y 20180318 Y E    200.52                                       KEPTON MCKENZIE                         
+Y 20180319 Y E    302.87                                       ALI HAIDER                              
+Y 20180320 Y E    200.52                                       TBL FINANCIAL                           
+Y 20180320 Y S    295.44                                       AJIT KUMAR CHARTERED PROFESSIONAL ACCOUNTANT
+Y 20180321 Y   P  152.55                                       2542326 ONTARIO INC                     
+Y 20180326 Y L    103.95                                       NIAGARA FRONTIER TAX PLANNING           
+Y 20180328 Y   P  152.55                                       KURT LETAIN CPA, CA                     
+Y 20180413 Y  1   191.84                                       DBDB CONSULTING INC                     
+Y 20180420 Y  2   177.98                                       KARMA  HIMALAYAN KITCHEN                
+Y 20180420 Y PP   449.68                                       DIMAR FINANCIAL LTD                     
+Y 20180427 Y  1   88.99                                        SUSAN GIRVAN                            
+Y 20180428 Y  P   659.3                                        JAMES SHYMKO                            
+Y 20180501 Y   P  160.18                                       JACK MCLOUGHLIN CPA CA MCLOUGHLIN CONSULTING
+Y 20180511 Y  P   593.25                                       MINDER PROFESSIONAL CONDOS INC          
+Y 20180529 Y  P   664.7                                        TWYLA JENSEN                            
+Y 20180611 Y S    393.24                                       MAHENDRA                                
+Y 20180629 Y  1   88.99                                        AVI KAMATH                              
+Y 20180726 Y  4   355.95                                       CITION CORPORATION                      
+Y 20180817 Y  1   84.75                                        CRYTAL TAX SOLUTIONS                    
+Y 20180823 Y  2   281.37                                       MANOJ HARPALANI                         
+Y 20180908 Y  1   82.69                                        BRIAN ROSSER                            
+Y 20180911 Y  2   169.5                                        C GORDON WILLIAMS CPA CA                

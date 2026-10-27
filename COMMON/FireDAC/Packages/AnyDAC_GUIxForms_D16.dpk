@@ -1,0 +1,86 @@
+package AnyDAC_GUIxForms_D16;
+
+{$IFDEF MSWINDOWS}
+  {$R *.res}
+{$ENDIF}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'da-soft AnyDAC GUIx Forms Package for Delphi XE2'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+{$I uAD.inc}
+
+requires
+  rtl,
+  dbrtl,
+{$IFDEF MSWINDOWS}
+  vcl,
+  vclx,
+  vcldb,
+{$ENDIF}
+{$IFDEF AnyDAC_FMX}
+  fmx,
+{$ENDIF}
+{$IFDEF AnyDAC_SynEdit}
+  SynEdit_RXE2,
+{$ENDIF}
+  AnyDAC_ComI_D16,
+  AnyDAC_Comp_D16;
+
+contains
+{$IFDEF AnyDAC_FMX}
+  uADGUIxFMXfAsync,  
+  uADGUIxFMXfError,
+  uADGUIxFMXfLogin,
+  uADGUIxFMXfOptsBase,
+  uADGUIxFMXfScript,
+  uADGUIxFMXWait,
+{$ENDIF}
+{$IFDEF MSWINDOWS}
+  uADGUIxFormsfAbout,
+  uADGUIxFormsControls,
+  uADGUIxFormsfAsync,
+  uADGUIxFormsfConnEdit,
+  uADGUIxFormsfError,
+  uADGUIxFormsfFetchOptions,
+  uADGUIxFormsfFields,
+  uADGUIxFormsfFormatOptions,
+  uADGUIxFormsfLogin,
+  uADGUIxFormsfOptsBase,
+  uADGUIxFormsfQEdit,
+  uADGUIxFormsfResourceOptions,
+  uADGUIxFormsfScript,
+  uADGUIxFormsfUpdateOptions,
+  uADGUIxFormsfUSEdit,
+  uADGUIxFormsMemo,
+  uADGUIxFormsfDesignTimeOptions,
+  uADGUIxFormsWait,
+{$ENDIF}
+  uADGUIxConsoleWait,
+  uADGUIxConsoleScript,
+  uADGUIxManager;
+
+end.

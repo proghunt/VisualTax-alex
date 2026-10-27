@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Description: CRA Frrms Web Services - T2 forms
+Type (Request or Response): Response
+Version: 1-0-0
+Date created:
+Contact:
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:t2nrsp="http://www.cra-arc.gc.ca/xmlns/t2nrsp/t2frrmsresponse/1-0-0"
+	xmlns:t1rsp="http://www.cra-arc.gc.ca/xmlns/t1rsp/response/1-0-0"
+	xmlns:t2ersp="http://www.cra-arc.gc.ca/xmlns/t2ersp/t2efilefrrmsresponse/1-0-0"
+    xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+    targetNamespace="http://www.cra-arc.gc.ca/xmlns/t2nrsp/t2frrmsresponse/1-0-0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="t2nrsp/1-0-0">
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" schemaLocation="standarddatatypes.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/t1rsp/response/1-0-0" schemaLocation="t1wsresponse.xsd"/>
+	<xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/t2ersp/t2efilefrrmsresponse/1-0-0" schemaLocation="t2efilefrrmsresponse.xsd"/>
+	
+    <xsd:element name="T2TermsAndConditionsResponse" type="t1rsp:TermsAndConditionsResponseType"/>
+    	
+	<xsd:element name="T2NetfileReturnResponse" type="t2nrsp:T2NetfileReturnResponseType"/>
+	<xsd:complexType name="T2NetfileReturnResponseType">
+        <xsd:sequence>
+            <xsd:element ref="t2ersp:T2ResultCode" minOccurs="0"/>
+            <xsd:element ref="t2ersp:T2TransmissionNumber" minOccurs="0"/>
+            <xsd:element ref="t2ersp:CorporationName" minOccurs="0"/>
+            <xsd:element ref="t2ersp:BusinessNumber" minOccurs="0"/>
+            <xsd:element ref="t2ersp:TaxYear" minOccurs="0"/>
+            <xsd:element ref="t1rsp:FileReturnResponse"/>
+            <xsd:element ref="t2ersp:TimeStamp" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+</xsd:schema>

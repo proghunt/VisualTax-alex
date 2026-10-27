@@ -1,0 +1,167 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{ca63b9cf-39c0-4556-b2dc-44a92024def5}</ProjectGuid>
+			<MainSource>AnyDAC_PhysTDBX_D15.dpk</MainSource>
+			<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+			<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Documents\RAD Studio\8.0\Bpl\AnyDAC_PhysTDBX_D15.bpl</DCC_DependencyCheckOutputName>
+			<ProjectVersion>12.2</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Base>True</Base>
+			<Platform>Win32</Platform>
+			<AppType>Package</AppType>
+			<FrameworkType>None</FrameworkType>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_Release)'!=''">
+			<Cfg_Release>true</Cfg_Release>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_Debug)'!=''">
+			<Cfg_Debug>true</Cfg_Debug>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+			<DCC_IMPLICIT_STRING_CAST_LOSS>true</DCC_IMPLICIT_STRING_CAST_LOSS>
+			<DCC_EXPLICIT_STRING_CAST_LOSS>true</DCC_EXPLICIT_STRING_CAST_LOSS>
+			<DCC_IMPLICIT_STRING_CAST>true</DCC_IMPLICIT_STRING_CAST>
+			<DCC_CVT_WIDENING_STRING_LOST>true</DCC_CVT_WIDENING_STRING_LOST>
+			<DCC_CVT_ACHAR_TO_WCHAR>true</DCC_CVT_ACHAR_TO_WCHAR>
+			<DCC_CVT_WCHAR_TO_ACHAR>true</DCC_CVT_WCHAR_TO_ACHAR>
+			<DCC_EXPLICIT_STRING_CAST>true</DCC_EXPLICIT_STRING_CAST>
+			<DCC_CVT_NARROWING_STRING_LOST>true</DCC_CVT_NARROWING_STRING_LOST>
+			<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+			<DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Documents\RAD Studio\8.0\Bpl\AnyDAC_PhysTDBX_D15.bpl</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_RangeChecking>true</DCC_RangeChecking>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_Description>da-soft AnyDAC Phys TDBX Package for Delphi XE</DCC_Description>
+			<DCC_IntegerOverflowCheck>true</DCC_IntegerOverflowCheck>
+			<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+			<GenDll>true</GenDll>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+			<GenPackage>true</GenPackage>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+			<Version>7.0</Version>
+			<DCC_DebugInformation>False</DCC_DebugInformation>
+			<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+			<DCC_Optimize>False</DCC_Optimize>
+			<DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+			<DCC_RangeChecking>True</DCC_RangeChecking>
+			<DCC_GenerateStackFrames>True</DCC_GenerateStackFrames>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;..\;..\DbxOpenODBC</DCC_UnitSearchPath>
+			<DCC_ResourcePath>$(DELPHI)\Lib\Debug;..\;..\DbxOpenODBC</DCC_ResourcePath>
+			<DCC_ObjPath>$(DELPHI)\Lib\Debug;..\;..\DbxOpenODBC</DCC_ObjPath>
+			<DCC_IncludePath>$(DELPHI)\Lib\Debug;..\;..\DbxOpenODBC</DCC_IncludePath>
+			<DCC_Define>RELEASE</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+			<Version>7.0</Version>
+			<DCC_Optimize>False</DCC_Optimize>
+			<DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+			<DCC_RangeChecking>True</DCC_RangeChecking>
+			<DCC_GenerateStackFrames>True</DCC_GenerateStackFrames>
+			<DCC_UnitSearchPath>$(DELPHI)\Lib\Debug</DCC_UnitSearchPath>
+			<DCC_ResourcePath>$(DELPHI)\Lib\Debug</DCC_ResourcePath>
+			<DCC_ObjPath>$(DELPHI)\Lib\Debug</DCC_ObjPath>
+			<DCC_IncludePath>$(DELPHI)\Lib\Debug</DCC_IncludePath>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="AnyDAC_PhysTDBX_D15.dpk">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="rtl.dcp"/>
+			<DCCReference Include="dbrtl.dcp"/>
+			<DCCReference Include="dbexpress.dcp"/>
+			<DCCReference Include="dsnap.dcp"/>
+			<DCCReference Include="AnyDAC_ComI_D15.dcp"/>
+			<DCCReference Include="AnyDAC_Phys_D15.dcp"/>
+			<DCCReference Include="DBXSybaseASADriver.dcp"/>
+			<DCCReference Include="DBXSybaseASEDriver.dcp"/>
+			<DCCReference Include="DBXOracleDriver.dcp"/>
+			<DCCReference Include="DBXMSSQLDriver.dcp"/>
+			<DCCReference Include="DBXInformixDriver.dcp"/>
+			<DCCReference Include="DBXDb2Driver.dcp"/>
+			<DCCReference Include="DBXFirebirdDriver.dcp"/>
+			<DCCReference Include="DbxClientDriver.dcp"/>
+			<DCCReference Include="DBXInterBaseDriver.dcp"/>
+			<DCCReference Include="DBXMySQLDriver.dcp"/>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_Release</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_Debug</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>Package</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Compiler>
+						<Compiler Name="UsePackages">False</Compiler>
+						<Compiler Name="Packages"/>
+					</Compiler>
+					<Parameters>
+						<Parameters Name="HostApplication">C:\Program Files\Borland\Delphi7\Bin\delphi32.exe</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">8</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">5</VersionInfo>
+						<VersionInfo Name="Build">3365</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1033</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Embarcadero</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">AnyDAC Phys TDBX Package for Delphi XE</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">8.0.5.3365</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">PhysTDBX</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright">Copyright Embarcadero Technologies 2004-2013</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">AnyDAC</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">8.0.5.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments">http://www.embarcadero.com/products/rad-studio/firedac</VersionInfoKeys>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcboffice2k150.bpl">bcboffice2k150</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcbofficexp150.bpl">bcbofficexp150</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k150.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp150.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+					<Source>
+						<Source Name="MainSource">AnyDAC_PhysTDBX_D15.dpk</Source>
+					</Source>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

@@ -1,0 +1,19 @@
+PAGE_1   001 003 006 PRV RESIDENCE (destFrm,DestElm,SourceFrm,SourcElm)
+PAGE_1   002 003 003 first
+PAGE_1   003 003 001 sin
+PAGE_1   004 003 008 sp sin
+PAGE_1   005 003 004 last
+PAGE_1   006 005 001 street
+PAGE_1   007 003 010 day
+PAGE_1   008 003 011 mo
+PAGE_1   009 003 012 year
+PAGE_1   010 005 002 city
+PAGE_1   011 003 005 mar status       convert
+PAGE_1   014 005 003 province addr
+PAGE_1   015 005 004 postal           first part of postal
+PAGE_1   015 005 005 postal           second part of postal
+PAGE_1   020 003 009 spouse name
+PAGE_1   022 003 019 dd - deceased
+PAGE_1   023 003 020 mm - deceased
+PAGE_1   024 003 021 yy - deceased     add 19-
+

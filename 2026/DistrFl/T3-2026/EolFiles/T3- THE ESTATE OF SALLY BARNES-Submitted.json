@@ -1,0 +1,304 @@
+{
+  "header":  
+  {
+    "trustNumber":"A00000322",
+    "softwareId":"064",
+    "softwareRevisionDate":"2025-02-01",
+    "firstTimeFilerIndicator":false,
+    "additionalTaxReturnIndicator":false,
+    "testCaseIdentifier":    1031,
+    "originatingIp":"0.0.0.0",
+    "taxProfessionalData":    
+    {
+      "transmitterEFilerNumber":"B0865",
+      "passwordId":"767AJ5X",
+      "taxPreparerEfilerNumber":"B0865",
+      "taxPreparerEfilerPassword":"767AJ5X",
+      "taxPreparerReturnControlNumber":"24141744",
+      "taxPreparerAuthorizationIndicator":true,
+      "taxPreparerAuthorizationExpiryDate":"2026-01-13",
+      "taxPreparerPreAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "taxPreparerPostAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "representativeId":"JL3R2RC",
+      "t183ElectronicSignature":      
+      {
+        "t183ElectronicSignatureIndicator":true,
+        "t183ElectronicSignatureDate":"2026-01-13",
+        "t183ElectronicSignatureTime":"12:41:30"      
+      }    
+    }  
+  },
+  "trustIdentification":  
+  {
+    "trustIdentifier":    
+    {
+      "countryOfResidence":"CAN",
+      "provinceOfResidence":"ON",
+      "trustName":"THE ESTATE OF SALLY BARNES",
+      "trustAccountNumber":"A00000322"    
+    },
+    "primaryTrusteeContactInformation":    
+    {
+      "trusteeNameChangeIndicator":false,
+      "isNonIndividualIndicator":true,
+      "nonIndividualTrusteeContactInformation":      
+      {
+        "nonIndividualName":"FREE SPIRITS CPCA",
+        "contactPerson":        
+        {
+          "firstName":"LYSSA",
+          "lastName":"WONG"        
+        },
+        "address":        
+        {
+          "addressLineOne":"4 CHERRY ST",
+          "city":"LONDON",
+          "provinceTerritoryState":"ON",
+          "globalPostalZipCode":"N6H1Y6",
+          "country":"CAN"        
+        },
+        "telephoneNumber":        
+        {
+          "countryCode":"1",
+          "areaCode":"519",
+          "localNumber":"8719934"        
+        }      
+      }    
+    },
+    "trustResidencyInformation":    
+    {
+      "trustDeemedCanadianResidentIndicator":false,
+      "languageOfCorrespondence":"ENGLISH"    
+    }  
+  },
+  "trustTypeInformation":  
+  {
+    "trustType":"TYPE_903",
+    "testatorDeathDate":"2023-02-01",
+    "deceasedSocialInsuranceNumber":"870035524"  
+  },
+  "filingInformation":  
+  {
+    "trustFiscalPeriodStart":"2024-02-02",
+    "trustFiscalPeriodEnd":"2025-02-01",
+    "firstYearFilingIndicator":false,
+    "previousFilingYear":    2024,
+    "trustFinalReturnIndicator":false  
+  },
+  "foreignPropertyInExcessOf100000":false,
+  "otherInformation":  
+  {
+    "electingTrustIndicator":false,
+    "trustIncomePaymentToBeneficiariesRequired":false,
+    "trustDistributedNonCashAssetsToBeneficiary":false,
+    "trustBeneficiariesChanged":false,
+    "trustDeemedDispositionBeneficiaryDeathIndicator":false,
+    "trustNonArmsLengthDebtTransactionIndicator":false,
+    "trustCapitalIncomeInterestOwnershipChangeIndicator":false,
+    "trustHoldsSharesInPrivateCorporation":false,
+    "trustAdditionalContributionPropertyReceiptIndicator":false,
+    "publicTrust":false,
+    "trustUsedInternationalFinancialReportingStandards":false,
+    "trustLossRestrictionEventIndicator":false,
+    "assetsHeldListedUnderParagraph150NotExceeding50kIndicator":true,
+    "trustRequiredToHoldFundsUnderRelevantRulesIndicator":true,
+    "interestOrFinancingExpensesIndicator":false,
+    "unitTrustUnderSubSection108Indicator":false,
+    "trustWhichAllUnitsListedOnStockExchangeIndicator":false,
+    "trustMeetConditionsInParagraph150Indicator":true,
+    "propertyForSpecifiedPurposeIndicator":true,
+    "indigenousGroupsIndicator":false  
+  },
+  "memoIndicators":  
+  {
+    "alterEgoIndicator":false,
+    "preferredBeneficiaryIndicator":false,
+    "mutualFundReorganizatonIndicator":false,
+    "mutualFundExtensionApprovalIndicator":false,
+    "insuranceSegregatedFundReorganizationIndicator":false,
+    "insuranceSegregatedFundExtensionApprovalIndicator":false,
+    "mutualFundElectingDec15FPEIndicator":false  
+  },
+  "returnLines":  
+  [
+    {
+      "fieldCode":"03",
+      "fieldValue":      70000    
+    },
+    {
+      "fieldCode":"07",
+      "fieldValue":      56000    
+    },
+    {
+      "fieldCode":"20",
+      "fieldValue":      126000    
+    },
+    {
+      "fieldCode":"40",
+      "fieldValue":      650    
+    },
+    {
+      "fieldCode":"49",
+      "fieldValue":      10500    
+    },
+    {
+      "fieldCode":"50",
+      "fieldValue":      135850    
+    },
+    {
+      "fieldCode":"56",
+      "fieldValue":      135850    
+    },
+    {
+      "fieldCode":"81",
+      "fieldValue":18298.02    
+    },
+    {
+      "fieldCode":"82",
+      "fieldValue":10775.19    
+    },
+    {
+      "fieldCode":"84",
+      "fieldValue":29073.21    
+    },
+    {
+      "fieldCode":"91",
+      "fieldValue":260.59    
+    },
+    {
+      "fieldCode":"94",
+      "fieldValue":28812.62    
+    },
+    {
+      "fieldCode":"97",
+      "fieldValue":      85000    
+    },
+    {
+      "fieldCode":"920",
+      "fieldValue":60.59    
+    },
+    {
+      "fieldCode":"922",
+      "fieldValue":200    
+    },
+    {
+      "fieldCode":"8110",
+      "fieldValue":      70000    
+    },
+    {
+      "fieldCode":"11080",
+      "fieldValue":25567.25    
+    },
+    {
+      "fieldCode":"11109",
+      "fieldValue":7269.23    
+    },
+    {
+      "fieldCode":"67061",
+      "fieldValue":      29000    
+    },
+    {
+      "fieldCode":"67063",
+      "fieldValue":      26465    
+    },
+    {
+      "fieldCode":"13401",
+      "fieldValue":10866.46    
+    },
+    {
+      "fieldCode":"13410",
+      "fieldValue":2312.7    
+    },
+    {
+      "fieldCode":"13415",
+      "fieldValue":2403.97    
+    }  
+  ],
+  "refundCode":"ISSUE_OVERPAYMENT_00",
+  "t2042Submissions":  
+  [
+    {
+      "fullName":"SALLY BARNES",
+      "socialInsuranceNumber":"870035524",
+      "farmName":"WYFFELS",
+      "businessAddress":      
+      {
+        "streetAddress":"11 MOLLY ACRES ROAD",
+        "city":"MIDLAND",
+        "province":"ON",
+        "postalCode":"L4R3V1"      
+      },
+      "businessAccountNumber":"123456789RT0001",
+      "fiscalPeriodStart":"2024-02-02",
+      "fiscalPeriodEnd":"2025-02-01",
+      "lastYearOfFarmingIndicator":false,
+      "mainProductOrService":"Corn Farming",
+      "naicsCode":"111150",
+      "accountingMethodType":"ACCRUAL",
+      "partnershipPercent":      100,
+      "returnLines":      
+      [
+        {
+          "fieldCode":"9375",
+          "fieldValue":          84939        
+        },
+        {
+          "fieldCode":"9600",
+          "fieldValue":          61        
+        },
+        {
+          "fieldCode":"9659",
+          "fieldValue":          85000        
+        },
+        {
+          "fieldCode":"9662",
+          "fieldValue":          9000        
+        },
+        {
+          "fieldCode":"9663",
+          "fieldValue":          6000        
+        },
+        {
+          "fieldCode":"9664",
+          "fieldValue":          1000        
+        },
+        {
+          "fieldCode":"9760",
+          "fieldValue":          5000        
+        },
+        {
+          "fieldCode":"9764",
+          "fieldValue":          2400        
+        },
+        {
+          "fieldCode":"9795",
+          "fieldValue":          3000        
+        },
+        {
+          "fieldCode":"9799",
+          "fieldValue":          400        
+        },
+        {
+          "fieldCode":"9802",
+          "fieldValue":          600        
+        },
+        {
+          "fieldCode":"9804",
+          "fieldValue":          1600        
+        },
+        {
+          "fieldCode":"9898",
+          "fieldValue":          29000        
+        },
+        {
+          "fieldCode":"9899",
+          "fieldValue":          56000        
+        },
+        {
+          "fieldCode":"9946",
+          "fieldValue":          56000        
+        }      
+      ]    
+    }  
+  ]
+}

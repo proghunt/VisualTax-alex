@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>VisualTax !invoiceNum!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="66%"><strong><font size="3">MICROSOPHIC INC.</font></strong></td>
+    <td width="34%" colspan="2"> <div align="right"><font size="3"><strong>
+        !invoiceNum!<br>
+        </strong></font></div>
+  <tr>
+    <td><font color="1" size="2">5225 Orbitor DR. Unit 14</font></td>
+    <td width="34%" colspan="2"><div align="right"><font size="2"><strong>Date:
+        !Date!</strong></font></div></tr>
+  <tr>
+    <td><font color="1" size="2">Mississauga, ON</font></td>
+    <td width="34%" colspan="2">&nbsp;</tr>
+  <tr>
+    <td><font color="1" size="2">L4W 4Y8</font></td>
+    <td width="34%" colspan="2">&nbsp;</tr>
+  <tr> 
+    <td><font color="1" size="2">Tel: (905) 238-6159 Fax: (905) 625-9384</font></td>
+    <td width="34%" colspan="2">&nbsp;</tr>
+  <tr> 
+    <td><font color="1" size="2">Internet Site: <a href="http://www.visualtax.com" 
+
+target="_blank">www.visualtax.com</a></font></td>
+    <td width="34%" colspan="2">&nbsp;</tr>
+  <tr> 
+    <td><font color="1" size="2">Internet Email: <a 
+
+href="mailto:visualtax@sympatico.ca">visualtax@sympatico.ca</a></font></td>
+    <td width="34%" colspan="2">&nbsp;</tr>
+</table>
+<br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr> 
+    <td width="5%"><strong><font size="2">T0:</font></strong></td>
+    <td width="95%"><strong><font size="2">!customerName!</font></strong></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td><font size="2">!customerAddress!</font></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td><font size="2">!customerProv!</font></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td><font size="2">!customerPostal!</font></td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#999999">
+  <tr> 
+    <td><div align="center"><strong><font size="2">ITEM</font></strong></div></td>
+    <td><div align="center"><strong><font size="2">DESCRIPTION</font></strong></div></td>
+    <td><div align="center"><strong><font size="2">AMOUNT</font></strong></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum1!</font></div></td>
+    <td><font size="2">!itemDescription1!</font></td>
+    <td><div align="center"><font size="2">!itemAmount1!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum2!</font></div></td>
+    <td><font size="2">!itemDescription2!</font></td>
+    <td><div align="center"><font size="2">!itemAmount2!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum3!</font></div></td>
+    <td><font size="2">!itemDescription3!</font></td>
+    <td><div align="center"><font size="2">!itemAmount3!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum4!</font></div></td>
+    <td><font size="2">!itemDescription4!</font></td>
+    <td><div align="center"><font size="2">!itemAmount4!</font></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><font size="2">!itemNum5!</font></div></td>
+    <td><font size="2">!itemDescription5!</font></td>
+    <td><div align="center"><font size="2">!itemAmount5!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum6!</font></div></td>
+    <td><font size="2">!itemDescription6!</font></td>
+    <td><div align="center"><font size="2">!itemAmount6!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum7!</font></div></td>
+    <td><font size="2">!itemDescription7!</font></td>
+    <td><div align="center"><font size="2">!itemAmount7!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum8!</font></div></td>
+    <td><font size="2">!itemDescription8!</font></td>
+    <td><div align="center"><font size="2">!itemAmount8!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum9!</font></div></td>
+    <td><font size="2">!itemDescription9!</font></td>
+    <td><div align="center"><font size="2">!itemAmount9!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum10!</font></div></td>
+    <td><div align="left"><font size="2">!itemDescription10!</font></div></td>
+    <td><div align="center"><font size="2">!itemAmount10!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum11!</font></div></td>
+    <td><div align="left"><font size="2">!itemDescription11!</font></div></td>
+    <td><div align="center"><font size="2">!itemAmount11!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum12!</font></div></td>
+    <td><div align="left"><font size="2">!itemDescription12!</font></div></td>
+    <td><div align="center"><font size="2">!itemAmount12!</font></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><font size="2">!itemNum13!</font></div></td>
+    <td><div align="left"><font size="2">!itemDescription13!</font></div></td>
+    <td><div align="center"><font size="2">!itemAmount13!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2">!itemNum14!</font></div></td>
+    <td><div align="left"><font size="2">!itemDescription14!</font></div></td>
+    <td><div align="center"><font size="2">!itemAmount14!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2"></font></div></td>
+    <td><div align="left"><font size="2">!CDDescription!</font></div>
+      <div align="center"></div></td>
+    <td><div align="center"><font size="2">!cdCharges!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2"></font><font size="2"></font></div></td>
+    <td><font size="2">!EFdiscount!</font></td>
+    <td><div align="center"><font size="2">!EFdiscountAmount!</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2"></font><font size="2"></font></div></td>
+    <td><font size="2">!PayPalCharges!</font></td>
+    <td><div align="center"><font size="2">!PayPalChargesAmount!</font></div></td>
+  </tr>
+  <tr> 
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right"><font size="2">Total 
+        Price</font></div></td>
+    <td><div align="center"><font size="2">!totalPrice!</font></div></td>
+  </tr>
+  <tr>
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right"><font size="2">GST 
+        (!GSTRate!% of total price)</font></div></td>
+    <td><div align="center"><font size="2">!GST!</font></div></td>
+  </tr>
+  <tr> 
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right"><font size="2">PST 
+        (8% of total price,Ontario residents only)</font></div></td>
+    <td><div align="center"><font size="2">!PST!</font></div></td>
+  </tr>
+  <tr> 
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right"><font size="2">Total 
+        Amount</font></div></td>
+    <td><div align="center"><font size="2">!totalAmount!</font></div></td>
+  </tr>
+  <tr>
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right"><font size="2">Amount
+        Paid</font></div></td>
+    <td><div align="center"><font size="2">!amountPaid!</font></div></td>
+  </tr>
+  <tr>
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right"><font size="2">!amountDueOrCredit!</font></div></td>
+    <td><div align="center"><font size="2">!amountDue!</font></div></td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0">
+  <tr>
+    <td><font size="2">!footerText!</font><font color="1"
+      size="2"><a href="mailto:visualtax@sympatico.ca">visualtax@sympatico.ca</a></font><font size="2">
+      or call (905) 238-6159<br>
+      GST NO: R103678595</font></td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0">
+  <tr> 
+    <td><font size="2">!CreditNote!</font></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

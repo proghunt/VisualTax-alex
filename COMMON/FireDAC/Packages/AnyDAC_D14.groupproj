@@ -1,0 +1,230 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{bd9888c4-7aca-4e77-bb22-df4173a75457}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="AnyDAC_ComI_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_Phys_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_PhysTDBX_D14.dproj">
+				<Dependencies>AnyDAC_ComI_D14.dproj;AnyDAC_Phys_D14.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysODBC_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_PhysMSAcc_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_PhysMSSQL_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_PhysDb2_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_PhysASA_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_PhysADS_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_PhysMySQL_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_PhysOracle_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_PhysIB_D14.dproj">
+				<Dependencies>AnyDAC_Phys_D14.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysPG_D14.dproj">
+				<Dependencies>AnyDAC_Phys_D14.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysSQLite_D14.dproj">
+				<Dependencies>AnyDAC_Phys_D14.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_Comp_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_GUIxForms_D14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_Dcl_D14.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<BorlandProject>
+					<Default.Personality/>
+				</BorlandProject>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="AnyDAC_ComI_D14">
+			<MSBuild Projects="AnyDAC_ComI_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_ComI_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_ComI_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_ComI_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_ComI_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Phys_D14">
+			<MSBuild Projects="AnyDAC_Phys_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Phys_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_Phys_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Phys_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_Phys_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_ComI_D14;AnyDAC_Phys_D14" Name="AnyDAC_PhysTDBX_D14">
+			<MSBuild Projects="AnyDAC_PhysTDBX_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_ComI_D14:Clean;AnyDAC_Phys_D14:Clean" Name="AnyDAC_PhysTDBX_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysTDBX_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_ComI_D14:Make;AnyDAC_Phys_D14:Make" Name="AnyDAC_PhysTDBX_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysTDBX_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysODBC_D14">
+			<MSBuild Projects="AnyDAC_PhysODBC_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysODBC_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysODBC_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysODBC_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysODBC_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSAcc_D14">
+			<MSBuild Projects="AnyDAC_PhysMSAcc_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSAcc_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysMSAcc_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSAcc_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysMSAcc_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSSQL_D14">
+			<MSBuild Projects="AnyDAC_PhysMSSQL_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSSQL_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysMSSQL_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSSQL_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysMSSQL_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysDb2_D14">
+			<MSBuild Projects="AnyDAC_PhysDb2_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysDb2_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysDb2_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysDb2_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysDb2_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysASA_D14">
+			<MSBuild Projects="AnyDAC_PhysASA_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysASA_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysASA_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysASA_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysASA_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysADS_D14">
+			<MSBuild Projects="AnyDAC_PhysADS_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysADS_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysADS_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysADS_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysADS_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMySQL_D14">
+			<MSBuild Projects="AnyDAC_PhysMySQL_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMySQL_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysMySQL_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMySQL_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysMySQL_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysOracle_D14">
+			<MSBuild Projects="AnyDAC_PhysOracle_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysOracle_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysOracle_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysOracle_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysOracle_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_Phys_D14" Name="AnyDAC_PhysIB_D14">
+			<MSBuild Projects="AnyDAC_PhysIB_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_Phys_D14:Clean" Name="AnyDAC_PhysIB_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysIB_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_Phys_D14:Make" Name="AnyDAC_PhysIB_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysIB_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_Phys_D14" Name="AnyDAC_PhysPG_D14">
+			<MSBuild Projects="AnyDAC_PhysPG_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_Phys_D14:Clean" Name="AnyDAC_PhysPG_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysPG_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_Phys_D14:Make" Name="AnyDAC_PhysPG_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysPG_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_Phys_D14" Name="AnyDAC_PhysSQLite_D14">
+			<MSBuild Projects="AnyDAC_PhysSQLite_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_Phys_D14:Clean" Name="AnyDAC_PhysSQLite_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_PhysSQLite_D14.dproj"/>
+		</Target>
+		<Target DependsOnTargets="AnyDAC_Phys_D14:Make" Name="AnyDAC_PhysSQLite_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_PhysSQLite_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Comp_D14">
+			<MSBuild Projects="AnyDAC_Comp_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Comp_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_Comp_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Comp_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_Comp_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_GUIxForms_D14">
+			<MSBuild Projects="AnyDAC_GUIxForms_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_GUIxForms_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_GUIxForms_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_GUIxForms_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_GUIxForms_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Dcl_D14">
+			<MSBuild Projects="AnyDAC_Dcl_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Dcl_D14:Clean">
+			<MSBuild Targets="Clean" Projects="AnyDAC_Dcl_D14.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Dcl_D14:Make">
+			<MSBuild Targets="Make" Projects="AnyDAC_Dcl_D14.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="AnyDAC_ComI_D14;AnyDAC_Phys_D14;AnyDAC_PhysTDBX_D14;AnyDAC_PhysODBC_D14;AnyDAC_PhysMSAcc_D14;AnyDAC_PhysMSSQL_D14;AnyDAC_PhysDb2_D14;AnyDAC_PhysASA_D14;AnyDAC_PhysADS_D14;AnyDAC_PhysMySQL_D14;AnyDAC_PhysOracle_D14;AnyDAC_PhysIB_D14;AnyDAC_PhysPG_D14;AnyDAC_PhysSQLite_D14;AnyDAC_Comp_D14;AnyDAC_GUIxForms_D14;AnyDAC_Dcl_D14"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="AnyDAC_ComI_D14:Clean;AnyDAC_Phys_D14:Clean;AnyDAC_PhysTDBX_D14:Clean;AnyDAC_PhysODBC_D14:Clean;AnyDAC_PhysMSAcc_D14:Clean;AnyDAC_PhysMSSQL_D14:Clean;AnyDAC_PhysDb2_D14:Clean;AnyDAC_PhysASA_D14:Clean;AnyDAC_PhysADS_D14:Clean;AnyDAC_PhysMySQL_D14:Clean;AnyDAC_PhysOracle_D14:Clean;AnyDAC_PhysIB_D14:Clean;AnyDAC_PhysPG_D14:Clean;AnyDAC_PhysSQLite_D14:Clean;AnyDAC_Comp_D14:Clean;AnyDAC_GUIxForms_D14:Clean;AnyDAC_Dcl_D14:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="AnyDAC_ComI_D14:Make;AnyDAC_Phys_D14:Make;AnyDAC_PhysTDBX_D14:Make;AnyDAC_PhysODBC_D14:Make;AnyDAC_PhysMSAcc_D14:Make;AnyDAC_PhysMSSQL_D14:Make;AnyDAC_PhysDb2_D14:Make;AnyDAC_PhysASA_D14:Make;AnyDAC_PhysADS_D14:Make;AnyDAC_PhysMySQL_D14:Make;AnyDAC_PhysOracle_D14:Make;AnyDAC_PhysIB_D14:Make;AnyDAC_PhysPG_D14:Make;AnyDAC_PhysSQLite_D14:Make;AnyDAC_Comp_D14:Make;AnyDAC_GUIxForms_D14:Make;AnyDAC_Dcl_D14:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

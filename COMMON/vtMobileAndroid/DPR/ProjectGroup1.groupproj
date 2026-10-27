@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5C12CF4E-5C48-4B9E-9190-3CD884714354}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="vtFillDB.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\TestLoadaPlugin\TestLoadPluginSettings.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="vtFillDB">
+        <MSBuild Projects="vtFillDB.dproj"/>
+    </Target>
+    <Target Name="vtFillDB:Clean">
+        <MSBuild Projects="vtFillDB.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vtFillDB:Make">
+        <MSBuild Projects="vtFillDB.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestLoadPluginSettings">
+        <MSBuild Projects="..\..\TestLoadaPlugin\TestLoadPluginSettings.dproj"/>
+    </Target>
+    <Target Name="TestLoadPluginSettings:Clean">
+        <MSBuild Projects="..\..\TestLoadaPlugin\TestLoadPluginSettings.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestLoadPluginSettings:Make">
+        <MSBuild Projects="..\..\TestLoadaPlugin\TestLoadPluginSettings.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="vtFillDB;TestLoadPluginSettings"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="vtFillDB:Clean;TestLoadPluginSettings:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="vtFillDB:Make;TestLoadPluginSettings:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

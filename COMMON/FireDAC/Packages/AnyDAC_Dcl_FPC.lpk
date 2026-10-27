@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="AnyDAC_Dcl_FPC"/>
+    <Author Value="Embarcadero Technologies"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="..\Source"/>
+        <OtherUnitFiles Value="..\Source"/>
+        <UnitOutputDirectory Value="..\Dcu\FPC\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <CStyleOperator Value="False"/>
+          <AllowLabel Value="False"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <Linking>
+        <Debugging>
+          <DebugInfoType Value="dsDwarf2Set"/>
+          <UseLineInfoUnit Value="False"/>
+        </Debugging>
+      </Linking>
+      <Other>
+        <CompilerMessages>
+          <IgnoredMessages idx4040="True" idx5023="True" idx5024="True" idx5043="True"/>
+          <UseMsgFile Value="True"/>
+        </CompilerMessages>
+        <CompilerPath Value="$(CompPath)"/>
+        <CreateMakefileOnBuild Value="True"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="Embarcadero FireDAC package"/>
+    <Version Major="8" Release="5" Build="3365"/>
+    <Files Count="97">
+      <Item1>
+        <Filename Value="..\Source\uADStanUtil.pas"/>
+        <UnitName Value="uADStanUtil"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\Source\uADCompClient.pas"/>
+        <UnitName Value="uADCompClient"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\Source\uADCompDataMove.pas"/>
+        <UnitName Value="uADCompDataMove"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\Source\uADCompDataSet.pas"/>
+        <UnitName Value="uADCompDataSet"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\Source\uADCompGUIx.pas"/>
+        <UnitName Value="uADCompGUIx"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\Source\uADCompScript.pas"/>
+        <UnitName Value="uADCompScript"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\Source\uADCompScriptCommands.pas"/>
+        <UnitName Value="uADCompScriptCommands"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\Source\uADDAptColumn.pas"/>
+        <UnitName Value="uADDAptColumn"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\Source\uADDAptIntf.pas"/>
+        <UnitName Value="uADDAptIntf"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\Source\uADDAptManager.pas"/>
+        <UnitName Value="uADDAptManager"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\Source\uADDatSManager.pas"/>
+        <UnitName Value="uADDatSManager"/>
+      </Item11>
+      <Item12>
+        <Filename Value="..\Source\uADGUIxConsoleScript.pas"/>
+        <UnitName Value="uADGUIxConsoleScript"/>
+      </Item12>
+      <Item13>
+        <Filename Value="..\Source\uADGUIxConsoleWait.pas"/>
+        <UnitName Value="uADGUIxConsoleWait"/>
+      </Item13>
+      <Item14>
+        <Filename Value="..\Source\uADGUIxIntf.pas"/>
+        <UnitName Value="uADGUIxIntf"/>
+      </Item14>
+      <Item15>
+        <Filename Value="..\Source\uADMoniBase.pas"/>
+        <UnitName Value="uADMoniBase"/>
+      </Item15>
+      <Item16>
+        <Filename Value="..\Source\uADMoniCustom.pas"/>
+        <UnitName Value="uADMoniCustom"/>
+      </Item16>
+      <Item17>
+        <Filename Value="..\Source\uADMoniFlatFile.pas"/>
+        <UnitName Value="uADMoniFlatFile"/>
+      </Item17>
+      <Item18>
+        <Filename Value="..\Source\uADPhysADS.pas"/>
+        <UnitName Value="uADPhysADS"/>
+      </Item18>
+      <Item19>
+        <Filename Value="..\Source\uADPhysADSMeta.pas"/>
+        <UnitName Value="uADPhysADSMeta"/>
+      </Item19>
+      <Item20>
+        <Filename Value="..\Source\uADPhysASA.pas"/>
+        <UnitName Value="uADPhysASA"/>
+      </Item20>
+      <Item21>
+        <Filename Value="..\Source\uADPhysASAMeta.pas"/>
+        <UnitName Value="uADPhysASAMeta"/>
+      </Item21>
+      <Item22>
+        <Filename Value="..\Source\uADPhysCmdGenerator.pas"/>
+        <UnitName Value="uADPhysCmdGenerator"/>
+      </Item22>
+      <Item23>
+        <Filename Value="..\Source\uADPhysCmdPreprocessor.pas"/>
+        <UnitName Value="uADPhysCmdPreprocessor"/>
+      </Item23>
+      <Item24>
+        <Filename Value="..\Source\uADPhysConnMeta.pas"/>
+        <UnitName Value="uADPhysConnMeta"/>
+      </Item24>
+      <Item25>
+        <Filename Value="..\Source\uADPhysDB2.pas"/>
+        <UnitName Value="uADPhysDB2"/>
+      </Item25>
+      <Item26>
+        <Filename Value="..\Source\uADPhysDB2Meta.pas"/>
+        <UnitName Value="uADPhysDB2Meta"/>
+      </Item26>
+      <Item27>
+        <Filename Value="..\Source\uADPhysIB.pas"/>
+        <UnitName Value="uADPhysIB"/>
+      </Item27>
+      <Item28>
+        <Filename Value="..\Source\uADPhysIBCli.pas"/>
+        <UnitName Value="uADPhysIBCli"/>
+      </Item28>
+      <Item29>
+        <Filename Value="..\Source\uADPhysIBMeta.pas"/>
+        <UnitName Value="uADPhysIBMeta"/>
+      </Item29>
+      <Item30>
+        <Filename Value="..\Source\uADPhysIBWrapper.pas"/>
+        <UnitName Value="uADPhysIBWrapper"/>
+      </Item30>
+      <Item31>
+        <Filename Value="..\Source\uADPhysIntf.pas"/>
+        <UnitName Value="uADPhysIntf"/>
+      </Item31>
+      <Item32>
+        <Filename Value="..\Source\uADPhysManager.pas"/>
+        <UnitName Value="uADPhysManager"/>
+      </Item32>
+      <Item33>
+        <Filename Value="..\Source\uADPhysMSAcc.pas"/>
+        <UnitName Value="uADPhysMSAcc"/>
+      </Item33>
+      <Item34>
+        <Filename Value="..\Source\uADPhysMSAccMeta.pas"/>
+        <UnitName Value="uADPhysMSAccMeta"/>
+      </Item34>
+      <Item35>
+        <Filename Value="..\Source\uADPhysMSSQL.pas"/>
+        <UnitName Value="uADPhysMSSQL"/>
+      </Item35>
+      <Item36>
+        <Filename Value="..\Source\uADPhysMSSQLMeta.pas"/>
+        <UnitName Value="uADPhysMSSQLMeta"/>
+      </Item36>
+      <Item37>
+        <Filename Value="..\Source\uADPhysMySQL.pas"/>
+        <UnitName Value="uADPhysMySQL"/>
+      </Item37>
+      <Item38>
+        <Filename Value="..\Source\uADPhysMySQLCli.pas"/>
+        <UnitName Value="uADPhysMySQLCli"/>
+      </Item38>
+      <Item39>
+        <Filename Value="..\Source\uADPhysMySQLWrapper.pas"/>
+        <UnitName Value="uADPhysMySQLWrapper"/>
+      </Item39>
+      <Item40>
+        <Filename Value="..\Source\uADPhysODBC.pas"/>
+        <UnitName Value="uADPhysODBC"/>
+      </Item40>
+      <Item41>
+        <Filename Value="..\Source\uADPhysODBCBase.pas"/>
+        <UnitName Value="uADPhysODBCBase"/>
+      </Item41>
+      <Item42>
+        <Filename Value="..\Source\uADPhysODBCCli.pas"/>
+        <UnitName Value="uADPhysODBCCli"/>
+      </Item42>
+      <Item43>
+        <Filename Value="..\Source\uADPhysODBCMeta.pas"/>
+        <UnitName Value="uADPhysODBCMeta"/>
+      </Item43>
+      <Item44>
+        <Filename Value="..\Source\uADPhysODBCWrapper.pas"/>
+        <UnitName Value="uADPhysODBCWrapper"/>
+      </Item44>
+      <Item45>
+        <Filename Value="..\Source\uADPhysOracle.pas"/>
+        <UnitName Value="uADPhysOracle"/>
+      </Item45>
+      <Item46>
+        <Filename Value="..\Source\uADPhysOracleCli.pas"/>
+        <UnitName Value="uADPhysOracleCli"/>
+      </Item46>
+      <Item47>
+        <Filename Value="..\Source\uADPhysOracleMeta.pas"/>
+        <UnitName Value="uADPhysOracleMeta"/>
+      </Item47>
+      <Item48>
+        <Filename Value="..\Source\uADPhysOracleWrapper.pas"/>
+        <UnitName Value="uADPhysOracleWrapper"/>
+      </Item48>
+      <Item49>
+        <Filename Value="..\Source\uADStanAsync.pas"/>
+        <UnitName Value="uADStanAsync"/>
+      </Item49>
+      <Item50>
+        <Filename Value="..\Source\uADStanConst.pas"/>
+        <UnitName Value="uADStanConst"/>
+      </Item50>
+      <Item51>
+        <Filename Value="..\Source\uADStanDef.pas"/>
+        <UnitName Value="uADStanDef"/>
+      </Item51>
+      <Item52>
+        <Filename Value="..\Source\uADStanError.pas"/>
+        <UnitName Value="uADStanError"/>
+      </Item52>
+      <Item53>
+        <Filename Value="..\Source\uADStanExpr.pas"/>
+        <UnitName Value="uADStanExpr"/>
+      </Item53>
+      <Item54>
+        <Filename Value="..\Source\uADStanFactory.pas"/>
+        <UnitName Value="uADStanFactory"/>
+      </Item54>
+      <Item55>
+        <Filename Value="..\Source\uADStanIntf.pas"/>
+        <UnitName Value="uADStanIntf"/>
+      </Item55>
+      <Item56>
+        <Filename Value="..\Source\uADStanOption.pas"/>
+        <UnitName Value="uADStanOption"/>
+      </Item56>
+      <Item57>
+        <Filename Value="..\Source\uADStanParam.pas"/>
+        <UnitName Value="uADStanParam"/>
+      </Item57>
+      <Item58>
+        <Filename Value="..\Source\uADStanPool.pas"/>
+        <UnitName Value="uADStanPool"/>
+      </Item58>
+      <Item59>
+        <Filename Value="..\Source\uADStanResStrs.pas"/>
+        <UnitName Value="uADStanResStrs"/>
+      </Item59>
+      <Item60>
+        <Filename Value="..\Source\uADStanStorage.pas"/>
+        <UnitName Value="uADStanStorage"/>
+      </Item60>
+      <Item61>
+        <Filename Value="..\Source\uADStanTracer.pas"/>
+        <UnitName Value="uADStanTracer"/>
+      </Item61>
+      <Item62>
+        <Filename Value="..\Source\uADMoniRemoteClient.pas"/>
+        <UnitName Value="uADMoniRemoteClient"/>
+      </Item62>
+      <Item63>
+        <Filename Value="..\Source\uADMoniRemoteBase.pas"/>
+        <UnitName Value="uADMoniRemoteBase"/>
+      </Item63>
+      <Item64>
+        <Filename Value="..\Source\uADStanExprFuncs.pas"/>
+        <UnitName Value="uADStanExprFuncs"/>
+      </Item64>
+      <Item65>
+        <Filename Value="..\Source\uADPhysPG.pas"/>
+        <UnitName Value="uADPhysPG"/>
+      </Item65>
+      <Item66>
+        <Filename Value="..\Source\uADPhysPGCli.pas"/>
+        <UnitName Value="uADPhysPGCli"/>
+      </Item66>
+      <Item67>
+        <Filename Value="..\Source\uADPhysPGMeta.pas"/>
+        <UnitName Value="uADPhysPGMeta"/>
+      </Item67>
+      <Item68>
+        <Filename Value="..\Source\uADPhysPGWrapper.pas"/>
+        <UnitName Value="uADPhysPGWrapper"/>
+      </Item68>
+      <Item69>
+        <Filename Value="..\Source\uADPhysSQLite.pas"/>
+        <UnitName Value="uADPhysSQLite"/>
+      </Item69>
+      <Item70>
+        <Filename Value="..\Source\uADPhysSQLiteCli.pas"/>
+        <UnitName Value="uADPhysSQLiteCli"/>
+      </Item70>
+      <Item71>
+        <Filename Value="..\Source\uADPhysSQLiteMeta.pas"/>
+        <UnitName Value="uADPhysSQLiteMeta"/>
+      </Item71>
+      <Item72>
+        <Filename Value="..\Source\uADPhysSQLiteWrapper.pas"/>
+        <UnitName Value="uADPhysSQLiteWrapper"/>
+      </Item72>
+      <Item73>
+        <Filename Value="..\Source\uADStanSQLTimeInt.pas"/>
+        <UnitName Value="uADStanSQLTimeInt"/>
+      </Item73>
+      <Item74>
+        <Filename Value="..\Source\uADPhysASACli.pas"/>
+        <UnitName Value="uADPhysASACli"/>
+      </Item74>
+      <Item75>
+        <Filename Value="..\Source\uADPhysASAWrapper.pas"/>
+        <UnitName Value="uADPhysASAWrapper"/>
+      </Item75>
+      <Item76>
+        <Filename Value="..\Source\uADGUIxFormsControls.pas"/>
+        <UnitName Value="uADGUIxFormsControls"/>
+      </Item76>
+      <Item77>
+        <Filename Value="..\Source\uADGUIxFormsMemo.pas"/>
+        <UnitName Value="uADGUIxFormsMemo"/>
+      </Item77>
+      <Item78>
+        <Filename Value="..\Source\uADGUIxFormsfAbout.pas"/>
+        <UnitName Value="uADGUIxFormsfAbout"/>
+      </Item78>
+      <Item79>
+        <Filename Value="..\Source\uADGUIxFormsfOptsBase.pas"/>
+        <UnitName Value="uADGUIxFormsfOptsBase"/>
+      </Item79>
+      <Item80>
+        <Filename Value="..\Source\uADGUIxFormsfAsync.pas"/>
+        <UnitName Value="uADGUIxFormsfAsync"/>
+      </Item80>
+      <Item81>
+        <Filename Value="..\Source\uADGUIxFormsfConnEdit.pas"/>
+        <UnitName Value="uADGUIxFormsfConnEdit"/>
+      </Item81>
+      <Item82>
+        <Filename Value="..\Source\uADGUIxFormsfDesignTimeOptions.pas"/>
+        <UnitName Value="uADGUIxFormsfDesignTimeOptions"/>
+      </Item82>
+      <Item83>
+        <Filename Value="..\Source\uADGUIxFormsfError.pas"/>
+        <UnitName Value="uADGUIxFormsfError"/>
+      </Item83>
+      <Item84>
+        <Filename Value="..\Source\uADGUIxFormsfFetchOptions.pas"/>
+        <UnitName Value="uADGUIxFormsfFetchOptions"/>
+      </Item84>
+      <Item85>
+        <Filename Value="..\Source\uADGUIxFormsfFields.pas"/>
+        <UnitName Value="uADGUIxFormsfFields"/>
+      </Item85>
+      <Item86>
+        <Filename Value="..\Source\uADGUIxFormsfFormatOptions.pas"/>
+        <UnitName Value="uADGUIxFormsfFormatOptions"/>
+      </Item86>
+      <Item87>
+        <Filename Value="..\Source\uADGUIxFormsfLogin.pas"/>
+        <UnitName Value="uADGUIxFormsfLogin"/>
+      </Item87>
+      <Item88>
+        <Filename Value="..\Source\uADGUIxFormsfQEdit.pas"/>
+        <UnitName Value="uADGUIxFormsfQEdit"/>
+      </Item88>
+      <Item89>
+        <Filename Value="..\Source\uADGUIxFormsfResourceOptions.pas"/>
+        <UnitName Value="uADGUIxFormsfResourceOptions"/>
+      </Item89>
+      <Item90>
+        <Filename Value="..\Source\uADGUIxFormsfScript.pas"/>
+        <UnitName Value="uADGUIxFormsfScript"/>
+      </Item90>
+      <Item91>
+        <Filename Value="..\Source\uADGUIxFormsfUpdateOptions.pas"/>
+        <UnitName Value="uADGUIxFormsfUpdateOptions"/>
+      </Item91>
+      <Item92>
+        <Filename Value="..\Source\uADGUIxFormsfUSEdit.pas"/>
+        <UnitName Value="uADGUIxFormsfUSEdit"/>
+      </Item92>
+      <Item93>
+        <Filename Value="..\Source\uADCompReg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="uADCompReg"/>
+      </Item93>
+      <Item94>
+        <Filename Value="..\Source\uADPhysADSCli.pas"/>
+        <UnitName Value="uADPhysADSCli"/>
+      </Item94>
+      <Item95>
+        <Filename Value="..\Source\uADPhysADSWrapper.pas"/>
+        <UnitName Value="uADPhysADSWrapper"/>
+      </Item95>
+      <Item96>
+        <Filename Value="..\Source\uADPhysNexusMeta.pas"/>
+        <UnitName Value="uADPhysNexusMeta"/>
+      </Item96>
+      <Item97>
+        <Filename Value="..\Source\uADPhysSQLiteVDataSet.pas"/>
+        <UnitName Value="uADPhysSQLiteVDataSet"/>
+      </Item97>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="4">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="SynEdit"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="FCL"/>
+      </Item4>
+    </RequiredPkgs>
+    <UsageOptions>
+      <CustomOptions Value="-dUseCThreads"/>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <CustomOptions Items="ExternHelp" Version="2">
+      <_ExternHelp Items="Count"/>
+    </CustomOptions>
+  </Package>
+</CONFIG>

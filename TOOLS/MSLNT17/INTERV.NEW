@@ -1,0 +1,119 @@
+$Identification
+Personal Information            PAGE_1
+Dependents                      DEPEND
+Supplementary data              SUPPL
+
+$From Prior Years
+Carry Forward
+
+$Income
+T4                              T4#1
+T4A                             T4A#1
+Other employment income         OTHEMPL
+Alimony/separation              PAGE_1    47
+
+$Capital gains
+Reserves                        T2017
+Capital Gains                   S3_1
+Election to report cap. gains   T664
+
+$Property/Business income
+Rental income                   T776_1#1
+Business                        T2124_1#1
+Professional                    T2032_1#1
+Commission                      T2124_1#1
+Farming                         T2042_1#1
+Fishing                         T2121_1#1
+
+$Deductions from Total Income
+RSP transfers and uncl contr.   T2097
+Designations of xfers to an RRSP
+RRSP deduction limit-current yr T1023
+RRSP deduction limit-next year
+Past Service pension contributioRPP
+Labour-Sponsored Funds Credit   PAGE_4    5
+Union/professional or like dues UNIOND
+Child care expenses (Form T778) T778_1
+Attendant care expenses         T929
+Allowable bus. investm losses
+Moving expenses (Form T1-M)     T1M
+Alimony/separation allowance    PAGE_2    12
+Carrying charges and interest   S4
+Exploration and development ex  S4
+Automobile expenses             AUTOEXP
+Employment expenses
+Board and Lodging expenses      TL2
+Employee and Partner GST rebate GST370
+Saskatchewan Pension Plan Contr PAGE_2    5
+Other deductions                OTHDED
+Social Benefits repayment       CLAW
+
+$Non Refundable Credits
+Disability/Tuition/Education    DISAB
+Medical Expense                 MEDICAL
+Charitable donations            DON
+
+$Refundable Credits
+Provincial Tax Credits          ONCR_1
+Child Tax Benefit
+GST eligibility                 PAGE_1    29
+Alb. Stock Sav Plan Tax Credit
+
+$Deductions from Net Income
+Employee home reloc loan ded    T4#1
+Stock option and shares ded     T4#1
+Other payments deduction
+Lmt partnership losses-other yrs
+Losses of other years
+Capital gains deduction         T657_1
+Northern residents deductions   T2222_1
+Additional deductions           OTHDED
+
+$Instalments and Tax Credits
+Tax paid by instalments         PAGE_4    24
+Calculation of instalments
+Federal political contributions PAGE_4    2
+Refund of Investment Tax Credit T2038_1
+Part XII.2 Tax Credit
+Forward averaging tax credit    T581
+Overseas Employment tax credit  T626_1
+
+$Carry Backs and Carry Forwards
+Carry forwards to next year
+Request for loss carry back     T1A_1
+
+$Miscellaneous
+T1-DD Direct deposit applicationT1DD
+T1-Adj T1 Adjustment request    T1ADJ
+Notice of objection             T400A
+Comparative tax summary
+Notepad without totals          NPAD
+Notepad with totals             NPADC1
+Diagnostics
+Invoice                         INV
+Additional info. (from client)  ADDINFO
+Planner
+
+$Other schedules
+Taxable dividends from Can. CorpS4
+Interest/other Investm. Income  S4
+Partnership Inc/Ltd/non-active  S4
+S1                              S1_1
+Taxable capital gains           T657_1
+Other income                    OTHINC
+Other Deductions                OTHDED
+Union Dues                      UNIOND
+Acc. forward avrg. withdrawal   T581
+Pension Income Amount
+Amounts transferred from spouse S2
+Federal Tax (from Schedule 1)   S1_1
+Investment tax credit - T2038   T2038_1
+CPP Contr. payable on self-empl.S8
+Social Benefits Repayment       CLAW
+Recov. of Alb.Stock Sav. Tax Crd
+Total Tax deducted
+(Quebec) Tax deducted transfer
+Tax deducted applicable to Fed. Tax
+Refundable Quebec Abatement
+Part XII.2 Tax Credit
+

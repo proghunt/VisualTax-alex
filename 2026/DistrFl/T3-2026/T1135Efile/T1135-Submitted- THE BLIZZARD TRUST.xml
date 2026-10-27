@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <soapenv:Envelope xmlns:soapenv = "http://schemas.xmlsoap.org/soap/envelope/">
+ <soapenv:Body>
+ <t3rq:T3FrrmsReturnRequest
+  xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0"
+  xmlns:comm="http://www.cra-arc.gc.ca/xmlns/comm/2026/1-0-0"
+  xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2026/1-0-0"
+  xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+  xmlns:t1135="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0"
+  xmlns:t3rq="http://www.cra-arc.gc.ca/xmlns/t3rq/t3request/1-0-0"
+  xmlns:xml="http://www.w3.org/XML/1998/namespace"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t3rq/t3request/1-0-0 t3request.xsd">
+   <t3rq:TrustNumber>A00002203</t3rq:TrustNumber>
+   <t3rq:TaxProfessionalData>
+     <ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
+     <ef:PasswordID>767AJ5X</ef:PasswordID>
+     <ef:DocumentControlNumber>
+       <ef:TaxPreparerEfilerNumber>B0865</ef:TaxPreparerEfilerNumber>
+       <ef:TaxPreparerReturnControlNumber>2504297</ef:TaxPreparerReturnControlNumber>
+     </ef:DocumentControlNumber>
+     <ef:TaxPreparerPreAssessmentReviewContactCode>3</ef:TaxPreparerPreAssessmentReviewContactCode>
+     <ef:TaxPreparerPostAssessmentReviewContactCode>3</ef:TaxPreparerPostAssessmentReviewContactCode>
+     <ef:T183ElectronicSignatureData>
+       <ef:T183ElectronicSignatureIndicator>1</ef:T183ElectronicSignatureIndicator>
+       <ef:T183ElectronicSignatureDate>2021-12-31</ef:T183ElectronicSignatureDate>
+       <ef:T183ElectronicSignatureTime>23:59:59</ef:T183ElectronicSignatureTime>
+     </ef:T183ElectronicSignatureData>
+    <ef:RepresentativeID>JL3R2RC</ef:RepresentativeID>
+   </t3rq:TaxProfessionalData>
+   <t3rq:TaxYear>2025</t3rq:TaxYear>
+   <t3rq:SoftwareID>064AA</t3rq:SoftwareID>
+   <t3rq:SoftwareRevisionDate>2025-02-01</t3rq:SoftwareRevisionDate>
+   <comm:FirstTimeFilerIndicator>0</comm:FirstTimeFilerIndicator>
+   <comm:TestCaseIdentifier>1092</comm:TestCaseIdentifier>
+   <comm:OriginatingIP>0.0.0.0</comm:OriginatingIP>
+   <t3rq:TaxForm>
+   <t1135:ForeignIncomeVerificationStatement>
+       <t1135:AmendedReturnIndicator>0</t1135:AmendedReturnIndicator>
+       <t1135:TaxpayerIdentification>
+         <t1135:TrustTaxpayer>
+           <t1135:TrustName>THE BLIZZARD TRUST</t1135:TrustName>
+           <ccms:TrustNumber>A00002203</ccms:TrustNumber>
+         </t1135:TrustTaxpayer>
+       </t1135:TaxpayerIdentification>
+       <t1135:TaxpayerAddress>
+         <t1135:AddressStreetText>85 WATERPROOF ROAD</t1135:AddressStreetText>
+         <t1135:AddressMunicipalityName>BOMBAY</t1135:AddressMunicipalityName>
+         <t1135:GlobalProvinceTerritoryStateCode>ON</t1135:GlobalProvinceTerritoryStateCode>
+         <t1135:GlobalPostalZipCode>L7F0B6</t1135:GlobalPostalZipCode>
+         <t1135:CountryCode>CAN</t1135:CountryCode>
+       </t1135:TaxpayerAddress>
+      <t1135:TaxationYearData>
+        <t1135:TaxationYearStartDate>2025-01-01</t1135:TaxationYearStartDate>
+        <t1135:TaxationYearEndDate>2025-11-01</t1135:TaxationYearEndDate>
+      </t1135:TaxationYearData>
+<t1135:ForeignPropertyIdentification>
+  <t1135:ForeignPropertyCostCategoryOne>
+      <t1135:ForeignPropertyDetailedData>
+<t1135:ForeignFunds>
+<t1135:ForeignFundsRecord>
+<t1135:ForeignFundsBankEntityName>Fund 1</t1135:ForeignFundsBankEntityName>
+<t1135:ForeignFundsCountryCode>ABW</t1135:ForeignFundsCountryCode>
+<t1135:ForeignFundsMaximumYearlyHeldAmount>1000000</t1135:ForeignFundsMaximumYearlyHeldAmount>
+<t1135:ForeignFundsHeldYearEndAmount>80000</t1135:ForeignFundsHeldYearEndAmount>
+<t1135:ForeignFundsIncomeAmount>10000</t1135:ForeignFundsIncomeAmount>
+</t1135:ForeignFundsRecord>
+<t1135:ForeignFundsTotalHeldYearEndAmount>0</t1135:ForeignFundsTotalHeldYearEndAmount>
+<t1135:ForeignFundsTotalIncomeAmount>0</t1135:ForeignFundsTotalIncomeAmount>
+</t1135:ForeignFunds>
+<t1135:NonResidentCorporationShare>
+<t1135:NonResidentCorporationShareRecord>
+<t1135:NonResidentCorporationName>Hello Inc.</t1135:NonResidentCorporationName>
+<t1135:NonResidentCorporationCountryCode>AGO</t1135:NonResidentCorporationCountryCode>
+<t1135:NonResidentCorporationShareMaximumYearlyCostAmount>20000</t1135:NonResidentCorporationShareMaximumYearlyCostAmount>
+<t1135:NonResidentCorporationShareYearEndCostAmount>200</t1135:NonResidentCorporationShareYearEndCostAmount>
+<t1135:NonResidentCorporationShareIncomeAmount>0</t1135:NonResidentCorporationShareIncomeAmount>
+<t1135:NonResidentCorporationShareDispositionGainLossAmount>-200</t1135:NonResidentCorporationShareDispositionGainLossAmount>
+</t1135:NonResidentCorporationShareRecord>
+<t1135:NonResidentCorporationShareTotalYearEndCostAmount>0</t1135:NonResidentCorporationShareTotalYearEndCostAmount>
+<t1135:NonResidentCorporationShareTotalIncomeAmount>0</t1135:NonResidentCorporationShareTotalIncomeAmount>
+<t1135:NonResidentCorporationShareTotalDispositionGainLossAmount>0</t1135:NonResidentCorporationShareTotalDispositionGainLossAmount>
+</t1135:NonResidentCorporationShare>
+<t1135:NonResidentIndebtedness>
+<t1135:NonResidentIndebtednessRecord>
+<t1135:NonResidentIndebtednessDescription>Indebtedness</t1135:NonResidentIndebtednessDescription>
+<t1135:NonResidentIndebtednessCountryCode>AIA</t1135:NonResidentIndebtednessCountryCode>
+<t1135:NonResidentIndebtednessMaximumYearlyCostAmount>30000</t1135:NonResidentIndebtednessMaximumYearlyCostAmount>
+<t1135:NonResidentIndebtednessYearEndCostAmount>15000</t1135:NonResidentIndebtednessYearEndCostAmount>
+<t1135:NonResidentIndebtednessIncomeAmount>0</t1135:NonResidentIndebtednessIncomeAmount>
+<t1135:NonResidentIndebtednessDispositionGainLossAmount>-300</t1135:NonResidentIndebtednessDispositionGainLossAmount>
+</t1135:NonResidentIndebtednessRecord>
+<t1135:NonResidentIndebtednessTotalYearEndCostAmount>0</t1135:NonResidentIndebtednessTotalYearEndCostAmount>
+<t1135:NonResidentIndebtednessTotalIncomeAmount>0</t1135:NonResidentIndebtednessTotalIncomeAmount>
+<t1135:NonResidentIndebtednessTotalDispositionGainLossAmount>0</t1135:NonResidentIndebtednessTotalDispositionGainLossAmount>
+</t1135:NonResidentIndebtedness>
+<t1135:NonResidentTrustInterest>
+<t1135:NonResidentTrustInterestRecord>
+<t1135:NonResidentTrustInterestName>Trust</t1135:NonResidentTrustInterestName>
+<t1135:NonResidentTrustInterestCountryCode>ABW</t1135:NonResidentTrustInterestCountryCode>
+<t1135:NonResidentTrustInterestMaximumYearlyCostAmount>40000</t1135:NonResidentTrustInterestMaximumYearlyCostAmount>
+<t1135:NonResidentTrustInterestYearEndCostAmount>36000</t1135:NonResidentTrustInterestYearEndCostAmount>
+<t1135:NonResidentTrustInterestIncomeReceivedAmount>4000</t1135:NonResidentTrustInterestIncomeReceivedAmount>
+<t1135:NonResidentTrustInterestCapitalReceivedAmount>3500</t1135:NonResidentTrustInterestCapitalReceivedAmount>
+<t1135:NonResidentTrustInterestDispositionGainLossAmount>-400</t1135:NonResidentTrustInterestDispositionGainLossAmount>
+</t1135:NonResidentTrustInterestRecord>
+<t1135:NonResidentTrustInterestTotalYearEndCostAmount>0</t1135:NonResidentTrustInterestTotalYearEndCostAmount>
+<t1135:NonResidentTrustInterestTotalIncomeReceivedAmount>0</t1135:NonResidentTrustInterestTotalIncomeReceivedAmount>
+<t1135:NonResidentTrustInterestTotalCapitalReceivedAmount>0</t1135:NonResidentTrustInterestTotalCapitalReceivedAmount>
+<t1135:NonResidentTrustInterestTotalDispositionGainLossAmount>0</t1135:NonResidentTrustInterestTotalDispositionGainLossAmount>
+</t1135:NonResidentTrustInterest>
+<t1135:ForeignRealProperty>
+<t1135:ForeignRealPropertyRecord>
+<t1135:ForeignRealPropertyDescription>Real</t1135:ForeignRealPropertyDescription>
+<t1135:ForeignRealPropertyCountryCode>AIA</t1135:ForeignRealPropertyCountryCode>
+<t1135:ForeignRealPropertyMaximumYearlyCostAmount>50500</t1135:ForeignRealPropertyMaximumYearlyCostAmount>
+<t1135:ForeignRealPropertyYearEndCostAmount>6500</t1135:ForeignRealPropertyYearEndCostAmount>
+<t1135:ForeignRealPropertyIncomeAmount>0</t1135:ForeignRealPropertyIncomeAmount>
+<t1135:ForeignRealPropertyDispositionGainLossAmount>-100</t1135:ForeignRealPropertyDispositionGainLossAmount>
+</t1135:ForeignRealPropertyRecord>
+<t1135:ForeignRealPropertyTotalYearEndCostAmount>0</t1135:ForeignRealPropertyTotalYearEndCostAmount>
+<t1135:ForeignRealPropertyTotalIncomeAmount>0</t1135:ForeignRealPropertyTotalIncomeAmount>
+<t1135:ForeignRealPropertyTotalDispositionGainLossAmount>0</t1135:ForeignRealPropertyTotalDispositionGainLossAmount>
+</t1135:ForeignRealProperty>
+<t1135:OtherForeignProperty>
+<t1135:OtherForeignPropertyRecord>
+<t1135:OtherForeignPropertyDescription>Other</t1135:OtherForeignPropertyDescription>
+<t1135:OtherForeignPropertyCountryCode>ALA</t1135:OtherForeignPropertyCountryCode>
+<t1135:OtherForeignPropertyMaximumYearlyCostAmount>956000</t1135:OtherForeignPropertyMaximumYearlyCostAmount>
+<t1135:OtherForeignPropertyYearEndCostAmount>600000</t1135:OtherForeignPropertyYearEndCostAmount>
+<t1135:OtherForeignPropertyIncomeAmount>0</t1135:OtherForeignPropertyIncomeAmount>
+<t1135:OtherForeignPropertyDispositionGainLossAmount>-600</t1135:OtherForeignPropertyDispositionGainLossAmount>
+</t1135:OtherForeignPropertyRecord>
+<t1135:OtherForeignPropertyTotalYearEndCostAmount>0</t1135:OtherForeignPropertyTotalYearEndCostAmount>
+<t1135:OtherForeignPropertyTotalIncomeAmount>0</t1135:OtherForeignPropertyTotalIncomeAmount>
+<t1135:OtherForeignPropertyTotalDispositionGainLossAmount>0</t1135:OtherForeignPropertyTotalDispositionGainLossAmount>
+</t1135:OtherForeignProperty>
+<t1135:CanadianHeldForeignProperty>
+<t1135:CanadianHeldForeignPropertyRecord>
+<t1135:CanadianHeldForeignPropertySecurityDealerTrustCompanyName>Canada Trust 1</t1135:CanadianHeldForeignPropertySecurityDealerTrustCompanyName>
+<t1135:CanadianHeldForeignPropertyCountryCode>AND</t1135:CanadianHeldForeignPropertyCountryCode>
+<t1135:CanadianHeldForeignPropertyMaximumYearlyFairMarketValueAmount>759000</t1135:CanadianHeldForeignPropertyMaximumYearlyFairMarketValueAmount>
+<t1135:CanadianHeldForeignPropertyYearEndFairMarketValueAmount>700000</t1135:CanadianHeldForeignPropertyYearEndFairMarketValueAmount>
+<t1135:CanadianHeldForeignPropertyIncomeAmount>1000</t1135:CanadianHeldForeignPropertyIncomeAmount>
+<t1135:CanadianHeldForeignPropertyDispositionGainLossAmount>200</t1135:CanadianHeldForeignPropertyDispositionGainLossAmount>
+</t1135:CanadianHeldForeignPropertyRecord>
+<t1135:CanadianHeldForeignPropertyRecord>
+<t1135:CanadianHeldForeignPropertySecurityDealerTrustCompanyName>Canada Securities 2</t1135:CanadianHeldForeignPropertySecurityDealerTrustCompanyName>
+<t1135:CanadianHeldForeignPropertyCountryCode>ALA</t1135:CanadianHeldForeignPropertyCountryCode>
+<t1135:CanadianHeldForeignPropertyMaximumYearlyFairMarketValueAmount>759000</t1135:CanadianHeldForeignPropertyMaximumYearlyFairMarketValueAmount>
+<t1135:CanadianHeldForeignPropertyYearEndFairMarketValueAmount>700000</t1135:CanadianHeldForeignPropertyYearEndFairMarketValueAmount>
+<t1135:CanadianHeldForeignPropertyIncomeAmount>0</t1135:CanadianHeldForeignPropertyIncomeAmount>
+<t1135:CanadianHeldForeignPropertyDispositionGainLossAmount>-500</t1135:CanadianHeldForeignPropertyDispositionGainLossAmount>
+</t1135:CanadianHeldForeignPropertyRecord>
+<t1135:CanadianHeldForeignPropertyTotalYearEndFairMarketValueAmount>0</t1135:CanadianHeldForeignPropertyTotalYearEndFairMarketValueAmount>
+<t1135:CanadianHeldForeignPropertyTotalIncomeAmount>0</t1135:CanadianHeldForeignPropertyTotalIncomeAmount>
+<t1135:CanadianHeldForeignPropertyTotalDispositionGainLossAmount>0</t1135:CanadianHeldForeignPropertyTotalDispositionGainLossAmount>
+</t1135:CanadianHeldForeignProperty>
+      </t1135:ForeignPropertyDetailedData>
+  </t1135:ForeignPropertyCostCategoryOne>
+  </t1135:ForeignPropertyIdentification>
+<t1135:CertificationDetail>
+<t1135:CertifierName>
+<t1135:TaxpayerName>
+<t1135:GivenName>KARON</t1135:GivenName>
+<t1135:FamilyName>BELL</t1135:FamilyName>
+</t1135:TaxpayerName>
+</t1135:CertifierName>
+<t1135:CertifierPositionTitle>TRUSTEE</t1135:CertifierPositionTitle>
+<t1135:CertifierPhoneNumber>19054755542</t1135:CertifierPhoneNumber>
+<t1135:CertificationDate>2026-01-10</t1135:CertificationDate>
+</t1135:CertificationDetail>
+     </t1135:ForeignIncomeVerificationStatement>
+   </t3rq:TaxForm>
+ </t3rq:T3FrrmsReturnRequest>
+</soapenv:Body>
+</soapenv:Envelope>

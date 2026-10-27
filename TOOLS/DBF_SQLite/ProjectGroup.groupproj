@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9C07EBAB-067A-4F39-93A5-9B1A9772F8BC}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="UnitTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ConvertDBF_SQLite.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="UnitTest">
+        <MSBuild Projects="UnitTest.dproj"/>
+    </Target>
+    <Target Name="UnitTest:Clean">
+        <MSBuild Projects="UnitTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UnitTest:Make">
+        <MSBuild Projects="UnitTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ConvertDBF_SQLite">
+        <MSBuild Projects="ConvertDBF_SQLite.dproj"/>
+    </Target>
+    <Target Name="ConvertDBF_SQLite:Clean">
+        <MSBuild Projects="ConvertDBF_SQLite.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ConvertDBF_SQLite:Make">
+        <MSBuild Projects="ConvertDBF_SQLite.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="UnitTest;ConvertDBF_SQLite"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="UnitTest:Clean;ConvertDBF_SQLite:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="UnitTest:Make;ConvertDBF_SQLite:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

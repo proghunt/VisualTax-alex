@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<UPDATE taxyear = "2016">
+  <ELEMENT>
+    <NAME>vt2016</NAME>
+    <RELEASE>2.0.0</RELEASE>
+    <DATEUPDATE>2017/09/25</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT2016SetupFull.exe</FILE>
+  </ELEMENT>
+  <ELEMENT>
+    <NAME>Visual Tax - T1</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2018/03/05</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-T12016Upda19.exe</FILE>
+  </ELEMENT>
+  <ELEMENT>
+    <NAME>Visual Tax - T2</NAME>
+    <RELEASE>2.0</RELEASE>
+    <DATEUPDATE>2017/09/25</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-T22017Upda19.exe</FILE>
+  </ELEMENT>
+  <ELEMENT>
+    <NAME>Visual Tax - TF</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2017/09/25</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-TF2016Upda19.exe</FILE>
+  </ELEMENT>
+  <ELEMENT>
+    <NAME>Visual Tax - FP</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2017/09/25</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-FP2017Upda19.exe</FILE>
+  </ELEMENT>
+</UPDATE>

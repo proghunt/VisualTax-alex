@@ -1,0 +1,96 @@
+unit uT3012_2;
+interface
+uses
+  SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask;
+type
+TT3012_2 = class(TForm)
+    vtT3012_2Label1:TvtLabel;
+    vtT3012_2Label2:TvtLabel;
+    vtT3012_2Label3:TvtLabel;
+    vtT3012_2Label4:TvtLabel;
+    vtT3012_2Label5:TvtLabel;
+    vtT3012_2Label6:TvtLabel;
+    vtT3012_2Label7:TvtLabel;
+    vtT3012_2Label8:TvtLabel;
+    vtT3012_2Label9:TvtLabel;
+    vtT3012_2Label10:TvtLabel;
+    vtT3012_2Label11:TvtLabel;
+    vtT3012_2Label12:TvtLabel;
+    vtT3012_2Label13:TvtLabel;
+    vtT3012_2Label14:TvtLabel;
+    vtT3012_2Label15:TvtLabel;
+    vtT3012_2Label16:TvtLabel;
+    vtT3012_2Label17:TvtLabel;
+    vtT3012_2Label18:TvtLabel;
+    vtT3012_2Label19:TvtLabel;
+    vtT3012_2Label20:TvtLabel;
+    vtT3012_2Label21:TvtLabel;
+    vtT3012_2Label22:TvtLabel;
+    vtT3012_2Label23:TvtLabel;
+    vtT3012_2Label24:TvtLabel;
+    vtT3012_2Label25:TvtLabel;
+    vtT3012_2Label26:TvtLabel;
+    vtT3012_2Label27:TvtLabel;
+    vtT3012_2Label28:TvtLabel;
+    vtT3012_2Label29:TvtLabel;
+    vtT3012_2Label30:TvtLabel;
+    vtT3012_2Label31:TvtLabel;
+    vtT3012_2Label32:TvtLabel;
+    vtT3012_2Label33:TvtLabel;
+    vtT3012_2Label34:TvtLabel;
+    vtT3012_2Label35:TvtLabel;
+    vtT3012_2Label36:TvtLabel;
+    vtT3012_2Label37:TvtLabel;
+    vtT3012_2Label38:TvtLabel;
+    vtT3012_2Label39:TvtLabel;
+    vtT3012_2Label40:TvtLabel;
+    vtT3012_2Label41:TvtLabel;
+    vtT3012_2Label42:TvtLabel;
+    vtT3012_2Label43:TvtLabel;
+    vtT3012_2Label44:TvtLabel;
+    vtT3012_2Label45:TvtLabel;
+    vtT3012_2Label46:TvtLabel;
+    vtT3012_2Label47:TvtLabel;
+    vtT3012_2Label48:TvtLabel;
+    vtT3012_2Label49:TvtLabel;
+    vtT3012_2Label50:TvtLabel;
+    vtT3012_2Label51:TvtLabel;
+    vtT3012_2Label52:TvtLabel;
+    vtT3012_2Label53:TvtLabel;
+    vtT3012_2Label54:TvtLabel;
+    vtT3012_2Label55:TvtLabel;
+    vtT3012_2Label56:TvtLabel;
+    vtT3012_2Label57:TvtLabel;
+    vtT3012_2Label58:TvtLabel;
+    vtT3012_2Label59:TvtLabel;
+    vtT3012_2Label60:TvtLabel;
+    vtT3012_2Label61:TvtLabel;
+    vtT3012_2Label62:TvtLabel;
+    vtT3012_2Label63:TvtLabel;
+    vtT3012_2Label64:TvtLabel;
+    vtT3012_2Label65:TvtLabel;
+    vtT3012_2Label66:TvtLabel;
+    vtT3012_2Label67:TvtLabel;
+    vtT3012_2Label68:TvtLabel;
+    vtT3012_2Label69:TvtLabel;
+    vtT3012_2Label71:TvtLabel;
+    vtT3012_2Shape22:TvtShape;
+    vtT3012_2Shape1:TvtShape;
+    vtT3012_2Shape2:TvtShape;
+    vtT3012_2Shape4:TvtShape;
+    vtT3012_2Shape5:TvtShape;
+    vtT3012_2Label70:TvtLabel;
+    vtT3012_2Label110:TvtLabel;
+    vtT3012_2Label72:TvtLabel;
+    vtEdit1:TvtEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+T3012_2: TT3012_2;
+implementation
+{$R *.DFM}
+end.

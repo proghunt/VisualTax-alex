@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Description: CRA T1 Web Services project
+Type (Request or Response): Request
+Version: 1-0-0
+Date created:
+Contact:
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:t1rq="http://www.cra-arc.gc.ca/xmlns/t1rq/request/1-0-0"
+    xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+    xmlns:comm="http://www.cra-arc.gc.ca/xmlns/comm/2026/1-0-0"
+    xmlns:t1134="http://www.cra-arc.gc.ca/xmlns/t1134/2021/1-0-0"
+    xmlns:t1135="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0"
+    xmlns:t1="http://www.cra-arc.gc.ca/xmlns/t1/2026/1-0-0"
+    xmlns:tp="http://www.cra-arc.gc.ca/xmlns/tp/2026/1-0-0"
+    targetNamespace="http://www.cra-arc.gc.ca/xmlns/t1rq/request/1-0-0"
+    elementFormDefault="qualified" attributeFormDefault="unqualified" version="t1rq/1-0-0">
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" schemaLocation="standarddatatypes.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/comm/2026/1-0-0" schemaLocation="electronicfilingcommon.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/tp/2026/1-0-0" schemaLocation="taxpayer.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/t1/2026/1-0-0" schemaLocation="t1return.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/t1134/2021/1-0-0" schemaLocation="ControlledAndNotControlledForeignAffiliateReturn2021.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0" schemaLocation="ForeignIncomeVerificationStatement.xsd"/>
+
+    <xsd:element name="TermsAndConditionsRequest" type="t1rq:TermsAndConditionsRequestType"/>
+    <xsd:element name="RefileTermsAndConditionsRequest" type="t1rq:TermsAndConditionsRequestType"/>
+    <xsd:simpleType name="TermsAndConditionsRequestType">
+        <xsd:restriction base="sdt:SimpleTextType"/>
+    </xsd:simpleType>
+
+    <xsd:element name="FileReturnRequest" type="t1rq:FileReturnRequestType"/>
+    <xsd:complexType name="FileReturnRequestType">
+        <xsd:sequence>
+            <xsd:element ref="tp:TaxpayerSocialInsuranceNumber" />
+            <xsd:element ref="tp:TaxpayerBirthDate"/>
+            <xsd:element ref="tp:TaxYear"/>
+            <xsd:element ref="t1rq:AgreementIndicator"/>
+            <xsd:element ref="comm:FirstTimeFilerIndicator"/>
+            <xsd:element ref="comm:TestCaseIdentifier" minOccurs="0"/>
+            <xsd:element ref="comm:OriginatingIP"/>
+            <xsd:element ref="t1rq:NetfileAccessCode" minOccurs="0"/>
+            <xsd:element ref="t1rq:TaxReturnForm"/>
+            <xsd:element ref="comm:GivenName" minOccurs="0"/>
+            <xsd:element ref="t1rq:SecondName" minOccurs="0"/>
+            <xsd:element ref="comm:FamilyName" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="AgreementIndicator" type="comm:IndicatorType"/>
+
+    <xsd:element name="TaxReturnForm" type="t1rq:TaxReturnFormType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">This webservice request can be used for T1 return as well as T1135 and T1134 tax form.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Cette demande de service web peut être utilisée pour la déclaration T1 ainsi que pour les formulaires d'impôt T1135 et T1134.</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:complexType name="TaxReturnFormType">
+        <xsd:choice>
+            <xsd:element ref="t1:T1Return"/>
+            <xsd:element ref="t1135:ForeignIncomeVerificationStatement"/>
+			<xsd:element ref="t1134:ControlledAndNotControlledForeignAffiliateReturn"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:element name="SecondName">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Optional but mandatory if the taxpayer is a first time filers.  If not applicable, leave blank.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Optionnel, mais obligatoire si le contribuable produit une déclaration pour la première fois. Si ce n'est pas le cas, laissez le champ vide.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:restriction base="comm:IndividualGivenNameType">
+                    <xsd:maxLength value="30"/>
+                </xsd:restriction>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="NetfileAccessCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Conditionally mandatory.  Not applicable for first time filers. If not applicable, omit the element.</xsd:documentation> 
+            <xsd:documentation xml:lang="fr">Obligatoire sous condition. Non applicable pour les nouveaux déclarants. Si non applicable, omettre l'élément.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:length value="8"/>
+                <xsd:pattern value="[A-Za-z0-9]{8}"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+	</xsd:element>
+    
+
+</xsd:schema>

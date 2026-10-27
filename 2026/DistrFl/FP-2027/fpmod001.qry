@@ -1,0 +1,143 @@
+{Dec 29, 2000}
+ALTER TABLE Transactions ADD DateCkSent String(10)
+ALTER TABLE Transactions ADD AmountCkSent Currency
+ALTER TABLE Transactions ADD FSErrors String(10)
+{amount to two decimals}
+ALTER TABLE Transactions ADD Amount1 CURRENCY
+UPDATE Transactions SET Amount1 = Amount
+ALTER TABLE Transactions DROP Amount
+ALTER TABLE Transactions ADD Amount CURRENCY
+UPDATE Transactions SET Amount = Amount1
+ALTER TABLE Transactions DROP Amount1
+
+ALTER TABLE Transactions DROP DateSettled
+{Dec 8, 2000}
+ALTER TABLE Transactions ADD FsToBranch String(1)
+{ ----------     Rel 1.3.5 Nov. 15, 2000 ------------}
+CREATE INDEX ClientId on Liabilities(ClientId)
+{ ----------     Rel 1.3.5 Nov. 1, 2000 ------------}
+ALTER TABLE Transactions DROP FromFundId
+ALTER TABLE Transactions ADD FromFund String(6)
+ALTER TABLE Accounts ADD Spousal String(1)
+
+{ ----------     Rel 1.3.5 Oct. 22 ------------}
+CREATE TABLE SupplierChanges (FromCode string(3),ToCode string(3),DateChanged string(10),TimeChanged String(20))
+CREATE TABLE FundCodeChanges (FromCode string(6),ToCode string(6),DateChanged string(10),TimeChanged String(20))
+{ -------------  Rel 1.2 July 3 -----------------}
+CREATE TABLE Commissions (Agent string(5) not null,AdjCode string(2),Description string(30),Amount Currency,DatePaid String(10))
+CREATE INDEX Agent on Commissions(Agent)
+
+CREATE TABLE ADJCodes (AdjCode string(2) not null,AdjType string(6),Description string(30))
+CREATE INDEX AdjCode on AdjCodes(AdjCode)
+
+ALTER TABLE Agents DROP CommissionRate
+ALTER TABLE Agents ADD AgentRate Float
+ALTER TABLE Agents ADD BranchManagerCode Char(4)
+ALTER TABLE Agents ADD BranchManagerRate Float
+ALTER TABLE Agents ADD ManagerCode Char(4)
+ALTER TABLE Agents ADD ManagerRate Float
+ALTER TABLE Agents ADD LicenseCode Char(40)
+
+ALTER TABLE Agents ADD AdjCode1 Char(2)
+ALTER TABLE Agents ADD AdjCode2 Char(2)
+ALTER TABLE Agents ADD AdjCode3 Char(2)
+
+ALTER TABLE Agents ADD Item1 Char(20)
+ALTER TABLE Agents ADD Item2 Char(20)
+ALTER TABLE Agents ADD Item3 Char(20)
+
+ALTER TABLE Agents ADD StartFrom1 Char(10)
+ALTER TABLE Agents ADD StartFrom2 Char(10)
+ALTER TABLE Agents ADD StartFrom3 Char(10)
+
+ALTER TABLE Agents ADD EndIn1 Char(10)
+ALTER TABLE Agents ADD EndIn2 Char(10)
+ALTER TABLE Agents ADD EndIn3 Char(10)
+
+ALTER TABLE Agents ADD Amount1 Currency
+ALTER TABLE Agents ADD Amount2 Currency
+ALTER TABLE Agents ADD Amount3 Currency
+
+
+ALTER TABLE HeadOFFICE ADD DefaultIntermediary Char(4)
+ALTER TABLE HeadOFFICE ADD DefaultSettlementMethod Char(1)
+ALTER TABLE HeadOFFICE ADD TrustAccountBank Char(20)
+ALTER TABLE HeadOFFICE ADD TrustAccountNo Char(15)
+ALTER TABLE HeadOFFICE ADD MinFeRate Float
+
+ALTER TABLE Transactions ADD Notes Char(40)
+ALTER TABLE Transactions ADD AgentPaid Char(1)
+ALTER TABLE Transactions ADD AgentRate Float
+ALTER TABLE Transactions ADD BranchManagerRate Float
+ALTER TABLE Transactions ADD ManagerRate Float
+ALTER TABLE Transactions ADD BranchManagerCode Char(4)
+ALTER TABLE Transactions ADD ManagerCode Char(4)
+ALTER TABLE Transactions ADD CoAgentCode Char(4)
+ALTER TABLE Transactions ADD CoAgentRate Float
+
+ALTER TABLE Transactions ADD DateAgentPaid Char(10)
+ALTER TABLE Transactions ADD DateConfirmed Char(10)
+
+{---------------- Rel 1.3.1  July  16 --------------}
+
+DROP TABLE Commissions
+DROP TABLE AdjCodes
+
+ALTER TABLE HeadOFFICE ADD Branch Char(4)
+
+ALTER TABLE BranchOffices ADD AgentsFilesInDir Char(40)
+ALTER TABLE BranchOffices ADD AgentsFilesOutDir Char(40)
+ALTER TABLE BranchOffices ADD AgentsFilesInArchives Char(40)
+ALTER TABLE BranchOffices ADD AgentsFilesOutArchives Char(40)
+
+ALTER TABLE Clients DROP FileName
+
+{ ---- CREATE TABLE AgentAccount (AgentCode string(5) not null,PayCode string(2),Description String(30),Amount Currency, Notes String(50))
+{ -----CREATE INDEX AgentAccount on AgentAccount(AgentCode)
+
+ALTER TABLE Transactions ADD DepositRefNo Char(15)
+
+CREATE TABLE TrustDeposits (ClientId string(13) not null,AgentCode string(5),TxType string(2),AccountNo String(15), DepositRefNo String(15),TxDate string(10),Amount Currency, AmountUsed Currency, CurrencyId String(1), LastUpdate String(10),LastUpdateBy String(5),Notes String(50))
+CREATE INDEX ClientId on TrustDeposits(ClientId)
+
+CREATE TABLE TrustAccount (ClientId string(13) not null,AgentCode string(5),TxType string(2),AccountNo String(15), DepositRefNo String(15),TxDate string(10),Amount Currency, AmountUsed Currency, CurrencyId String(1),LastUpdate String(10),LastUpdateBy String(5), Notes String(50))
+CREATE INDEX ClientId on TrustAccount(ClientId)
+
+CREATE TABLE PayCodes (Code string(2) not null,Type string(6),Description string(30))
+CREATE INDEX Code on PayCodes(Code)
+
+CREATE TABLE PayAdjustmentsSchedule (AgentCode String(5) not null, Code string(2), Description string(30), StartFrom String(10), EndIn String(10), Amount Currency, Notes String(50))
+CREATE INDEX Code on PayAdjustmentsSchedule(Code)
+
+ALTER TABLE Agents  DROP AdjCode1
+ALTER TABLE Agents  DROP AdjCode2
+ALTER TABLE Agents  DROP AdjCode3
+
+ALTER TABLE Agents  DROP Item1
+ALTER TABLE Agents  DROP Item2
+ALTER TABLE Agents  DROP Item3
+
+ALTER TABLE Agents  DROP StartFrom1
+ALTER TABLE Agents  DROP StartFrom2
+ALTER TABLE Agents  DROP StartFrom3
+
+ALTER TABLE Agents  DROP EndIn1
+ALTER TABLE Agents  DROP EndIn2
+ALTER TABLE Agents  DROP EndIn3
+
+ALTER TABLE Agents  DROP Amount1
+ALTER TABLE Agents  DROP Amount2
+ALTER TABLE Agents  DROP Amount3
+
+{--- Rel 1.3.2  July  24  Remove front bracket from below and run only once--}
+
+ALTER TABLE Liabilities  Add interest1 Float
+UPDATE Liabilities SET Interest1 = Interest
+ALTER TABLE Liabilities  DROP Interest
+ALTER TABLE Liabilities  ADD Interest Float
+UPDATE Liabilities SET Interest = Interest1
+ALTER TABLE Liabilities  DROP Interest1
+
+DELETE FROM FpScr WHERE FormName = 'OTHASS'
+INSERT INTO FPSCR (FormNo,FormName,DataIndic,FormFields,FormRlNm,FormAbrev) VALUES (105, "OTHASS","23","23","OthAssets","Other Assets")
+UPDATE FPSCR SET DataIndic = 'Y'  WHERE FpScr.FormName = 'DISPINC'

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<APPMON>
+    <APPMONTYPE>OnSave</APPMONTYPE>
+    <!-- <APPMONTYPE>OnEfile</APPMONTYPE> -->
+    <APPNAMES>
+        <!-- <ELEMENT>ALL</ELEMENT> -->
+        <!-- <ELEMENT>NONE</ELEMENT> -->        
+        <ELEMENT>T2-2018,T3-2017</ELEMENT>
+        <ELEMENT>T1-2017</ELEMENT>
+    </APPNAMES>
+    <PGMKEYS>
+        <ELEMENT>ALL</ELEMENT>
+        <!-- <ELEMENT>NONE</ELEMENT> -->        
+        <!-- <ELEMENT>T206-3302-4572-1232,T302-0614-6924-1337</ELEMENT> -->
+        <!-- <ELEMENT>T402-6218-5527-1980</ELEMENT> -->
+    </PGMKEYS>
+    <EXCLUDEDPGMKEYS>
+        <ELEMENT>NONE</ELEMENT>    
+        <!-- <ELEMENT>T206-3302-4572-1232,T302-0614-6924-1337</ELEMENT> -->
+        <!-- <ELEMENT>T402-6218-5527-1980</ELEMENT> -->
+    </EXCLUDEDPGMKEYS>
+    <DATES>
+        <!-- <ELEMENT>ALL</ELEMENT> -->
+        <!-- <ELEMENT>NONE</ELEMENT> -->
+        <FROM>2018-06-01</FROM>        
+        <TO>2018-09-30</TO>        
+    </DATES>
+</APPMON>

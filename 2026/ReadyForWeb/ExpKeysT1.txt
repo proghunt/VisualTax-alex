@@ -1,0 +1,19 @@
+MON-ON                          //Enter MON-ON to start monitoring
+T105-1373-2615-1188             //FOCUS TAX march 4 2026
+T105-2578-3407-1396             //lisastaxes27@gmail.com
+T103-9703-1132-0916             //Dave Murray murray336@gmail.com
+T105-4440-5620-1074             //AMIR SHEIKH CPA  March31
+T105-8500-0062-0974             //Agrewals
+T103-8246-0115-0872             //ARSHDEEP KAUR 
+T104-3385-6356-1254              Clips acc
+T105-1268-2521-1086              GSM Accounting ltd
+T103-8057-8835-1297              Gordon noel
+//I6454                          //Dale Goodwin with Gerald Bondy PURCHASED
+//W1907                           //-M-SHAFIQUL HASSAN with Plan Accounting //20240312
+//J3129                           //Plus accounting with MIA Accounting PURCASED
+//D3106	                        //MOHAMMAD HAYAT with Paul Lochab PURCHASED
+H9001	                         //Besa consulting from Integer Accounting
+//X7559                            //13531449 Canada Inc.Narinder Singh from Sugar PURCHASED
+//I0764                            //Prithpal Dhillon from MANN CPA 
+//U4242                        //6863493 CANADA INC. with Paul lochab  - Purchased A22
+EOF

@@ -1,0 +1,1262 @@
+/*
+var left_column_width = WALLS_WIDTH;
+var right_column_width = WALLS_WIDTH;
+// defined in head_tags.inc
+*/
+
+if (!String.prototype.startsWith) {
+  String.prototype.startsWith = function(searchString, position) {
+    position = position || 0;
+    return this.indexOf(searchString, position) === position;
+  };
+}
+
+if (!String.prototype.includes) {
+  String.prototype.includes = function(search, start) {
+    if (typeof start !== 'number') {
+      start = 0;
+    }
+
+    if (start + search.length > this.length) {
+      return false;
+    } else {
+      return this.indexOf(search, start) !== -1;
+    }
+  };
+}
+  
+  
+var total_width = 0;
+var total_height = 0;
+var header_height = 100;
+var floor_height = 100;
+var content_vert_border = 35;
+var content_horz_border = 40;
+var before_expand_width = -1;
+
+function url_redirect(url){
+    var X = setTimeout(function(){
+        window.location.replace(url);
+        return true;
+    },300);
+
+    if( window.location = url ){
+        clearTimeout(X);
+        return true;
+    } else {
+        if( window.location.href = url ){
+            clearTimeout(X);
+            return true;
+        }else{
+            clearTimeout(X);
+            window.location.replace(url);
+            return true;
+        }
+    }
+    return false;
+}; 
+
+function fixedEncodeURIComponent(str) {
+  return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
+    return '%' + c.charCodeAt(0).toString(16);
+  });
+};
+
+function showPopup(url, resize) {        
+    need_refresh = false;
+    document.getElementById('editFrame').src = "";
+    if (resize === undefined || resize) {
+        document.getElementById('modaldlg').style.width = "90%";
+        //document.getElementById('modaldlg').style.height = window.innerHeight + "px";
+        document.getElementById('editFrame').style.width = "100%"; 
+        document.getElementById('editFrame').style.height = window.innerHeight - 150 + "px"; 
+    }
+    document.getElementById('editFrame').src=url;                  
+}; 
+
+function getDocumentHeight() {
+    doc = document;
+    return Math.max(
+            doc.body.scrollHeight, doc.documentElement.scrollHeight,
+            doc.body.offsetHeight, doc.documentElement.offsetHeight,
+            doc.body.clientHeight, doc.documentElement.clientHeight
+        );   
+};
+
+function getDocumentWidth() {
+    doc = document;    
+    return Math.max(
+            doc.body.scrollWidth, doc.documentElement.scrollWidth,
+            doc.body.offsetWidth, doc.documentElement.offsetWidth,
+            doc.body.clientWidth, doc.documentElement.clientWidth
+        );   
+};
+
+function statusCheck(id) {
+    cb = document.getElementById('cb' + id);
+    if (cb) {
+        const formData = new FormData();
+        formData.append('action', 'SAVE_PROFILE');
+        formData.append('CyberId', id);
+        if (cb.checked) {
+            formData.append('Status', 'A');    
+        }
+        else {
+            formData.append('Status', 'I');
+        }
+
+        var request = new XMLHttpRequest();
+        request.open('POST', 'api.php', false);
+        try {
+            request.send(formData);
+            result = JSON.parse(request.response);
+            if (result.success!="true") {                    
+                alert(result.error_message);
+            }
+        }
+        catch (error) {
+            alert(error + '\n\n' + request.response);
+        }            
+    }
+}; 
+
+function updateVirtualDiscount() {
+    var radios = document.getElementsByName('VirtualOfficeDiscountMode');
+    var mode = "";
+    for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+        mode = radios[i].value;            
+        break;
+      }
+    }
+    document.getElementById('VirtualOfficeDiscount').readOnly = mode != "M";    
+    if (document.getElementById("VirtualOfficeDiscount").readOnly) {
+        document.getElementById("VirtualOfficeDiscount").value = "";
+    }
+    document.getElementById('VirtualOfficeDiscountPercent').readOnly = mode != "P";    
+    if (document.getElementById("VirtualOfficeDiscountPercent").readOnly) {
+        document.getElementById("VirtualOfficeDiscountPercent").value = "";
+    }
+};
+
+function tableLoad() {
+    l = document.getElementById('loading');
+    t = document.getElementById('offices');
+    if (l) {
+        l.style.visibility = "hidden";
+    }
+    if (t) {
+        t.style.visibility = "visible";    
+    }
+};
+
+function updateBottomCorner() {
+    var holderTable = document.getElementById('holder');
+    if (holderTable) {
+        var bottomCells = holderTable.rows.item(2).cells;
+        bc = document.getElementById('bottom_left_corner');
+        if (bc) {
+            w = bottomCells.item(0).offsetWidth;
+            h = bottomCells.item(0).offsetHeight;
+            bc.style.cssText = 'border-top: 100px solid #f5f5f5; border-right: '+ w +'px solid transparent;';
+        }
+        bc = document.getElementById('bottom_right_corner');
+        if (bc) {
+            w = bottomCells.item(2).offsetWidth;
+            h = bottomCells.item(2).offsetHeight;
+            //bc.style.cssText = 'border-top: '+ h +'px solid #f5f5f5; border-left: '+ w +'px solid transparent;';
+            bc.style.cssText = 'border-top: 100px solid #f5f5f5; border-left: '+ w +'px solid transparent;';
+        }
+    }
+};
+
+function draw_header(left_width, right_width) {
+    var holderTable = document.getElementById('holder');
+    if (holderTable) {
+        var topleft_canvas = document.getElementById('topleft_canvas');
+        var topright_canvas = document.getElementById('topright_canvas');
+        topleft_canvas.width = 0;
+        
+        var contentCells = holderTable.rows.item(0).cells;
+        
+        topleft_canvas.width = left_width;
+        topright_canvas.width = right_width;
+        topleft_canvas.height = header_height;
+        topright_canvas.height = header_height;
+        
+        if (topleft_canvas.getContext && topright_canvas.getContext) {
+            var ctx_left = topleft_canvas.getContext('2d');
+            var ctx_right = topright_canvas.getContext('2d');
+            
+            // clear corners
+            ctx_left.fillStyle = LEFT_PANEL_COLOR;
+            ctx_left.beginPath();            
+            ctx_left.moveTo(0, 0);
+            ctx_left.lineTo(0, header_height);
+            ctx_left.lineTo(left_width, header_height);
+            ctx_left.lineTo(0, 0);
+            ctx_left.fill();            
+            ctx_left.closePath();
+            
+            ctx_right.fillStyle = RIGHT_PANEL_COLOR;
+            ctx_right.beginPath();            
+            ctx_right.lineTo(right_width, 0);
+            ctx_right.lineTo(right_width, header_height);
+            ctx_right.lineTo(0, header_height);
+            ctx_right.lineTo(right_width, 0);
+            ctx_right.fill();
+            ctx_right.closePath();
+            
+            if (BORDER_WIDTH > 0) {
+                ctx_left.strokeStyle = BORDER_COLOR;
+                ctx_left.lineWidth = BORDER_WIDTH;
+                ctx_left.beginPath(); 
+                ctx_left.moveTo(BORDER_WIDTH / 2, 0);
+                ctx_left.lineTo(left_width, header_height);
+                ctx_left.stroke();
+                ctx_left.closePath();
+                
+                ctx_right.strokeStyle = BORDER_COLOR;
+                ctx_right.lineWidth = BORDER_WIDTH;
+                ctx_right.beginPath(); 
+                ctx_right.moveTo(right_width - BORDER_WIDTH / 2, 0);
+                ctx_right.lineTo(0, header_height);
+                ctx_right.stroke();
+                ctx_right.closePath();
+            }
+            
+            /*ctx.font = '48px serif';
+            ctx.strokeText(
+                total_width + ' - ' + 
+                contentCells.item(1).offsetWidth + ' - ' +
+                w1 + ' - ' + w2
+                , 10, 50);*/
+        }
+        else {
+            alert('Not supported');
+        }
+    }   
+};
+
+function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
+  if (typeof stroke === 'undefined') {
+    stroke = true;
+  }
+  if (typeof radius === 'undefined') {
+    radius = 5;
+  }
+  if (typeof radius === 'number') {
+    radius = {tl: radius, tr: radius, br: radius, bl: radius};
+  } else {
+    var defaultRadius = {tl: 0, tr: 0, br: 0, bl: 0};
+    for (var side in defaultRadius) {
+      radius[side] = radius[side] || defaultRadius[side];
+    }
+  }
+  ctx.beginPath();
+  ctx.moveTo(x + radius.tl, y);
+  ctx.lineTo(x + width - radius.tr, y);
+  ctx.quadraticCurveTo(x + width, y, x + width, y + radius.tr);
+  ctx.lineTo(x + width, y + height - radius.br);
+  ctx.quadraticCurveTo(x + width, y + height, x + width - radius.br, y + height);
+  ctx.lineTo(x + radius.bl, y + height);
+  ctx.quadraticCurveTo(x, y + height, x, y + height - radius.bl);
+  ctx.lineTo(x, y + radius.tl);
+  ctx.quadraticCurveTo(x, y, x + radius.tl, y);
+  ctx.closePath();
+  if (fill) {
+    ctx.fill();
+  }
+  if (stroke) {
+    ctx.stroke();
+  }
+};  
+
+function find_widest() {
+    var widest = null;
+    var widestWidth = 0;
+    jQuery("html *").each(function() {
+      if (jQuery(this).outerWidth() > widestWidth) {    
+        widest = jQuery(this);
+        widestWidth = jQuery(this).outerWidth();
+      }
+    });
+    jQuery("html *").each(function() {
+      var $this = $(this);
+      if (jQuery.contains(widest[0], $this[0]) && jQuery(this).outerWidth() >= widestWidth) {
+        widest = $this;
+        widestWidth = jQuery(this).outerWidth();
+      }
+    });
+};
+
+function find_highest() {
+    var highest = null;
+    var highestHeight = 0;
+    jQuery("html *").each(function() {
+      if (jQuery(this).outerHeight() > highestHeight) {    
+        highest = jQuery(this);
+        highestHeight = jQuery(this).outerHeight();
+      }
+    });
+    jQuery("html *").each(function() {
+      var $this = $(this);
+      if (jQuery.contains(highest[0], $this[0]) && jQuery(this).outerHeight() >= highestHeight) {
+        highest = $this;
+        highestHeight = jQuery(this).outerHeight();
+      }
+    });
+    //console.log(highestHeight);
+    //console.log(highest[0]);
+    return highestHeight;
+};
+
+function draw_floor() {
+    if (FLOOR_MODE != 'T') {
+        return;
+    }
+    var holderTable = document.getElementById('holder');
+    if (holderTable) {
+        var canvas = document.getElementById('floor_canvas');
+        canvas.width = 0;        
+        left_width = left_column_width;
+        right_width = right_column_width;
+        canvas.width = total_width;
+
+        //find_widest();
+        //find_highest();
+        /*var contentCells = holderTable.rows.item(1).cells;
+        
+        var counter = 0;
+        while (true) {
+            total_width = contentCells.item(0).offsetWidth + contentCells.item(1).offsetWidth + contentCells.item(2).offsetWidth;
+            console.log('width - ' + total_width + ' offsetWidth - ' + holderTable.offsetWidth + ' document width - ' + getDocumentWidth());
+            console.log('l - ' + contentCells.item(0).offsetWidth + ' c - ' + contentCells.item(1).offsetWidth + ' r - ' + contentCells.item(2).offsetWidth);
+            left_width = contentCells.item(0).offsetWidth;            
+            right_width = total_width - contentCells.item(0).offsetWidth - contentCells.item(1).offsetWidth;
+            canvas.width = total_width;
+            if (total_width == contentCells.item(0).offsetWidth + contentCells.item(1).offsetWidth + contentCells.item(2).offsetWidth || counter > 10) {
+                break;
+            }
+            counter++;
+        };
+        console.log('floor - ' + total_width + ' - ' + left_width + ' - ' + right_width);
+        */
+        
+        canvas.height = floor_height;
+                
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            
+            
+            //ctx.fillStyle = FLOOR_COLOR;
+            ctx.strokeStyle = GROUT_COLOR;
+            
+            ctx.beginPath();
+            
+            for (var i=1; i<=4; i++) {
+                ctx.moveTo(0, 100/4*i);
+                ctx.lineTo(total_width, 100/4*i);
+            }
+            
+            ctx.moveTo(0, 0);
+            ctx.lineTo(total_width, 0);
+            ctx.lineTo(total_width, floor_height);
+            ctx.lineTo(0, floor_height);
+            ctx.lineTo(0, 0);
+            //ctx.fill();
+            
+            for (var i=0; i<=10; i++) {
+                ctx.moveTo((total_width / 10) * i, 1);
+                ctx.lineTo((total_width / 10) * i, floor_height);
+            }
+            ctx.stroke();
+            ctx.closePath();
+            
+            /*
+            // clear corners
+            ctx.fillStyle = LEFT_PANEL_COLOR;
+            ctx.beginPath();            
+            ctx.moveTo(0, 0);
+            ctx.lineTo(left_width, 0);
+            ctx.lineTo(0, total_height);
+            ctx.lineTo(0, 0);
+            ctx.fill();
+            ctx.closePath();
+            
+            ctx.fillStyle = RIGHT_PANEL_COLOR;
+            ctx.beginPath();            
+            ctx.moveTo(total_width - right_width, 0);
+            ctx.lineTo(total_width, 0);
+            ctx.lineTo(total_width, total_height);
+            ctx.lineTo(total_width - right_width, 0);
+            ctx.fill();
+            ctx.closePath();
+            
+            
+            if (BORDER_WIDTH > 0) {
+                ctx.strokeStyle = BORDER_COLOR;
+                ctx.lineWidth = BORDER_WIDTH;
+                ctx.beginPath(); 
+                ctx.moveTo(BORDER_WIDTH / 2, 0);
+                ctx.lineTo(BORDER_WIDTH / 2, total_height);
+                ctx.stroke();
+                ctx.closePath();
+                
+                ctx.beginPath(); 
+                ctx.moveTo(total_width - BORDER_WIDTH / 2, 0);
+                ctx.lineTo(total_width - BORDER_WIDTH / 2, total_height);
+                ctx.stroke();
+                ctx.closePath();
+            }
+            */
+            
+            if (false) {
+                // draw monitor stand
+                ctx.fillStyle = BORDER_COLOR;
+                ctx.strokeStyle = BORDER_COLOR;
+                /*ctx.fillRect((total_width / 2) - 10, 0, 20, 20);
+                roundRect(ctx, (total_width / 2) - 100, 20, 200, 20, 5, true, true);*/
+                ctx.fillRect(left_width + ((total_width - left_width - right_width) / 2) - 10, 0, 20, 20);
+                roundRect(ctx, left_width + ((total_width - left_width - right_width) / 2) - 50, 15, 100, 20, 5, true, true);
+                roundRect(ctx, left_width + ((total_width - left_width - right_width) / 2) - 100, 20, 200, 20, 5, true, true);
+                /*ctx.font = '48px serif';
+                ctx.strokeText(
+                    total_width + ' - ' + 
+                    contentCells.item(1).offsetWidth + ' - ' +
+                    w1 + ' - ' + w2
+                    , 10, 50);*/
+                    
+                //draw_header(left_width, right_width);
+            }
+        }
+        else {
+            alert('Not supported');
+        }
+    }    
+};
+
+function draw_monitor_stand() {
+    var holderTable = document.getElementById('holder');
+    if (holderTable) {
+        var canvas = document.getElementById('monitor_stand_canvas');
+        canvas.width = 0;        
+        left_width = left_column_width;
+        right_width = right_column_width;
+        canvas.width = total_width;        
+        
+        canvas.height = floor_height;
+                
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            
+            // draw monitor stand
+            ctx.fillStyle = BORDER_COLOR;
+            ctx.strokeStyle = BORDER_COLOR;
+            ctx.fillRect(left_width + ((total_width - left_width - right_width) / 2) - 10, 0, 20, 20);
+            roundRect(ctx, left_width + ((total_width - left_width - right_width) / 2) - 50, 15, 100, 20, 5, true, true);
+            roundRect(ctx, left_width + ((total_width - left_width - right_width) / 2) - 100, 20, 200, 20, 5, true, true);
+        }
+        else {
+            alert('Not supported');
+        }
+    }    
+};
+
+function left_collapse_expand() {
+    var panel = document.getElementById('left_menu_panel');
+    var img = document.getElementById('left_collapse_expand_img');
+    var column = document.getElementById('left_panel_column1');
+    var d = document.getElementById('left_panel_div');
+    var wall = document.getElementById('left_wall1');
+    var wall_panel = document.getElementById('left_wall_panel'); //!!!
+    var wall_div = document.getElementById('left_wall_div');
+    var left_td = document.getElementById('left_td');
+    if (panel) {
+        if (panel.style.visibility == "hidden") {
+            left_column_width = WALLS_WIDTH;
+            if (wall_div) {
+                wall_div.style.visibility = "hidden";
+            }
+            if (img) {
+                img.src = "img/collapse.png";
+            }
+            if (column) {
+                column.style.width = left_column_width + "px";
+            }
+            if (wall) {
+               wall.style.width = left_column_width + "px";
+            }
+            if (wall_panel) {
+               wall_panel.style.width = left_column_width + "px";
+            }
+            if (left_td) {
+               left_td.style.width = left_column_width + "px";
+            }
+            /*if (d) {
+                d.style.padding = "19px";
+            }*/
+            panel.style.visibility = "visible";
+            panel.style.position = "relative";            
+            localStorage.setItem("left_panel_visible", "true");
+        }
+        else {
+            left_column_width = 45;
+            panel.style.visibility = "hidden";  
+            panel.style.position = "absolute";            
+  
+            if (wall_div) {
+                wall_div.style.visibility = "hidden";
+            }
+            if (img) {
+                img.src = "img/expand.png";
+            }  
+            if (column) {
+                column.style.width = left_column_width + "px";
+            } 
+            if (wall) {
+                wall.style.width = left_column_width + "px";
+            }
+            if (wall_panel) {
+               wall_panel.style.width = left_column_width + "px";
+            }
+            if (left_td) {
+               left_td.style.width = left_column_width + "px";
+            }
+            /*if (d) {
+                d.style.padding = "5px";
+            }*/  
+            localStorage.setItem("left_panel_visible", "false");            
+        }
+    }
+    main_load_resize();
+};
+
+function right_collapse_expand() {
+    before_expand_width = $(window).width();
+    var panel = document.getElementById('right_menu_panel');
+    var img = document.getElementById('right_collapse_expand_img');
+    var column = document.getElementById('right_panel_column');
+    var panel = document.getElementById('right_menu_panel');
+    var wall = document.getElementById('right_wall');
+    var wall_panel = document.getElementById('right_wall_panel');
+    var right_td = document.getElementById('right_td');
+    if (panel) {
+        if (panel.style.visibility == "hidden") {
+            right_column_width = WALLS_WIDTH;
+            if (img) {
+                img.src = "img/collapse.png";
+            }
+            if (column) {
+                column.style.width = right_column_width + "px";
+            }
+            if (wall) {
+               wall.style.width = right_column_width + "px";
+            }
+            if (wall_panel) {
+               wall_panel.style.width = right_column_width + "px";
+            }
+            if (right_td) {
+               right_td.style.width = right_column_width + "px";
+            }
+            panel.style.position = "relative";
+            panel.style.visibility = "visible"; 
+            localStorage.setItem("right_panel_visible", "true");
+        }
+        else {
+            right_column_width = 45;
+            panel.style.visibility = "hidden"; 
+            panel.style.position = "absolute";  
+            panel.style.left = "0px";            
+            if (img) {
+                img.src = "img/expand.png";
+            }  
+            if (column) {
+                column.style.width = right_column_width + "px";
+            } 
+            if (wall) {
+                wall.style.width = right_column_width + "px";
+            }
+            if (wall_panel) {
+               wall_panel.style.width = right_column_width + "px";
+            }
+            if (right_td) {
+               right_td.style.width = right_column_width + "px";
+            }
+            localStorage.setItem("right_panel_visible", "false");            
+        }
+    }
+    main_load_resize();
+};
+
+function showtablecolumns() {
+    var tc = document.getElementById('table_columns');
+    var b = document.getElementById('table_columns_button');
+    if (tc) {
+        if (tc.style.visibility == "hidden") {
+            tc.style.visibility = "visible";  
+            if (b) {
+                b.innerText = "Hide table columns";
+            }
+        }
+        else {
+            tc.style.visibility = "hidden";   
+            if (b) {
+                b.innerText = "Show table columns";
+            }            
+        }
+    }
+};    
+
+function adjust_titles() {
+    
+    var titlesTable = document.getElementById('titles');
+    var logo_message = document.getElementById('logo_message');
+    var company_name = document.getElementById('company_name');
+    if (titlesTable) {
+        var contentCells = titlesTable.rows.item(0).cells;
+        
+        if (company_name) {
+            company_name.style.visibility = "hidden";
+            company_name.style.width = 0;
+        }
+        if (logo_message) {
+            logo_message.style.visibility = "hidden";
+            logo_message.style.width = 0;
+        }
+        
+        
+        if (company_name) {
+            company_name.style.width = (contentCells.item(1).offsetWidth - 20) + "px";            
+        }
+        if (logo_message) {
+            logo_message.style.width = (contentCells.item(1).offsetWidth - 20) + "px";            
+        }       
+        
+        
+        if (company_name) {
+            company_name.style.visibility = "visible";
+        }
+        if (logo_message) {
+            logo_message.style.visibility = "visible";
+        }
+    }
+};
+
+function adjust_walls() {
+    var angle = 12.5*Math.PI/180;
+    var height = getDocumentHeight();
+    alert(height);
+    var top_height = 100;
+    var left_width = 200;
+    var left_wall = document.getElementById('left_wall');
+    if (left_wall) {        
+        left_wall.style.height = height + "px";   
+    }
+    var p = top_height * (Math.sin(angle) * left_width) / (Math.cos(angle) * left_width - top_height);
+    
+    // initial coordinates
+    var A = 0;
+    var B = height;
+    // translate the center (assuming -perspective-origin at 50%)
+    A -= height/2;
+    B -= height/2;
+    
+    p = top_height * (Math.sin(angle) * left_width) / (Math.cos(angle) * left_width - top_height);
+    
+};
+
+/*function adjust_content_div() {
+    var frameTable = document.getElementById('frame_table');
+    var contentDiv = document.getElementById('content_div');
+    var left_panel_div = document.getElementById('left_panel_div');
+    //var left_wall_div = document.getElementById('left_wall');
+    if (frameTable && contentDiv) {        
+        contentDiv.style.height = 0;
+        contentDiv.style.width = 0;
+        var contentCells = frameTable.rows.item(1).cells;                
+        contentDiv.style.height = contentCells.item(1).offsetHeight + "px";              
+        contentDiv.style.width = contentCells.item(1).offsetWidth + "px";  
+        console.log(contentCells.item(1).offsetWidth);        
+        //var left_pahel_height = frameTable.rows.item(0).cells.item(0).offsetHeight + frameTable.rows.item(1).cells.item(0).offsetHeight + frameTable.rows.item(2).cells.item(0).offsetHeight;   
+        //left_panel_div.style.height = left_pahel_height + "px";     
+        //if (left_wall_div) {
+        //    left_wall_div.style.height = left_pahel_height + "px";         
+        //}
+    }    
+};*/
+
+function adjust_content_div() {
+    var contentDiv = document.getElementById('content_div');
+    if (contentDiv) {        
+        contentDiv.style.height = 0;
+        contentDiv.style.width = 0;
+        contentDiv.style.height = (total_height - header_height - floor_height - content_horz_border * 2) + "px";              
+        contentDiv.style.width = (total_width - left_column_width - right_column_width - content_vert_border * 2) + "px";
+    }    
+};
+
+function perspective_transform() {
+    var holderTable = document.getElementById('holder');
+    if (holderTable) {
+        //var height = getDocumentHeight();
+        var height = total_height;        
+        var left_width = left_column_width;
+        var left_wall = document.getElementById('left_wall');
+        if (left_wall) {
+            left_wall.style.visibility = 'hidden';
+            left_wall.style.height = height;
+            left_wall.style.width = left_width;
+            var left_transform = new PerspectiveTransform(left_wall, left_width, height, true);
+
+            left_transform.topRight.x = left_width;
+            left_transform.topRight.y = 100;
+            left_transform.bottomRight.x = left_width;
+            left_transform.bottomRight.y = height - 100;
+            left_transform.update();   
+            
+            left_wall.style.visibility = 'visible';
+        }
+        
+        var right_width = right_column_width;
+        var right_wall = document.getElementById('right_wall');
+        if (right_wall) {
+            right_wall.style.height = height;
+            right_wall.style.width = right_width;
+            var right_transform = new PerspectiveTransform(right_wall, right_width, height, true);
+            right_transform.topLeft.x = 0;
+            right_transform.topLeft.y = 100;
+            right_transform.bottomLeft.x = 0;
+            right_transform.bottomLeft.y = height - 100;
+            
+            right_transform.topRight.x = right_width;
+            right_transform.topRight.y = 0;
+            right_transform.bottomRight.x = right_width;
+            right_transform.bottomRight.y = height;
+            
+            right_transform.update();     
+            right_wall.style.visibility = 'visible';
+        }
+        
+        var floor_div = document.getElementById('floor_div');
+        var monitor_stand_div = document.getElementById('monitor_stand_div');
+        var width = total_width;
+        if (floor_div) {
+            floor_div.style.top = (height - 100) + "px";            
+            floor_div.style.width = width + "px";
+            if (monitor_stand_div) {
+                monitor_stand_div.style.top = (height - 100) + "px";            
+                monitor_stand_div.style.width = width + "px";
+            }
+            var floor_transform = new PerspectiveTransform(floor_div, width, 100, true);
+            floor_transform.topLeft.x = left_width;
+            floor_transform.topLeft.y = 0;
+            floor_transform.topRight.x = width - right_width;
+            floor_transform.topRight.y = 0;
+            
+            floor_transform.bottomLeft.x = 0;
+            floor_transform.bottomLeft.y = 100;
+            floor_transform.bottomRight.x = width;
+            floor_transform.bottomRight.y = 100;
+            
+            floor_transform.update();     
+            floor_div.style.visibility = 'visible';
+        }
+        
+        var ceiling_div = document.getElementById('ceiling_div');
+        var width = total_width;
+        if (ceiling_div) {
+            ceiling_div.style.top = "0px";            
+            ceiling_div.style.width = width + "px";
+            var ceiling_transform = new PerspectiveTransform(ceiling_div, width, 100, true);
+            ceiling_transform.topLeft.x = 0;
+            ceiling_transform.topLeft.y = 0;
+            ceiling_transform.topRight.x = width;
+            ceiling_transform.topRight.y = 0;
+            
+            ceiling_transform.bottomLeft.x = left_width;
+            ceiling_transform.bottomLeft.y = 100;
+            ceiling_transform.bottomRight.x = width - right_width;
+            ceiling_transform.bottomRight.y = 100;
+            
+            ceiling_transform.update();     
+            ceiling_div.style.visibility = 'visible';
+        }
+    }
+};
+
+function adjust_table_height() {
+    var left_wall = document.getElementById('left_wall');   
+    var right_wall = document.getElementById('right_wall');   
+    var holderTable = document.getElementById('holder');
+    if (left_wall && total_height > left_wall.style.height) {
+        left_wall.style.height = total_height + "px";    
+    } 
+    if (right_wall && total_height > right_wall.style.height) {
+        right_wall.style.height = total_height + "px";    
+    } 
+    /*if (holderTable && total_height > holderTable.offsetHeight) {
+        holderTable.style.height = total_height + "px";    
+    }*/ 
+    if (total_height > document.body.clientHeight) {
+        document.body.style.height = total_height + "px"; 
+    }
+    
+    //alert(total_height);
+    //console.log('height ' + Math.max(holderTable.offsetHeight, left_wall.offsetHeight, right_wall.offsetHeight) + ' - ' + document.body.scrollHeight);
+    
+    if (left_wall && right_wall && holderTable) {
+        left_wall.style.height = total_height + "px";    
+        right_wall.style.height = total_height + "px";
+        //holderTable.style.height = total_height + "px";  
+        document.height = total_height + "px"; 
+        document.body.style.height = total_height + "px"; 
+        holderTable.style.width = total_width + "px";
+        right_wall.style.left = (total_width - right_column_width) + "px";
+        
+        var left_wall_panel = document.getElementById('left_wall_panel');  
+        //alert(left_wall_panel.style.height + ' ' + total_height);
+        left_wall_panel.style.height = total_height + "px"; 
+        
+        var right_wall_panel = document.getElementById('right_wall_panel'); 
+        right_wall_panel.style.height = total_height + "px"; 
+    }
+};
+
+function get_width() {
+    return window.innerWidth;
+    //return $(window).width();
+    //var holderTable = document.getElementById('holder');
+    /*if (find_highest() > $(window).width() + 10){
+        return window.innerWidth;
+        
+    }
+    else {
+        return $(window).width();
+    }*/
+    
+    /*if (document.body.scrollWidth == window.innerWidth && window.innerWidth != $(window).width()) {
+        return window.innerWidth;
+    }
+    else {
+        return $(window).width();
+    }*/
+};
+
+function adjust_sizes() {
+    var canvas = document.getElementById('floor_canvas');
+    if (canvas) {
+        canvas.width = 0; 
+        /*
+        total_width = window.innerWidth 
+           || document.documentElement.clientWidth 
+           || document.body.clientWidth 
+           || 0; */
+        if (before_expand_width > -1) {
+            total_width = before_expand_width;
+        } else {
+            total_width = get_width();
+        } 
+        //console.log(total_width);    
+        before_expand_width = -1;
+      
+        total_height = window.innerHeight 
+           || document.documentElement.clientHeight 
+           || document.body.clientHeight 
+           || 0;
+        //total_height = total_height - 10;
+        var left_panel = document.getElementById('left_menu_panel');   
+        var left_panel_width = 0;
+        if (left_panel /*&& left_panel.style.visibility == 'visible'*/) {
+            left_panel_width = left_panel.offsetHeight + 65;
+        }
+        var right_panel = document.getElementById('right_menu_panel');    
+        var right_panel_width = 0;
+        if (right_panel && right_panel.style.visibility == 'visible') {
+            right_panel_width = right_panel.offsetHeight + 65;
+        }
+        if (left_panel && right_panel) {
+            total_height = Math.max(total_height, left_panel_width, right_panel_width);    
+        }
+    }
+};
+
+function draw_ceiling() {
+    do_draw_ceiling = function (ctx) {
+        const ceiling_height = 100;  
+        const glass_height = 50;
+        const glass_width_percent = 90;
+        //const horz_margin = (total_width - total_width * glass_width_percent / 100) / 2;
+        const horz_margin = 200;
+        
+        if (CEILING_MODE == 'P') {
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(0, ceiling_height);
+            ctx.lineTo(total_width, ceiling_height);
+            ctx.lineTo(total_width, 0);
+            ctx.lineTo(total_width - horz_margin, 0);
+            ctx.lineTo(total_width - horz_margin, ceiling_height - glass_height);
+            ctx.lineTo(horz_margin, ceiling_height - glass_height);
+            ctx.lineTo(horz_margin, 0);
+            ctx.lineTo(0, 0);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            
+            ctx.beginPath();
+            for (var i=0; i<=10; i++) {
+                ctx.moveTo(((total_width - horz_margin * 2) / 10) * i + horz_margin, 0);
+                ctx.lineTo(((total_width - horz_margin * 2) / 10) * i + horz_margin, glass_height);
+            }
+            ctx.stroke();
+            ctx.closePath();
+        } else if (CEILING_MODE == 'N') {
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(0, ceiling_height);
+            ctx.lineTo(total_width, ceiling_height);
+            ctx.lineTo(total_width, 0);
+            ctx.lineTo(0, 0);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+        }
+    }
+    
+    if (CEILING_MODE != 'N' && CEILING_MODE != 'P') {
+        return;
+    }
+    var canvas = document.getElementById('ceiling_canvas');
+    if (canvas) {
+        canvas.width = 0;                
+        canvas.width = total_width;                
+        canvas.height = 100;
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');                           
+            ctx.strokeStyle = BORDER_COLOR;
+            if (CEILING_COLOR.startsWith('#')) {
+                ctx.fillStyle = CEILING_COLOR;
+                do_draw_ceiling(ctx);
+            }
+            else {
+                var img = new Image();
+                img.src = CEILING_COLOR;
+                img.onload = function () {
+                    var pat = ctx.createPattern(img,"repeat");
+                    ctx.fillStyle = pat;
+                    do_draw_ceiling(ctx);
+                }
+                
+            }
+        }
+    }
+};
+
+  
+
+function draw_left_wall() {
+    do_draw_baseboard = function (canvas, cts) {        
+        if (!LEFT_WALL_MODE.includes('B')) {
+            return;
+        }
+        
+        const wall_width = right_column_width;
+        const board_height = 20;
+        ctx.fillStyle = LEFT_BASEBOARD_COLOR;
+        ctx.beginPath();
+        ctx.moveTo(0, total_height - board_height);
+        ctx.lineTo(0, total_height);
+        ctx.lineTo(wall_width, total_height);
+        ctx.lineTo(wall_width, total_height - board_height);
+        ctx.lineTo(0, total_height - board_height);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.moveTo(0, total_height - 15);
+        ctx.lineTo(wall_width, total_height - 15);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+    }
+    do_draw_crown = function (canvas, cts) {        
+        if (!LEFT_WALL_MODE.includes('C')) {
+            return;
+        }
+        
+        const wall_width = right_column_width;
+        const board_height = 20;
+        ctx.fillStyle = LEFT_CROWN_COLOR;
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(0, board_height);
+        ctx.lineTo(wall_width, board_height);
+        ctx.lineTo(wall_width, 0);
+        ctx.lineTo(0, 0);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        
+        ctx.beginPath();
+        ctx.moveTo(0, 15);
+        ctx.lineTo(wall_width, 15);
+        ctx.stroke();
+        ctx.closePath();
+    }
+    do_draw_left_wall = function (canvas, ctx) {
+        const wall_width = left_column_width;
+        const glass_height = 50;
+        const glass_width_percent = 90;
+        //const horz_margin = (total_width - total_width * glass_width_percent / 100) / 2;
+        const left_horz_margin = 30;
+        const right_horz_margin = 60;
+        panel_visible = false;
+        panel = document.getElementById('left_menu_panel');
+        if (panel) {
+            panel_visible = panel.style.visibility != 'hidden';
+        }
+        wall_top = 0;
+        if (LEFT_WALL_MODE.includes('C')) {
+            wall_top = 20;            
+        } 
+        wall_height = canvas.height;
+        if (LEFT_WALL_MODE.includes('B')) {
+            wall_height = wall_height - 20;            
+        }    
+        
+        if (LEFT_WALL_MODE.includes('W') && panel_visible) {
+            ctx.beginPath();
+            ctx.moveTo(0, wall_top);
+            ctx.lineTo(0, wall_height);
+            ctx.lineTo(wall_width, wall_height);
+            ctx.lineTo(wall_width, wall_top);
+            ctx.lineTo(wall_width - right_horz_margin, wall_top);
+            ctx.lineTo(wall_width - right_horz_margin, glass_height);
+            ctx.lineTo(left_horz_margin, glass_height);
+            ctx.lineTo(left_horz_margin, wall_top);
+            ctx.lineTo(0, wall_top);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            
+            ctx.beginPath();
+            for (var i=0; i<=3; i++) {
+                ctx.moveTo(((wall_width - left_horz_margin - right_horz_margin) / 3) * i + left_horz_margin, wall_top);
+                ctx.lineTo(((wall_width - left_horz_margin - right_horz_margin) / 3) * i + left_horz_margin, glass_height);
+            }
+            ctx.moveTo(left_horz_margin, wall_top);
+            ctx.lineTo(wall_width - right_horz_margin, wall_top);
+            ctx.stroke();
+            ctx.closePath();
+        } else {
+            ctx.beginPath();
+            ctx.moveTo(0, wall_top);
+            ctx.lineTo(0, wall_height);
+            ctx.lineTo(wall_width, wall_height);
+            ctx.lineTo(wall_width, wall_top);
+            ctx.lineTo(0, wall_top);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+        }
+    }
+    
+    var canvas = document.getElementById('left_wall_canvas');
+    if (canvas) {
+        canvas.width = 0;                
+        canvas.height = 0;
+        canvas.width = left_column_width;                
+        canvas.height = total_height;
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');                           
+            ctx.strokeStyle = BORDER_COLOR;
+            do_draw_crown(canvas, ctx);
+            do_draw_baseboard(canvas, ctx);
+            if (LEFT_PANEL_COLOR.startsWith('#')) {                
+                ctx.fillStyle = LEFT_PANEL_COLOR;                
+                do_draw_left_wall(canvas, ctx);
+            }
+            else {
+                var img = new Image();
+                img.src = LEFT_PANEL_COLOR;
+                img.onload = function () {
+                    var pat = ctx.createPattern(img,"repeat");
+                    ctx.fillStyle = pat;
+                    do_draw_left_wall(canvas, ctx);
+                }
+                
+            }
+        }
+    }
+}; 
+
+function draw_right_wall() {
+    do_draw_baseboard = function (canvas, cts) {        
+        if (!RIGHT_WALL_MODE.includes('B')) {
+            return;
+        }
+        
+        const wall_width = right_column_width;
+        const board_height = 20;
+        ctx.fillStyle = RIGHT_BASEBOARD_COLOR;
+        ctx.beginPath();
+        ctx.moveTo(0, total_height - board_height);
+        ctx.lineTo(0, total_height);
+        ctx.lineTo(wall_width, total_height);
+        ctx.lineTo(wall_width, total_height - board_height);
+        ctx.lineTo(0, total_height - board_height);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.moveTo(0, total_height - 15);
+        ctx.lineTo(wall_width, total_height - 15);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+    }
+    do_draw_crown = function (canvas, cts) {        
+        if (!RIGHT_WALL_MODE.includes('C')) {
+            return;
+        }
+        
+        const wall_width = right_column_width;
+        const board_height = 20;
+        ctx.fillStyle = RIGHT_CROWN_COLOR;
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(0, board_height);
+        ctx.lineTo(wall_width, board_height);
+        ctx.lineTo(wall_width, 0);
+        ctx.lineTo(0, 0);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        
+        ctx.beginPath();
+        ctx.moveTo(0, 15);
+        ctx.lineTo(wall_width, 15);
+        ctx.stroke();
+        ctx.closePath();
+    }
+    do_draw_right_wall = function (canvas, ctx) {        
+        const wall_width = right_column_width;
+        const glass_height = 50;
+        const glass_width_percent = 90;
+        //const horz_margin = (total_width - total_width * glass_width_percent / 100) / 2;
+        const left_horz_margin = 60;
+        const right_horz_margin = 30;
+        panel_visible = false;
+        panel = document.getElementById('right_menu_panel');
+        if (panel) {
+            panel_visible = panel.style.visibility != 'hidden';
+        }
+        wall_top = 0;
+        if (RIGHT_WALL_MODE.includes('C')) {
+            wall_top = 20;            
+        }
+        wall_height = canvas.height;
+        if (RIGHT_WALL_MODE.includes('B')) {
+            wall_height = wall_height - 20;            
+        }
+        
+        if (RIGHT_WALL_MODE.includes('W') && panel_visible) {            
+            ctx.beginPath();
+            ctx.moveTo(0, wall_top);
+            ctx.lineTo(0, wall_height);
+            ctx.lineTo(wall_width, wall_height);
+            ctx.lineTo(wall_width, wall_top);
+            ctx.lineTo(wall_width - right_horz_margin, wall_top);
+            ctx.lineTo(wall_width - right_horz_margin, glass_height);
+            ctx.lineTo(left_horz_margin, glass_height);
+            ctx.lineTo(left_horz_margin, wall_top);
+            ctx.lineTo(0, wall_top);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            
+            ctx.beginPath();
+            for (var i=0; i<=3; i++) {
+                ctx.moveTo(((wall_width - left_horz_margin - right_horz_margin) / 3) * i + left_horz_margin, wall_top);
+                ctx.lineTo(((wall_width - left_horz_margin - right_horz_margin) / 3) * i + left_horz_margin, glass_height);
+            }
+            ctx.moveTo(left_horz_margin, wall_top);
+            ctx.lineTo(wall_width - right_horz_margin, wall_top);
+            ctx.stroke();
+            ctx.closePath();
+        } else {
+            ctx.beginPath();
+            ctx.moveTo(0, wall_top);
+            ctx.lineTo(0, wall_height);
+            ctx.lineTo(wall_width, wall_height);
+            ctx.lineTo(wall_width, wall_top);
+            ctx.lineTo(0, wall_top);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+        }
+    }
+    
+    var canvas = document.getElementById('right_wall_canvas');
+    if (canvas) {
+        canvas.width = 0;                
+        canvas.height = 0;
+        canvas.width = right_column_width;                
+        canvas.height = total_height;
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');                           
+            ctx.strokeStyle = BORDER_COLOR;
+            do_draw_crown(canvas, ctx);
+            do_draw_baseboard(canvas, ctx);
+            if (RIGHT_PANEL_COLOR.startsWith('#')) {
+                ctx.fillStyle = RIGHT_PANEL_COLOR;
+                do_draw_right_wall(canvas, ctx);
+            }
+            else {
+                var img = new Image();
+                img.src = RIGHT_PANEL_COLOR;
+                img.onload = function () {
+                    var pat = ctx.createPattern(img,"repeat");
+                    ctx.fillStyle = pat;
+                    do_draw_right_wall(canvas, ctx);
+                }
+                
+            }
+        }
+    }
+}; 
+
+function restore_overflow() {
+    var holderTable = document.getElementById('holder');
+    if (!holderTable) {
+        document.body.style.overflowY = "auto";
+        document.body.style.overflowX = "auto";
+    }
+};    
+
+function main_load_resize() {  
+    restore_overflow();
+    adjust_sizes();
+    adjust_table_height();
+    adjust_content_div(); 
+    adjust_titles();
+    draw_floor();
+    draw_monitor_stand();  
+    draw_ceiling();
+    draw_left_wall();
+    draw_right_wall();
+ 
+    perspective_transform();
+  
+};
+
+/*function init_listeners() {
+    console.log('init');
+    window.addEventListener('load', main_load_resize);
+    window.addEventListener('resize', main_load_resize);  
+    main_load_resize();
+};*/    
+
+window.addEventListener('load', main_load_resize);
+window.addEventListener('resize', main_load_resize); 

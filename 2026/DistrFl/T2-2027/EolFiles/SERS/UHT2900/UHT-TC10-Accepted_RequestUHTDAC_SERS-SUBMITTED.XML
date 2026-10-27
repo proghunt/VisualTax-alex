@@ -1,0 +1,12 @@
+<DacRequest xmlns="http://www.cra-arc.gc.ca/xmlns/sres/1-0-0" xmlns:common="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0">
+   <common:SoftwareCode>VT50</common:SoftwareCode>
+   <common:ClientId>599395308RU0001</common:ClientId>
+   <SharedSecrets>
+      <UhtEntity>
+         <RegistrationDate>2022-01-01</RegistrationDate>
+         <PostalCode>E3B1B5</PostalCode>
+         <Name>CANADIAN UNDERUSED TESTING 7</Name>
+      </UhtEntity>
+   </SharedSecrets>
+   <Year>2025</Year>
+</DacRequest>

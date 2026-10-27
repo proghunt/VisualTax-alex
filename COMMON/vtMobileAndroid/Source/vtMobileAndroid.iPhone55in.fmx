@@ -1,0 +1,72 @@
+inherited MainForm_iPhone55in: TMainForm_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 0
+  inherited ClientsListView: TListView
+    Size.Width = 414.000000000000000000
+    Size.Height = 659.000000000000000000
+  end
+  inherited HeaderPanel: TPanel
+    Size.Width = 414.000000000000000000
+    inherited HeaderColorBox: TColorBox
+      Size.Width = 414.000000000000000000
+    end
+    inherited HeaderLabel: TLabel
+      Size.Width = 414.000000000000000000
+    end
+    inherited Label1: TLabel
+      Size.Width = 414.000000000000000000
+    end
+    inherited BackButton: TButton
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited DocumentsListView: TListView
+    Size.Width = 414.000000000000000000
+    Size.Height = 659.000000000000000000
+  end
+  inherited LoginPanel: TPanel
+    Visible = False
+    inherited LoginScaledLayout: TScaledLayout
+      Visible = False
+      inherited LoginEdit: TEdit
+        Size.Height = 561.000000000000000000
+      end
+      inherited PasswordEdit: TEdit
+        Size.Height = 30.000000000000000000
+      end
+    end
+  end
+  inherited StyleBook1: TStyleBook [4]
+  end
+  inherited vtMobileConnection: TFDConnection [5]
+  end
+  inherited FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink [6]
+  end
+  inherited FDGUIxWaitCursor1: TFDGUIxWaitCursor [7]
+  end
+  inherited LoginQuery: TFDQuery [8]
+  end
+  inherited ClientsDS: TDataSource [9]
+  end
+  inherited ClientsBindSource: TBindSourceDB [10]
+  end
+  inherited ClientsQuery: TFDQuery [11]
+  end
+  inherited BindingsList1: TBindingsList [12]
+  end
+  inherited DocumentsBindSource: TBindSourceDB [13]
+  end
+  inherited DocumentsQuery: TFDQuery [14]
+  end
+  inherited OAuth2_DropBox: TOAuth2Authenticator [15]
+  end
+  inherited RESTClient: TRESTClient [16]
+  end
+  inherited RESTRequest: TRESTRequest [17]
+  end
+  inherited RESTResponse: TRESTResponse [18]
+  end
+  inherited RESTResponseDataSetAdapter: TRESTResponseDataSetAdapter [19]
+  end
+end

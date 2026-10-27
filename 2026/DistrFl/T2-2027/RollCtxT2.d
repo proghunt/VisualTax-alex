@@ -1,0 +1,554 @@
+FC002\0061S=BN^^T2^1
+FC002\008B=Jurisd^PROVINCE^T2^2
+FC002\008S=Corp Name^^T2^3
+FC002\034S=HO street^^T2^12
+FC002\012S=HO str2^^T2^13
+FC002\013S=ho city^^T2^16
+FC002\068S=HO prov^^T2^17
+FC002\071S=HO country^^T2^19
+FC002\014S=ho postal^^T2^20
+FC002\016S=co name^^T2^23
+FC002\017S=ml str^^T2^26
+FC002\010S=ml str2^^T2^27
+FC002\018S=ml city^^T2^32
+FC002\069S=ml prov^^T2^33
+FC002\019S=ml postal^^T2^35
+FC002\073S=ml country^^T2^34
+
+FC002\048S=lb str^^T2^38
+FC002\049S=lb str2^^T2^41
+FC002\050S=lb city^^T2^44
+FC002\070S=lb prov^^T2^45
+FC002\051S=lb postal^^T2^47
+FC002\072S=lb country^^T2^46
+
+FC002\010B=Corp type^^T2^51
+FC002\022S=Oth corp descr^^T2^60
+
+FC002\001R=startYear^INCYEAR^T2^10
+FC002\002R=endYear^INCYEAR^T2^11
+
+FC002\009B=Residency^REVERSEX^T2^49
+FC002\021S=For country nm^^T2^50
+
+FC002\043B=Prof Corp^X^T2^24
+
+FC002\066B=Exempt under treaty^X^T2^63
+
+FC002\051B=Exempt sec 149^^T2^53
+
+FC031\012B=Corp Inactive^X^T2^201
+FC031\015B=Maj bus act changed^X^T2^203
+FC002\025S=Maj bus act^^T2^205
+FC002\014B=Retail-Wholesale^X^T2^206
+FC002\029S=princ pruct 1^^T2^208
+FC002\030S=princ pruct 2^^T2^210
+FC002\031S=princ pruct 3^^T2^212
+FC002\005R=percent of prod^^T2^209
+FC002\006R=percent of prod^^T2^211
+FC002\007R=percent of prod^^T2^213
+
+FC031\103R=Rf div bal^^T2^527
+
+FC031\032S=DD branch^^T2^737
+FC031\033S=DD inst^^T2^738
+FC031\034S=DD account^^T2^739
+
+FC002\054S=Certif Surn^^T2^742
+FC002\075S=Certif first nm^^T2^743
+FC002\058S=certif position^^T2^744
+
+FC002\059S=Certif tel^AREA^T2^755
+FC002\059S=Certif tel^PHONE^T2^746
+
+FC031\017B=Certif contact Same^REVERSEX^T2^748
+FC002\052S=Certif contact Name^^T2^749
+FC002\053S=certif contact tel^AREA^T2^756
+FC002\053S=certif contact tel^PHONE^T2^750
+
+FC005\011R=CEC bal^^S10^4
+
+
+FC051\002S=Alb account^^AT1^9
+FC051\080S=Alb SIC^^AT1^58
+
+
+
+FC107\069R=Unused Part 1.3 cr^^S37^10
+
+
+FC018\049R=Yr Net cap loss^^S4^1
+
+FC017\257R=Non cap loss 1 prior^^S4WS^642
+FC017\258R=Non cap 2nd PRIOR^^S4WS^635
+FC017\259R=Non cap 3rd prior^^S4WS^628
+FC017\260R=Non cap 4th prior^^S4WS^621
+FC017\261R=Non cap 5th prior^^S4WS^614
+FC017\262R=Non cap 6th prior^^S4WS^607
+FC017\263R=Non cap 7th prior^^S4WS^600
+
+FC017\305R=Farm loss^^S4WS^803
+FC017\306R=Farm loss 1^^S4WS^796
+FC017\307R=Farm loss 2^^S4WS^789
+FC017\308R=Farm loss 3^^S4WS^782
+FC017\309R=Farm loss 4^^S4WS^775
+FC017\310R=Farm loss 5^^S4WS^768
+FC017\311R=Farm loss 6^^S4WS^761
+FC017\312R=Farm loss 7^^S4WS^754
+FC017\313R=Farm loss 8^^S4WS^749
+FC017\314R=Farm loss 9^^S4WS^740
+FC017\315R=Farm loss 10^^S4WS^733
+
+FC017\222R=RFarm loss^^S4WS^642
+FC017\223R=RFarm loss^^S4WS^635
+FC017\224R=RFarm loss^^S4WS^628
+FC017\225R=RFarm loss^^S4WS^621
+FC017\226R=RFarm loss^^S4WS^614
+FC017\227R=RFarm loss^^S4WS^607
+FC017\228R=RFarm loss^^S4WS^600
+FC017\229R=RFarm loss^^S4WS^593
+FC017\230R=RFarm loss^^S4WS^576
+FC017\231R=RFarm loss^^S4WS^579
+FC017\232R=RFarm loss^^S4WS^572
+
+FC086\008R=Earned depletion^^S12^4
+FC086\017R=Earned depletion^^S12^5
+FC099\007R=Mining Exploration^^S12^15
+FC085\013R=CCEE^^S12^101
+FC085\032R=CCEE^^S12^102
+FC084\014R=CCDE^^S12^201
+FC084\033R=CCDE^^S12^202
+FC083\012R=CCOGPE^^S12^301
+FC083\031R=CCOGPE^^S12^302
+FC088\008R=FEDExpl^^S12^401
+FC088\027R=FedExpl^^S12^402
+
+FC009\398R=ITC^^S31^237
+FC009\657R=ITC-SRED^^S31^520
+
+FC026\069R=S321^^S321^21
+FC066\061R=S344^^S344^21
+FC148\064R=S360^^S360^5
+FC045\069R=S380^^S380^4
+FC055\069R=S381^^S381^21
+FC077\061R=S402^^S402^21
+FC161\064R=S403^^S403^11
+FC180\031R=S426^^S426^121
+
+//S2 - Donations -----------------------------------------------------
+FC006\049R=don end bal^^S2^205
+FC006\050R=don end bal^^S2^210
+FC006\051R=don end bal^^S2^215
+FC006\052R=don end bal^^S2^220
+FC006\053R=don end bal^^S2^225
+
+//S2 - Gifts-----------------------------------------------------
+FC006\138R=gifts end bal^^S2^239
+FC006\139R=gifts end bal^^S2^244
+FC006\140R=gifts end bal^^S2^249
+FC006\141R=gifts end bal^^S2^254
+FC006\142R=gifts end bal^^S2^259
+
+//S2 - Cultural-----------------------------------------------------
+FC006\162R=cult end bal^^S2^273
+FC006\163R=cult end bal^^S2^278
+FC006\164R=cult end bal^^S2^283
+FC006\165R=cult end bal^^S2^288
+FC006\166R=cult end bal^^S2^293
+
+//S2 - ecological---20170709--------------------------------------------------
+//  FC006\186R=ecol end bal^^S2^307
+//  FC006\187R=ecol end bal^^S2^312
+//  FC006\188R=ecol end bal^^S2^317
+//  FC006\189R=ecol end bal^^S2^3122
+//  FC006\190R=ecol end bal^^S2^327
+
+
+//CCA class-----------------------------------------------------
+//Form instance 1
+FC011\001R=CCA class^REMOVEifZERO^S8#1^6
+FC011\501R=CCA UCC^^S8#1^7
+FC011\002R=CCA class^REMOVEifZERO^S8#1^28
+FC011\502R=CCA UCC^^S8#1^29
+FC011\003R=CCA class^REMOVEifZERO^S8#1^50
+FC011\503R=CCA UCC^^S8#1^51
+FC011\004R=CCA class^REMOVEifZERO^S8#1^72
+FC011\504R=CCA UCC^^S8#1^73
+FC011\005R=CCA class^REMOVEifZERO^S8#1^94
+FC011\505R=CCA UCC^^S8#1^95
+FC011\006R=CCA class^REMOVEifZERO^S8#1^116
+FC011\506R=CCA UCC^^S8#1^117
+FC011\007R=CCA class^REMOVEifZERO^S8#1^138
+FC011\507R=CCA UCC^^S8#1^139
+FC011\008R=CCA class^REMOVEifZERO^S8#1^160
+FC011\508R=CCA UCC^^S8#1^161
+FC011\009R=CCA class^REMOVEifZERO^S8#1^182
+FC011\509R=CCA UCC^^S8#1^183
+FC011\010R=CCA class^REMOVEifZERO^S8#1^204
+FC011\510R=CCA UCC^^S8#1^205
+//FC011\011R=CCA class^REMOVEifZERO^S8#1^166
+//FC011\511R=CCA UCC^^S8#1^167
+//FC011\012R=CCA class^REMOVEifZERO^S8#1^182
+//FC011\512R=CCA UCC^^S8#1^183
+//FC011\013R=CCA class^REMOVEifZERO^S8#1^198
+//FC011\513R=CCA UCC^^S8#1^199
+
+//Form Instance 2
+FC011\014R=CCA class^REMOVEifZERO^S8#2^6
+FC011\514R=CCA UCC^^S8#2^7
+FC011\015R=CCA class^REMOVEifZERO^S8#2^28
+FC011\515R=CCA UCC^^S8#2^29
+FC011\016R=CCA class^REMOVEifZERO^S8#2^50
+FC011\516R=CCA UCC^^S8#2^51
+FC011\017R=CCA class^REMOVEifZERO^S8#2^72
+FC011\517R=CCA UCC^^S8#2^73
+FC011\018R=CCA class^REMOVEifZERO^S8#2^94
+FC011\518R=CCA UCC^^S8#2^95
+FC011\019R=CCA class^REMOVEifZERO^S8#2^116
+FC011\519R=CCA UCC^^S8#2^117
+FC011\020R=CCA class^REMOVEifZERO^S8#2^138
+FC011\520R=CCA UCC^^S8#2^139
+FC011\021R=CCA class^REMOVEifZERO^S8#2^160
+FC011\521R=CCA UCC^^S8#2^161
+FC011\022R=CCA class^REMOVEifZERO^S8#2^182
+FC011\522R=CCA UCC^^S8#2^183
+FC011\023R=CCA class^REMOVEifZERO^S8#2^204
+FC011\523R=CCA UCC^^S8#2^205
+//FC011\024R=CCA class^REMOVEifZERO^S8#2^166
+//FC011\524R=CCA UCC^^S8#2^167
+//FC011\025R=CCA class^REMOVEifZERO^S8#2^182
+//FC011\525R=CCA UCC^^S8#2^183
+//FC011\026R=CCA class^REMOVEifZERO^S8#2^198
+//FC011\526R=CCA UCC^^S8#2^199
+
+//Form Instance 3
+FC011\027R=CCA class^REMOVEifZERO^S8#3^6
+FC011\527R=CCA UCC^^S8#3^7
+FC011\028R=CCA class^REMOVEifZERO^S8#3^28
+FC011\528R=CCA UCC^^S8#3^29
+FC011\029R=CCA class^REMOVEifZERO^S8#3^50
+FC011\529R=CCA UCC^^S8#3^51
+FC011\030R=CCA class^REMOVEifZERO^S8#3^72
+FC011\530R=CCA UCC^^S8#3^73
+FC011\031R=CCA class^REMOVEifZERO^S8#3^94
+FC011\531R=CCA UCC^^S8#3^95
+FC011\032R=CCA class^REMOVEifZERO^S8#3^116
+FC011\532R=CCA UCC^^S8#3^117
+FC011\033R=CCA class^REMOVEifZERO^S8#3^138
+FC011\533R=CCA UCC^^S8#3^139
+FC011\034R=CCA class^REMOVEifZERO^S8#3^160
+FC011\534R=CCA UCC^^S8#3^161
+FC011\035R=CCA class^REMOVEifZERO^S8#3^182
+FC011\535R=CCA UCC^^S8#3^183
+FC011\036R=CCA class^REMOVEifZERO^S8#3^204
+FC011\536R=CCA UCC^^S8#3^205
+//FC011\037R=CCA class^REMOVEifZERO^S8#3^166
+//FC011\537R=CCA UCC^^S8#3^167
+//FC011\038R=CCA class^REMOVEifZERO^S8#3^182
+//FC011\538R=CCA UCC^^S8#3^183
+//FC011\039R=CCA class^REMOVEifZERO^S8#3^198
+//FC011\539R=CCA UCC^^S8#3^199
+
+//S8LH -----------------------------------------------------
+FC010\001S=CCA-L Descr^^S8LH^11
+FC010\001R=CCA-L start yr^DATE^S8LH^1
+FC010\016R=CCA-L end yr^DATE^S8LH^2
+FC010\031R=CCA-L orig cost^^S8LH^3
+FC010\151R=CCA-L ucc^^S8LH^4
+//-----------------------------
+FC010\002S=CCA-L Descr^^S8LH^22
+FC010\002R=CCA-L start yr^DATE^S8LH^12
+FC010\017R=CCA-L end yr^DATE^S8LH^13
+FC010\032R=CCA-L orig cost^^S8LH^14
+FC010\152R=CCA-L ucc^^S8LH^15
+//-----------------------------
+FC010\003S=CCA-L Descr^^S8LH^33
+FC010\003R=CCA-L start yr^DATE^S8LH^23
+FC010\018R=CCA-L end yr^DATE^S8LH^24
+FC010\033R=CCA-L orig cost^^S8LH^25
+FC010\153R=CCA-L ucc^^S8LH^26
+//-----------------------------
+FC010\004S=CCA-L Descr^^S8LH^44
+FC010\004R=CCA-L start yr^DATE^S8LH^34
+FC010\019R=CCA-L end yr^DATE^S8LH^35
+FC010\034R=CCA-L orig cost^^S8LH^36
+FC010\154R=CCA-L ucc^^S8LH^37
+//-----------------------------
+FC010\005S=CCA-L Descr^^S8LH^55
+FC010\005R=CCA-L start yr^DATE^S8LH^45
+FC010\020R=CCA-L end yr^DATE^S8LH^46
+FC010\035R=CCA-L orig cost^^S8LH^47
+FC010\155R=CCA-L ucc^^S8LH^48
+//-----------------------------
+FC010\006S=CCA-L Descr^^S8LH^66
+FC010\006R=CCA-L start yr^DATE^S8LH^56
+FC010\021R=CCA-L end yr^DATE^S8LH^57
+FC010\036R=CCA-L orig cost^^S8LH^58
+FC010\156R=CCA-L ucc^^S8LH^59
+//-----------------------------
+FC010\007S=CCA-L Descr^^S8LH^77
+FC010\007R=CCA-L start yr^DATE^S8LH^67
+FC010\022R=CCA-L end yr^DATE^S8LH^68
+FC010\037R=CCA-L orig cost^^S8LH^69
+FC010\157R=CCA-L ucc^^S8LH^70
+//-----------------------------
+FC010\008S=CCA-L Descr^^S8LH^88
+FC010\008R=CCA-L start yr^DATE^S8LH^78
+FC010\023R=CCA-L end yr^DATE^S8LH^79
+FC010\038R=CCA-L orig cost^^S8LH^80
+FC010\158R=CCA-L ucc^^S8LH^81
+//-----------------------------
+FC010\009S=CCA-L Descr^^S8LH^99
+FC010\009R=CCA-L start yr^DATE^S8LH^89
+FC010\024R=CCA-L end yr^DATE^S8LH^90
+FC010\039R=CCA-L orig cost^^S8LH^91
+FC010\159R=CCA-L ucc^^S8LH^92
+//-----------------------------
+FC010\010S=CCA-L Descr^^S8LH^110
+FC010\010R=CCA-L start yr^DATE^S8LH^100
+FC010\025R=CCA-L end yr^DATE^S8LH^101
+FC010\040R=CCA-L orig cost^^S8LH^102
+FC010\160R=CCA-L ucc^^S8LH^103
+//-----------------------------
+FC010\011S=CCA-L Descr^^S8LH^121
+FC010\011R=CCA-L start yr^DATE^S8LH^111
+FC010\026R=CCA-L end yr^DATE^S8LH^112
+FC010\041R=CCA-L orig cost^^S8LH^113
+FC010\161R=CCA-L ucc^^S8LH^114
+//-----------------------------
+FC010\012S=CCA-L Descr^^S8LH^132
+FC010\012R=CCA-L start yr^DATE^S8LH^122
+FC010\027R=CCA-L end yr^S8LH^DATE^123
+FC010\042R=CCA-L orig cost^^S8LH^124
+FC010\162R=CCA-L ucc^^S8LH^125
+//to from additional sheets----
+FC010\013R=CCA-L start yr^DATE^S8LH^133
+FC010\028R=CCA-L end yr^DATE^S8LH^134
+FC010\043R=CCA-L orig cost^^S8LH^135
+FC010\163R=CCA-L ucc^^S8LH^136
+
+//S9 -----------------------------------------------------
+FC034\001S=Shareholder^^S9^4
+FC034\051S=Country^^S9^5
+FC034\101S=Bus No^ADDRC^S9^6
+FC034\001B=Code^^S9^7
+FC034\001R=Comm shares^^S9^8
+FC034\051R=Comm shares%^^S9^9
+FC034\101R=Pref shares^^S9^10
+FC034\151R=Pref shares%^^S9^11
+FC034\201R=Bk Val Cap stock^^S9^12
+//-----------------------------
+FC034\002S=Shareholder^^S9^13
+FC034\052S=Country^^S9^14
+FC034\102S=Bus No^ADDRC^S9^15
+FC034\002B=Code^^S9^16
+FC034\002R=Comm shares^^S9^17
+FC034\052R=Comm shares%^^S9^18
+FC034\102R=Pref shares^^S9^19
+FC034\152R=Pref shares%^^S9^20
+FC034\202R=Bk Val Cap stock^^S9^21
+//-----------------------------
+FC034\003S=Shareholder^^S9^22
+FC034\053S=Country^^S9^23
+FC034\103S=Bus No^ADDRC^S9^24
+FC034\003B=Code^^S9^25
+FC034\003R=Comm shares^^S9^26
+FC034\053R=Comm shares%^^S9^27
+FC034\103R=Pref shares^^S9^28
+FC034\153R=Pref shares%^^S9^29
+FC034\203R=Bk Val Cap stock^^S9^30
+//-----------------------------
+FC034\004S=Shareholder^^S9^31
+FC034\054S=Country^^S9^32
+FC034\104S=Bus No^ADDRC^S9^33
+FC034\004B=Code^^S9^34
+FC034\004R=Comm shares^^S9^35
+FC034\054R=Comm shares%^^S9^36
+FC034\104R=Pref shares^^S9^37
+FC034\154R=Pref shares%^^S9^38
+FC034\204R=Bk Val Cap stock^^S9^39
+//-----------------------------
+FC034\005S=Shareholder^^S9^40
+FC034\055S=Country^^S9^41
+FC034\105S=Bus No^ADDRC^S9^42
+FC034\005B=Code^^S9^43
+FC034\005R=Comm shares^^S9^44
+FC034\055R=Comm shares%^^S9^45
+FC034\105R=Pref shares^^S9^46
+FC034\155R=Pref shares%^^S9^47
+FC034\205R=Bk Val Cap stock^^S9^48
+//-----------------------------
+FC034\006S=Shareholder^^S9^49
+FC034\056S=Country^^S9^50
+FC034\106S=Bus No^ADDRC^S9^51
+FC034\006B=Code^^S9^52
+FC034\006R=Comm shares^^S9^53
+FC034\056R=Comm shares%^^S9^54
+FC034\106R=Pref shares^^S9^55
+FC034\156R=Pref shares%^^S9^56
+FC034\206R=Bk Val Cap stock^^S9^57
+//-----------------------------
+FC034\007S=Shareholder^^S9^58
+FC034\057S=Country^^S9^59
+FC034\107S=Bus No^ADDRC^S9^60
+FC034\007B=Code^^S9^61
+FC034\007R=Comm shares^^S9^62
+FC034\057R=Comm shares%^^S9^63
+FC034\107R=Pref shares^^S9^64
+FC034\157R=Pref shares%^^S9^65
+FC034\207R=Bk Val Cap stock^^S9^66
+//-----------------------------
+FC034\008S=Shareholder^^S9^67
+FC034\058S=Country^^S9^68
+FC034\108S=Bus No^ADDRC^S9^69
+FC034\008B=Code^^S9^70
+FC034\008R=Comm shares^^S9^71
+FC034\058R=Comm shares%^^S9^72
+FC034\108R=Pref shares^^S9^73
+FC034\158R=Pref shares%^^S9^74
+FC034\208R=Bk Val Cap stock^^S9^75
+//-----------------------------
+FC034\009S=Shareholder^^S9^76
+FC034\059S=Country^^S9^77
+FC034\109S=Bus No^ADDRC^S9^78
+FC034\009B=Code^^S9^79
+FC034\009R=Comm shares^^S9^80
+FC034\059R=Comm shares%^^S9^81
+FC034\109R=Pref shares^^S9^82
+FC034\159R=Pref shares%^^S9^83
+FC034\209R=Bk Val Cap stock^^S9^84
+//-----------------------------
+FC034\010S=Shareholder^^S9^85
+FC034\060S=Country^^S9^86
+FC034\110S=Bus No^ADDRC^S9^87
+FC034\010B=Code^^S9^88
+FC034\010R=Comm shares^^S9^89
+FC034\060R=Comm shares%^^S9^90
+FC034\110R=Pref shares^^S9^91
+FC034\160R=Pref shares%^^S9^92
+FC034\210R=Bk Val Cap stock^^S9^93
+//-----------------------------
+FC034\011S=Shareholder^^S9^94
+FC034\061S=Country^^S9^95
+FC034\111S=Bus No^ADDRC^S9^96
+FC034\011B=Code^^S9^97
+FC034\011R=Comm shares^^S9^98
+FC034\061R=Comm shares%^^S9^99
+FC034\111R=Pref shares^^S9^100
+FC034\161R=Pref shares%^^S9^101
+FC034\211R=Bk Val Cap stock^^S9^102
+//-----------------------------
+FC034\012S=Shareholder^^S9^103
+FC034\062S=Country^^S9^104
+FC034\112S=Bus No^ADDRC^S9^105
+FC034\012B=Code^^S9^106
+FC034\012R=Comm shares^^S9^107
+FC034\062R=Comm shares%^^S9^108
+FC034\112R=Pref shares^^S9^109
+FC034\162R=Pref shares%^^S9^110
+FC034\212R=Bk Val Cap stock^^S9^111
+//-----------------------------
+FC034\013S=Shareholder^^S9^112
+FC034\063S=Country^^S9^113
+FC034\113S=Bus No^ADDRC^S9^114
+FC034\013B=Code^^S9^115
+FC034\013R=Comm shares^^S9^116
+FC034\063R=Comm shares%^^S9^117
+FC034\113R=Pref shares^^S9^118
+FC034\163R=Pref shares%^^S9^119
+FC034\213R=Bk Val Cap stock^^S9^120
+//-----------------------------
+FC034\014S=Shareholder^^S9^121
+FC034\064S=Country^^S9^122
+FC034\114S=Bus No^ADDRC^S9^123
+FC034\014B=Code^^S9^124
+FC034\014R=Comm shares^^S9^125
+FC034\064R=Comm shares%^^S9^126
+FC034\114R=Pref shares^^S9^127
+FC034\164R=Pref shares%^^S9^128
+FC034\214R=Bk Val Cap stock^^S9^129
+
+//S13-cap gains -other reserves -----------------------------------------------------
+FC012\001S=descr^^S13^4
+FC012\031R=end bal^^S13^5
+FC012\002S=descr^^S13^8
+FC012\032R=end bal^^S13^9
+FC012\003S=descr^^S13^12
+FC012\033R=end bal^^S13^13
+FC012\004S=descr^^S13^16
+FC012\034R=end bal^^S13^17
+FC012\005S=descr^^S13^20
+FC012\035R=end bal^^S13^21
+FC012\006S=descr^^S13^24
+FC012\036R=end bal^^S13^25
+
+//S50 -----------------------------------------------------
+FC149\001S=Shareholder^^S50^4
+FC149\018S=Bus No^^S50^5
+FC149\035S=sin^^S50^6
+FC149\065S=TrustNo^^S50^132
+FC149\001R=Percent common^^S50^7
+FC149\018R=Percent pref^^S50^8
+//S50 -----------------------
+FC149\002S=Shareholder^^S50^9
+FC149\019S=Bus No^^S50^10
+FC149\036S=sin^^S50^11
+FC149\066S=TrustNo^^S50^133
+FC149\002R=Percent common^^S50^12
+FC149\019R=Percent pref^^S50^13
+//S50 -----------------------
+FC149\003S=Shareholder^^S50^14
+FC149\020S=Bus No^^S50^15
+FC149\037S=sin^^S50^16
+FC149\067S=TrustNo^^S50^134
+FC149\003R=Percent common^^S50^17
+FC149\020R=Percent pref^^S50^18
+//S50 -----------------------
+FC149\004S=Shareholder^^S50^19
+FC149\021S=Bus No^^S50^20
+FC149\038S=sin^^S50^21
+FC149\068S=TrustNo^^S50^135
+FC149\004R=Percent common^^S50^22
+FC149\021R=Percent pref^^S50^23
+//S50 -----------------------
+FC149\005S=Shareholder^^S50^24
+FC149\022S=Bus No^^S50^25
+FC149\039S=sin^^S50^26
+FC149\069S=TrustNo^^S50^136
+FC149\005R=Percent common^^S50^27
+FC149\022R=Percent pref^^S50^28
+//S50 -----------------------
+FC149\006S=Shareholder^^S50^29
+FC149\023S=Bus No^^S50^30
+FC149\040S=sin^^S50^31
+FC149\070S=TrustNo^^S50^137
+FC149\006R=Percent common^^S50^32
+FC149\023R=Percent pref^^S50^33
+//S50 -----------------------
+FC149\007S=Shareholder^^S50^34
+FC149\024S=Bus No^^S50^35
+FC149\041S=sin^^S50^36
+FC149\071S=TrustNo^^S50^138
+FC149\007R=Percent common^^S50^37
+FC149\024R=Percent pref^^S50^38
+//S50 -----------------------
+FC149\008S=Shareholder^^S50^39
+FC149\025S=Bus No^^S50^40
+FC149\042S=sin^^S50^41
+FC149\072S=TrustNo^^S50^139
+FC149\008R=Percent common^^S50^42
+FC149\025R=Percent pref^^S50^43
+//S50 -----------------------
+FC149\009S=Shareholder^^S50^44
+FC149\026S=Bus No^^S50^45
+FC149\043S=sin^^S50^46
+FC149\073S=TrustNo^^S50^140
+FC149\009R=Percent common^^S50^47
+FC149\026R=Percent pref^^S50^48
+//S50 -----------------------
+FC149\010S=Shareholder^^S50^49
+FC149\027S=Bus No^^S50^50
+FC149\044S=sin^^S50^51
+FC149\074S=TrustNo^^S50^141
+FC149\010R=Percent common^^S50^52
+FC149\027R=Percent pref^^S50^53

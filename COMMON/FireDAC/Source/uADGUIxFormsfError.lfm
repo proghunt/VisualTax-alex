@@ -1,0 +1,368 @@
+inherited frmADGUIxFormsError: TfrmADGUIxFormsError
+  Left = 374
+  Height = 420
+  Top = 372
+  Width = 445
+  Caption = 'FireDAC Error'
+  ClientHeight = 420
+  ClientWidth = 445
+  FormStyle = fsStayOnTop
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnResize = FormResize
+  OnShow = FormShow
+  inherited pnlTop: TPanel
+    Width = 445
+    ClientWidth = 445
+    inherited Bevel2: TBevel
+      Width = 434
+    end
+    inherited lblPrompt: TLabel
+      Width = 329
+      Caption = 'The application performed an incorrect operation with the database.'
+    end
+  end
+  inherited pnlButtons: TPanel
+    Height = 35
+    Top = 119
+    Width = 445
+    ClientHeight = 35
+    ClientWidth = 445
+    TabOrder = 2
+    inherited Bevel3: TBevel
+      Height = 31
+      Width = 434
+    end
+    inherited btnOk: TButton
+      Left = 283
+      Top = 7
+      TabOrder = 1
+    end
+    inherited btnCancel: TButton
+      Left = 364
+      Top = 7
+      Cancel = False
+      Caption = 'Details'
+      ModalResult = 0
+      OnClick = DetailsBtnClick
+      TabOrder = 2
+    end
+    object btnCopy: TButton[3]
+      Left = 5
+      Height = 23
+      Top = 7
+      Width = 75
+      Caption = '&Copy'
+      OnClick = btnCopyClick
+      TabOrder = 0
+    end
+  end
+  object pnlAdvanced: TPanel[2]
+    Left = 0
+    Height = 266
+    Top = 154
+    Width = 445
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 266
+    ClientWidth = 445
+    TabOrder = 1
+    Visible = False
+    object pcAdvanced: TPageControl
+      Left = 5
+      Height = 261
+      Top = 0
+      Width = 436
+      ActivePage = tsAdvanced
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      TabIndex = 0
+      TabOrder = 0
+      object tsAdvanced: TTabSheet
+        Caption = 'Error'
+        ClientHeight = 235
+        ClientWidth = 428
+        object Bevel1: TBevel
+          Left = 5
+          Height = 32
+          Top = 200
+          Width = 418
+          Anchors = [akLeft, akRight, akBottom]
+          Shape = bsTopLine
+        end
+        object NativeLabel: TLabel
+          Left = 5
+          Height = 14
+          Top = 29
+          Width = 55
+          Caption = 'Error code:'
+          ParentColor = False
+        end
+        object Label1: TLabel
+          Left = 5
+          Height = 14
+          Top = 147
+          Width = 70
+          Anchors = [akLeft, akBottom]
+          Caption = 'Server object:'
+          ParentColor = False
+        end
+        object Label2: TLabel
+          Left = 145
+          Height = 14
+          Top = 29
+          Width = 51
+          Caption = 'Error kind:'
+          ParentColor = False
+        end
+        object Label3: TLabel
+          Left = 5
+          Height = 14
+          Top = 174
+          Width = 107
+          Anchors = [akLeft, akBottom]
+          Caption = 'Command text offset:'
+          ParentColor = False
+        end
+        object Label4: TLabel
+          Left = 5
+          Height = 14
+          Top = 53
+          Width = 65
+          Caption = 'Mesage text:'
+          ParentColor = False
+        end
+        object Label8: TLabel
+          Left = 5
+          Height = 14
+          Top = 5
+          Width = 135
+          Caption = 'Advanced Error Information'
+          ParentColor = False
+        end
+        object edtErrorCode: TEdit
+          Left = 65
+          Height = 21
+          Top = 26
+          Width = 72
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 0
+          Text = '00000'
+        end
+        object edtServerObject: TEdit
+          Left = 113
+          Height = 21
+          Top = 144
+          Width = 310
+          Anchors = [akLeft, akRight, akBottom]
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 2
+          Text = 'QWE'
+        end
+        object edtMessage: TMemo
+          Left = 5
+          Height = 66
+          Top = 72
+          Width = 418
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          Lines.Strings = (
+            'DbMessageText'
+          )
+          ReadOnly = True
+          ScrollBars = ssVertical
+          TabOrder = 1
+          TabStop = False
+        end
+        object edtErrorKind: TEdit
+          Left = 201
+          Height = 21
+          Top = 26
+          Width = 117
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 6
+          Text = 'RecordLocked'
+        end
+        object edtCommandTextOffset: TEdit
+          Left = 113
+          Height = 21
+          Top = 171
+          Width = 48
+          Anchors = [akLeft, akBottom]
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 3
+          Text = '00000'
+        end
+        object btnPrior: TButton
+          Left = 267
+          Height = 23
+          Top = 207
+          Width = 75
+          Anchors = [akRight, akBottom]
+          Caption = '&<<'
+          OnClick = BackClick
+          TabOrder = 4
+        end
+        object btnNext: TButton
+          Left = 348
+          Height = 23
+          Top = 207
+          Width = 75
+          Anchors = [akRight, akBottom]
+          Caption = '>&>'
+          OnClick = NextClick
+          TabOrder = 5
+        end
+      end
+      object tsQuery: TTabSheet
+        Caption = 'Query'
+        ClientHeight = 235
+        ClientWidth = 428
+        ImageIndex = 1
+        object Label9: TLabel
+          Left = 5
+          Height = 14
+          Top = 26
+          Width = 75
+          Caption = 'Command text:'
+          ParentColor = False
+        end
+        object Label5: TLabel
+          Left = 5
+          Height = 14
+          Top = 131
+          Width = 110
+          Anchors = [akLeft, akBottom]
+          Caption = 'Command parameters:'
+          ParentColor = False
+        end
+        object Label10: TLabel
+          Left = 5
+          Height = 14
+          Top = 5
+          Width = 138
+          Caption = 'Failed Command Information'
+          ParentColor = False
+        end
+        object lvCommandParams: TListView
+          Left = 5
+          Height = 78
+          Top = 150
+          Width = 418
+          Anchors = [akLeft, akRight, akBottom]
+          Columns = <          
+            item
+              Caption = 'Name'
+              Width = 150
+            end          
+            item
+              Caption = 'Value'
+              Width = 250
+            end>
+          TabOrder = 0
+          ViewStyle = vsReport
+        end
+      end
+      object tsOther: TTabSheet
+        Caption = 'Other'
+        ClientHeight = 235
+        ClientWidth = 428
+        ImageIndex = 2
+        object Label6: TLabel
+          Left = 5
+          Height = 14
+          Top = 29
+          Width = 107
+          Caption = 'Exception class name:'
+          ParentColor = False
+        end
+        object Label7: TLabel
+          Left = 5
+          Height = 14
+          Top = 56
+          Width = 98
+          Caption = 'FireDAC error code:'
+          ParentColor = False
+        end
+        object Label11: TLabel
+          Left = 5
+          Height = 14
+          Top = 5
+          Width = 142
+          Caption = 'Exception Object Information'
+          ParentColor = False
+        end
+        object Label12: TLabel
+          Left = 5
+          Height = 14
+          Top = 83
+          Width = 107
+          Caption = 'FireDAC object name:'
+        end
+        object edtClassName: TEdit
+          Left = 115
+          Height = 21
+          Top = 26
+          Width = 160
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 0
+          Text = 'EODBCNativeException'
+        end
+        object edtADCode: TEdit
+          Left = 115
+          Height = 21
+          Top = 53
+          Width = 160
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 1
+          Text = '12345'
+        end
+        object edtADObjName: TEdit
+          Left = 115
+          Height = 21
+          Top = 80
+          Width = 302
+          Anchors = [akLeft, akTop, akRight]
+          ReadOnly = True
+          TabStop = False
+          TabOrder = 2
+          Text = 'ADQuery1'
+        end
+      end
+    end
+  end
+  object pnlMsg: TPanel[3]
+    Left = 0
+    Height = 80
+    Top = 39
+    Width = 445
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 80
+    ClientWidth = 445
+    TabOrder = 3
+    object memMsg: TMemo
+      Left = 5
+      Height = 72
+      Top = 2
+      Width = 434
+      Lines.Strings = (
+        '1'
+        '2'
+        '3'
+        '4'
+        '5'
+        '6'
+      )
+      ReadOnly = True
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+  end
+end

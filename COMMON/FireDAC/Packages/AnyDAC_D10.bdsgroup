@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{B89378CE-690B-429F-9EB9-78BCB33AF554}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="AnyDAC_ComI_D10.bpl">AnyDAC_ComI_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_Phys_D10.bpl">AnyDAC_Phys_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysDBExp_D10.bpl">AnyDAC_PhysDBExp_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysODBC_D10.bpl">AnyDAC_PhysODBC_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysMSAcc_D10.bpl">AnyDAC_PhysMSAcc_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysMSSQL_D10.bpl">AnyDAC_PhysMSSQL_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysDb2_D10.bpl">AnyDAC_PhysDb2_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysASA_D10.bpl">AnyDAC_PhysASA_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysADS_D10.bpl">AnyDAC_PhysADS_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysMySQL_D10.bpl">AnyDAC_PhysMySQL_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysOracle_D10.bpl">AnyDAC_PhysOracle_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysIB_D10.bpl">AnyDAC_PhysIB_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysPG_D10.bpl">AnyDAC_PhysPG_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_PhysSQLite_D10.bpl">AnyDAC_PhysSQLite_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_Comp_D10.bpl">AnyDAC_Comp_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_GUIxForms_D10.bpl">AnyDAC_GUIxForms_D10.bdsproj</Projects>
+      <Projects Name="AnyDAC_Dcl_D10.bpl">AnyDAC_Dcl_D10.bdsproj</Projects>
+      <Projects Name="Targets">AnyDAC_ComI_D10.bpl AnyDAC_Phys_D10.bpl AnyDAC_PhysDBExp_D10.bpl AnyDAC_PhysODBC_D10.bpl AnyDAC_PhysMSAcc_D10.bpl AnyDAC_PhysMSSQL_D10.bpl AnyDAC_PhysDb2_D10.bpl AnyDAC_PhysASA_D10.bpl AnyDAC_PhysADS_D10.bpl AnyDAC_PhysMySQL_D10.bpl AnyDAC_PhysOracle_D10.bpl AnyDAC_PhysIB_D10.bpl AnyDAC_PhysPG_D10.bpl AnyDAC_PhysSQLite_D10.bpl AnyDAC_Comp_D10.bpl AnyDAC_GUIxForms_D10.bpl AnyDAC_Dcl_D10.bpl</Projects>
+    </Projects>
+    <Dependencies>
+      <Dependency GUID="{3B67F99F-B476-4DDA-82D7-32CC3B67F55D}">
+        <Dependency GUID="{617EC7B8-C1D7-4EF0-97AA-3A1D887D7FDA}"/>
+        <Dependency GUID="{4FE1A451-254C-4FED-B8C9-6B9A364798AB}"/>
+      </Dependency>
+    </Dependencies>
+  </Default.Personality>
+	<StarTeamAssociation></StarTeamAssociation>
+	<StarTeamNonRelativeFiles></StarTeamNonRelativeFiles>
+</BorlandProject>

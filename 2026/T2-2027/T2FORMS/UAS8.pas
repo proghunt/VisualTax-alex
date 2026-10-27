@@ -1,0 +1,77 @@
+unit uAS8;
+interface
+uses
+    SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+    Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask, vtEditBox, vtLabel,
+    vtShape, Buttons, uFlagFrameAB;
+type
+TAS8 = class(TForm)
+   VTEDIT20: TVTEDIT;
+   VTEDIT19: TVTEDIT;
+   VTEDIT18: TVTEDIT;
+   VTEDIT17: TVTEDIT;
+   VTEDIT16: TVTEDIT;
+   VTEDIT15: TVTEDIT;
+   VTEDIT30: TVTEDIT;
+   VTEDIT29: TVTEDIT;
+   VTEDIT28: TVTEDIT;
+   VTEDIT27: TVTEDIT;
+   VTEDIT26: TVTEDIT;
+   VTEDIT25: TVTEDIT;
+   VTEDIT24: TVTEDIT;
+   VTEDIT23: TVTEDIT;
+   VTEDIT14: TVTEDIT;
+   VTEDIT13: TVTEDIT;
+   VTEDIT12: TVTEDIT;
+   VTEDIT11: TVTEDIT;
+   VTEDIT10: TVTEDIT;
+   VTEDIT9: TVTEDIT;
+   VTEDIT8: TVTEDIT;
+   VTEDIT7: TVTEDIT;
+   VTEDIT6: TVTEDIT;
+   VTEDIT5: TVTEDIT;
+   VTEDIT4: TVTEDIT;
+   VTEDIT3: TVTEDIT;
+   VTEDIT2: TVTEDIT;
+   VTEDIT1: TVTEDIT;
+   vtShapePB1: TvtShape;
+   VTEDIT123: TVTEDIT;
+   VTEDIT122: TVTEDIT;
+   VTEDIT121: TVTEDIT;
+   VTEDIT120: TVTEDIT;
+   VTEDIT119: TVTEDIT;
+   VTEDIT118: TVTEDIT;
+   VTEDIT117: TVTEDIT;
+   VTEDIT116: TVTEDIT;
+   VTEDIT115: TVTEDIT;
+   VTEDIT114: TVTEDIT;
+   VTEDIT113: TVTEDIT;
+   VTEDIT112: TVTEDIT;
+   VTEDIT111: TVTEDIT;
+   VTEDIT110: TVTEDIT;
+   VTEDIT109: TVTEDIT;
+   VTEDIT108: TVTEDIT;
+   VTEDIT107: TVTEDIT;
+   VTEDIT106: TVTEDIT;
+   VTEDIT105: TVTEDIT;
+   VTEDIT104: TVTEDIT;
+   VTEDIT103: TVTEDIT;
+   VTEDIT102: TVTEDIT;
+   VTEDIT101: TVTEDIT;
+   vtShapePB2: TvtShape;
+    vtShape1: TvtShape;
+    vtShape2: TvtShape;
+    vtAT1_1Label5: TvtLabel;
+    vtLabel1: TvtLabel;
+    vtLabel2: TvtLabel;
+    FlagFrameAB1: TFlagFrameAB;
+private
+  { Private declarations }
+public
+  { Public declarations }
+end;
+var
+AS8: TAS8;
+implementation
+{$R *.DFM}
+end.

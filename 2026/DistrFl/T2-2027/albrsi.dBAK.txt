@@ -1,0 +1,892 @@
+Schedule 000 AT1 - Alberta Corporate Income Tax Return
+BTI                     Alberta Corporate Tax Return AT1                X       BTI02   T6              020
+005          AT1     47   Alb Software Approval Code      AN      4     M       BTI12   94              020
+010          AT1     1    Legal Name of Corporation       AN      1/70  M       N102-N201-N202
+011          AT1     2    Operating Name of Corporation   AN      1/70  O       N102-N201 - N202        DH    070-080
+012          AT1     3    Mailing Address of Business     AN      1/30  M       N301                    090
+013          AT1     4    Mailing Address of Business     AN      1/30  X       N302                    090
+014          AT1     5    City/Town                       AN      1/30  M       N401                    100
+015          AT1     6    Prov./State                     A       2     M       N402                    100
+016          AT1     7    Country Code                    A       2     X       N404                    100
+017          AT1     8    Postal/Zip Code                 AN      10    M       N403                    100
+018          AT1     22   Assessment Address              AN      1/30  O       N201                    080
+019          AT1     23   Assessment Address Line 1       AN      1/30  X       N301                    090
+020          AT1     24   Assessment Address Line 2       AN      1/30  O       N302                    090
+021          AT1     25   City/Town                       AN      1/30  X       N401                    100
+022          AT1     26   Prov./State                     A       2     X       N402                    100
+023          AT1     27   Country Code                    A       2     X       N404                    100
+024          AT1     28   Postal/Zip Code                 AN      10    X       N403                    100
+025          AT1     29   Contact Person to discuss retur AN      1/60  M       PER02   IC              105
+026          AT1     30   Contact Person's Telephone No.  N       10    M       PER04   TE              105
+027          AT1     31   Contact Person's Fax No.        N       10    O       PER06   FX              105
+028          AT1     58   Nature of Business              N       4     M       TIA03   000028          040
+029          AT1     32   Type of Corporation             N       1     M       TIA03   000029          040
+030          AT1     38   Special Corporation Status      N       1     X       TIA03   000030          040
+031          AT1     40   Has there been a wind-up of a   1/2     1     M       TIA03   000031          040
+032          AT1     63   Has there been a wind-up of a   1/2     1     M       TIA03   000032          040
+034          AT1     9    Alberta Corporate Account Numbe N       9     M       BTI08   75              020
+035          AT1     10   Federal Business Number         AN      15    M       BTI10   FI              020
+036          AT1     11   Taxation Year Beginning         D       8     M       DTM02 DTM05     193             030
+037          AT1     14   Taxation Year Ending            D       8     M       DTM02 DTM05     194             030
+038          AT1     17   Tax Year End Change since       1/2     1     M       TIA03   000038          040
+039          AT1     19   Reason for Tax Year End Change  N       1     X       TIA03   000039          040
+041          AT1     60   Functional currency             N       1     X       TIA03   000041
+043          AT1     62   Exch rate                       AN      1     X       TIA03   000041
+047          AT1     42   Gross Revenue                   $       1/13  M       TIA02   000047          040
+048          AT1     43   Total Assets                    $       1/13  M       TIA02   000048          040
+050          AT1     44   Final Return?                   1/2     1     M       TIA03   000050          040
+051          AT1     49   Reason for Final Return         N       1     X       TIA03   000051          040
+052          AT1     46   Date of Amalgamation            D       8     X       DTM02 DTM05     152             030
+053          AT1     54   Date Operations Ceased.         D       8     X       DTM02 DTM05     ZZZ             030
+054          AT1     48   Date Operations Ceased.         1/2     1     M
+TFS                       Alberta Corporate Tax Return AT                       TFS02   000             010
+ACTC                      Alberta Corporate Tax Calculati                       FGS01   ACTC            130
+060          AT1     104  Is the corporation reporting di 1/2     1     M       TIA03   000060          200
+061          AT1     105  Has the corp  elected to use an 1/2     1     M       TIA03   000061          200
+062          AT1     107  Alberta Taxable Income or (Loss $       1/13  M       TIA02   000062          200
+064          AT1     108  Royalty Tax Deduction           $       1/13  M       TIA02   000064          200
+065          AT1     109  Alberta Allocation Factor       %       1/7   M       TIA06   000065          200
+068          AT1     111  Basic Alberta Tax Payable       $       1/13  M       TIA02   000068          200
+070          AT1     112  Alberta Small Business Deductio $       1/13  M       TIA02   000070          200
+071          AT1     113  Alberta Manufacturing and Proce $       1/13  M       TIA02   000071          200
+072          AT1     114  Alberta Foreign Investment Inco $       1/13  M       TIA02   000072          200
+074          AT1     115  Alberta Political Contributions $       1/13  M       TIA02   000074          200
+076          AT1     116  Other Deductions                $       1/13  M       TIA02   000076          200
+080          AT1     118  Alberta Tax Payable             $       1/13  M       TIA02   000080          200
+081          AT1     149  Alberta SRED                    $       1/13  M       TIA02   000081          200
+082          AT1     119  Instalments, other payments and $       1/13  M       TIA02   000082          200
+083          AT1     120  Alberta Royalty Tax Credit      $       1/13  M       TIA02   000083          200
+084          AT1     121  Alberta Royalty Tax Credit Inst $       1/13  M       TIA02   000084          200
+085          AT1     068  Alberta IDMC                    $       1/13  M       TIA02   000085          200
+110          AT1     069  Certificate                     A       10    O       TIA02   000110          105
+086          AT1     122  Alberta Capital Gains Refund    $       1/13  M       TIA02   000086          200
+087          AT1     123  Other Credits                   $       1/13  M       TIA02   000087          200
+090          AT1     125  Balance Unpaid (Overpayment)    $       1/13  M       TIA02   000090          200
+091          AT1     126  Amount enclosed                 $       1/13  M
+092          AT1     127  Disposition of overpayment      N       1     X       TIA03   000092          200
+093          AT1     128  Fax number for transmitting NOA N       10    O       PER08   FX              105
+097          AT1     130  Surname of signing officer      A       1/30  M       IN202   05              085
+098          AT1     131  First name of signing officer   A       1/30  M       IN202   02              085
+099          AT1     132  Position, office or rank of sig A       1/30  M       N102    AF              070
+
+Schedule 001 Alberta Small Business Deduction
+TFS                       Alberta Small Business Deduction              X       TFS02   001             010
+APASBD                    Association for Purposes of the Alberta Small         FGS01   APASBD          130
+001          AS1     3    Is the corporation associated   1/2     1     M       TIA03   001001          200
+ASBD                      Alberta Small Business Deductio                       FGS01   ASBD            130
+003          AS1     5    Inc. from active business carri $       1/13  M       TIA02   001003          200
+009          AS1     8    Taxable Income (less adj. For   $       1/13  M       TIA02   001009          200
+015          AS1     11   Business Limit: as determined   $       1/13  M       TIA02   001015          200
+019          AS1     19   Business Limit: as determined   $       1/13  X       TIA02   001015          200
+020          AS1     20   Business Limit: as determined   $       1/13  X       TIA02   001015          200
+021          AS1     13   Alberta allocation factor       %       1/7   M       TIA06   001021
+AA                        Allocation Agreement                          X       FGS01   AA      Y       130
+*041         AS1     104 137 3   AS1L041                  AN      1/175 X       N102-N201-N202  2L              160-170
+*043         AS1     105 138 3   AS1L041                  N       9     X       N104    75              160
+*045         AS1     106 139 3   AS1L041                  $       1/13  X       TIA02   001045          200
+
+Schedule 002 Alberta Income Allocation Factor
+TFS                         Allocation of Income                        X       TFS02   002             010
+SAC                         Special Allocation Categories                       FGS01   SAC             130
+001          AS2     3      Is the corporation in any of  1/2           M       TIA03   002001          200
+GAF                         General Allocation Formula                          FGS01   GAF             130
+002          AS2     5      Salaries and wages paid in Al $       1/13  X       TIA02   002002          200
+004          AS2     6      Total salaries and wages pa   $       1/13  X       TIA02   002004          200
+006          AS2     7      Gross revenue in Alberta (per $       1/13  X       TIA02   002006          200
+008          AS2     8      Gross revenue in all jurisdic $       1/13  X       TIA02   002008          200
+SAF                         Area B Special Allocation For               X       FGS01   SAF             130
+012          AS2     10     Salaries and wages paid in    $       1/13  X       TIA02   002012          200
+014          AS2     11     Total salaries and wages pa   $       1/13  X       TIA02   002014          200
+016          AS2     12     Kilometres traveled in Alber  N       1/13  X       TIA04   002016          200
+018          AS2     13     Total kilometres traveled in  N       1/13  X       TIA04   002018          200
+022          AS2     15     Salaries and wages paid in A  $       1/13  X       TIA02   002022          200
+024          AS2     16     Total salaries and wages paid $       1/13  X       TIA02   002024          200
+026          AS2     17     Bushels of grain received at  N       1/13  X       TIA04   002026          200
+028          AS2     18     Bushels of grain received at  N       1/13  X       TIA04   002028          200
+032          AS2     20     Salaries and wages paid in Al $       1/13  X       TIA02   002032          200
+034          AS2     21     Total salaries and wages paid $       1/13  X       TIA02   002034          200
+036          AS2     22     Miles of pipeline in Alberta  N       1/13  X       TIA04   002036          200
+038          AS2     23     Total Miles of pipeline in pr N       1/13  X       TIA04   002038          200
+046          AS2     102    Net premiums in Alberta       $       1/13  X       TIA02   002046          200
+048          AS2     103    Total net premiums earned     $       1/13  X       TIA02   002048          200
+052          AS2     105    Salaries and wages paid in Al $       1/13  X       TIA02   002052          200
+054          AS2     106    Total salaries and wages paid $       1/13  X       TIA02   002054          200
+056          AS2     107    Loans & deposits in Alberta   $       1/13  X       TIA02   002056          200
+058          AS2     108    Total loans & deposits        $       1/13  X       TIA02   002058          200
+066          AS2     110    Gross revenue earned in Alber $       1/13  X       TIA02   002066          200
+068          AS2     111    Total gross revenue           $       1/13  X       TIA02   002068          200
+072          AS2     113    Fixed asset cost (other tha   $       1/13  X       TIA02   002072          200
+074          AS2     114    Fixed asset cost (other tha   $       1/13  X       TIA02   002074          200
+076          AS2     115    Revenue plane miles flown i   N       1/13  X       TIA04   002076          200
+078          AS2     116    Revenue plane miles flown i   N       1/13  X       TIA04   002078          200
+082          AS2     118    Equated track miles in Albea  N       1/13  X       TIA04   002082          200
+084          AS2     119    Total equated track miles i   N       1/13  X       TIA04   002084          200
+086          AS2     120    Gross ton miles in Alberta    N       1/13  X       TIA04   002086          200
+088          AS2     121    Total gross ton miles in Cada N       1/13  X       TIA04   002088          200
+090          AS2     123    Salaries and wages paid in    $       1/13  X       TIA02   002090          200
+092          AS2     124    Total salaries and wages pada $       1/13  X       TIA02   002092          200
+094          AS2     125    Port-call-tonnage in Albert   N       1/13  X       TIA04   002094          200
+096          AS2     126    Total port-call-tonnage in a  N       1/13  X       TIA04   002096          200
+098          AS2     127    Total port-call-tonnage in Ca N       1/13  X       TIA04   002098          200
+100          AS2     128    Total port-call-tonnage in al N       1/13  X       TIA04   002100          200
+102          AS2     129    (002098/002100) X (AT1 lines  $       1/13  X       TIA02   002102          200
+104          AS2     130    002090/002092 X  [(AT1 lines  $       1/13  X       TIA02   002104          200
+106          AS2     132    Amount taxable in Alberta     $       1/13  X       TIA02   002106          200
+108          AS2     133    AT1 line 062 - AT1 line 064   $       1/13  X       TIA02   002108          200
+
+Schedule 003 Alberta Investor Tax Credit
+100          AS3     3      Amounts under paragraph 12(1) $       1/13  X       TIA02
+102          AS3     4      Amounts under paragraph 12(1) $       1/13  X       TIA02
+104          AS3     5      Amounts under paragraph 12(1) $       1/13  X       TIA02
+106          AS3     6      Amounts under paragraph 12(1) $       1/13  X       TIA02
+108          AS3     7      Amounts under paragraph 12(1) $       1/13  X       TIA02
+200          AS3     8      Amounts under paragraph 12(1) $       1/13  X       TIA02
+202          AS3     9      Amounts under paragraph 12(1) $       1/13  X       TIA02
+204          AS3     10     Amounts under paragraph 12(1) $       1/13  X       TIA02
+206          AS3     11     Amounts under paragraph 12(1) $       1/13  X       TIA02
+208          AS3     12     Amounts under paragraph 12(1) $       1/13  X       TIA02
+600          AS3     13     Amounts under paragraph 12(1) $       1/13  X       TIA02
+602          AS3     14     Amounts under paragraph 12(1) $       1/13  X       TIA02
+604          AS3     15     Amounts under paragraph 12(1) $       1/13  X       TIA02
+
+*120         AS3     120 124 1   AS3L120                  N       1/13  X       TIA02   004004          200
+*122         AS3     16  40  6   AS3L122                  D       1/13  X       TIA02   004004          200
+*124         AS3     17  41  6   AS3L122                  $       1/13  X       TIA02   004004          200
+*125         AS3     18  42  6   AS3L122                  $       1/13  X       TIA02   004004          200
+*126         AS3     19  43  6   AS3L122                  $       1/13  X       TIA02   004004          200
+*128         AS3     20  44  6   AS3L122                  $       1/13  X       TIA02   004004          200
+*130         AS3     21  45  6   AS3L122                  $       1/13  X       TIA02   004004          200
+
+*220         AS3     125 135 1   AS3L220                  N       1/13  X       TIA02   004004          200
+*222         AS3     49  109 6   AS3L222                  D       1/13  X       TIA02   004004          200
+*224         AS3     50  110 6   AS3L222                  $       1/13  X       TIA02   004004          200
+*225         AS3     51  111 6   AS3L222                  $       1/13  X       TIA02   004004          200
+*226         AS3     52  112 6   AS3L222                  $       1/13  X       TIA02   004004          200
+*228         AS3     53  113 6   AS3L222                  $       1/13  X       TIA02   004004          200
+*230         AS3     54  114 6   AS3L222                  $       1/13  X       TIA02   004004          200
+
+
+Schedule 004 Alberta Foreign Investment Income Tax Credit
+TFS                         Alberta Foreign Investment In               X       TFS02   004             010
+FIC                         Foreign Investment Credits                          FGS01   FIC     Y       130
+*002         AS4     3   35  8   AS4L002   which foreign  A       2     X       N102-   CY              160-170
+*004         AS4     4   36  8   AS4L002  Net Foreigncome $       1/13  X       TIA02   004004          200
+*006         AS4     7   39  8   AS4L002  Foreign investm $       1/13  X       TIA02   004006          200
+*008         AS4     8   40  8   AS4L002  Federal non-bus $       1/13  X       TIA02   004008          200
+*012         AS4     10  42  8   AS4L002  Allowable Credi $       1/13  X       TIA02   004012          200
+
+Schedule OS5 Alberta Royalty Tax Deduction-Before Dec 4, 2003
+TFS                         Royalty Tax Deduction                       X       TFS02   005             010
+CRTD                        Calculation of the Royalty Ta                       FGS01   CRTD            130
+001          AS5     3      Amounts under paragraph 12(1) $       1/13  M       TIA02   005001          200
+005          AS5     4      Deduct:  Resource allowance   $       1/13  X       TIA02   005005          200
+011          AS5     6      Add:  Attributed Royalty Inco $       1/13  X       TIA02   005011          200
+023          AS5     10     Deduct:  Transfers of Attribu $       1/13  X       TIA02   005023          200
+025          AS5     11     Attributed Royalty Income car $       1/13  M       TIA02   005025          200
+ARI                         C/F Attributed Royalty Income               X       FGS01   ARI C/F Y       130
+*031         AS5     12  32  4   AS5L031 Predecessor's    AN      1/175 X       N102-N201-N202  2L              160-170
+*033         AS5     13  33  4   AS5L031 Alberta Corporat N       9     X       N104    75              160
+*035         AS5     14  34  4   AS5L031 Date of Event    D       8     X       DTM02 DTM05     447             210
+*037         AS5     15  35  4   AS5L031 ARI C/F Amount   $       1/13  X       TIA02   005037          200
+CARI                        C/F Corporations ARI C/F                            FGS01   CARI C/F                130
+043          AS5     37     Corporations ARI C/F from th  $       1/13  X       TIA02   005043          200
+
+Schedule 005 Alberta Royalty Tax Deduction-After Dec 3, 2003
+100          AS5     3    Is the corporation associated   1/2     1     M       TIA03   001001
+200          AS5     5    Is successor pools              1/2     1     M       TIA03   001001
+
+001          AS5     7      Amounts under paragraph 12(1) $       1/13  M       TIA02   005001          200
+005          AS5     8      Deduct:  Resource allowance   $       1/13  X       TIA02   005005          200
+007          AS5     9      Deduct:  Resource allowance   $       1/13  X       TIA02   005005          200
+011          AS5     11     Deduct:  Resource allowance   $       1/13  X       TIA02   005005          200
+016          AS5     14     Deduct:  Resource allowance   $       1/13  X       TIA02   005005          200
+017          AS5     15     Deduct:  Resource allowance   $       1/13  M       TIA02   005005          200
+026          AS5     16     Deduct:  Resource allowance   N       1/13  M       TIA02   005005          200
+027          AS5     17     Deduct:  Resource allowance   A       1/13  X       TIA02   005005          200
+*031         AS5     20  32  4   AS5_1L31 Predecessor's   AN      1/175 X       N102-N201-N202  2L              160-170
+*033         AS5     21  33  4   AS5_1L31 Alberta Corpora N       9     X       N104    75              160
+*035         AS5     22  34  4   AS5_1L31 Date of Event   D       8     X       DTM02 DTM05     447             210
+*037         AS5     23  35  4   AS5_1L31 ARI C/F Amount  $       1/13  X       TIA02   005037          200
+CARI                        C/F Corporations ARI C/F                            FGS01   CARI C/F                130
+043          AS5     37     Corporations ARI C/F from th  $       1/13  X       TIA02   005043
+*101         AS5     103 124 7   AS5L101   predec         AN      1/175 X       N102-N201-N202  2L              160-170
+*103         AS5     104 125 7   AS5L101   predec         D       8     X       N102-N201-N202  2L              160-170
+*105         AS5     105 126 7   AS5L101   predec         $       1/13  X       N102-N201-N202  2L              160-170
+*107         AS5     106 127 7   AS5L101   predec         $       1/13  X       N102-N201-N202  2L              160-170
+*109         AS5     107 128 7   AS5L101   predec         $       1/13  X       N102-N201-N202  2L              160-170
+*111         AS5     108 129 7   AS5L101   predec         $       1/13  X       N102-N201-N202  2L              160-170
+*113         AS5     109 130 7   AS5L101   predec         $       1/13  X       N102-N201-N202  2L              160-170
+115          AS5     132    amount h                      $       1/13  X       TIA02   005005          200
+
+*121         AS5     133 154 7   AS5L121   predec         AN      1/175 X       N102-N201-N202  2L              160-170
+*123         AS5     134 155 7   AS5L121   predec         D       8     X       N102-N201-N202  2L              160-170
+*125         AS5     135 156 7   AS5L121   predec         $       1/13  X       N102-N201-N202  2L              160-170
+*127         AS5     136 157 7   AS5L121   predec         $       1/13  X       N102-N201-N202  2L              160-170
+*129         AS5     137 158 7   AS5L121   predec         $       1/13  X       N102-N201-N202  2L              160-170
+*131         AS5     138 159 7   AS5L121   predec         $       1/13  X       N102-N201-N202  2L              160-170
+*133         AS5     139 160 7   AS5L121   predec         $       1/13  X       N102-N201-N202  2L              160-170
+135          AS5     162    amount i                      $       1/13  X       TIA02   005005          200
+140          AS5     163    amount h                      $       1/13  X       TIA02   005005          200
+
+Schedule 006 Alberta Royalty Tax Credit
+TFS                         Alberta Royalty Tax Credit                  X       TFS02   006             010
+ARTC                        Alberta Royalty Tax Credit                          FGS01   ARTC            130
+002          AS6     3      Is the corporation associate  1/2     1     M       TIA03   006002          200
+004          AS6     5      Alberta Crown Royalty incurr  $       1/13  M       TIA02   006004          200
+006          AS6     8      Crown Royalty Shelter         $       1/13  M       TIA02   006006          200
+008          AS6     11     Weighted Average Rate         %       5/5   M       TIA06   006008          200
+ACRS                        Aggregate of the Crown Royal                X       FGS01   ACRS            130
+022          AS6     103    The Corporate Account Number  N       9     X       TIA03   006022          200
+024          AS6     104    Taxation Year Beginning       D       8     X       DTM02 DTM05     193             210
+026          AS6     105    Taxation Year Ending.         D       8     X       DTM02 DTM05     194             210
+028          AS6     106    Number of days in the longes  N       3     X       TIA03   006028          200
+AACRS                       Allocation of the Aggregate                 X       FGS01   AACRS   Y       130
+*030         AS6     109 142 3   AS6L030 Name of Corporn  AN      1/175 X       N102-N201-N202  2L              160-170
+*032         AS6     110 143 3   AS6L030 Alberta Corpor   N       9     X       N104    75              160
+*034         AS6     111 144 3   AS6L030 Allocated Amou   $       1/13  X       TIA02   006034          200
+
+Schedule 007 Alberta Royalty Tax Credit/Deduction Supplemental Information
+TFS                         Royalty Tax Credit / Deducti                X       TFS02   007             010
+CPI                         Crown Payment Information                           FGS01   CPI             130
+003          AS7     3      Alberta crown royalty eligi.  $       1/13  X       TIA02   007003          200
+005          AS7     4      Other royalties paid to Alb   $       1/13  X       TIA02   007005          200
+007          AS7     5      Crown royalty paid to otherns $       1/13  X       TIA02   007007          200
+009          AS7     6      Non-deductible crown lease    $       1/13  X       TIA02   007009          200
+011          AS7     7      Mineral taxes                 $       1/13  X       TIA02   007011          200
+013          AS7     8      Saskatchewan resources surch  $       1/13  X       TIA02   007013          200
+014          AS7     9      Other non-deductible crown p  AN      1/80  O       TIA03   007014          200
+015          AS7     11     Other non-deductible crown p  AN      1/80  O       TIA03   007015          200
+016          AS7     12     Other non-deductible crown p  AN      1/80  O       TIA03   007016          200
+017          AS7     10     Other non-deductible crown p  $       1/13  X       TIA02   007017          200
+025          AS7     15     Crown lease rentals capitali  $       1/13  X       TIA02   007025          200
+027          AS7     16     Other balance sheet eligibles AN      1/80  O       TIA03   007027          200
+029          AS7     17     Other, specify:               $       1/13  X       TIA02   007029          200
+051          AS7     24     Total Adjustments to current. $       1/13  M       TIA02   007051          200
+PITI                        Partnership Income Tax Infor                X       FGS01   PITI    Y       130
+*071         AS7     103 151 6   AS7L071 Partnership name AN      1/175 X       N102-N201-N202  2K              160-170
+*073         AS7     104 152 6   AS7L071 Corporation's %  %       5/5   X       TIA06   007073          200
+*075         AS7     105 153 6   AS7L071 Partnership fisc D       8     X       DTM02 DTM05     194             150
+*077         AS7     106 154 6   AS7L071 Corporations Sha $       1/13  X       TIA02   007077          200
+*079         AS7     107 155 6   AS7L071 Corporations Sha $       1/13  X       TIA02   007079          200
+*081         AS7     108 156 6   AS7L071 Corporation's sh $       1/13  X       TIA02   007081          200
+ACRA                        Adjustments to ACR Reported                 X       FGS01   ACRA    Y       130
+*083         AS7     160 208 6   AS7L083 Prior product    D       8     X       DTM02 DTM05     194             150
+*085         AS7     161 209 6   AS7L083 Source of Adjutm N       1     X       TIA03   007085          200
+*087         AS7     162 210 6   AS7L083 Adjustments tht  $       1/13  X       TIA02   007087          200
+*089         AS7     163 211 6   AS7L083 Adjustments tht  $       1/13  X       TIA02   007089          200
+*091         AS7     164 212 6   AS7L083 Adjustment to mo $       1/13  X       TIA02   007091          200
+
+Schedule 008 Alberta Political Contributions Tax Credit
+TFS                      Alberta Political Contributions                X       TFS02   008             010
+PCD                          Political Contribution Data                        FGS01   PCD     Y       130
+*002         AS8     3   11  4   AS8L002 Name of Party,   AN      1/175 M       N102-N201-N202  B2              160-170
+*004         AS8     4   12  4   AS8L002 Official Receipt AN      1/30  M       REF02   SE              140
+*006         AS8     5   13  4   AS8L002 Date of Donation D       8     M       DTM02 DTM05     922             150
+*008         AS8     6   14  4   AS8L002 Donation Amount  $       1/13  M       TIA02   008008          200
+APC                          Alberta Political Contribut                        FGS01   APC             130
+012          AS8      24     Alberta political contributi $       1/13  X       TIA02   008012          200
+013          AS8      15     Alberta political contributi $       1/13  X       TIA02   008012          200
+
+
+Schedule 009 Alberta SR&ED Credit
+003          AS9     4                                    $       1/13  M       TIA02   009003          200
+005          AS9     5                                    $       1/13  X       TIA02   009005          200
+007          AS9     6                                    $       1/13  X       TIA02   009007          200
+009          AS9     7                                    $       1/13  X       TIA02   009009          200
+011          AS9     8                                    $       1/13  X       TIA02   009011          200
+025          AS9     14                                   $       1/13  X       TIA02   009025          200
+031          AS9     15                                   $       1/13  M       TIA02   009031          200
+040          AS9     16                                   $       1/13  X       TIA02   009040          200
+100          AS9     17                                   1/2     1     M       TIA02   009100          200
+102          AS9     19                                   $       1/13  X       TIA02   009102          200
+104          AS9     20                                   $       1/13  X       TIA02   009104          200
+108          AS9     22                                   $       1/13  M       TIA02   009108          200
+110          AS9     23                                   $       1/13  X       TIA02   009110          200
+112          AS9     24                                   $       1/13  X       TIA02   009112          200
+114          AS9     105                                  $       1/13  X       TIA02   009112          200
+116          AS9     106                                  $       1/13  X       TIA02   009112          200
+120          AS9     25                                   $       1/13  X       TIA02   009120          200
+200          AS9     31                                   $       1/13  X       TIA02   009200          200
+202          AS9     32                                   D       1/13  X       TIA02   009202          200
+204          AS9     33                                   D       1/13  X       TIA02   009204          200
+206          AS9     34                                   N       1/13  X       TIA02   009206          200
+208          AS9     36                                   $       1/13  X       TIA02   009206          200
+*220         AS9     38  95  3   AS9L220                  AN      1/175 X       REF02
+*230         AS9     39  96  3   AS9L220                  N       1/175 X       REF02
+*240         AS9     40  97  3   AS9L220                  $       1/13  X       TIA02
+
+
+Schedule 010 Alberta Loss Carry-Back Application
+TFS                          Loss Carry-Back Application                X       TFS02   010             010
+ACTA                         Loss to be Applied Under the                       FGS01   ACTA            130
+002          AS10    6       Non-capital Loss:  Amt of cu $       1/13  X       TIA02   010002          200
+003          AS10    10   Date                            D       8     X
+004          AS10    11      Non-capital Loss:  1st prec  $       1/13  X       TIA02   010004          200
+005          AS10    15   Date                            D       8     X
+006          AS10    16      Non-capital Loss:  2nd prec  $       1/13  X       TIA02   010006          200
+007          AS10    20   Date                            D       8     X
+008          AS10    21      Non-capital Loss:  3rd prec  $       1/13  X       TIA02   010008          200
+010          AS10    29      Non-capital Loss:  Balance   $       1/13  X       TIA02   010010          200
+012          AS10    7       Farm Loss:  Amt of current   $       1/13  X       TIA02   010012          200
+014          AS10    12      Farm Loss:  1st preceding t  $       1/13  X       TIA02   010014          200
+016          AS10    17      Farm Loss:  2nd preceding t  $       1/13  X       TIA02   010016          200
+018          AS10    22      Farm Loss:  3rd preceding t  $       1/13  X       TIA02   010018          200
+020          AS10    30      Farm Loss:  Balance of curr  $       1/13  X       TIA02   010020          200
+023          AS10    4       Other Losses:  Restricted fa 1/2     1     X       TIA03   010023          200
+025          AS10    5       Other Losses:  Listed Person 1/2     1     X       TIA03   010025          200
+032          AS10    8       Other Losses:  Amt of curren $       1/13  X       TIA02   010032          200
+034          AS10    13      Other Losses:  1st preceding $       1/13  X       TIA02   010034          200
+036          AS10    18      Other Losses:  2nd preceding $       1/13  X       TIA02   010036          200
+038          AS10    23      Other Losses:  3rd preceding $       1/13  X       TIA02   010038          200
+040          AS10    31      Other Losses:  Balance of cu $       1/13  X       TIA02   010040          200
+042          AS10    9       Capital:  Amt of current yr  $       1/13  X       TIA02   010042          200
+043          AS10    35      Capital:  Amt of current yr  %       1/13  X       TIA02   010042          200
+044          AS10    14      Capital:  1st preceding taxa $       1/13  X       TIA02   010044          200
+045          AS10    48      Capital:  Amt of current yr  %       1/13  X       TIA02   010042          200
+046          AS10    19      Capital:  2nd preceding taxa $       1/13  X       TIA02   010046          200
+047          AS10    50      Capital:  Amt of current yr  %       1/13  X       TIA02   010042          200
+048          AS10    24      Capital:  3rd preceding taxa $       1/13  X       TIA02   010048          200
+050          AS10    32      Capital:  Balance of current $       1/13  X       TIA02   010050          200
+052          AS10    33   contact                         AN      1/60  M
+054          AS10    34   Tel                             AN      1/60  M
+056          AS10    36   Fax                             AN      1/60  O
+058          AS10    38   addres                          AN      1/60  M
+060          AS10    39   address                         AN      1/60  O
+062          AS10    40   city                            AN      1/60  M
+064          AS10    41   prov                            AN      1/60  M
+066          AS10    42   country                         AN      1/60  O
+068          AS10    43   postal                          AN      1/60  M
+070          AS10    44   name last                       AN      1/60  M
+072          AS10    45   first nm                        AN      1/60  M
+074          AS10    46   position                        AN      1/60  M
+082          AS10    2    Alberta Corporate Account Numbe N       9     M
+084          AS10    3    year end                        D       8     X
+090          AS10    53   Funct currency                  1/2
+
+Schedule 011 Alberta Manufacturing and Processing Profits Deduction
+052          AS10    23   contact                         AN      1/60  MTFS                     Alberta Manufacturing and Process               X       TFS02   011             010
+AMPPD                        Alberta Manufacturing and Pr                       FGS01   AMPPD           130
+001          AS11    3       If the ADJUBI is calculated  $       1/13  M       TIA02   011001          200
+013          AS11    9       Canadian-controlled Private  $       1/13  X       TIA02   011013          200
+AMPP                         Alberta Manufacturing and Pr               X       FGS01   AMPP            130
+031          AS11    103     Cost of Capital:  Calculate  $       1/13  X       TIA02   011031          200
+033          AS11    105     Alberta Cost of Manufacturin $       1/13  X       TIA02   011033          200
+037          AS11    106     Cost of Labour:  Calculate   $       1/13  X       TIA02   011037          200
+039          AS11    107     Alberta Cost of Manufacturi  $       1/13  X       TIA02   011039          200
+042          AS11    109     Alberta Manufacturing and P  $       1/13  X       TIA02   011042          200
+
+Schedule 012 Alberta Income/Loss Reconciliation
+TFS                          Income/Loss Reconciliation                 X       TFS02   012             010
+NIACITP                      Net Income for Alberta Corp                        FGS01   NIACITP         130
+002          AS12    3       Net Income (Loss) for        $       1/13  M       TIA02   012002          200
+004          AS12    5       Capital Cost Allowance       $       1/13  X       TIA02   012004          200
+005          AS12    4       Capital Cost Allowance       $       1/13  X       TIA02   012005          200
+006          AS12    7       Recapture of CCA             $       1/13  X       TIA02   012006          200
+007          AS12    6       Recapture of CCA             $       1/13  X       TIA02   012007          200
+008          AS12    9       Terminal Loss                $       1/13  X       TIA02   012008          200
+009          AS12    8       Terminal Loss                $       1/13  X       TIA02   012009          200
+010          AS12    11      Cumulative Eligible Capital  $       1/13  X       TIA02   012010          200
+011          AS12    10      Cumulative Eligible Capital  $       1/13  X       TIA02   012011          200
+012          AS12    13      Gain on Sale of Eligible Cap $       1/13  X       TIA02   012012          200
+013          AS12    12      Gain on Sale of Eligible Cap $       1/13  X       TIA02   012013          200
+014          AS12    15      Farming Inventory:  Mandator $       1/13  X       TIA02   012014          200
+015          AS12    14      Farming Inventory:  Mandator $       1/13  X       TIA02   012015          200
+016          AS12    17      Farming Inventory:  Mandator $       1/13  X       TIA02   012016          200
+017          AS12    16      Farming Inventory:  Mandator $       1/13  X       TIA02   012017          200
+018          AS12    19      Farming Inventory:  Optional $       1/13  X       TIA02   012018          200
+019          AS12    18      Farming Inventory:  Optional $       1/13  X       TIA02   012019          200
+020          AS12    21      Farming Inventory:  Optional $       1/13  X       TIA02   012020          200
+021          AS12    20      Farming Inventory:  Optional $       1/13  X       TIA02   012021          200
+022          AS12    23      Depletion                    $       1/13  X       TIA02   012022          200
+023          AS12    22      Depletion                    $       1/13  X       TIA02   012023          200
+026          AS12    27      Canadian Exploration Expense $       1/13  X       TIA02   012026          200
+027          AS12    26      Canadian Exploration Expense $       1/13  X       TIA02   012027          200
+028          AS12    29      Canadian Development Expense $       1/13  X       TIA02   012028          200
+029          AS12    28      Canadian Development Expense $       1/13  X       TIA02   012029          200
+030          AS12    31      Foreign Exploration and Deve $       1/13  X       TIA02   012030          200
+031          AS12    30      Foreign Exploration and Deve $       1/13  X       TIA02   012031          200
+032          AS12    33      Canadian Oil and Gas Propert $       1/13  X       TIA02   012032          200
+033          AS12    32      Canadian Oil and Gas Propert $       1/13  X       TIA02   012033          200
+034          AS12    35      Scientific Research Expenses $       1/13  X       TIA02   012034          200
+035          AS12    34      Scientific Research Expenses $       1/13  X       TIA02   012035          200
+036          AS12    37      Tax Reserves deducted in pri $       1/13  X       TIA02   012036          200
+037          AS12    36      Tax Reserves deducted in pri $       1/13  X       TIA02   012037          200
+038          AS12    39      Tax Reserves claimed in curr $       1/13  X       TIA02   012038          200
+039          AS12    38      Tax Reserves claimed in curr $       1/13  X       TIA02   012039          200
+040          AS12    41      Other - specify              $       1/13  X       TIA02   012040          200
+041          AS12    42      Other - specify              $       1/13  X       TIA02   012041          200
+042          AS12    46      cap tax liability            $       1/13  X       TIA02   012042          200
+048          AS12    50      position                     AN      1/60  O
+050          AS12    44      Total Federal Amount         $       1/13  M       TIA02   012050          200
+054          AS12    43      Net Income (Loss) for Alber  $       1/13  M       TIA02   012054          200
+TIA                          Taxable Income for Alberta                         FGS01   TIA             130
+056          AS12    104     Charitable Donations         $       1/13  M       TIA02   012056          200
+057          AS12    064     Charitable Donations         $       1/13  M       TIA02   012056          200
+058          AS12    105     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+059          AS12    063     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+060          AS12    106     Taxable dividend deductible  $       1/13  M       TIA02   012060          200
+061          AS12    062     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+062          AS12    107     Part VI.1 tax deduction      $       1/13  M       TIA02   012062          200
+063          AS12    061     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+064          AS12    108     Non-capital losses of prece  $       1/13  M       TIA02   012064          200
+065          AS12    060     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+066          AS12    109     Net-capital losses of prece  $       1/13  M       TIA02   012066          200
+067          AS12    059     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+068          AS12    110     Restricted farm losses of p  $       1/13  M       TIA02   012068          200
+069          AS12    058     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+070          AS12    113     Farm losses of preceding tas $       1/13  M       TIA02   012070          200
+071          AS12    056     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+072          AS12    116     Limited partnership losses   $       1/13  M       TIA02   012072          200
+073          AS12    054     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+074          AS12    114     Taxable capital gains or ta  $       1/13  M       TIA02   012074          200
+075          AS12    055     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+078          AS12    112     Prospector's and grubstaker  $       1/13  M       TIA02   012078          200
+079          AS12    057     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+081          AS12    053     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+082          AS12    118     Add:  ITA section 110.5 add  $       1/13  M       TIA02   012082          200
+090          AS12    119     Taxable Income for Alberta   $       1/13  M       TIA02   012090          200
+091          AS12    065     Gifts to Canada or a provinc $       1/13  M       TIA02   012058          200
+092          AS12    122     Taxable Income per ITA para  $       1/13  M       TIA02   012092          200
+RABI                         Reconciliation of Active Bu                X       FGS01   RABI            130
+100          AS12    120     Does the corporation's calc  1/2     1/1   M       TIA03   012100          200
+102          AS12    115     Active Business Income repo  $       1/13  X       TIA02   012102          200
+104          AS12    123     Adjustment to ABI for AB pur $       1/13  X       TIA02   012104          200
+
+Schedule 013 Alberta Capital Cost Allowance (CCA)
+TFS                          Capital Cost Allowance (CCA)               X       TFS02   013             010
+CCA                          Capital Cost Allowance                             FGS01   CCA     Y       130
+*001         AS13#1  6   196 16  AS13L001 Class number    AN      1/13  M       REF02   X2              140
+*003         AS13#1  7   199 16  AS13L001 Undepreciated   $       1/13  M       TIA02   013003          200
+*005         AS13#1  8   200 16  AS13L001 Cost of acquisi $       1/13  X       TIA02   013005          200
+*029         AS13#1  252 264 01  AS13L029 Cost of acquisi $       1/13  X       TIA02   013005          200
+*007         AS13#1  9   201 16  AS13L001 Net adjustments $       1/13  X       TIA02   013007          200
+*031         AS13#1  265 277 01  AS13L029 Net adjustments $       1/13  X       TIA02   013007          200
+*033         AS13#1  278 290 01  AS13L029 Net adjustments $       1/13  X       TIA02   013007          200
+*009         AS13#1  10  202 16  AS13L001 Proceeds of dis $       1/13  X       TIA02   013009          200
+*035         AS13#1  317 329 01  AS13L035 Net adjustments $       1/13  X       TIA02   013007          200
+*037         AS13#1  330 342 01  AS13L035 Net adjustments $       1/13  X       TIA02   013007          200
+*013         AS13#1  17  209 16  AS13L001 CCA rate        AN      1/6   M       TIA03   013013          200
+*015         AS13#1  18  210 16  AS13L001 Recapture of ca $       1/13  X       TIA02   013015          200
+*017         AS13#1  19  211 16  AS13L001 Terminal Loss   $       1/1   X       TIA02   013017          200
+*019         AS13#1  20  212 16  AS13L001 Capital cost al $       1/13  M       TIA02   013019          200
+*021         AS13#1  21  213 16  AS13L001 Undepreciated c $       1/13  M       TIA02   013021          200
+
+Schedule 014 Alberta Cumulative Eligible Capital Deduction
+TFS                          Cumulative Eligible Capital                X       TFS02   014             010
+CYDCF                        Current Year Deduction and                         FGS01   CYDCF   Y       130
+002          AS14    3       Cumulative eligible capital  $       1/13  M       TIA02   014002          200
+004          AS14    4       Cost of eligible capital pro $       1/13  X       TIA02   014004          200
+006          AS14    19      Amount transferred on amalga $       1/13  X       TIA02   014006          200
+008          AS14    6       Other adjustments            $       1/13  X       TIA02   014008          200
+011          AS14    16      Other adjustments            $       1/13  X       TIA02   014011          200
+014          AS14    9       Proceeds of sale (less outl  $       1/13  X       TIA02   014014          200
+016          AS14    10      The gross amount of a reduc  $       1/13  X       TIA02   014016          200
+018          AS14    11      Other adjustments            $       1/13  X       TIA02   014018          200
+024          AS14    14      Current year deduction       $       1/13  M       TIA02   014024          200
+026          AS14    15      Cumulative eligible capital  $       1/13  M       TIA02   014026          200
+AIIAD                        Amount to be Included in Inc               X       FGS01   AIIAD           130
+032          AS14    106     Total cumulative eligible ca $       1/13  X       TIA02   014032          200
+034          AS14    107     Cumulative eligible capital  $       1/13  X       TIA02   014034          200
+042          AS14    104     Total cumulative eligible ca $       1/13  X       TIA02   014032          200
+044          AS14    105     Total cumulative eligible ca $       1/13  X       TIA02   014032          200
+047          AS14    102     Total cumulative eligible ca $       1/13  X       TIA02   014047          200
+048          AS14    109     Total cumulative eligible ca $       1/13  X       TIA02   014048          200
+
+Schedule 015 Alberta Resource Related Deductions
+TFS                          Resource Related Deductions                X       TFS02   015             010
+EDA                          Continuity of Earned Depleti                       FGS01   EDA             130
+001          AS15    4       Regular Expenses: Balance at $       1/13  M       TIA02   015001          200
+003          AS15    6       Regular Expenses:  transferr $       1/13  X       TIA02   015003          200
+005          AS15    9       Regular Expenses:  transferr $       1/13  X       TIA02   015005          200
+007          AS15    12      Regular Expenses:  Claim for $       1/13  M       TIA02   015007          200
+009          AS15    13      Regular Expenses:  Closing b $       1/13  M       TIA02   015009          200
+011          AS15    5       Successor Expenses:  Balance $       1/13  M       TIA02   015011          200
+013          AS15    7       Successor Expenses:  transfe $       1/13  X       TIA02   015013          200
+015          AS15    8       Successor Expenses:  transfe $       1/13  X       TIA02   015015          200
+017          AS15    10      Successor Expenses:  transfe $       1/13  X       TIA02   015017          200
+019          AS15    11      Successor Expenses:  Claim f $       1/13  M       TIA02   015019          200
+021          AS15    14      Successor Expenses:  Closing $       1/13  M       TIA02   015021          200
+CMEDB                        Continuity of Mining Explora                       FGS01   CMEDB           130
+023          AS15    15      Continuity of Mining Explora $       1/13  M       TIA02   015023          200
+025          AS15    16      Continuity of Mining Explora $       1/13  X       TIA02   015025          200
+027          AS15    17      Continuity of Mining Explora $       1/13  X       TIA02   015027          200
+029          AS15    18      Continuity of Mining Explora $       1/13  X       TIA02   015029          200
+031          AS15    20      Continuity of Mining Explora $       1/13  M       TIA02   015031          200
+033          AS15    21      Continuity of Mining Explora $       1/13  M       TIA02   015033          200
+CEE                          Cumulative Canadian Explorat                       FGS01   CEE             130
+041          AS15    101     Regular Exp.: Balance at end $       1/13  M       TIA02   015041          200
+043          AS15    103     Regular Exp.:  Add:  current $       1/13  X       TIA02   015043          200
+044          AS15    114     Regular Exp.:  Add:  current $       1/13  X       TIA02   015044          200
+045          AS15    104     Regular Exp.:  Add:  reclass $       1/13  X       TIA02   015045          200
+047          AS15    106     Regular Exp.:  Add:  transfe $       1/13  X       TIA02   015047          200
+049          AS15    109     Regular Exp.:  Add: Canadian $       1/13  X       TIA02   015049          200
+051          AS15    111     Regular Exp.:  Add:  other a $       1/13  X       TIA02   015051          200
+053          AS15    113     Regular Exp.:  Deduct: gover $       1/13  X       TIA02   015053          200
+055          AS15    115     Regular Exp.:  Deduct: other $       1/13  X       TIA02   015055          200
+058          AS15    117     Regular Exp.:  Deduct: Renou $       1/13  X       TIA02   015058          200
+059          AS15    118     Regular Exp.:  Deduct: trans $       1/13  X       TIA02   015059          200
+060          AS15    126     Regular Exp.:  Deduct: trans $       1/13  X       TIA02   015060          200
+061          AS15    121     Regular Exp.:  Deduct: curre $       1/13  M       TIA02   015061          200
+063          AS15    123     Regular Exp.:  Closing balan $       1/13  M       TIA02   015063          200
+064          AS15    102     Successor Exp.: Balance at e $       1/13  M       TIA02   015064          200
+065          AS15    105     Successor Exp.:  Add: reclas $       1/13  X       TIA02   015065          200
+067          AS15    107     Successor Exp.:  Add: transf $       1/13  X       TIA02   015067          200
+069          AS15    108     Successor Exp.:  Add: transf $       1/13  X       TIA02   015069          200
+077          AS15    116     Successor Exp.: Deduct: othe $       1/13  X       TIA02   015077          200
+079          AS15    119     Successor Exp.:  Deduct: tra $       1/13  X       TIA02   015079          200
+081          AS15    122     Successor Exp.:  Deduct: cur $       1/13  M       TIA02   015081          200
+083          AS15    124     Successor Exp.:  Closing bal $       1/13  M       TIA02   015083          200
+CDE                          Cumulative Canadian Developm                       FGS01   CDE             130
+091          AS15    201     Regular Exp.: Balance at end $       1/13  M       TIA02   015091          200
+093          AS15    203     Regular Exp.:  Add:  current $       1/13  X       TIA02   015093          200
+094          AS15    218     Regular Exp.:  Add:  current $       1/13  X       TIA02   015094          200
+095          AS15    204     Regular Exp.:  Add:  transfe $       1/13  X       TIA02   015095          200
+097          AS15    206     Regular Exp.:  Add:  other a $       1/13  X       TIA02   015097          200
+099          AS15    208     Regular Exp.:  Deduct: recla $       1/13  X       TIA02   015099          200
+101          AS15    210     Regular Exp.:  Deduct: gover $       1/13  X       TIA02   015101          200
+103          AS15    212     Regular Exp.: Deduct: receiv $       1/13  X       TIA02   015103          200
+105          AS15    214     Regular Exp.: Deduct: credit $       1/13  X       TIA02   015105          200
+107          AS15    216     Regular Exp.:  Deduct: other $       1/13  X       TIA02   015107          200
+110          AS15    227     Regular Exp.:  Deduct: trans $       1/13  X       TIA02   015110          200
+111          AS15    220     Regular Exp.:  Deduct: trans $       1/13  X       TIA02   015111          200
+112          AS15    228     Regular Exp.:  Deduct: trans $       1/13  X       TIA02   015112          200
+115          AS15    223     Regular Exp.:  Deduct: curre $       1/13  M       TIA02   015115          200
+117          AS15    225     Regular Exp.:  Closing balan $       1/13  M       TIA02   015117          200
+119          AS15    202     Successor Exp.:  Balance at  $       1/13  M       TIA02   015119          200
+121          AS15    205     Successor Exp.:  Add: transf $       1/13  X       TIA02   015121          200
+123          AS15    207     Successor Exp.:  Add: transf $       1/13  X       TIA02   015123          200
+125          AS15            Successor Exp.:  Add: other  $       1/13  X       TIA02   015125          200
+127          AS15    211     Successor Exp.:  Deduct:  re $       1/13  X       TIA02   015127          200
+129          AS15            Successor Exp.:  Deduct: gov $       1/13  M       TIA02   015129          200
+131          AS15            Successor Exp.:  Deduct: rec $       1/13  X       TIA02   015131          200
+133          AS15    217     Successor Exp.:  Deduct: cre $       1/13  X       TIA02   015133          200
+135          AS15    219     Successor Exp.: Deduct: othe $       1/13  X       TIA02   015135          200
+137          AS15    209     Successor Exp.:  Deduct: tra $       1/13  X       TIA02   015137          200
+141          AS15    224     Successor Exp.:  Deduct: cur $       1/13  M       TIA02   015141          200
+143          AS15    226     Successor Exp.:  Closing bal $       1/13  M       TIA02   015143          200
+CCOGPE                       Cumulative Canadian Oil and                        FGS01   CCOGPE          130
+151          AS15    301     Regular Exp.: Balance at en  $       1/13  M       TIA02   015151          200
+153          AS15    303     Regular Exp.:  Add:  current $       1/13  X       TIA02   015153          200
+155          AS15    304     Regular Exp.:  Add: transfer $       1/13  X       TIA02   015155          200
+157          AS15    307     Regular Exp.:  Add:  other a $       1/13  X       TIA02   015157          200
+159          AS15    309     Regular Exp.:  Deduct:  rece $       1/13  X       TIA02   015159          200
+161          AS15    311     Regular Exp.:  Deduct: gover $       1/13  X       TIA02   015161          200
+163          AS15            Regular Exp.: Deduct:  renou $       1/13  X       TIA02   015163          200
+165          AS15    313     Regular Exp.: Deduct: transf $       1/13  X       TIA02   015165          200
+167          AS15    315     Regular Exp.:  Deduct: other $       1/13  X       TIA02   015167          200
+169          AS15    319     Regular Exp.:  Deduct: curre $       1/13  M       TIA02   015169          200
+171          AS15    321     Regular Exp.:  Closing balan $       1/13  M       TIA02   015171          200
+173          AS15    302     Successor Exp.:  Balance at  $       1/13  M       TIA02   015173          200
+175          AS15    305     Successor Exp.:  Add: transf $       1/13  X       TIA02   015175          200
+177          AS15    306     Successor Exp.:  Add: transf $       1/13  X       TIA02   015177          200
+179          AS15            Successor Exp.:  Add: other  $       1/13  X       TIA02   015179          200
+181          AS15    310     Successor Exp.:  Deduct: rec $       1/13  X       TIA02   015181          200
+183          AS15            Successor Exp.:  Deduct: gov $       1/13  M       TIA02   015183          200
+185          AS15    314     Successor Exp.:  Deduct: tra $       1/13  X       TIA02   015185          200
+187          AS15    316     Successor Exp.: Deduct: othe $       1/13  X       TIA02   015187          200
+189          AS15    320     Successor Exp.:  Deduct: cur $       1/13  M       TIA02   015189          200
+191          AS15    322     Successor Exp.:  Closing bal $       1/13  M       TIA02   015191          200
+FEDE                         Foreign Exploration and Deve                       FGS01   FEDE            130
+201          AS15    401     Regular Exp.:  Balance at en $       1/13  M       TIA02   015201          200
+205          AS15    404     Regular Exp.:  Add:  transfe $       1/13  X       TIA02   015205          200
+207          AS15    407     Regular Exp.: Deduct: other  $       1/13  X       TIA02   015207          200
+209          AS15    411     Regular Exp.:  Deduct: curre $       1/13  M       TIA02   015209          200
+211          AS15    413     Regular Exp.:  Closing balan $       1/13  M       TIA02   015211          200
+213          AS15    402     Successor Exp.:  Balance at  $       1/13  M       TIA02   015213          200
+215          AS15    405     Successor Exp.:  Add: transf $       1/13  X       TIA02   015215          200
+217          AS15    406     Successor Exp.:  Add: transf $       1/13  X       TIA02   015217          200
+219          AS15    408     Successor Exp.:  Deduct: oth $       1/13  X       TIA02   015219          200
+221          AS15    412     Successor Exp.:  Deduct: cur $       1/13  M       TIA02   015221          200
+223          AS15    414     Successor Exp.:  Closing bal $       1/13  M       TIA02   015223          200
+231          AS15    415     Regular Exp.:  Foreign - sou $       1/13  X       TIA02   015231          200
+233          AS15    416     Successor Exp.:  Foreign - s $       1/13  X       TIA02   015233          200
+
+*241         AS15    501 505 1   AS15L241 country         AN      1/175 X       N102-N201-N202  B2              160-170
+*243         AS15    506 510 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*247         AS15    516 520 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*249         AS15    521 525 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*251         AS15    526 530 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*253         AS15    536 540 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*255         AS15    541 545 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*257         AS15    546 550 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+
+*261         AS15    551 555 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*263         AS15    556 560 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*265         AS15    561 565 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*267         AS15    566 570 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*269         AS15    571 575 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*273         AS15    581 585 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*275         AS15    586 590 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+*277         AS15    591 595 1   AS15L241 onation Amount  $       1/13  X       TIA02   008008          200
+
+*281         AS15    601 605 1   AS15L281 country         AN      1/175 X       N102-N201-N202  B2              160-170
+*283         AS15    606 610 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*285         AS15    611 615 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*287         AS15    616 620 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*289         AS15    621 625 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*291         AS15    626 630 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*293         AS15    636 640 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*295         AS15    641 645 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*297         AS15    646 650 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+
+*301         AS15    651 655 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*303         AS15    656 660 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*305         AS15    661 665 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*307         AS15    666 670 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*309         AS15    671 675 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*313         AS15    681 685 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*315         AS15    686 690 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+*317         AS15    691 695 1   AS15L281 onation Amount  $       1/13  X       TIA02   008008          200
+
+
+Schedule 016 Alberta Scientific Research Expenditures
+TFS                          Scientific Research Expendi                X       TFS02   016             010
+SRE                          Scientific Research Expendi                        FGS01   SRE             130
+002          AS16    3       Allowable current year SR&ED $       1/13  M       TIA02   016002          200
+004          AS16    4       Deduct:  Gov't and non-gov't $       1/13  X       TIA02   016004          200
+006          AS16    5       Deduct:  Previous yr's inves $       1/13  X       TIA02   016006          200
+008          AS16    6       Deduct: Sale of SR&ED capita $       1/13  X       TIA02   016008          200
+010          AS16    7       Add: Repayments of governmen $       1/13  X       TIA02   016010          200
+012          AS16    8       Add:  Unclaimed SR&ED expend $       1/13  X       TIA02   016012          200
+014          AS16    9       Add: SR&ED expenditure pool  $       1/13  X       TIA02   016014          200
+015          AS16    17      Add: SR&ED expenditure pool  $       1/13  X       TIA02   016015          200
+016          AS16    10      Subtotal                     $       1/13  M       TIA02   016016          200
+018          AS16    11      SR&ED expenditure pool deduc $       1/13  X       TIA02   016018          200
+020          AS16    12      Deduct:  SR&ED expenditure p $       1/13  M       TIA02   016020          200
+022          AS16    13      Unclaimed SR&ED expenditure  $       1/13  M       TIA02   016022          200
+
+Schedule 017 Alberta Reserves
+TFS                          Reserves                                   X       TFS02   017             010
+RES                          Reserves                                           FGS01   RES             130
+001          AS17    3       Opening balance for the year $       1/13  X       TIA02   017001          200
+003          AS17    6       Opening balance for the year $       1/13  X       TIA02   017003          200
+005          AS17    9       Opening balance for the year $       1/13  X       TIA02   017005          200
+009          AS17    15      Opening balance for the year $       1/13  X       TIA02   017009          200
+011          AS17    18      Opening balance for the year $       1/13  X       TIA02   017011          200
+013          AS17    21      Opening balance for the year $       1/13  X       TIA02   017013          200
+015          AS17    24      Opening balance for the year $       1/13  X       TIA02   017015          200
+017          AS17    27      Opening balance for the year $       1/13  X       TIA02   017017          200
+031          AS17    4       Transfer on wind-up or amalg $       1/13  X       TIA02   017031          200
+033          AS17    7       Transfer on wind-up or amalg $       1/13  X       TIA02   017033          200
+035          AS17    10      Transfer on wind-up or amalg $       1/13  X       TIA02   017035          200
+039          AS17    16      Transfer on wind-up or amalg $       1/13  X       TIA02   017039          200
+041          AS17    19      Transfer on wind-up or amalg $       1/13  X       TIA02   017041          200
+043          AS17    22      Transfer on wind-up or amalg $       1/13  X       TIA02   017043          200
+045          AS17    25      Transfer on wind-up or amalg $       1/13  X       TIA02   017045          200
+047          AS17    28      Transfer on wind-up or amalg $       1/13  X       TIA02   017047          200
+061          AS17    5       Closing balance for the year $       1/13  X       TIA02   017061          200
+063          AS17    8       Closing balance for the year $       1/13  X       TIA02   017063          200
+065          AS17    11      Closing balance for the year $       1/13  X       TIA02   017065          200
+069          AS17    17      Closing balance for the year $       1/13  X       TIA02   017069          200
+071          AS17    20      Closing balance for the year $       1/13  X       TIA02   017071          200
+073          AS17    23      Closing balance for the year $       1/13  X       TIA02   017073          200
+075          AS17    26      Closing balance for the year $       1/13  X       TIA02   017075          200
+077          AS17    29      Closing balance for the year $       1/13  X       TIA02   017077          200
+
+Schedule 018 Alberta Dispositions of Capital Property
+TFS                          Dispositions of Capital Prop               X       TFS02   018             010
+CP                           Capital Property Disposition                       FGS01   CP              130
+001          AS18    40      Total of all shares          1/2     1/13  M       TIA02   018002          200
+002          AS18    4       Total of all shares          $       1/13  X       TIA02   018002          200
+004          AS18    8       Total of all real estate     $       1/13  X       TIA02   018004          200
+006          AS18    12      Total of all bonds           $       1/13  X       TIA02   018006          200
+008          AS18    16      Total of all other propertie $       1/13  X       TIA02   018008          200
+010          AS18    20      Total of all personal-use pr $       1/13  X       TIA02   018010          200
+012          AS18    24      Total of all listed personal $       1/13  X       TIA02   018012          200
+022          AS18    5       Adjusted cost base:  Total o $       1/13  X       TIA02   018022          200
+024          AS18    9       Adjusted cost base:  Total o $       1/13  X       TIA02   018024          200
+026          AS18    13      Adjusted cost base:  Total o $       1/13  X       TIA02   018026          200
+028          AS18    17      Adjusted cost base:  Total o $       1/13  X       TIA02   018028          200
+030          AS18    21      Adjusted cost base:  Total o $       1/13  X       TIA02   018030          200
+032          AS18    25      Adjusted cost base:  Total o $       1/13  X       TIA02   018032          200
+042          AS18    6       Outlays and expenses:  Total $       1/13  X       TIA02   018042          200
+044          AS18    10      Outlays and expenses:  Total $       1/13  X       TIA02   018044          200
+046          AS18    14      Outlays and expenses:  Total $       1/13  X       TIA02   018046          200
+048          AS18    18      Outlays and expenses:  Total $       1/13  X       TIA02   018048          200
+050          AS18    22      Outlays and expenses:  Total $       1/13  X       TIA02   018050          200
+052          AS18    26      Outlays and expenses:  Total $       1/13  X       TIA02   018052          200
+053          AS18    43      Gain or (loss): Total of all $       1/13  X       TIA02   018054          200
+054          AS18    7       Gain or (loss): Total of all $       1/13  X       TIA02   018054          200
+055          AS18    11      Gain or (loss): Total of all $       1/13  X       TIA02   018055          200
+056          AS18    15      Gain or (loss): Total of all $       1/13  X       TIA02   018056          200
+057          AS18    19      Gain or (loss): Total of all $       1/13  X       TIA02   018057          200
+058          AS18    23      Gain: Total of all personal- $       1/13  X       TIA02   018058          200
+059          AS18    27      Gain: Total of all listed pe $       1/13  X       TIA02   018059          200
+060          AS18    28      Subtract: Unapplied listed p $       1/13  X       TIA02   018060          200
+TCG                          Taxable Capital Gain or (los                       FGS01   TCG             130
+064          AS18    30      Capital gains dividends      $       1/13  X       TIA02   018064          200
+066          AS18    31      Add: capital gain reserve o  $       1/13  X       TIA02   018066          200
+068          AS18    32      Deduct: capital gain reserve $       1/13  X       TIA02   018068          200
+072          AS18    34      Gain on donations (made to c $       1/13  X       TIA02   018072          200
+076          AS18    36      Taxable capital gain:  Line  $       1/13  X       TIA02   018076          200
+PQRABIL                      Property qualifying for and                X       FGS01   PQRABIL Y       130
+*082         AS18    104 160 7   AS18L082 Name of small b AN      1/175 X       N102 - N201- N202       CQ              160- 170
+*084         AS18    105 161 7   AS18L082 Shares or debt  N       1     X       TIA03   018084          200
+*086         AS18    106 162 7   AS18L082 Date of Acquisi D       8     X       DTM02 DTM05     615             150
+*088         AS18    107 163 7   AS18L082 Proceeds of dis $       1/13  X       TIA02   018088          200
+*090         AS18    108 164 7   AS18L082 Adjusted cost b $       1/13  X       TIA02   018090          200
+*092         AS18    109 165 7   AS18L082 Outlays and exp $       1/13  X       TIA02   018092          200
+ABIL                         Allowable Business Investmen                       FGS01   ABIL            130
+094          AS18    172     (Loss) Col. A - (Cols. B +   $       1/13  M       TIA02   018094          200
+
+Schedule 020 Alberta Charitable Donations & Gifts Deduction
+TFS                          Charitable Donations & Gifts               X       TFS02   020             010
+CD                           Charitable Donations                               FGS01   CD              130
+002          AS20    3       Charitable donations at the  $       1/13  M       TIA02   020002          200
+004          AS20    4       Deduct:  donations expired a $       1/13  X       TIA02   020004          200
+008          AS20    6       Add:  donations transferred  $       1/13  X       TIA02   020008          200
+010          AS20    7       Add:  total current year cha $       1/13  X       TIA02   020010          200
+013          AS20    24      Amount applied against taxab $       1/13  X       TIA02   020013          200
+016          AS20    10      Amount applied against taxab $       1/13  M       TIA02   020016          200
+018          AS20    11      Charitable donations closing $       1/13  M       TIA02   020018          200
+MDC                          Maximum deduction calculatio               M       FGS     MDC             130
+030          AS20    12      Alberta net income for tax p $       1/13  M       TIA02   020030          200
+032          AS20    13      Taxable capital gains arisin $       1/13  X       TIA02   020032          200
+034           AS20    14      Taxable capital gain in resp $       1/13  X       TIA02   020034          200
+036          AS20    15      The amount of the recapture  $       1/13  X       TIA02   020036          200
+038          AS20    16      Proceeds of dispositions les $       1/13  X       TIA02   020038          200
+040          AS20    17      The capital cost             $       1/13  X       TIA02   020040          200
+GIFTS                        Gifts                                      X       FGS01   GIFTS           130
+062          AS20    103     Gifts balance at the end of  $       1/13  M       TIA02   020062          200
+064          AS20    104     Deduct:  gifts expired after $       1/13  X       TIA02   020064          200
+068          AS20    106     Add:  gifts transferred on a $       1/13  X       TIA02   020068          200
+070          AS20    107     Add:  total current year gif $       1/13  X       TIA02   020070          200
+073          AS20    112     Add:  total current year gif $       1/13  X       TIA02   020073          200
+076          AS20    110     Deduct: Amount applied again $       1/13  M       TIA02   020076          200
+078          AS20    111     Gifts closing balance:  line $       1/13  M       TIA02   020078          200
+
+*090         AS20    027 057 6   AS20L090                 D       1/175 X
+*092         AS20    028 058 6   AS20L090                 $       1/13  X       TIA02   008008          200
+*094         AS20    029 059 6   AS20L090                 $       1/13  X       TIA02   008008          200
+*096         AS20    030 060 6   AS20L090                 $       1/13  X       TIA02   008008          200
+*098         AS20    031 061 6   AS20L090                 $       1/13  X       TIA02   008008          200
+*100         AS20    032 062 6   AS20L090                 $       1/13  X       TIA02   008008          200
+
+
+Schedule 021 Alberta Calculation of Current Year Loss and Continuity of
+TFS                                                                     X       TFS02   021             010
+CYNCL                        Current Year Non-capital Los                       FGS01   CYNCL           130
+001          AS21    3       Net Income (loss) per AB Sch $       1/13  M       TIA02   021001          200
+003          AS21    4       Deduct: Net capital losses   $       1/13  X       TIA02   021003          200
+005          AS21    5       Deduct: Taxable dividends de $       1/13  X       TIA02   021005          200
+007          AS21    6       Deduct: Amount of Part VI.1  $       1/13  X       TIA02   021007          200
+011          AS21    30      Deduct: Amount deductible as $       1/13  X       TIA02   021011          200
+017          AS21    10      Deduct: ITA section 110.5 ad $       1/13  M       TIA02   021017          200
+019          AS21    11      Add: Current year farm loss  $       1/13  X       TIA02   021019          200
+021          AS21    12      Non-capital loss for the cur $       1/13  M       TIA02   021021          200
+CNCL                         Continuity of Non-Capital Lo               X       FGS01   CNCL            130
+031          AS21    13      Non-Capital Losses - Losses  $       1/13  M       TIA02   021031          200
+032          AS21    16      Non-Capital Losses - Deduct: $       1/13  X       TIA02   021032          200
+033          AS21    20      Non-Capital Losses - Losses  $       1/13  M       TIA02   021033          200
+035          AS21    23      Non-Capital Losses - Add: Lo $       1/13  X       TIA02   021035          200
+037          AS21    29      Non-Capital Losses - Add: Cu $       1/13  M       TIA02   021037          200
+041          AS21    31      Non-Capital Losses - Deduct: $       1/13  M       TIA02   021041          200
+043          AS21    33      Non-Capital Losses - Deduct: $       1/13  X       TIA02   021043          200
+045          AS21    34      Non-Capital Losses -Deduct:  $       1/13  X       TIA02   021045          200
+047          AS21    17      Non-Capital Losses - Deduct: $       1/13  X       TIA02   021047          200
+049          AS21    19      Non-Capital Losses - Losses  $       1/13  M       TIA02   021049          200
+CCL                          Continuity of Capital Losses               X       FGS01   CCL             130
+051          AS21    14      Capital Losses: Loss carried $       1/13  M       TIA02   021051          200
+055          AS21    18      Capital Losses: Add: Losses  $       1/13  X       TIA02   021055          200
+057          AS21    22      Capital Losses: Add: Current $       1/13  X       TIA02   021057          200
+059          AS21    26      Capital Losses: Add: Allowab $       1/13  X       TIA02   021059          200
+061          AS21    15      Capital Losses: Deduct: Amou $       1/13  X       TIA02   021061          200
+063          AS21    21      Capital Losses: Deduct: ITA  $       1/13  X       TIA02   021063          200
+065          AS21    27      Capital Losses: Deduct: Othe $       1/13  X       TIA02   021065          200
+067          AS21    25      Capital Losses: Deduct: Tota $       1/13  X       TIA02   021067          200
+069          AS21    24      Capital Losses: Losses - clo $       1/13  X       TIA02   021069          200
+CFL                           Continuity of Farm Losses                 X       FGS01   CFL             130
+071          AS21    103     Farm Losses: Losses carried  $       1/13  X       TIA02   021071          200
+072          AS21    105     Farm Losses: Deduct: losses  $       1/13  X       TIA02   021072          200
+073          AS21    107     Farm Losses: Losses - beginn $       1/13  X       TIA02   021073          200
+075          AS21    109     Farm Losses: Losses transfer $       1/13  X       TIA02   021075          200
+077          AS21    111     Farm Losses:  Current year l $       1/13  X       TIA02   021077          200
+079          AS21    115     Farm Losses:  Deduct: Amount $       1/13  X       TIA02   021079          200
+081          AS21    117     Farm Losses:  Deduct: ITA se $       1/13  X       TIA02   021081          200
+083          AS21    119     Farm Losses: Deduct: Other a $       1/13  X       TIA02   021083          200
+085          AS21    121     Farm Losses: Deduct: Total l $       1/13  X       TIA02   021085          200
+087          AS21    123     Farm Losses: Losses - closin $       1/13  X       TIA02   021087          200
+CRFL                         Continuity of Restricted Far               X       FGS01   CRFL            130
+091          AS21    104     Restricted Farm Losses: Loss $       1/13  X       TIA02   021091          200
+092          AS21    106     Restricted Farm Losses: Dedu $       1/13  X       TIA02   021092          200
+093          AS21    108     Restricted Farm Losses: Loss $       1/13  X       TIA02   021093          200
+095          AS21    110     Restricted Farm Losses:  Los $       1/13  X       TIA02   021095          200
+097          AS21    112     Restricted Farm Losses: Curr $       1/13  X       TIA02   021097          200
+099          AS21    116     Restricted Farm Losses: Dedu $       1/13  X       TIA02   021099          200
+101          AS21    118     Restricted Farm Losses: Dedu $       1/13  X       TIA02   021101          200
+103          AS21    120     Restricted Farm Losses: Dedu $       1/13  X       TIA02   021103          200
+105          AS21    122     Restricted Farm Losses: Dedu $       1/13  X       TIA02   021105          200
+107          AS21    124     Restricted Farm Losses: Loss $       1/13  X       TIA02   021107          200
+CLPPL                        Continuity of Listed Person                X       FGS01   CLPPL           130
+111          AS21    125     Listed Personal Property Los $       1/13  X       TIA02   021111          200
+113          AS21    126     Listed Personal Property Los $       1/13  X       TIA02   021113          200
+115          AS21    127     Listed Personal Property Los $       1/13  X       TIA02   021115          200
+117          AS21    128     Listed Personal Property Los $       1/13  X       TIA02   021117          200
+119          AS21    130     Listed Personal Property Los $       1/13  X       TIA02   021119          200
+121          AS21    131     Listed Personal Property Los $       1/13  X       TIA02   021121          200
+123          AS21    132     Listed Personal Property Los $       1/13  X       TIA02   021123          200
+125          AS21    133     Listed Personal Property Los $       1/13  X       TIA02   021125          200
+CLPL                         Continuity of Limited Partne               X       FGS01           Y       130
+*131         AS21    134 158 6   AS21L133 Partnership Ide AN      1/175 X       N102-N201-N202  2K              160-170
+*133         AS21    135 159 6   AS21L133 Limited partner $       1/13  X       TIA02   021133          200
+*135         AS21    136 160 6   AS21L133 Limited partner $       1/13  X       TIA02   021135          200
+*137         AS21    137 161 6   AS21L133 Current year li $       1/13  X       TIA02   021137          200
+*139         AS21    138 162 6   AS21L133 Limited partner $       1/13  X       TIA02   021139          200
+*141         AS21    139 163 6   AS21L133 Limited partner $       1/13  X       TIA02   021141          200
+
+*151         AS21    170 330 8   AS21L151 Partnership Ide AN      1/175 X       N102-N201-N202  2K              160-170
+*153         AS21    171 331 8   AS21L151 Limited partner D       1/13  X       TIA02   021133          200
+*155         AS21    172 332 8   AS21L151 Limited partner $       1/13  X       TIA02   021135          200
+*157         AS21    173 333 8   AS21L151 Current year li $       1/13  X       TIA02   021137          200
+*159         AS21    174 334 8   AS21L151 Limited partner $       1/13  X       TIA02   021139          200
+*165         AS21    175 335 8   AS21L151 Limited partner $       1/13  X       TIA02   021141          200
+*167         AS21    176 336 8   AS21L151 Current year li $       1/13  X       TIA02   021137          200
+*169         AS21    177 337 8   AS21L151 Limited partner $       1/13  X       TIA02   021139          200
+
+*181         AS21    346 446 5   AS21L181 Partnership Ide AN      1/175 X       N102-N201-N202  2K              160-170
+*183         AS21    348 448 5   AS21L181 Limited partner $       1/13  X       TIA02   021135          200
+*185         AS21    349 449 5   AS21L181 Current year li $       1/13  X       TIA02   021137          200
+*187         AS21    350 450 5   AS21L181 Limited partner $       1/13  X       TIA02   021139          200
+
+Schedule 029 Alberta Innovation Employment Grant
+003          AS29    004     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+005          AS29    005     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+009          AS29    007     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+011          AS29    008     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+025          AS29    009     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+040          AS29    011     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+
+100          AS29    012     Net Income (loss) per AB Sch 1/2     1/13  X       TIA02   021001          200
+
+102          AS29    014     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+104          AS29    015     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+108          AS29    016     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+110          AS29    017     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+112          AS29    018     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+114          AS29    019     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+116          AS29    020     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+118          AS29    021     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+120          AS29    022     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+122          AS29    023     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+124          AS29    024     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+126          AS29    025     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+128          AS29    026     Net Income (loss) per AB Sch AN      1/13  X       TIA02   021001          200
+130          AS29    027     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+132          AS29    028     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+134          AS29    029     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+200          AS29    032     Net Income (loss) per AB Sch $       AN    X       TIA02   021001          200
+202          AS29    033     Non-Capital Losses - Losses  $       D     X       TIA02   021049          200
+204          AS29    034     Net Income (loss) per AB Sch $       D     X       TIA02   021001          200
+206          AS29    035     Non-Capital Losses - Losses  $       AN    X       TIA02   021049          200
+208          AS29    037     Net Income (loss) per AB Sch $       1/13  X       TIA02   021001          200
+270          AS29    038     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+280          AS29    039     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+290          AS29    040     Non-Capital Losses - Losses  $       1/13  X       TIA02   021049          200
+
+*220         AS29    051 141 5   AS29L220 Partnership Ide AN      1/175 X       N102-N201-N202  2K              160-170
+*230         AS29    052 142 5   AS29L220 Partnership Ide AN      1/175 X       N102-N201-N202  2K              160-170
+*240         AS29    053 143 5   AS29L220 Limited partner $       1/13  X       TIA02   021135          200
+*250         AS29    054 144 5   AS29L220 Partnership Ide AN      1/175 X       N102-N201-N202  2K              160-170
+*260         AS29    055 145 5   AS29L220 Limited partner $       1/13  X       TIA02   021135          200
+
+RSIEND

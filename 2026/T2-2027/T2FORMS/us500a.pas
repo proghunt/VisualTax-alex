@@ -1,0 +1,233 @@
+unit us500a;
+interface
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls, ExtCtrls, GTSize32, DisplayChange, jpeg, ComCtrls, vtLabel,
+  Mask, vtEditBox, vtShape, uFlagFrameCan;
+  TS500a = class(TForm)
+    Label4: TvtLabel;
+    Label6: TvtLabel;
+    Label9: TvtLabel;
+    Label12: TvtLabel;
+    Label13: TvtLabel;
+    Label14: TvtLabel;
+    Label21: TvtLabel;
+    Label24: TvtLabel;
+    Label25: TvtLabel;
+    Label35: TvtLabel;
+    Label36: TvtLabel;
+    Label41: TvtLabel;
+    Label44: TvtLabel;
+    Label45: TvtLabel;
+    Label46: TvtLabel;
+    Label48: TvtLabel;
+    Label49: TvtLabel;
+    Label51: TvtLabel;
+    Label54: TvtLabel;
+    Label55: TvtLabel;
+    Label60: TvtLabel;
+    Label61: TvtLabel;
+    Label66: TvtLabel;
+    vtLabel54: TvtLabel;
+    vtLabel60: TvtLabel;
+    vtLabel61: TvtLabel;
+    vtLabel67: TvtLabel;
+    vtS1_1Label9: TvtLabel;
+    vtS1_1Label8: TvtLabel;
+    vtS1_1Label7: TvtLabel;
+    vtS1_1Shape3: TvtShape;
+    vtS1_1Shape1: TvtShape;
+    vtS1_1Shape2: TvtShape;
+    vtEdit3: TvtEdit;
+    vtEdit2: TvtEdit;
+    vtEdit1: TvtEdit;
+    FlagFrameCan1: TFlagFrameCan;
+    vtEdit4: TvtEdit;
+    vtEdit5: TvtEdit;
+    vtEdit6: TvtEdit;
+    vtEdit7: TvtEdit;
+    vtEdit10: TvtEdit;
+    vtEdit11: TvtEdit;
+    vtEdit12: TvtEdit;
+    vtLabel5: TvtLabel;
+    vtEdit13: TvtEdit;
+    vtEdit15: TvtEdit;
+    vtEdit33: TvtEdit;
+    vtLabel56: TvtLabel;
+    vtShape7: TvtShape;
+    vtShape8: TvtShape;
+    vtLabel46: TvtLabel;
+    vtLabel49: TvtLabel;
+    vtShape9: TvtShape;
+    vtLabel154: TvtLabel;
+    vtEdit95: TvtEdit;
+    vtLabel48: TvtLabel;
+    vtLabel158: TvtLabel;
+    vtLabel124: TvtLabel;
+    vtLabel200: TvtLabel;
+    vtLabel201: TvtLabel;
+    vtLabel57: TvtLabel;
+    vtShape4: TvtShape;
+    vtShape5: TvtShape;
+    vtLabel62: TvtLabel;
+    vtLabel33: TvtLabel;
+    vtEdit45: TvtEdit;
+    vtEdit46: TvtEdit;
+    vtLabel94: TvtLabel;
+    vtLabel95: TvtLabel;
+    vtLabel97: TvtLabel;
+    vtLabel76: TvtLabel;
+    vtShape1: TvtShape;
+    vtShape2: TvtShape;
+    vtShape3: TvtShape;
+    vtLabel19: TvtLabel;
+    vtLabel68: TvtLabel;
+    vtLabel69: TvtLabel;
+    vtLabel78: TvtLabel;
+    vtLabel82: TvtLabel;
+    vtLabel84: TvtLabel;
+    vtEdit34: TvtEdit;
+    vtEdit35: TvtEdit;
+    vtEdit37: TvtEdit;
+    vtShape13: TvtShape;
+    vtLabel70: TvtLabel;
+    vtLabel71: TvtLabel;
+    vtLabel89: TvtLabel;
+    vtLabel92: TvtLabel;
+    vtLabel25: TvtLabel;
+    vtLabel93: TvtLabel;
+    vtLabel128: TvtLabel;
+    vtEdit38: TvtEdit;
+    vtEdit40: TvtEdit;
+    vtLabel20: TvtLabel;
+    vtLabel21: TvtLabel;
+    vtLabel77: TvtLabel;
+    vtLabel81: TvtLabel;
+    vtLabel86: TvtLabel;
+    vtEdit39: TvtEdit;
+    vtLabel22: TvtLabel;
+    VTLABELUS4_1_40: TvtLabel;
+    vtLabel85: TvtLabel;
+    vtLabel2: TvtLabel;
+    vtLabel385: TvtLabel;
+    vtLabel386: TvtLabel;
+    vtLabel3: TvtLabel;
+    vtLabel4: TvtLabel;
+    vtLabel6: TvtLabel;
+    vtLabel7: TvtLabel;
+    vtLabel8: TvtLabel;
+    vtLabel9: TvtLabel;
+    vtLabel10: TvtLabel;
+    vtLabel11: TvtLabel;
+    vtLabel12: TvtLabel;
+    vtShape6: TvtShape;
+    vtLabel17: TvtLabel;
+    vtLabel31: TvtLabel;
+    vtLabel34: TvtLabel;
+    vtEdit17: TvtEdit;
+    vtLabel36: TvtLabel;
+    vtLabel37: TvtLabel;
+    vtLabel38: TvtLabel;
+    vtLabel39: TvtLabel;
+    vtLabel40: TvtLabel;
+    vtLabel41: TvtLabel;
+    vtEdit25: TvtEdit;
+    vtLabel42: TvtLabel;
+    vtEdit26: TvtEdit;
+    vtLabel43: TvtLabel;
+    vtEdit27: TvtEdit;
+    vtLabel44: TvtLabel;
+    vtLabel45: TvtLabel;
+    vtEdit28: TvtEdit;
+    vtLabel47: TvtLabel;
+    vtEdit29: TvtEdit;
+    vtLabel50: TvtLabel;
+    vtEdit30: TvtEdit;
+    vtShape11: TvtShape;
+    vtEdit31: TvtEdit;
+    vtLabel51: TvtLabel;
+    vtLabel55: TvtLabel;
+    vtEdit32: TvtEdit;
+    vtShape12: TvtShape;
+    vtLabel58: TvtLabel;
+    vtLabel59: TvtLabel;
+    vtEdit41: TvtEdit;
+    vtLabel24: TvtLabel;
+    vtEdit23: TvtEdit;
+    vtLabel13: TvtLabel;
+    vtEdit36: TvtEdit;
+    vtLabel14: TvtLabel;
+    vtLabel15: TvtLabel;
+    vtLabel16: TvtLabel;
+    vtLabel18: TvtLabel;
+    vtLabel26: TvtLabel;
+    vtLabel23: TvtLabel;
+    vtLabel27: TvtLabel;
+    vtLabel28: TvtLabel;
+    vtEdit9: TvtEdit;
+    vtEdit14: TvtEdit;
+    vtLabel29: TvtLabel;
+    vtLabel30: TvtLabel;
+    vtLabel35: TvtLabel;
+    vtLabel32: TvtLabel;
+    vtEdit16: TvtEdit;
+    vtEdit18: TvtEdit;
+    vtEdit19: TvtEdit;
+    vtEdit20: TvtEdit;
+    vtEdit21: TvtEdit;
+    vtEdit22: TvtEdit;
+    vtLabel52: TvtLabel;
+    vtEdit24: TvtEdit;
+    vtLabel53: TvtLabel;
+    vtLabel63: TvtLabel;
+    vtLabel64: TvtLabel;
+    vtLabel65: TvtLabel;
+    vtLabel66: TvtLabel;
+    vtLabel72: TvtLabel;
+    vtLabel73: TvtLabel;
+    vtLabel74: TvtLabel;
+    vtLabel75: TvtLabel;
+    vtLabel79: TvtLabel;
+    vtEdit43: TvtEdit;
+    vtEdit44: TvtEdit;
+    vtLabel80: TvtLabel;
+    vtLabel83: TvtLabel;
+    vtLabel87: TvtLabel;
+    vtEdit47: TvtEdit;
+    vtEdit48: TvtEdit;
+    vtEdit49: TvtEdit;
+    vtEdit50: TvtEdit;
+    vtLabel1: TvtLabel;
+    vtEdit42: TvtEdit;
+    vtLabel88: TvtLabel;
+    vtEdit51: TvtEdit;
+    vtShape10: TvtShape;
+    vtEdit52: TvtEdit;
+    procedure vtEdit39Change(Sender: TObject);
+    procedure vtEdit45Change(Sender: TObject);
+    procedure vtEdit5Change(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+  S500a: TS500a;
+implementation
+{$R *.DFM}
+procedure TS500a.vtEdit39Change(Sender: TObject);
+begin
+31
+end;
+
+procedure TS500a.vtEdit45Change(Sender: TObject);
+begin
+2
+end;
+
+procedure TS500a.vtEdit5Change(Sender: TObject);
+begin
+6
+end;
+
+end.

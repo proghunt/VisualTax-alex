@@ -1,0 +1,228 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:cit="http://cit.tra.fin.goa/">
+<soap:Header/>
+<soap:Body>
+<cit:fileReturn>
+<arg0>
+<![CDATA[
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ReturnSubmission xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AlbertaCorporateIncomeTaxReturn.xsd">
+  <Return>
+          <ProgramCode>01</ProgramCode>
+          <Schedule Number="000">
+               <Value LineItemID="000005001">NN2024</Value>
+               <Value LineItemID="000010001">TEST  CASE  1  (VT)  INC</Value>
+               <Value LineItemID="000012001">1295  12TH  AVENUE</Value>
+               <Value LineItemID="000014001">CALGARY</Value>
+               <Value LineItemID="000015001">AB</Value>
+               <Value LineItemID="000017001">T9N  7S6</Value>
+               <Value LineItemID="000025001">Mark  Messier</Value>
+               <Value LineItemID="000026001">7804224403</Value>
+               <Value LineItemID="000028001">6595</Value>
+               <Value LineItemID="000029001">1</Value>
+               <Value LineItemID="000031001">2</Value>
+               <Value LineItemID="000032001">2</Value>
+               <Value LineItemID="000034001">421941600</Value>
+               <Value LineItemID="000035001">599998192RC0001</Value>
+               <Value LineItemID="000036001">20220901</Value>
+               <Value LineItemID="000037001">20230831</Value>
+               <Value LineItemID="000038001">2</Value>
+               <Value LineItemID="000047001">20000</Value>
+               <Value LineItemID="000048001">0</Value>
+               <Value LineItemID="000050001">2</Value>
+               <Value LineItemID="000054001">2</Value>
+               <Value LineItemID="000060001">1</Value>
+               <Value LineItemID="000061001">1</Value>
+               <Value LineItemID="000062001">**50000</Value>
+               <Value LineItemID="000065001">1</Value>
+               <Value LineItemID="000068001">0</Value>
+               <Value LineItemID="000070001">0</Value>
+               <Value LineItemID="000071001">0</Value>
+               <Value LineItemID="000072001">0</Value>
+               <Value LineItemID="000074001">0</Value>
+               <Value LineItemID="000076001">0</Value>
+               <Value LineItemID="000080001">0</Value>
+               <Value LineItemID="000081001">0</Value>
+               <Value LineItemID="000082001">1225</Value>
+               <Value LineItemID="000083001">0</Value>
+               <Value LineItemID="000084001">0</Value>
+               <Value LineItemID="000085001">0</Value>
+               <Value LineItemID="000086001">0</Value>
+               <Value LineItemID="000087001">0</Value>
+               <Value LineItemID="000090001">**1225</Value>
+               <Value LineItemID="000091001">0</Value>
+               <Value LineItemID="000092001">2</Value>
+               <Value LineItemID="000095001">1</Value>
+               <Value LineItemID="000097001">Jones</Value>
+               <Value LineItemID="000098001">Tom</Value>
+               <Value LineItemID="000099001">Vice  President</Value>
+               <Value LineItemID="000129001">0</Value>
+          </Schedule>
+          <Schedule Number="010">
+               <Value LineItemID="010002001">50000</Value>
+               <Value LineItemID="010003001">20220831</Value>
+               <Value LineItemID="010004001">35000</Value>
+               <Value LineItemID="010005001">20210831</Value>
+               <Value LineItemID="010006001">3000</Value>
+               <Value LineItemID="010007001">20200831</Value>
+               <Value LineItemID="010008001">2500</Value>
+               <Value LineItemID="010010001">9500</Value>
+               <Value LineItemID="010023001">2</Value>
+               <Value LineItemID="010025001">2</Value>
+               <Value LineItemID="010042001">75000</Value>
+               <Value LineItemID="010043001">.500000</Value>
+               <Value LineItemID="010044001">25000</Value>
+               <Value LineItemID="010045001">.500000</Value>
+               <Value LineItemID="010046001">25000</Value>
+               <Value LineItemID="010047001">.500000</Value>
+               <Value LineItemID="010048001">25000</Value>
+               <Value LineItemID="010052001">Mark  Messier</Value>
+               <Value LineItemID="010054001">7804224403</Value>
+               <Value LineItemID="010070001">Jones</Value>
+               <Value LineItemID="010072001">Tom</Value>
+               <Value LineItemID="010074001">Vice  President</Value>
+               <Value LineItemID="010082001">421941600</Value>
+               <Value LineItemID="010084001">20230831</Value>
+               <Value LineItemID="010090001">2</Value>
+          </Schedule>
+          <Schedule Number="012">
+               <Value LineItemID="012002001">**41800</Value>
+               <Value LineItemID="012004001">1006200</Value>
+               <Value LineItemID="012005001">1001000</Value>
+               <Value LineItemID="012034001">7500</Value>
+               <Value LineItemID="012035001">4500</Value>
+               <Value LineItemID="012050001">**1005500</Value>
+               <Value LineItemID="012054001">**50000</Value>
+               <Value LineItemID="012056001">0</Value>
+               <Value LineItemID="012057001">0</Value>
+               <Value LineItemID="012058001">0</Value>
+               <Value LineItemID="012059001">0</Value>
+               <Value LineItemID="012060001">0</Value>
+               <Value LineItemID="012061001">0</Value>
+               <Value LineItemID="012062001">0</Value>
+               <Value LineItemID="012063001">0</Value>
+               <Value LineItemID="012064001">0</Value>
+               <Value LineItemID="012065001">0</Value>
+               <Value LineItemID="012066001">0</Value>
+               <Value LineItemID="012067001">0</Value>
+               <Value LineItemID="012068001">0</Value>
+               <Value LineItemID="012069001">0</Value>
+               <Value LineItemID="012070001">0</Value>
+               <Value LineItemID="012071001">0</Value>
+               <Value LineItemID="012072001">0</Value>
+               <Value LineItemID="012073001">0</Value>
+               <Value LineItemID="012074001">0</Value>
+               <Value LineItemID="012075001">0</Value>
+               <Value LineItemID="012078001">0</Value>
+               <Value LineItemID="012079001">0</Value>
+               <Value LineItemID="012081001">0</Value>
+               <Value LineItemID="012082001">0</Value>
+               <Value LineItemID="012090001">**50000</Value>
+               <Value LineItemID="012091001">**41800</Value>
+               <Value LineItemID="012100001">1</Value>
+               <Value LineItemID="012104001">**8200</Value>
+          </Schedule>
+          <Schedule Number="013">
+               <Value LineItemID="013001001">13</Value>
+               <Value LineItemID="013001002">1</Value>
+               <Value LineItemID="013001003">8</Value>
+               <Value LineItemID="013003001">5000</Value>
+               <Value LineItemID="013003002">5000</Value>
+               <Value LineItemID="013003003">5000</Value>
+               <Value LineItemID="013005003">1000000</Value>
+               <Value LineItemID="013039003">1000000</Value>
+               <Value LineItemID="013045003">1000000</Value>
+               <Value LineItemID="013013002">4</Value>
+               <Value LineItemID="013013003">20</Value>
+               <Value LineItemID="013019001">5000</Value>
+               <Value LineItemID="013019002">200</Value>
+               <Value LineItemID="013019003">1001000</Value>
+               <Value LineItemID="013021001">0</Value>
+               <Value LineItemID="013021002">4800</Value>
+               <Value LineItemID="013021003">4000</Value>
+          </Schedule>
+          <Schedule Number="016">
+               <Value LineItemID="016002001">5000</Value>
+               <Value LineItemID="016012001">2500</Value>
+               <Value LineItemID="016016001">7500</Value>
+               <Value LineItemID="016018001">7500</Value>
+               <Value LineItemID="016020001">7500</Value>
+               <Value LineItemID="016022001">0</Value>
+          </Schedule>
+          <Schedule Number="020">
+               <Value LineItemID="020002001">20000</Value>
+               <Value LineItemID="020016001">0</Value>
+               <Value LineItemID="020018001">20000</Value>
+               <Value LineItemID="020030001">0</Value>
+               <Value LineItemID="020062001">2000</Value>
+               <Value LineItemID="020064001">1000</Value>
+               <Value LineItemID="020068001">29600</Value>
+               <Value LineItemID="020070001">4000</Value>
+               <Value LineItemID="020076001">0</Value>
+               <Value LineItemID="020078001">34600</Value>
+               <Value LineItemID="020090001">20220831</Value>
+               <Value LineItemID="020090002">20230831</Value>
+               <Value LineItemID="020092001">20000</Value>
+               <Value LineItemID="020094001">1000</Value>
+               <Value LineItemID="020094002">33600</Value>
+          </Schedule>
+          <Schedule Number="021">
+               <Value LineItemID="021001001">**50000</Value>
+               <Value LineItemID="021017001">0</Value>
+               <Value LineItemID="021021001">**50000</Value>
+               <Value LineItemID="021031001">100000</Value>
+               <Value LineItemID="021033001">100000</Value>
+               <Value LineItemID="021037001">50000</Value>
+               <Value LineItemID="021041001">0</Value>
+               <Value LineItemID="021047001">40500</Value>
+               <Value LineItemID="021049001">109500</Value>
+               <Value LineItemID="021051001">100000</Value>
+               <Value LineItemID="021057001">75000</Value>
+               <Value LineItemID="021067001">75000</Value>
+               <Value LineItemID="021069001">100000</Value>
+               <Value LineItemID="021151001">0</Value>
+               <Value LineItemID="021151002">1</Value>
+               <Value LineItemID="021153001">20230831</Value>
+               <Value LineItemID="021153002">20220831</Value>
+               <Value LineItemID="021155002">100000</Value>
+               <Value LineItemID="021157001">50000</Value>
+               <Value LineItemID="021165001">40500</Value>
+               <Value LineItemID="021169001">9500</Value>
+               <Value LineItemID="021169002">100000</Value>
+          </Schedule>
+          <Schedule Number="029">
+               <Value LineItemID="029003001">5000</Value>
+               <Value LineItemID="029040001">2</Value>
+               <Value LineItemID="029100001">2</Value>
+               <Value LineItemID="029104001">4000000</Value>
+               <Value LineItemID="029108001">4000000</Value>
+               <Value LineItemID="029128001">1.00000</Value>
+          </Schedule>
+          <Schedule Number="EDI">
+               <Value LineItemID="EDI001001">NN2024</Value>
+               <Value LineItemID="EDI011001">2025</Value>
+               <Value LineItemID="EDI013001">2025</Value>
+               <Value LineItemID="EDI015001">2025</Value>
+               <Value LineItemID="EDI031001">Con</Value>
+               <Value LineItemID="EDI033001">Zantiris</Value>
+               <Value LineItemID="EDI035001">President</Value>
+               <Value LineItemID="EDI037001">9052386159</Value>
+               <Value LineItemID="EDI041001">support@visualtax.com</Value>
+               <Value LineItemID="EDI017001">1</Value>
+               <Value LineItemID="EDI019001">MICROSOPHIC INC.</Value>
+               <Value LineItemID="EDI023001">CORPORATION</Value>
+               <Value LineItemID="EDI051001">5225 Orbitor Drive</Value>
+               <Value LineItemID="EDI055001">Mississauga</Value>
+               <Value LineItemID="EDI057001">ON</Value>
+               <Value LineItemID="EDI059001">L4W 4Y8</Value>
+               <Value LineItemID="EDI061001">CA</Value>
+               <Value LineItemID="EDI071001">1</Value>
+               <Value LineItemID="EDI073001">current year loss for Alberta purposes amended to $50,000,  carry-back of amended $35,000 to August </Value>
+               <Value LineItemID="EDI039001">9052386159</Value>
+          </Schedule>
+  </Return>
+</ReturnSubmission>
+]]>
+</arg0>
+</cit:fileReturn>
+</soap:Body>
+</soap:Envelope>

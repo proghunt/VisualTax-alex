@@ -1,0 +1,81 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <t2rq:T2EfileReturnRequest 
+   xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" 
+   xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2024/1-0-0" 
+   xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" 
+   xmlns:t1135="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0" 
+   xmlns:t2rq="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0" 
+   xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0 t2efilefrrmsrequest.xsd ">
+  <ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
+  <ef:PasswordID>767AJ5X</ef:PasswordID>
+  <ef:RepresentativeID>C4SD3QH</ef:RepresentativeID>
+  <t2rq:TaxYear>2024</t2rq:TaxYear>
+  <t2rq:SoftwareID>VT49</t2rq:SoftwareID>
+    <t2rq:TaxForm>
+      <t1135:ForeignIncomeVerificationStatement>
+        <t1135:FunctionalCurrencyCode>JPY</t1135:FunctionalCurrencyCode>
+        <t1135:AmendedReturnIndicator>0</t1135:AmendedReturnIndicator>
+        <t1135:TaxpayerIdentification>
+          <t1135:CorporationTaxpayer>
+            <t1135:CorporationName>TEST CASE #20</t1135:CorporationName>
+            <t1135:BusinessNumber>598797991RC0001</t1135:BusinessNumber>
+          </t1135:CorporationTaxpayer>
+        </t1135:TaxpayerIdentification>
+        <t1135:TaxpayerAddress>
+          <t1135:AddressStreetText>2120 CORNWALL STREET </t1135:AddressStreetText>
+          <t1135:AddressMunicipalityName>REGINA</t1135:AddressMunicipalityName>
+          <t1135:GlobalProvinceTerritoryStateCode>SK</t1135:GlobalProvinceTerritoryStateCode>
+          <t1135:GlobalPostalZipCode>S4P2L1</t1135:GlobalPostalZipCode>
+          <t1135:CountryCode>CAN</t1135:CountryCode>
+        </t1135:TaxpayerAddress>
+        <t1135:TaxationYearData>
+          <t1135:TaxationYearStartDate>2024-01-01</t1135:TaxationYearStartDate>
+          <t1135:TaxationYearEndDate>2024-11-23</t1135:TaxationYearEndDate>
+        </t1135:TaxationYearData>
+        <t1135:ForeignPropertyIdentification>
+          <t1135:ForeignPropertyCostCategoryOne>
+            <t1135:ForeignPropertySimplifiedData>
+              <t1135:ForeignPropertyIndicator>
+                <t1135:ForeignFundsIndicator>1</t1135:ForeignFundsIndicator>
+                <t1135:NonResidentCorporationShareIndicator>1</t1135:NonResidentCorporationShareIndicator>
+                <t1135:NonResidentIndebtednessIndicator>1</t1135:NonResidentIndebtednessIndicator>
+                <t1135:NonResidentTrustInterestIndicator>1</t1135:NonResidentTrustInterestIndicator>
+                <t1135:ForeignRealPropertyIndicator>1</t1135:ForeignRealPropertyIndicator>
+                <t1135:OtherForeignPropertyIndicator>1</t1135:OtherForeignPropertyIndicator>
+                <t1135:CanadianHeldForeignPropertyIndicator>1</t1135:CanadianHeldForeignPropertyIndicator>
+              </t1135:ForeignPropertyIndicator>
+              <t1135:ForeignPropertyCountryCodes>
+                <t1135:MaximumCostForeignCountryCode>USA</t1135:MaximumCostForeignCountryCode>
+                <t1135:MaximumCostForeignCountryCode>JPN</t1135:MaximumCostForeignCountryCode>
+                <t1135:MaximumCostForeignCountryCode>CHE</t1135:MaximumCostForeignCountryCode>
+              </t1135:ForeignPropertyCountryCodes>
+              <t1135:AllForeignPropertyIncomeAmount>7293250</t1135:AllForeignPropertyIncomeAmount>
+              <t1135:AllForeignPropertyDispositionGainLossAmount>-225300</t1135:AllForeignPropertyDispositionGainLossAmount>
+            </t1135:ForeignPropertySimplifiedData>
+          </t1135:ForeignPropertyCostCategoryOne>
+        </t1135:ForeignPropertyIdentification>
+        <t1135:CertificationDetail>
+          <t1135:CertifierName>
+            <t1135:TaxpayerName>
+              <t1135:GivenName>John Davis</t1135:GivenName>
+              <t1135:FamilyName>Davis</t1135:FamilyName>
+            </t1135:TaxpayerName>
+          </t1135:CertifierName>
+          <t1135:CertifierPositionTitle>director</t1135:CertifierPositionTitle>
+          <t1135:CertifierPhoneNumber>1(306)546-6014</t1135:CertifierPhoneNumber>
+          <t1135:CertificationDate>2025-02-05</t1135:CertificationDate>
+          <t1135:PreparerName>Julia McDavid</t1135:PreparerName>
+          <t1135:PreparerAddress>
+            <t1135:GlobalAddress>1234 12th avenue Regina, Saskatchewan CAN</t1135:GlobalAddress>
+            <t1135:GlobalPostalZipCode>S4P0M8</t1135:GlobalPostalZipCode>
+          </t1135:PreparerAddress>
+          <t1135:PreparerPhoneNumber>1(306)721-8173</t1135:PreparerPhoneNumber>
+        </t1135:CertificationDetail>
+      </t1135:ForeignIncomeVerificationStatement>
+ </t2rq:TaxForm>
+ </t2rq:T2EfileReturnRequest>
+</soapenv:Body>
+</soapenv:Envelope>

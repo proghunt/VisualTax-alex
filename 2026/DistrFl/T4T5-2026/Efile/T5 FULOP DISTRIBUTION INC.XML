@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Submission xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <T619>
+          <TransmitterAccountNumber>
+          <bn15>123456789rp0001</bn15>
+          </TransmitterAccountNumber>
+<TransmitterRepID>
+          <RepID>1234567</RepID>
+</TransmitterRepID>
+               <sbmt_ref_id>26020357</sbmt_ref_id>
+               <summ_cnt>1</summ_cnt>
+               <lang_cd>E</lang_cd>
+               <TransmitterName>
+                    <l1_nm>global tax &amp; wealth manage</l1_nm>
+               </TransmitterName>
+               <TransmitterCountryCode>CAN</TransmitterCountryCode>
+               <CNTC>
+                    <cntc_nm>Con</cntc_nm>
+                    <cntc_area_cd>905</cntc_area_cd>
+                    <cntc_phn_nbr>233-6159</cntc_phn_nbr>
+               </CNTC>
+          </T619>
+          <Return>
+               <T5>
+                    <T5Slip>
+                         <RCPNT_NM>
+                              <snm>FULOP</snm>
+                              <gvn_nm>AARON</gvn_nm>
+                         </RCPNT_NM>
+                         <sin>533172383</sin>
+                         <slp_rcpnt_bn>000000000RC0000</slp_rcpnt_bn>
+                         <rcpnt_tr_acct_nbr>T00000000</rcpnt_tr_acct_nbr>
+                         <RCPNT_ADDR>
+                              <addr_l1_txt>2032 CUTTERS PLACE</addr_l1_txt>
+                              <cty_nm>BURLINGTON</cty_nm>
+                              <prov_cd>ON</prov_cd>
+                              <cntry_cd>CAN</cntry_cd>
+                              <pstl_cd>L7P 5C5</pstl_cd>
+                         </RCPNT_ADDR>
+                         <bn>730862901RZ0001</bn>
+                         <rcpnt_fi_br_nbr>00000000</rcpnt_fi_br_nbr>
+                         <rcpnt_fi_acct_nbr>000000000000</rcpnt_fi_acct_nbr>
+                         <rpt_tcd>O</rpt_tcd>
+                         <rcpnt_tcd>1</rcpnt_tcd>
+                         <fgn_crcy_ind>CAD</fgn_crcy_ind>
+                         <T5_AMT>
+                              <actl_dvnd_amt>54810.00</actl_dvnd_amt>
+                              <tx_dvnd_amt>63031.50</tx_dvnd_amt>
+                              <dvnd_tx_cr_amt>5691.81</dvnd_tx_cr_amt>
+                         </T5_AMT>
+                    </T5Slip>
+                    <T5Summary>
+                         <bn>730862901RZ0001</bn>
+                         <FILR_NM>
+                              <l1_nm>FULOP DISTRIBUTION INC</l1_nm>
+                         </FILR_NM>
+                         <FILR_ADDR>
+                              <addr_l1_txt>2032 CUTTERS PLACE</addr_l1_txt>
+                              <cty_nm>BURLINGTON</cty_nm>
+                              <prov_cd>ON</prov_cd>
+                              <cntry_cd>CAN</cntry_cd>
+                              <pstl_cd>L7P5C5</pstl_cd>
+                         </FILR_ADDR>
+                         <CNTC>
+                              <cntc_nm>AARON FULOP</cntc_nm>
+                              <cntc_area_cd>905</cntc_area_cd>
+                              <cntc_phn_nbr>320-1915</cntc_phn_nbr>
+                         </CNTC>
+                         <filr_fi_br_nbr>00000000</filr_fi_br_nbr>
+                         <tx_yr>2025</tx_yr>
+                         <slp_cnt>1</slp_cnt>
+                         <rpt_tcd>O</rpt_tcd>
+                         <T5_TAMT>
+                              <tot_actl_dvnd_amt>54810.00</tot_actl_dvnd_amt>
+                              <tot_tx_dvnd_amt>63031.50</tot_tx_dvnd_amt>
+                              <tot_dvnd_tx_cr_amt>5691.81</tot_dvnd_tx_cr_amt>
+                         </T5_TAMT>
+                    </T5Summary>
+               </T5>
+          </Return>
+</Submission>

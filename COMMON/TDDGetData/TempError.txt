@@ -1,0 +1,40 @@
+TAX RETURNS FOR TDD
+870001484   Test scenario A
+spId                       =064J
+TestOrProduction           =T
+SIN                        =
+PrgrmAppDir                =C:\Delphi\T1\TDDGetData
+T1AppDir                   ='C:\delphi\t1'
+secretAccessKeyTest        =XVOvlM6C8mmoLKR9i7Qj39mc1dkNw2Hv
+secretAccessKeyProduction  =???
+secretAccessKey (chosen)   =XVOvlM6C8mmoLKR9i7Qj39mc1dkNw2Hv
+ 
+WebServiceUrlTest                =https://apps-ct.cra-arc.gc.ca/ebci/awsc/tdd/ws/2015/CertTestDeliveryService
+WebServiceUrlProduction          =???
+WebServiceUrl (chosen)           =https://apps-ct.cra-arc.gc.ca/ebci/awsc/tdd/ws/2015/CertTestDeliveryService
+Token = TCAtTY9Y4m7Gz8ZXa6Cw8Zq4nvZnvlDlhV7
+requestData.nonce:    089495811/29/201518:52:13.534
+requestData.nonceB64: MDg5NDk1ODExLzI5LzIwMTUxODo1MjoxMy41MzQ=
+requestData.created:  2015-11-29T23:52:08Z
+requestData.password: XVOvlM6C8mmoLKR9i7Qj39mc1dkNw2Hv
+requestData.passwordDigest: fn6UQQnpn8ZFWIAGUgh1r4id9i0=
+<?xml version="1.0" encoding="UTF-8"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Header><wsse:Security S:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><wsse:Username>064J</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">fn6UQQnpn8ZFWIAGUgh1r4id9i0=</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">MDg5NDk1ODExLzI5LzIwMTUxODo1MjoxMy41MzQ=</wsse:Nonce><wsu:Created>2015-11-29T23:52:08Z</wsu:Created></wsse:UsernameToken></wsse:Security></S:Header><S:Body><StageTDDEFile xmlns="http://www.cra-arc.gc.ca/xmlns/tdd/2-0-0" xmlns:ns2="http://www.cra-arc.gc.ca/xmlns/ccms/1-0-0"><TaxYear>2015</TaxYear><Sin>870001484</Sin></StageTDDEFile></S:Body></S:Envelope><?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ns1:StageTDDEFileResponse xmlns="http://www.cra-arc.gc.ca/xmlns/tdd/2-0-0" xmlns:ns2="http://www.cra-arc.gc.ca/xmlns/ccms/1-0-0" xmlns:ns1="http://www.cra-arc.gc.ca/xmlns/tdd/2-0-0"><ns1:ReturnCode>0</ns1:ReturnCode><ns1:TokenIdentifier>Ps5JKui39SyKP1Kt0fILb2DlXM84zbff</ns1:TokenIdentifier></ns1:StageTDDEFileResponse></soapenv:Body></soapenv:Envelope>
+<?xml version="1.0" encoding="UTF-8"?><Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Body><StageTDDEFileResponse xmlns="http://www.cra-arc.gc.ca/xmlns/tdd/2-0-0" xmlns:ns2="http://www.cra-arc.gc.ca/xmlns/ccms/1-0-0" xmlns:ns1="http://www.cra-arc.gc.ca/xmlns/tdd/2-0-0"><ReturnCode>0</ReturnCode><TokenIdentifier>Ps5JKui39SyKP1Kt0fILb2DlXM84zbff</TokenIdentifier></StageTDDEFileResponse></Body></Envelope>
+
+taxdata:
+<?xml version="1.0" encoding="UTF-8"?><Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Body><StageTDDEFileResponse xmlns="http://www.cra-arc.gc.ca/xmlns/tdd/2-0-0" xmlns:ns2="http://www.cra-arc.gc.ca/xmlns/ccms/1-0-0" xmlns:ns1="http://www.cra-arc.gc.ca/xmlns/tdd/2-0-
+0"><ReturnCode>0</ReturnCode><TokenIdentifier>Ps5JKui39SyKP1Kt0fILb2DlXM84zbff</TokenIdentifier></StageTDDEFileResponse></Body></Envelope>
+
+0: REQUEST_ACCEPTED The request for the SIN(s) has been accepted.
+getInternetTime timestamp: 1448841134
+https://apps-ct.cra-arc.gc.ca//ebci/awsc/tdd/certtest/auth/start?spID=064J&timestamp=1448841134&auth=%2Fgol-ged%2Fawsc%2Ftdd%2Fws&key=4bixoQyPqH7P5S5LWW9j%2FJQbOTiX8g0bxGxh3ockBTw%3D&t=Ps5JKui39SyKP1Kt0fILb2DlXM84zbff&lang=en
+
+
+
+ERROR FROM SERVER  Error--ERR.090
+ request timestamp 2015-11-29T23:52:14GMT server timestamp 2015-11-29T23:52:19GMT          // in 4 seconds...
+
+ Server calculated baseStr:
+ 064Japps-ct.cra-arc.gc.ca%2Febci%2Fawsc%2Ftdd%2Fcerttest%2Fauth%2Fstart1448841134%2Fgol-ged%2Fawsc%2Ftdd%2FwsenPs5JKui39SyKP1Kt0fILb2DlXM84zbff
+
+

@@ -1,0 +1,239 @@
+html, body {
+  height: 100%;
+}
+body { 
+  font: 14px sans-serif; 
+  margin: 0px;  
+}
+iframe { 
+  border: none; 
+}
+a:hover { 
+  cursor:pointer; 
+}
+.inline { 
+  float:left; 
+}
+.wrapper{ 
+  width: 350px; 
+  padding: 20px; 
+  margin: 0 auto; 
+  float: none; 
+}
+#holder {
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    min-width: 500px;    
+    background-position: center; 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.page_header { 
+    background-image: url("../img/header.jpg"); 
+    background-color: #56a5db; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    height: 150px; 
+    padding: 0px; 
+}
+.inner_body {
+    height: 100%;
+}
+.page_footer {
+    background-image: url("../img/footer.jpg"); 
+    background-color: #999999; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    height: 100px; 
+    max-height: 100px; 
+    padding: 0px;     
+} 
+.floor {
+    height: 100px; 
+    max-height: 100px; 
+    padding: 0px; 
+    padding-left: 15px;
+}
+tr.floor td { 
+    padding: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+#floor_canvas {
+    display: block;
+}
+#topleft_canvas {
+    display: block;
+}
+#topright_canvas {
+    display: block;
+}
+.left_panel {
+    height: 100%; 
+    vertical-align: top; 
+    align-content: center;   
+    border-bottom-style: none;    
+    border-top-style: none;
+    border-spacing: 0px;  
+    padding: 19px;
+}   
+.right_panel {
+    height: 100%; 
+    vertical-align: top; 
+    align-content: center;   
+    border-bottom-style: none;   
+    border-right-style: none;  
+    border-spacing: 0px;  
+    padding: 19px;    
+} 
+.content {    
+    height: 100%;   
+    vertical-align: top;  
+    padding: 0px 0px 0px 0px; 
+    border-spacing: 0px;    
+}   
+.content_div  {
+    width: 1000px;
+    height: 100%;      
+}   
+.no-margin-left {
+    margin-left: 0px;
+} 
+.white_bg {
+    background: transparent !important;
+}
+#bottom_left_corner {
+    width: 0;
+    height: 0;  
+
+    border: 1px solid #e3e3e3;
+}
+#bottom_right_corner {
+    width: 0;
+    height: 0;  
+
+    border: 1px solid #e3e3e3;
+}
+.bottom-align {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.right_margin {
+    margin-right: 15px;
+}
+.float_right {
+    float: right;
+}
+.wordwrap {
+    word-break: break-all; word-wrap: break-word;
+}
+.functions_panel {
+    margin-bottom: 0px;     
+    border-radius: 0px 0px 0px 0px; 
+}
+#left_panel_column {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    padding-right: 0px; 
+    width: 200px;
+}
+.content_div {
+    box-sizing: border-box; 
+    width: 100%; 
+    padding: 15px;
+}
+.header {
+    position: relative; 
+    width: 100%; 
+    height: 100px;
+}
+#title_small_panel {
+    position: absolute; 
+    bottom: 120px; 
+    left: 0px; 
+    right: 0px;
+}
+#title_panel {
+    padding: 10px;
+}
+#office_logo {
+    max-width: 200px; 
+    height: auto;
+}
+#payer_photo {
+    max-width: 200px; 
+    height: auto;
+}
+#logo_header {
+    max-height: 80px; 
+    width: auto;
+}
+.padding_left_right_10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#right_panel_column {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    padding-right: 0px; 
+    width: 200px;
+}
+.titles {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+    padding: 0px;
+    margin: 0;
+    resize: horizontal;
+}
+.inline_input {
+    width: auto;
+    display: inline;
+}
+.frame_table {
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    border-collapse: collapse;
+    border-style: hidden; 
+}
+.content_border_tr {
+    height: 40px;
+}
+.content_border_td {
+    width: 35px;     
+}
+.content_tr {
+    padding: 5px;
+    border: 35px green solid;
+    border-top-style: none;
+}
+.left_wall_div {
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    max-width; 200px;
+    height: 100%;
+    p1erspective: 200px;
+    perspective: 14.5em;
+    perspective-origin: 100% 50%;
+  
+}
+.left_wall_panel {
+    position: absolute;
+    top: 0px;
+    width: 255px;
+    height: 100%;
+    transform-origin: 0px;
+    transform: rotateY(12.5deg);
+}

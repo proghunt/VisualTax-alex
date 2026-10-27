@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application xmlns="http://schemas.microsoft.com/windows/2009/Ribbon">
+  <Application.Commands>
+    <Command Name="actTab_0" Id="2" LabelTitle="Main"/>
+    <Command Name="rgFileManagement" Id="3" LabelTitle="FILE MANAGEMENT"/>
+    <Command Name="actFileNewButton" Id="4" LabelTitle="New"/>
+    <Command Name="actFileOpenButton" Id="5" LabelTitle="Open..."/>
+    <Command Name="actFileSaveAsItem" Id="6" LabelTitle="Save as... "/>
+    <Command Name="actImportfromlastyear1" Id="7" LabelTitle="Roll-over..."/>
+    <Command Name="actFileCloseButton" Id="8" LabelTitle="Close"/>
+    <Command Name="actFileExitItem" Id="9" LabelTitle="Exit"/>
+    <Command Name="rgFormsNavigation" Id="10" LabelTitle="FORMS NAVIGATION"/>
+    <Command Name="actSelectFormButton" Id="11" LabelTitle="Form..."/>
+    <Command Name="actFindaline1" Id="12" LabelTitle="Go To..(Form or Line)..."/>
+    <Command Name="actFindForm" Id="13"/>
+    <Command Name="actJacket" Id="14" LabelTitle="Jacket"/>
+    <Command Name="actSwitchforms1" Id="15" LabelTitle="Previous form"/>
+    <Command Name="actNextPage" Id="16" LabelTitle="Next Page"/>
+    <Command Name="actPrevPage" Id="17" LabelTitle="Prev page"/>
+    <Command Name="actSwap" Id="18" LabelTitle="Swap"/>
+    <Command Name="actCopyForm1" Id="19" LabelTitle="Copy Form..."/>
+    <Command Name="rgReview" Id="20" LabelTitle="REVIEW"/>
+    <Command Name="actRecalc1" Id="21" LabelTitle="Recalc"/>
+    <Command Name="actDiagnostics" Id="22" LabelTitle="Show Audit Wizard"/>
+    <Command Name="actReviewMark" Id="23" LabelTitle="Review Mark"/>
+    <Command Name="RibbonGroup3" Id="24" LabelTitle="INTERNETFILING"/>
+    <Command Name="actINTERNETFiling1" Id="25" LabelTitle="InternetFiling"/>
+    <Command Name="rgDesktop" Id="26" LabelTitle="DESKTOP"/>
+    <Command Name="actZoomin1" Id="27" LabelTitle="Zoom-in"/>
+    <Command Name="actZoomout1" Id="28" LabelTitle="Zoom-out"/>
+    <Command Name="actChangeSkin" Id="29" LabelTitle="Change interface"/>
+    <Command Name="actAvailableWidth" Id="30" LabelTitle="Zoom to available width"/>
+    <Command Name="actTab_1" Id="31" LabelTitle="File"/>
+    <Command Name="RBGReturn" Id="32" LabelTitle="RETURN"/>
+    <Command Name="actFileNewItem" Id="33" LabelTitle="New"/>
+    <Command Name="actChangetaxmodule" Id="34" LabelTitle="Change tax module (T1,T2,TF,FP)"/>
+    <Command Name="actFileOpenItem" Id="35" LabelTitle="Open..."/>
+    <Command Name="actOpenPreviousYearsT11" Id="36" LabelTitle="Open Previous Year&apos;s Tax program...."/>
+    <Command Name="actOpenbyFileName1" Id="37" LabelTitle="Open by File Name (Explorer view)..."/>
+    <Command Name="actFileCloseItem" Id="38" LabelTitle="Close"/>
+    <Command Name="actCloseallreturnsWITHOUTSaving1" Id="39" LabelTitle="Close all returns, without Saving..."/>
+    <Command Name="RBGRollOver" Id="40" LabelTitle="ROLL OVER / IMPORT"/>
+    <Command Name="RGBSecurity" Id="41" LabelTitle="SECURITY"/>
+    <Command Name="Lock" Id="42" LabelTitle="Lock"/>
+    <Command Name="actLockreturnagaistchanges1" Id="43" LabelTitle="LOCK return against changes"/>
+    <Command Name="actUnlockReturn1" Id="44" LabelTitle="UNLOCK Return"/>
+    <Command Name="Password" Id="45" LabelTitle="Password"/>
+    <Command Name="actSetReturnPassword1" Id="46" LabelTitle="Set Return Password..."/>
+    <Command Name="actRemoveReturnPassword1" Id="47" LabelTitle="Remove Return Password..."/>
+    <Command Name="RGBDatabase" Id="48" LabelTitle="DATABASE"/>
+    <Command Name="actCreateDataDirectory1" Id="49" LabelTitle="Create Data Directory..."/>
+    <Command Name="actChangeDataDirectory1" Id="50" LabelTitle="Change Data Directory..."/>
+    <Command Name="actTab_2" Id="51" LabelTitle="Edit"/>
+    <Command Name="RBGReturn_Edit" Id="52" LabelTitle="RETURN"/>
+    <Command Name="RGBClipboard" Id="53" LabelTitle="CLIPBOARD"/>
+    <Command Name="EditCopy1" Id="54" LabelTitle="Copy"/>
+    <Command Name="EditPaste1" Id="55" LabelTitle="Paste"/>
+    <Command Name="EditCut1" Id="56" LabelTitle="Cut"/>
+    <Command Name="actTab_3" Id="57" LabelTitle="Forms"/>
+    <Command Name="RBGReturn_Forms" Id="58" LabelTitle="RETURN"/>
+    <Command Name="RGBForms" Id="59" LabelTitle="FORMS"/>
+    <Command Name="actSelectForm" Id="60" LabelTitle="Form..."/>
+    <Command Name="actGoToaFormSection1" Id="61" LabelTitle="Go To a Form Section..."/>
+    <Command Name="RGBQuickAccess" Id="62" LabelTitle="QUICK ACCESS"/>
+    <Command Name="RibbonGroup1" Id="63" LabelTitle="CURRENT FORM OPERATIONS"/>
+    <Command Name="actClearCurrentPage" Id="64" LabelTitle="Clear Current Page"/>
+    <Command Name="actClearCurrentform" Id="65" LabelTitle="Clear current form"/>
+    <Command Name="RGBNavigation" Id="66" LabelTitle="NAVIGATION"/>
+    <Command Name="RibbonGroup6" Id="67" LabelTitle="FILLABLE FORMS"/>
+    <Command Name="actFilableFormsWeb1" Id="68" LabelTitle="FilableForms (Web)"/>
+    <Command Name="actAboutFillableForms1" Id="69" LabelTitle="About Fillable Forms"/>
+    <Command Name="actTab_4" Id="70" LabelTitle="Configure"/>
+    <Command Name="RBGReturn_Configure" Id="71" LabelTitle="RETURN"/>
+    <Command Name="RGBConfigureMain" Id="72" LabelTitle="MAIN"/>
+    <Command Name="actOptions2" Id="73" LabelTitle="General Options"/>
+    <Command Name="actPrintTemplates1" Id="74" LabelTitle="Print Templates..."/>
+    <Command Name="actFeeSchedule1" Id="75" LabelTitle="Fee Schedule..."/>
+    <Command Name="actDataDictionary1" Id="76" LabelTitle="Data Dictionary..."/>
+    <Command Name="actClientLetter1" Id="77" LabelTitle="Client letter design..."/>
+    <Command Name="actShowCellNumbers1" Id="78" LabelTitle="Show Field Numbers"/>
+    <Command Name="RGBMigrate" Id="79" LabelTitle="MIGRATE"/>
+    <Command Name="actExportConfiguration1" Id="80" LabelTitle="Export Configuration..."/>
+    <Command Name="actImportConfiguration1" Id="81" LabelTitle="Import Configuration ..."/>
+    <Command Name="actTab_5" Id="82" LabelTitle="Print"/>
+    <Command Name="RBGReturn_PrintEFile" Id="83" LabelTitle="RETURN"/>
+    <Command Name="RibbonGroup2" Id="84" LabelTitle="SIMPLE PRINT"/>
+    <Command Name="actCurrentPage1" Id="85" LabelTitle="Current Page..."/>
+    <Command Name="actPrintForm1" Id="86" LabelTitle="Current Form..."/>
+    <Command Name="actCurrentFormAllInstances1" Id="87" LabelTitle="Current Form (All Instances)..."/>
+    <Command Name="RibbonGroup4" Id="88" LabelTitle="PRINT RETURN"/>
+    <Command Name="actNR4Slips1" Id="89" LabelTitle="NR4 Slips"/>
+    <Command Name="actPartnershipcoveringletter1" Id="90" LabelTitle="Partnership covering letter"/>
+    <Command Name="actPartnershipreturn1" Id="91" LabelTitle="Partnership return"/>
+    <Command Name="actT5013PartnersS501" Id="92" LabelTitle="T5013 Partners (S50)..."/>
+    <Command Name="actT5013Slips1" Id="93" LabelTitle="T5013 Slips..."/>
+    <Command Name="actCharityReturn1" Id="94" LabelTitle="Charity Return"/>
+    <Command Name="actT2202AEducationSlips1" Id="95" LabelTitle="T2202A - Education Slips"/>
+    <Command Name="actEmailCurrentForm" Id="96" LabelTitle="Email printout of current Form (in PDF format)..."/>
+    <Command Name="actClientListings1" Id="97" LabelTitle="Client Listings..."/>
+    <Command Name="RibbonGroup7" Id="98" LabelTitle="TUNING"/>
+    <Command Name="actPrinterSetup" Id="99" LabelTitle="Printer Setup..."/>
+    <Command Name="RibbonGroup8" Id="100" LabelTitle="CONTRACT PAYMENTS"/>
+    <Command Name="actT5018Summary1" Id="101" LabelTitle="  T5018 - Summary"/>
+    <Command Name="actT5018AllGovermentslips1" Id="102" LabelTitle="  T5018 - All Goverment slips"/>
+    <Command Name="actT5018AllRecipientslips1" Id="103" LabelTitle="  T5018 - All Recipient slips"/>
+    <Command Name="actTab_6" Id="104" LabelTitle="Review"/>
+    <Command Name="RBGReturn_Review" Id="105" LabelTitle="RETURN"/>
+    <Command Name="RGBService" Id="106" LabelTitle="SERVICE"/>
+    <Command Name="actTab_7" Id="107" LabelTitle="Desktop"/>
+    <Command Name="RBGReturn_Desktop" Id="108" LabelTitle="RETURN"/>
+    <Command Name="RGBView" Id="109" LabelTitle="VIEW"/>
+    <Command Name="actColor1" Id="110" LabelTitle="Color..."/>
+    <Command Name="actTileVertical1" Id="111" LabelTitle="Tile Vertically"/>
+    <Command Name="actTileHorizontally1" Id="112" LabelTitle="Tile Horizontally"/>
+    <Command Name="actTab_8" Id="113" LabelTitle="Utilities"/>
+    <Command Name="RBGReturn_Utilities" Id="114" LabelTitle="RETURN"/>
+    <Command Name="RGBUtilities" Id="115" LabelTitle="UTILITIES"/>
+    <Command Name="actCalendar1" Id="116" LabelTitle="Calendar"/>
+    <Command Name="actCalculator1" Id="117" LabelTitle="Calculator"/>
+    <Command Name="RGBBackup" Id="118" LabelTitle="BACKUP"/>
+    <Command Name="actBackupthetaxdata1" Id="119" LabelTitle="Backup all tax data..."/>
+    <Command Name="actRestoredatafrombackup1" Id="120" LabelTitle="Restore all data from backup..."/>
+    <Command Name="RGBSeveralDatabases" Id="121" LabelTitle="SEVERAL DATABASES"/>
+    <Command Name="actRebuildtheClientDataBase1" Id="122" LabelTitle="Rebuild a Client Data Base..."/>
+    <Command Name="actMergeDataBases1" Id="123" LabelTitle="Merge Data Bases..."/>
+    <Command Name="actFileViewerEditor1" Id="124" LabelTitle="Edit Supporting Files..."/>
+    <Command Name="RGBAdvnced" Id="125" LabelTitle="ADVANCED"/>
+    <Command Name="actReIndextheClientDataBase1" Id="126" LabelTitle="Re-Index the Client Data Base"/>
+    <Command Name="actFixClientDataBaseData1" Id="127" LabelTitle="Change data on the Client Data Base"/>
+    <Command Name="actRestructuretheClientsDataBase1" Id="128" LabelTitle="Restructure the Clients Data Base"/>
+    <Command Name="actFixFormSpecifications1" Id="129" LabelTitle="Change Form Specifications"/>
+    <Command Name="actUpgrade1" Id="130" LabelTitle="De-register program..."/>
+    <Command Name="actDeveloperOnly1" Id="131" LabelTitle="Developer Only"/>
+    <Command Name="RGBDeveloperOnly" Id="132" LabelTitle="DEVELOPER ONLY"/>
+    <Command Name="actPrepareDistr1" Id="133" LabelTitle="PrepareDistr"/>
+    <Command Name="actLicLevel1" Id="134" LabelTitle="LicLevel"/>
+    <Command Name="actPrintAllForms1" Id="135" LabelTitle="Print All Forms"/>
+    <Command Name="actResetclientDBpassword1" Id="136" LabelTitle="Reset client DB password"/>
+    <Command Name="Resetpasswordwithreturn" Id="137" LabelTitle="Reset password with return"/>
+    <Command Name="actTab_9" Id="138" LabelTitle="Help"/>
+    <Command Name="RBGReturn_Help" Id="139" LabelTitle="RETURN"/>
+    <Command Name="RibbonGroup5" Id="140" LabelTitle="HELP"/>
+    <Command Name="actTUTORIALS1" Id="141" LabelTitle="Tutorials"/>
+    <Command Name="actYourLatestRelease" Id="142" LabelTitle="What&apos;s new in this release..."/>
+    <Command Name="actVisualTaxGuide1" Id="143" LabelTitle="Program help..."/>
+    <Command Name="OntheWEB" Id="144" LabelTitle="On the WEB..."/>
+    <Command Name="actKnownIssues1" Id="145" LabelTitle="Known Issues"/>
+    <Command Name="actVisualTaxForum1" Id="146" LabelTitle="Forum (User-to-user)..."/>
+    <Command Name="actInternetWebSite1" Id="147" LabelTitle="Connect to VisualTax web site..."/>
+    <Command Name="actCheckupdates1" Id="148" LabelTitle="CHECK UPDATE VIA WEB..."/>
+    <Command Name="actUsefulLinks" Id="149" LabelTitle="Useful Internet links..."/>
+    <Command Name="actCheckupdate1" Id="150" LabelTitle="Web Downloads page..."/>
+    <Command Name="CRAGuides" Id="151" LabelTitle="CRA Guides"/>
+    <Command Name="actCCRAT3GuideT4013PDFformat1" Id="152" LabelTitle="   T3 Guide - T4013 "/>
+    <Command Name="actCRACharityGuideT1033B1" Id="153" LabelTitle="   Charity Guide - T4033-1"/>
+    <Command Name="actCCRAT5013PartnershipGuideT4068PDFformat1" Id="154" LabelTitle="  T5013 Partnership Guide - T4068"/>
+    <Command Name="actCRAT5013SupplementaryGuideT406811" Id="155" LabelTitle="  T5013 Supplementary Guide - T4068-1-10"/>
+    <Command Name="actNAICSCodes1" Id="156" LabelTitle="   NAICS Codes"/>
+    <Command Name="actAboutItem" Id="157" LabelTitle="About..."/>
+    <Command Name="CommandSearchForm1" Id="158"/>
+    <Command Name="CommandSearchForm2" Id="159"/>
+  </Application.Commands>
+  <Application.Views>
+    <Ribbon>
+      <Ribbon.ApplicationMenu>
+        <ApplicationMenu/>
+      </Ribbon.ApplicationMenu>
+      <Ribbon.QuickAccessToolbar>
+        <QuickAccessToolbar/>
+      </Ribbon.QuickAccessToolbar>
+      <Ribbon.Tabs>
+        <Tab CommandName="actTab_0">
+          <Group CommandName="rgFileManagement">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actFileNewButton"/>
+            <Button CommandName="actFileOpenButton"/>
+            <Button CommandName="actFileSaveAsItem"/>
+            <Button CommandName="actImportfromlastyear1"/>
+            <Button CommandName="actFileCloseButton"/>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="rgFormsNavigation">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actSelectFormButton"/>
+            <Button CommandName="actFindaline1"/>
+            <Button CommandName="actFindForm"/>
+            <ComboBox CommandName="CommandSearchForm1"/>
+            <Button CommandName="actJacket"/>
+            <Button CommandName="actSwitchforms1"/>
+            <Button CommandName="actNextPage"/>
+            <Button CommandName="actPrevPage"/>
+            <Button CommandName="actSwap"/>
+            <Button CommandName="actCopyForm1"/>
+          </Group>
+          <Group CommandName="rgReview">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actRecalc1"/>
+            <Button CommandName="actDiagnostics"/>
+            <Button CommandName="actReviewMark"/>
+          </Group>
+          <Group CommandName="RibbonGroup3">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actINTERNETFiling1"/>
+          </Group>
+          <Group CommandName="rgDesktop">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actZoomin1"/>
+            <Button CommandName="actZoomout1"/>
+            <Button CommandName="actChangeSkin"/>
+            <Button CommandName="actAvailableWidth"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="actTab_1">
+          <Group CommandName="RBGReturn">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actFileNewItem"/>
+              <Button CommandName="actChangetaxmodule"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="actFileOpenItem"/>
+              <Button CommandName="actOpenPreviousYearsT11"/>
+              <Button CommandName="actOpenbyFileName1"/>
+            </SplitButton>
+            <Button CommandName="actFileSaveAsItem"/>
+            <SplitButton>
+              <Button CommandName="actFileCloseItem"/>
+              <Button CommandName="actCloseallreturnsWITHOUTSaving1"/>
+            </SplitButton>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="RBGRollOver">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actImportfromlastyear1"/>
+            </SplitButton>
+          </Group>
+          <Group CommandName="RGBSecurity">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="Lock"/>
+              <Button CommandName="actLockreturnagaistchanges1"/>
+              <Button CommandName="actUnlockReturn1"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="Password"/>
+              <Button CommandName="actSetReturnPassword1"/>
+              <Button CommandName="actRemoveReturnPassword1"/>
+            </SplitButton>
+          </Group>
+          <Group CommandName="RGBDatabase">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actCreateDataDirectory1"/>
+            <Button CommandName="actChangeDataDirectory1"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="actTab_2">
+          <Group CommandName="RBGReturn_Edit">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actFileNewItem"/>
+              <Button CommandName="actChangetaxmodule"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="actFileOpenItem"/>
+              <Button CommandName="actOpenPreviousYearsT11"/>
+              <Button CommandName="actOpenbyFileName1"/>
+            </SplitButton>
+            <Button CommandName="actFileSaveAsItem"/>
+            <SplitButton>
+              <Button CommandName="actFileCloseItem"/>
+              <Button CommandName="actCloseallreturnsWITHOUTSaving1"/>
+            </SplitButton>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="RGBClipboard">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="EditCopy1"/>
+            <Button CommandName="EditPaste1"/>
+            <Button CommandName="EditCut1"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="actTab_3">
+          <Group CommandName="RBGReturn_Forms">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actFileNewItem"/>
+              <Button CommandName="actChangetaxmodule"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="actFileOpenItem"/>
+              <Button CommandName="actOpenPreviousYearsT11"/>
+              <Button CommandName="actOpenbyFileName1"/>
+            </SplitButton>
+            <Button CommandName="actFileSaveAsItem"/>
+            <SplitButton>
+              <Button CommandName="actFileCloseItem"/>
+              <Button CommandName="actCloseallreturnsWITHOUTSaving1"/>
+            </SplitButton>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="RGBForms">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actSelectForm"/>
+              <Button CommandName="actGoToaFormSection1"/>
+              <Button CommandName="actFindaline1"/>
+            </SplitButton>
+            <Button CommandName="actFindForm"/>
+            <ComboBox CommandName="CommandSearchForm2"/>
+          </Group>
+          <Group CommandName="RGBQuickAccess">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actJacket"/>
+            <Button CommandName="actFindaline1"/>
+          </Group>
+          <Group CommandName="RibbonGroup1">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actClearCurrentPage"/>
+            <Button CommandName="actClearCurrentform"/>
+            <Button CommandName="actCopyForm1"/>
+          </Group>
+          <Group CommandName="RGBNavigation">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actSwitchforms1"/>
+            <Button CommandName="actNextPage"/>
+            <Button CommandName="actPrevPage"/>
+          </Group>
+          <Group CommandName="RibbonGroup6">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actFilableFormsWeb1"/>
+            <Button CommandName="actAboutFillableForms1"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="actTab_4">
+          <Group CommandName="RBGReturn_Configure">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actFileNewItem"/>
+              <Button CommandName="actChangetaxmodule"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="actFileOpenItem"/>
+              <Button CommandName="actOpenPreviousYearsT11"/>
+              <Button CommandName="actOpenbyFileName1"/>
+            </SplitButton>
+            <Button CommandName="actFileSaveAsItem"/>
+            <SplitButton>
+              <Button CommandName="actFileCloseItem"/>
+              <Button CommandName="actCloseallreturnsWITHOUTSaving1"/>
+            </SplitButton>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="RGBConfigureMain">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actOptions2"/>
+              <Button CommandName="actPrintTemplates1"/>
+              <Button CommandName="actFeeSchedule1"/>
+              <Button CommandName="actDataDictionary1"/>
+            </SplitButton>
+            <Button CommandName="actClientLetter1"/>
+            <Button CommandName="actShowCellNumbers1"/>
+            <Button CommandName="actChangeSkin"/>
+            <Button CommandName="actPrintTemplates1"/>
+            <Button CommandName="actFeeSchedule1"/>
+            <Button CommandName="actDataDictionary1"/>
+          </Group>
+          <Group CommandName="RGBMigrate">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actExportConfiguration1"/>
+            <Button CommandName="actImportConfiguration1"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="actTab_5">
+          <Group CommandName="RBGReturn_PrintEFile">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actFileNewItem"/>
+              <Button CommandName="actChangetaxmodule"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="actFileOpenItem"/>
+              <Button CommandName="actOpenPreviousYearsT11"/>
+              <Button CommandName="actOpenbyFileName1"/>
+            </SplitButton>
+            <Button CommandName="actFileSaveAsItem"/>
+            <SplitButton>
+              <Button CommandName="actFileCloseItem"/>
+              <Button CommandName="actCloseallreturnsWITHOUTSaving1"/>
+            </SplitButton>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="RibbonGroup2">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actCurrentPage1"/>
+            <Button CommandName="actPrintForm1"/>
+            <Button CommandName="actCurrentFormAllInstances1"/>
+          </Group>
+          <Group CommandName="RibbonGroup4">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actNR4Slips1"/>
+            <Button CommandName="actPartnershipcoveringletter1"/>
+            <Button CommandName="actPartnershipreturn1"/>
+            <Button CommandName="actT5013PartnersS501"/>
+            <Button CommandName="actT5013Slips1"/>
+            <Button CommandName="actCharityReturn1"/>
+            <Button CommandName="actT2202AEducationSlips1"/>
+            <Button CommandName="actEmailCurrentForm"/>
+            <Button CommandName="actClientListings1"/>
+          </Group>
+          <Group CommandName="RibbonGroup7">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actPrinterSetup"/>
+          </Group>
+          <Group CommandName="RibbonGroup8">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actT5018Summary1"/>
+            <Button CommandName="actT5018AllGovermentslips1"/>
+            <Button CommandName="actT5018AllRecipientslips1"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="actTab_6">
+          <Group CommandName="RBGReturn_Review">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actFileNewItem"/>
+              <Button CommandName="actChangetaxmodule"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="actFileOpenItem"/>
+              <Button CommandName="actOpenPreviousYearsT11"/>
+              <Button CommandName="actOpenbyFileName1"/>
+            </SplitButton>
+            <Button CommandName="actFileSaveAsItem"/>
+            <SplitButton>
+              <Button CommandName="actFileCloseItem"/>
+              <Button CommandName="actCloseallreturnsWITHOUTSaving1"/>
+            </SplitButton>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="RGBService">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actRecalc1"/>
+            <Button CommandName="actDiagnostics"/>
+            <Button CommandName="actReviewMark"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="actTab_7">
+          <Group CommandName="RBGReturn_Desktop">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actFileNewItem"/>
+              <Button CommandName="actChangetaxmodule"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="actFileOpenItem"/>
+              <Button CommandName="actOpenPreviousYearsT11"/>
+              <Button CommandName="actOpenbyFileName1"/>
+            </SplitButton>
+            <Button CommandName="actFileSaveAsItem"/>
+            <SplitButton>
+              <Button CommandName="actFileCloseItem"/>
+              <Button CommandName="actCloseallreturnsWITHOUTSaving1"/>
+            </SplitButton>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="RGBView">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actZoomin1"/>
+            <Button CommandName="actZoomout1"/>
+            <Button CommandName="actColor1"/>
+            <Button CommandName="actTileVertical1"/>
+            <Button CommandName="actTileHorizontally1"/>
+            <Button CommandName="actAvailableWidth"/>
+          </Group>
+        </Tab>
+        <Tab CommandName="actTab_8">
+          <Group CommandName="RBGReturn_Utilities">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actFileNewItem"/>
+              <Button CommandName="actChangetaxmodule"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="actFileOpenItem"/>
+              <Button CommandName="actOpenPreviousYearsT11"/>
+              <Button CommandName="actOpenbyFileName1"/>
+            </SplitButton>
+            <Button CommandName="actFileSaveAsItem"/>
+            <SplitButton>
+              <Button CommandName="actFileCloseItem"/>
+              <Button CommandName="actCloseallreturnsWITHOUTSaving1"/>
+            </SplitButton>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="RGBUtilities">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actCalendar1"/>
+            <Button CommandName="actCalculator1"/>
+          </Group>
+          <Group CommandName="RGBBackup">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actBackupthetaxdata1"/>
+            <Button CommandName="actRestoredatafrombackup1"/>
+          </Group>
+          <Group CommandName="RGBSeveralDatabases">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actRebuildtheClientDataBase1"/>
+            <Button CommandName="actMergeDataBases1"/>
+            <Button CommandName="actFileViewerEditor1"/>
+          </Group>
+          <Group CommandName="RGBAdvnced">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actReIndextheClientDataBase1"/>
+            <Button CommandName="actFixClientDataBaseData1"/>
+            <Button CommandName="actRestructuretheClientsDataBase1"/>
+            <Button CommandName="actFixFormSpecifications1"/>
+            <Button CommandName="actUpgrade1"/>
+          </Group>          
+        </Tab>
+        <Tab CommandName="actTab_9">
+          <Group CommandName="RBGReturn_Help">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+                <ControlSizeDefinition ImageSize="Large"/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <SplitButton>
+              <Button CommandName="actFileNewItem"/>
+              <Button CommandName="actChangetaxmodule"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="actFileOpenItem"/>
+              <Button CommandName="actOpenPreviousYearsT11"/>
+              <Button CommandName="actOpenbyFileName1"/>
+            </SplitButton>
+            <Button CommandName="actFileSaveAsItem"/>
+            <SplitButton>
+              <Button CommandName="actFileCloseItem"/>
+              <Button CommandName="actCloseallreturnsWITHOUTSaving1"/>
+            </SplitButton>
+            <Button CommandName="actFileExitItem"/>
+          </Group>
+          <Group CommandName="RibbonGroup5">
+            <SizeDefinition>
+              <ControlNameMap/>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+                <ControlSizeDefinition/>
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="actTUTORIALS1"/>
+            <Button CommandName="actYourLatestRelease"/>
+            <Button CommandName="actVisualTaxGuide1"/>
+            <SplitButton>
+              <Button CommandName="OntheWEB"/>
+              <Button CommandName="actKnownIssues1"/>
+              <Button CommandName="actVisualTaxForum1"/>
+              <Button CommandName="actInternetWebSite1"/>
+              <Button CommandName="actCheckupdates1"/>
+              <Button CommandName="actUsefulLinks"/>
+              <Button CommandName="actCheckupdate1"/>
+            </SplitButton>
+            <SplitButton>
+              <Button CommandName="CRAGuides"/>
+              <Button CommandName="actCCRAT3GuideT4013PDFformat1"/>
+              <Button CommandName="actCRACharityGuideT1033B1"/>
+              <Button CommandName="actCCRAT5013PartnershipGuideT4068PDFformat1"/>
+              <Button CommandName="actCRAT5013SupplementaryGuideT406811"/>
+              <Button CommandName="actNAICSCodes1"/>
+            </SplitButton>
+            <Button CommandName="actAboutItem"/>
+          </Group>
+        </Tab>
+      </Ribbon.Tabs>
+    </Ribbon>
+    <ContextPopup/>
+  </Application.Views>
+</Application>
+<!--ResourceName Value="APPLICATION_TF"-->

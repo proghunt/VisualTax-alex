@@ -1,0 +1,761 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="Win64\Release\vtMobile2.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\</RemoteDir>
+            <RemoteName>vtMobile2.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="Win32\Debug\vtMobile2.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\</RemoteDir>
+            <RemoteName>vtMobile2.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Win32\Release\vtMobile2.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\</RemoteDir>
+            <RemoteName>vtMobile2.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>vtMobile2.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Android'">
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Amakrits.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Amakrits.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Light.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Light.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Release\splash_image_def.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable\</RemoteDir>
+            <RemoteName>splash_image_def.xml</RemoteName>
+            <DeployClass>AndroidSplashImageDef</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\AquaGraphite.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>AquaGraphite.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_96X96.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\GoldenGraphite.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>GoldenGraphite.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_960X720.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable-xlarge\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIDark_touch.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIDark_touch.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_144X144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_640X480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable-large\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\AquaGraphite.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>AquaGraphite.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIBlack_touch.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIBlack_touch.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Win10Modern.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Win10Modern.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIGreen_touch.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIGreen_touch.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIBlue.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIBlue.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Win10ModernDark.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Win10ModernDark.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\library\lib\mips\</RemoteDir>
+            <RemoteName>libvtMobile2.so</RemoteName>
+            <DeployClass>AndroidLibnativeMipsFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Transparent.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Transparent.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable\</RemoteDir>
+            <RemoteName>splash_image_def.xml</RemoteName>
+            <DeployClass>AndroidSplashImageDef</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_36X36.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\RubyGraphite.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>RubyGraphite.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIDark.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIDark.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_144X144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_960X720.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable-xlarge\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\AndroidManifest.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\</RemoteDir>
+            <RemoteName>AndroidManifest.xml</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libvtMobile2.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Blend.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Blend.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\library\lib\mips\</RemoteDir>
+            <RemoteName>libvtMobile2.so</RemoteName>
+            <DeployClass>AndroidLibnativeMipsFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Dark.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Dark.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIBlack_touch.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIBlack_touch.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_426X320.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable-small\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIDark.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIDark.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_72X72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\x86\libnative-activity.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\library\lib\x86\</RemoteDir>
+            <RemoteName>libvtMobile2.so</RemoteName>
+            <DeployClass>AndroidLibnativeX86File</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIBlack.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIBlack.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Release\libvtMobile2.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libvtMobile2.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Android\Release\classes.dex" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Light.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Light.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Win10ModernBlue.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Win10ModernBlue.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_48X48.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Release\styles.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStyles</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\GoldenGraphite.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>GoldenGraphite.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Win10ModernBlue.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Win10ModernBlue.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libvtMobile2.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\RubyGraphite.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>RubyGraphite.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Win10ModernDark.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Win10ModernDark.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_426X320.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable-small\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIBlue_touch.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIBlue_touch.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Transparent.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Transparent.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIGreen.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIGreen.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\libvtMobile2.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libvtMobile2.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_48X48.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\styles.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStyles</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Dark.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Dark.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Air.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Air.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_96X96.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIBlack.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIBlack.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_640X480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable-large\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIBlue.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIBlue.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIGreen.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIGreen.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Air.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Air.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIGreen_touch.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIGreen_touch.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Win10Modern.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Win10Modern.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_470X320.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\res\drawable-normal\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_72X72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIBlue_touch.Style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIBlue_touch.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_470X320.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable-normal\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\x86\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\library\lib\x86\</RemoteDir>
+            <RemoteName>libvtMobile2.so</RemoteName>
+            <DeployClass>AndroidLibnativeX86File</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Blend.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Blend.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\Amakrits.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>Amakrits.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Release\AndroidManifest.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\</RemoteDir>
+            <RemoteName>AndroidManifest.xml</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="vtMobile2_36X36.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>vtMobile2\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\RESOURCE\Styles\FMX\MetropolisUIDark_touch.Style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>vtMobile2\assets\internal\VisualTaxMobile\Styles\</RemoteDir>
+            <RemoteName>MetropolisUIDark_touch.Style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
+            <RemoteDir>vtMobile2.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
+            <RemoteDir>vtMobile2.app\</RemoteDir>
+            <RemoteName>libPCRE.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>

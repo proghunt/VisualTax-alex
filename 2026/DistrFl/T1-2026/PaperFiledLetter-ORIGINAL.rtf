@@ -1,0 +1,196 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset0 Univers;}{\f2\fnil\fcharset0 Univers;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\nowidctlpar\f0\fs20\par
+\tab\tab\tab\b\fs24 [\cf1 Preparer_Name\cf0 ] \b0\fs20\par
+\tab\tab\tab [\cf1 Preparer_Address1\cf0 ]\par
+\tab\tab\tab [\cf1 Preparer_Address2\cf0 ]\par
+\tab\tab\tab ([\cf1 Preparer_Area\cf0 ]) [\cf1 Preparer_Phone\cf0 ]\par
+_______________________________________________________________________________\par
+\par
+\f1\fs16 [\cf1 Date\cf0 ]\par
+\f2\fs18\par
+[If (\cf1 Deceased\cf0  > '')]The Estate of the late\b  [\cf1 Client_FirstName\cf0 ] [\cf1 Client_LastName\cf0 ]\b0\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Deceased\cf0  = '')]\b [\cf1 Client_FirstName\cf0 ] [\cf1 Client_LastName\cf0 ]\b0\par
+[\cf1 Endif\cf0 ]\par
+[\cf1 Client_Street\cf0 ] [\cf1 Client_Apartm\cf0 ] [\cf1 Client_POBox\cf0 ] [\cf1 Client_RR\cf0 ] \par
+[\cf1 Client_City\cf0 ], [\cf1 Client_Province\cf0 ]\par
+[\cf1 Client_Postal\cf0 ]\par
+\par
+[If (\cf1 Deceased\cf0  > '')]Dear Sir/Madam:\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Deceased\cf0  = '')]Dear [\cf1 Client_Title\cf0 ] [\cf1 Client_LastName\cf0 ]:\par
+[\cf1 Endif\cf0 ]\par
+\par
+We have prepared your [\cf1 This_TaxYear\cf0 ] individual income tax return based on the information you provided.  Please review it carefully to ensure that it is both accurate and complete.\par
+[If (\cf1 Efiled_return\cf0  = 'X')]\par
+\par
+The return has been transmitted to the Canada Revenue Agency (CRA) electronically and one copy together with attachments is enclosed for your records. At the request of CRA all T-slips and any other data, that otherwise would be filed with CRA, will be retained by our office for six years.\par
+\par
+\b Signatures required:\b0\par
+The following forms require a signature before submitting to CRA:\par
+-T183\tab Information return for electronic filing\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 New_Client\cf0  ='X' && \cf1 Efiled_return\cf0  = 'X')]-Pipeda\tab Consent Letter regarding the federal Personal Information Protection and Electronic Documents Act\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Form_T1032\cf0  = 'Y' && \cf1 Efiled_return\cf0  = 'X')]-T1032\tab Joint Election To Split Pension Income\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Efiled_return\cf0  = '')]\par
+\par
+Two copies of the [\cf1 This_TaxYear\cf0 ] personal income tax return are enclosed together with all supporting documentation and schedules.  The original should be submitted to the Canada Revenue Agency and the second copy marked as 'client copy' is for your records.\par
+\par
+\b Signatures required:\b0\par
+The following forms require a signature before submitting to CRA:\par
+\lang3084 -T1 Return\tab Page 8\par
+\lang1033 [\cf1 Endif\cf0 ]\par
+[If (\cf1 Form_TL2\cf0  = 'Y' && \cf1 Efiled_return\cf0  = '')]-TL2\tab\tab Claim for board and lodging expenses\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Form_T1A\cf0  = 'Y' && \cf1 Efiled_return\cf0  = '')]-T1A\tab\tab Request for loss carry-back\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Form_GST370\cf0  = 'Y' && \cf1 Efiled_return\cf0  = '')]-GST370\tab Employee and partner GST/HST rebate application\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Form_T1032\cf0  = 'Y' && \cf1 Efiled_return\cf0  = '')]-T1032\tab\tab Joint Election To Split Pension Income\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Form_T1139\cf0  = 'Y' && \cf1 Efiled_return\cf0  = '')]-T1139\tab\tab Reconciliation of Business Income for tax purposes\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Form_T1135\cf0  = 'Y' && \cf1 Efiled_return\cf0  = '')]-T1135\tab\tab Foreign Income verification\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Form_T1172\cf0  = 'Y' && \cf1 Efiled_return\cf0  = '')]-T1172\tab\tab Additional tax on Accumulated Income Payments from RESP's\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 New_Client\cf0  ='X' && \cf1 Efiled_return\cf0  = '')]-Pipeda\tab\tab Consent Letter regarding the federal Personal Information Protection and Electronic\lang3084 Documents Act\par
+[\cf1 Endif\cf0 ]\par
+\lang1033 [If (\cf1 Line_48400\cf0  > 0)]\par
+\par
+\b Refund receivable:\b0\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Line_48400\cf0  > 2)]Your return shows a refund of $[\cf1 Line_48400\cf0 ].\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Line_48400\cf0  > 0 && \cf1 Line_48400\cf0  < 2.01)]Because your refund is less than $2.01 you will not be receiving a cheque from the Canada Revenue Agency.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Disc_Refund\cf0  > 0)] \f0\fs20 Your estimated refund as per Form RC71 is $\f2\fs18 [\cf1 Disc_Refund\cf0 ]\f0\fs20 , which has been discounted at a cost of  $[\cf1 Disc_Cost\cf0 ] plus sales tax of $[\cf1 Disc_Tax\cf0 ].  A cheque in the amount of $[\cf1 Disc_Payable\cf0 ] is attached.\f2\fs18 [\cf1 Endif\cf0 ]\par
+[If (\cf1 Line_48500\cf0  > 2)]\par
+\par
+\b Balance owing:\b0\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Efiled_return\cf0  = '' && \cf1 Line_48500\cf0  > 2)]Your return shows a balance owing of $[\cf1 Line_48500\cf0 ].  Make your cheque payable to the Receiver General for Canada.  Attach the cheque to the front of your return and write your Social Insurance Number and 'Income Tax for [\cf1 This_TaxYear\cf0 ]' on the back of the cheque.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Efiled_return\cf0  = 'X' && \cf1 Line_48500\cf0  > 2)]Your return shows a balance owing of $[\cf1 Line_48500\cf0 ].  Payment may be made at any financial institution by using a properly completed 'Electronic filing remittance voucher'.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Self_Employed\cf0  = '' && \cf1 Line_48500\cf0  >2)]If your return is filed after April 30, [\cf1 Next_TaxYear\cf0 ], you may be assessed a late filing penalty.  Interest will be charged on the balance if not paid by April 30, [\cf1 Next_TaxYear\cf0 ].\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Self_Employed\cf0  > '' && \cf1 Line_48500\cf0  >2)]If your return is filed after June 15, [\cf1 Next_TaxYear\cf0 ], you may be assessed a late filing penalty. Interest will be charged on any unpaid balance from April 30, [\cf1 Next_TaxYear\cf0 ].\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Line_48500\cf0  = 0 && \cf1 Line_48400\cf0  = 0)]\par
+\par
+\b No Balance:\b0\par
+Your return does not show a refund or balance due.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Line_48500\cf0  > 0 && \cf1 Line_48500\cf0  < 2.01)]\par
+\par
+\b Balance owing:\b0\par
+Your return shows a balance owing of $[\cf1 Line_48500\cf0 ].  Because your balance due is less than $2.01, you need not make a payment to the Canada Revenue Agency.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Line_11600\cf0  > 0)]\par
+\par
+\b Pension Income Split:\b0\par
+We have optimized the family tax savings by taking advantange of the 'Joint Election To Split Pension Income'.  As per form T1032 you have agreed to  report as income and your spouse has agreed to transfer $[\cf1 Split_Pension_Income\cf0 ] eligible pension income to you.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Line_21000\cf0  > 0)]\par
+\par
+\b Pension Income Split:\b0\par
+We have optimized the family tax savings by taking advantage of the 'Joint Election To Split Pension Income'.  As per form T1032, your spouse has agreed to report as income and you have agreed to transfer $[\cf1 Split_Pension_Deduction\cf0 ] of your eligible pension income to your spouse.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Split_Pension_Tax_Transferred\cf0  > 0)]Any income tax deducted from this income has also been transferred in proportion to the agreed income split. \par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Line_42300\cf0  > 0)]\par
+\par
+\b Family Tax Cut:\par
+\b0 Based on your family situation we have determined and claimed your family Tax Cut in the amount of $[\cf2 Line_423\cf0 ] as shown on line 423 of Schedule 1 of your tax return.\par
+\par
+[\cf1 Endif\cf0 ]\par
+\par
+[If (\cf1 Client_Email_ForCRA\cf2  >\cf0  ' ')]\par
+\f1\par
+\b Email Authorization:\par
+\cf1\lang4105\b0\f0 Your Email to be used by CRA was included in your tax return to register you for the online mail service of CRA. By registering for this service, you are authorizing the CRA to send you e-mail notifications when you have mail to view on My Account. The notices of assessment and notices of reassessment, and any future correspondence that can be transmitted online, will no longer be printed or mailed.\par
+\cf0\lang1033\f2 [\cf1 Endif\cf0 ]\par
+\par
+[If (\cf1 Instalm1\cf0  > 0 || \cf1 Farm_Instalm\cf0  > 0)]\par
+\par
+\b Instalments required:\b0\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Instalm3\cf0  > 0)]Unless your income taxes payable and income taxes withheld at source, for the year [\cf1 Next_TaxYear\cf0 ] differ from the year [\cf1 This_TaxYear\cf0 ], we have calculated that you should make tax instalments as shown below:\par
+\tab $[\cf1 Instalm1\cf0 ] on March 15, [\cf1 Next_TaxYear\cf0 ]\par
+\tab $[\cf1 Instalm2\cf0 ] on June 15, [\cf1 Next_TaxYear\cf0 ]\par
+\tab $[\cf1 Instalm3\cf0 ] on September 15, [\cf1 Next_TaxYear\cf0 ]\par
+\tab $[\cf1 Instalm4\cf0 ] on December 15, [\cf1 Next_TaxYear\cf0 ]\par
+In the absence of historical data on our records, you should use the amounts suggested by the Canada Revenue Agency.  Please contact us and inquire about changing these amounts should an increase or a decrease in the taxable income, for the year [\cf1 Next_TaxYear\cf0 ], be anticipated.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Farm_Instalm\cf0  > 0)]Unless your income taxes payable and income taxes withheld at source, for the year [\cf1 Next_TaxYear\cf0 ] differ from the year [\cf1 This_TaxYear\cf0 ], we heve calculated that you should make a single Farmer's and Fisherman's tax instalment of [\cf1 Farm_Instalm\cf0 ] on December 31, [\cf1 Next_TaxYear\cf0 ].  This instalment was based on the assumption that your chief source of income is farming or fishing.  Please contact us and inquire about changing this amount should an increase or a decrease in the taxable income, for the year [\cf1 Next_TaxYear\cf0 ], be anticipated.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Client_Age\cf0  <'71' && ((\cf1 RRSP_Room_Next_Year\cf0  > 0) || (\cf1 RRSP_NextYr\cf0  >0) || (\cf1 RRSP_undeduct\cf0  >0))) ]\par
+ \par
+\lang3084\b RRSP Contribution Limit:\b0\par
+\lang1033 [\cf1 Endif\cf0 ]\par
+[If (\cf1 Client_Age\cf0  <'71' && ((\cf1 RRSP_undeduct\cf0  = 0) && (\cf1 RRSP_NextYr\cf0  > 0))) ]We have determined, on the basis of your [\cf1 This_TaxYear\cf0 ] return, that you are eligible to contribute up to $[\cf1 RRSP_NextYr\cf0 ] to your Registered Retirement Savings Plan for the [\cf1 Next_TaxYear\cf0 ] tax year.  Please advise our office, should the [\cf1 This_TaxYear\cf0 ] assessment notice differ from this amount.    \par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Client_Age\cf0  <'71' && ((\cf1 RRSP_undeduct\cf0  > 0) && (\cf1 RRSP_NextYr\cf0  > 0)))  ]Based on your earned income and undeducted RRSP contribution carried forward of $[\cf1 RRSP_undeduct\cf0 ], you can contribute an additional $[\cf1 RRSP_NextYr\cf0 ] to a Registered Retirement Savings Plan.  Your RRSP contribution limit for [\cf1 Next_TaxYear\cf0 ] is $[\cf1 RRSP_Room_Next_Year\cf0 ].  Please advise our office, should the [\cf1 This_TaxYear\cf0 ] assessment notice differ from this amount.  \par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Client_Age\cf0  <'71' && ((\cf1 RRSP_undeduct\cf0  > 0) && (\cf1 RRSP_NextYr\cf0  = 0) && (\cf1 RRSP_Room_Next_Year\cf0  >0))) ]Your RRSP limit for [\cf1 Next_TaxYear\cf0 ] is $[\cf1 RRSP_Room_Next_Year\cf0 ].  Based on your undeducted RRSP contributions carried forward in the amount of $[\cf1 RRSP_undeduct\cf0 ] and your contribution limit for [\cf1 Next_TaxYear\cf0 ], you have contributed the maximum to your RRSP for [\cf1 Next_TaxYear\cf0 ].\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Client_Age\cf0  <'71' && (\cf1 RRSP_undeduct\cf0  > \cf1 RRSP_Room_Next_Year\cf0  + 2000))) ]You have EXCESS RRSP CONTRIBUTIONS.  Please contact our office at your earliest convenience to deal with the penalty provisions that the Canada Revenue Agency is liable to levy on the amount in excess $2,000 and the required process to bring this amount to the permitted level.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Client_Age\cf0  >'70' && \cf1 RRSP_undeduct\cf0  >0) ]\par
+ \par
+\lang3084\b RRSP Contribution Limit:\b0\par
+\lang1033 You have EXCESS RRSP CONTRIBUTIONS in the amount of $[\cf1 RRSP_undeduct\cf0 ] .  Please contact our office at your earliest convenience to deal with the penalty provisions that the Canada Revenue Agency is liable to levy on the excess amount and the required process to bring this amount to zero.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 GstCredit\cf0  > 0)]\par
+\par
+\b GST Credit:\b0\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 GstCredit_Total\cf0  > 117.99 && \cf1 GstCredit\cf0  > 0)]You should be receiving four equal instalments of $[\cf1 GstCredit\cf0 ] in July and October of [\cf1 Next_TaxYear\cf0 ] as well as in January and April of the following year. If you have a spouse, only one of you will be receiving it.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 GstCredit_Total\cf0  < 118.00 && \cf1 GstCredit\cf0  > 0)]You should be receiving a lump-sum payment of $[\cf1 GstCredit_Total\cf0 ] in July of [\cf1 Next_TaxYear\cf0 ]. If you have a spouse, only one of you will be receiving it.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 OTB\cf0  > 0)]\par
+\par
+\b Ontario Trillium Benefit  (\cf1 OTB\cf0 ):\b0\par
+We have estimated that starting July [\cf1 Next_TaxYear\cf0 ]  you will receive \cf1 OTB\cf0  of $[\cf1 OTB\cf0 ] per month. This payment combines the Ontario Sales Tax Credit, Energy and Property Tax Credit and Northern Ontario Energy Credit.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 CTB\cf0  > 0)]\par
+\par
+\b Child Tax Benefit:\b0\par
+Based on your [\cf1 This_TaxYear\cf0 ] income tax return, you are entitled to monthly child tax benefits of approximately $[\cf1 CTB\cf0 ] for the 12 months commencing July [\cf1 Next_TaxYear\cf0 ].\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Foreign_Report\cf0  = '')]\par
+\par
+\b Foreign Reporting:\b0\par
+According to the information you provided,  you did not hold foreign assets at any time during [\cf1 This_TaxYear\cf0 ] with a total cost of more than $100,000 Canadian and that you had no dealings with a non-resident trust or corporation.  If this information is incorrect, please respond immediately as failure to disclose this information could result in substantial penalties.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Elections\cf0  > ''  && \cf1 Deceased\cf0  = '') ]\par
+\par
+\cf1\b Elections\cf0  Canada\b0\par
+Unless we hear from you to the contrary, we have indicated a "YES" to your agreement to provide your name, address and \cf1 date\cf0  of birth to \cf1 Elections\cf0  Canada, in an effort to keep their register up to \cf1 date\cf0 .\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Elections\cf0  = '' && \cf1 Deceased\cf0  = '') ]\par
+\par
+\cf1\b Elections\cf0  Canada\b0\par
+As per your instructions, we have indicated a "NO" to provide your name, address and \cf1 date\cf0  of birth to \cf1 Elections\cf0  Canada.\par
+[\cf1 Endif\cf0 ]\par
+[If (\cf1 Deceased\cf0  > '') ]\par
+\par
+\cf1\b Deceased\cf0  Taxpayer\b0\par
+If you are the legal representative (usually the executor) of a \cf1 deceased\cf0  person, you are responsible for filing all required returns and paying all taxes owing.  You may also want to obtain a clearance certificate, If you don't, you may be liable for any tax amount the \cf1 deceased\cf0  taxpayer owes.  To request a clearance certificate please contact our office or obtain form TX19 from any tax services office or the CRA website.\par
+[\cf1 Endif\cf0 ]\par
+\par
+\b Assessments:\b0\par
+If you receive an assessment notice which differs from the return as filed, please contact us immediately.  We must determine if the assessment is correct before the time limit for an objection expires.\par
+\par
+If you require any further information, please do not hesitate to contact us.\par
+\tab\par
+Yours truly,\par
+\f1\fs16\tab\par
+\b\fs20 [\cf1 Preparer_Name\cf0 ]\fs18\par
+}
+ 

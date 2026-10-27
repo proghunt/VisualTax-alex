@@ -1,0 +1,32 @@
+object GifForm: TGifForm
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'GifForm'
+  ClientHeight = 392
+  ClientWidth = 509
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poDefault
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 0
+    Top = 0
+    Width = 509
+    Height = 392
+    Align = alClient
+    Stretch = True
+    ExplicitLeft = 144
+    ExplicitTop = 56
+    ExplicitWidth = 105
+    ExplicitHeight = 105
+  end
+end

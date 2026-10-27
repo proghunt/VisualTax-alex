@@ -1,0 +1,9 @@
+HTTP/1.0 200 OK
+Date: Mon, 05 Jul 2021 20:58:43 GMT
+Server: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.3.21
+X-Powered-By: PHP/7.3.21
+Set-Cookie: PHPSESSID=t05u272n2sg5l8h0bpi7o5posm; path=/
+Content-Length: 138
+Connection: close
+Content-Type: application/xml; charset=UTF-8
+

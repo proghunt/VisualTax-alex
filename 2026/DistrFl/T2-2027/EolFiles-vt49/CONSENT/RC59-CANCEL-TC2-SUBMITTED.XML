@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/04/secext">
+      <wsse:UsernameToken>
+        <wsse:Username>B0865</wsse:Username>
+        <wsse:Password>767AJ5X</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+    <wsse:VendorCredential soap-env:actor="ca.gc.ccra.klco" soap-env:mustUnderstand="1" xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/04/secext">
+      <xskl:VendorCredentialsTypeRequest xmlns:xskl="http://www.cra-arc.gc.ca/xmlns/xskl/request/1-0-0">
+      <xskl:softwareID>VT49</xskl:softwareID>
+      <xskl:softwareRevisionDate>2024/03/21</xskl:softwareRevisionDate>
+      <xskl:softwareIDTypeCode>T2</xskl:softwareIDTypeCode>
+      </xskl:VendorCredentialsTypeRequest>
+    </wsse:VendorCredential>
+  </soap-env:Header>
+
+<soap-env:Body>
+  <xscop:EfileRC59XType xmlns:xscop="http://www.cra-arc.gc.ca/xmlns/xscop" soap-env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <xscop:EfileRC59XTypeRequest xmlns:xscop="http://www.cra-arc.gc.ca/xmlns/xscop/request/1-0-0" >
+      <xscop:clientData>
+        <xscop:clientBusinessNumber>597032382</xscop:clientBusinessNumber>
+        <xscop:businessName>BUSAUTH ONE</xscop:businessName>
+      </xscop:clientData>
+      <xscop:representativeData>
+        <xscop:racIDType>01</xscop:racIDType>
+        <xscop:repID>28TQ7RB</xscop:repID>
+      </xscop:representativeData>
+      <xscop:signingAuthority>
+        <xscop:firstName>Corbin</xscop:firstName>
+        <xscop:lastName>Hudson</xscop:lastName>
+      </xscop:signingAuthority>
+      <xscop:cancellationCode>02</xscop:cancellationCode>
+    </xscop:EfileRC59XTypeRequest>
+  </xscop:EfileRC59XType>
+</soap-env:Body>
+
+</soap-env:Envelope>
+

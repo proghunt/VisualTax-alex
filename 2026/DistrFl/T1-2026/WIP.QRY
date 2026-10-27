@@ -1,0 +1,7 @@
+Select
+clients.*
+FROM clients
+As clients
+where PRP_Status = "00"
+Order By Last_Name
+

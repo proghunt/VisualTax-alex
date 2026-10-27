@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Description: CRA Frrms Web Services - T5 forms
+Type (Request or Response): Response
+Version: 1-0-0
+Date created:
+Contact:
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:t5rsp="http://www.cra-arc.gc.ca/xmlns/t5rsp/t5response/1-0-0"
+    xmlns:t1rsp="http://www.cra-arc.gc.ca/xmlns/t1rsp/response/1-0-0"
+    xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+    targetNamespace="http://www.cra-arc.gc.ca/xmlns/t5rsp/t5response/1-0-0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="t5rsp/1-0-0">
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" schemaLocation="standarddatatypes.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/t1rsp/response/1-0-0" schemaLocation="t1wsresponse.xsd"/>
+
+    <xsd:element name="T5ReturnResponse" type="t5rsp:T5ReturnResponseType"/>
+    <xsd:complexType name="T5ReturnResponseType">
+        <xsd:sequence>
+            <xsd:element ref="t5rsp:t5ResultCode" minOccurs="0"/>
+	        <xsd:element ref="t5rsp:t5TransmissionNumber" minOccurs="0"/>   
+            <xsd:element ref="t5rsp:PartnershipNumber" minOccurs="0"/> 
+            <xsd:element ref="t5rsp:t5TaxYear" minOccurs="0"/>
+            <xsd:element ref="t1rsp:FileReturnResponse"/>
+            <xsd:element ref="t5rsp:t5TimeStamp" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="t5ResultCode" type="t5rsp:ResultCodeType" />
+    <xsd:simpleType name="ResultCodeType" >
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="6"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+	
+    <xsd:element name="t5TransmissionNumber" type="sdt:CodeType"/>
+
+
+	<xsd:element name="PartnershipNumber" type="t5rsp:PartnershipNumberType" />
+    <xsd:simpleType name="PartnershipNumberType">
+        <xsd:restriction base="sdt:NumberType">
+            <xsd:pattern value="([0-9]{9}RZ[0-9]{4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+      
+
+    
+    <xsd:element name="t5TaxYear" type="t5rsp:YearType"/>
+    <xsd:simpleType name="YearType">
+        <xsd:restriction base="sdt:NumberType">
+            <xsd:pattern value="([2][0][1-9]{2})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    
+    <xsd:element name="t5TimeStamp" type="sdt:DateTimeType"/>
+       <xsd:annotation>
+            <xsd:documentation xml:lang="en">Format is YYYY-MM-DDThh:mm:ss.sm</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Le format est AAAA-MM-JJThh:mm:ss.sm</xsd:documentation>
+        </xsd:annotation>
+
+    <xsd:element name="T5TermsAndConditionsResponse" type="t1rsp:TermsAndConditionsResponseType"/>  
+
+
+</xsd:schema>

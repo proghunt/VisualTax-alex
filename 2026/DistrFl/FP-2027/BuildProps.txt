@@ -1,0 +1,84 @@
+C:\VtPrograms\2025\DistrFl\FP-2026\ualtax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\ualtax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\ubc479.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\ubcTax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\ubctax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\ucsbLand.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\udot.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uGOALSR.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uhomes.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uinvestprop.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\ULiabFrame.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\umantx_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\umantx_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\umb479.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unbtax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unbtax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uNetWort.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unfTax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unftax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uns479.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unstax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unstax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unt479.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unu479.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unutax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unutax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unwtax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\unwtax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uon479.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uonohip.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uontax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uontax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\upaccum.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\upetax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\upetax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uProblemsSolutions.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\urrspmf.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\us1_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\us1_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\usktax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\usktax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\utaxplanner.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uvacprop.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uyktax_1.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uyktax_2.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uyt479.dfm: Form not in DB
+C:\VtPrograms\2025\DistrFl\FP-2026\uANALYSIS.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uDEBTREP.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uDLRBACK.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uFACHARTS.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uFPCOVER.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uFUNDANAL.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uFUTVAL.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uIMPLEMENT.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uINCSTREAM.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uLCHARTS.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uMFMASTER.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uMONITOR.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uMORTGAGE.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uNESTEGG.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uNWCHART.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uOBJECTIVE.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPCHARTS.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPLANTOORD.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPORTFOL.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPROBATE.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPROCESS1.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPROCESS2.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPROCESS3.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPROCESS4.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPROCESS5.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPROCESS6.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPRTFCHART.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uPRTFCREATE.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uRIFFRM.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uRTFEDIT.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uSAVINGS.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uSHORTFALL.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uSTRATEGY.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uTRANSACT.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uTYPPORTF.DFM: File not found
+C:\VtPrograms\2025\DistrFl\FP-2026\uUPDPRICE.DFM: File not found
+FP-2026: Check SinLabels.txt
+FP-2026: Non Vt components found. See CheckComp.Txt

@@ -1,0 +1,602 @@
+  unit T2_2027EfileRC59X;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls, System.IOUtils; // 20180731 Igor
+
+type TEfileType = (etRC59, etRC59X);
+
+type
+  TEfileRC59XT2_2027 = class(TForm)
+    Panel1: TPanel;
+    ProductionOrTestGroup: TRadioGroup;
+    URLForWebServices: TEdit;
+    RC59EfileBtn: TBitBtn;
+    MemoLog: TMemo;
+    MemoFile: TMemo;
+    RC59XEfileBtn: TBitBtn;
+    BitBtn1: TBitBtn;
+    // 20180731 Igor >>>
+    Panel4: TPanel;
+    Label1: TLabel;
+    edSubmittedFile: TEdit;
+    Panel5: TPanel;
+    Label2: TLabel;
+    edReceivedFile: TEdit;
+    Panel6: TPanel;
+    Label3: TLabel;
+    btnViewHTML: TSpeedButton;
+    edReceivedHTMLFile: TEdit; //20180518 Igor
+    // 20180731 Igor <<<
+    procedure ProductionOrTestGroupClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure RC59EfileBtnClick(Sender: TObject);
+    procedure RC59XEfileBtnClick(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject); //20180518 Igor
+    procedure btnViewHTMLClick(Sender: TObject); // 20180731 Igor
+  private
+    { Private declarations }
+    OnlineNo: string;
+    Password: string;
+    Url: string;
+    NetFileDir: string;
+    RetNo: integer;
+    FRC59Dir: string; // 20180731 Igor
+
+    procedure CreateSoapMessage(AType: TEfileType; var SoapMessage: string);
+    function CreateSoapHeader: string;
+    function CreateBody(AType: TEfileType): string;
+    procedure SubmitSoapMessage(SoapMessage: string);
+    function ReplacePredefinedXMLEntities(info: string): string;
+    function PrepareValue(Value: string; MaxLength: integer = 0): string;
+    procedure WebServiceEfile(AType: TEfileType);
+    Procedure ParseXmlResponse(Response, ATitle: string); // 20180731 Igor
+    // 20180731 Igor >>>
+    function GetSubmittedFileName: string;
+    function GetReceivedFileName: string;
+    function GetReceivedHTMLFileName: string;
+    procedure SaveToFile(AText, AFileName: string);
+    // 20180731 Igor <<<
+  public
+    { Public declarations }
+   SoftwareId:String; //20180624
+
+  end;
+
+const
+ // SoftwareID = RSIApprovalCode; //'070V';  //20180624
+  SoftwareRevisionDate = '2018';
+  SoftwareIDTypeCode = 'T2';
+
+
+implementation
+
+uses T2_2027TrimStr, vtCommon, MSXML2_TLB, ComObj, System.RegularExpressions,
+  Xml.XMLDoc, Xml.XMLIntf, StrUtils, vtTrimStr, vtMulti, vtShowMessageHTML, // 20180731 Igor
+  T2_2027Declare;  //20180624
+
+{$R *.dfm}
+
+function ClearXML(AXML: String): string; // 20180731 Igor
+begin
+  Result := TRegEx.Replace(AXML,   '<[^/: >]*:', '<');
+  Result := TRegEx.Replace(Result, '</[^/: >]*:', '</');
+end;
+
+function TEfileRC59XT2_2027.ReplacePredefinedXMLEntities(info: string): string;
+begin
+  info := Trim(info);
+  info := ReplaceChar(info, '&', '&amp;');
+  info := ReplaceChar(info, '<', '&lt;');
+  info := ReplaceChar(info, '"', '&quot;');
+  info := ReplaceChar(info, '>', '&gt;');
+  info := ReplaceChar(info, '''', '&apos;');
+  Result := info;
+end;
+
+procedure TEfileRC59XT2_2027.SaveToFile(AText, AFileName: string); // 20180731 Igor
+var L: TStringList;
+begin
+  L := TStringList.Create;
+  try
+    L.Text := AText;
+    L.SaveToFile(AFileName, TEncoding.UTF8);
+  finally
+    L.Free;
+  end;
+end;
+
+procedure TEfileRC59XT2_2027.SubmitSoapMessage(SoapMessage: string);
+Var
+  objHttp: IXMLHTTPRequest;
+  Response: String;
+  ResponseXmlFile: String;
+  AList: TStringList;
+  FTitle: string; // 20180731 Igor
+begin
+  objHttp := CreateOleObject('MSXML2.XMLHTTP.3.0') as IXMLHTTPRequest;
+  //20180518 Igor >>>
+  //objHttp.open('POST', URLForWebServices.Text, False, OnlineNo, Password);
+  objHttp.open('POST', URLForWebServices.Text, False, '', '');
+  //20180518 Igor <<<
+  objHttp.setRequestHeader('SOAPAction', 'NA');
+  objHttp.setRequestHeader('Content-Type', 'text/xml');
+  // 20180731 Igor >>>
+  SaveToFile(SoapMessage, GetSubmittedFileName);
+  edSubmittedFile.Text := GetSubmittedFileName;
+  if Pos('EfileRC59TypeRequest', SoapMessage) > 0 then
+    FTitle := 'RC59 XML submission'
+  else
+    FTitle := 'RC59X XML submission';
+  // 20180731 Igor <<<
+  Screen.Cursor := crHourGlass;
+  try
+    objHttp.send(SoapMessage);
+    Screen.Cursor := crDefault;
+    delay(2000);
+    Screen.Cursor := crDefault;
+    Response := objHttp.ResponseText;
+    // 20180731 Igor >>>
+    SaveToFile(Response, GetReceivedFileName);
+    edReceivedFile.Text := GetReceivedFileName;
+
+    ParseXmlResponse(Response, FTitle);
+
+    if FileExists(GetReceivedHTMLFileName) then
+      edReceivedHTMLFile.Text := GetReceivedHTMLFileName;
+    // 20180731 Igor <<<
+    MemoLog.Clear;
+    MemoLog.Text := ReplaceStr(Response, '><', '>' + #13#10 + '<');
+
+  finally
+    Screen.Cursor := crDefault;
+  end;
+end;
+
+procedure TEfileRC59XT2_2027.ParseXmlResponse(Response, ATitle: string); // 20180731 Igor
+var X: XML.XMLDoc.TXMLDocument;
+    Node: IXMLNode;
+    ALines, cStr: string; // 20180731 Igor
+    ConfirmNumber: string; // 20180824 Igor
+
+  {
+  function ClearXML(AXML: String): string;
+  begin
+    Result := TRegEx.Replace(AXML, '<[^/: >]*:', '<');
+    Result := TRegEx.Replace(Result, '</[^/: >]*:', '</');
+  end;
+  }
+
+  function GetNodeValue(ANode: IXMLNode; ANodeName: string; ACaption: string = ''): string; // 20180731 Igor
+  var TNode: IXMLNode;
+  begin
+    Result := '';
+    TNode := ANode.ChildNodes.FindNode(ANodeName);
+    if Assigned(TNode) and (TNode.NodeValue <> NULL) then
+    begin
+      if not SameText(ACaption, '') then
+        Result := ACaption + ': ';
+      Result := Result + TNode.NodeValue;
+    end;
+  end;
+
+  function GetErrorMessage(ANode: IXMLNode): string; // 20180731 Igor
+  var I: integer;
+      FNode: IXMLNode;
+      cValue: string;
+  begin
+    Result := '';
+    FNode := ANode.ChildNodes.FindNode('errorMessageEnglishText');
+    if Assigned(FNode) then
+    begin
+      Result := FNode.NodeValue;
+      Exit;
+    end;
+    // 20180828 Igor >>>
+    FNode := ANode.ChildNodes.FindNode('englishMessageText');
+    if Assigned(FNode) then
+    begin
+      Result := FNode.NodeValue;
+      Exit;
+    end;
+    // 20180828 Igor <<<
+    for I := 0 to ANode.ChildNodes.Count - 1 do
+    begin
+      cValue := GetErrorMessage(ANode.ChildNodes[I]);
+      if not SameText(cValue, '') then
+      begin
+        if Pos(cValue, Result) > 0 then continue;
+        if not SameText(Result, '') then
+          Result := Result + '<br>';
+        Result := Result + cValue;
+      end;
+    end;
+  end;
+
+  procedure ShowHTML(ACaption, ALines: string; AError: boolean); // 20180731 Igor
+  var L: TStringList;
+      A: TArray<string>;
+      I: integer;
+      cColor: string;
+  begin
+    ACaption := HTMLEscape(ACaption);
+    ALines := ReplaceText(HTMLEscape(ALines), '&lt;br&gt;', '<br>');
+    if AError then
+      cColor := 'red'
+    else
+      cColor := 'green';
+    L := TStringList.Create;
+    try
+      L.Add('<HTML><HEAD>');
+      L.Add('<META CHARSET="UTF-8">');
+      L.Add('<TITLE>T2 EFile Service</TITLE>');
+      L.Add('</HEAD>');
+      L.Add('<BODY>');
+      L.Add('<DIV id="contentheader">');
+      L.Add('<H1><FONT size=5><STRONG>'+ ATitle +'</STRONG></FONT></H1>');
+      L.Add('<H2><FONT color='+ cColor +' size=5><STRONG>'+ ACaption +'</STRONG></FONT></H2>');
+      L.Add('<P>Received: '+ DateTimeToStr(Now) +'</P>');
+      L.Add('<HR>');
+
+      L.Add('<P></P>');
+      A := ALines.Split([#13], ExcludeEmpty);
+      for i := 0 to Length(A) - 1 do
+      begin
+        L.Add('<P><FONT size=3 face="arial, helvetica, sans-serif">'+
+          '<strong>' +
+          Copy(A[i], 1, Pos(':', A[i])) +
+          '</strong>'+
+          Copy(A[i], Pos(':', A[i]) + 1, Length(A[i])) +
+          '</FONT></P>');
+      end;
+      L.Add('</DIV></BODY></HTML>');
+      L.SaveToFile(GetReceivedHTMLFileName, TEncoding.UTF8);
+      ShowMessageHTML(L.Text, 600);
+    finally
+      L.Free;
+    end;
+  end;
+
+begin
+  X := XML.XMLDoc.TXMLDocument.Create(Application);
+  try
+    try
+      X.XML.Clear;
+      X.XML.Add(ClearXML(Response));
+      if not(X.Active) then
+        X.Active := true;
+      Node := X.DocumentElement;
+      if (Node = nil) or (Node.NodeName <> 'Envelope') then
+        raise Exception.Create('Bad Response XML structure: ' + Response);
+      Node := Node.ChildNodes.FindNode('Body');
+      if (Node = nil) then
+        raise Exception.Create('Bad Response XML structure: ' + Response);
+      Node := Node.ChildNodes.First;
+      if (Node = nil) then
+        raise Exception.Create('Bad Response XML structure: ' + Response);
+      // 20180731 Igor >>>
+      if SameText(Node.NodeName, 'Fault') then
+      begin
+        
+        ALines := '';
+        cStr := GetNodeValue(Node, 'faultcode', 'Fault Code');
+        if not SameText(cStr, '') then
+          ALines := ALines + cStr + #13;
+        cStr := GetNodeValue(Node, 'faultstring', 'Fault String');
+        if not SameText(cStr, '') then
+          ALines := ALines + cStr + #13;
+        cStr := GetErrorMessage(Node);
+        if not SameText(cStr, '') then
+          ALines := ALines + 'Error: ' + cStr + #13;
+        ShowHTML('Failed Response', ALines, true);
+        Exit;
+      end;
+      if SameText(Node.NodeName, 'EfileRC59ResponseType') or
+         SameText(Node.NodeName, 'EfileRC59XResponseType') then
+      begin
+        ALines := '';
+        cStr := GetNodeValue(Node, 'efileID', 'EFile ID');
+        if not SameText(cStr, '') then
+          ALines := ALines + cStr + #13;
+        cStr := GetNodeValue(Node, 'businessNumber', 'Business Number');
+        if not SameText(cStr, '') then
+          ALines := ALines + cStr + #13;
+        // 20180824 Igor >>>
+        ConfirmNumber := '';
+        cStr := GetNodeValue(Node, 'timestampDateTime', '');
+        if not SameText(cStr, '') then
+        begin
+          ConfirmNumber := Copy(cStr, 1, 4) + '/' + Copy(cStr, 6, 2) + '/' + Copy(cStr, 9, 2);
+          cStr := Copy(cStr, 1, 10) + ' ' + Copy(cStr, 12, 8);
+          ALines := ALines + 'Date: ' + cStr + #13;
+        end;
+        if SameText(ConfirmNumber, '') then
+          ConfirmNumber := FormatDateTime('yyyy/mm/dd', Date);
+        StoreElm(RetNo, GetFormNo('RC59X'), 8, ConfirmNumber);
+        // 20180824 Igor <<<
+        ShowHTML('RC59X Efiled successfully!', ALines, false); //20180824
+        Exit;
+      end;
+      // 20180731 Igor <<<
+    except on E: Exception do
+      begin
+        ShowMessage('Error occured while processing CRA SOAP response: '+ #13 + E.Message + #13#13 + 'Response: '+ Response);
+      end;
+    end;
+  finally
+    X.Free;
+  end;
+end;
+
+function TEfileRC59XT2_2027.PrepareValue(Value: string;
+  MaxLength: integer = 0): string;
+begin
+  Value := ReplacePredefinedXMLEntities(Trim(Value));
+  if MaxLength > 0 then
+    Value := Copy(Value, 1, MaxLength);
+  Result := Value;
+end;
+
+procedure TEfileRC59XT2_2027.BitBtn1Click(Sender: TObject); //20180518 Igor
+var SoapMessage: string;
+begin
+  SoapMessage := MemoFile.Text;
+  SubmitSoapMessage(SoapMessage);
+end;
+
+procedure TEfileRC59XT2_2027.btnViewHTMLClick(Sender: TObject); // 20180731 Igor
+var L: TStringList;
+begin
+  if FileExists(edReceivedHTMLFile.Text) then
+  begin
+    L := TStringList.Create;
+    try
+      L.LoadFromFile(edReceivedHTMLFile.Text);
+      ShowMessageHTML(L.Text, 600);
+    finally
+      L.Free;
+    end;
+  end;
+end;
+
+function TEfileRC59XT2_2027.CreateBody(AType: TEfileType): string;
+var L: TStringList;
+
+    clientBusinessNumber: string;
+    businessName: string;
+    racIDType, repID, groupID, repBusinessNumber: string;
+
+    programmAccountsType: integer;
+    expiryDate: string;
+    authLevel: string;
+    programmIdentifier : string;
+    programmRefNumber  : string;
+    //20180728 Con
+    programmAuthLevels: array of string;
+    programmExpiryDates: array of string;
+
+    signingFirstName, signingLastName: string;
+    cancellationCode: string;
+
+    I: integer;
+begin
+  clientBusinessNumber := PrepareValue(FetchElm(RetNo, 'RC59X', 2), 9);
+
+  businessName := PrepareValue(FetchElm(RetNo, 'RC59X', 1), 175);
+
+  repID := PrepareValue(FetchElm(RetNo, 'RC59X', 10), 7);
+  groupID := PrepareValue(FetchElm(RetNo, 'RC59X', 57), 6);
+  repBusinessNumber := PrepareValue(FetchElm(RetNo, 'RC59X', 7), 9);
+
+  if not SameText(repID, '') then
+    racIDType := '01'
+  else if not SameText(groupID, '') then
+    racIDType := '03'
+  else if not SameText(repBusinessNumber, '') then
+    racIDType := '02'
+  else
+    racIDType := ''; // raise error?
+
+  If FetchElm(RetNo, 'RC59X', 20)>''      then cancellationCode := '01'
+  Else If FetchElm(RetNo, 'RC59X', 21)>'' then cancellationCode := '02'
+  Else If FetchElm(RetNo, 'RC59X', 27)>'' then cancellationCode := '03'
+  Else If FetchElm(RetNo, 'RC59X', 35)>'' then cancellationCode := '04';
+
+  if (cancellationCode = '03') then
+  begin
+    programmIdentifier := PrepareValue(FetchElm(RetNo, 'RC59X', 28), 9);
+    programmRefNumber  := PrepareValue(FetchElm(RetNo, 'RC59X', 34), 9);
+  end
+  else if (cancellationCode = '04') then
+  begin
+    programmIdentifier := PrepareValue(FetchElm(RetNo, 'RC59X', 41), 9);
+    programmRefNumber  := PrepareValue(FetchElm(RetNo, 'RC59X', 42), 9);
+  end;
+
+  signingFirstName := PrepareValue(FetchElm(RetNo, 'RC59X', 52), 30);
+  signingLastName  := PrepareValue(FetchElm(RetNo, 'RC59X', 53), 30);
+
+  L := TStringList.Create;
+  try
+    L.Add('<soap-env:Body>'); //20180518 Igor
+    //20180708
+    L.Add('<xscop:EfileRC59XType xmlns:xscop="http://www.cra-arc.gc.ca/xmlns/xscop" soap-env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">'); //20180808 JZ
+    L.Add('<xscop:EfileRC59XTypeRequest xmlns:xscop="http://www.cra-arc.gc.ca/xmlns/xscop/request/1-0-0" >');                                              //20180808 JZ
+
+    L.Add('<xscop:clientData>');
+    L.Add('  <xscop:clientBusinessNumber>'+ clientBusinessNumber +'</xscop:clientBusinessNumber>');
+    L.Add('  <xscop:businessName>'+ businessName +'</xscop:businessName>');
+    L.Add('</xscop:clientData>');
+
+    if (cancellationCode = '02') or (cancellationCode = '04') then
+    begin
+
+      L.Add('<xscop:representativeData>');
+
+      L.Add('  <xscop:racIDType>'+ racIDType +'</xscop:racIDType>');
+
+      If RepId>'' then L.Add('  <xscop:repID>'+ repID +'</xscop:repID>')
+      else If groupId>'' then L.Add('  <xscop:groupID>'+ groupID +'</xscop:groupID>')
+      else If repBusinessNumber>'' then L.Add('  <xscop:repBusinessNumber>'+ repBusinessNumber +'</xscop:repBusinessNumber>'); //20180728
+
+      L.Add('</xscop:representativeData>');
+
+    end;
+
+    if (cancellationCode = '03') or (cancellationCode = '04') then
+    begin
+
+      L.Add('<xscop:programAccountData>');
+      L.Add('  <xscop:businessProgramIdentifier>'+programmIdentifier+'</xscop:businessProgramIdentifier>');
+      L.Add('  <xscop:businessProgramAccountReferenceNumber>'+programmRefNumber+'</xscop:businessProgramAccountReferenceNumber>');
+      L.Add('</xscop:programAccountData>');
+
+    end;
+
+
+    L.Add('<xscop:signingAuthority>');
+    L.Add('  <xscop:firstName>'+ signingFirstName +'</xscop:firstName>');
+    L.Add('  <xscop:lastName>'+ signingLastName +'</xscop:lastName>');
+    L.Add('</xscop:signingAuthority>');
+
+    L.Add('<xscop:cancellationCode>'+ cancellationCode +'</xscop:cancellationCode>');
+    L.Add('</xscop:EfileRC59XTypeRequest>');
+    L.Add('</xscop:EfileRC59XType>'); ////20180808 JZ //20180518 Igor
+    L.Add('</soap-env:Body>'); //20180518 Igor
+    Result := L.Text;
+  finally
+    L.Free;
+  end;
+end;
+
+function TEfileRC59XT2_2027.CreateSoapHeader: string;
+var L: TStringList;
+begin
+  L := TStringList.Create;
+  try
+    //20180518 Igor >>>
+    L.Add('<soap-env:Header>');
+    L.Add('<wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/04/secext">');
+    L.Add('  <wsse:UsernameToken>');
+    L.Add('    <wsse:Username>'+ PrepareValue(OnlineNo) +'</wsse:Username>');
+    L.Add('    <wsse:Password>'+ PrepareValue(Password) +'</wsse:Password>');
+    L.Add('  </wsse:UsernameToken>');
+    L.Add('</wsse:Security>');
+    L.Add('<wsse:VendorCredential soap-env:actor="ca.gc.ccra.klco" soap-env:mustUnderstand="1" xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/04/secext">');
+    L.Add('  <xskl:VendorCredentialsTypeRequest xmlns:xskl="http://www.cra-arc.gc.ca/xmlns/xskl/request/1-0-0">');
+    L.Add('    <xskl:softwareID>'+ PrepareValue(SoftwareID) +'</xskl:softwareID>');
+    L.Add('    <xskl:softwareRevisionDate>'+ PrepareValue(SoftwareRevisionDate) +'</xskl:softwareRevisionDate>');
+    L.Add('    <xskl:softwareIDTypeCode>'+ PrepareValue(SoftwareIDTypeCode) +'</xskl:softwareIDTypeCode>');
+    L.Add('  </xskl:VendorCredentialsTypeRequest>');
+    L.Add('</wsse:VendorCredential>');
+    L.Add('</soap-env:Header>');
+    //20180518 Igor <<<
+    Result := L.Text;
+  finally
+    L.Free;
+  end;
+end;
+
+procedure TEfileRC59XT2_2027.CreateSoapMessage(AType: TEfileType; var SoapMessage: string);
+var SoapHeader, SoapBody: string;
+    L: TStringList;
+begin
+  SoapHeader := CreateSoapHeader;
+  SoapBody := CreateBody(AType);
+  L := TStringList.Create;
+  try
+    L.Add('<?xml version="1.0" encoding="UTF-8"?>');
+    L.Add('<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">'); //20180518 Igor
+    L.Add(SoapHeader);
+    L.Add(SoapBody);
+    L.Add('</soap-env:Envelope>'); //20180518 Igor
+    SoapMessage := L.Text;
+  finally
+    L.Free;
+  end;
+end;
+
+procedure TEfileRC59XT2_2027.FormShow(Sender: TObject);
+begin
+  SoftwareID:= RSIApprovalCode; //'070V';  //20180624
+  ProductionOrTestGroup.ItemIndex := 0;  //20180824 CON default to production
+  ProductionOrTestGroupClick(nil); // 20180828 Igor
+  RetNo := GetCurrentRetNo;
+  // 20180731 Igor >>>
+  GetEOLParms(OnlineNo,Password,Url,NetFileDir);
+  FRC59Dir := TPath.Combine(NetFileDir, 'RC59X');
+  if FileExists(GetSubmittedFileName) then
+  begin
+    edSubmittedFile.Text := GetSubmittedFileName;
+    MemoFile.Lines.LoadFromFile(GetSubmittedFileName);
+  end;
+  if FileExists(GetReceivedFileName) then
+  begin
+    edReceivedFile.Text := GetReceivedFileName;
+    MemoLog.Lines.LoadFromFile(GetReceivedFileName);
+    MemoLog.Text := ReplaceStr(ClearXml(MemoLog.Text), '><', '>' + #13#10 + '<');
+  end;
+  if FileExists(GetReceivedHTMLFileName) then
+    edReceivedHTMLFile.Text := GetReceivedHTMLFileName;
+  // 20180731 Igor <<<
+end;
+
+function TEfileRC59XT2_2027.GetReceivedFileName: string; // 20180731 Igor
+begin
+  ForceDirectories(FRC59Dir);
+  Result := TPath.Combine(FRC59Dir, RetList[RetNo].SourceFlName + '-RECEIVED.XML');
+end;
+
+function TEfileRC59XT2_2027.GetReceivedHTMLFileName: string; // 20180731 Igor
+begin
+  ForceDirectories(FRC59Dir);
+  Result := TPath.Combine(FRC59Dir, RetList[RetNo].SourceFlName + '-RECEIVED.HTML');
+end;
+
+function TEfileRC59XT2_2027.GetSubmittedFileName: string; // 20180731 Igor
+begin
+  ForceDirectories(FRC59Dir);
+  Result := TPath.Combine(FRC59Dir, RetList[RetNo].SourceFlName + '-SUBMITTED.XML');
+end;
+
+procedure TEfileRC59XT2_2027.ProductionOrTestGroupClick(Sender: TObject);
+begin
+  // testing mode
+  //20180518 Igor >>>
+  if ProductionOrTestGroup.ItemIndex = 1 then
+  begin
+    UrlForWebServices.Text := 'https://apps-ct.cra-arc.gc.ca/ebci/klco/webservices/services/ERC59Service?wsdl';
+  end
+  // production mode
+  else
+  begin
+    ProductionOrTestGroup.ItemIndex := 0;
+    UrlForWebServices.Text := 'https://apps.cra-arc.gc.ca/ebci/klco/webservices/services/ERC59Service?wsdl';
+  end;
+  //20180518 Igor <<<
+end;
+
+procedure TEfileRC59XT2_2027.WebServiceEfile(AType: TEfileType);
+var SoapMessage: string;
+begin
+  GetEOLParms(OnlineNo, Password, Url, NetFileDir);
+  CreateSoapMessage(AType, SoapMessage);
+  MemoFile.Clear;
+  MemoFile.Lines.Add(SoapMessage);
+end;
+
+
+
+procedure TEfileRC59XT2_2027.RC59EfileBtnClick(Sender: TObject);
+begin
+  //WebServiceEfile(etRC59);
+end;
+
+procedure TEfileRC59XT2_2027.RC59XEfileBtnClick(Sender: TObject);
+begin
+  WebServiceEfile(etRC59X);
+end;
+
+end.

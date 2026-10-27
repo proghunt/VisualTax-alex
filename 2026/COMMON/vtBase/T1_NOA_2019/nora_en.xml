@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T1Notice>
+    <VersionID>5</VersionID>
+    <SourceSystemCode>01</SourceSystemCode>
+    <AccountNumber>XXXXX7224</AccountNumber>
+    <NoticeType>T491</NoticeType>
+    <Language>E</Language>
+    <TaxPayerGivenName></TaxPayerGivenName>
+    <TaxPayerSurname></TaxPayerSurname>
+    <NoticeTitle>Notice of reassessment</NoticeTitle>
+    <NoticeDetailsTitle>Notice details</NoticeDetailsTitle>
+    <AccountNumberTitle>Social insurance number</AccountNumberTitle>
+    <MaskedAccountNumber>XXX XX7 224</MaskedAccountNumber>
+    <AddressTitle>Address</AddressTitle>
+    <AddressLine1Text>Address Line 1</AddressLine1Text>
+    <AddressLine2Text>Address Line 2</AddressLine2Text>
+    <AddressLine3Text>Address Line 3</AddressLine3Text>
+    <TaxYearTitle>Tax year</TaxYearTitle>
+    <TaxYear>2017</TaxYear>
+    <ResidenceProvinceText>ON</ResidenceProvinceText>
+    <FilingDateText></FilingDateText>
+    <TaxProvinceText>ON</TaxProvinceText>
+    <AssessmentTitle>Date issued</AssessmentTitle>
+    <AssessmentDateText>Mar 13, 2020</AssessmentDateText>
+    <AssessmentDate>2020-03-13</AssessmentDate>
+    <ReturnMail>
+        <ReturnMailText>SUDBURY ON P3A 5C1</ReturnMailText>
+    </ReturnMail>
+    <AccessCodeTitle>Access code</AccessCodeTitle>
+    <AccessCode>HW3W5MM6</AccessCode>
+    <BalanceText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>We reassessed your 2017 income tax and benefit return and recalculated your balance.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>You need to pay </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>$8,132.49</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> minus any amounts you paid that we have not processed yet.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </BalanceText>
+    <CommisionerSignatureText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Thank you,</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Bob Hamilton</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Commissioner of Revenue</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </CommisionerSignatureText>
+    <TaxAssessmentTitle>Tax reassessment</TaxAssessmentTitle>
+    <TaxAssessment>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>We calculated your taxes using the amounts below. The following summary is based on the information we have or you gave us.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>We may review your return later to verify income you reported or deductions or credits you claimed. For more information, go to </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/taxes-reviews</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>. Keep all your slips, receipts, and other supporting documents in case we ask to see them.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </TaxAssessment>
+    <SummaryTitle>Summary</SummaryTitle>
+    <LineTitle>Line</LineTitle>
+    <DescriptionTitle>Description</DescriptionTitle>
+    <ReturnAmountTitle>$ Amount on last assessment</ReturnAmountTitle>
+    <CRDRReturnAmountTitle>CR/DR</CRDRReturnAmountTitle>
+    <FinalAmountTitle>$ Final amount</FinalAmountTitle>
+    <CRDRFinalAmountTitle>CR/DR</CRDRFinalAmountTitle>
+    <SummaryTableRow>
+        <SummaryLineNumber>150</SummaryLineNumber>
+        <SummaryDescription>Total income</SummaryDescription>
+        <ReturnAmount>68,176</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>68,176</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>236</SummaryLineNumber>
+        <SummaryDescription>Net income</SummaryDescription>
+        <ReturnAmount>68,176</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>68,176</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>260</SummaryLineNumber>
+        <SummaryDescription>Taxable income</SummaryDescription>
+        <ReturnAmount>68,176</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>68,176</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>350</SummaryLineNumber>
+        <SummaryDescription>Total federal non-refundable tax credits</SummaryDescription>
+        <ReturnAmount>2,591</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>2,591</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>6150</SummaryLineNumber>
+        <SummaryDescription>Total Newfoundland and Labrador non-refundable tax credits</SummaryDescription>
+        <ReturnAmount>886</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>886</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>420</SummaryLineNumber>
+        <SummaryDescription>Net federal tax</SummaryDescription>
+        <ReturnAmount>8,859.11</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>8,859.11</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>428</SummaryLineNumber>
+        <SummaryDescription>Net Newfoundland and Labrador tax</SummaryDescription>
+        <ReturnAmount>7,319.64</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>7,319.64</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>435</SummaryLineNumber>
+        <SummaryDescription>Total payable</SummaryDescription>
+        <ReturnAmount>16,178.75</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>16,178.75</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>437</SummaryLineNumber>
+        <SummaryDescription>Total income tax deducted</SummaryDescription>
+        <ReturnAmount>0.00</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>0.00</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Subtotal credits</SummaryDescription>
+        <ReturnAmount>6,920.13</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>6,920.13</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>482</SummaryLineNumber>
+        <SummaryDescription>Total credits</SummaryDescription>
+        <ReturnAmount>6,920.13</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>6,920.13</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Subtotal (Total payable minus Total credits)</SummaryDescription>
+        <ReturnAmount>23,098.88</ReturnAmount>
+        <CRDRReturnAmountIndicator>DR</CRDRReturnAmountIndicator>
+        <FinalAmount>23,098.88</FinalAmount>
+        <CRDRFinalAmountIndicator>DR</CRDRFinalAmountIndicator>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Balance from this reassessment</SummaryDescription>
+        <ReturnAmount> </ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>0.00</FinalAmount>
+        <CRDRFinalAmountIndicator></CRDRFinalAmountIndicator>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Previous account balance</SummaryDescription>
+        <ReturnAmount> </ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>8,132.49</FinalAmount>
+        <CRDRFinalAmountIndicator>DR</CRDRFinalAmountIndicator>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Balance due</SummaryDescription>
+        <ReturnAmount> </ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>8,132.49</FinalAmount>
+        <CRDRFinalAmountIndicator>DR</CRDRFinalAmountIndicator>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <ExplanTitle>Explanation of changes and other important information</ExplanTitle>
+    <ExplanText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>We will send you an explanation of this reassessment within 10 days.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </ExplanText>
+    <ExplanText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>You can avoid more interest charges if you pay the balance due by April 2, 2020.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </ExplanText>
+    <ExplanText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>If you have questions about your reassessment, please call our Individual Tax and Enquiries line at 1-800-959-8281.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </ExplanText>
+    <MoreInformationTitle>More information</MoreInformationTitle>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>If you need more information about your income tax and benefit return, go to </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/taxes</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>, go to My Account at </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/guide-my-cra-account</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>, or call </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>1-800-959-8281</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>To find your tax centre, go to </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/cra-offices</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>If you move</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Let us know your new address as soon as possible. For more information on changing your address, go to </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/cra-change-address</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>If you have new or additional information and want to change your return:</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- go to </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/change-tax-return</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> for faster service; or</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- write to the tax centre address shown on this notice, and include your social insurance number and any documents supporting the change.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>If you want to register a formal dispute:</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- go to </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/cra-complaints-disputes</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>; you have 90 days from the date of this notice to register your dispute.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Definitions</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>DR</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> (debit) is the amount you owe us and </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>CR</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> (credit) is the amount we owe you.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Help for persons with hearing, speech, or visual impairments</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>You can get this notice in braille, large print, or audio format. For more information about other formats, go to</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> canada.ca/cra-multiple-formats</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>If you use a teletypewriter, you can get tax information by calling </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>1-800-665-0354</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>How do you pay?</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- online or by phone using a Canadian financial institution's services</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- online at </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/cra-my-payment</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- online by setting up a pre-authorized debit agreement at </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/guide-my-cra-account</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- in person with your remittance voucher at your Canadian financial institution or, for a fee, at Canada Post</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>For more information on how to make a payment, go to </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/payments</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Need more time to pay?</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>If you cannot pay in full and you would like more information, go to </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/cra-collections</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>To discuss a payment arrangement, call the CRA at </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>1-888-863-8657</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>, Monday to Friday (except holidays) from 7:00 a.m. to 11:00 p.m. Eastern time.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+</T1Notice>

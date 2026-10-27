@@ -1,0 +1,3 @@
+C:\VtPrograms\2025\DistrFl\T4T5-2025\UDOTF.dfm: Form not in DB
+T4T5-2025: Check SinLabels.txt
+T4T5-2025: Non Vt components found. See CheckComp.Txt

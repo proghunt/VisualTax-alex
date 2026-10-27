@@ -1,0 +1,12 @@
+Child
+Daughter
+Son
+Parent
+GrandParent
+GrandChild
+Brother
+Sister
+Niece
+Nephew
+Aunt
+Uncle 

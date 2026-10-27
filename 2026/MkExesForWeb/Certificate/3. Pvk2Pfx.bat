@@ -1,0 +1,1 @@
+pvk2pfx.exe -pvk VisualTax.pkv -pi vtSecret2015 -spc VisualTax.spc -pfx VisualTax.pfx -po vtSecret2015 -f

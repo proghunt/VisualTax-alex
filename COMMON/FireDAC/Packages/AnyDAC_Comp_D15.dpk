@@ -1,0 +1,46 @@
+package AnyDAC_Comp_D15;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'da-soft AnyDAC Components Package for Delphi XE'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  dbrtl,
+  AnyDAC_ComI_D15,
+  AnyDAC_Phys_D15,
+  AnyDAC_PhysSQLite_D15;
+
+contains
+  uADCompDataMove,
+  uADCompDataSet,
+  uADCompClient,
+  uADCompGUIx,
+  uADCompScript,
+  uADCompScriptCommands,
+  uADCompADOUDLImport,
+  uADPhysSQLiteVDataSet;
+
+end.

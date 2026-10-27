@@ -1,0 +1,62 @@
+Dir_Cur                       C:\VT\T3-2024\certif24-yurie
+Dir_ClientDocs                C:\VT\T3-2024\Client Documents
+BackupFrequency               7
+BackupDir                     C:\VT\T3-2023\BackUp
+LastBackupDir                 
+Dir_Deflt                     C:\VT\T3-2024\certif24-yurie
+Dir_LastYr                    C:\VT\T3-2023\certif23
+Dir_PgmLastYr                 C:\vt-2022\t3-2022
+Dir_DBFData                   
+Prp_Name                      Microsophic Inc.
+Prp_ContactName               Con Zantiris
+Prp_TransmitterNo             111111118xx0001
+Prp_TransmitterAccountRepId   1234567
+Prp_Email                     support@visualtax.com
+Prp_BusNo                     111111118RC0001
+Prp_RepresentativeId          JL3R2RC
+Reviewer_EMail                
+Reviewer_Name                 
+Reviewer_Area                 
+Reviewer_Tel                  
+Prp_Street                    5225 Orbitor Drive
+Prp_City                      Mississuga
+Prp_Prov                      ON
+Prp_Postal                    L4w 4Y8
+Prp_countr                    CAN
+Prp_Area                      905
+Prp_Tel                       238-6169
+Prp_FxArea                    
+Prp_Fax                       
+Prp_GstNo                     
+Prp_Bill                      2
+Prp_VSFee                     30
+Prp_SFee                      50
+Prp_AFee                      70
+Prp_CFee                      100
+Prp_VCFee                     150
+Prp_Hour                      60
+Prp_Dates                     
+Nfl_Prov                      ON
+Nfl_City                      TORONTO
+Capitalization                UpperCase
+Prn_NameH                     X
+Prn_SinH                      X
+Prn_DateH                     X
+Prn_Disclm                    
+Opr_Close                     X
+Opr_GstHst                    
+UseFastPrint                  
+UseProperName                 X
+NoTypeAhead                   
+ShowInvoiceWarning            X
+InvFoot1                      
+InvFoot2                      
+InvFoot3                      
+InvFoot4                      
+InvFoot5                      
+ActiveBoxColor                8421631
+DataInBold                    
+ShowUsedForms                 X
+OpenAtLastForm                X
+NoBarCode                     
+RolloverProgram               VisualTax

@@ -1,0 +1,108 @@
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\SL_2016frmtype.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\T2_2024EfileT1134.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\T2_2024t106efile.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\T2_2024t1135efile.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\T2_2025DACRequestEfile.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uabil.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uAS14S.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\UAS9.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uCBCRbak.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\udot.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\UDOTTF.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uefmemo.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\UFNOTE1.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uhybrid.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uINV.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\umultiapp.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uPAGE.DFM: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\ups125.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\urc4649.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\urc59I.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us10.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us10w.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us300.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\US307old.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\US345.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us361.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us362.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us365.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us37.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us391.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us393.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\US410.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us4254.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us426.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us460.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us480.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us490.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us501.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\US514.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us515.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us516.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us546.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us547.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\us548.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\US70.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uSALDIVC.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uSBDAlloc.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\UT1134A.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\UT1134AI.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\ut1134b.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\ut1134bi.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\UT2183.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\ut3mult.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\ut661SB.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\UTEST125.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uWACreq.dfm: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\UWARN.DFM: Form not in DB
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uAS1.DFM: *** SET SCROLLBAR to TOP*** AS1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uAS29.DFM: *** SET SCROLLBAR to TOP*** AS29
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uAS3.DFM: *** SET SCROLLBAR to TOP*** AS3
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uAT1.DFM: *** SET SCROLLBAR to TOP*** AT1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uGROUPINFO.DFM: DataIndic uses non-existing field 481
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uGROUPINFO.DFM: DataIndic uses non-existing field 486
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uGROUPINFO.DFM: DataIndic uses non-existing field 491
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uLASTYRBS.DFM: DataIndic uses non-existing field 4
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uLASTYRBS.DFM: DataIndic uses non-existing field 6
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uLASTYRIS.DFM: DataIndic uses non-existing field 4
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uLASTYRIS.DFM: DataIndic uses non-existing field 6
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS12.DFM: *** SET SCROLLBAR to TOP*** S12
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS16.DFM: *** SET SCROLLBAR to TOP*** S16
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS17.DFM: *** SET SCROLLBAR to TOP*** S17
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS21.DFM: *** SET SCROLLBAR to TOP*** S21
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS311.DFM: *** SET SCROLLBAR to TOP*** S311
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS322.DFM: *** SET SCROLLBAR to TOP*** S322
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS352.DFM: DataIndic uses non-existing field 150
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS383.DFM: DataIndic uses non-existing field 217
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS411.DFM: *** SET SCROLLBAR to TOP*** S411
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS422.DFM: *** SET SCROLLBAR to TOP*** S422#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS423.DFM: *** SET SCROLLBAR to TOP*** S423#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS429.DFM: *** SET SCROLLBAR to TOP*** S429
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS502.DFM: *** SET SCROLLBAR to TOP*** S502
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS504.DFM: *** SET SCROLLBAR to TOP*** S504
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS504.DFM: DataIndic uses non-existing field 54
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS504.DFM: DataIndic uses non-existing field 55
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS504.DFM: DataIndic uses non-existing field 56
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS517.DFM: *** SET SCROLLBAR to TOP*** S517
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS564.DFM: *** SET SCROLLBAR to TOP*** S564#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS566.DFM: *** SET SCROLLBAR to TOP*** S566
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS58.DFM: *** SET SCROLLBAR to TOP*** S58#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS60.DFM: *** SET SCROLLBAR to TOP*** S60#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS63.DFM: *** SET SCROLLBAR to TOP*** S63
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS63.DFM: DataIndic uses non-existing field 495
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS76.DFM: *** SET SCROLLBAR to TOP*** S76
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS77.DFM: *** SET SCROLLBAR to TOP*** S77
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS78.DFM: *** SET SCROLLBAR to TOP*** S78#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS8.DFM: *** SET SCROLLBAR to TOP*** S8#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS8ALL.DFM: *** SET SCROLLBAR to TOP*** S8ALL
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS8FREE.DFM: File not found
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS8LH.DFM: File not found
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uS8VT51.DFM: *** SET SCROLLBAR to TOP*** S8VT51#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uT106SL.DFM: *** SET SCROLLBAR to TOP*** T106SL#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uT1135.DFM: DataIndic uses non-existing field 5000
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uT2054.DFM: *** SET SCROLLBAR to TOP*** T2054
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uT2057.DFM: *** SET SCROLLBAR to TOP*** T2057#1
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uT2059.DFM: *** SET SCROLLBAR to TOP*** T2059
+D:\IHOR\VisualTax\VisualTax_V2\2026\DistrFl\T2-2027\uT661.DFM: *** SET SCROLLBAR to TOP*** T661
+T2-2027: Check SinLabels.txt
+T2-2027: Non Vt components found. See CheckComp.Txt

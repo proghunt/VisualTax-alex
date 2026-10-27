@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.256,D:\IHOR\VisualTax\VisualTax_V2\2025\TF-2024\TF_2025.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.562,=D:\IHOR\VisualTax\VisualTax_V2\2025\TF-2025\TF_2025.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.200,D:\IHOR\VisualTax\VisualTax_V2\2026\Projects\vtTF_2025.dproj=D:\IHOR\VisualTax\VisualTax_V2\2026\Projects\vtTF_2026.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.078,D:\IHOR\VisualTax\VisualTax_V2\2025\Projects\vtTF_2024.dproj=D:\IHOR\VisualTax\VisualTax_V2\2025\Projects\vtTF_2025.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.430,D:\IHOR\VisualTax\VisualTax_V2\2025\TF-2024\TF_2024.pas=D:\IHOR\VisualTax\VisualTax_V2\2025\TF-2024\TF_2025.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,358 @@
+object CurrentPortfolioFP_2012: TCurrentPortfolioFP_2012
+  Left = 85
+  Top = 65
+  Caption = 'Current Portfolio'
+  ClientHeight = 492
+  ClientWidth = 724
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Arial'
+  Font.Style = []
+  OldCreateOrder = True
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 14
+  object Label8: TLabel
+    Left = 208
+    Top = 96
+    Width = 3
+    Height = 14
+  end
+  object HeaderPanel: TLabel
+    Left = 0
+    Top = 0
+    Width = 724
+    Height = 33
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Current Portfolio'
+    Color = 11301888
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 10930928
+    Font.Height = -21
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    ExplicitWidth = 732
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Top = 96
+    Width = 721
+    Height = 385
+    Color = 14933196
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object DBGrid1: TDBGrid
+      Left = 16
+      Top = 20
+      Width = 689
+      Height = 297
+      DataSource = DataSource1
+      FixedColor = 10930928
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      Options = [dgEditing, dgAlwaysShowEditor, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Arial'
+      TitleFont.Style = [fsBold]
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'ClientName'
+          Width = 131
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'PortfolioType'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'AccountType'
+          Title.Caption = 'Account Type'
+          Width = 76
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'Product'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'Description'
+          Width = 151
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'Units'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'CurrentValue'
+          Width = 81
+          Visible = True
+        end>
+    end
+    object CancelBtn: TBitBtn
+      Left = 368
+      Top = 344
+      Width = 65
+      Height = 33
+      Caption = 'E&xit'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = []
+      Kind = bkCancel
+      NumGlyphs = 2
+      ParentFont = False
+      TabOrder = 1
+      OnClick = CancelBtnClick
+    end
+    object BitBtn1: TBitBtn
+      Left = 264
+      Top = 344
+      Width = 75
+      Height = 33
+      Caption = 'Summary'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnClick = BitBtn1Click
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 0
+    Top = 33
+    Width = 724
+    Height = 56
+    Align = alTop
+    Color = 15663103
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+    object GroupBox3: TGroupBox
+      Left = 232
+      Top = 8
+      Width = 241
+      Height = 41
+      Caption = 'Account'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 8
+        Top = 16
+        Width = 38
+        Height = 13
+        Caption = 'Supplier'
+      end
+      object Label2: TLabel
+        Left = 104
+        Top = 16
+        Width = 24
+        Height = 13
+        Caption = 'Type'
+      end
+      object SupplierFilter: TEdit
+        Left = 56
+        Top = 16
+        Width = 33
+        Height = 21
+        TabOrder = 0
+        OnKeyPress = SupplierFilterKeyPress
+      end
+      object AccountTypeFilter: TComboBox
+        Left = 136
+        Top = 16
+        Width = 89
+        Height = 21
+        Style = csDropDownList
+        TabOrder = 1
+        OnChange = AccountTypeFilterChange
+        Items.Strings = (
+          'ALL'
+          'OPEN'
+          'RRSP'
+          'RRIF'
+          'RESP'
+          'DPSP'
+          'RHOSP'
+          'OTHER'
+          'LIF'
+          'LIRA'
+          'LRIF')
+      end
+    end
+    object FindBtn: TBitBtn
+      Left = 48
+      Top = 256
+      Width = 75
+      Height = 33
+      Caption = 'Search'
+      Glyph.Data = {
+        46060000424D4606000000000000360400002800000018000000160000000100
+        0800000000001002000000000000000000000001000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000C0DCC000F0C8
+        A4003F3F5F003F3F7F003F3F9F003F3FBF003F3FDF003F3FFF003F5F3F003F5F
+        5F003F5F7F003F5F9F003F5FBF003F5FDF003F5FFF003F7F3F003F7F5F003F7F
+        7F003F7F9F003F7FBF003F7FDF003F7FFF003F9F3F003F9F5F003F9F7F003F9F
+        9F003F9FBF003F9FDF003F9FFF003FBF3F003FBF5F003FBF7F003FBF9F003FBF
+        BF003FBFDF003FBFFF003FDF3F003FDF5F003FDF7F003FDF9F003FDFBF003FDF
+        DF003FDFFF003FFF3F003FFF5F003FFF7F003FFF9F003FFFBF003FFFDF003FFF
+        FF005F3F3F005F3F5F005F3F7F005F3F9F005F3FBF005F3FDF005F3FFF005F5F
+        3F005F5F5F005F5F7F005F5F9F005F5FBF005F5FDF005F5FFF005F7F3F005F7F
+        5F005F7F7F005F7F9F005F7FBF005F7FDF005F7FFF005F9F3F005F9F5F005F9F
+        7F005F9F9F005F9FBF005F9FDF005F9FFF005FBF3F005FBF5F005FBF7F005FBF
+        9F005FBFBF005FBFDF005FBFFF005FDF3F005FDF5F005FDF7F005FDF9F005FDF
+        BF005FDFDF005FDFFF005FFF3F005FFF5F005FFF7F005FFF9F005FFFBF005FFF
+        DF005FFFFF007F3F3F007F3F5F007F3F7F007F3F9F007F3FBF007F3FDF007F3F
+        FF007F5F3F007F5F5F007F5F7F007F5F9F007F5FBF007F5FDF007F5FFF007F7F
+        3F007F7F5F007F7F7F007F7F9F007F7FBF007F7FDF007F7FFF007F9F3F007F9F
+        5F007F9F7F007F9F9F007F9FBF007F9FDF007F9FFF007FBF3F007FBF5F007FBF
+        7F007FBF9F007FBFBF007FBFDF007FBFFF007FDF3F007FDF5F007FDF7F007FDF
+        9F007FDFBF007FDFDF007FDFFF007FFF3F007FFF5F007FFF7F007FFF9F007FFF
+        BF007FFFDF007FFFFF009F3F3F009F3F5F009F3F7F009F3F9F009F3FBF009F3F
+        DF009F3FFF009F5F3F009F5F5F009F5F7F009F5F9F009F5FBF009F5FDF009F5F
+        FF009F7F3F009F7F5F009F7F7F009F7F9F009F7FBF009F7FDF009F7FFF009F9F
+        3F009F9F5F009F9F7F009F9F9F009F9FBF009F9FDF009F9FFF009FBF3F009FBF
+        5F009FBF7F009FBF9F009FBFBF009FBFDF009FBFFF009FDF3F009FDF5F009FDF
+        7F009FDF9F009FDFBF009FDFDF009FDFFF009FFF3F009FFF5F009FFF7F009FFF
+        9F009FFFBF009FFFDF009FFFFF00BF3F3F00BF3F5F00BF3F7F00BF3F9F00BF3F
+        BF00BF3FDF00BF3FFF00BF5F3F00BF5F5F00BF5F7F00BF5F9F00BF5FBF00BF5F
+        DF00BF5FFF00BF7F3F00BF7F5F00BF7F7F00BF7F9F00BF7FBF00BF7FDF00BF7F
+        FF00BF9F3F00BF9F5F00BF9F7F00BF9F9F00BF9FBF00BF9FDF00BF9FFF00BFBF
+        3F00BFBF5F00BFBF7F00BFBF9F00BFBFBF00BFBFDF00BFBFFF00BFDF3F00BFDF
+        5F00BFDF7F00BFDF9F00BFDFBF00BFDFDF00F0FBFF00A4A0A000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707070707070707070707070707070707070707070707070707070707070707
+        0707070700000007070707070000000707070707070707070707070700070007
+        0707070700070007070707070707070707070707000000F80707077B00000007
+        0707070707070707070707070000000000000000000000070707070707070707
+        0707070700070000000007000000000707070707070707070707070700070000
+        00000700000000070707070707F8000000000000000000000000000000000007
+        070707070700FEFEFEFEFEFE00000000007B000000000707070707070700FEFE
+        FEFEFEFEFEFE0000FE00070000070707070707070700FEFEFEFEFEFEFEFE0000
+        FE00070000070707070707070700FEFEFEFEFEFEFEFE0000FE00070000070707
+        070707070700FEFEFEFEFEFEFEFEFEFEFE00070707070707070707070700FEFE
+        FEFEFEFEFEFEFEFEFE00070707070707070707070700FEFEFEFEFEFEFEFEFEFE
+        FE00000707070707070707070700FEFEFEFEFEFEFEFEFEFEFE00070707070707
+        0707070707000000FEFEFE000000000000F80707070707070707070707070700
+        0000000707070707070707070707070707070707070707070707070707070707
+        07070707070707070707}
+      TabOrder = 1
+    end
+    object SearchBtn: TBitBtn
+      Left = 536
+      Top = 24
+      Width = 49
+      Height = 25
+      Caption = 'Search'
+      TabOrder = 2
+      OnClick = SearchBtnClick
+    end
+    object GroupBox4: TGroupBox
+      Left = 8
+      Top = 8
+      Width = 169
+      Height = 41
+      Caption = 'Client'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      object SelectClientBtn: TBitBtn
+        Left = 8
+        Top = 16
+        Width = 73
+        Height = 17
+        Caption = 'Select one...'
+        TabOrder = 0
+        OnClick = SelectClientBtnClick
+      end
+      object AllClientsBtn: TBitBtn
+        Left = 94
+        Top = 16
+        Width = 59
+        Height = 17
+        Caption = 'Select All'
+        TabOrder = 1
+        OnClick = AllClientsBtnClick
+      end
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = AssetsQ
+    Left = 157
+    Top = 228
+  end
+  object PrintDialog1: TPrintDialog
+    Left = 347
+    Top = 198
+  end
+  object FDConnection: TADConnection
+    Params.Strings = (
+      'DriverID=SQLite'
+      '')
+    Left = 293
+    Top = 249
+  end
+  object ClientsTbl: TADTable
+    Connection = FDConnection
+    UpdateOptions.UpdateTableName = 'CLIENTS'
+    TableName = 'CLIENTS'
+    Left = 332
+    Top = 248
+  end
+  object AssetsQ: TADQuery
+    Connection = FDConnection
+    SQL.Strings = (
+      'select * from assets'
+      'Order By AccountType,Product')
+    Left = 108
+    Top = 275
+  end
+end

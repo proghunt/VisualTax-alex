@@ -1,0 +1,2584 @@
+﻿1      Validities in the Canada Revenue Agency’s (CRA) processing system prevents this
+       record from being accepted for EFILE. In order to ensure that you receive all the
+       benefits and deductions allowed, we need you to file a paper return and attach all
+       pertinent slips and receipts. The CRA regrets the inconvenience.
+
+2      The taxpayer’s social insurance number is a temporary number or begins with a 0.
+       Only newcomers to Canada with a SIN starting with a 0 are eligible to use EFILE. If
+       the taxpayer is an immigrant to Canada in the year, a date of entry must be entered. If
+       the entries are correct, a paper return should be submitted. Please refer to the list of
+       exclusions in the Appendices of this manual.
+
+8      More than eight errors have been detected but due to space constraints, only eight
+       error codes can be displayed. Review the entire record and make the necessary
+       corrections.
+
+9      The social insurance number entered for your client is not valid. Review your client’s
+       documents or contact your client and enter the correct social insurance number.
+
+11     The taxpayer’s social insurance number is not present on this record.
+
+15     You have indicated this is a Pre-bankruptcy return. Please delete the selected financial
+       data (SFD) statements, as they should not be transmitted with a Pre-bankruptcy
+       return.
+
+22     According to the Canada Revenue Agency records, this taxpayer was bankrupt last
+       year, or is currently in bankruptcy status. This taxpayer’s T1 for the period from
+       January 1 to the date just before the assignment is the only return that is eligible for
+       EFILE; however it must be filed by the taxpayer’s trustee.
+
+30     This may be a duplicate filing, or you may have used an incorrect social insurance
+       number on this record, as a return with this SIN has been, or is being, processed.
+       Where error code 78 is also present, you have already transmitted this record.
+
+34     You have indicated your client is filing a pre-bankruptcy return and there is an
+       immigration date entered on this return. If the entries are correct, a paper return
+       should be submitted.
+
+35     You have indicated your client is filing a pre-bankruptcy return but there is no date of
+       bankruptcy on the Canada Revenue Agency (CRA) records. Please ensure you have
+       submitted the bankruptcy insolvency Form (DC905) to update the CRA.
+
+36     The date of death entered on your client’s return is prior to the tax year. Please review
+       your documents and either correct the entry for the date of death, or submit a paper
+       return, as applicable.
+
+
+                                                                                             2–4
+37   You have indicated your client is deceased in the identification area of the T1 return,
+     but have not entered the date of death, or there is a date of death entered but you
+     have not indicated that your client is deceased in the Identification area of the
+     T1 return.
+
+38   The date of death entered for your client does not agree with the date of death on the
+     Canada Revenue Agency’s records. Please review the date of death on the “Proof of
+     Death” certificate that was submitted by the legal representative for the deceased
+     client and make the necessary corrections.
+
+39   Entries to start direct deposit are not allowed on a Pre-bankruptcy return or on a
+     return for a deceased taxpayer. Please delete the direct deposit fields.
+
+40   The date of birth entered for your client does not agree with the date of birth on the
+     Canada Revenue Agency’s records. Please confirm with your client their date of birth.
+     Where the entry is correct, your client should contact the tax services office to resolve
+     the discrepancy. Also, review the name and social insurance number entered to
+     ensure that they belong to the taxpayer for whom you are preparing the return.
+
+41   Your client’s date of birth was not present on this record or non-numeric characters
+     were entered for the date of birth.
+
+42   Your client’s name was not present on this record.
+
+43   The surname entered for your client does not agree with the surname on the Canada
+     Revenue Agency’s records. Please confirm that you have entered the correct social
+     insurance number and name for this taxpayer. If the surname you entered was correct
+     and a name change is required, code the record to indicate that this is a change of
+     name.
+
+44   The entry for your client’s name contains invalid character(s), and/or the first and/or
+     last character of your client’s name is not alphabetic. Please refer to Chapter 1 of the
+     Electronic filers’ manual for a listing of acceptable characters for this field.
+
+47   Your client’s street address or PO Box number is not present on this record.
+
+48   Your client’s address is outside Canada and is not eligible for EFILE. If the address is
+     correct, a paper return should be submitted.
+
+49   The entry for the care of line in the address area contains an invalid character(s).
+
+50   The entry for the street address contains an invalid character(s). Please refer to
+     Chapter 1 of the Electronic filers’ manual for a listing of acceptable characters for this
+     field.
+
+
+
+
+
+51   The entry for the city contains an invalid character(s). Please refer to Chapter 1 of the
+     Electronic filers’ manual for a listing of acceptable characters for this field.
+
+52   The city in which your client resides is not present on this record.
+
+53   The value for the province or territory in your client’s address is not valid.
+
+54   The value for the province or territory in your client’s address is not present on this
+     record.
+
+55   The entry for the postal code is not in ANANAN format or is not valid.
+
+56   Your client’s postal code is not present on this record.
+
+57   The entry for the city could not be located on our city database index. Check the entry
+     and correct any errors. Contact your EFILE Helpdesk for assistance.
+
+58   The discounter code entered is not valid. Where the code entered is correct, contact
+     the Discounters and e-Services Projects Section at 613-941-8864.
+
+59   The value for the province or territory of residence on December 31st is not valid or
+     was not entered.
+
+60   The value entered for the current province or territory of residence is not valid.
+
+61   The value for the taxing province or territory on December 31st is not valid or was not
+     entered.
+
+63   The entry for the date of birth is not in the proper format. The date of birth must be in
+     YYYYMMDD format.
+
+65   The entry for marital status is not valid. If your client is single, delete the entry for
+     spouse’s first name and/or social insurance number.
+
+66   The entry for spouse or common-law partner’s social insurance number is not
+     numeric.
+
+67   The telephone number entered is not valid or contains an invalid character(s). Enter
+     the area code first, followed by the telephone number.
+
+68   The entry for spouse or common-law partner’s social insurance number is not valid.
+     Verify the number entered with the source documents or contact your client.
+
+70   The entries for your client’s social insurance number and the spouse or common-law
+     partner’s social insurance number are the same. Correct the social insurance
+     number(s) in error.
+
+
+
+
+71   The value for the change of surname indicator is not valid or was not entered. Enter 1
+     where there is no surname change. Enter 2 where a surname change is required or
+     where the taxpayer is filing for the first time.
+
+72   The entry for the province or territory in your client’s address is not compatible with
+     the entry for postal code.
+
+76   Non-numeric characters are present on page 1 of the return for the spouse or
+     common-law partner’s net income and/or the universal child care benefit (UCCB)
+     received or repayment amount reported by the spouse or common-law partner. Please
+     review the entries and make the necessary corrections.
+
+78   This document control number (DCN) has already been used on an accepted EFILE
+     record. A new DCN must be assigned unless this taxpayer’s return has been or is
+     being processed by us, in which case error code 30 will also be present.
+
+79   The document control number (DCN) transmitted on this return has exceeded the
+     maximum number of attempts.
+81   The document control number entered contains non-alpha/numeric characters. Only
+     alpha/numeric characters are acceptable in the document control number.
+
+82   The address entered on this record is that of the discounter. Enter the taxpayer’s
+     address.
+
+83   The phone number entered on this record is that of the discounter. Enter the
+     taxpayer’s phone number.
+
+84   The entry for spouse or common-law partner’s name contains an invalid character(s).
+     Please make sure your entry does not include a period as the first character, a number,
+     a slash (/ or \), or an ampersand (&).
+
+85   The alternate address code is not numeric or is invalid.
+
+86   The spouse or common-law partner’s self-employment code entered is not numeric or
+     is invalid.
+
+87   The entry for the language of correspondence is not numeric or is invalid.
+
+88   The alternate address option cannot be used on a prior year return, or on a
+     discounted, pre-bankrupt, or a Section 70(1) return for a deceased taxpayer.
+
+89   The value for the pre or post-assessment review contact code is not valid or was not
+     entered. Please enter “2” to contact the tax preparer or “3” to contact the taxpayer.
+
+91   This record does not contain any income or deductions amounts, non-refundable or
+     tax credits. Review your client’s return.
+
+
+
+
+
+93   One of following situations exists with your client’s return:
+     1) There are rental or self-employment activities, or both, reported on the return and
+        no selected financial data (SFD) records were submitted.
+     2) The client is converting to a December 31st fiscal period and the sum of the net
+        incomes or losses reported at field 9946 on the SFD statements submitted, minus
+        any amount entered at line D of Form T1139, does not equal the total income or
+        loss from rental and/or self-employed activities reported on the return at
+        fields 126, 135, 137, 139, 141 and/or 143.
+     3) The client is using the alternative method (Part 2 of Form T1139) and the sum of
+        the net incomes or losses reported at field 9946 on the SFD statements submitted,
+        plus any amounts entered for additional business income at line G, minus any
+        amount entered at line I, does not equal the total income or loss from rental
+        and/or self-employed activities reported on the return at fields 126, 135, 137, 139,
+        141 and/or 143.
+
+94   The entry on the T1 return record, to indicate the number of selected financial data
+     records being transmitted for your client, does not equal the number of selected
+     financial data records received. Review this record and correct the error.
+
+95   The entry on the T1 return record to indicate the number of selected financial data
+     (SFD) records being submitted for your client is not valid. The acceptable entries
+     are 01 through 06. Where no SFD records are being submitted, the entry is 00.
+
+96   One of the following situations exists on the selected financial data records (SFD)
+     transmitted for your client:
+     1) There are more than 80 field codes present in the free format area of SFD type 1
+          to 8.
+     2) There are more than 29 occurrences for commodity codes under the “commodity
+          sales and program payments” section of SFD type 6.
+     3) There are more than 14 occurrences for commodity codes under the “commodity
+          purchases and repayment of program benefits” section of SFD type 6.
+     If the entries are correct, a paper return should be submitted, as we are unable to
+     process this return due to system constraints.
+
+97   There is an amount entered on Form T777, Employment expenses statement or on
+     Form TL2, Claim for meals and lodging expenses, and no amount entered for other
+     employment expenses at field 229.
+
+98   The maximum of occurrences for crop or livestock inventory with the selected
+     financial data record type 9 have exceeded the allowable amount transmitted. If the
+     entries are correct, a paper return should be submitted, as we are unable to process
+     this return due to system constraints.
+
+
+
+
+99   One of the following situations exists with your client’s return:
+     1) Your client is a resident of British Columbia, Manitoba, New Brunswick, Nova
+        Scotia, Newfoundland and Labrador, or the Yukon. SFD type 9 is present but no
+        SFD type 6 is present, or vice versa.
+     2) Your client is a resident of Prince Edward Island, Ontario, Saskatchewan, or
+        Alberta and SFD type 9 is present.
+     3) Your client is a resident of Quebec, Nunavut or the Northwest Territories and SFD
+        type 6 or type 9 is present.
+
+     Note: If the client has self-employed income from a farm located in a province other
+           than the province the client resided on December 31st, a paper return should be
+           submitted, as tax to multiple jurisdictions may apply.
+
+
+                                                                                      2–9
+
+307    The amount claimed as a 2015 reserve on the disposition of capital property on
+       Form T2017 exceeds the amount reported for the related 2014 reserve on disposition
+       of capital property, and no current-year dispositions were reported on Schedule 3.
+325    An entry for a section 31 restricted farm loss at field 5495 was made but a net farming
+       loss was not reported at field 141, or the net farming loss claimed is greater than the
+       allowable amount based on the entry for a section 31 restricted farm loss.
+
+336    An entry was made for CPP contributions payable on self-employment income at
+       field 310 of Schedule 1. According to our records, your client is exempt from making
+       contributions to the CPP. This entry should be deleted.
+
+342    You have made a claim for the Prince Edward Island low-income tax reduction.
+       However, the following information is required, if applicable:
+       1) The net income of your client’s spouse or common-law partner. Where the spouse
+           or common-law partner’s net income is NIL or negative, enter 7 at field 9918.
+       2) The universal child care benefit (UCCB) received that is included in the spouse or
+           common-law partner’s net income or the UCCB repayment amount that is
+           included at field 213 on the spouse or common-law partner’s return.
+       Please enter the above information in the Identification area on page 1 of the return.
+
+346    The immigration date of entry on this return does not agree with the Canada Revenue
+       Agency’s records. Please review the entry and make the necessary correction.
+
+352    The claim for the basic personal amount at field 5804 of provincial or territorial
+       Form 428 is not equal to the maximum allowable. If the claim is prorated due to
+       immigrant status a date of entry is required. If the claim is prorated due to emigrant
+       status, the return is not eligible for EFILE, and a paper return should be submitted.
+       Otherwise, correct the entry.
+
+353    The claim for the spouse or common-law partner amount at field 5812 of provincial or
+       territorial Form 428 differs from the maximum allowable.
+
+357    There is a claim for the British Columbia shipbuilding and ship repair industry tax
+       credit at field 6063 on Form BC479 and there is no claim for self-employed income at
+       fields 135, 137, 139, 141, or 143.
+
+359    An entry was made for the medical expenses for self, spouse or common-law partner,
+       and your dependent children born in 1998 or later at field 330 of Schedule 1 but no
+       claim was made at field 5868 of provincial or territorial Form 428, or vice versa.
+
+360    There is an entry at field 6132 of Form T4164 for the Manitoba odour control tax credit
+       but no entry for farming income at fields 168/141. Please review the entries and make
+       the necessary corrections.
+
+
+
+
+366   A claim was made for tax deductions transfer to Quebec but the taxing province or
+      territory is not Quebec. Only taxpayers who reside in the province of Quebec on
+      December 31st are eligible to transfer tax deductions.
+
+370   An entry was made for deductible CPP or QPP contributions through employment,
+      but no entry for employment income or exempt employment income was made.
+
+371   An entry was made at fields 144, 145 and/or 146. Review the entries to ensure they
+      agree with the information slips. If entries are correct, a paper return should be
+      submitted, as we are unable to process this return due to system constraints.
+
+373   An entry was made for a CPP overpayment. As the taxing province is Quebec, the
+      claim should be deleted as this overpayment is claimed on the provincial income tax
+      return.
+
+375   One of the following situations applies to your client’s return:
+      1) You have reported the net rental or self-employed income without reporting an
+         amount for the gross income, or vice versa;
+      2) On Schedule 3, there is an entry for the total proceeds of disposition but there is
+         no entry for the net gain or loss, or vice versa;
+      3) On Form T1170, there is an entry at field 6823 but no entry at field 6822, or vice
+         versa;
+      4) On Form T1170, there is an entry at field 6825 but no entry at field 6824, or vice
+         versa;
+      5) On Schedule 3, there is an entry at field 274 but no corresponding entry at field
+         110;
+      6) On Schedule 3, there is an entry at field 275 but no corresponding entry at field
+         124;
+      7) On Schedule 3, there is an entry at field 276 but no corresponding entry at field
+         173.
+
+377   A claim was made for income tax deducted but no income was reported at
+      fields which tax would have been deducted (fields 101, 113, 114, 115, 116, 119, 129,
+      5345 or 5347). Review your client’s documents to determine the entries required.
+      Ensure that instalment payments (field 476), or foreign taxes withheld (field 431) have
+      not been entered as tax deductions at field 437.
+
+378   An entry was made at field 339 and/or field 337 of Schedule 9, but no fields from
+      Schedule 3 are present for this return. Schedule 3 must support the current year
+      taxable capital gain arising in respect of gifts of capital property (field 339) or gifts of
+      depreciable property (field 337).
+
+388   The entry for refund (field 484) or for balance owing (field 485) does not equal the
+      total payable (field 435) minus the total credits (field 482). For Quebec residents, the
+      amount of provincial parental insurance plan (PPIP) premiums payable on
+      employment income (field 376 of Schedule 1) is used in the calculation of total credits
+      (field 482).
+
+
+
+408    A claim was made for the labour-sponsored funds tax credit. An entry is required at
+       both fields: the allowable credit at field 414 and the net cost at field 413 of Schedule 1.
+
+417    Due to technical difficulties, the Canada Revenue Agency cannot accept the
+       transmission at this time. Please retransmit this record tomorrow. Should you receive
+       this same message the next time, please contact your EFILE Helpdesk.
+
+423    The entry for the Canadian Forces personnel and police deduction at field 244 is
+       greater than the entry at field 101.
+
+435    To accurately calculate the New-Brunswick low-income tax reduction the following
+       information is required, if applicable:
+       1) The net income of your client’s spouse or common-law partner. Where the spouse
+           or common-law partner’s net income is NIL or negative, enter 7 at field 9918.
+       2) The amount of universal child care benefit (UCCB) that is included in the spouse
+           or common-law partner’s net income, or the UCCB repayment amount included at
+           field 213 on the spouse or common-law partner’s return.
+       3) The amount of registered disability savings plan (RDSP) income that is reported
+           by the spouse or common-law partner, or the amount of RDSP repayment
+           included at field 5536 on the spouse or common-law partner’s return.
+
+438    To accurately calculate the Newfoundland and Labrador low-income tax reduction
+       the following information is required, if applicable:
+       1) The net income of your client’s spouse or common-law partner. Where the spouse
+           or common-law partner’s net income is NIL or negative, enter 7 at field 9918.
+       2) The amount of universal child care benefit (UCCB) that is reported by the spouse
+           or common-law partner, or the UCCB repayment amount included at field 213 on
+           the spouse or common-law partner’s return.
+       3) The amount of registered disability savings plan (RDSP) income that is reported
+           by the spouse or common-law partner, or the amount of RDSP repayment
+           included at field 5536 on the spouse or common-law partner’s return.
+
+441    The amount of commission income reported at field 102 and/or wage loss
+       replacement contributions reported at field 103 exceeds the amount reported for
+       employment income at field 101.
+
+444    An invalid entry has been detected in the free format area of the record. Review the
+       entries made in the free format area. Contact your software developer if you need
+       assistance.
+
+447    The claim for Manitoba personal tax credit at field 6090 of Form MB479 is incorrect.
+       Review the calculations and enter the correct claim amount.
+
+457    An entry was made for deemed limited partnership loss at field 5354, but no entry
+       was made for partnership income or net rental income, or vice versa. Where the entry
+       at field 5354 is greater than 0, and the net rental income at field 126 and partnership
+       income at field 122 are both NIL, for processing purposes an entry of 1 is required at
+       field 122.
+
+460   To accurately calculate the Manitoba tax credits the following information is required,
+      if applicable:
+      1) The net income of your client’s spouse or common-law partner. Where the spouse
+          or common-law partner’s net income is NIL or negative, enter 7 at field 9918.
+          Where the spouse or common-law partner maintained a separate residence due to
+          medical, educational, or business reasons, enter 1 at field 6089. Where the spouse
+          or common-law partner was not resident of Canada, enter 1 at field 5527.
+      2) The amount of universal child care benefit (UCCB) that is included in the spouse
+          or common-law partner’s net income or UCCB repayment amount included at
+          field 213 on the spouse or common-law partner’s return.
+      3) The amount of registered disability savings plan (RDSP) income that is reported
+          by the spouse or common-law partner, or the amount of RDSP repayment
+          included at field 5536 on the spouse or common-law partner’s return.
+
+464   An entry was made for non-taxable benefits for board and lodging at a special work
+      site in prescribed northern zones, and/or prescribed intermediate zones. No other
+      entries were made for northern resident’s deductions. Review Form T2222 and correct
+      the field(s) in error.
+
+466   An entry was made for the adoption expenses amount at field 313 of Schedule 1, but
+      no claim was made at field 5833 of the provincial or territorial Form 428; or an entry
+      was made at field 5833, but no entry was made at field 313.
+
+467   One of the following situations exists on your client’s return:
+      1) An entry was made for the universal child care benefit (UCCB) at field 117 and
+         there is also an entry for the spouse or common-law partner’s UCCB in the
+         Identification area on page 1 of the return.
+      2) The entry for the UCCB repayment at field 213 equals the spouse or common-law
+         partner’s UCCB repayment amount in the Identification area on page 1 of the
+         return. Please review the entries and make the necessary corrections or if the
+         entries are correct, a paper return should be submitted with all pertinent slips and
+         receipts attached.
+
+468   There is an entry at field 122, Net partnership income for limited or non-active
+      partners, but no entry in memo field 5330, or vice versa.
+
+474   A claim was made for a logging tax credit, but an entry for logging income was not
+      made.
+
+483   You have made a claim for the Ontario co-operative education tax credit at field 6320
+      or the Ontario apprenticeship training tax credit at field 6322 on Form ON479. These
+      credits are only available to residents of Ontario on December 31st and who are
+      self-employed. To claim these credits, make sure the gross and net income from
+      self-employment was included in the total income area of the return. Enter the
+      Business Number at field 6327 and amounts at fields that apply to the specific credits
+      your client is claiming. The credits at fields 6320 and 6322 are limited by a maximum
+      claim. Ensure the maximum has not been exceeded.
+
+487   The amount donated to the Ontario opportunities fund and the amount of the net
+      refund does not agree with the calculated refund.
+
+491   To accurately calculate the spouse or common-law partner amount at field 303 of
+      Schedule 1 or field 5812 of provincial or territorial Form 428 the following amounts, if
+      applicable are required:
+      1) The net income of your client’s spouse or common-law partner. Where the spouse
+         or common-law partner’s net income is NIL or negative, enter 7 at field 9918.
+      2) The amount of universal child care benefit (UCCB) that is included in the spouse
+         or common-law partner’s net income or the UCCB repayment amount included at
+         field 213 on the spouse or common-law partner’s return.
+
+
+
+
+502    There is a claim for the Yukon research and development tax credit at field 6389;
+       however, your client is no longer entitled to the credit as the return is being filed more
+       than 12 months after the filing due date.
+
+506    You made a claim for your client’s CPP/QPP contributions at field 5824 of provincial
+       or territorial Form 428, but have not made a claim at field 308 of Schedule 1.
+
+507    You made a claim for your client at field 5828 of provincial or territorial Form 428, but
+       have not made a claim for CPP/QPP contributions on self-employment and other
+       earnings at field 310 of Schedule 1.
+
+508    You made a claim for your client’s employment insurance premiums at field 5832 of
+       provincial or territorial Form 428, but have not made a claim at field 312 of
+       Schedule 1.
+
+511    The amounts entered on provincial or territorial Schedule 2 for the amounts
+       transferred from spouse or common-law partner do not balance with the claim made
+       at field 5864 of provincial or territorial Form 428. Please review the entries. If there are
+       entries on provincial or territorial Schedule 2 and no entry in field 5864, or vice versa,
+       contact your software developer.
+
+513    An entry was made at field(s) 320, 321, and/or 322 of Schedule 11 but no entry was
+       made at field(s) 5914, 5916, and/or 5918 of provincial or territorial Schedule 11, or vice
+       versa.
+
+516    You have indicated that your client is filing a Pre-bankruptcy return, but you have not
+       provided their net income for the post-bankruptcy period.
+
+517    There is a claim for the British Columbia mining flow-through share tax credit at
+       fields 6880, 6881, 6882, 6883, and/or 6884, however, your client is no longer entitled to
+       the credit as the return is being filed more than 12 months after the filing due date.
+
+523    One of the following situations related to the Saskatchewan employee tools credit
+       exists on your client’s return:
+       1) The entry for the one-time trade entry credit at field 6356 or the entry for the
+           annual maintenance credit at field 6357 is not equal to one of the four allowable
+           amounts on Form T1284.
+       2) There is an entry at field 6356 and field 6357.
+       3) There is an entry at field 6356 or field 6357, but no entry at field 101 or 104.
+       4) You have indicated this is a Pre-bankruptcy return. If the entry at field 6356 or
+           6357 is a partial claim, a paper return should be submitted, as we are unable to
+           process this return due to system constraints. Otherwise, review your entries and
+           make the necessary corrections.
+
+529    The amount reported at field 363 is greater than the total of field 101 and/or field 104.
+
+
+
+531   There is an entry for the co-op education and apprenticeship tax credit at field 6131
+      and/or for the nutrient management tax credit at field 6136 on Form MB479 and there
+      is no entry at fields 122, 135, 137, 139, 141, or 143. Please review the entries and make
+      the necessary corrections.
+
+532   The claim for the Yukon employment amount at field 5834 is greater than sum of the
+      entries at fields 101 and 104 or greater than the maximum allowable for the tax year.
+
+534   You have indicated that your client lives on aboriginal lands, yet the taxpayer’s
+      province or territory of residence is other than Newfoundland and Labrador, the
+      Northwest Territories, British Columbia, or the Yukon.
+
+536   The claim for young children on Form NS or PE428 at field 5823 is incorrect based on
+      the entry made for the total number of months at field 6372; or a claim was made at
+      field 5823 without a corresponding entry at field 6372, or vice versa.
+
+537   Your claim on Form NU428 for young children at field 5823 is incorrect based on the
+      entry made for the total number of children at field 6371; or a claim was made at
+      field 5823 without a corresponding entry at field 6371, or vice versa.
+
+539   The province or territory of residence is other than Quebec and there is an entry at
+      field 223, 375, 376, 377, 378, 379, 380 and/or 5029, which are only valid for Quebec
+      residents. Please review your entries and make the necessary corrections.
+
+542   A claim was made at field 5825 of Form YT428 for the family caregiver amount for
+      children under 18 years of age, but no entry was made at field 367 of Schedule 1.
+      Please review your entries and make the necessary corrections.
+
+546   One of the following situations applies to your client’s return:
+      1) An entry was made for a Manitoba book publishing tax credit at Field 6143 of
+         Form MB479 and there is no entry at field(s) 122, 135, or 137. Please either include
+         the associated self-employed income/loss in the appropriate field or delete the
+         entry for the tax credit.
+      2) There is a claim for the Manitoba book publishing tax credit at field 6143;
+         however, your client is no longer entitled to the credit as the return is being filed
+         more than 12 months after the filing due date.
+
+548   An entry was made for the Saskatchewan graduate retention program on Form RC360
+      however you are missing one or more supporting field(s) at 5970/5971/5972,
+      5973/5974/5975 and/or 5976/5977/5978. Valid entries for fields 5970, 5973, and 5976
+      are 1, 2, 3, or 4. Either complete the entries in all three related fields, or delete the
+      incorrect entries.
+
+549   An entry was made for the active families benefit at field 5980 on SK479, but does not
+      equal the amount at field 479.
+
+                                                                                          2 – 16
+550   The entry at field 5972, 5975, or 5978, on Form RC360 for the Saskatchewan graduate
+      retention program, does not equal the maximum value for the rebate, for the program
+      of study indicated by the related entry at field 5970, 5973, or 5976.
+      The maximum values per program are as follows:
+       1) Certificate Programs (inc. journeymen) $3,000
+       2) Diploma Programs $6,400
+       3) Undergraduate Degree 3 year $15,000
+       4) Undergraduate Degree 4 year $20,000
+
+551   You have made a claim for the Manitoba tuition fee income tax rebate, but there is an
+      entry at field 6084 of Form T1005 for the Manitoba tuition fee income tax rebate but no
+      entry at field 6087, or vice versa; or there is an entry at field 6088 but no entries at
+      fields 6084 and 6087.
+      Please review your entries and make the necessary corrections.
+
+552   One of the following situations applies to the claim for the Manitoba Tuition fee
+      income tax rebate:
+      1) The entry at field 6084 of Form T1005 cannot be prior to 2007 or more than 10
+          years before the current tax year, or greater than current tax year.
+      2) There is an entry at field 6084 equal to an entry at field 6084 in a prior tax year.
+      3) There is a claim at field 6087 and the entry at field 6084 is not equal to the tax year.
+      Please review your entries and make the necessary corrections.
+
+561   The claim for eligible tuition fees at field 320 of Schedule 11 differs from the claim at
+      field 5914 of Provincial or Territorial Schedule 11.
+
+566   There is a universal child care benefit (UCCB) amount designated to a dependant at
+      field 185 and there is an entry at field 117; or the client’s marital status is married or
+      living common-law.
+
+568   You have indicated this is a Pre-bankruptcy return or a Section 70(1) return for a
+      deceased taxpayer. Please delete any entries on the ON-BEN at fields 6108, 6109, 6110,
+      6112, 6113, 6114, 6118, 6119, 6121, and /or 6123. These claims are not allowed on a
+      Pre-bankruptcy or Section 70(1) return.
+
+570   There is an entry for the Manitoba cultural industries printing tax credit at field 6148
+      of Form MB479 and there is no entry at fields 122, 135 and/or 137.
+
+572   One of the following situations applies to your client’s return:
+      1) There is an entry for the children’s art amount at field 370 on Schedule 1 and no
+         entry for the provincial/territorial children’s art amount at field 5841 on the
+         provincial/territorial 428 Form, or vice versa; or
+      2) There is an entry at field 370 and at field 5841 and the entry at field 370 is not
+         equal to the entry at field 5841.
+
+
+
+
+2002   The accumulated income payments (AIP) received or transferred to an RRSP at
+       field 6827 of Form T1172 plus the RESP AIP at field 6828 of Form T1172 exceed the
+       amount of other income at field 130; or there is a claim at field 6821 for excess
+       employees profit-sharing plan (EPSP) amount on Form RC359 and there is no claim at
+       field 229, employment expenses.
+
+2007   One of the following situations exists with your client’s return:
+       1) The amount included in income for the Lifelong Learning Plan (LLP) is greater
+          than the total amount that you have reported at field 129 of the return. Correct the
+          entry at field 129 or the amount designated as the LLP withdrawal.
+       2) You have indicated this is a Pre-bankruptcy return. A Lifelong Learning Plan
+          repayment and/or income inclusion amount must be reported on the
+          Post-bankrupt return. Please delete the LLP entry at fields 129, 5511 and/or 262.
+
+
+2009   One of the following situations exists with your client’s return:
+       1) The entry for security option benefits that can no longer be deferred at field 6521
+          of Form T1212 exceeds the amount of deferred security option benefits we have on
+          the Canada Revenue Agency records.
+       2) You have indicated that your client is deceased and there is an entry at fields 6521
+          and/or 6522 for deferred stock option benefits. If the entries are correct, a paper
+          return should be submitted, as we are unable to process this return due to system
+          constraints.
+
+2018   The entry at field 6114 for the Manitoba education property tax credit advance
+       exceeds $700 and / or the seniors’ school tax rebate on Form MB479 is greater than
+       $235.00.
+
+2019   The entry for Manitoba education property tax credit paid must be supported by an
+       entry for Manitoba education property tax credit advance at field 6114 of
+       Form MB479. Where the taxpayer did not receive any tax credit advance, enter 7 at
+       field 9914.
+
+2020   A claim has been made at field 6090 for the personal tax credit for the spouse or
+       common-law partner on Form MB479. However, your client’s marital status is
+       indicated on the return as being other than married or living common-law. Please
+       change the marital status on the return or delete the claim on Form MB479.
+
+2021   There is an entry for spouse or common-law partner’s net income at field 5263 (earned
+       during the period the taxpayer was living in Canada) and/or 5267 (earned during the
+       period the taxpayer was living outside of Canada), but the total of fields 5263 and
+       5267 does not equal the spouse’s total net income on the return. Please review your
+       entries and make the necessary corrections.
+
+
+
+2022   The claim for Manitoba tax credits does not agree with our calculation. It appears that
+       the amount claimed for Manitoba education property tax credit advance was not
+       deducted in determining the allowable Manitoba tax credits.
+
+2028   One of the following situations exists on your client’s return:
+       1) There is no entry at field 210 for the deduction for the elected split-pension
+          amount, and the entry for Quebec tax deductions exceeds the claim for total
+          income tax deducted at field 437.
+       2) There is an entry at field 210 and the entry for Quebec tax deductions exceeds the
+          claim for total income tax deducted at field 437 plus the amount entered at
+          field 6805 of Form T1032.
+
+2034   A claim was made for an investment tax credit on Form T2038 filed 12 months after
+       the due date. Please review your entries and make the necessary corrections.
+       Note: Must be also revised on the 2013 tax year message tables.
+
+2037   A claim was made for a spouse or common-law partner amount at field 303 of
+       Schedule 1 and, if applicable, at field 5812 of provincial or territorial Form 428. Where
+       the taxpayer was married or living common-law during the year but on
+       December 31st the marital status was other than married or living common-law,
+       enter 1 at field 5522.
+
+2038   The claim for the spousal or common-law partner amount at field 303 of Schedule 1
+       differs from the maximum allowable.
+
+2040   The claim for the basic personal amount at field 300 of Schedule 1 is not equal to the
+       maximum allowable. If the claim is prorated due to immigrant status a date of entry is
+       required. If the claim is prorated due to emigrant status, the return is not eligible for
+       EFILE, and a paper return should be submitted, otherwise, correct the entry.
+
+2042   A claim was made for amounts transferred from spouse or common-law partner at
+       field 326 of Schedule 1 and, if applicable, at field 5864 of provincial or territorial
+       Schedule 2. Where the taxpayer was married or living common-law during the year
+       but on December 31st the marital status was other than married or living
+       common-law, enter 1 at field 5773 if separated for less than 90 days or delete the
+       claim.
+
+2045   To accurately calculate the refundable medical expense supplement at field 452, the
+       following information is required, if applicable:
+       1) The net income of your client’s spouse or common-law partner. Where the spouse
+           or common-law partner’s net income is NIL or negative, enter a 7 at field 9918.
+       2) The amount of universal child care benefit (UCCB) that is included in the spouse
+           or common-law partner’s net income or the repayment amount at field 213 on the
+           spouse or common-law partner’s return.
+       3) The amount of registered disability savings plan (RDSP) income that is reported
+           by the spouse or common-law partner.
+       4) The amount of RDSP repayment included at field 5536 on the spouse or
+          common-law partner’s return.
+
+2048   Your client may be entitled to the Yukon Territorial Tax Credit, but no claim was
+       made.
+
+2050   There is rental income reported at field 126, and field 6783 is not present and the
+       taxpayer may be subject to minimum tax.
+
+2064   Your client’s Quebec tax deductions should be claimed on your client’s provincial
+       return. Since the province of residence indicated on the return is Quebec, please delete
+       this claim on your client’s federal tax return.
+
+2069   One of the following situations exists on your client’s return:
+       1) The Yukon First Nation identification number entered is invalid.
+       2) There is a valid self-governing first nation identification number but the territory
+           of residence on December 31st is not the Yukon.
+       3) There is a valid self-governing Yukon First Nation identification number present
+           but the answer to the self–governing citizen question is not present.
+       4) There is an indication that your client resided within British Columbia Nisga’a
+           lands on December 31st, but the answer to the citizen of Nisga’a nation question is
+           not present.
+       Please review your entries and make the necessary corrections.
+
+2070   The claim for the Yukon First Nations federal refundable abatement differs from the
+       computed amount.
+
+2071   There is claim for eligible dependant at field 305 of Schedule 1 and/or field 5816 of
+       the provincial or territorial Form 428 but no entry for the eligible dependant’s net
+       income was entered at field 5106 of the Schedule 5. Where the dependant’s income is
+       NIL, an entry of 1 at field 5106 is required for processing purposes.
+
+2072   The entry for the financial institution branch number and/or the financial institution
+       number on the direct deposit request for the income tax refund, GST/HST credit,
+       WITB advance payments, Canada child tax benefit, any other deemed overpayment of
+       tax, and universal child care benefit (UCCB) is not valid. Please confirm the correct
+       banking information with your client.
+
+2073   The entry for your client’s bank account number on the direct deposit request for
+       income tax refund, GST/HST credit, WITB advance payments, Canada child tax
+       benefit, any other deemed overpayment of tax, and universal child care benefit
+       (UCCB) is not valid. Enter your client’s actual bank account number. Do not key
+       dashes, leave spaces between numbers or pad the entry with zeros that do not appear
+       in the actual bank account number. Where the bank account number exceeds 12
+       digits, your client is not eligible for direct deposit.
+
+
+2074   One of the following situations exists on your client’s return:
+       1) There is an entry at field 6390 of Form NU479, and the province or territory of
+          residence is not Nunavut. Only a resident of Nunavut is entitled to this credit.
+       2) You have indicated this is a Pre-bankruptcy return. Please delete the entries for
+          the NU cost-of-living tax credit at fields 6054, 6390 and/or 6394, as this claim is
+          not allowed on a Pre-bankruptcy return.
+
+2076   The taxpayer’s territory of residence is Nunavut and there is an entry in a provincial
+       or territorial tax credit field that is not valid for a resident of Nunavut.
+
+2078   The claim for the employee and partnership GST/HST rebate at field 457 differs from
+       the maximum allowable amount.
+
+2079   One of the following situations exists on your client’s return:
+       1) A claim was made for the British Columbia sales tax credit on Form BC479.
+          However, the entry at fields 6033 and/or 6035 does not equal $75.
+       2) You have indicated this is a Pre-bankrupt return. The British Columbia Sales tax
+          credit is calculated for the calendar year when the Post-bankrupt return is
+          assessed. Please delete the entries at fields 6033 and/or 6035.
+       3) You have indicated that your client is deceased. Please delete the entries at
+          fields 6033 and/or 6035, as this claim is not allowed on a Section 70(1) return.
+
+2080   The taxpayer’s province of residence is Newfoundland and Labrador and there is an
+       entry in a provincial or territorial tax credit field that is not valid for a resident of
+       Newfoundland and Labrador.
+
+2081   The taxpayer’s province of residence is Prince Edward Island and there is an entry in
+       a provincial or territorial tax credit field that is not valid for a resident of Prince
+       Edward Island.
+
+2082   The taxpayer’s province of residence is Nova Scotia and there is an entry in a
+       provincial or territorial tax credit field that is not valid for a resident of Nova Scotia.
+
+2083   The taxpayer’s province of residence is New Brunswick and there is an entry in a
+       provincial or territorial tax credit field that is not valid for a resident of New
+       Brunswick.
+
+2084   The taxpayer’s province of residence is Quebec and there is an entry in a provincial or
+       territorial tax credit field that is not valid for a resident of Quebec.
+
+2085   The taxpayer’s province of residence is Ontario and there is an entry in a provincial or
+       territorial tax credit field that is not valid for a resident of Ontario.
+
+2086   The taxpayer’s province of residence is Manitoba and there is an entry in a provincial
+       or territorial tax credit field that is not valid for a resident of Manitoba.
+
+2087   The taxpayer’s province of residence is Saskatchewan and there is an entry in a
+       provincial or territorial tax credit field that is not valid for a resident of Saskatchewan.
+
+2088   The taxpayer’s province of residence is Alberta and there is an entry in a provincial or
+       territorial tax credit field that is not valid for a resident of Alberta.
+
+2089   The taxpayer’s province of residence is British Columbia and there is an entry in a
+       provincial or territorial tax credit field that is not valid for a resident of British
+       Columbia.
+
+2090   The taxpayer’s territory of residence is Northwest Territories and there is an entry in a
+       provincial or territorial tax credit field that is not valid for a resident of the Northwest
+       Territories.
+
+2091   The taxpayer’s territory of residence is the Yukon and there is an entry in a provincial
+       or territorial tax credit field that is not valid for a resident of the Yukon.
+
+2093   A claim was made for a provincial venture capital tax credit at fields 6049 and/or
+       6050 of Form BC479, and the province or territory of residence is other than British
+       Columbia.
+
+2094   Please verify your client’s province or territory of residence on December 31st. A
+       claim was made for a provincial or territorial tax credit at field 479, but this credit
+       does not apply to your client’s province or territory of residence as shown on the
+       return. Please change the province or territory of residence or delete the entry.
+
+2095   Your client may be entitled to a British Columbia provincial tax credit, but no claim
+       was made. Where the claim is being made by your client’s spouse or common-law
+       partner, delete the fields on Form BC479.
+
+2096   Your client may be entitled to a Manitoba provincial tax credit but no claim was
+       made. Where the claim is being made by your client’s spouse or common-law partner,
+       delete the fields on Form MB479. If applicable, please ensure that the net family
+       income on Form MB479 has been reduced by the universal child care benefit (UCCB)
+       and registered disability savings plan (RDSP) amounts received, and increased by any
+       UCCB and RDSP repayments claimed, by either the taxpayer or his or her spouse or
+       common-law partner.
+
+2097   Your client may be entitled to an Ontario provincial tax credit but no claim was made.
+       Where the claim is being made by your client’s spouse or common-law partner, delete
+       the fields on Form ON479.
+
+2109   One of the following situations applies to your client’s return:
+       1) The entry at field 395 for the search and rescue volunteer tax credit differs from
+           the maximum allowable.
+       2) There is a claim at field 395 for the search and rescue volunteer tax credit and for
+           the volunteer firefighters’ amount at field 362 on Schedule 1. You cannot make a
+           claim for both.
+       Please review your entries and make the necessary corrections.
+
+2111   The claim for the Saskatchewan first-time homebuyers’ tax credit at field 5837 on
+       Form SK428 is greater than the maximum allowable.
+
+2112   One of the following situations applies to your client’s return:
+       1) There is an entry at field 372 on Schedule 8 or Part 2 of Form RC381 but there is no
+       indication that the client is in receipt of CPP retirement benefits.
+       2) There is an entry at field 372 on Schedule 8 or Part 2 of Form RC381 and your client
+       is in receipt of T4 earnings. To elect to stop contributing on T4 earnings, a CPT30,
+       Election to Stop Contributing to the Canada Pension Plan or Revocation of a Prior
+       Election, must be completed and filed with the CRA.
+
+2115   A claim for registered pension plan contributions was made without a supporting
+       entry for pension adjustment amount. Where there is no pension adjustment amount
+       on any of the T4/T4A slips, an entry of 7 at field 9922 is required.
+
+2130   There is a current year immigration date recorded with the Canada Revenue Agency,
+       but one was not entered on this return.
+
+2147   The direct deposit information entered is invalid. Review the entries and make the
+       necessary corrections.
+
+2150   One of the following situations exists on your client’s return:
+       1) Your client may be entitled to a Nunavut tax credit, but no claim was made.
+           Where the claim is being made by your client’s spouse or common-law partner,
+           delete the fields on Form NU479.
+       2) You have indicated that your client is filing a Pre-bankruptcy return. The Nunavut
+           cost-of-living tax credit is calculated for the calendar year when the
+           Post-bankruptcy return is assessed.
+       Please delete the NU cost-of-living entries on Form NU479.
+
+2153   The claim for RRSP contributions designated as a transfer to the RRSP at field 240 of
+       Schedule 7 is greater than the income reported as eligible for transfer, F115 + F129 +
+       [(F130 + F114 less F6810 of Form T936), if result is negative use 0].
+
+2155   Based on the information submitted, an entry for resource property and flow-through
+       shares is required on line 16 of Form T691. Where the amount on line 16 is NIL or
+       negative enter 1 at field 6786 for processing purposes.
+
+2156   Based on the information submitted, an entry for loss created or increased by CCA
+       and carrying charges claimed on certified film property is required on line 4 of
+       Form T691. Where the amount on line 4 is NIL or negative enter 1 at field 6782 for
+       processing purposes.
+
+2162   Your client may be entitled to a Northwest Territories tax credit, but no claim was
+       made.
+
+       Note: In calculating the adjusted net income for the NT cost-of-living tax credit, the
+              net income reported on line 1 of Form NT479 should be reduced by any
+              amount claimed at field 244, Canadian Forces personnel and police deduction.
+
+2168   The claim for the federal amount for an eligible dependant at field 305 of Schedule 1
+       differs from the maximum allowable.
+
+2169   The amounts entered on Schedule 2 for the amounts transferred from spouse or
+       common-law partner do not balance with the claim made at field 326 of Schedule 1.
+       Please review the entries. If there are entries on Schedule 2 and no entry in field 326,
+       or vice versa, contact your software developer.
+
+2170   A claim was made for Manitoba school tax credit for homeowners on Form MB479.
+       An entry for family income amount at field 6120 or an entry for school taxes paid at
+       field 6122, or both is required to support the claim.
+
+2171   You have made a claim for the British Columbia sales tax credit at field 6035 of
+       Form BC479 and the following information is required, if applicable:
+       1) The net income of your client’s spouse or common-law partner. Where the spouse
+          or common-law-partner’s net income is NIL or negative, enter 7 at field 9918.
+          Where the spouse or common-law partner was not a resident of Canada, enter 1 at
+          field 5527, and do not allow an entry at field 6035.
+       2) The amount of universal child care benefit (UCCB) that is included in the spouse
+          or common-law partner’s net income or the UCCB repayment included at
+          field 213 on the spouse or common-law partner’s return.
+       3) You have indicated this is a Pre-bankrupt return. The BC sales tax credit is only
+          allowable on the Post-bankrupt return. Please delete the entries at field 6033
+          and/or field 6035.
+
+2180   Your client was a resident of Quebec, and the claim at field 223 for provincial parental
+       insurance plan (PPIP) premiums differs from the computed amount.
+
+2185   An entry was made for the British Columbia training tax credit for employers at
+       field(s) 6347, 6348 and/or 6349 of Form T1014-1, or at field 6056 of Form BC479. An
+       entry for gross/net self-employment income/loss (fields 162/135, 164/137, 166/139,
+       168/141 or 170/143) is required.
+
+
+2187   The claim for a transfer of the spouse or common-law partner’s tuition, education and
+       textbook amount at field 360 of Schedule 2, and/or provincial or territorial Schedule 2
+       equivalent at field 5909 exceeds the maximum allowable.
+
+2188   The claim for a transfer of the spouse or common-law partner’s pension income
+       amount at field 355 of Schedule 2 and/or field 5905 of provincial or territorial
+       Schedule 2 exceeds the maximum allowable.
+
+2189   A claim was made at field 6054 and/or field 6251 of Form NT479, for the Northwest
+       Territories cost of living tax credit, but your client was not a resident of the Northwest
+       Territories on December 31st. Only residents of the Northwest Territories are entitled
+       to this credit.
+
+2191   One of the following situations exists on your client’s return:
+       1) The entry at field 6343 of Form T1014 for the British Columbia training tax credit
+           is not equal to $1000 or $2000.
+       2) The entry at field 6344 is not equal to $2000.
+       3) The entry at field 6345 is not equal to $2500 or a multiple of $2500.
+       4) The entry at field 6346 exceeds the maximum allowable.
+       Please review your entries on Form T1014 and make the necessary corrections.
+
+2197   The claim for the RRSP deduction at field 208 exceeds the total of RRSP contributions
+       at field 245 of Schedule 7 and the available unused RRSP contributions from previous
+       years minus the total repayments under the Home Buyers’ Plan at field 246 and the
+       Lifelong Learning Plan at field 262 of Schedule 7.
+       If changes are required to your client’s unused contributions a T1 Adjustment Request
+       (Form T1-ADJ) should be filed with the Canada Revenue Agency.
+
+2198   The amount transferred to a RRSP reported at field 240 of Schedule 7 exceeds the
+       amount claimed for RRSP deduction at field 208.
+
+2211   Your client may be entitled to an EI overpayment, but no claim was made. Review the
+       entries made for EI premiums and EI insurable earnings.
+
+2215   The designated repayment amount at field 262 of Schedule 7 under the Lifelong
+       Learning Plan and/or field 5897 of RC 383 is less than the minimum required
+       repayment.
+
+2217   One of the following situations exists on your client’s return:
+       1) The designated repayment amount at field 262 of Schedule 7 under the Lifelong
+          Learning Plan (LLP) and/or field 5897 of RC 383 exceeds the LLP balance
+          outstanding (maximum repayable).
+       2) You have indicated that your client is filing a Pre-bankruptcy return. LLP
+          repayments must be reported on the Post-bankruptcy return. Please delete the
+          entry at field 262 and/or field 5897 of RC 383.
+
+
+2219   There is a designated repayment amount at field 262 of Schedule 7 under the Lifelong
+       Learning Plan (LLP) and the LLP participant is over 71 years of age.
+
+2225   There is a claim at field 453 on page 4 of the return for the working income tax benefit,
+       the client’s marital status is married or living common-law, and the entry at field 382
+       of Schedule 6 is not 2, and:
+       1) The amount at field 384 plus the amount at field 386 is greater than the entry at
+           field 387.
+       2) There is no entry at field 387.
+       3) There is no entry for the spouse or common-law partner’s net income in the
+           Identification area on page 1 Where the spouse or common-law partner’s net
+           income is NIL or negative, enter 7 at field 9918 and 1 at field 387 for processing
+           purposes.
+
+2226   One of the following situations exists with the claim for the working income tax
+       benefit on Schedule 6 of your client’s return:
+       1) Marital status is married or living common-law, and there is no entry in field 382.
+       2) Marital status is other than married or living common-law, and field 382 and/or
+          field 394 is equal to 1.
+       3) Marital status is other than married or living common-law, and there are entries at
+          fields 384, 386, 387, 389 and/or 390.
+
+          Note: If the client was married or living common-law at any time during the year
+                but on December 31st the marital status is widowed, and the death of the
+                spouse occurred after June 30th of the tax year, and field 382 is equal to 1,
+                for processing purposes an entry of 1 at field 5522 is required.
+
+2229   The claim for the amount for an eligible dependant at field 5816 of provincial or
+       territorial Form 428 differs from the maximum allowable.
+
+2233   The province of residence on December 31st was Alberta and there is a field code
+       present on the return that is not valid for a resident of AB. Please review your entries
+       and correct the province or territory of residence, or delete the invalid field code.
+
+2239   The following situation exists on your client’s return:
+       1) A claim was made at field 6247 (supplement for spouse or common-law partner)
+           and/or field 6249 (family cost of living supplement) of Form NT479.
+       2) The entry for marital status indicates married or living common-law.
+       3) An entry was not made for basic credit for the spouse or common-law partner at
+           field 6248 of Form NT479.
+       Enter the spouse or common-law partner’s credit at field 6248. If the credit is NIL,
+       enter 7 at field 8001.
+
+2247   One of the following situations exists with the claim for the working income tax
+       benefit on Schedule 6:
+       1) There is an entry at field 385 and no entry at field 388; or
+       2) There is an entry at field 5363 and no entry at field 385 and/or field 388.
+
+2248   You have indicated that your client has an eligible spouse for the working income tax
+       benefit at field 382 on Schedule 6, and there is an entry at field 390 other than 1, and
+       the entry is not equal to:
+       1) The spouse or common-law partner’s net income in the Identification area on
+           page 1 of the return,
+       2) minus the amount at field 5230 for the spouse or common-law partner’s capital
+           gain from mortgage foreclosures and conditional sales repossessions,
+       3) plus the amount at field 389 for the spouse’s non-taxable part of income earned on
+           a reserve or an allowance received as an emergency volunteer,
+       4) plus the spouse or common-law partner’s universal child care benefit (UCCB)
+           repayment amount entered in the Identification area on page 1 of the return,
+       5) plus the amount at field 5538 for the spouse or common-law partner’s Registered
+           Disability Savings Plan repayment,
+       6) minus the spouse or common-law partner’s UCCB income entered in the
+           Identification area on page 1 of the return,
+       7) minus the amount at field 5537 for the spouse or common-law partner’s
+           Registered Disability Savings Plan income,
+
+2249   There is no entry at field 116 or field 210 for the elected split-pension amount, and
+       there are entries at field 6802, 6083, and/or field 6806 of Form T1032.
+
+2250   The claim made for Home Buyers’ Plan repayment at field 246 of Schedule 7 and/or
+       field 5883 of RC 383 exceeds the maximum repayable.
+
+2252   The claim made for Home Buyers’ Plan (HBP) repayment at field 246 of Schedule 7
+       and/or field 5883 of RC 383 is less than the required repayment, or there is an entry at
+       field 129 for HBP repayment, but no entry was made at field 5508.
+
+2253   There is a loss reported at Field 122; or there is a loss reported at Field 141 and an
+       entry at field 5507. The taxpayer may be subject to minimum tax. For processing
+       purposes, an entry of 1 is required if the amount at Field 6784 is 0 or negative. The
+       taxpayer may be subject to minimum tax. For processing purposes, an entry of 1 is
+       required if the amount at field 6784 is 0 or negative.
+
+2259   There is a claim for federal foreign tax credit on Form T2209:
+       1) To claim non-business foreign tax credit, entries are required at fields 431 and 433
+           and at corresponding supporting income and tax fields (5273/5277, 5274/5278,
+           and/or 5275/5279).
+       2) To claim business foreign tax credit, entries are required at fields 434 and 439 and
+           at the corresponding supporting income and tax fields (5280/5276, 5281/5283,
+           and/or 5282/5284).
+       Please review your entries and make the necessary changes.
+
+
+2271   One of the following situations exists on your client’s return:
+       1) Your claim for the deduction for CPP/QPP contributions at field 222 differs from
+          the amount claimed at field 310 and/or field 5032 of Schedule 1.
+       2) You have indicated that your client is filing a Pre-bankruptcy return. CPP
+          contributions on self-employment are calculated for the calendar year when the
+          Post-bankruptcy return is assessed. Please delete the entries.
+
+2272   The province of residence on December 31st was British Columbia and there is a
+       field code present on the return that is not valid for a resident of BC. Please review
+       your entries and correct the province or territory of residence, or delete the invalid
+       field code.
+
+2273   The province of residence on December 31st was Manitoba and there is a field code
+       present on the return that is not valid for a resident of MB. Please review your entries
+       and correct the province or territory of residence, or delete the invalid field code.
+
+2274   The province of residence on December 31st was New Brunswick and there is a
+       field code present on the return that is not valid for a resident of NB. Please review
+       your entries and correct the province or territory of residence, or delete the invalid
+       field code.
+
+2275   The province of residence on December 31st was Newfoundland and Labrador and
+       there is a field code present on the return that is not valid for a resident of NL. Please
+       review your entries and correct the province or territory of residence, or delete the
+       invalid field code.
+
+2276   The territory of residence on December 31st was the Northwest Territories and there
+       is a field code present on the return that is not valid for a resident of NT. Please
+       review your entries and correct the province or territory of residence, or delete the
+       invalid field code.
+
+2277   The province of residence on December 31st was Nova Scotia and there is a field code
+       present on the return that is not valid for a resident of NS. Please review your entries
+       and correct the province or territory of residence, or delete the invalid field code.
+
+2278   The territory of residence on December 31st was Nunavut and there is a field code
+       present on the return that is not valid for a resident of NU. Please review your entries
+       and correct the province or territory of residence, or delete the invalid field code.
+
+2279   The province of residence on December 31st was Ontario and there is a field code
+       present on the return that is not valid for a resident of ON. Please review your entries
+       and correct the province or territory of residence, or delete the invalid field code.
+
+2280   The province of residence on December 31st Prince Edward Island and there is a
+       field code present on the return that is not valid for a resident of PE. Please review
+       your entries and correct the province or territory of residence, or delete the invalid
+       field code.
+
+
+2281   The province of residence on December 31st was Quebec and there is a field code
+       present on the return that is not valid for a resident of QC. Please review your entries
+       and correct the province or territory of residence, or delete the invalid field code.
+
+2282   The province of residence on December 31st was Saskatchewan and there is a
+       field code present on the return that is not valid for a resident of SK. Please review
+       your entries and correct the province or territory of residence, or delete the invalid
+       field code.
+
+2283   The territory of residence on December 31st was the Yukon and there is a field code
+       present on the return that is not valid for a resident of YT. Please review your entries
+       and correct the province or territory of residence, or delete the invalid field code.
+
+2287   One of the following situations exists with your client’s return:
+       1) There is an entry at field 210 for the deduction for elected split-pension amount no
+           entry at field 6806 and the entry at field 6802 of Form T1032 is greater than the
+           total of the amounts entered at field 115 and field 129, minus the amounts entered
+           at field(s) 5344 (ineligible pension) and/or 5508 (HBP repayment) and/or 5511
+           (LLP repayment).
+       2) There is an entry at field 210 for the deduction for elected split-pension amount,
+           no entry at F6802; and the entry at field 6806 is greater than field 130 by $10 or
+           more.
+       3) There is an entry at field 210 for the deduction for elected split-pension amount
+           and no entry at both field 6802 and field 6806.
+       Please review your entries and make the necessary corrections.
+
+2288   One of the following situations exists with the elected split-pension amount on
+       Form T1032 of your client’s return:
+       1) The entry at field 6805, for the part of the tax deducted that relates to the elected
+          split-pension amount, differs from the allowable amount based on the entries in
+          fields 6802, 6803 and 6804. Please verify that the entry at field 6805 is calculated
+          correctly according to the note below.
+       2) There is an entry at field 116 and the entry at field 437 is less than the allowable
+          amount entered at field 6805. Please verify that the entry at field 6805 is calculated
+          correctly according to the note below and the amount claimed at field 437 is
+          correct.
+       3) There is an entry at field 210 and the entry at field 437 is less than the entry at
+          field 6804 minus the entry at field 6805.
+       4) There is an entry at field 6804, for the total tax deducted from the information slips
+          for the pension income that is equal to the entry at field 6802 or 6806.
+
+       Note: The percentage of pension income that was split with the spouse or
+              common-law partner must be used when calculating the percentage of tax to be
+              included on the spouse or common-law partner’s return (field 116 or 210
+              divided by line C, multiplied by field 6804, should equal field 6805).
+       Please review your entries and make the necessary corrections.
+
+
+2289   There is an entry at field 116 or field 210 for the elected split-pension amount and
+       your client’s marital status is other than married or living common-law. Where the
+       taxpayer was married or living common-law during the year but on December 31st
+       the marital status was widowed, enter 1 at field 5773 if separated for less than 90 days
+       or delete the claim.
+
+2290   There are entries for the elected split-pension amount on Form T1032 and at both
+       fields 116 and 210. Please review your entries and delete either field 116 or 210 as
+       applicable.
+
+2292   Your client is a resident of Quebec and the claim at field 376 for the provincial
+       parental insurance plan (PPIP) premiums payable on employment income differs
+       from the computed amount.
+
+2293   Your client is a resident of Quebec and the entry at field 377 on Schedule 10 is greater
+       than the entries at fields 101 + 104 + 5363 + 5347.
+
+2294   Your client is a resident of Quebec and the claim at field 378 for the provincial
+       parental insurance plan (PPIP) premiums payable on self-employment income differs
+       from the computed amount.
+
+2301   The taxpayer is reporting registered disability saving plan (RDSP) income at field 125
+       and there is no Form T2201 on record with the Canada Revenue Agency (CRA). If the
+       amount reported at field 125 is correct, please submit a paper return for processing
+       and attach a new T2201. CRA regrets the inconvenience.
+
+2302   The claim for the Home Buyers’ tax credit at field 369 of Schedule 1 exceeds the
+       maximum allowable.
+
+2305   There is an entry at fields 5118, 5119, 5120, 5121, 5122, and/or 5123 for foreign pension
+       and social security arrangements and you have indicated this is a Pre-bankruptcy
+       return or a Subsection 70(1) return for a deceased taxpayer. If the entries are correct, a
+       paper return should be submitted as the Canada Revenue Agency is unable to process
+       this return due to system constraints.
+
+2306   One of the following situations applies to your client’s return:
+       1) Fields from Form RC 268 and/or RC 269 are present and the claim at field 207 is
+           less than calculated.
+       2) Fields from Form RC 267 are present and field 207 is less than field 5124.
+       3) The amount at field 206 is less than the calculated amount for field 5123.
+       Please review your entries and make the necessary corrections.
+
+2309   There is a claim for employment insurance premiums on self-employment and other
+       eligible earnings at field 5829 and no claim at field 317 of Schedule 1.
+
+
+
+2313   One of the following situations applies to your client’s return:
+       1) An entry was made for the deduction for elected split-pension amount at field 210
+           and an entry at field 6806 on Form T1032, but your client is under 65 years of age.
+       2) An entry was made for an elected split-pension income amount at field 116, but
+           the taxpayer’s spouse or common-law partner is under 65 years of age.
+       Please review the entries and make the necessary corrections.
+
+2314   One of the following situations exists on your client’s return:
+       1) You have indicated your client lives in a Tåîchô community or on Tåîchô lands,
+           but you have not provided the community. Valid entries are: “1” for “Behchokö
+           (Rae-Edzo),” “2” for “Whatì (Lac La Martre),” “3” for “Gamètì (Rae Lakes),” “4”
+           for Wekweètì (Snare Lake)” and “5” for “Tåîchô lands.”
+       2) You have identified the First Nations community that your client resides on but
+           the province of residence is not NT, or you have not answered “yes” to the
+           question that your client resided on aboriginal lands on December 31.
+       Please review your entries and make the necessary corrections.
+
+2316   There is a claim for British Columbia children’s fitness equipment amount at field
+       5842 and:
+         1) The amount differs from the maximum amount allowable; or
+         2) There is a claim at field 5842, but no claim at field 5838, children’s fitness
+            amount; or vice versa.
+
+2317    There is a claim for British Columbia education coaching amount at field 5843 and it
+        differs from the maximum amount allowable.
+
+2400   The claim for the volunteer firefighters’ amount at field 362 on Schedule 1 differs from
+       the maximum allowable.
+
+2502   There is an amount entered for post-bankruptcy net income in the Identification area
+       on page 1 of the return but there is no indication your client is filing a pre-bankruptcy
+       return.
+
+
+2504   One of the following situations applies to your client’s return:
+       1) An entry was made at field 6098 of Form ON428 for the Ontario community food
+           program donation tax credit that is greater than the amount for charitable
+           donations at field 340.
+       2) There is an entry at field 6098 of Form ON428 for the Ontario community food
+           program donation tax credit and no entry is reported at field 141. If the client’s
+           spouse or common-law partner had a farming business in the tax year, an entry of
+           1 at field 5002 (spouse is self-employed indicator) is required.
+       3) There is an entry at field 6098 of Form ON428 for the Ontario community food
+           program donation tax credit and no entry is reported at field 141. If your client’s
+           marital status is other than married or common-law, but their marital status
+           changed in the year, an entry at field5522 is required.
+       Please review your entries and make the necessary corrections.
+
+2505   To accurately calculate the Saskatchewan active family benefit tax credit at field 5980,
+       the net income of your client’s spouse or common-law partner is required. Where the
+       spouse or common-law partner’s net income is NIL or negative, enter 7 at field 9918.
+2507   The total of fields 329, 333, and 334 on Schedule 9 is greater than the amount at field
+       340.
+
+2508   One of the following situations exists on your client’s return:
+       1) The entry at field 6684 is greater than the entry at field 6708 and no gain reported
+          at field 274 (2015 tax year only); OR
+       2) The entry at field 6685 is greater than the entry at field 6709 and no gain reported
+          at field 107; OR
+       3) The entry at field 6694 is greater than the entry at field 6684; OR
+       4) The entry at field 6695 is greater than the entry at field 6685; OR
+       5) The entry at field 6684 is greater than field 6708, gains reported at field 110, but
+          no entry at field 6694; OR
+       6) The entry at field 6685 is greater than field 6709, gains reported at field 107, but no
+          entry at field 6695.
+       7) The total of field 6702 and field 110 minus field 274 is not a gain.
+
+
+1NNNN The entry in the field is not valid. The NNNN is replaced by the last valid field code
+      number that can be identified. All values entered in field codes have a defined length.
+      For most fields, the acceptable entry is up to nine digits long. Review the record input
+      on this line, make any necessary changes, and retransmit the return.
+
+
+3NNNN An invalid character(s) has been detected in the free format area. The NNNN is
+      replaced by the field number where the invalid character was located. Review the free
+      format entries, and contact your software developer if you need assistance.
+
+
+40352    An entry was made at field 352 for the number of children under 18 years of age for
+         whom you are claiming the family caregiver amount. If the entry is correct, please
+         submit a paper return. The Canada Revenue Agency regrets the inconvenience.
+
+40357    The claim for a transfer of the spouse or common-law partner’s disability amount at
+         field 357 of Schedule 2 and, if applicable, at field 5907 of provincial or territorial
+         Schedule 2 is greater than the maximum allowable.
+
+40370    There is an entry for the children’s art amount at field 370 on Schedule 1. Please verify
+         the entry. If the entry is correct, a paper return should be submitted, as we are unable
+         to process this return due to system constraints.
+
+40372    There is an entry at field 372 on the Schedule 8 or Part 2 of Form RC381 and the
+         province of residence is Quebec or the province of residence is other than Quebec and
+         the entry is greater than 12.
+
+40374    There is an entry at field 374 on the Schedule 8 or Part 2 of Form RC381 and the
+         province of residence is Quebec or the province of residence is other than Quebec and
+         the entry is greater than 12.
+
+40399    There is entry at field 399 on Schedule 8 or Form RC381 and the province of residence
+         is Quebec.
+
+40453    The entry at fields 381, 382, 391, 392 and/or 394 of Schedule 6, for the working income
+         tax benefit, is other than 1 or 2.
+
+40488    The entry to indicate that your client requests to transfer the refund to his or her next
+         year’s instalment account at field 488 does not equal 1.
+
+40490    The entry at field 490 is not valid or was not made. Enter: “1” where the return was
+         prepared for compensation, “2” where the return was prepared by the taxpayer, or
+         “3” where the return was discounted.
+
+
+45029   The entry at field 5029, to indicate that no employment income was earned outside of
+        Quebec, does not equal 2.
+
+45112   There is a claim for number of dependants at field 5112 of Schedule 5 for the family
+        caregiver amount. Please verify the number entered. If the entry is correct, a paper
+        return should be submitted, as we are unable to process this return due to system
+        constraints.
+
+45330   The entry at field 5330, to indicate whether the partnership income at field 122 is from
+        a tax shelter or an inactive or active business, is other than a “1” or “2.”
+
+45522   An entry of 1 is required at field 5522 to indicate the taxpayer’s marital status was
+        married or living common-law in the year but not on December 31st.
+
+45527   The entry at field 5527 to indicate that the spouse or common-law partner was not
+        resident in Canada does not equal 1. Where the taxpayer’s spouse or common-law
+        partner was not resident in Canada, enter 1 at field 5527. In all other cases, no entry
+        should be made.
+
+45555   The entry for the total number of months your client was in receipt of CPP or QPP
+        retirement benefits at field 5540 and/or the number of months of disability benefits at
+        field 5555 exceeds 12.
+
+45566   One of the following situations applies to your client’s return:
+        1) There is an entry at field 152 for disability benefits but no entry at field 114 or
+             field 5555 for the number of months of disability.
+        2) There is an entry at field 5566 for CPP/QPP retirement benefits, but no entry was
+             made for CPP or QPP benefits at field 114.
+        Enter the amount of CPP or QPP retirement/disability benefits received by your client
+        at field 114 or, if no benefits were received, delete the entry at field 152 or field 5566.
+
+45838   The taxpayer’s province or territory of residence is other than British Columbia and
+        there is an entry at field 5838. Please delete the entry.
+
+45841   There is an entry for the provincial/territorial children’s art amount at field 5841 on
+        the provincial/territorial 428 form. Please verify the entry. If the entry is correct, a
+        paper return should be submitted, as we are unable to process this return due to
+        system constraints.
+
+45970   The entry at field 5970 of Form RC360, for the Saskatchewan graduate retention
+        program, is other than 1, 2, 3, or 4.
+
+45973   The entry at field 5973 of Form RC360, for the Saskatchewan graduate retention
+        program, is other than 1, 2, 3, or 4.
+
+45976   The entry at field 5976 of Form RC360, for the Saskatchewan graduate retention
+        program, is other than 1, 2, 3, or 4.
+
+
+46088   The value entered at field 6088 of Form T1005, to indicate the taxpayer graduated
+        from an educational institution outside of Manitoba, is not valid. If your client
+        graduated from an institution outside of Manitoba, enter 1 at field 6088.
+
+46089   The value for involuntary separation at field 6089 is not valid. If your client and
+        spouse or common-law partner maintained separate residences due to medical
+        reasons, enter 1 at field 6089. In all other cases, no entry should be made.
+
+46099   The taxpayer’s province of residence is Ontario and there is an entry at field 6099.
+        Please delete the entry.
+
+46108   The entry at field 6108 of Form ON-BEN to indicate involuntary separation is not
+        equal to 1.
+
+46109   The entry at field 6109 of Form ON-BEN to elect to defer receipt of your Ontario
+        trillium benefit is not equal to 1.
+
+46113   The entry at field 6113 of Form ON-BEN, to apply for the Ontario senior homeowners’
+        property tax grant, is not equal to 1.
+
+46114   The entry at field 6114 of Form ON-BEN, to indicate that your client resided in a
+        student residence in Ontario in the current tax year, is not equal to 1.
+
+46118   The entry at field 6118 of Form ON-BEN, to apply for the Ontario energy and
+        property tax credit, is not equal to 1.
+
+46119   The entry at field 6119 of Form ON-BEN, to apply for the Northern Ontario energy
+        credit, is not equal to 1.
+
+46309   There is an entry for the Ontario children’s activity tax credit at field 6309. Please
+        verify the entry. If the entry is correct, a paper return should be submitted, as we are
+        unable to process this return due to system constraints.
+
+46769   There is an entry at field 6769 of Form T626, for the individual to indicate whether
+        they committed to a contract in relation to QFEI before March 29, 2012, is not equal
+        to 1.
+
+46803   The entry at field 6803 of Form T1032, Joint election to split pension income, for the
+        number of months that your client was married or living common-law, exceeds 12.
+
+48001   The entry at field 8001, to indicate that the spouse or common-law partner’s basic cost
+        of living tax credit for self is NIL, does not equal 7.
+
+49905   The entry to indicate that your client is a member of a communal organization at
+        field 9905 does not equal 7.
+
+
+49906    The entry to indicate that an election was made on your client’s return at field 9906
+         does not equal 7.
+
+49914    The entry to indicate that no Manitoba education property tax credit advance was
+         received at field 9914 does not equal 7.
+
+49915    The entry at field 9915 to indicate that your client has no income does not equal 7.
+
+49918    The value at field 9918 to indicate the spouse or common-law partner had no net
+         income for provincial or territorial credit purposes does not equal 7.
+
+49922    The value to indicate no pension adjustment amount at field 9922 does not equal 7.
+
+
+
+5NNNN This field is not valid for EFILE. The NNNN is replaced by the field number in
+      question. Review the entries made. Where the field code entered is valid, your client is
+      not eligible for EFILE and you should contact your software developer. A paper
+      return will have to be submitted for processing.
+
+
+6NNNN The entry in the field is not numeric, or there is no amount in the field. The NNNN is
+      replaced by the field number in question. Where the NNNN is replaced by 0000, this
+      means that the field in question could not be identified and you should review the
+      entire record. Contact your software developer for assistance.
+
+
+70127    One of the following situations applies to your client’s return:
+         1) A capital loss was claimed at field 127. Capital losses are only allowable if the
+             taxpayer is deceased.
+         2) If this is a Section 70(1) return for a deceased taxpayer and the entries at field 127
+             and/or field 253 do not include the unused net capital losses of other years that
+             we have on the Canada Revenue Agency records, a paper return should be
+             submitted, as we are unable to process this return due to system constraints.
+         3) The amount reported for taxable capital gains (or net capital losses, if the taxpayer
+             is deceased) is incorrect based on the entries made on Schedule 3, Form T1170
+             and/or T2017.
+         Please note that capital gains deductions from prior years may affect an amount, if
+         any, reported at field 178 of Schedule 3.
+
+70214    The claim for child care expenses exceeds two-thirds of earned income for child care
+         expense purposes. Where a claim is being made in Part D of Form T778, the claim
+         exceeds two-thirds of earned income and two-thirds of net income.
+
+70215    The claim for disability supports deduction at field 215 exceeds earned income for
+         disability supports deduction purposes.
+
+
+70255   The amount claimed for the northern residents deductions is incorrect based on the
+        entries made.
+
+70332   A claim was made for allowable medical expenses at field 332 without a
+        corresponding entry for medical expenses at field 330 and/or field 331 of Schedule 1,
+        or there is an entry in field 331 without an entry in field 332.
+
+70349   The donation credit claimed at field 349 of Schedule 1 is incorrect based on the
+        amounts entered at field(s) 340 (allowable charitable donations and government gifts),
+        342 (cultural and ecological gifts), 343 (First-time donor’s super credit) of Schedule 9,
+        and/or field 6098 of Form ON428 for the Ontario community food program.
+
+70396   The claim at field 6706 for total capital gains on reserves is incorrect based on the
+        entries made on Form T2017.
+
+70412   One of the following situations exists on your client’s return:
+        1) The investment tax credit claimed is greater than the amount allowable based on
+           entries made on Form T2038 for current year acquisitions and any unused
+           carry-forward amounts.
+        2) The investment tax credit carry-forward amounts have expired, as they have not
+           been used within 20 years of earning them.
+        3) The investment tax credit carry-forward amount is not allowable on Pre-bankrupt
+           returns or for client’s who have not been discharged from bankruptcy.
+
+70414   The labour-sponsored funds tax credit claimed at field 414 exceeds $500 or 10% of the
+        amount entered as net cost at field 413, or it exceeds field 406 of Schedule 1.
+
+70435   Total tax payable at field 435 does not balance with the amounts used in determining
+        total payable (fields 417 + 415 + 418 + 310 + 222 + 235 + 428 + 432). Fields 310 and 222
+        should not be included for Quebec returns.
+
+70438   The tax deductions transferred to Quebec exceed 45% (maximum allowable) of the
+        total tax deductions claimed, or the transfer includes tax deductions that were
+        withheld from CPP/QPP and/or EI benefits. Tax deductions from CPP/QPP and/or
+        EI benefits are not eligible for transfer.
+
+70440   The refundable Quebec abatement claimed does not equal 16.5% of basic federal tax.
+
+70450   The EI overpayment claimed is incorrect based on the entry for EI insurable earnings
+        at field 5478. Also verify that the total EI premiums have been correctly entered at
+        field 5028.
+
+70454   The refundable investment tax credit claimed is incorrect based on the entries made
+        on Form T2038 for current year acquisitions.
+
+
+
+70479   The provincial or territorial tax credit claimed is in error. Review the entries made on
+        Form 479 or 428 for the province or territory concerned. Where there is a calculated
+        credit but no claim is being made because the other spouse or common-law partner is
+        making the claim, delete the tax credit entries on Form 479 and/or 428.
+
+75496   The claim for a previous year restricted farm loss amount exceeds the net farm income
+        reported at field 141. Review your calculation and enter the correct amount of
+        restricted farm loss being carried forward to this year.
+
+75508   The Home Buyers’ participant repayment reported at field 5508 exceeds the registered
+        retirement savings plan income at field 129.
+
+75876   A claim was made for the allowable medical expenses at field 5876 without a
+        corresponding entry for medical expenses at field 5868 and/or 5872 of provincial or
+        territorial Form 428; or there is an entry in field 5872 without an entry in 5876.
+
+75896   The amount for total donations and gifts at field 5896 of provincial or territorial
+        Form 428 is incorrect based on the information provided.
+
+76205   You have made a claim for the Nova Scotia low-income tax reduction. The following
+        information is required, if applicable:
+        1) The net income of your client’s spouse or common-law partner. Where the spouse
+            or common-law partner’s net income is NIL or negative, enter 7 at field 9918.
+        2) The amount of universal child care benefit (UCCB) that is included in the spouse
+            or common-law partner’s net income, or the UCCB repayment included at
+            field 213 on the spouse or common-law partner’s return.
+        3) If the client’s marital status is widowed and there is a claim for the Nova Scotia
+            low-income tax reduction for the spouse or common-law partner. Please delete the
+            claim at field 6197 of Form NS428.
+        4) You have indicated this is a Pre-bankruptcy return. The Nova Scotia low-income
+            tax reduction is only allowable on the Post-bankruptcy return. Please delete the
+            entry.
+        5) You have indicated that your client is deceased. Please delete the entries at
+            field 6197, 6199 and/or 6099, as these claims are not allowed on the Section 70(1)
+            return for a deceased person.
+        Please enter the required information in the Identification area or make the necessary
+        corrections.
+
+76228   The claim for the Nova Scotia volunteer firefighters and ground search and rescue tax
+        credit at field 6228 of Form NS428 is not equal to the yearly maximum amount.
+
+
+80308   An entry was made for both CPP and QPP contributions at field 308 of Schedule 1 and
+        field 5031. Where your client contributed to both plans, enter the allowable deduction
+        at field 5031.
+
+
+80312   An entry was made for both EI and PPIP premiums at field 312 of Schedule 1 and
+        5026. Where your client contributed to both, and the province or territory of residence
+        is other than Quebec, enter the PPIP premiums at field 5027, the EI premiums at
+        field 5028, and enter at field 5026 the total of both amounts minus the amount at
+        field 450, or if the province of residence is Quebec, enter the PPIP premiums at
+        field 375. Enter the total EI premiums at field 5028, the claim for EI premiums at
+        field 312, and any EI overpayment at field 450.
+
+
+90101   There is an entry at field 101, but no entry at field 5548 or 5549 for pensionable
+        earnings.
+
+90113   One of the following situations exists on your client’s return:
+        1) Your client was 65 years of age or older on December 31st. An entry for old age
+           security pension is required. Where the taxpayer did not receive any old age
+           security pension, enter 7 at field 9917.
+        2) The value to indicate no old age security pension was received at field 9917 does
+           not equal 7.
+        3) Your client was 64 years of age or under on December 31st, and there is an entry at
+           field 113. If your client was 64 years of age or under, delete the entry at field 113.
+
+90114   One of the following situations exists on your client’s return:
+        1) There is an entry at field 5555 to indicate the number of months your client
+           received CPP or QPP disability benefits, but there is no entry at field 114, and/or
+           152.
+        2) There is an entry at field 5555 to indicate the number of months your client
+           received, but no entry for CPP or QPP benefits at field 114. Enter the amount of
+           CPP or QPP benefits received by your client at field 114 or delete the entry at
+           field 5555.
+        3) There is an entry at field 5540 to indicate the number of months your client
+           received CPP/QPP retirement benefits or was excluded from the CPP/QPP
+           contributory period, and no entry was made at field 5566.
+
+90115   Pension or superannuation income reported at field 115 is less than the annuity
+        income reported at field 9907.
+
+90116   Enter the SIN of your client’s spouse or common-law partner. It is not present on this
+        record.
+
+
+
+90120   One of the following situations exists on the return:
+        1) The taxable amount of eligible and other than eligible dividends entered at
+            field 6835 of Form T1206 is more than the taxable amount of eligible and other
+            than eligible dividends reported at field 120 of the return.
+        2) The taxable amount of other than eligible dividends entered at field 6834 of
+            Form T1206 is more than the taxable amount of other than eligible dividends
+            reported at field 180 of the return.
+        3) The taxable amount of other than eligible dividends entered at field 6834 is more
+            than the taxable amount of eligible and other than eligible dividends reported at
+            field 6835.
+        Please review your entries and make the necessary corrections.
+
+90121   One of the following situations exists on your client’s return:
+        1) The interest and other investment income reported at field 121 is less than the sum
+           of 9909 (bank interest), 9910 (bond interest), 9911 (interest from trusts), and 9912
+           (interest from mortgages).
+        2) An amount was reported at fields 9909, 9910, 9911, and/or 9912, but nothing was
+           reported at field 121.
+
+90129   One of the following situations applies to your client’s return:
+        1) The RRSP income reported at field 129 is less than the sum of fields 9908 (RRSP
+           annuity income); 5508 (Home Buyers’ participant non-eligible amount); and 5511
+           (Lifelong Learning Plan non-eligible amount).
+        2) You have indicated this is a Pre-bankruptcy return. A Home Buyers’ Plan (HBP)
+           repayment and/or income inclusion amount must be reported on the
+           Post-bankruptcy return. Please delete the HBP entries at fields 129, 5508 and/or
+           246.
+        3) You have indicated this is a Pre-bankruptcy return. A Lifelong Learning Plan
+           (LLP) repayment and/or income inclusion amount must be reported on the
+           Post-bankruptcy return. Please delete the LLP entries at fields 129, 5511 and/or
+           262.
+        4) You have indicated this is a Pre-bankruptcy return. The HBP withdrawal exceeds
+           the maximum allowable of $25,000. Please reduce the amount at field 247 to the
+           maximum allowable. The excess amount must be reported as income when the
+           Post-bankruptcy return is filed.
+        5) You have indicated that your client is deceased and there is an entry at field 5511
+           for a LLP income inclusion. If the entry is correct, a paper return should be
+           submitted, as we are unable to process this return due to system constraints.
+
+90146   Your client was 59 years of age or under on December 31st, and an amount for net
+        federal supplements was reported at field 146. If your client is 59 years of age or
+        under, delete the entry at field 146.
+
+90180   An entry at field 180 is greater than the entry in field 120.
+
+90206   An entry for pension adjustment amount is required. Where there is no pension
+        adjustment amount on any of the T4 slips, enter 7 at field 9922.
+
+
+90214   An entry was made for number of children under 7 years of age at field 9902, or for
+        the amount of child care expenses for children under the age of 7 at field 9903 and/or
+        for number of children ages 7 to 16 at field 9904, but no entry was made for child care
+        expenses at field 214.
+
+90220   There is a claim for the allowable deduction for support payments made at field 220,
+        but no entry for the total support payments was made at field 230 or the amount
+        entered at field 230 is less than the amount entered at field 220.
+
+90221   The carrying charges and interest expenses claimed at field 221 are less than the
+        interest expenses reported at field 9913 or a claim was made at field 9913 but nothing
+        was reported at field 221. The amount claimed at field 9913 must be included at
+        field 221.
+
+90222   An entry for deduction of CPP/QPP at field 222 is present and no entry was made for
+        CPP/QPP contributions on self-employed or other earnings at field 310 of Schedule 1,
+        and/or field 5032; or an entry at field 310 and/or 5032 is present and no entry was
+        made at field 222.
+
+90223   A claim for a deduction of PPIP premiums on self-employment income was made at
+        field 223 and no entry was made for PPIP premiums payable on self-employment
+        income at field 378 of Schedule 1; or an entry at field 378 is present and no entry was
+        made at field 223.
+
+90228   An entry for an allowable business investment loss at field 217 is present, and no
+        entry was made for gross business investment loss at field 228.
+
+90232   The amount for other deductions claimed at field 232 is less than the total of
+        fields 5479 (repayment of Employment Insurance benefits), 5351 (repayment of old
+        age security benefits), 6836 (the total split income), 5536 (repayments to the Registered
+        Disability Savings Plan (RDSP) and/or 5359 (repayment of a shareholder loan).
+
+90247   There is an entry for the current year withdrawal amount for the Home Buyers’ plan
+        at field 247 on Schedule 7 and/or a current year withdrawal amount for the Lifelong
+        Learning Plan at field 263 on Schedule 7.
+        Please verify these entries. If the entries are correct, a paper return should be
+        submitted, as we are unable to process this return due to system constraints.
+
+90250   A claim for other payments deduction was made at field 250, but no income was
+        reported for Worker’s compensation benefits at field 144, social assistance payments
+        at field 145, or net federal supplements at field 146.
+
+
+
+90263   You have indicated this is a Pre-bankruptcy return. The Lifelong Learning Plan
+        withdrawal exceeds the maximum allowable of $10,000. Please reduce the amount at
+        field 263. The excess amount must be reported as income when the Post-bankruptcy
+        return is filed.
+
+90305   One of the following situations exists on your client’s return:
+         1) The client’s marital status is married or common-law and there is a claim for
+             eligible dependant at field 305 of Schedule 1 and/or at field 5816 of provincial or
+             territorial Form 428, but there is no indication for current year separation at field
+             5529; OR
+         2) The client’s marital status is married or common law and there is a claim for
+             eligible dependant at field 305 of Schedule 1 and/or at field 5816 of provincial or
+             territorial Form 428 and field 5522 for marital status indicator is present; OR
+         3) The client’s marital status is other than married or common law and there is a
+             claim for spouse or common-law partner amount at field 303 of Schedule 1
+             and/or field 5812 of provincial or territorial Form 428, and there is an indication
+             for current year separation at field 5529.
+        If the client’s marital status changed in the tax year, an entry of 1 is required at 5522,
+        marital status indicator, or field 5529 to indicate current year separation indicator.
+         Otherwise, remove the entries at fields 303/5812, 5106, 5110, and/or 305/5816.
+
+90308   One of the following situations exists on your client’s return:
+        The province or territory of residence is “not Quebec;” and
+        1) The CPP contributions at field 308 of Schedule 1 plus the CPP overpayment at
+            field 448 does not equal the total amount of CPP contributions shown in box 16 of
+            the T4 slips (that is, at field 5034).
+        2) CPP contributions were entered at field 308 but contributions from box 16 of the
+            T4 slips were not entered at field 5034.
+        3) An amount was not entered at field 308 (for CPP) or at field 5031 (for CPP/QPP),
+            but the amount of your contributions from box 16 and/or box 17 of your T4 slips
+            does not equal the CPP/QPP overpayment at field 448.
+        4) The province of residence is “Quebec” and an entry was made at field 308 for CPP
+            contributions. For residents of Quebec, enter the CPP/QPP contributions at
+            field 5031 and not at field 308. The total CPP/QPP contributions withheld are still
+            entered at field 5034 (for CPP) and at field 5033 (for QPP).
+        Please review your entries and make the necessary corrections to f 308, 448, 5031,
+        5033, or 5034.
+
+90312   One of the following situations exists on your client’s return:
+        1) The province of residence is “Quebec” and the sum of the claims for EI premiums
+           at field 312 and EI overpayment at field 450 does not balance with the amount
+           entered for total EI premiums withheld on all information slips field 5028.
+        2) The province of residence is “other than Quebec” and the sum of the claims for EI
+           premiums at field 312/5026 and EI overpayment at field 450 does not balance with
+           the sum of the amount entered for PPIP premiums withheld on all information
+           slips at field 5027 and the amounts entered for total EI premiums withheld on all
+           information slips at field 5028.
+
+90317   There is an entry at fields 317, 5829, 5493, 5494, and/or 5355, but the Canada Revenue
+        Agency records indicate your client did not choose to participate in the Employment
+        Insurance premiums on self-employed and other eligible earnings program.
+
+90320   Your client’s claim for eligible tuition fees at field 320 of Schedule 11 and/or at
+        field 5914 of Provincial or Territorial Schedule 11 is greater than the maximum
+        allowable amount. If the amount is correct, please submit a paper return. The Canada
+        Revenue Agency regrets the inconvenience.
+
+90335   The amount at field 335 of Schedule 1 does not balance with the sum of amounts in
+        fields 300 to 326 (including fields 363 and 364) + 332 + 5026 + 5031 + 5032 + 5120.
+        Ensure that any amounts at fields 330 and 331 of Schedule 1 are not included in the
+        total at field 335 as they are already included at field 332.
+
+90350   The amount at field 350 does not balance with the sum of amounts in fields 338 + 349.
+
+90367   One of the following situations applies to your client’s return:
+        1) There is an entry for the number of children at field 352 of Schedule 1, but no
+           claim was made at field 367 for the family caregiver amount for children under 18
+           years of age.
+        2) There is a claim at field 367 and no entry at field 352.
+
+90374   An entry was made at fields 372 (CPP election effective date) and 374 (CPP revocation
+        effective date) on the Schedule 8 or Part 2 of Form RC381. Please review your entries
+        and make the necessary corrections.
+
+90375   As the province of residence on December 31st was Quebec:
+        1) An entry in field 375 for PPIP premiums paid requires an entry in field 380 for
+            PPIP insurable earnings.
+        2) When field 380 is greater than $1,999 an entry is also required in field 375.
+
+90376   An entry in field 376, for PPIP premiums payable on employment income, requires an
+        entry in field 377 of Schedule 10, for T4 employment income where the province of
+        employment is other than Quebec.
+
+90379   As the province of residence on December 31st was Quebec:
+        1) An entry in fields 223 and 378, for PPIP premiums payable on self-employment
+            income, requires an entry in field 379 of Schedule 10 for net business income.
+        2) An entry in one of the self-employment income fields, 135 to 143, requires an entry
+            in field 379.
+        3) An entry in field 379 requires an entry in one of fields 135 to 143.
+
+
+
+90380   Your client’s province of residence is Quebec, and:
+        1) An entry for employment income at field 101 requires an entry at field 380 and an
+           entry at field 377 of Schedule 10; or
+        2) An entry for employment income at field 101 requires an entry at field 380 and an
+           entry of ‘2’ in field 5029 to indicate that no employment income was earned
+           outside Quebec; or
+        3) An entry in field 380 requires an entry in fields 101 and/or an entry in field 5363
+           and/or field 5347. If no entry is required at field 375, 101, 5363, or 5347, then an
+           entry of $1 is not required at field 380; or
+        4) The entry at field 380 exceeds $70,000.
+
+90382   There is an entry of 1 at field 382 on Schedule 6 for the working income tax benefit
+        and there is an entry of 1 at field 5527, indicating the spouse is a non-resident. You
+        cannot have an entry at both fields. Please review and delete the entry at either
+        field 382 or field 5527, as required.
+
+90399   One of the following situations applies to your client’s return:
+        1) There is an entry at field 399 (Employment earnings shown on a T4 slip on which
+           the client elected to pay additional CPP contributions) but there is no CPT30
+           revocation effective date relevant for the tax year; or
+        2) There is an entry at field 399 (Employment earnings shown on a T4 slip on which
+           the client elected to pay additional CPP contributions) and there is a CPT30
+           revocation effective date on record relevant to the tax year but there are no CPP
+           deductions at field 5034 present.
+
+90423   One of the following situations applies to your client’s return:
+         1) There is an entry for the Family Tax Cut at field 423 on Schedule 1, but no entry at
+             fields 496, 497, 498, and/or 499 on the Schedule 1-A ; or
+         2) There is a claim for the Family Tax Cut on the Schedule 1-A, but no entry at field
+             423 on the Schedule 1.
+
+90424   The taxpayer is 18 years of age or older and there is an entry for federal tax on split
+        income at field 424 of Schedule 1 or at field 6834, 6835, 6836, 6837, or 6838 of
+        Form T1206.
+
+90440   A refundable Quebec abatement was claimed at field 440, but the province or territory
+        of residence is not Quebec.
+
+90448   A CPP/QPP overpayment was claimed at field 448. An entry is required at
+        field 5034/5033 for total CPP/QPP contributions withheld on all T4 slips.
+
+90450   An EI overpayment at field 450 was claimed. An entry is required at field 5028 for
+        total EI premiums withheld on all information slips.
+
+90453   A claim was made at field 453 on page 4 of the return for the working income tax
+        benefit and:
+        1) The individual is under 19 years of age, and there is no entry at either field 381
+           or 382 of Schedule 6; or
+        2) There is no entry at field 381 or field 392 is not equal to 1, and the entry at field 322
+           of Schedule 11 is greater than 3 times the federal monthly full time education
+           amount for the tax year.
+        3) You indicated your client is a member of a communal organization at field 9905;
+           hence, they are not entitled to this claim.
+
+90457   One of the following situations exists on your client’s return:
+        1) A claim was made at field 457, but no entry was made at field 6485, 6486,
+           and/or 6487 of Form GST370.
+        2) An entry was made at field 6485, 6486, and/or 6487 of Form GST370, but no entry
+           was made at field 457.
+
+90488   The entry at field 488 indicates that your client wishes to transfer the refund to the
+        next year’s instalment account. An entry to indicate your client wishes to direct
+        deposit the refund was also made. Your client may either transfer the refund to the
+        next year’s instalment account or direct deposit the refund.
+
+90496   You have made a claim for the Family Tax Cut at field 423 on Schedule 1, but the
+        taxpayer is not eligible for this credit based on one of the following situations:
+         1) An election was made on Form T1032 to split the pension income amount at field
+             116 or for the deduction at field 210 on either your client’s return or their spouse
+             or common-law partner’s return; or
+         2) Your client is bankrupt in the tax year; or
+         3) Your client’s marital status indicated on this return is other than married or
+             living common-law. If the taxpayer was married or living common-law during
+             the year, but on December 31st the marital status was other than married or
+             living common-law, enter 1 at field 5773 if separated for less than 90 days, or
+             delete the claim.
+        Please review the entries and make the necessary corrections.
+
+92065   One of the following situations exists on your client’s return:
+        1) Field 5349 and field 5350 are not present and Releve1 slips are present with a non-
+            Quebec return;
+        2) There is an entry for Quebec tax deductions at field 5349, but no entry was made
+            for income from Quebec information slips at field 5350, or vice versa.
+        3) The amount entered for Quebec tax deductions at field 5349 is greater than the
+            amount entered as income from Quebec information slips at field 5350.
+        Enter the information from the income slips in the taxpayer’s name, even if a portion
+        has been transferred to the spouse or common-law partner on Form T1032, Joint
+        election to split pension income. Please also verify with your client whether all income
+        and tax deductions from Quebec information slips have been reported, and if the
+        entries are correct, a paper return should be submitted.
+
+
+95005   One of the following situations exists on your client’s return:
+        1) There is an immigration date entered on the return but no entries in field 5292
+           and/or 5293. If the entry is nil or negative, enter 1 for processing purposes.
+        2) There is an entry at fields 5292 and/or 5293 but no immigration date entered on
+           the return.
+        3) The year of the immigration date claimed on the return does not equal the tax year
+           being filed.
+
+95026   One of the following situations exists on your client’s return:
+        1) The province of residence is “Quebec” and there is an entry at field 5026 for PPIP
+           premiums. Please verify your entries and either enter the allowable amount of E.I.
+           premiums at field 312 and the allowable amount of PPIP premiums paid at
+           field 375; or correct your client’s province of residence.
+        2) The province of residence is “other than Quebec” and:
+        3) There is an entry at field 5026 and no entry at field 5027 for PPIP premiums; or
+        4) There is an entry at field 5027, and no entry at field 5026 and/or field 450.
+
+95027   The province of residence is other than Quebec and there is an entry at both
+        fields 5027, for PPIP premiums, and 312 for the allowable amount for EI premiums.
+        Field 5026 should be used instead of field 312 when the province of residence is other
+        than Quebec and there is an entry at field 5027.
+
+95029   One of the following situations exists on your client’s return:
+        1) An entry was made at field 5029 to indicate that the province of employment on
+            all T4 slips is Quebec, and there is also an entry at field 376 for PPIP premiums
+            payable on employment income.
+        2) An entry was made at field 5029 and there is also an entry at field 377 of
+            Schedule 10 for T4 employment income where the province of employment was
+            other than Quebec.
+        Verify your entries at the fields noted above and either delete the entry at field 5029,
+        or the entry at field 376 and/or 377.
+
+95031   One of the following situations exists on your client’s return:
+        1) As a resident of any province or territory – a credit was claimed for CPP/QPP
+           contributions at field 5031 on the tax return. You also have to enter at field 5034
+           the total CPP contributions withheld and/or at field 5033, the QPP contributions
+           withheld.
+        2) As a resident of a province or territory other than Quebec – the credit claimed for
+           CPP/QPP contributions at field 5031 on the tax return does not equal field 5033
+           for the total QPP contributions withheld, and if applicable, field 5034 for the total
+           CPP contributions withheld, minus the amount claimed for a CPP/QPP
+           overpayment at field 448.
+        3) As a resident of Quebec the credit claimed for CPP/QPP contributions at
+           field 5031 is more than the amount entered at field 5034 for the total CPP
+           contributions withheld and/or field 5033 for the total QPP contributions withheld.
+        Please make sure you correctly report on your client’s return the province or territory
+        of residence on December 31st. Verify your entries at the fields noted above and make
+        any necessary changes.
+
+95033   One of the following situations exists on your client’s return:
+        1) The taxpayer was a resident of a province or territory other than Quebec on
+            December 31st, and an entry was made at field 5033 for the total QPP
+            contributions withheld. An entry is also required for CPP/QPP contributions at
+            field 5031 and/or a CPP/QPP overpayment at field 448.
+        2) The taxpayer was a resident of Quebec on December 31st, and an entry was made
+            at field 5033 for total QPP contributions withheld. An entry is also required for
+            QPP contributions at field 5031.
+        Please make the necessary changes based on your client’s province or territory of
+        residence.
+
+95034   An entry at field 5034 for total CPP contributions withheld was made. An entry is
+        required for CPP contributions (at field 308 of Schedule 1), or for CPP/QPP
+        contributions (at field 5031), or for a CPP/QPP overpayment (at field 448).
+
+95105   The taxpayer’s marital status indicated on this return is other than married or living
+        common-law, however information about the client’s spouse or common-law partner
+        net income is reported on page 1 of the return. Please change the marital status on this
+        return or delete the applicable net income fields (117, 213, 5230, 5263, 5267, 5538,
+        and/or 9918) related to the spouse or common-law partner. If the taxpayer was
+        married or living common-law during the year but on December 31st the marital
+        status was other than married or living common-law, enter 1 at field 5522.
+
+95109   There are entries on Schedule 5, amounts for spouse or common-law partner and
+        dependants, and: there is a claim for family caregiver amount in both fields 5109 and
+        5110, or the entry at field 5109 or 5110 is not equal to 2040.
+
+95117   All or part of the disability supports deduction is based on the number of weeks in
+        attendance at a designated institution or secondary school. The entry for the number
+        of weeks in the year your client attended exceeds 52, which is the maximum allowed.
+        A change to the entry is required.
+
+95119   One of the following situations applies to your client’s return:
+        1) There is an entry at field 5118 and no entry at field 5119, or vice versa.
+        2) The amount claimed at field 5119 is greater than the amount at field 5118.
+        3) There is an entry at field 5120 and no entry at field 5119.
+
+95122   One of the following situations applies to your client’s return:
+        1) There is an entry at field 5122 and no entries at fields 5119, 5121 and 5124.
+        2) There is no entry at field 5122, and field 5119 minus field 5120 is greater than $0.
+        3) There is no entry at field 5122 and field 5121 is greater than $0.
+        4) There is no entry at field 5122 and field 5124 is greater than $0.
+
+
+
+95123   One of the following situations applies to your client’s return:
+        1) There is an entry at field 5123 and no entry at fields 5119, 5121, 5124, and 5125.
+        2) There is no entry at field 5123 and there is an entry at field 5125.
+        Where the amount at field 5123 is NIL enter 1 for processing purposes.
+
+95125   One of the following situations applies to your client’s return:
+        1) There is an entry at field 5121 and field 5124 or field 5125.
+        2) There is an entry at field 5124 and field 5125.
+        3) The entry at field 5119 minus field 5120 is greater than $0 and there is an entry at
+           field 5124 or field 5125.
+
+95337   CCA on certified film property at field 5337 was claimed but no entry was made for
+        other deductions at field 232. Any claim at field 5337 must be included in the claim at
+        field 232.
+
+95355   There is an entry at field 5355 for the amount of self-employment net earnings
+        reported at self-employment fields in relation to T4 self-employment income and:
+        1) There is no claim for employment insurable earnings at field 5478; and/or
+        2) There is no self-employment income at fields 135, 137, 139, 141, and/or 143.
+        Please review your entries and make the necessary corrections.
+
+95365   One of the following situations applies to your client’s return:
+        1) There is an entry at field 176 and the entry at field 5334 is less than the entry at
+           field 176 of Schedule 3.
+        2) There is an entry at field 5334 and no entry at field 176 of Schedule 3.
+        3) The entry at field 5365 is greater than the entry at field 5334.
+        4) There is an entry at field 5334 and no entry field 5365.
+
+95478   One of the following situations applies to your client’s return:
+        1) Field 5478 cannot exceed the maximum of $49,500.
+        2) The province of residence is “Quebec” and an entry was made for total
+           employment insurance premiums at field 5028 and an entry for EI insurable
+           earnings at field 5478 is required.
+        3) The province of residence is “not Quebec” and fields 5027/5028 are present and
+           an entry for EI insurable earnings (field 5478) is required.
+
+95493   The amount reported for shareholder earnings at field 5493 of Schedule 13 is greater
+        than the amount reported for employment income at field 101.
+
+95494   The amount reported for a Canadian Indian with exempt self-employment income at
+        field 5494 of Schedule 13 is greater than the amount reported for a Canadian Indian
+        with exempt income at field 5363.
+
+95507   An entry was made for RRSP earned income calculation at field 5507. An entry for net
+        self-employment income/loss (fields 135, 137, 139, 141 or 143) is required.
+
+
+95530   An entry was made for earned income adjustment amount at field 5530 and there is
+        no entry for child care expenses at field 214. Enter an amount at field 214 or delete the
+        entry at field 5530.
+
+95548   One of the following situations applies to your client’s return:
+        1) There is an entry for total QPP contributions in field 5033 and an entry is required
+            for total QPP pensionable earnings at field 5548 or vice versa.
+        2) There is an entry for total CPP contributions in field 5034 and an entry is required
+            for total CPP pensionable earnings at field 5549 or vice versa.
+        Please review your entries and make the necessary corrections.
+
+95821   One of the following situations applies to your client’s return:
+        1) You made an entry for the number of dependent children born in 1997 or later at
+           field 6370 of Form SK428, but no claim was made at field 5821 of that form.
+        2) There is an amount claimed at field 5821 but no entry was made at field 6370.
+        3) You have indicated that your client is deceased. Please delete the entries at
+           field 6370 and/or field 5821, as this claim is not allowed on the Section 70(1)
+           return for a deceased person.
+
+95829   There is an entry for EI premiums on self-employment and other eligible earnings at
+        fields 317 and/or 5829 and:
+        1) There are no entries at fields 122, 135, 137, 139, 141, 143, 5493, and/or 5494.
+        2) The province of residence is Quebec and there is an entry at field 5829. This field is
+            not valid for Quebec returns.
+        Please review your entries and make the necessary corrections.
+
+95830   One of the following situations applies to your client’s return:
+        1) There is an entry for the volunteer firefighters’ amount at field 362 on Schedule 1
+           and no entry for the Newfoundland and Labrador volunteer firefighters’ amount
+           at field 5830 on Form NL428, or vice versa.
+        2) There is an entry for the volunteer firefighters’ amount at field 362 on Schedule 1
+           and no entry for the Manitoba volunteer firefighters’ amount at field 5830 on Form
+           MB428, or vice versa.
+        3) The entry at field 5830 differs from the maximum allowable.
+
+95831   One of the following situations applies to your client’s return:
+        1) There is an entry for child care expenses at field 214 and no entry for the
+           Newfoundland and Labrador child care amount at field 5831 on Form NL428, or
+           vice versa.
+        2) There is an entry at field 214 and at field 5831 and the entry at field 214 is not
+           equal to the entry at field 5831.
+
+95836   An entry was made for a pension income amount at field 314 of Schedule 1, but no
+        claim was made at field 5836 of provincial or territorial Form 428; or an entry was
+        made at field 5836, but no entry was made at field 314.
+
+
+
+95838   An entry made for the children’s fitness amount at field 458 of T1 return, but no claim
+        was made at field 5838 of Form BC428, or vice versa.
+
+95845   One of the following situations applies to your client’s return:
+        1) A claim was made for the search and rescue volunteers’ amount at field 395 on
+           federal Schedule 1, but no claim was made at the provincial equivalent on the
+           Manitoba form MB 428 at field 5845; or vice versa; or,
+        2) There is an entry at field 395 and the entry at field 5845 differs from the maximum
+           allowable.
+
+95900   One of the following situations exists on your client’s return:
+        1) There is an entry at field 5900 of Form NU(S2) and at field 5823 of Form NU(428).
+           You cannot have a claim at both fields. Please review and delete either field 5900
+           or field 5823, as required.
+        2) There is an entry at field 5900 and the province of residence is not NU.
+
+        The following situation applies to your client’s return:
+95901
+        1) There is an amount claimed at field 5821 on Form SK428 (dependent children born
+            in 1997 or later).
+        2) There is also an amount claimed at field 5901 on Form SK(S2) (provincial amounts
+            transferred from spouse or common-law partner for dependent children born in
+            1997 or later).
+        You cannot have a claim at both fields. Please review and delete either
+        field 5821/6370 or field 5901, as required.
+
+95902   An entry was made at field 6070 on Form MB428-A for the age amount for spouse or
+        common-law partner. An entry is required for transfer of the spouse or common-law
+        partner’s age amount at field 5902 of Schedule MB(S2) or on field 5864 of
+        Form MB428.
+
+95907   An entry was made at field 6071 on Form MB428-A for the disability amount for
+        spouse or common-law partner. An entry is required for the transfer of the spouse or
+        common-law partner’s disability amount at field 5907 of Schedule MB(S2).
+
+96053   The amount of mining exploration tax credit allocated from a partnership, entered at
+        field 6053 of Form BC479, British Columbia credits cannot be more than the amount of
+        the Mining exploration tax credit at field 6051. Please review and correct field 6053 or
+        field 6051, as required.
+
+96055   There is an entry at field 6055 of Form BC479 for the British Columbia training tax
+        credit for individuals, and no entries at any of fields 6343, 6344, 6345 and/or 6346 of
+        Form T1014. Please review your entries and make the necessary corrections.
+
+
+96056   There is an entry at field 6056 of Form BC479 for the British Columbia training tax
+        credit for employers, and no entries at any of fields 6347, 6348 and/or 6349 of
+        Form T1014-1; or there is an entry at both 6056 for the training tax credit and 6053 for
+        the mining exploration tax credit of Form BC479. You cannot make a claim for both.
+        Please review your entries and make the necessary corrections.
+
+96094   There is an entry for the Manitoba employee share purchase tax credit and one of the
+        following situations applies to your client’s return:
+         1. There is an amount at field 6094 on Form T1256-2, but no entry at field 6137 on
+             Form MB479or
+         2. There is an amount at field 6137 on Form MB479, but no entry at field 6094 on
+             Form T1256-2.
+        Please review your entries and make the necessary corrections.
+
+96110   There are entries at fields 6110, 6112, 6114, 6121, and/or 6123 on Form ON-BEN, for
+        Ontario Trillium Benefit and Ontario senior homeowners’ property tax grant, and:
+        1) There must be an entry at field 6118 to apply for the Ontario energy and property
+           tax credit.
+        2) There must be an entry at field 6119 to apply for the Northern Ontario energy
+           credit. There must be an entry at field 6113 to apply for the Ontario senior
+           homeowners’ property tax grant.
+
+96113   There is an entry at field 6113 on Form ON-BEN to apply for the Ontario senior
+        homeowners’ property tax grant, and there is no entry at field 6112. Please delete the
+        entry at field 6113.
+
+96114   An entry was made for the Manitoba education property tax credit advance at
+        field 6114 of Form MB479. An entry at field 9914 was also made to indicate that no
+        Manitoba education property tax credit advance was received. Please change the
+        entry at field 6114 or field 9914.
+
+96118   There is an application for the Ontario energy and property tax credit at field 6118 on
+        Form ON-BN and there is no entry at any of the following fields: 6110, 6112, 6114,
+        6121, or 6123.
+
+96119   There is an application for the Northern Ontario energy credit at field 6119 on
+        Form ON-BEN and there is no entry at any of the following fields : 6110, 6112, 6121, or
+        6123
+
+96125   The claim for the Manitoba primary caregiver tax credit at field 6125 on Form MB479
+        exceeds the maximum allowable.
+
+96130   For Manitoba residents reporting social benefits at field 145, the percentage value
+        from Box 14 of Form T5007 is required at field 6130. If the taxpayer did not receive
+        any social benefits from the province, an entry of 100 is required at field 6130. Where
+        the client received social benefits from the province for the entire year, an entry of 101
+        is required at field 6130.
+
+96132   A claim was made at field 6132 of Form T4164 for the Manitoba odour control tax
+        credit, and the province or territory of residence as shown on the return is not
+        Manitoba.
+
+96135   The claim for the Manitoba community enterprise development tax credit at field 6135
+        on MB479 exceeds the entry at field 6845 on Form T1256 or $27,000, whichever is less.
+
+96145   One of the following situations applies to your client’s return:
+        1) There is a claim at field 6145 and a claim at field 6086 for the Manitoba advance
+           tuition fee income tax rebate on Form MB479.
+        2) The entry at field 6145 differs from the entry at field 320.
+
+96190   The amount at field 6190 is greater than $75,000.
+
+96197   One of the following situations exists on your client’s return:
+        3) An entry was made at field 6197 of Form NS428 for the low-income tax reduction
+           for the spouse or common-law partner, and at field 6199 for the eligible
+           dependant. You cannot have a claim at both fields. Please review your entries and
+           delete either field 6197 or field 6199, as required.
+        2) You have indicated this is a Pre-bankruptcy return. Please delete all of the entries
+           at fields 6195, 6197, 6199 and 6099, for the NS low-income tax reduction, as this
+           claim is not allowed on a Pre-bankruptcy return.
+
+96228   One of the following situations applies to your client’s return:
+        1) The province of residence is Nova Scotia and a claim was made for a provincial
+           tax credit at field 479, but no entry was made for the volunteer firefighters and
+           ground search and rescue tax credit at field 6228 of Form NS428. Please review
+           your entries and make the necessary corrections.
+        2) You have indicated this is a Pre-bankruptcy return. Please delete the entry at
+           field 6228 for the NS volunteer firefighters and ground search and rescue tax
+           credit, as this claim is not allowed on a Pre-bankruptcy return.
+
+96247   A claim has been made at field 6247 for supplement for spouse or common-law
+        partner and/or field 6249 for family cost of living supplement of Form NT479.
+        However, your client’s marital status is indicated on the return as being other than
+        married or living common-law. Please review the marital status indicated on the
+        return or delete the claim at field 6247 and 6248, as needed.
+
+96251   You have indicated this is a Pre-bankruptcy return. Please delete the entries at
+        fields 6247, 6248, 6249, 6250 and/or 6251 for the NT Cost of living tax credit, as this
+        claim is not allowed on a Pre-bankruptcy return.
+
+96266   You have indicated this is a Pre-bankruptcy return. Please delete the entry at
+        field 6266 for the ON focused flow-through share tax credit, as this claim is not
+        allowed on a Pre-bankruptcy return.
+
+96269   You have indicated this is a Pre-bankruptcy return. Please delete the entries for the
+        ON tax reduction at field 6269 (number of children born in 1997 or later) and/or
+        field 6097 for number of disabled or infirm dependants, as this claim is not allowed on
+        a Pre-bankruptcy return.
+
+96310   You have indicated that this is a Pre-bankruptcy return. Please delete the entry at
+        field 6310 for the ON political contribution tax credit, as this claim is not allowed on a
+        Pre-bankruptcy return.
+
+96336   There is a claim for the Prince Edward Island age reduction for self at field 6336, but
+        the taxpayer is less than 65 years old. Please verify your client’s date of birth or
+        remove the claim.
+
+96340   One of the following situations exists on your client’s return:
+        1) An entry was made at field 6340 of Form PE428 for the low-income tax reduction
+           for the spouse or common-law partner and at field 6341 for the eligible dependant.
+           You cannot have a claim at both fields. Please review your entries and delete the
+           amount at field 6340 or field 6341.
+        2) You have indicated this is a Pre-bankruptcy return. Please delete all of the entries
+           at fields 6339, 6340, 6341, and 6099, for the PE low income tax reduction, as this
+           claim is not allowed on a Pre-bankruptcy return.
+        3) You have indicated your client is deceased. Please delete all of the entries at
+           fields 6339, 6340, 6341, and 6099, for the PE Low income tax reduction, as this
+           claim is not allowed on the Section 70(1) return for deceased person.
+
+96350   The claim for the Prince Edward Island Equity tax credit at field 6350 on Form PE428
+        is greater than the maximum allowable.
+
+96351   One of the following situations exists on your client’s return:
+        1) There is a claim for Prince Edward Island volunteer firefighters tax credit and the
+           claim is less than the maximum allowable amount.
+        2) You have indicated this is a Pre-bankruptcy return. Please delete the entry at
+           field 6351, as this claim is not allowed on a Pre-bankruptcy return.
+        3) There is an entry at field 479 for provincial or territorial credits and there is no
+           claim at field 6351 for the volunteer firefighters tax credit.
+
+96387   An entry was made at field 6387 of Form YT479. Your client must be at least 19 years
+        of age to claim this credit. This entry should be deleted.
+
+96392   One of the following situations exists on your client’s return:
+             1)   An entry was made at field 458, but no entry at field F459, or vice versa; or
+             2)   An entry was made at F458, but does not equal the amount at field 6392; or
+             3)   An entry was made at field 6392, but the province of residence is not YT; or
+                  You have indicated this is a Pre-bankruptcy return. Please delete the entries
+             4)
+             at fields 458 and/or 459, as this claim is not allowed on a Pre-bankruptcy return.
+                                                                                            2 – 53
+96394   One of the following situations exists on your client’s return:
+        1) The entry at field 6390 of Form NU479 for the Total cost of living tax credit is
+           greater than $1200 and less than $1456, and field 6394 is not present. Please review
+           your entries and make the necessary corrections.
+        2) You have indicated this is a Pre-bankruptcy return. This claim is not allowed.
+           Please delete the entries at field 6390, 6394, and/or 6054, as this claim is not
+           allowed on a Pre-bankruptcy return.
+
+96505   An entry was made for the discounter code, and an entry for the discounting
+        transaction of Form RC71, Statement of discounting transaction, amounts was not made
+        or vice versa. Where the return was not discounted, the entries in these fields as well
+        as the discounter code should be deleted.
+
+96509   Field 6509, the date of discounting transaction, is not eight digits. The entry must be
+        eight digits and in YYYYMMDD format. For example, February 03, 2015, should be
+        entered as 20150203.
+
+96770   There is a claim for the overseas employment tax credit and the entry for the number
+        of days in the qualifying period at field 6770 of Form T626, Overseas employment tax
+        credit is greater than 365.
+
+96772   There is a claim for the overseas employment tax credit and the entry at field 6772 of
+        Form T626 is incorrect based on the employment amounts at fields 101, 104, 207, 212,
+        and 229 of the return. Please review the entries and make the necessary corrections.
+
+96774   There are one or more entries for the overseas employment tax credit at fields 6769,
+        6770, 6772, 6773, and/or 6774 of Form T626. Entries are required at fields 6770, 6772,
+        6774, and, if applicable, 6773. However, if there are multiple T626s with two different
+        calculation rates, a paper return will be required. Please review the entries and make
+        the necessary corrections.
+
+96782   An entry was made for the amount of loss created or increased by CCA and carrying
+        charges claimed on certified film property at field 6782 of Form T691. An entry for
+        carrying charges and interest expenses at field 221, or other deductions at field 232, is
+        required.
+
+96795   One or both of the following situations exists on your client’s return:
+        1) The entry at field 6794 for children 6 or younger is greater than the entry at field
+           6795 for total child care expenses on Form T778.
+        2) There is an entry on Form T778 at fields 214, 6794, 6796, 6798, and/or 6801 but
+           there is NO entry at field 6795.
+
+96802   One or more of the following situations exists on your client’s return:
+        1) An entry was made for an elected split-pension income amount at field 116, but no
+           entry was made for the eligible pension income at fields 6802 or 6806 of
+           Form T1032, Joint election to split pension income.
+        2) An entry was made for the deduction for elected split-pension amount at field 210,
+            but no entry was made at fields 6802 or 6806 of Form T1032.
+        3) An entry was made at field 210, but the total of field 115 (Other pensions or
+            superannuation), plus 130 (other income), plus field 129 (RRSP income), minus
+            field 5344 (ineligible pension), field 5508 (Home Buyers’ Plan income inclusion
+            amount), field 5511 (Lifelong Learning Plan income inclusion amount) is zero.
+        Please review the entries and make the necessary corrections.
+
+96808   An entry was made for other investment expenses at field 6808 of Form T936. An
+        entry for net farming income/loss at field 141, and/or net fishing income/loss at
+        field 143, and/or other deductions at field 232 is required.
+
+96810   An entry was made for any other property income at field 6810 of Form T936. An
+        entry is required for CPP or QPP benefits at field 114, and/or other pensions or
+        superannuation at field 115, and/or other income at field 130, and/or net farming
+        income/loss at field 141, and/or net fishing income/loss at field 143, and/or limited
+        partnership losses of previous years at field 251.
+
+96811   An entry was made for 50% of income from the recovery of exploration and
+        development expenses at field 6811 of Form T936. An entry for other income at
+        field 130 is required. The amount entered at field 6811 must also be included in the
+        amount reported as other income at field 130.
+
+96820   An entry was made at field 6820 for Quebec labour-sponsored venture capital
+        corporation (LSVCC) taxes and the province of residence is not QC. Please review the
+        entries and make the necessary corrections.
+96836   The amount entered for total split income at field 6836 of Form T1206 cannot be less
+        than the amount of taxable dividends reported at field 6835 of this form. Please
+        review your entries and change field 6836 or field 6835 as needed.
+
+98001   An entry was made at field 6248 (Basic credit for spouse or common-law partner) on
+        Form NT479. An entry was also made at field 8001 to indicate that the spouse or
+        common-law partner’s basic cost of living credit is NIL. Please review your entries
+        and change field 6248 or field 8001 as needed.
+
+99915   No entries have been made in any of the income fields (field 101 through field 146).
+        Where the taxpayer has income, enter the appropriate amounts. Where the taxpayer
+        has no income amounts to report, enter 7 at field 9915.
+
+99917   One of the following situations applies to your client’s return:
+        1) Old age security (OAS) pension was received and reported at field 113, but there
+           is an indication at field 9917 that no OAS pension was received. In this situation,
+           delete the entry at field 9917.
+        2) An OAS supplement was received, but was not reported at field 146. Review your
+           client’s documents to determine the entries required.
+        3) The taxpayer is less than 65 years of age on December 31st, but an entry was made
+           at field 9917. Please verify the date of birth. If the taxpayer was not 65, delete the
+           entry at field 9917.
+
+99918     An entry was made for the net income of the taxpayer’s spouse or common-law
+          partner in the Identification area on page 1 of your return. An entry to indicate that
+          the spouse or common-law partner had no net income at field 9918 was also made.
+          The entry for spouse or common-law partner’s income on page 1 of the return and
+          field 9918 cannot be present together.
+
+
+
+Y1NNNN The entry in this field is not valid for processing purposes. Values entered in
+       field codes have a defined length, which for most fields is up to 9 digits. This error
+       could result from a missing delimiter such as “*” indicating the end of the field code
+       and its value.
+
+Y3NNNN An invalid character(s) is in the free format area. Review the free format entries and
+       contact your software developer if you need assistance.
+
+Y5NNNN This field code is not valid. Contact your software developer for assistance.
+
+Y6NNNN The entry in this field is not numeric. Where the NNNN is replaced by 0000, this
+       means the field in question could not be identified and you should review the entire
+       record. Contact your software developer for assistance.
+
+Y80001   The business type code entered on your SFD statement is not valid. Please enter the
+         valid code from the following list:
+         1 for Rental operations
+         2 for Business and commission operations
+         3 for Professional operations
+         4 for Fishing operations
+         5 for Farming operations
+         6 for AgriStability and AgriInvest programs information and statement of farming
+           activities for individuals
+         7 for Employment expenses
+         8 for Meals and lodging expenses
+         9 for Harmonized AgriStability and AgriInvest programs information and statement
+           of farming activities for individuals
+
+Y80002   The industry code in this SFD statement is not valid.
+
+Y80003   An entry for gross income is required. Where the gross income for the SFD is NIL or
+         negative, a value of 1 is required for processing purposes.
+
+Y80004   An entry for net income is required. Where the net income is NIL, a value of 1 is
+         required for processing purposes.
+
+Y80006   One or more of the following situations apply to your client’s return:
+         1) There is no entry for the rental property address on Form T776, Statement of real
+             estate rentals.
+         2) There is no entry for the business address on Form T2125, Statement of business
+             activities.
+         3) There is no entry for the farm address on Form T2042, Statement of farming
+             activities.
+         Please complete the address for the required form(s) and re-submit the return.
+
+Y80007   One of the following situations applies to your client’s return:
+         1) The fiscal period start and/or end date entered is invalid or not in YYYYMMDD
+            format or the end date is less than the start date.
+         2) The fiscal period end date is not equal to the tax year.
+
+Y80008   Under Participant profile on Form T1163 or T1273, the PIN entered is not valid.
+         Review your client’s source documents or contact your client and enter the correct
+         PIN. A missing or invalid PIN will cause delays in the processing of your
+         application.
+
+Y80009   The business type code is “6” and the amounts at field 9950 and/or field 9960, do not
+         balance to their respective total.
+
+
+Y80010   The selected financial data (SFD) record does not balance from Gross Income to Net
+         Income/Loss. The sum of all income fields minus the expenses claimed, (multiplied
+         by the percentage share of the partnership, if applicable) should equal the net
+         income/loss at field 9946 of the SFD statement.
+
+         This error may also set when there are entries in fields that do not relate to the ‘Type
+         of business code’ of the SFD. For example, fields 8300, 8320, 8340, 8360, 8450, 8500,
+         8518 and/or 8519 relate to Form T2125 when the code for the type of business is “2”
+         for Business or Commission operations, but do not relate to Form T2125 when the
+         code for the type of business is “3” for Professional operations.
+
+Y80011   The Program codes entered on the AgriStability and AgriInvest return do not match
+         the AgriStability and AgriInvest Program commodity codes. Review the entries and
+         make the necessary corrections.
+
+Y80012   The entries for Name and Address of Program Contact Person and/or Partnership
+         Information contain invalid characters.
+
+Y80013   The AgriStability and AgriInvest programs business type code is not a 1 (sole
+         proprietorship) or 2 (partnership), or contains an invalid character.
+
+Y80014   The postal code entered on the SFD record is not located in the same province or
+         territory as you resided in on December 31st, therefore this return is not eligible for
+         EFILE. Please refer to the list of exclusions in the Appendices of this manual.
+
+Y80015   The Livestock Inventory code entered in Section 7 (Livestock Inventory Valuation) of
+         the AgriStability and AgriInvest Harmonized Form T1273 is not valid, or is not valid
+         for the Province of Main Farmstead that has been entered. For a valid list of codes,
+         please refer to the Inventory code list in the “Farming Income and the AgriStability
+         and AgriInvest Programs Harmonized Guide” (RC4408) and make the necessary
+         corrections.
+
+Y80016   The Crops Inventory code entered in Section 8 (Crop Inventory Valuation) of the
+         AgriStability and AgriInvest Harmonized Form T1273 is not valid, or is not valid for
+         the Province of Main Farmstead that has been entered. For a valid list of codes,
+         please refer to the Inventory code list in the “Farming Income and the AgriStability
+         and AgriInvest Programs Harmonized Guide” (RC4408) and make the necessary
+         corrections.
+
+Y80017   The Productive Capacity Inventory code entered in Section 9 (Productive Capacity)
+         of the AgriStability and AgriInvest Harmonized Form T1273 is not valid. For a valid
+         list of codes, please refer to the Productive Capacity list in the “Farming Income and
+         the AgriStability and AgriInvest Programs Harmonized Guide” (RC4408) and make
+         the necessary corrections.
+
+
+Y80018   The Purchased Inputs code entered in Section 10 (Purchased Inputs) of the
+         AgriStability and AgriInvest Harmonized Form T1273 is not valid. For a valid list of
+         codes, please refer to the Commodity and Expense code lists in the “Farming Income
+         and the AgriStability and AgriInvest Programs Harmonized Guide” (RC4408) and
+         make the necessary corrections.
+
+Y80019   The Deferred Income and Receivables code entered in Section 11 (Deferred Income
+         and Receivables) of the AgriStability and AgriInvest Harmonized Form T1273 is not
+         valid. Please make the necessary corrections by referring to the Commodity and
+         Program payment lists in the “Farming Income and the AgriStability and AgriInvest
+         Programs Harmonized Guide” (RC4408). Code 9574 from Section 4 “Other Farming
+         Income” from the T1273 is also valid for Section 11.
+
+Y80020   The Accounts Payable code entered in Section 12 (Accounts Payable) of the
+         AgriStability and AgriInvest Harmonized Form T1273 is not valid. Please make the
+         necessary corrections by referring to the Commodity List, Program Payments List
+         and the Expense Code List in the “Farming Income and the AgriStability and
+         AgriInvest Programs Harmonized Guide” (RC4408).
+
+Y80021   The Crops Unit of Measurement Type code entered in Section 8 (Crop Inventory
+         Valuation) is not valid. For a valid list of codes, please refer to the Units of
+         Measurement Code List in the “Farming Income and the AgriStability and
+         AgriInvest Programs Harmonized Guide” (RC4408) and make the necessary
+         corrections.
+
+Y80022   One of the following situations exists on your client’s AgriStability and AgriInvest
+         return under Section 2 (Participant Profile) of Form T1273:
+         1) The province of Main Farmstead has been indicated as either, BC, MB, NB, NS,
+             or YT. An entry for the District, County, or Municipality is required.
+         2) The province of Main Farmstead has been indicated as either, AB, SK, ON, QC,
+             NL, PE, NT, or NU, and there is an entry for the Name or Number of the District,
+             County or Municipality. Please correct the province, or remove the entry for the
+             Name and/or Number.
+
+Y80023   The Method of Accounting has been indicated as “1” for Accrual and:
+         1) There are entries in the End of year price amounts in Section 7 (Livestock
+            Inventory Valuation) and/or Section 8 (Crop Inventory Valuation), or
+         2) There are entries in Sections 10 (Purchased Inputs), Section 11 (Deferred Income
+            and Receivables) and/or Section 12 (Accounts Payable.)
+            Please change your method of accounting to “2” for Cash or remove the data
+            reported in these sections.
+
+Y80024   The Method of Accounting on the Farming or AgriStability and AgriInvest record
+         has been indicated as “1” for Accrual and a value was entered at field 9937, 9938,
+         9941, or 9942. Please change your method of accounting to “2” for Cash or remove
+         the entries from these fields.
+
+
+
+
+Y80025   A valid PIN has not been entered for each partner listed in Section 6: Summary of
+         income and expenses – Partnership Information. A missing or invalid PIN will cause
+         delays in the processing of your application.
+
+Y80026   The sum of the % share fields for all lines under Partnership Information on
+         Form T1163 or T1273 does not equal 100%. Please correct the percentages.
+
+Y80027   A value has been entered in the Ending Inventory of Section 8 (Crop Inventory
+         Valuation) of Form T1273. The corresponding code for this entry is listed as
+         Perishable and should not have an ending inventory. Please recode the information
+         or delete the ending inventory.
+
+Y80028   A duplicate Production Insurance Contract Number has been entered on
+         Form T1273. Please review and remove the duplicate number.
+
+Y80029   A duplicate Participant Identification Number (PIN) has been entered under
+         Partnership Information on Form T1163 or T1273. Please review and delete the
+         duplicate PIN.
+
+Y80030   One of the following situations exists on your client’s AgriStability and AgriInvest
+         return:
+         1) A value has been entered for % Share under Partnership Information and no
+             partner name has been entered.
+         2) A partner name has been entered with no corresponding value for % Share.
+
+Y80031   You have indicated “Partnership” in the Identification Section of your client’s
+         AgriStability and AgriInvest return, but no Partnership Information has been
+         entered. Please complete the required information for partnerships.
+
+Y80032   One of the following situations exists on your client’s AgriStability and AgriInvest
+         return, in the “Whole Farm” subsection, under Participant Profile of Form T1273:
+         1) “No” has been indicated to combine this operation with another operation for
+             the program year,” however “Add” was selected to add the PIN of another
+             operation.
+         2) A PIN has been entered, however, there is no response of “Yes” or “No” to
+             combine this operation with another operation.
+         3) There is no indication of “Add or ‘Remove.”
+         4) No PIN has been entered, however, there is an entry of “Yes” to combine the
+             operation with another.
+         5) There are entries in both “No” and “Remove.”
+         Please review your entries and make the necessary corrections.
+
+Y80034   No entry was received for the Method of Accounting, or an incorrect value was
+         entered. Please enter “1” for Accrual, or “2” for Cash.
+
+
+Y80037   On your client’s AgriStability and AgriInvest return, the box in response to the
+         question “If you have a contact person, check here,” has been ‘checked’, but no
+         Contact Person information has been entered. Please enter the first and last name of
+         the contact person, or the business name, and the address, town/city, postal code,
+         and province.
+
+Y80038   There is an indication that the Calculation of Program Benefits for the AgriStability
+         and AgriInvest Program is to be sent to the contact person. Please enter all of the
+         following information:
+         1) First and last name, or Business name;
+         2) Address;
+         3) City, town or village; and
+         4) Province.
+
+Y80039   One of the following situations exists on your client’s AgriStability and AgriInvest
+         return:
+         1) There is an indication that your client has not completed a production cycle, but
+             no indication that it was due to disaster circumstances.
+         2) There is an indication that your client has completed a production cycle on a
+             least one of the commodities produced, but there is also a response to the
+             question, “If ‘no’ to the above question, were you unable to complete a
+             production cycle due to disaster circumstances?”
+         Please review your entries and make the necessary corrections.

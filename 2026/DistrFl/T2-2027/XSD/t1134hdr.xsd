@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<xsd:schema 
+    xmlns:t1134hdr="http://www.cra-arc.gc.ca/xmlns/t1134hdr/1-0-0"
+    xmlns:hdr="http://www.cra-arc.gc.ca/xmlns/hdr/1-0-0"
+    xmlns:t1134="http://www.cra-arc.gc.ca/xmlns/t1134/2021/1-0-0"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0"
+    xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+    targetNamespace="http://www.cra-arc.gc.ca/xmlns/t1134hdr/1-0-0"
+    elementFormDefault="qualified" attributeFormDefault="unqualified" version="t1134hdr/1-0-0">
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" schemaLocation="cracommonstructures.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" schemaLocation="standarddatatypes.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/t1134/2021/1-0-0" schemaLocation="ControlledAndNotControlledForeignAffiliateReturn2021.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/hdr/1-0-0" schemaLocation="CDCMessageHeader.xsd"/>
+
+    <xsd:element name="T1134Header" type="t1134hdr:T1134HeaderType"/>
+    <xsd:complexType name="T1134HeaderType">
+        <xsd:sequence>
+            <xsd:element ref="hdr:CDCMessageHeader"/>
+            <xsd:element ref="t1134:ControlledAndNotControlledForeignAffiliateReturn"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>
+
+

@@ -1,0 +1,7 @@
+Select
+clients.*
+FROM clients
+As clients
+WHERE Prp_Status = "07"
+Order By Last_Name
+

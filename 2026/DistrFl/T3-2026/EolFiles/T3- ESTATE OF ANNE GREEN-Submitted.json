@@ -1,0 +1,245 @@
+{
+  "header":  
+  {
+    "trustNumber":"A00001122",
+    "softwareId":"064",
+    "softwareRevisionDate":"2025-02-01",
+    "firstTimeFilerIndicator":false,
+    "additionalTaxReturnIndicator":false,
+    "testCaseIdentifier":    1036,
+    "originatingIp":"0.0.0.0",
+    "taxProfessionalData":    
+    {
+      "transmitterEFilerNumber":"B0865",
+      "passwordId":"767AJ5X",
+      "taxPreparerEfilerNumber":"B0865",
+      "taxPreparerEfilerPassword":"767AJ5X",
+      "taxPreparerReturnControlNumber":"24170230",
+      "taxPreparerAuthorizationIndicator":true,
+      "taxPreparerAuthorizationExpiryDate":"2025-12-17",
+      "taxPreparerPreAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "taxPreparerPostAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "representativeId":"JL3R2RC",
+      "t183ElectronicSignature":      
+      {
+        "t183ElectronicSignatureIndicator":true,
+        "t183ElectronicSignatureDate":"2025-12-17",
+        "t183ElectronicSignatureTime":"10:03:21"      
+      }    
+    }  
+  },
+  "trustIdentification":  
+  {
+    "trustIdentifier":    
+    {
+      "countryOfResidence":"CAN",
+      "provinceOfResidence":"BC",
+      "trustName":"ESTATE OF ANNE GREEN",
+      "trustAccountNumber":"A00001122"    
+    },
+    "primaryTrusteeContactInformation":    
+    {
+      "trusteeNameChangeIndicator":false,
+      "isIndividualIndicator":true,
+      "trusteeContactInformation":      
+      {
+        "individualName":        
+        {
+          "firstName":"DAN",
+          "lastName":"SMITH"        
+        },
+        "address":        
+        {
+          "addressLineOne":"476 LYNETT CRES",
+          "city":"RICHMOND HILL",
+          "provinceTerritoryState":"ON",
+          "globalPostalZipCode":"L4C2V9",
+          "country":"CAN"        
+        },
+        "telephoneNumber":        
+        {
+          "countryCode":"1",
+          "areaCode":"905",
+          "localNumber":"8841453"        
+        }      
+      }    
+    },
+    "trustResidencyInformation":    
+    {
+      "trustDeemedCanadianResidentIndicator":false,
+      "languageOfCorrespondence":"ENGLISH"    
+    }  
+  },
+  "trustTypeInformation":  
+  {
+    "trustType":"TYPE_905",
+    "testatorDeathDate":"2006-12-01",
+    "deceasedSocialInsuranceNumber":"870036241"  
+  },
+  "filingInformation":  
+  {
+    "trustFiscalPeriodStart":"2025-01-01",
+    "trustFiscalPeriodEnd":"2025-12-31",
+    "firstYearFilingIndicator":false,
+    "previousFilingYear":    2024,
+    "trustFinalReturnIndicator":false  
+  },
+  "foreignPropertyInExcessOf100000":false,
+  "otherInformation":  
+  {
+    "electingTrustIndicator":false,
+    "trustIncomePaymentToBeneficiariesRequired":false,
+    "trustDistributedNonCashAssetsToBeneficiary":true,
+    "trustBeneficiariesChanged":false,
+    "trustDeemedDispositionBeneficiaryDeathIndicator":false,
+    "trustNonArmsLengthDebtTransactionIndicator":false,
+    "trustCapitalIncomeInterestOwnershipChangeIndicator":false,
+    "trustHoldsSharesInPrivateCorporation":false,
+    "trustAdditionalContributionPropertyReceiptIndicator":false,
+    "publicTrust":false,
+    "trustUsedInternationalFinancialReportingStandards":false,
+    "trustLossRestrictionEventIndicator":false,
+    "assetsHeldListedUnderParagraph150NotExceeding50kIndicator":true,
+    "trustRequiredToHoldFundsUnderRelevantRulesIndicator":true,
+    "interestOrFinancingExpensesIndicator":false,
+    "unitTrustUnderSubSection108Indicator":false,
+    "trustWhichAllUnitsListedOnStockExchangeIndicator":false,
+    "trustMeetConditionsInParagraph150Indicator":true,
+    "propertyForSpecifiedPurposeIndicator":true,
+    "indigenousGroupsIndicator":false  
+  },
+  "memoIndicators":  
+  {
+    "alterEgoIndicator":false,
+    "preferredBeneficiaryIndicator":false,
+    "mutualFundReorganizatonIndicator":false,
+    "mutualFundExtensionApprovalIndicator":false,
+    "insuranceSegregatedFundReorganizationIndicator":false,
+    "insuranceSegregatedFundExtensionApprovalIndicator":false,
+    "mutualFundElectingDec15FPEIndicator":false  
+  },
+  "returnLines":  
+  [
+    {
+      "fieldCode":"01",
+      "fieldValue":      4247    
+    },
+    {
+      "fieldCode":"03",
+      "fieldValue":      8573    
+    },
+    {
+      "fieldCode":"04",
+      "fieldValue":      3387    
+    },
+    {
+      "fieldCode":"05",
+      "fieldValue":      720    
+    },
+    {
+      "fieldCode":"20",
+      "fieldValue":      16927    
+    },
+    {
+      "fieldCode":"21",
+      "fieldValue":      8523    
+    },
+    {
+      "fieldCode":"49",
+      "fieldValue":      3258    
+    },
+    {
+      "fieldCode":"50",
+      "fieldValue":      11662    
+    },
+    {
+      "fieldCode":"52",
+      "fieldValue":      4247    
+    },
+    {
+      "fieldCode":"56",
+      "fieldValue":      7415    
+    },
+    {
+      "fieldCode":"81",
+      "fieldValue":1722.88    
+    },
+    {
+      "fieldCode":"82",
+      "fieldValue":467.81    
+    },
+    {
+      "fieldCode":"84",
+      "fieldValue":2190.69    
+    },
+    {
+      "fieldCode":"94",
+      "fieldValue":2190.69    
+    },
+    {
+      "fieldCode":"1031",
+      "fieldValue":      81732    
+    },
+    {
+      "fieldCode":"1032",
+      "fieldValue":      8494    
+    },
+    {
+      "fieldCode":"1220",
+      "fieldValue":      4247    
+    },
+    {
+      "fieldCode":"8120",
+      "fieldValue":      8573    
+    },
+    {
+      "fieldCode":"8170",
+      "fieldValue":      8440    
+    },
+    {
+      "fieldCode":"8190",
+      "fieldValue":      82    
+    },
+    {
+      "fieldCode":"11080",
+      "fieldValue":2446.95    
+    },
+    {
+      "fieldCode":"11108",
+      "fieldValue":1776.91    
+    },
+    {
+      "fieldCode":"12270",
+      "fieldValue":      8404    
+    },
+    {
+      "fieldCode":"12550",
+      "fieldValue":1722.88    
+    },
+    {
+      "fieldCode":"12670",
+      "fieldValue":1052.84    
+    },
+    {
+      "fieldCode":"12680",
+      "fieldValue":303.1    
+    },
+    {
+      "fieldCode":"12690",
+      "fieldValue":1355.94    
+    },
+    {
+      "fieldCode":"14601",
+      "fieldValue":1520.06    
+    },
+    {
+      "fieldCode":"14618",
+      "fieldValue":1419.69    
+    },
+    {
+      "fieldCode":"14602",
+      "fieldValue":367.44    
+    }  
+  ],
+  "refundCode":"ISSUE_OVERPAYMENT_00"
+}

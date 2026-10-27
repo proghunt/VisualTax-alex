@@ -1,0 +1,10 @@
+<DacRequest xmlns="http://www.cra-arc.gc.ca/xmlns/sres/1-0-0" xmlns:common="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0">
+   <common:SoftwareCode>VT50</common:SoftwareCode>
+   <common:ClientId>599468402RZ0001</common:ClientId>
+   <SharedSecrets>
+      <PartnershipEntity>
+         <RegistrationDate>2023-04-01</RegistrationDate>
+      </PartnershipEntity>
+   </SharedSecrets>
+   <Year>2025</Year>
+</DacRequest>

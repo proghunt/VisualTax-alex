@@ -1,0 +1,52 @@
+Dir_Cur             C:\VT\FP-2027\Data
+BackupFrequency     7
+BackupDir           C:\VT\FP-2027\BackUp
+LastBackupDir       
+Dir_Deflt           C:\VT\FP-2027\Data
+T1DataDir           C:\VT\T1-2026\Data
+Dir_LastYr          C:\VT\Fp-2026\Data
+Dir_PgmLastYr       
+Dir_DBFData         
+Prp_Name            
+Prp_Email           
+Prp_BusNo           
+Reviewer_EMail      
+Reviewer_Name       
+Reviewer_Area       
+Reviewer_Tel        
+Prp_Street          
+Prp_City            
+Prp_Prov            
+Prp_Postal          
+Prp_countr          
+Prp_Area            
+Prp_Tel             
+Prp_FxArea          
+Prp_Fax             
+Prp_GstNo           
+Prp_Bill            2
+Prp_VSFee           100
+Prp_SFee            150
+Prp_AFee            200
+Prp_CFee            300
+Prp_VCFee           400
+Prp_Hour            60
+Prp_Dates           
+Nfl_Prov            ON
+Nfl_City            TORONTO
+Capitalization      UpperCase
+Prn_NameH           X
+Prn_SinH            X
+Prn_DateH           X
+Opr_GstHst          6
+UseFastPrint        
+UseProperName       X
+NoTypeAhead         
+ShowInvoiceWarning  X
+InvFoot1            
+InvFoot2            
+InvFoot3            
+InvFoot4            
+InvFoot5            
+ActiveBoxColor      8421631
+DataInBold          

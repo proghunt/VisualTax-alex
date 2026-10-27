@@ -1,0 +1,7 @@
+Select
+clients.*
+From "clients.dbf"
+As clients
+where PRP_Status = "03"
+Order By corp_Name
+

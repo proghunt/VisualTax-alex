@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+	xmlns:srescommon="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0"
+	targetNamespace="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	version="srescommon/1-0-0"> 
+	
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd" />
+	<xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" schemaLocation="standarddatatypes.xsd" />
+		
+	<xsd:element name="SoftwareCode">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	
+	<xsd:element name="TaxYear">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	
+	<xsd:element name="ClientId">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+
+	<xsd:element name="FormNumber">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="4"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	
+	<xsd:element name="FormSequenceNumber">
+		<xsd:simpleType>
+			<xsd:restriction base="sdt:CountType">
+				<xsd:pattern value="[0-9]{1,4}" />
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	
+	<xsd:complexType name="ErrorMessageType">
+		<xsd:sequence>
+			<xsd:element ref="srescommon:ErrorId" minOccurs="1" maxOccurs="1" />
+			<xsd:element ref="srescommon:ErrorEnglishDesc" minOccurs="1" maxOccurs="1" />
+			<xsd:element ref="srescommon:ErrorFrenchDesc" minOccurs="1" maxOccurs="1" />			
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:element name="ErrorId">
+		<xsd:simpleType>
+			<xsd:restriction base="sdt:CountType">
+				<xsd:pattern value="[0-9]{1,4}" />
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+
+	<xsd:element name="ErrorEnglishDesc">
+		<xsd:simpleType>
+			<xsd:restriction base="sdt:SimpleTextType">
+				<xsd:maxLength value="256" />
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	
+	<xsd:element name="ErrorFrenchDesc">
+		<xsd:simpleType>
+			<xsd:restriction base="sdt:SimpleTextType">
+				<xsd:maxLength value="256" />
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>	
+	
+	<xsd:element name="ConfirmationNumber">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="8"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	
+	<xsd:element name="FileName">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string" />
+		</xsd:simpleType>
+	</xsd:element>
+</xsd:schema>

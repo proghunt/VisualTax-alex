@@ -1,0 +1,62 @@
+Dir_Cur             C:\VT\T3-2026\T3CERT26
+Dir_ClientDocs      C:\VT\T3\T3-2026\Client Documents
+BackupFrequency     7
+BackupDir           C:\VT\T3\T3-2026\BackUp
+LastBackupDir       
+Dir_Deflt           C:\VT\T3-2026\T3CERT26
+Dir_LastYr          C:\vt\T3-2025\certif25-sp
+Dir_PgmLastYr       C:\Vt-2025\T3-2025
+Dir_DBFData         
+Prp_Name            Microsophic
+Prp_ContactName     Constantin Zantiris
+Prp_TransmitterNo   666666664rp0001
+Prp_TransmitterAccou
+Prp_Email           xx@yyy.com
+Prp_BusNo           
+Prp_RepresentativeIdJL3R2RC
+Reviewer_EMail      
+Reviewer_Name       
+Reviewer_Area       
+Reviewer_Tel        
+Prp_Street          str
+Prp_City            city1
+Prp_Prov            ON
+Prp_Postal          L4W 3E5
+Prp_countr          CAN
+Prp_Area            905
+Prp_Tel             238-6159
+Prp_FxArea          
+Prp_Fax             
+Prp_GstNo           
+Prp_Bill            2
+Prp_VSFee           30
+Prp_SFee            50
+Prp_AFee            70
+Prp_CFee            100
+Prp_VCFee           150
+Prp_Hour            60
+Prp_Dates           
+Nfl_Prov            ON
+Nfl_City            TORONTO
+Capitalization      UpperCase
+Prn_NameH           X
+Prn_SinH            X
+Prn_DateH           X
+Prn_Disclm          
+Opr_Close           X
+Opr_GstHst          
+UseFastPrint        
+UseProperName       X
+NoTypeAhead         
+ShowInvoiceWarning  X
+InvFoot1            
+InvFoot2            
+InvFoot3            
+InvFoot4            
+InvFoot5            
+ActiveBoxColor      8421631
+DataInBold          
+ShowUsedForms       X
+OpenAtLastForm      X
+NoBarCode           
+RolloverProgram     VisualTax

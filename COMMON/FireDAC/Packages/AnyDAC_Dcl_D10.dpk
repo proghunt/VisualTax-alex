@@ -1,0 +1,63 @@
+package AnyDAC_Dcl_D10;
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Embarcadero FireDAC Components'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+{$I uAD.inc}
+
+requires
+  designide,
+  rtl,
+  vcl,
+  dbrtl,
+  vclactnband,
+  vclx,
+  dcldb,
+  vcldesigner,
+  dclstd,
+  vcldb,
+  AnyDAC_Comp_D10,
+  AnyDAC_ComI_D10,
+  AnyDAC_GUIxForms_D10,
+  AnyDAC_Phys_D10,
+  AnyDAC_PhysODBC_D10,
+  AnyDAC_PhysMSAcc_D10,
+  AnyDAC_PhysMSSQL_D10,
+  AnyDAC_PhysDB2_D10,
+  AnyDAC_PhysMySQL_D10,
+  AnyDAC_PhysOracle_D10,
+  AnyDAC_PhysASA_D10,
+  AnyDAC_PhysADS_D10,
+{$IFDEF AnyDAC_DBX}
+  AnyDAC_PhysDbExp_D10,
+{$ENDIF}
+  AnyDAC_PhysIB_D10,
+  AnyDAC_PhysPG_D10,
+  AnyDAC_PhysSQLite_D10;
+
+contains
+  uADCompReg;
+
+end.

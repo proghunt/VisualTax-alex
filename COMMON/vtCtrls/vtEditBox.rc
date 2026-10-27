@@ -1,0 +1,7 @@
+INSERTROW BITMAP "btnInsertRow.bmp"
+ROWDOWN BITMAP "RowDown.bmp"
+ROWUP BITMAP "RowUp.bmp"
+DELETEROW BITMAP "DeleteRow.bmp"
+ROWMOVE BITMAP "RowMove.bmp"
+ARROWMOVEDOWN BITMAP "ArrowMoveDown.bmp"
+ARROWMOVEUP BITMAP "ArrowMoveUp.bmp"

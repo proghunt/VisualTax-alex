@@ -1,0 +1,53 @@
+<FileReturnRequest xmlns="http://www.cra-arc.gc.ca/xmlns/sres/1-0-0" xmlns:common="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0">
+   <common:SoftwareCode>VT50</common:SoftwareCode>
+   <common:ClientId>599480407RC0001</common:ClientId>
+   <Form>
+      <common:FormSequenceNumber>1</common:FormSequenceNumber>
+      <common:FormNumber>0217</common:FormNumber>
+      <FieldCode>
+         <Line>0002</Line>
+         <Row>0</Row>
+         <Value>CANADIAN CORPORATIONS TESTING NO 16</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0019</Line>
+         <Row>0</Row>
+         <Value>Adam Bell</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0022</Line>
+         <Row>0</Row>
+         <Value>204-638-9249</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0200</Line>
+         <Row>0</Row>
+         <Value>2021/12/31</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0210</Line>
+         <Row>0</Row>
+         <Value>1</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0950</Line>
+         <Row>0</Row>
+         <Value>John Smith</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0954</Line>
+         <Row>0</Row>
+         <Value>Director</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0952</Line>
+         <Row>0</Row>
+         <Value>1</Value>
+      </FieldCode>
+      <FieldCode>
+         <Line>0955</Line>
+         <Row>0</Row>
+         <Value>2022/07/15</Value>
+      </FieldCode>
+   </Form>
+</FileReturnRequest>

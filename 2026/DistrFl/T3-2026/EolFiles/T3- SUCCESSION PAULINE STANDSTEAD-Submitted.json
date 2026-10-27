@@ -1,0 +1,211 @@
+{
+  "header":  
+  {
+    "trustNumber":"A00000074",
+    "softwareId":"064",
+    "softwareRevisionDate":"2025-02-01",
+    "firstTimeFilerIndicator":false,
+    "additionalTaxReturnIndicator":false,
+    "testCaseIdentifier":    1056,
+    "originatingIp":"0.0.0.0",
+    "taxProfessionalData":    
+    {
+      "transmitterEFilerNumber":"B0865",
+      "passwordId":"767AJ5X",
+      "taxPreparerEfilerNumber":"B0865",
+      "taxPreparerEfilerPassword":"767AJ5X",
+      "taxPreparerReturnControlNumber":"21055829",
+      "taxPreparerAuthorizationIndicator":true,
+      "taxPreparerAuthorizationExpiryDate":"2025-09-18",
+      "taxPreparerPreAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "taxPreparerPostAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "representativeId":"JL3R2RC",
+      "t183ElectronicSignature":      
+      {
+        "t183ElectronicSignatureIndicator":true,
+        "t183ElectronicSignatureDate":"2025-09-18",
+        "t183ElectronicSignatureTime":"17:15:54"      
+      }    
+    }  
+  },
+  "trustIdentification":  
+  {
+    "trustIdentifier":    
+    {
+      "countryOfResidence":"CAN",
+      "provinceOfResidence":"QC",
+      "trustName":"SUCCESSION PAULINE STANDSTEAD",
+      "trustAccountNumber":"A00000074"    
+    },
+    "primaryTrusteeContactInformation":    
+    {
+      "trusteeNameChangeIndicator":false,
+      "isIndividualIndicator":true,
+      "trusteeContactInformation":      
+      {
+        "individualName":        
+        {
+          "firstName":"PAUL",
+          "lastName":"STANDSTEAD"        
+        },
+        "address":        
+        {
+          "addressLineOne":"6721 BEAUBIEN EST",
+          "city":"MONTREAL",
+          "provinceTerritoryState":"QC",
+          "globalPostalZipCode":"H1M3B2",
+          "country":"CAN"        
+        }      
+      }    
+    },
+    "trustResidencyInformation":    
+    {
+      "trustDeemedCanadianResidentIndicator":false,
+      "languageOfCorrespondence":"FRENCH"    
+    }  
+  },
+  "trustTypeInformation":  
+  {
+    "trustType":"TYPE_903",
+    "testatorDeathDate":"2024-08-05",
+    "deceasedSocialInsuranceNumber":"870037520"  
+  },
+  "filingInformation":  
+  {
+    "trustFiscalPeriodStart":"2024-08-05",
+    "trustFiscalPeriodEnd":"2025-05-31",
+    "firstYearFilingIndicator":false,
+    "previousFilingYear":    2024,
+    "trustFinalReturnIndicator":true,
+    "trustWindupDate":"2025-05-31"  
+  },
+  "foreignPropertyInExcessOf100000":false,
+  "otherInformation":  
+  {
+    "electingTrustIndicator":false,
+    "trustIncomePaymentToBeneficiariesRequired":false,
+    "trustDistributedNonCashAssetsToBeneficiary":false,
+    "trustBeneficiariesChanged":false,
+    "trustDeemedDispositionBeneficiaryDeathIndicator":false,
+    "trustNonArmsLengthDebtTransactionIndicator":false,
+    "trustCapitalIncomeInterestOwnershipChangeIndicator":false,
+    "trustHoldsSharesInPrivateCorporation":false,
+    "trustAdditionalContributionPropertyReceiptIndicator":false,
+    "publicTrust":false,
+    "trustUsedInternationalFinancialReportingStandards":false,
+    "trustLossRestrictionEventIndicator":false,
+    "assetsHeldListedUnderParagraph150NotExceeding50kIndicator":true,
+    "trustRequiredToHoldFundsUnderRelevantRulesIndicator":true,
+    "interestOrFinancingExpensesIndicator":false,
+    "unitTrustUnderSubSection108Indicator":false,
+    "trustWhichAllUnitsListedOnStockExchangeIndicator":false,
+    "trustMeetConditionsInParagraph150Indicator":true,
+    "propertyForSpecifiedPurposeIndicator":true,
+    "indigenousGroupsIndicator":false  
+  },
+  "memoIndicators":  
+  {
+    "alterEgoIndicator":false,
+    "preferredBeneficiaryIndicator":false,
+    "mutualFundReorganizatonIndicator":false,
+    "mutualFundExtensionApprovalIndicator":false,
+    "insuranceSegregatedFundReorganizationIndicator":false,
+    "insuranceSegregatedFundExtensionApprovalIndicator":false,
+    "mutualFundElectingDec15FPEIndicator":false  
+  },
+  "returnLines":  
+  [
+    {
+      "fieldCode":"02",
+      "fieldValue":      4107    
+    },
+    {
+      "fieldCode":"03",
+      "fieldValue":      4592    
+    },
+    {
+      "fieldCode":"04",
+      "fieldValue":      559    
+    },
+    {
+      "fieldCode":"05",
+      "fieldValue":      4935    
+    },
+    {
+      "fieldCode":"19",
+      "fieldValue":      2500    
+    },
+    {
+      "fieldCode":"20",
+      "fieldValue":      16693    
+    },
+    {
+      "fieldCode":"21",
+      "fieldValue":      200    
+    },
+    {
+      "fieldCode":"49",
+      "fieldValue":      1745    
+    },
+    {
+      "fieldCode":"50",
+      "fieldValue":      18238    
+    },
+    {
+      "fieldCode":"56",
+      "fieldValue":      18238    
+    },
+    {
+      "fieldCode":"81",
+      "fieldValue":1637.5    
+    },
+    {
+      "fieldCode":"84",
+      "fieldValue":1637.5    
+    },
+    {
+      "fieldCode":"87",
+      "fieldValue":279.3    
+    },
+    {
+      "fieldCode":"94",
+      "fieldValue":1358.2    
+    },
+    {
+      "fieldCode":"8120",
+      "fieldValue":      4592    
+    },
+    {
+      "fieldCode":"8190",
+      "fieldValue":      200    
+    },
+    {
+      "fieldCode":"11080",
+      "fieldValue":2644.51    
+    },
+    {
+      "fieldCode":"11108",
+      "fieldValue":951.8    
+    },
+    {
+      "fieldCode":"11180",
+      "fieldValue":55.21    
+    },
+    {
+      "fieldCode":"22091",
+      "fieldValue":55.21    
+    },
+    {
+      "fieldCode":"22092",
+      "fieldValue":      559    
+    },
+    {
+      "fieldCode":"5273",
+      "fieldValue":      559    
+    },
+    {
+      "fieldCode":"5277",
+      "fieldValue":55.21    
+    }  
+  ]
+}

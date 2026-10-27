@@ -1,0 +1,74 @@
+    Attachments:
+    INLIN$=SPACE$(14)+"^ATTACH THE FOLLOWING TO THE RETURN:!":GOSUB EACH.LINE
+    IF V(101)>0 THEN INLIN$=SPACE$(14)+"Copy 2 of T4 slips":GOSUB EACH.LINE
+    IF V(113)>0 THEN INLIN$=SPACE$(14)+"Copy of T4A slip":GOSUB EACH.LINE
+    IF V(114)>0 THEN INLIN$=SPACE$(14)+"Copy of T4A(P) slip":GOSUB EACH.LINE
+    IF V(115)>0 THEN INLIN$=SPACE$(14)+"Copy 3 of T4A slips":GOSUB EACH.LINE
+    IF V(119)>0 THEN INLIN$=SPACE$(14)+"Copy 2 of T4U slip":GOSUB EACH.LINE
+    IF V(120)+V(121) >0 THEN INLIN$=SPACE$(14)+"T5/T3 slips":GOSUB EACH.LINE
+    IF V(129)>0 THEN INLIN$=SPACE$(14)+"T4RSP slips":GOSUB EACH.LINE
+    IF V(208)>0 THEN INLIN$=SPACE$(14)+"RRSP receipts":GOSUB EACH.LINE
+    IF V(212)>0 THEN INLIN$=SPACE$(14)+"Union/Prof. dues receipts":GOSUB EACH.LINE
+    IF V(215)>0 THEN INLIN$=SPACE$(14)+"Form T929-Attendant care expenses":GOSUB EACH.LINE
+    IF V(217)>0 THEN INLIN$=SPACE$(14)+"Schedule of Allowable Bus Invstm Losses":GOSUB EACH.LINE
+    IF V(229)>0 THEN INLIN$=SPACE$(14)+"Form T2200 or TL2":GOSUB EACH.LINE
+    IF V(255)>0 THEN INLIN$=SPACE$(14)+"Form T2222-Northern Res. Ded":GOSUB EACH.LINE
+    IF V(320)>0 THEN INLIN$=SPACE$(14)+"Form T2202A or receipts":GOSUB EACH.LINE
+    IF V(322)+V(324) >0 THEN INLIN$=SPACE$(14)+"Form T2202 or T2202A":GOSUB EACH.LINE
+    IF V(332)>0 THEN INLIN$=SPACE$(14)+"Medical receipts":GOSUB EACH.LINE
+    IF V(340)>0 THEN INLIN$=SPACE$(14)+"Charitable Donations receipts":GOSUB EACH.LINE
+    IF V(342)>0 THEN INLIN$=SPACE$(14)+"Gift receipts":GOSUB EACH.LINE
+    IF V(414)>0 THEN INLIN$=SPACE$(14)+"Labor-Sponsored Funds receipts":GOSUB EACH.LINE
+
+ Signatures
+      IF V(479)>0 THEN
+        INLIN$ = SPACE$(15) + "Provincial Tax Credits"
+        GOSUB EACH.LINE
+      END IF
+      TSCRNO =39: TBEG = SBEG(TSCRNO): ELM% =83: GOSUB DO.MFETCH:
+      IF VAL(LIN$)>0 THEN
+        INLIN$ = SPACE$(15) + "The Annual Accrual Can. Savings Bonds form (T1 CSB)"
+        GOSUB EACH.LINE
+      END IF
+
+      TSCRNO =7 : TBEG = SBEG(TSCRNO): ELM% =16: GOSUB DO.MFETCH:
+      IF VAL(LIN$)>0 THEN
+        INLIN$ = SPACE$(15) + "The Overseas Empl. Tax Credit form (T626)"
+
+      IF SUPD(160)>0 THEN INLIN$ = SPACE$(15) + "The Employee and Partner GST Rebate form":GOSUB EACH.LINE
+
+      IF SUPD(58)>0 THEN INLIN$ = SPACE$(15) + "The Direct Deposit Application form (T1-DD)":GOSUB EACH.LINE
+
+      IF V(219) > 0  THEN
+        INLIN$ = SPACE$(15) + "The Moving Expenses Schedule (T1-M)"
+      IF SUPD(251) > 0  THEN
+        INLIN$ = SPACE$(15) + "The Loss Carry-Back form (T1A)     "
+      END IF
+      IF V(215) > 0  THEN
+        INLIN$ = SPACE$(15) + "The Attendant Care expenses (T929)"
+      END IF
+      IF V(237) + V(478) > 0  THEN
+        INLIN$ = SPACE$(15) + "The Forward Avrg Withdrawal (T581)"
+      END IF
+      IF V(412) > 0  THEN
+        INLIN$ = SPACE$(15) + "The Investment Tax Credit (T2038)"
+      END IF
+      IF V(480) > 0  THEN
+        INLIN$ = SPACE$(15) + "The Alb. Stock Sav Credit (T89"
+      END IF
+      IF SUPD(50)>0 THEN
+        INLIN$ = SPACE$(15) + "The Designation of transfers to an RRSP form":GOSUB EACH.LINE
+      END IF
+      IF SUPD(269)>0 THEN
+        INLIN$ = SPACE$(15) + "The Capital Gains Election form (T664)       ":GOSUB EACH.LINE
+      END IF
+
+      TSCRNO =279: TBEG = SBEG(TSCRNO): ELM% =21: GOSUB DO.MFETCH:
+      IF LIN$ >"" THEN
+        INLIN$ = SPACE$(15) + "The Reconciliation of income Form (T1139)    ":GOSUB EACH.LINE
+      END IF
+      REFUNDLIN1$ = SPACE$(4) + "As you will note on your return you have a Tax Refund in"
+      REFUNDLIN2$ = SPACE$(4) + "the amount of $###,###.##" + "."+SPACE$(79)
+      DUELIN1$ = SPACE$(4) + "As you will note on your return there is a balance due by you in"
+      DUELIN2$ =    SPACE$(4) + "the amount of $###,###.##" + "."+SPACE$(79)
+

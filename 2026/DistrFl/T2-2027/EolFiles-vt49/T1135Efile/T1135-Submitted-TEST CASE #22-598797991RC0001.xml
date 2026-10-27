@@ -1,0 +1,103 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <t2rq:T2EfileReturnRequest 
+   xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" 
+   xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2024/1-0-0" 
+   xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" 
+   xmlns:t1135="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0" 
+   xmlns:t2rq="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0" 
+   xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0 t2efilefrrmsrequest.xsd ">
+  <ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
+  <ef:PasswordID>767AJ5X</ef:PasswordID>
+  <ef:RepresentativeID>C4SD3QH</ef:RepresentativeID>
+  <t2rq:TaxYear>2024</t2rq:TaxYear>
+  <t2rq:SoftwareID>VT49</t2rq:SoftwareID>
+    <t2rq:TaxForm>
+      <t1135:ForeignIncomeVerificationStatement>
+        <t1135:AmendedReturnIndicator>0</t1135:AmendedReturnIndicator>
+        <t1135:TaxpayerIdentification>
+          <t1135:CorporationTaxpayer>
+            <t1135:CorporationName>TEST CASE #22</t1135:CorporationName>
+            <t1135:BusinessNumber>598797991RC0001</t1135:BusinessNumber>
+          </t1135:CorporationTaxpayer>
+        </t1135:TaxpayerIdentification>
+        <t1135:TaxpayerAddress>
+          <t1135:AddressStreetText>420 KING STREET WEST </t1135:AddressStreetText>
+          <t1135:AddressMunicipalityName>TORONTO</t1135:AddressMunicipalityName>
+          <t1135:GlobalProvinceTerritoryStateCode>ON</t1135:GlobalProvinceTerritoryStateCode>
+          <t1135:GlobalPostalZipCode>M5V1K1</t1135:GlobalPostalZipCode>
+          <t1135:CountryCode>CAN</t1135:CountryCode>
+        </t1135:TaxpayerAddress>
+        <t1135:TaxationYearData>
+          <t1135:TaxationYearStartDate>2024-01-01</t1135:TaxationYearStartDate>
+          <t1135:TaxationYearEndDate>2024-11-23</t1135:TaxationYearEndDate>
+        </t1135:TaxationYearData>
+        <t1135:ForeignPropertyIdentification>
+          <t1135:ForeignPropertyCostCategoryTwo>
+            <t1135:ForeignPropertyDetailedData>
+                <t1135:NonResidentCorporationShare>
+                  <t1135:NonResidentCorporationShareRecord>
+                    <t1135:NonResidentCorporationName>Michelin Tires &lt;Mexico&gt; Inc.</t1135:NonResidentCorporationName>
+                    <t1135:NonResidentCorporationCountryCode>MEX</t1135:NonResidentCorporationCountryCode>
+                    <t1135:NonResidentCorporationShareMaximumYearlyCostAmount>12565</t1135:NonResidentCorporationShareMaximumYearlyCostAmount>
+                    <t1135:NonResidentCorporationShareYearEndCostAmount>17580</t1135:NonResidentCorporationShareYearEndCostAmount>
+                    <t1135:NonResidentCorporationShareIncomeAmount>0</t1135:NonResidentCorporationShareIncomeAmount>
+                    <t1135:NonResidentCorporationShareDispositionGainLossAmount>4800</t1135:NonResidentCorporationShareDispositionGainLossAmount>
+                  </t1135:NonResidentCorporationShareRecord>
+                  <t1135:NonResidentCorporationShareRecord>
+                    <t1135:NonResidentCorporationName>AG Neovo</t1135:NonResidentCorporationName>
+                    <t1135:NonResidentCorporationCountryCode>SVK</t1135:NonResidentCorporationCountryCode>
+                    <t1135:NonResidentCorporationShareMaximumYearlyCostAmount>5455</t1135:NonResidentCorporationShareMaximumYearlyCostAmount>
+                    <t1135:NonResidentCorporationShareYearEndCostAmount>100</t1135:NonResidentCorporationShareYearEndCostAmount>
+                    <t1135:NonResidentCorporationShareIncomeAmount>0</t1135:NonResidentCorporationShareIncomeAmount>
+                    <t1135:NonResidentCorporationShareDispositionGainLossAmount>-4550</t1135:NonResidentCorporationShareDispositionGainLossAmount>
+                  </t1135:NonResidentCorporationShareRecord>
+                  <t1135:NonResidentCorporationShareTotalYearEndCostAmount>17680</t1135:NonResidentCorporationShareTotalYearEndCostAmount>
+                  <t1135:NonResidentCorporationShareTotalIncomeAmount>0</t1135:NonResidentCorporationShareTotalIncomeAmount>
+                  <t1135:NonResidentCorporationShareTotalDispositionGainLossAmount>250</t1135:NonResidentCorporationShareTotalDispositionGainLossAmount>
+                </t1135:NonResidentCorporationShare>
+                <t1135:NonResidentTrustInterest>
+                  <t1135:NonResidentTrustInterestRecord>
+                    <t1135:NonResidentTrustInterestName>A&amp;Y Trust</t1135:NonResidentTrustInterestName>
+                    <t1135:NonResidentTrustInterestCountryCode>GTM</t1135:NonResidentTrustInterestCountryCode>
+                    <t1135:NonResidentTrustInterestMaximumYearlyCostAmount>8550</t1135:NonResidentTrustInterestMaximumYearlyCostAmount>
+                    <t1135:NonResidentTrustInterestYearEndCostAmount>9875</t1135:NonResidentTrustInterestYearEndCostAmount>
+                    <t1135:NonResidentTrustInterestIncomeReceivedAmount>1250</t1135:NonResidentTrustInterestIncomeReceivedAmount>
+                    <t1135:NonResidentTrustInterestCapitalReceivedAmount>0</t1135:NonResidentTrustInterestCapitalReceivedAmount>
+                    <t1135:NonResidentTrustInterestDispositionGainLossAmount>0</t1135:NonResidentTrustInterestDispositionGainLossAmount>
+                  </t1135:NonResidentTrustInterestRecord>
+                  <t1135:NonResidentTrustInterestRecord>
+                    <t1135:NonResidentTrustInterestName>Smith Family Trust</t1135:NonResidentTrustInterestName>
+                    <t1135:NonResidentTrustInterestCountryCode>USA</t1135:NonResidentTrustInterestCountryCode>
+                    <t1135:NonResidentTrustInterestMaximumYearlyCostAmount>125255</t1135:NonResidentTrustInterestMaximumYearlyCostAmount>
+                    <t1135:NonResidentTrustInterestYearEndCostAmount>179400</t1135:NonResidentTrustInterestYearEndCostAmount>
+                    <t1135:NonResidentTrustInterestIncomeReceivedAmount>0</t1135:NonResidentTrustInterestIncomeReceivedAmount>
+                    <t1135:NonResidentTrustInterestCapitalReceivedAmount>0</t1135:NonResidentTrustInterestCapitalReceivedAmount>
+                    <t1135:NonResidentTrustInterestDispositionGainLossAmount>42555</t1135:NonResidentTrustInterestDispositionGainLossAmount>
+                  </t1135:NonResidentTrustInterestRecord>
+                  <t1135:NonResidentTrustInterestTotalYearEndCostAmount>189275</t1135:NonResidentTrustInterestTotalYearEndCostAmount>
+                  <t1135:NonResidentTrustInterestTotalIncomeReceivedAmount>1250</t1135:NonResidentTrustInterestTotalIncomeReceivedAmount>
+                  <t1135:NonResidentTrustInterestTotalCapitalReceivedAmount>0</t1135:NonResidentTrustInterestTotalCapitalReceivedAmount>
+                  <t1135:NonResidentTrustInterestTotalDispositionGainLossAmount>42555</t1135:NonResidentTrustInterestTotalDispositionGainLossAmount>
+                </t1135:NonResidentTrustInterest>
+            </t1135:ForeignPropertyDetailedData>
+          </t1135:ForeignPropertyCostCategoryTwo>
+        </t1135:ForeignPropertyIdentification>
+        <t1135:CertificationDetail>
+          <t1135:CertifierName>
+            <t1135:TaxpayerName>
+              <t1135:GivenName>Natasha Koulikov</t1135:GivenName>
+              <t1135:FamilyName></t1135:FamilyName>
+            </t1135:TaxpayerName>
+          </t1135:CertifierName>
+          <t1135:CertifierPositionTitle>director</t1135:CertifierPositionTitle>
+          <t1135:CertifierPhoneNumber>1(416)363-5982</t1135:CertifierPhoneNumber>
+          <t1135:CertificationDate>2025-02-05</t1135:CertificationDate>
+        </t1135:CertificationDetail>
+      </t1135:ForeignIncomeVerificationStatement>
+ </t2rq:TaxForm>
+ </t2rq:T2EfileReturnRequest>
+</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:sres="http://www.cra-arc.gc.ca/xmlns/sres/1-0-0"
+	xmlns:srescommon="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0"
+	xmlns:xmime="http://www.w3.org/2005/05/xmlmime"
+	targetNamespace="http://www.cra-arc.gc.ca/xmlns/sres/1-0-0"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	version="sres/1-0-0">
+
+	<xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0" schemaLocation="sresCommonTypes.xsd" />
+
+	<xsd:element name="FileReturnResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="srescommon:ClientId" minOccurs="1" maxOccurs="1" />
+				<xsd:element name="Error" type="srescommon:ErrorMessageType" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="Form" type="sres:FormResponseType" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="FormResponseType">
+		<xsd:sequence>
+			<xsd:element ref="srescommon:FormSequenceNumber" minOccurs="1" maxOccurs="1" />
+			<xsd:element ref="srescommon:FormNumber" minOccurs="1" maxOccurs="1" />
+			<xsd:choice>
+				<xsd:element ref="srescommon:ConfirmationNumber" minOccurs="1" maxOccurs="1" />
+				<xsd:element name="Error" type="srescommon:ErrorMessageType" minOccurs="1" maxOccurs="unbounded" />
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

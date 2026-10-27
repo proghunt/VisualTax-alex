@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T1Notice>
+    <VersionID>5</VersionID>
+    <SourceSystemCode>01</SourceSystemCode>
+    <AccountNumber>XXXXX6751</AccountNumber>
+    <NoticeType>T491</NoticeType>
+    <Language>F</Language>
+    <TaxPayerGivenName></TaxPayerGivenName>
+    <TaxPayerSurname></TaxPayerSurname>
+    <NoticeTitle>Avis de nouvelle cotisation</NoticeTitle>
+    <NoticeDetailsTitle>Détails concernant l'avis</NoticeDetailsTitle>
+    <AccountNumberTitle>Numéro d'assurance sociale</AccountNumberTitle>
+    <MaskedAccountNumber>XXX XX6 751</MaskedAccountNumber>
+    <AddressTitle>Adresse</AddressTitle>
+    <AddressLine1Text>Adresse Ligne 1</AddressLine1Text>
+    <AddressLine2Text>Adresse Ligne 2</AddressLine2Text>
+    <AddressLine3Text>Adresse Ligne 3</AddressLine3Text>
+    <TaxYearTitle>Année d'imposition</TaxYearTitle>
+    <TaxYear>2015</TaxYear>
+    <ResidenceProvinceText>ON</ResidenceProvinceText>
+    <FilingDateText></FilingDateText>
+    <TaxProvinceText>ON</TaxProvinceText>
+    <AssessmentTitle>Date de l'avis</AssessmentTitle>
+    <AssessmentDateText>17 mars 2020</AssessmentDateText>
+    <AssessmentDate>2020-03-17</AssessmentDate>
+    <ReturnMail>
+        <ReturnMailText>SUDBURY ON P3A 5C1</ReturnMailText>
+    </ReturnMail>
+    <AccessCodeTitle>Code d'accès</AccessCodeTitle>
+    <AccessCode>JH54MT6B</AccessCode>
+    <BalanceText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Nous avons réexaminé votre déclaration de revenus et de prestations de 2015 et recalculé votre solde.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Le montant que vous devez payer est de </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>200,91 $</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>, moins tout montant que vous avez payé et que nous n'avons pas encore traité.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </BalanceText>
+    <CommisionerSignatureText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Merci.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Bob Hamilton</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Commissaire du revenu</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </CommisionerSignatureText>
+    <TaxAssessmentTitle>Nouvelle cotisation d'impôt</TaxAssessmentTitle>
+    <TaxAssessment>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Nous avons calculé vos impôts à l'aide des montants ci-dessous. Le sommaire ci-dessous est basé sur les renseignements que nous avons ou que vous nous avez donnés.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Nous pourrions réexaminer votre déclaration pour vérifier le revenu que vous avez déclaré ou les déductions ou crédits que vous avez demandés. Pour en savoir plus, allez à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/impots-examen</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>. Conservez tous vos feuillets, reçus et autres pièces justificatives pour pouvoir nous les fournir sur demande.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </TaxAssessment>
+    <SummaryTitle>Sommaire</SummaryTitle>
+    <LineTitle>Ligne</LineTitle>
+    <DescriptionTitle>Description</DescriptionTitle>
+    <ReturnAmountTitle>Montant sur l'avis précédent $</ReturnAmountTitle>
+    <CRDRReturnAmountTitle>CT/DT</CRDRReturnAmountTitle>
+    <FinalAmountTitle> Montant final $</FinalAmountTitle>
+    <CRDRFinalAmountTitle>CT/DT</CRDRFinalAmountTitle>
+    <SummaryTableRow>
+        <SummaryLineNumber>150</SummaryLineNumber>
+        <SummaryDescription>Revenu total</SummaryDescription>
+        <ReturnAmount>348 555</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>348 556</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Déductions du revenu total </SummaryDescription>
+        <ReturnAmount>29 673</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>29 674</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>236</SummaryLineNumber>
+        <SummaryDescription>Revenu net</SummaryDescription>
+        <ReturnAmount>318 882</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>318 882</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Déductions du revenu net</SummaryDescription>
+        <ReturnAmount>6 193</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>6 193</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>260</SummaryLineNumber>
+        <SummaryDescription>Revenu imposable</SummaryDescription>
+        <ReturnAmount>312 689</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>312 689</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>350</SummaryLineNumber>
+        <SummaryDescription>Total des crédits d'impôt non remboursables</SummaryDescription>
+        <ReturnAmount>2 225</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>2 225</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>350</SummaryLineNumber>
+        <SummaryDescription>Total des crédits d'impôt non remboursables fédéraux</SummaryDescription>
+        <ReturnAmount>2 225</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>2 225</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>420</SummaryLineNumber>
+        <SummaryDescription>Impôt fédéral net</SummaryDescription>
+        <ReturnAmount>77 148,89</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>77 148,89</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>428</SummaryLineNumber>
+        <SummaryDescription>Total des crédits d'impôt provinciaux (autre)</SummaryDescription>
+        <ReturnAmount>4 980,75</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>4 980,75</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>435</SummaryLineNumber>
+        <SummaryDescription>Total à payer</SummaryDescription>
+        <ReturnAmount>82 129,64</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>82 129,64</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>437</SummaryLineNumber>
+        <SummaryDescription>Impôt total retenu</SummaryDescription>
+        <ReturnAmount>0,00</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>0,00</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>440</SummaryLineNumber>
+        <SummaryDescription>Abattement du Québec remboursable</SummaryDescription>
+        <ReturnAmount>10 919,42</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>10 919,42</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>457</SummaryLineNumber>
+        <SummaryDescription>Remboursement de la TPS/TVH à l'intention des salariés et des associés</SummaryDescription>
+        <ReturnAmount>798,57</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>798,57</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>476</SummaryLineNumber>
+        <SummaryDescription>Impôt payé par acomptes provisionnels</SummaryDescription>
+        <ReturnAmount>41 152,00</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>41 152,00</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Sous-total des crédits</SummaryDescription>
+        <ReturnAmount>29 434,01</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>29 434,01</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber>482</SummaryLineNumber>
+        <SummaryDescription>Total des crédits</SummaryDescription>
+        <ReturnAmount>29 434,01</ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>29 434,01</FinalAmount>
+        <CRDRFinalAmountIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Sous-total (Total à payer moins Total des crédits)</SummaryDescription>
+        <ReturnAmount>111 563,65</ReturnAmount>
+        <CRDRReturnAmountIndicator>DT</CRDRReturnAmountIndicator>
+        <FinalAmount>111 563,65</FinalAmount>
+        <CRDRFinalAmountIndicator>DT</CRDRFinalAmountIndicator>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Solde de cette nouvelle cotisation</SummaryDescription>
+        <ReturnAmount> </ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>0,00</FinalAmount>
+        <CRDRFinalAmountIndicator></CRDRFinalAmountIndicator>
+        <LightVersion>Y</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Solde précédent</SummaryDescription>
+        <ReturnAmount> </ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>200,91</FinalAmount>
+        <CRDRFinalAmountIndicator>DT</CRDRFinalAmountIndicator>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <SummaryTableRow>
+        <SummaryLineNumber> </SummaryLineNumber>
+        <SummaryDescription>Solde dû</SummaryDescription>
+        <ReturnAmount> </ReturnAmount>
+        <CRDRReturnAmountIndicator> </CRDRReturnAmountIndicator>
+        <FinalAmount>200,91</FinalAmount>
+        <CRDRFinalAmountIndicator>DT</CRDRFinalAmountIndicator>
+        <LightVersion>N</LightVersion>
+    </SummaryTableRow>
+    <ExplanTitle>Explication des changements et autres renseignements importants</ExplanTitle>
+    <ExplanText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Nous vous enverrons une explication de cette nouvelle cotisation dans les dix jours.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </ExplanText>
+    <ExplanText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>À la date de cet avis, vous avez un montant inutilisé de pertes en capital nettes provenant d'autres années de $51 256. Cependant, si vous reportez ce montant à d'autres années au lieu de l'utiliser dans votre déclaration de l'année en cours, nous pourrions devoir recalculer votre solde inutilisé. En effet, différents taux d'inclusion s'appliquent aux gains en capital de différentes années. Vous pouvez utiliser votre montant inutilisé de pertes en capital nettes pour réduire les gains en capital imposables que vous avez déclarés. Pour en savoir plus, consultez le guide T4037, Gains en capital.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </ExplanText>
+    <ExplanText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Vous pouvez éviter des frais d'intérêts supplémentaires si vous payez le solde dû d'ici le 6 avril 2020.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </ExplanText>
+    <ExplanText>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Si vous avez des questions concernant votre nouvelle cotisation d'impôt, téléphonez aux services de demandes de renseignements des particuliers au 1-800-959-7383.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </ExplanText>
+    <RRSPTitle>État du maximum déductible au titre des REER</RRSPTitle>
+    <RRSPIntro>
+        <BoldIndicator>N</BoldIndicator>
+        <RRSPIntroText>Pour en savoir plus sur les renseignements ci-dessous ou sur les effets des cotisations de l'employeur à un RPAC ou à un REER collectif sur vos droits de cotisation pour l'année, allez à </RRSPIntroText>
+    </RRSPIntro>
+    <RRSPIntro>
+        <BoldIndicator>Y</BoldIndicator>
+        <RRSPIntroText>canada.ca/reer</RRSPIntroText>
+    </RRSPIntro>
+    <RRSPIntro>
+        <BoldIndicator>N</BoldIndicator>
+        <RRSPIntroText> ou consultez le guide T4040, REER et autres régimes enregistrés pour la retraite.</RRSPIntroText>
+    </RRSPIntro>
+    <RRSPDescriptionTitle>Description</RRSPDescriptionTitle>
+    <RRSPAmountTitle>Montant $</RRSPAmountTitle>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>Maximum déductible au titre des REER pour </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>2019</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPAmountText>26 230</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>N</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>Moins :</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText> cotisations de l'employeur au RPAC pour </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>2019</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPAmountText>0</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>N</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>Moins :</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText> cotisations admissibles au REER déduites pour </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>2019</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPAmountText>0</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>N</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>Plus :</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText> </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>0,18 %</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText> du revenu gagné en </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>2019</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>, jusqu'à un maximum de </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>$26 500</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPAmountText>0</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>N</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>Moins :</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText> facteur d'équivalence pour </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>2019</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPAmountText>0</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>N</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>Moins :</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText> facteur d'équivalence pour services passés net pour </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>2020</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPAmountText>0</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>N</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>Plus :</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText> facteur d'équivalence rectifié pour </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>2020</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPAmountText>0</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>N</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>Maximum déductible au titre des REER pour </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>2020</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPAmountText>26 230</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>Y</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>Moins :</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText> cotisations inutilisées versées à un REER, déclarées lors d'une année passée et pouvant être déduites en </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPDescriptionText>2020</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>N</BoldIndicator>
+            <RRSPAmountText>0</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>N</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPTableRow>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>Voici vos droits de cotisation pour </RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPDescription>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPDescriptionText>2020</RRSPDescriptionText>
+        </RRSPDescription>
+        <RRSPAmount>
+            <BoldIndicator>Y</BoldIndicator>
+            <RRSPAmountText>26 230</RRSPAmountText>
+        </RRSPAmount>
+        <RRSPSubTotalRowIndicator>Y</RRSPSubTotalRowIndicator>
+    </RRSPTableRow>
+    <RRSPNote>
+        <BoldIndicator>Y</BoldIndicator>
+        <RRSPNoteText>Remarque : </RRSPNoteText>
+    </RRSPNote>
+    <RRSPNote>
+        <BoldIndicator>N</BoldIndicator>
+        <RRSPNoteText>Si le montant de vos droits de cotisation est négatif (entre parenthèses), cela signifie que vous n'avez pas de droits de cotisation pour 2020 et que vous avez peut-être trop cotisé à votre REER. Si c'est le cas, vous pourriez devoir payer un impôt de 1 % par mois sur les cotisations excédentaires.</RRSPNoteText>
+    </RRSPNote>
+    <MoreInformationTitle>Autres renseignements</MoreInformationTitle>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Pour en savoir plus sur votre déclaration de revenus et de prestations, allez à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/impots</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>, consultez Mon dossier à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/guide-mon-dossier-arc</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> ou composez le </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>1-800-959-7383</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Pour trouver votre centre fiscal, allez à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/arc-bureaux</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Vous déménagez?</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Donnez-nous votre nouvelle adresse dès que possible! Pour savoir comment faire, allez à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/arc-changer-adresse</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Vous avez des renseignements nouveaux ou additionnels et vous voulez faire modifier votre déclaration?</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- Vous pouvez aller à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/modifier-declaration-revenus</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> pour un service rapide.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- Vous pouvez écrire au centre fiscal dont l'adresse figure sur cet avis. Indiquez votre numéro d'assurance sociale et joignez tous les documents à l'appui des changements demandés.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Vous voulez enregistrer un avis de différend officiel?</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Allez à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/arc-plaintes-differends</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>. Vous avez 90 jours à compter de la date de cet avis pour enregistrer votre différend.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Définitions</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Les lettres </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>DT</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> (débit) signifient que vous avez un montant dû, et </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>CT</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> (crédit) que nous vous devons un montant.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Aide aux personnes ayant une déficience auditive, visuelle ou de la parole</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Vous pouvez obtenir cet avis en braille, en gros caractères ou en format audio. Pour en savoir plus sur les médias substituts, allez à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/arc-medias-substituts</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Si vous utilisez un téléimprimeur, vous pouvez obtenir des renseignements fiscaux en composant le </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>1-800-665-0354</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Comment pouvez-vous payer?</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- en ligne ou par téléphone en utilisant les services d'une institution financière canadienne;</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- en ligne à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/mon-paiement-arc</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>;</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- en ligne en établissant un accord de débit préautorisé à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/guide-mon-dossier-arc</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>;</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>- en personne avec votre pièce de versement à votre institution financière canadienne ou, moyennant des frais, à Postes Canada</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Pour en savoir plus sur les façons de payer, allez à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/paiements</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>Y</Subtitle>
+            <ParagraphObjectText>Besoin de plus de temps pour payer?</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+    <MoreInformation>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Si vous ne pouvez pas payer tout le montant dû et que vous voulez des renseignements, allez à </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>canada.ca/arc-recouvrements</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>.</ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText></ParagraphObjectText>
+            <NewLineIndicator>Y</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>Pour discuter d'une entente de paiement avec l'ARC, composez le </ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>Y</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText>1-888-863-8661</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+        <ParagraphObject>
+            <BoldIndicator>N</BoldIndicator>
+            <Subtitle>N</Subtitle>
+            <ParagraphObjectText> du lundi au vendredi (sauf les jours fériés) de 7 h à 23 h, heure de l'Est.</ParagraphObjectText>
+            <NewLineIndicator>N</NewLineIndicator>
+        </ParagraphObject>
+    </MoreInformation>
+</T1Notice>

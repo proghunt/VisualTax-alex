@@ -1,0 +1,7 @@
+Select
+clients.*
+FROM clients
+As clients
+where EF_status = "02"
+Order By Last_Name
+

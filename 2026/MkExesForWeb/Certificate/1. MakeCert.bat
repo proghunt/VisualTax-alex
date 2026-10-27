@@ -1,0 +1,1 @@
+makecert.exe VisualTax.cer -r -n "CN=VisualTax" -$ commercial -sv VisualTax.pkv -pe -eku 1.3.6.1.5.5.7.3.3

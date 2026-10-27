@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Description: CRA T1 Web Services project
+Type (Request or Response): Response
+Version: 1-0-0
+Date created: 
+Contact: 
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://www.cra-arc.gc.ca/xmlns/msg/messagelist/1-0-0" 
+    xmlns:msg="http://www.cra-arc.gc.ca/xmlns/msg/messagelist/1-0-0" 
+    xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" 
+    xmlns:t1rsp="http://www.cra-arc.gc.ca/xmlns/t1rsp/response/1-0-0"
+    targetNamespace="http://www.cra-arc.gc.ca/xmlns/msg/messagelist/1-0-0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="messagelist/1-0-0">
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" schemaLocation="standarddatatypes.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/t1rsp/response/1-0-0" schemaLocation="t1wsresponse.xsd"/>
+
+    <xsd:element name="MessageList" type="msg:MessageListType"/>
+    
+    <xsd:complexType name="MessageListType">
+        <xsd:sequence>
+            <xsd:element ref="msg:MessageEntry" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="MessageEntry" type="msg:MessageEntryType"/>
+    
+    <xsd:complexType name="MessageEntryType">
+        <xsd:sequence>
+            <xsd:element ref="msg:MessageId"/>
+            <xsd:element ref="msg:MessageDescription"/>
+            <xsd:element name="EnglishMessage" type="t1rsp:MultiparagraphMessageType"/>
+            <xsd:element name="FrenchMessage" type="t1rsp:MultiparagraphMessageType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="MessageId" type="sdt:IDType"/>
+	<xsd:element name="MessageDescription" type="sdt:TextType"/>
+	
+</xsd:schema>

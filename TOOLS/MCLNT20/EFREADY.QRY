@@ -1,0 +1,7 @@
+Select
+clients.*
+From "clients.dbf"
+As clients
+where EF_Status = "01"
+Order By Corp_Name
+

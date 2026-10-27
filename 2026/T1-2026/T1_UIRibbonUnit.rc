@@ -1,0 +1,1543 @@
+// ******************************************************************************
+// * This is an automatically generated file containing the ribbon resource for *
+// * your application.                                                          *
+// ******************************************************************************
+
+#include ".\T1_UIRibbonUnit.h"
+
+STRINGTABLE 
+BEGIN
+    actTab_0_LabelTitle_RESID L"Main" /* LabelTitle actTab_0_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actNewReturn_LabelTitle_RESID L"New " /* LabelTitle actNewReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actOpenReturn_LabelTitle_RESID L"OPEN..." /* LabelTitle actOpenReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSaveReturnAs_LabelTitle_RESID L"SAVE As..." /* LabelTitle actSaveReturnAs_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCloseReturn_LabelTitle_RESID L"CLOSE" /* LabelTitle actCloseReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actExit_LabelTitle_RESID L"Exit" /* LabelTitle actExit_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgEFile_LabelTitle_RESID L"EFILE" /* LabelTitle rgEFile_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actEOL_LabelTitle_RESID L"Efile current return (EOL)" /* LabelTitle actEOL_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actEOLPLUS_LabelTitle_RESID L"Batch Efile (EOL+) " /* LabelTitle actEOLPLUS_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actListEFileRejectedReturns_LabelTitle_RESID L"Rejected returns..." /* LabelTitle actListEFileRejectedReturns_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFormsNavigation_LabelTitle_RESID L"FORMS NAVIGATION" /* LabelTitle rgFormsNavigation_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSelectFormButton_LabelTitle_RESID L"Form..." /* LabelTitle actSelectFormButton_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSwitchforms_LabelTitle_RESID L"Previous form" /* LabelTitle actSwitchforms_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSlipsItem_LabelTitle_RESID L"Slips..." /* LabelTitle actSlipsItem_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actJacket_LabelTitle_RESID L"Jacket" /* LabelTitle actJacket_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPreviousPage_LabelTitle_RESID L"Previous page" /* LabelTitle actPreviousPage_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actNextPage_LabelTitle_RESID L"Next page" /* LabelTitle actNextPage_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgCoupling_LabelTitle_RESID L"COUPLING" /* LabelTitle rgCoupling_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actStartCoupling_LabelTitle_RESID L"Start Coupling..." /* LabelTitle actStartCoupling_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSwapReturns_LabelTitle_RESID L"Swap Returns" /* LabelTitle actSwapReturns_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actOptimizeFamilyprocessing_LabelTitle_RESID L"Optimize Family tax payable..." /* LabelTitle actOptimizeFamilyprocessing_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgReview_LabelTitle_RESID L"REVIEW" /* LabelTitle rgReview_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actDiagnostics_LabelTitle_RESID L"Show Audit Wizard" /* LabelTitle actDiagnostics_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actReview_LabelTitle_RESID L"Review Mark" /* LabelTitle actReview_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRecalc_LabelTitle_RESID L"Recalc" /* LabelTitle actRecalc_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgDesktop_LabelTitle_RESID L"DESKTOP" /* LabelTitle rgDesktop_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actAvailableWidth_LabelTitle_RESID L"Zoom to available width" /* LabelTitle actAvailableWidth_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actZoomin_LabelTitle_RESID L"Zoom-in" /* LabelTitle actZoomin_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actZoomout_LabelTitle_RESID L"Zoom-out" /* LabelTitle actZoomout_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actChangeSkin_LabelTitle_RESID L"Change interface" /* LabelTitle actChangeSkin_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_1_LabelTitle_RESID L"File" /* LabelTitle actTab_1_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgReturn_LabelTitle_RESID L"RETURN" /* LabelTitle rgReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actOpenReturnButton_LabelTitle_RESID L"OPEN" /* LabelTitle actOpenReturnButton_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actOpenReturnBySIN_LabelTitle_RESID L"Open by SIN..." /* LabelTitle actOpenReturnBySIN_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actOpenReturnByFileName_LabelTitle_RESID L"Open by File Name (Explorer view)..." /* LabelTitle actOpenReturnByFileName_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actOpenReturnSelectively_LabelTitle_RESID L"Open selectively..." /* LabelTitle actOpenReturnSelectively_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actShowLastYear_LabelTitle_RESID L"Open Last Year's return and Forms..." /* LabelTitle actShowLastYear_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actForCloud_LabelTitle_RESID L"Open return from cloud (DropBox) ..." /* LabelTitle actForCloud_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSaveReturnAsButton_LabelTitle_RESID L"SAVE As..." /* LabelTitle actSaveReturnAsButton_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSaveALLopenedReturns_LabelTitle_RESID L"Save ALL opened returns...." /* LabelTitle actSaveALLopenedReturns_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSaveAndCloseAllOpenedReturns_LabelTitle_RESID L"Save and Close All opened returns" /* LabelTitle actSaveAndCloseAllOpenedReturns_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCloseReturnButton_LabelTitle_RESID L"CLOSE" /* LabelTitle actCloseReturnButton_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCloseAllReturnsWITHOUTSaving_LabelTitle_RESID L"Close all returns, without Saving..." /* LabelTitle actCloseAllReturnsWITHOUTSaving_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgCloud_LabelTitle_RESID L"CLOUD" /* LabelTitle rgCloud_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actUploadToDropBox_LabelTitle_RESID L"Upload to DropBox" /* LabelTitle actUploadToDropBox_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgRollOver_LabelTitle_RESID L"ROLL OVER / IMPORT" /* LabelTitle rgRollOver_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    RollOver_LabelTitle_RESID L"Roll Over" /* LabelTitle RollOver_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actImportLastYear_LabelTitle_RESID L"Roll Over from VisualTax..." /* LabelTitle actImportLastYear_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRollForwardFromCanTax_LabelTitle_RESID L"Roll Over from CanTax... " /* LabelTitle actRollForwardFromCanTax_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRollForwardFromProfile_LabelTitle_RESID L"Roll Over from Profile..." /* LabelTitle actRollForwardFromProfile_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRollOverFromTaxCycle_LabelTitle_RESID L"RollOver from TaxCycle..." /* LabelTitle actRollOverFromTaxCycle_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    Import_LabelTitle_RESID L"Import" /* LabelTitle Import_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actConvertOptionsFromOldVersion_LabelTitle_RESID L"Convert Data and Options to MultiApp version" /* LabelTitle actConvertOptionsFromOldVersion_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actImportDataFromProductionDataBase_LabelTitle_RESID L"Import from old data base format..." /* LabelTitle actImportDataFromProductionDataBase_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgSecurity_LabelTitle_RESID L"SECURITY" /* LabelTitle rgSecurity_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    Lock_LabelTitle_RESID L"Lock" /* LabelTitle Lock_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actLockReturn_LabelTitle_RESID L"LOCK return against changes" /* LabelTitle actLockReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actUnlockReturn_LabelTitle_RESID L"UNLOCK Return" /* LabelTitle actUnlockReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    Password_LabelTitle_RESID L"Password" /* LabelTitle Password_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSetReturnPassword_LabelTitle_RESID L"Set Return Password..." /* LabelTitle actSetReturnPassword_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRemoveReturnPassword_LabelTitle_RESID L"Remove Return Password..." /* LabelTitle actRemoveReturnPassword_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgDatabase_LabelTitle_RESID L"DATABASE" /* LabelTitle rgDatabase_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actDataBaseAnalyser_LabelTitle_RESID L"Data Base Analyser..." /* LabelTitle actDataBaseAnalyser_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actClientStatistics_LabelTitle_RESID L"Client statistics... " /* LabelTitle actClientStatistics_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actChangeDataDirectory_LabelTitle_RESID L"Change Data Directory..." /* LabelTitle actChangeDataDirectory_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCreateDataDirectory_LabelTitle_RESID L"Create Data Directory..." /* LabelTitle actCreateDataDirectory_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actExportToFile_LabelTitle_RESID L"Export to file" /* LabelTitle actExportToFile_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgbAdvanced_LabelTitle_RESID L"ADVANCED" /* LabelTitle rgbAdvanced_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actDataExtract_LabelTitle_RESID L"Data Extract\\Data Replace" /* LabelTitle actDataExtract_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_2_LabelTitle_RESID L"Forms" /* LabelTitle actTab_2_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Forms_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Forms_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgForms_LabelTitle_RESID L"FORMS" /* LabelTitle rgForms_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSelectForm_LabelTitle_RESID L"Form..." /* LabelTitle actSelectForm_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actGoToaFormSection_LabelTitle_RESID L"Go To a Form Section..." /* LabelTitle actGoToaFormSection_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSuperEntryLastyearsformsselection_LabelTitle_RESID L"Super Entry - Last year's forms selection..." /* LabelTitle actSuperEntryLastyearsformsselection_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actLine_LabelTitle_RESID L"Line..." /* LabelTitle actLine_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgQuickAccesForm_LabelTitle_RESID L"QUICK ACCESS" /* LabelTitle rgQuickAccesForm_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSelfEmployment_LabelTitle_RESID L"Self Employment" /* LabelTitle actSelfEmployment_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgCurrentForm_LabelTitle_RESID L"CURRENT FORM OPERATIONS" /* LabelTitle rgCurrentForm_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actClearCurrentform_LabelTitle_RESID L"Clear current form" /* LabelTitle actClearCurrentform_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actClearCurrentPage_LabelTitle_RESID L"Clear Current Page" /* LabelTitle actClearCurrentPage_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCopyForm_LabelTitle_RESID L"Copy Form..." /* LabelTitle actCopyForm_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSignffWarnings_LabelTitle_RESID L"Sign-Off Warnings" /* LabelTitle actSignffWarnings_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgNavigation_LabelTitle_RESID L"NAVIGATION" /* LabelTitle rgNavigation_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_3_LabelTitle_RESID L"Edit" /* LabelTitle actTab_3_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Edit_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Edit_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgClipboard_LabelTitle_RESID L"CLIPBOARD" /* LabelTitle rgClipboard_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    EditCopy1_LabelTitle_RESID L"Copy" /* LabelTitle EditCopy1_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    EditPaste1_LabelTitle_RESID L"Paste" /* LabelTitle EditPaste1_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgSpecificPrint_LabelTitle_RESID L"SPECIFIC OPERATIONS" /* LabelTitle rgSpecificPrint_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTakeShapshotforT1Adj_LabelTitle_RESID L"Create Shapshot of Pre-adjusted return (for T1Adjustment  request)" /* LabelTitle actTakeShapshotforT1Adj_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCreatetheT1ADJform_LabelTitle_RESID L"Show full variance on the T1 Adjustment form" /* LabelTitle actCreatetheT1ADJform_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_4_LabelTitle_RESID L"AutoFill / NOA" /* LabelTitle actTab_4_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Autofill_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Autofill_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgCRA_LabelTitle_RESID L"CRA" /* LabelTitle rgCRA_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRequestTDD_LabelTitle_RESID L"Login to CRA for Auto-fill" /* LabelTitle actRequestTDD_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actShowAutofillStatus_LabelTitle_RESID L"Status of current CRA login" /* LabelTitle actShowAutofillStatus_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actHelpByVisualTax_LabelTitle_RESID L"VisualTax Auto-Fill Guide" /* LabelTitle actHelpByVisualTax_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actAutofillfromCRA_LabelTitle_RESID L"Review/Accept data received from CRA" /* LabelTitle actAutofillfromCRA_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrintableAutofilldata_LabelTitle_RESID L"Printable Auto-Fill data..." /* LabelTitle actPrintableAutofilldata_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCDEClientDataEnquireShowdata_LabelTitle_RESID L"CDE (Client Data Enquire) - Show data" /* LabelTitle actCDEClientDataEnquireShowdata_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actAuditTrailHistoryOfAutoFill_LabelTitle_RESID L"Audit Trail History... " /* LabelTitle actAuditTrailHistoryOfAutoFill_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actIntroductionbyCRA_LabelTitle_RESID L"CRA Auto-fill description" /* LabelTitle actIntroductionbyCRA_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actNOA_LabelTitle_RESID L"Express NOA..." /* LabelTitle actNOA_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_5_LabelTitle_RESID L"Print" /* LabelTitle actTab_5_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Print_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Print_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgPrint_LabelTitle_RESID L"SIMPLE PRINT" /* LabelTitle rgPrint_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrintForm_LabelTitle_RESID L"Current Form..." /* LabelTitle actPrintForm_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCurrentFormallinstances_LabelTitle_RESID L"Current Form (All Instances)..." /* LabelTitle actCurrentFormallinstances_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrintCondencedT1_LabelTitle_RESID L"Filing Paper Copy (Condenced Barcoded T1)" /* LabelTitle actPrintCondencedT1_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actAllforms_LabelTitle_RESID L"Allforms" /* LabelTitle actAllforms_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCurrentPage_LabelTitle_RESID L"Current Page..." /* LabelTitle actCurrentPage_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actClientPHOTOID_LabelTitle_RESID L"Client PHOTO ID" /* LabelTitle actClientPHOTOID_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgPrintReturn_LabelTitle_RESID L"PRINT RETURN" /* LabelTitle rgPrintReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrintCurrentReturn_LabelTitle_RESID L"Current Return..." /* LabelTitle actPrintCurrentReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actBatchPrinting_LabelTitle_RESID L"Batch of returns..." /* LabelTitle actBatchPrinting_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    Specificprint_LabelTitle_RESID L"Specific print..." /* LabelTitle Specificprint_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actShowBarCodedata_LabelTitle_RESID L"Show BarCode data..." /* LabelTitle actShowBarCodedata_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actT7DRA_LabelTitle_RESID L"T7DR(A) - Remmitance Voucher of Balance Due..." /* LabelTitle actT7DRA_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrintAuditWizardDiagnostics_LabelTitle_RESID L"Print Audit Wizard Diagnostics..." /* LabelTitle actPrintAuditWizardDiagnostics_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrintReturnBalances_LabelTitle_RESID L"Print Return Balances..." /* LabelTitle actPrintReturnBalances_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    Correspondence_LabelTitle_RESID L"Correspondence" /* LabelTitle Correspondence_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSaveprintoutofreturninPDFformatinClientDocumentsfolder_LabelTitle_RESID L"Save in PDF format and/or EMAIL the printout" /* LabelTitle actSaveprintoutofreturninPDFformatinClientDocumentsfolder_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actMassEmail_LabelTitle_RESID L"Mass Email..." /* LabelTitle actMassEmail_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actReviewfilesinClientDocumentFolder_LabelTitle_RESID L"Review files in Client Document Folder" /* LabelTitle actReviewfilesinClientDocumentFolder_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actReviewfilesinPermanentClientDocumentsfolder_LabelTitle_RESID L"Review files in Permanent Client Documents folder" /* LabelTitle actReviewfilesinPermanentClientDocumentsfolder_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actMailingLabels_LabelTitle_RESID L"Letters/Labels..." /* LabelTitle actMailingLabels_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    Selections_LabelTitle_RESID L"Selections" /* LabelTitle Selections_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actBirthDateClients_LabelTitle_RESID L"BIRTHDATE Clients..." /* LabelTitle actBirthDateClients_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actClientListings_LabelTitle_RESID L"Client Listings..." /* LabelTitle actClientListings_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    DailyCash_LabelTitle_RESID L"Daily Cash" /* LabelTitle DailyCash_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCashReports_LabelTitle_RESID L"Print Daily Cash and Invoice Reports..." /* LabelTitle actCashReports_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCopyDailyCashReport_LabelTitle_RESID L"Copy Daily Cash Report..." /* LabelTitle actCopyDailyCashReport_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSubmitdailycashreport_LabelTitle_RESID L"Submit your daily cash report (by modem)..." /* LabelTitle actSubmitdailycashreport_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actYTDCashreports_LabelTitle_RESID L"YTD Consolidated Cash reports..." /* LabelTitle actYTDCashreports_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgTuning_LabelTitle_RESID L"TUNING" /* LabelTitle rgTuning_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actBuildreport_LabelTitle_RESID L"Build report..." /* LabelTitle actBuildreport_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrinterSetup_LabelTitle_RESID L"Printer Setup..." /* LabelTitle actPrinterSetup_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgvtScan_LabelTitle_RESID L"VTSCAN" /* LabelTitle rgvtScan_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actVTSCAN_LabelTitle_RESID L"vtSCAN" /* LabelTitle actVTSCAN_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_6_LabelTitle_RESID L"Configure" /* LabelTitle actTab_6_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Configure_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Configure_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgOptions_LabelTitle_RESID L"MAIN" /* LabelTitle rgOptions_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actOptions2_LabelTitle_RESID L"Options" /* LabelTitle actOptions2_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actDefinetheTRfolder_LabelTitle_RESID L"TR (Tax Research) program directory.." /* LabelTitle actDefinetheTRfolder_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrintTemplates_LabelTitle_RESID L"Print Templates..." /* LabelTitle actPrintTemplates_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrintSequence_LabelTitle_RESID L"Print Sequence..." /* LabelTitle actPrintSequence_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actFeeSchedule_LabelTitle_RESID L"Fee Schedule..." /* LabelTitle actFeeSchedule_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSuperEntry_LabelTitle_RESID L"SUPER ENTRY SET-UP..." /* LabelTitle actSuperEntry_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actFinancialInstitutions_LabelTitle_RESID L"Financial Institutions..." /* LabelTitle actFinancialInstitutions_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actDoctorsHospitalsPharmacies_LabelTitle_RESID L"Doctors-Hospitals-Pharmacies..." /* LabelTitle actDoctorsHospitalsPharmacies_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCharityOrganizations_LabelTitle_RESID L"Charity Organizations..." /* LabelTitle actCharityOrganizations_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actMedicalExpenseDescriptions_LabelTitle_RESID L"Medical Expense Descriptions..." /* LabelTitle actMedicalExpenseDescriptions_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actEmployers_LabelTitle_RESID L"Employers..." /* LabelTitle actEmployers_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actFirstNames_LabelTitle_RESID L"First Names..." /* LabelTitle actFirstNames_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCities_LabelTitle_RESID L"Cities..." /* LabelTitle actCities_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCompanyLogo_LabelTitle_RESID L"Company Logo.for client letters.." /* LabelTitle actCompanyLogo_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actDataDictionary_LabelTitle_RESID L"Data Dictionary..." /* LabelTitle actDataDictionary_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actUserSetUp_LabelTitle_RESID L"Multi-Office and User Configuration..." /* LabelTitle actUserSetUp_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actYTDdirectorySetup_LabelTitle_RESID L"YTD cash reporting Set-up..." /* LabelTitle actYTDdirectorySetup_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actInvoiceAdjustments_LabelTitle_RESID L"Invoice Adjustments..." /* LabelTitle actInvoiceAdjustments_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actClientLetter_LabelTitle_RESID L"Client letter design..." /* LabelTitle actClientLetter_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actShowCellNumbers_LabelTitle_RESID L"Show Field Numbers" /* LabelTitle actShowCellNumbers_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rbOptionsMigrate_LabelTitle_RESID L"MIGRATE" /* LabelTitle rbOptionsMigrate_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actImportConfiguration_LabelTitle_RESID L"Import Configuration ..." /* LabelTitle actImportConfiguration_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actExportConfiguration_LabelTitle_RESID L"Export Configuration..." /* LabelTitle actExportConfiguration_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_7_LabelTitle_RESID L"Family" /* LabelTitle actTab_7_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Family_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Family_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgCoupling2_LabelTitle_RESID L"COUPLING" /* LabelTitle rgCoupling2_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actEndCoupling_LabelTitle_RESID L"Break Coupling" /* LabelTitle actEndCoupling_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actFamilysetup_LabelTitle_RESID L"Revise family coupling set-up" /* LabelTitle actFamilysetup_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_8_LabelTitle_RESID L"EFile Online" /* LabelTitle actTab_8_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_EFileOnline_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_EFileOnline_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgEOL_LabelTitle_RESID L"EOL" /* LabelTitle rgEOL_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actT1013Efile_LabelTitle_RESID L"T1013 Efile..." /* LabelTitle actT1013Efile_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actmniT1135Efile_LabelTitle_RESID L"T1135 Efile..." /* LabelTitle actmniT1135Efile_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actReFILEthisreturn_LabelTitle_RESID L"Refile..." /* LabelTitle actReFILEthisreturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPADPreauthorizedDebit_LabelTitle_RESID L"PAD..." /* LabelTitle actPADPreauthorizedDebit_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    History_LabelTitle_RESID L"History" /* LabelTitle History_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actHistoryofEfilesubmissions_LabelTitle_RESID L"History of Efile submissions" /* LabelTitle actHistoryofEfilesubmissions_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actHistoryofT1013submissions_LabelTitle_RESID L"History of T1013 submissions..." /* LabelTitle actHistoryofT1013submissions_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actHistoryofT1135Submissions_LabelTitle_RESID L"History of T1135 Submissions..." /* LabelTitle actHistoryofT1135Submissions_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actHisttoryOfReFILEDreturns_LabelTitle_RESID L"History of returns before ReFILE" /* LabelTitle actHisttoryOfReFILEDreturns_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgEOLSetup_LabelTitle_RESID L"SETUP" /* LabelTitle rgEOLSetup_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSetupEOL_LabelTitle_RESID L"Setup EOL..." /* LabelTitle actSetupEOL_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSetupEOLPlus_LabelTitle_RESID L"Setup EOLPlus and SEND..." /* LabelTitle actSetupEOLPlus_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgInfo_LabelTitle_RESID L"INFO" /* LabelTitle rgInfo_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actEfileAppendicesExclusionsandotherinfo_LabelTitle_RESID L"Efile Appendices- Exclusions and other info" /* LabelTitle actEfileAppendicesExclusionsandotherinfo_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actHistoryofBatchAcknowledgements_LabelTitle_RESID L"Print a Batch Acknowledgement" /* LabelTitle actHistoryofBatchAcknowledgements_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actEfileErrorMessagesPDF_LabelTitle_RESID L"Efile Error Messages  (RC4018Ch2)" /* LabelTitle actEfileErrorMessagesPDF_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actT1013EfileErrors_LabelTitle_RESID L"T1013- Efile Errors (ch11)" /* LabelTitle actT1013EfileErrors_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actWebServiceErrorMessages_LabelTitle_RESID L"Web Services Error Messages " /* LabelTitle actWebServiceErrorMessages_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actEFmemofieldadditionalfields_LabelTitle_RESID L"EFmemo (Supporting fields for Efile)" /* LabelTitle actEFmemofieldadditionalfields_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actEFILERSMANUAL_LabelTitle_RESID L"Efiler's User Manual (RC4018)" /* LabelTitle actEFILERSMANUAL_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actShowXMLcontentsbeforetransmission_LabelTitle_RESID L"Show XML contents before transmission" /* LabelTitle actShowXMLcontentsbeforetransmission_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_9_LabelTitle_RESID L"Review" /* LabelTitle actTab_9_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Review_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Review_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgService_LabelTitle_RESID L"SERVICE" /* LabelTitle rgService_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgSummary_LabelTitle_RESID L"SUMMARY" /* LabelTitle rgSummary_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actACBPortfolioSummary_LabelTitle_RESID L"ACB/Portfolio Summary" /* LabelTitle actACBPortfolioSummary_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actT2125YearlySummary_LabelTitle_RESID L"T2125 Yearly Summary" /* LabelTitle actT2125YearlySummary_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_10_LabelTitle_RESID L"TaxPlaner - 2017" /* LabelTitle actTab_10_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_TaxPlaner_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_TaxPlaner_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgTaxPlanner_LabelTitle_RESID L"TAX PLANNER" /* LabelTitle rgTaxPlanner_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actOpenExistingTaxPlan_LabelTitle_RESID L"Open Existing Tax Plan..." /* LabelTitle actOpenExistingTaxPlan_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actNextYearsRates_LabelTitle_RESID L"Select tax rates (toggle 2017 and 2018 rates)" /* LabelTitle actNextYearsRates_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCreateNewPlan_LabelTitle_RESID L"Set return in Tax Planner mode" /* LabelTitle actCreateNewPlan_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_11_LabelTitle_RESID L"Desktop" /* LabelTitle actTab_11_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Desktop_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Desktop_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgView_LabelTitle_RESID L"VIEW" /* LabelTitle rgView_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actToolbandswitch_LabelTitle_RESID L"Toolband switch" /* LabelTitle actToolbandswitch_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actColor_LabelTitle_RESID L"Color..." /* LabelTitle actColor_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSetdisplayresolution_LabelTitle_RESID L"Set display resolution" /* LabelTitle actSetdisplayresolution_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actShowTreeview_LabelTitle_RESID L"Show Tree-view form list" /* LabelTitle actShowTreeview_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_12_LabelTitle_RESID L"Utilites" /* LabelTitle actTab_12_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Utilities_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Utilities_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgUtilites_LabelTitle_RESID L"UTILITES" /* LabelTitle rgUtilites_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCalculator_LabelTitle_RESID L"Calculator" /* LabelTitle actCalculator_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCalendar_LabelTitle_RESID L"Calendar" /* LabelTitle actCalendar_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actForeignExchangeconverter_LabelTitle_RESID L"Foreign Exchange converter" /* LabelTitle actForeignExchangeconverter_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actFileViewerEditor_LabelTitle_RESID L"Edit Supporting Files..." /* LabelTitle actFileViewerEditor_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgrgBackup_LabelTitle_RESID L"BACKUP" /* LabelTitle rgrgBackup_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actBackupthetaxdata_LabelTitle_RESID L"Backup..." /* LabelTitle actBackupthetaxdata_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRestoredatafrombackup_LabelTitle_RESID L"Restore..." /* LabelTitle actRestoredatafrombackup_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgSeveralDatabases_LabelTitle_RESID L"SEVERAL DATABASES" /* LabelTitle rgSeveralDatabases_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actMergeDataBases_LabelTitle_RESID L"Merge Data Bases..." /* LabelTitle actMergeDataBases_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCopyBackUp_LabelTitle_RESID L"Copy tax returns..." /* LabelTitle actCopyBackUp_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCopyreturnsfromT1Draft_LabelTitle_RESID L"From Draft..." /* LabelTitle actCopyreturnsfromT1Draft_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgMulti_LabelTitle_RESID L"MULTI OPERATIONS" /* LabelTitle rgMulti_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRecalculateandsaveALLtaxreturns_LabelTitle_RESID L"Re-calculate and save ALL tax returns" /* LabelTitle actRecalculateandsaveALLtaxreturns_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRebuildtheClientDataBase_LabelTitle_RESID L"Rebuild a Client Data Base..." /* LabelTitle actRebuildtheClientDataBase_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgAdvanced_LabelTitle_RESID L"ADVANCED" /* LabelTitle rgAdvanced_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actReIndextheClientDataBase_LabelTitle_RESID L"Re-Index the Client DB" /* LabelTitle actReIndextheClientDataBase_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actFixClientDataBaseData_LabelTitle_RESID L"Change data on the Client DB" /* LabelTitle actFixClientDataBaseData_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRestructuretheClientsDataBase_LabelTitle_RESID L"Restructure the Clients DB" /* LabelTitle actRestructuretheClientsDataBase_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actFixFormSpecifications_LabelTitle_RESID L"Change Form Specifications" /* LabelTitle actFixFormSpecifications_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actUpgrade_LabelTitle_RESID L"De-register program..." /* LabelTitle actUpgrade_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actRepairReturn_LabelTitle_RESID L"Repair Return" /* LabelTitle actRepairReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgDeveloper_LabelTitle_RESID L"DEVELOPER" /* LabelTitle rgDeveloper_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    Reset_LabelTitle_RESID L"Reset" /* LabelTitle Reset_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actResetpasswordwithReturn_LabelTitle_RESID L"Reset password with Return" /* LabelTitle actResetpasswordwithReturn_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actResetpasswordfromclientDB_LabelTitle_RESID L"Reset password with client DB" /* LabelTitle actResetpasswordfromclientDB_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actResetEfilestatusToWIP_LabelTitle_RESID L"Reset Efile status to WIP" /* LabelTitle actResetEfilestatusToWIP_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCheckALLforms_LabelTitle_RESID L"Check ALL forms" /* LabelTitle actCheckALLforms_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrintAllForms_LabelTitle_RESID L"PrintAllForms" /* LabelTitle actPrintAllForms_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actShowFList_LabelTitle_RESID L"Show FList" /* LabelTitle actShowFList_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actLicLevel_LabelTitle_RESID L"LicLevel" /* LabelTitle actLicLevel_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSpecialGpT1_LabelTitle_RESID L"SpecialGpT1" /* LabelTitle actSpecialGpT1_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actBuildXMLAllFiles_LabelTitle_RESID L"Build XML-AllFiles" /* LabelTitle actBuildXMLAllFiles_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actPrepareDistr_LabelTitle_RESID L"PrepareDistr" /* LabelTitle actPrepareDistr_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTab_13_LabelTitle_RESID L"Help" /* LabelTitle actTab_13_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgFileManagement_Help_LabelTitle_RESID L"FILE MANAGEMENT" /* LabelTitle rgFileManagement_Help_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgHelp_LabelTitle_RESID L"HELP" /* LabelTitle rgHelp_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actHelpCurrentForm_LabelTitle_RESID L"Help - Current Form" /* LabelTitle actHelpCurrentForm_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTips_LabelTitle_RESID L"Tips..." /* LabelTitle actTips_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actVisualTaxDemoGuide_LabelTitle_RESID L"T1 program help..." /* LabelTitle actVisualTaxDemoGuide_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actLineByLinehelp_LabelTitle_RESID L"Line By Line help..." /* LabelTitle actLineByLinehelp_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTUTORIALS_LabelTitle_RESID L"TUTORIALS" /* LabelTitle actTUTORIALS_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actYourLatestRelease_LabelTitle_RESID L"What's new in this release..." /* LabelTitle actYourLatestRelease_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actEFileHelpDesk_LabelTitle_RESID L"EFile Help Desk contacts..." /* LabelTitle actEFileHelpDesk_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actAlertsNotifications_LabelTitle_RESID L"Alerts / Notifications" /* LabelTitle actAlertsNotifications_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSystemInformation_LabelTitle_RESID L"System Information..." /* LabelTitle actSystemInformation_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actAboutItem_LabelTitle_RESID L"About..." /* LabelTitle actAboutItem_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    Guides_LabelTitle_RESID L"Guides" /* LabelTitle Guides_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actT1GuideCCRA_LabelTitle_RESID L"    T1 Guide - CRA" /* LabelTitle actT1GuideCCRA_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actOTHERGUIDES_LabelTitle_RESID L"    OTHER GUIDES..." /* LabelTitle actOTHERGUIDES_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actT4044GuideEmploymentExpenses_LabelTitle_RESID L"    T4044 Guide - Employment Expenses" /* LabelTitle actT4044GuideEmploymentExpenses_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actSICCodes_LabelTitle_RESID L"    NAICS Codes (view only)..." /* LabelTitle actSICCodes_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actExchageRatesAverage_LabelTitle_RESID L"    Exchage Rates (Average)" /* LabelTitle actExchageRatesAverage_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actNISAcodes_LabelTitle_RESID L"    CAIS commodity codes (old NISA)..." /* LabelTitle actNISAcodes_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCCArates_LabelTitle_RESID L"    CCA rates..." /* LabelTitle actCCArates_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actFinancialInstitutionsforT1DD_LabelTitle_RESID L"    Financial Institutions (for T1DD)..." /* LabelTitle actFinancialInstitutionsforT1DD_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    OntheWEB_LabelTitle_RESID L"On the WEB" /* LabelTitle OntheWEB_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actKnownIssues_LabelTitle_RESID L"    Known Issues..." /* LabelTitle actKnownIssues_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCheckupdates_LabelTitle_RESID L"    CHECK UPDATE VIA WEB..." /* LabelTitle actCheckupdates_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCheckupdate_LabelTitle_RESID L"    Downloads page..." /* LabelTitle actCheckupdate_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actFrequentlyaskedquestions_LabelTitle_RESID L"    FAQ - Frequently asked questions..." /* LabelTitle actFrequentlyaskedquestions_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actVisualTaxForum_LabelTitle_RESID L"    VisualTax Forum.." /* LabelTitle actVisualTaxForum_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actInternetWebSite_LabelTitle_RESID L"    VisualTax web site..." /* LabelTitle actInternetWebSite_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actUsefulLinks_LabelTitle_RESID L"    Internet links..." /* LabelTitle actUsefulLinks_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgTR_LabelTitle_RESID L"TR" /* LabelTitle rgTR_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTrGuide_LabelTitle_RESID L" TR-Guide..." /* LabelTitle actTrGuide_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actTrEngineLoad_LabelTitle_RESID L"TR-Load..." /* LabelTitle actTrEngineLoad_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    rgCICA_LabelTitle_RESID L"CICA" /* LabelTitle rgCICA_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCICAHelpbyline_LabelTitle_RESID L"    CICA - Line-by-line..." /* LabelTitle actCICAHelpbyline_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCICA_LabelTitle_RESID L"    CICA - Index of Topics" /* LabelTitle actCICA_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    actCICAReferencematerials_LabelTitle_RESID L"    CICA - Reference materials (IT, Forms, Tables, etc)" /* LabelTitle actCICAReferencematerials_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd2_LabelTitle_RESID L"Label:InternalCmd2" /* LabelTitle InternalCmd2_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd4_LabelTitle_RESID L"Label:InternalCmd4" /* LabelTitle InternalCmd4_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd6_LabelTitle_RESID L"Label:InternalCmd6" /* LabelTitle InternalCmd6_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd8_LabelTitle_RESID L"Label:InternalCmd8" /* LabelTitle InternalCmd8_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd10_LabelTitle_RESID L"Label:InternalCmd10" /* LabelTitle InternalCmd10_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd12_LabelTitle_RESID L"Label:InternalCmd12" /* LabelTitle InternalCmd12_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd14_LabelTitle_RESID L"Label:InternalCmd14" /* LabelTitle InternalCmd14_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd16_LabelTitle_RESID L"Label:InternalCmd16" /* LabelTitle InternalCmd16_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd18_LabelTitle_RESID L"Label:InternalCmd18" /* LabelTitle InternalCmd18_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd20_LabelTitle_RESID L"Label:InternalCmd20" /* LabelTitle InternalCmd20_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd22_LabelTitle_RESID L"Label:InternalCmd22" /* LabelTitle InternalCmd22_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd24_LabelTitle_RESID L"Label:InternalCmd24" /* LabelTitle InternalCmd24_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd26_LabelTitle_RESID L"Label:InternalCmd26" /* LabelTitle InternalCmd26_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd28_LabelTitle_RESID L"Label:InternalCmd28" /* LabelTitle InternalCmd28_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd30_LabelTitle_RESID L"Label:InternalCmd30" /* LabelTitle InternalCmd30_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd32_LabelTitle_RESID L"Label:InternalCmd32" /* LabelTitle InternalCmd32_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd34_LabelTitle_RESID L"Label:InternalCmd34" /* LabelTitle InternalCmd34_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd36_LabelTitle_RESID L"Label:InternalCmd36" /* LabelTitle InternalCmd36_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    InternalCmd38_LabelTitle_RESID L"Label:InternalCmd38" /* LabelTitle InternalCmd38_LabelTitle_RESID: (null) */
+END
+
+APPLICATION_T1_RIBBON    UIFILE    "C:\\Projects\\Outsource\\Customers\\VisualTax\\VisualTax_V2\\2018\\T1-2018\\T1_UIRibbonUnit.bml"

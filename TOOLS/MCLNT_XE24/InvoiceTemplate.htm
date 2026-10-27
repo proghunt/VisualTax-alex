@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>VisualTax !invoiceNum!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+
+#table {
+	width: 960px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	background-color: FFFFFF;
+	border-width: 0;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#tableMain {
+	width: 960px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	border-color: #CCCCCC;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	padding-right: 7px;
+	padding-bottom: 5px;
+	padding-left: 7px;
+	padding-top: 0px;
+}
+
+#tableMain h3 {
+	background-color: #999999;
+	font-weight: bolder;
+	font-size:11px;
+	font-color:#12384E;
+	color: #FFFFFF;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	/*background-image: url(images/h3Bak.jpg);*/
+}
+
+#tableMain h4 {
+	padding-left:3px;
+	padding-top:3px;
+	padding-bottom:3px;
+	margin:0px;
+	background-color: FDFDFD;
+	/*background-image: url(images/h4TableBak.jpg);*/
+	font-weight: bold;
+	font-size:11px;
+	font-color:#12384E;
+	color: #333333;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+.style1 {color: #666666}
+-->
+</style>
+</head>
+
+<body>
+<table id="table">
+  <tr> 
+    <td width="66%"><strong><font size="3">MICROSOPHIC INC.</font></strong></td>
+    <td width="34%" colspan="2"> <div align="right">      <font size="3"><strong>!invoiceNum!<br>
+        </strong></font></div> 
+  <tr> 
+    <td><font color="1" size="2">5225 Orbitor DR. Unit 14</font></td>
+    <td width="34%" colspan="2"><div align="right">      <font size="2"><strong>Date: 
+    !Date!</strong></font></div></tr>
+  <tr> 
+    <td><font color="1" size="2">Mississauga, ON</font></td>
+    <td width="34%" colspan="2">  </tr>
+  <tr> 
+    <td><font color="1" size="2">L4W 4Y8</font></td>
+    <td width="34%" colspan="2">  </tr>
+  <tr> 
+    <td><font color="1" size="2">Tel: (905) 238-6159 Fax: (905) 625-9384</font></td>
+    <td width="34%" colspan="2">  </tr>
+  <tr> 
+    <td><font color="1" size="2">Internet Site: <a href="http://www.visualtax.com" target="_blank">www.visualtax.com</a></font></td>
+    <td width="34%" colspan="2">  </tr>
+  <tr> 
+    <td><font color="1" size="2">Email: <a href="mailto:Sales@visualtax.com">Sales@visualtax.com</a></font></td>
+    <td width="34%" colspan="2">  </tr>
+</table>
+<br>
+<table id="table">
+<tr> 
+    <td width="5%"><strong><font size="2">To:</font></strong></td>
+    <td width="95%"><strong><font size="2">!customerName!</font></strong></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">!customerAddress!</font></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">!customerProv!</font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">!customerPostal!</font></td>
+  </tr>
+</table>
+<br>
+<table  id="tableMain">
+  <tr> 
+    <td width="89">      <h4>ITEM</h4></td>
+    <td width="738">      <h4>DESCRIPTION</h4></td>
+    <td width="117">      <h4 align="right">AMOUNT</h4></td>
+  </tr>
+  <tr> 
+    <td>      <font size="2">!itemNum1!</font></td>
+    <td><font size="2">!itemDescription1!</font></td>
+    <td>      <div align="right"><font size="2">!itemAmount1!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum2!</font></td>
+    <td><font size="2">!itemDescription2!</font></td>
+    <td>      <div align="right"><font size="2">!itemAmount2!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum3!</font></td>
+    <td><font size="2">!itemDescription3!</font></td>
+    <td>      <div align="right"><font size="2">!itemAmount3!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum4!</font></td>
+    <td><font size="2">!itemDescription4!</font></td>
+    <td>      <div align="right"><font size="2">!itemAmount4!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum5!</font></td>
+    <td><font size="2">!itemDescription5!</font></td>
+    <td>      <div align="right"><font size="2">!itemAmount5!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum6!</font></td>
+    <td><font size="2">!itemDescription6!</font></td>
+    <td>      <div align="right"><font size="2">!itemAmount6!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum7!</font></td>
+    <td><font size="2">!itemDescription7!</font></td>
+    <td>      <div align="right"><font size="2">!itemAmount7!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum8!</font></td>
+    <td><font size="2">!itemDescription8!</font></td>
+    <td>      <div align="right"><font size="2">!itemAmount8!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum9!</font></td>
+    <td><font size="2">!itemDescription9!</font></td>
+    <td>      <div align="right"><font size="2">!itemAmount9!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum10!</font></td>
+    <td><div align="left">      <font size="2">!itemDescription10!</font></div></td>
+    <td>      <div align="right"><font size="2">!itemAmount10!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum11!</font></td>
+    <td><div align="left">      <font size="2">!itemDescription11!</font></div></td>
+    <td>      <div align="right"><font size="2">!itemAmount11!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum12!</font></td>
+    <td><div align="left">      <font size="2">!itemDescription12!</font></div></td>
+    <td>      <div align="right"><font size="2">!itemAmount12!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum13!</font></td>
+    <td><div align="left">      <font size="2">!itemDescription13!</font></div></td>
+    <td>      <div align="right"><font size="2">!itemAmount13!</font></div></td></tr>
+  <tr> 
+    <td>      <font size="2">!itemNum14!</font></td>
+    <td><div align="left">      <font size="2">!itemDescription14!</font></div></td>
+    <td>      <div align="right"><font size="2">!itemAmount14!</font></div></td></tr>
+  <tr> 
+    <td><div align="center">      </div></td>
+    <td>      <div align="right"><font size="2">!CDDescription!</font></div></td>
+    <td>      <div align="right"><font size="2">!cdCharges!</font></div></td></tr>
+  <tr> 
+    <td><div align="center">      </div></td>
+    <td><div align="right"><font size="2">!EFdiscount!</font></div></td>
+    <td>      <div align="right"><font size="2">!EFdiscountAmount!</font></div></td></tr>
+  <tr>
+    <td bordercolor="#FFFFFF">&nbsp;</td>
+    <td bordercolor="#FFFFFF"><div align="right"><font size="2">!PayPalAmountDescr!</font></div></td>
+    <td><div align="right"><font size="2">!PayPalAmount!</font></div></td>
+  </tr>
+  <tr> 
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right">      <font size="2">Total 
+    Price</font></div></td>
+    <td>      <div align="right"><font size="2">!totalPrice!</font></div></td></tr>
+  <tr> 
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right">      <font size="2">!TAXDESCR!</font></div></td>
+    <td>      <div align="right"><font size="2">!TAX!</font></div></td></tr>
+  
+  <tr> 
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right">      <font size="2">Total 
+    amount</font></div></td>
+    <td>      <div align="right"><font size="2">!totalAmount!</font></div></td>
+  </tr>
+  
+  <tr> 
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right"><font size="2">!adjustmentDescr!</font></div></td>
+    <td><div align="right"><font size="2">!adjustmentAmount!</font></div></td>
+  </tr>
+
+  <tr> 
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right">      <font size="2">Amount 
+    paid</font></div></td>
+    <td>      <div align="right"><font size="2">!amountPaid!</font></div></td>
+  </tr>
+  
+  <tr> 
+    <td colspan="2" bordercolor="#FFFFFF"> <div align="right">      <font size="2">!amountDueOrCredit!</font></div></td>
+    <td>      <div align="right"><font size="2">!amountDue!</font></div></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3" bordercolor="#FFFFFF"><div align="right" class="style1">(amounts less than $2 are ignored)</div></td>
+  </tr>
+</table>
+<br>
+<table id="table" width="100%" border="0">
+  <tr> 
+    <td><p><font size="2" face="Arial, Helvetica, sans-serif">!CreditNote!<br>
+        If you have any questions, email us at </font><font color="1" size="2" face="Arial, Helvetica, sans-serif"><a href="mailto:Sales@visualtax.com">Sales@visualtax.com</a></font><font size="2" face="Arial, Helvetica, sans-serif"> 
+        or call (905) 238-6159<br>
+      GST NO: R103678595</font></p>      </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

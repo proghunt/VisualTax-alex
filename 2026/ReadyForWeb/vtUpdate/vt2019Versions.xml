@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<UPDATE taxyear = "2019">
+  <ELEMENT>
+    <NAME>vt2019</NAME>
+    <RELEASE>0.0.0</RELEASE>
+    <DATEUPDATE>2017/09/25</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT2016SetupFull.exe</FILE>
+  </ELEMENT>
+
+ <ELEMENT>
+    <NAME>Visual Tax - T1</NAME>
+    <RELEASE>0.0</RELEASE>
+    <DATEUPDATE>2022/02/20</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT2018SetUpFull.exe</FILE>
+  </ELEMENT>
+
+  <ELEMENT>
+    <NAME>Visual Tax - T2</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2020/09/22</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-T22018UpdN25.exe</FILE>
+  </ELEMENT>
+
+  <ELEMENT>
+    <NAME>Visual Tax - T3</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2020/01/08</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-T32018UpdD27.exe</FILE>
+  </ELEMENT>
+
+  <ELEMENT>
+    <NAME>Visual Tax - T4T5</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2020/01/31</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-T22018UpdD19.exe</FILE>
+  </ELEMENT>
+
+  <ELEMENT>
+    <NAME>Visual Tax - TF</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2020/03/05</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-T22018UpdD19.exe</FILE>
+  </ELEMENT>
+
+<ELEMENT>
+    <NAME>Visual Tax - FP</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2020/03/15</DATEUPDATE>
+    <FILE>http://www.visualtax.com/downloads/VT-T22018UpdF28.exe</FILE>
+  </ELEMENT>
+
+  <ELEMENT>
+    <NAME>Utilities</NAME>
+    <RELEASE>1.0</RELEASE>
+    <DATEUPDATE>2019/10/08</DATEUPDATE>
+   <!-- <DATEUPDATE>2017/06/25</DATEUPDATE> -->  CHANGE DATE in DistrFl VTUtilities.INI
+    <FILE>http://www.visualtax.com/downloads/vt2018UtilitiesUpdate.exe</FILE>
+  </ELEMENT>
+
+
+</UPDATE>

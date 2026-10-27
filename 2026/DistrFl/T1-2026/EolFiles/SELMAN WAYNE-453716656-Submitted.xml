@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<soapenv:Envelope xmlns:soapenv = "http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <t1rq:EfileReturnRequest
+       xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0"
+       xmlns:comm="http://www.cra-arc.gc.ca/xmlns/comm/2026/1-0-0"
+       xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2026/1-0-0"
+       xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+       xmlns:sfd="http://www.cra-arc.gc.ca/xmlns/sfd/2026/1-0-0"
+       xmlns:t1="http://www.cra-arc.gc.ca/xmlns/t1/2026/1-0-0"
+       xmlns:t1135="http://www.cra-arc.gc.ca/xmlns/t1135/2021/1-0-0"
+       xmlns:t1rq="http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0"
+       xmlns:tp="http://www.cra-arc.gc.ca/xmlns/tp/2026/1-0-0"
+       xmlns:xml="http://www.w3.org/XML/1998/namespace"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t1rq/efilerequest/1-0-0 t1wsefilerequest.xsd">
+       <ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
+<ef:PasswordID>*redacted*</ef:PasswordID>
+       <tp:TaxYear>2025</tp:TaxYear>
+       <ef:EfileData>
+<ef:PasswordID>*redacted*</ef:PasswordID>
+           <ef:DocumentControlNumber>
+               <ef:TaxPreparerEfilerNumber>B0865</ef:TaxPreparerEfilerNumber>
+               <ef:TaxPreparerReturnControlNumber>25172053</ef:TaxPreparerReturnControlNumber>
+           </ef:DocumentControlNumber>
+           <ef:TaxPreparerPreAssessmentReviewContactCode>3</ef:TaxPreparerPreAssessmentReviewContactCode>
+           <ef:TaxPreparerPostAssessmentReviewContactCode>3</ef:TaxPreparerPostAssessmentReviewContactCode>
+      <ef:T183ElectronicSignatureData>
+         <ef:T183ElectronicSignatureIndicator>0</ef:T183ElectronicSignatureIndicator>
+      </ef:T183ElectronicSignatureData>
+       </ef:EfileData>
+       <comm:TestCaseIdentifier>9999</comm:TestCaseIdentifier>
+       <comm:FirstTimeFilerIndicator>0</comm:FirstTimeFilerIndicator>
+       <comm:OriginatingIP>0.0.0.0</comm:OriginatingIP>
+       <t1rq:TaxReturnForm>
+      <t1:T1Return>
+            <comm:SoftwareID>064F</comm:SoftwareID>
+            <comm:SoftwareRevisionDate>2026-03-31</comm:SoftwareRevisionDate>
+      <t1:AutoFillData>
+            <t1:AutoFillReturnIndicator>1</t1:AutoFillReturnIndicator>
+            <t1:AutoFillRequestDate>2026-06-04</t1:AutoFillRequestDate>
+      </t1:AutoFillData>
+         <t1:TaxpayerData>
+            <tp:TaxpayerBasicData>
+              <tp:TaxpayerSocialInsuranceNumber>453716656</tp:TaxpayerSocialInsuranceNumber>
+              <tp:TaxYear>2025</tp:TaxYear>
+              <tp:TaxpayerBirthDate>1956-01-25</tp:TaxpayerBirthDate>
+              <tp:SelfEmployedSpouseDeadlineIndicator>1</tp:SelfEmployedSpouseDeadlineIndicator>
+              </tp:TaxpayerBasicData>
+              <tp:TaxpayerMaritalStatusData>
+              <tp:TaxpayerMaritalStatusCode>1</tp:TaxpayerMaritalStatusCode>
+              <tp:TaxpayerMaritalStatusChangeIndicator>2</tp:TaxpayerMaritalStatusChangeIndicator>
+              </tp:TaxpayerMaritalStatusData>
+            <tp:TaxpayerResidenceData>
+              <tp:TaxpayerYearEndResidenceProvinceCode>ON</tp:TaxpayerYearEndResidenceProvinceCode>
+            </tp:TaxpayerResidenceData>
+            <tp:TaxpayerSpouseData>
+               <tp:SpouseSocialInsuranceNumber>479839029</tp:SpouseSocialInsuranceNumber>
+               <tp:SpouseGivenName>DEBO</tp:SpouseGivenName>
+               <tp:SpouseNetIncomeAmount>83437</tp:SpouseNetIncomeAmount>
+               <tp:SpouseUniversalChildCareBenefitAmount>0</tp:SpouseUniversalChildCareBenefitAmount>
+               <tp:SpouseUniversalChildCareRepaymentAmount>0</tp:SpouseUniversalChildCareRepaymentAmount>
+            </tp:TaxpayerSpouseData>
+            <tp:TaxpayerContactData>
+              <comm:TaxpayerName>
+                 <comm:GivenName>WAYNE</comm:GivenName>
+                 <comm:FamilyName>SELMAN</comm:FamilyName>
+              </comm:TaxpayerName>
+              <tp:ResidencyType>1</tp:ResidencyType>
+            <tp:TaxpayerMailingAddress>
+              <comm:CanadianMailingAddress>
+              <comm:AddressStreetText>1298 ST CLAIR PARKWAY</comm:AddressStreetText>
+              <comm:AddressMunicipalityName>COURTRIGHT</comm:AddressMunicipalityName>
+              <comm:AddressProvinceCode>ON</comm:AddressProvinceCode>
+              <comm:AddressPostalCode>N0N1H0</comm:AddressPostalCode>
+              </comm:CanadianMailingAddress>
+              </tp:TaxpayerMailingAddress>
+            <tp:TaxpayerHomeTelephoneNumber>
+              <comm:TelephoneAreaCode>519</comm:TelephoneAreaCode>
+              <comm:TelephoneLocalNumber>8672887</comm:TelephoneLocalNumber>
+              </tp:TaxpayerHomeTelephoneNumber>
+              <tp:CorrespondenceLanguageCode>1</tp:CorrespondenceLanguageCode>
+            </tp:TaxpayerContactData>
+            </t1:TaxpayerData>
+            <t1:RelatedProgramData>
+            <t1:CanadianCitizenshipIndicator>1</t1:CanadianCitizenshipIndicator>
+            <t1:ElectionsCanadaAuthorizationIndicator>01</t1:ElectionsCanadaAuthorizationIndicator>
+            <t1:IncomeTaxExemptIndianActIndicator>0</t1:IncomeTaxExemptIndianActIndicator>
+            <t1:DonorConsentIndicator>2</t1:DonorConsentIndicator>
+            </t1:RelatedProgramData>
+            <comm:ReturnLine><comm:FieldCode>11300</comm:FieldCode><comm:FieldValue>8791</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>11400</comm:FieldCode><comm:FieldValue>18475</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>11500</comm:FieldCode><comm:FieldValue>88909</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>12000</comm:FieldCode><comm:FieldValue>3</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>12100</comm:FieldCode><comm:FieldValue>1372</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>12599</comm:FieldCode><comm:FieldValue>12000</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>12600</comm:FieldCode><comm:FieldValue>3464</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>14099</comm:FieldCode><comm:FieldValue>34988</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>14100</comm:FieldCode><comm:FieldValue>8496</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>15000</comm:FieldCode><comm:FieldValue>129510</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>21000</comm:FieldCode><comm:FieldValue>44455</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>21200</comm:FieldCode><comm:FieldValue>2071</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>22200</comm:FieldCode><comm:FieldValue>34722</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>26000</comm:FieldCode><comm:FieldValue>82638</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>26600</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>30000</comm:FieldCode><comm:FieldValue>16129</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>30100</comm:FieldCode><comm:FieldValue>3461</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>31000</comm:FieldCode><comm:FieldValue>24730</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>31400</comm:FieldCode><comm:FieldValue>2000</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>33500</comm:FieldCode><comm:FieldValue>21837</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>33800</comm:FieldCode><comm:FieldValue>3166</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>35000</comm:FieldCode><comm:FieldValue>3166</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>36100</comm:FieldCode><comm:FieldValue>74555</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>40425</comm:FieldCode><comm:FieldValue>48</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>40600</comm:FieldCode><comm:FieldValue>1031818</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>41700</comm:FieldCode><comm:FieldValue>1031818</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>42100</comm:FieldCode><comm:FieldValue>59452</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>42800</comm:FieldCode><comm:FieldValue>535564</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>43100</comm:FieldCode><comm:FieldValue>1582</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>43300</comm:FieldCode><comm:FieldValue>105</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>43500</comm:FieldCode><comm:FieldValue>1626834</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>43700</comm:FieldCode><comm:FieldValue>1465092</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>48500</comm:FieldCode><comm:FieldValue>161742</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>49000</comm:FieldCode><comm:FieldValue>2</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>52730</comm:FieldCode><comm:FieldValue>105</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>52770</comm:FieldCode><comm:FieldValue>1582</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>55400</comm:FieldCode><comm:FieldValue>12</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>55660</comm:FieldCode><comm:FieldValue>18428</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>58040</comm:FieldCode><comm:FieldValue>12747</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>58080</comm:FieldCode><comm:FieldValue>777</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>58280</comm:FieldCode><comm:FieldValue>24730</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>58360</comm:FieldCode><comm:FieldValue>1762</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>58800</comm:FieldCode><comm:FieldValue>15533</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>58840</comm:FieldCode><comm:FieldValue>784</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>61500</comm:FieldCode><comm:FieldValue>784</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>61520</comm:FieldCode><comm:FieldValue>32</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>68020</comm:FieldCode><comm:FieldValue>88909</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>68040</comm:FieldCode><comm:FieldValue>1751640</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>68050</comm:FieldCode><comm:FieldValue>875820</comm:FieldValue></comm:ReturnLine>
+            <comm:ReturnLine><comm:FieldCode>9909</comm:FieldCode><comm:FieldValue>1266</comm:FieldValue></comm:ReturnLine>
+         <t1:SelectedFinancialDataRecordCount>02</t1:SelectedFinancialDataRecordCount>
+         <sfd:SelectedFinancialData>
+         <sfd:AgriStabilityAgriInvestProgramFarmingData>
+            <sfd:MainFarmsteadProvinceCode>ON</sfd:MainFarmsteadProvinceCode>
+            <sfd:AccountingMethodCode>2</sfd:AccountingMethodCode>
+            <sfd:NAICSCode>115110</sfd:NAICSCode>
+            <sfd:FarmName>WND FARMS</sfd:FarmName>
+            <sfd:FarmAddress>
+            <comm:BusinessAddressStreetText>315 MOORE LINE</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>N0N1M0</comm:AddressPostalCode>
+            </sfd:FarmAddress>
+            <sfd:FeederAssociationMemberIndicator>0</sfd:FeederAssociationMemberIndicator>
+            <sfd:LandlordCropShareIndicator>1</sfd:LandlordCropShareIndicator>
+            <sfd:TenantCropShareIndicator>0</sfd:TenantCropShareIndicator>
+            <sfd:FiscalPeriodStartDate>2025-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2025-12-31</sfd:FiscalPeriodEndDate>
+            <sfd:AgriStabilityAgriInvestProgramBusinessTypeCode>2</sfd:AgriStabilityAgriInvestProgramBusinessTypeCode>
+            <sfd:BusinessOwnershipPercent>5000</sfd:BusinessOwnershipPercent>
+            <sfd:PartnerCoOwnerData>
+            <sfd:PartnerName>
+            <comm:GivenName>DEBORAH</comm:GivenName>
+            <comm:FamilyName>SELMAN</comm:FamilyName>
+            </sfd:PartnerName>
+            <sfd:PartnerPIN>26970996</sfd:PartnerPIN>
+            <sfd:PartnerBusinessOwnershipPercent>500000</sfd:PartnerBusinessOwnershipPercent>
+            </sfd:PartnerCoOwnerData>
+            <sfd:ContactData>
+            <sfd:ContactPersonIndicator>1</sfd:ContactPersonIndicator>
+            <sfd:ContactName>
+              <comm:GivenName>DIANE</comm:GivenName>
+              <comm:FamilyName>HUNTER</comm:FamilyName>
+            </sfd:ContactName>
+            <sfd:ContactBusinessName>DIANE HUNTER BOOKKEEPING & TAX</sfd:ContactBusinessName>
+            <sfd:ContactAddress>
+            <comm:BusinessAddressStreetText>23 DAUW AVE</comm:BusinessAddressStreetText>
+            <comm:AddressMunicipalityName>WALLACEBURG</comm:AddressMunicipalityName>
+            <comm:AddressProvinceCode>ON</comm:AddressProvinceCode>
+            <comm:AddressPostalCode>N8A3N1</comm:AddressPostalCode>
+            </sfd:ContactAddress>
+            <sfd:ContactTelephoneNumber>
+            <comm:TelephoneAreaCode>519</comm:TelephoneAreaCode>
+            <comm:TelephoneLocalNumber>4368836</comm:TelephoneLocalNumber>
+            </sfd:ContactTelephoneNumber>
+            <sfd:ContactCellPhoneNumber>
+            <comm:TelephoneAreaCode>519</comm:TelephoneAreaCode>
+            <comm:TelephoneLocalNumber>4368836</comm:TelephoneLocalNumber>
+            </sfd:ContactCellPhoneNumber>
+            </sfd:ContactData>
+            <sfd:FarmedYearCount>01</sfd:FarmedYearCount>
+            <sfd:AgriStabilityAgriInvestProgramParticipantIDNumber>26970970</sfd:AgriStabilityAgriInvestProgramParticipantIDNumber>
+            <sfd:PublicOfficeAAFCEmployeeIndicator>2</sfd:PublicOfficeAAFCEmployeeIndicator>
+            <sfd:ProductionCycleCompletionIndicator>1</sfd:ProductionCycleCompletionIndicator>
+            <sfd:CommodityTotalReturnLine>
+            <sfd:CommodityTotalFieldCode>9950</sfd:CommodityTotalFieldCode>
+            <sfd:FieldAmount>21893</sfd:FieldAmount>
+            <sfd:Commodity>            <sfd:CommodityCode>011</sfd:CommodityCode>            <sfd:CommodityAmount>21893</sfd:CommodityAmount>            </sfd:Commodity>
+            </sfd:CommodityTotalReturnLine>
+            <sfd:CommodityTotalReturnLine>
+            <sfd:CommodityTotalFieldCode>9960</sfd:CommodityTotalFieldCode>
+            <sfd:FieldAmount>2734</sfd:FieldAmount>
+            <sfd:Commodity>            <sfd:CommodityCode>011</sfd:CommodityCode>            <sfd:CommodityAmount>2734</sfd:CommodityAmount>            </sfd:Commodity>
+            </sfd:CommodityTotalReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9613</comm:FieldCode>               <comm:FieldValue>13095</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9662</comm:FieldCode>               <comm:FieldValue>4551</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9663</comm:FieldCode>               <comm:FieldValue>847</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9665</comm:FieldCode>               <comm:FieldValue>197</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9764</comm:FieldCode>               <comm:FieldValue>150</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9801</comm:FieldCode>               <comm:FieldValue>855</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9822</comm:FieldCode>               <comm:FieldValue>2282</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9798</comm:FieldCode>               <comm:FieldValue>383</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9805</comm:FieldCode>               <comm:FieldValue>43</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9809</comm:FieldCode>               <comm:FieldValue>2319</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9810</comm:FieldCode>               <comm:FieldValue>1507</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9896</comm:FieldCode>               <comm:FieldValue>2127</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9959</comm:FieldCode>               <comm:FieldValue>34988</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9968</comm:FieldCode>               <comm:FieldValue>17996</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9969</comm:FieldCode>               <comm:FieldValue>16992</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9944</comm:FieldCode>               <comm:FieldValue>8496</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>8496</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:AgriStabilityAgriInvestProgramFarmingData>
+         </sfd:SelectedFinancialData>
+         <sfd:SelectedFinancialData>
+         <sfd:RealEstateRentalData>
+            <sfd:NAICSCode>531111</sfd:NAICSCode>
+            <sfd:FiscalPeriodStartDate>2025-01-01</sfd:FiscalPeriodStartDate>
+            <sfd:FiscalPeriodEndDate>2025-12-31</sfd:FiscalPeriodEndDate>
+            <sfd:PartnershipNumber>100063120</sfd:PartnershipNumber>
+            <sfd:BusinessAddress>
+            <comm:BusinessAddressStreetText>1298 ST CLAIR PARKWAY</comm:BusinessAddressStreetText>
+            <comm:AddressPostalCode>N0N1H0</comm:AddressPostalCode>
+            </sfd:BusinessAddress>
+            <sfd:BusinessOwnershipPercent>5000</sfd:BusinessOwnershipPercent>
+            <sfd:PartnerCoOwnerData>
+            <sfd:PartnerName>
+            <comm:GivenName>DEBORAH</comm:GivenName>
+            <comm:FamilyName>SELMAN</comm:FamilyName>
+            </sfd:PartnerName>
+            <sfd:PartnerBusinessOwnershipPercent>500000</sfd:PartnerBusinessOwnershipPercent>
+            </sfd:PartnerCoOwnerData>
+            <comm:ReturnLine>               <comm:FieldCode>8141</comm:FieldCode>               <comm:FieldValue>12000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8299</comm:FieldCode>               <comm:FieldValue>12000</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8690</comm:FieldCode>               <comm:FieldValue>1435</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>8960</comm:FieldCode>               <comm:FieldValue>2191</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9180</comm:FieldCode>               <comm:FieldValue>849</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9220</comm:FieldCode>               <comm:FieldValue>598</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9369</comm:FieldCode>               <comm:FieldValue>6928</comm:FieldValue>            </comm:ReturnLine>
+            <comm:ReturnLine>               <comm:FieldCode>9946</comm:FieldCode>               <comm:FieldValue>3464</comm:FieldValue>            </comm:ReturnLine>
+         </sfd:RealEstateRentalData>
+         </sfd:SelectedFinancialData>
+      </t1:T1Return>
+</t1rq:TaxReturnForm>
+</t1rq:EfileReturnRequest>
+</soapenv:Body>
+</soapenv:Envelope>

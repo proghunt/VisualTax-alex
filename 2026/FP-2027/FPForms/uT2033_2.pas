@@ -1,0 +1,126 @@
+unit uT2033_2;
+interface
+uses
+  SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask;
+type
+TT2033_2 = class(TForm)
+    vtT2033_2Label1:TvtLabel;
+    vtT2033_2Label2:TvtLabel;
+    vtT2033_2Label3:TvtLabel;
+    vtT2033_2Label5:TvtLabel;
+    vtT2033_2Label6:TvtLabel;
+    vtT2033_2Label7:TvtLabel;
+    vtT2033_2Label9:TvtLabel;
+    vtT2033_2Label10:TvtLabel;
+    vtT2033_2Label11:TvtLabel;
+    vtT2033_2Label12:TvtLabel;
+    vtT2033_2Label15:TvtLabel;
+    vtT2033_2Label16:TvtLabel;
+    vtT2033_2Label17:TvtLabel;
+    vtT2033_2Label18:TvtLabel;
+    vtT2033_2Label22:TvtLabel;
+    vtT2033_2Label23:TvtLabel;
+    vtT2033_2Label24:TvtLabel;
+    vtT2033_2Label25:TvtLabel;
+    vtT2033_2Label26:TvtLabel;
+    vtT2033_2Label27:TvtLabel;
+    vtT2033_2Label28:TvtLabel;
+    vtT2033_2Label30:TvtLabel;
+    vtT2033_2Label33:TvtLabel;
+    vtT2033_2Label34:TvtLabel;
+    vtT2033_2Label35:TvtLabel;
+    vtT2033_2Label36:TvtLabel;
+    vtT2033_2Label37:TvtLabel;
+    vtT2033_2Label40:TvtLabel;
+    vtT2033_2Shape22:TvtShape;
+    vtT2033_2Label41:TvtLabel;
+    vtT2033_2Label42:TvtLabel;
+    vtT2033_2Label43:TvtLabel;
+    vtT2033_2Label44:TvtLabel;
+    vtT2033_2Label45:TvtLabel;
+    vtT2033_2Label46:TvtLabel;
+    vtT2033_2Label47:TvtLabel;
+    vtT2033_2Shape1:TvtShape;
+    vtT2033_2Label48:TvtLabel;
+    vtT2033_2Shape2:TvtShape;
+    vtT2033_2Label49:TvtLabel;
+    vtT2033_2Shape3:TvtShape;
+    vtT2033_2Label50:TvtLabel;
+    vtT2033_2Label51:TvtLabel;
+    vtT2033_2Label52:TvtLabel;
+    vtT2033_2Label53:TvtLabel;
+    vtT2033_2Label54:TvtLabel;
+    vtT2033_2Label55:TvtLabel;
+    vtT2033_2Shape4:TvtShape;
+    vtT2033_2Label56:TvtLabel;
+    vtT2033_2Shape5:TvtShape;
+    vtT2033_2Label57:TvtLabel;
+    vtT2033_2Shape6:TvtShape;
+    vtT2033_2Label58:TvtLabel;
+    vtT2033_2Label59:TvtLabel;
+    vtT2033_2Label60:TvtLabel;
+    vtT2033_2Label61:TvtLabel;
+    vtT2033_2Shape7:TvtShape;
+    vtT2033_2Label62:TvtLabel;
+    vtT2033_2Shape8:TvtShape;
+    vtT2033_2Label63:TvtLabel;
+    vtT2033_2Shape9:TvtShape;
+    vtT2033_2Label64:TvtLabel;
+    vtT2033_2Label4:TvtLabel;
+    vtT2033_2Shape10:TvtShape;
+    vtT2033_2Shape11:TvtShape;
+    vtT2033_2Shape14:TvtShape;
+    vtT2033_2Label13:TvtLabel;
+    vtT2033_2Label8:TvtLabel;
+    vtT2033_2Label65:TvtLabel;
+    vtT2033_2Label14:TvtLabel;
+    vtT2033_2Shape16:TvtShape;
+    vtT2033_2Label66:TvtLabel;
+    vtT2033_2Shape17:TvtShape;
+    vtT2033_2Shape18:TvtShape;
+    vtT2033_2Label67:TvtLabel;
+    vtT2033_2Label19:TvtLabel;
+    vtT2033_2Label20:TvtLabel;
+    vtT2033_2Label31:TvtLabel;
+    vtT2033_2Label21:TvtLabel;
+    vtT2033_2Label29:TvtLabel;
+    vtT2033_2Label32:TvtLabel;
+    vtT2033_2Label38:TvtLabel;
+    vtT2033_2Label39:TvtLabel;
+    vtT2033_2Label68:TvtLabel;
+    vtT2033_2Label69:TvtLabel;
+    vtT2033_2Label70:TvtLabel;
+    vtT2033_2Label71:TvtLabel;
+    vtT2033_2Label72:TvtLabel;
+    vtT2033_2Label73:TvtLabel;
+    vtT2033_2Label74:TvtLabel;
+    vtT2033_2Label75:TvtLabel;
+    vtT2033_2Label76:TvtLabel;
+    vtT2033_2Label77:TvtLabel;
+    vtT2033_2Label78:TvtLabel;
+    vtT2033_2Label79:TvtLabel;
+    vtT2033_2Label80:TvtLabel;
+    vtT2033_2Label81:TvtLabel;
+    vtT2033_2Label82:TvtLabel;
+    vtT2033_2Label83:TvtLabel;
+    vtT2033_2Label84:TvtLabel;
+    vtT2033_2Label85:TvtLabel;
+    vtT2033_2Label86:TvtLabel;
+    vtT2033_2Label87:TvtLabel;
+    vtT2033_2Label88:TvtLabel;
+    vtT2033_2Label89:TvtLabel;
+    vtT2033_2Label90:TvtLabel;
+    vtT2033_2Label91:TvtLabel;
+    vtT2033_2Label111:TvtLabel;
+    vtEdit1:TvtEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+T2033_2: TT2033_2;
+implementation
+{$R *.DFM}
+end.

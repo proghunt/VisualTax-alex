@@ -1,0 +1,150 @@
+unit us480;
+interface
+uses
+  SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask, vtEditBox, vtLabel,
+  vtShape, uFlagFrameCan;
+type
+Ts480 = class(TForm)
+    vts480Label1:TvtLabel;
+    vts480Label3:TvtLabel;
+    vts480Label6:TvtLabel;
+    vts480Shape22:TvtShape;
+    vts480Label71:TvtLabel;
+    vts480Shape3:TvtShape;
+    vts480Label13:TvtLabel;
+    vts480Label72:TvtLabel;
+    vts480Label77:TvtLabel;
+    vts480Shape5:TvtShape;
+    vts480Label5:TvtLabel;
+    vts480Shape6:TvtShape;
+    vts480Label12:TvtLabel;
+    vts480Label15:TvtLabel;
+    vts480Shape15:TvtShape;
+    vts480Shape8:TvtShape;
+    vts480Label21:TvtLabel;
+    vts480Label22:TvtLabel;
+    vts480Label32:TvtLabel;
+    vts480Shape67:TvtShape;
+    vts480Label19:TvtLabel;
+    vts480Label20:TvtLabel;
+    vts480Label63:TvtLabel;
+    vts480Label80:TvtLabel;
+    vts480Label82:TvtLabel;
+    vts480Label84:TvtLabel;
+    vts480Label23:TvtLabel;
+    vts480Label24:TvtLabel;
+    vts480Label25:TvtLabel;
+    vts480Label26:TvtLabel;
+    vts480Label29:TvtLabel;
+    vts480Label30:TvtLabel;
+    vts480Label31:TvtLabel;
+    vts480Label27:TvtLabel;
+    vts480Label33:TvtLabel;
+    vts480Label39:TvtLabel;
+    vts480Label40:TvtLabel;
+    vts480Label44:TvtLabel;
+    vts480Shape28:TvtShape;
+    vts480Label50:TvtLabel;
+    vts480Label52:TvtLabel;
+    vts480Label90:TvtLabel;
+    vts480Label91:TvtLabel;
+    vts480Label28:TvtLabel;
+    vts480Label53:TvtLabel;
+    vts480Label55:TvtLabel;
+    vts480Label57:TvtLabel;
+    vts480Label7:TvtLabel;
+    vts480Label8:TvtLabel;
+    vts480Label9:TvtLabel;
+    vts480Label10:TvtLabel;
+    vts480Shape46:TvtShape;
+    vts480Shape57:TvtShape;
+    vts480Shape36:TvtShape;
+    vts480Label58:TvtLabel;
+    vts480Label60:TvtLabel;
+    vts480Label93:TvtLabel;
+    vts480Label94:TvtLabel;
+    vts480Label95:TvtLabel;
+    vts480Label96:TvtLabel;
+    vts480Label97:TvtLabel;
+    vts480Label98:TvtLabel;
+    vts480Label99:TvtLabel;
+    vts480Label100:TvtLabel;
+    vts480Label101:TvtLabel;
+    vts480Label102:TvtLabel;
+    vts480Label103:TvtLabel;
+    vts480Label106:TvtLabel;
+    vts480Label115:TvtLabel;
+    vts480Label110:TvtLabel;
+    vts480Label111:TvtLabel;
+    vts480Shape12:TvtShape;
+    vts480Shape9:TvtShape;
+    vtEdit1:TvtEdit;
+    vtEdit2:TvtEdit;
+    vtEdit3:TvtEdit;
+    vtEdit11:TvtEdit;
+    vtEdit12:TvtEdit;
+    vtEdit13:TvtEdit;
+    vtEdit14:TvtEdit;
+    vtEdit15:TvtEdit;
+    vtEdit17:TvtEdit;
+    vtEdit18:TvtEdit;
+    vtEdit19:TvtEdit;
+    vtEdit20:TvtEdit;
+    vtEdit21:TvtEdit;
+    vtEdit22:TvtEdit;
+    vtEdit4:TvtEdit;
+    vtEdit5:TvtEdit;
+    vtEdit6:TvtEdit;
+    vtEdit7:TvtEdit;
+    vtEdit8:TvtEdit;
+    vtEdit9:TvtEdit;
+    vtEdit10:TvtEdit;
+    vtEdit29:TvtEdit;
+    vtEdit30:TvtEdit;
+    vtEdit31:TvtEdit;
+    vtEdit32:TvtEdit;
+    vtEdit33:TvtEdit;
+    vtEdit34:TvtEdit;
+    vtEdit35:TvtEdit;
+    vtEdit36:TvtEdit;
+    vtEdit37:TvtEdit;
+    vtEdit38:TvtEdit;
+    vtEdit39:TvtEdit;
+    vtEdit40:TvtEdit;
+    vtEdit41:TvtEdit;
+    vtEdit42:TvtEdit;
+    vtEdit43:TvtEdit;
+    vtEdit44:TvtEdit;
+    vtEdit45:TvtEdit;
+    vtEdit46:TvtEdit;
+    vtEdit47:TvtEdit;
+    vtEdit48:TvtEdit;
+    vtLabel1: TvtLabel;
+    vtLabel2: TvtLabel;
+    FlagFrameCan1: TFlagFrameCan;
+    vts302Label65: TvtLabel;
+    vts302Label2: TvtLabel;
+    vtS6_1Shape1: TvtShape;
+    vtS6_1Label4: TvtLabel;
+    vtShape25: TvtShape;
+    vtLabel18: TvtLabel;
+    vtLabel34: TvtLabel;
+    vtShape26: TvtShape;
+    vtLabel37: TvtLabel;
+    vtLabel3: TvtLabel;
+    vtLabel4: TvtLabel;
+    vtLabel5: TvtLabel;
+    vtLabel14: TvtLabel;
+    vtLabel6: TvtLabel;
+    vtShapePB1: TvtShape;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+s480: Ts480;
+implementation
+{$R *.DFM}
+end.

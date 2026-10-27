@@ -1,0 +1,11 @@
+Supplemental Terms
+
+FireDAC client/server pack ("FireDAC") is © Embarcadero Technologies, Inc. ("Embarcadero").
+
+Usage of each FireDAC license requires that you possess a corresponding Delphi, C++Builder or RAD Studio Professional, Enterprise, Ultimate or Architect license. FireDAC is governed by the terms and conditions of the Delphi, C++Builder and RAD Studio software license and support agreement (the "Agreement") as supplemented by these Supplemental Terms.
+
+For each valid user license to FireDAC that you receive from Embarcadero, you may install and use one copy of FireDAC with a corresponding license to Delphi, C++Builder or RAD Studio Professional, Enterprise, Ultimate or Architect. FireDAC may be used by only one user per license and in accordance with the license type described in the Agreement for the corresponding Delphi, C++Builder or RAD Studio Professional, Enterprise, Ultimate or Architect.
+
+Licensee may deploy the portion of FireDAC identified as redistributable, in executable form only, with the Works that Licensee creates, to enable local and client server database access. These Supplemental Terms supersede references to the "Client/Server Pack" in the Agreement.
+
+You agree that the Agreement and these Supplemental Terms form a binding agreement between you and Embarcadero.

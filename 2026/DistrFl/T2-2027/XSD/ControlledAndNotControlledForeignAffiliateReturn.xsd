@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Description: T1134 Schema - Information Return Relating To Controlled And Not Controlled Foreign Affiliates
+Contact: CRA, ITB, Solutions, IRBD, Assessment Processing Division, Electronic Filing
+Date created: December 2016
+-->
+<xsd:schema xmlns:t1134="http://www.cra-arc.gc.ca/xmlns/t1134/2017/1-0-0"
+    xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0"
+    xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0"
+    xmlns:comm="http://www.cra-arc.gc.ca/xmlns/comm/2025/1-0-0"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.cra-arc.gc.ca/xmlns/t1134/2017/1-0-0"
+    elementFormDefault="qualified" attributeFormDefault="unqualified" version="t1134/2017/1-0-2">
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/comm/2025/1-0-0" schemaLocation="electronicfilingcommon.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" schemaLocation="standarddatatypes.xsd"/>
+    <xsd:import namespace="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" schemaLocation="cracommonstructures.xsd"/>
+
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Schema  element ++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="ControlledAndNotControlledForeignAffiliateReturn" type="t1134:ControlledAndNotControlledForeignAffiliateReturnType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">There can be only one t1134 return in a file</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Il ne peut y avoir qu?un formulaire t1134 dans un fichier</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <!-- t1134 Form structure  -->
+    <xsd:complexType name="ControlledAndNotControlledForeignAffiliateReturnType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:ControlledAndNotControlledForeignAffiliateSummary"/>
+            <xsd:element ref="t1134:ControlledAndNotControlledForeignAffiliateSupplement" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ControlledAndNotControlledForeignAffiliateSummary" type="t1134:ControlledAndNotControlledForeignAffiliateSummaryType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Schema for T1134 Information Return Relating To Controlled and Not-Controlled Foreign Affiliate</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Schéma pour T1134 Déclaration de renseignements sur les sociétés étrangères affiliées qui sont contrôlées et non contrôlées.</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:element name="ControlledAndNotControlledForeignAffiliateSupplement" type="t1134:ControlledAndNotControlledForeignAffiliateSupplementType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"></xsd:documentation>
+            <xsd:documentation xml:lang="fr"></xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <!-- t1134 Summary Form structure  -->
+    <xsd:complexType name="ControlledAndNotControlledForeignAffiliateSummaryType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:SummaryActionCode"/>
+
+            <!-- Top of Form Identification -->
+            <xsd:element ref="t1134:FunctionalCurrencyCode" minOccurs="0"/>
+            <xsd:element ref="t1134:AmendedReturnIndicator" minOccurs="0"/>
+
+            <!-- Part I, Section 1 - Reporting entity identification -->
+            <xsd:element ref="t1134:ReportingTaxpayerIdentification"/>
+            <xsd:element ref="t1134:ReportingTaxpayerAddress"/>
+            <xsd:element ref="t1134:TaxationYear"/>
+            <xsd:element ref="t1134:ShortTaxationYearIndicator"/>
+            <xsd:element ref="t1134:DeclaredSlipCount"/>
+
+            <!-- Part I, Section 2 - Certification -->
+            <xsd:element ref="t1134:CertificationDetail"/>
+
+            <!-- Part I, Section 3 - Organizational Structure -->
+            <xsd:element ref="t1134:OrganizationalStructureName"          minOccurs="0"/>
+            <xsd:element ref="t1134:OrganizationalStructureClientCode"    minOccurs="0"/>
+            <xsd:element ref="t1134:OrganizationalStructureAccountNumber" minOccurs="0"/>
+            <xsd:element ref="t1134:RelatedCorporation"                   minOccurs="0" maxOccurs="1000"/>
+            <xsd:element ref="t1134:ForeignAffiliate"                     minOccurs="0" maxOccurs="1000"/>
+            <xsd:element ref="t1134:Partner"                              minOccurs="0" maxOccurs="1000"/>
+            <xsd:element ref="t1134:PartnershipForeignAffiliate"          minOccurs="0" maxOccurs="1000"/>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- t1134 Supplement structure  -->
+    <xsd:complexType name="ControlledAndNotControlledForeignAffiliateSupplementType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:SupplementSequenceIdentifier"/>
+            <xsd:element ref="t1134:SupplementActionCode"/>
+            <xsd:element ref="t1134:SupplementDeleteReasonCode" minOccurs="0"/>
+
+            <!-- Part II, Section 2.A - Identificaiton of foreign affiliate -->
+            <xsd:element ref="t1134:ForeignAffiliateIdentification"/>
+
+            <!-- Part II, Section 2.B - Capital stock of foreign affliliate -->
+            <xsd:element ref="t1134:ReportingEntitySharesOwnedBookCostAmount"            minOccurs="0"/>
+            <xsd:element ref="t1134:ControlledForeignAffiliateSharesOwnedBookCostAmount" minOccurs="0"/>
+            <xsd:element ref="t1134:ControlledForeignAffiliateSharesOwnedCurrencyCode"   minOccurs="0"/>
+
+            <!-- Part II, Section 2.C - Other information of foreign affliliate -->
+            <xsd:element ref="t1134:ForeignAffiliateOtherInformation"/>
+
+            <!-- Part II, Section 3 - Financial formation of foreign affliliate -->
+            <xsd:element ref="t1134:ForeignAffiliateFinancialInformation"/>
+
+            <!-- Part II, Section 4.A - Surplus accounts of foreign affiliates -->
+            <xsd:element ref="t1134:ForeignAffiliateSurplusAccount"/>
+
+            <!-- Part II, Section 4.B - Surplus accounts and share transacations of controlled foreign affiliates -->
+            <xsd:element ref="t1134:ControlledForeignAffiliateSurplusAccountShareTransaction" minOccurs="0"/>
+
+            <!-- Part III, Section 1 - Employees per business -->
+            <xsd:element ref="t1134:EmployeesPerBusiness" minOccurs="0" maxOccurs="4"/>
+
+            <!-- Part III, Section 2 - Composition of revenue -->
+            <xsd:element ref="t1134:ControlledForeignAffiliateRevenueComposition" minOccurs="0"/>
+
+            <!-- Part III, Section 3 - Foreign accrual property income  -->
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncome" minOccurs="0"/>
+
+            <!-- Part III, Section 4 - Capital gains and losses  -->
+            <xsd:element ref="t1134:ExcludedPropertyIndicator" minOccurs="0"/>
+            <xsd:element ref="t1134:NotExcludedPropertyIndicator" minOccurs="0"/>
+
+            <!-- Part III, Section 5 - Income included in income from an active business  -->
+            <xsd:element ref="t1134:OtherActiveBusinessIncome" minOccurs="0"/>
+
+            <!-- Part IV - Disclosure -->
+            <xsd:element ref="t1134:InformationRequestedNotAvailableIndicator" minOccurs="0"/>
+            <xsd:element ref="t1134:InformationRequestedNotAvailableSummaryDescription" minOccurs="0"/>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Top of Form Identification -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="SummaryActionCode" type="t1134:ActionCodeType"/>
+
+    <xsd:element name="FunctionalCurrencyCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Acceptable currency codes include the following: USD-U.S. dollar; AUD-Australian dollar; GBP-U.K. dollar; EUR-the Euro; OR leave blank.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Codes des monnaies acceptables sont les suivants: USD-dollar américain; AUD-dollar australien; GBP-pour la livre sterling du Royaume-Uni; EUR-pour l’euro OU laisser en blanc</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:length value="3"/>
+                <xsd:enumeration value="USD"/>
+                <xsd:enumeration value="usd"/>
+                <xsd:enumeration value="AUD"/>
+                <xsd:enumeration value="aud"/>
+                <xsd:enumeration value="GBP"/>
+                <xsd:enumeration value="gbp"/>
+                <xsd:enumeration value="EUR"/>
+                <xsd:enumeration value="eur"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="AmendedReturnIndicator" type="t1134:BooleanIndicatorType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part I, Section 1 - Reporting entity identification -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="ReportingTaxpayerIdentification" type="t1134:ReportingTaxpayerIdentificationType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">A t1134 form can be transmitted for Individual, Corporation, Trust, or Partnership taxpayers.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Un formulaire t1134 peut être transmis pour Particulier, Société, Fiducie, ou Société de personnes.</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:complexType name="ReportingTaxpayerIdentificationType">
+        <xsd:sequence>
+            <xsd:choice>
+                <xsd:element name="Corporation" type="t1134:CorporationType"/>
+                <xsd:element name="Individual"  type="t1134:IndividualType"/>
+                <xsd:element name="Trust"       type="t1134:TrustType"/>
+                <xsd:element name="Partnership" type="t1134:PartnershipType"/>
+            </xsd:choice>
+            <xsd:element ref="t1134:OtherBusinessNumber" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="OtherBusinessNumber"     type="t1134:AccountType"/>
+
+    <!-- CORPORATION -->
+    <xsd:complexType name="CorporationType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:CorporationName" minOccurs="0"/>
+            <xsd:element ref="t1134:BusinessNumber" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="CorporationName" type="t1134:NameDescription"/>
+
+    <!-- INDIVIDUAL -->
+    <xsd:complexType name="IndividualType">
+        <xsd:sequence>
+            <xsd:element ref="comm:TaxpayerName" minOccurs="0"/>
+            <xsd:element ref="ccms:SocialInsuranceNumber" minOccurs="0"/>
+            <xsd:element ref="t1134:IndividualSelfEmploymentCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="IndividualSelfEmploymentCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Valid Codes are 1 or 2. 1=self-employed or spouse of a self-employed individual. 2=not self-employed</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Les codes valides sont 1 ou 2. 1=revenu d’un travail indépendant ou conjoint d’un particulier ayant un revenu de travail indépendant. 2= pas revenu d’un travail indépendant</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:enumeration value="1"/>
+                <xsd:enumeration value="2"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!-- TRUST -->
+    <xsd:complexType name="TrustType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:TrustName"  minOccurs="0"/>
+            <xsd:element ref="ccms:TrustNumber" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="TrustName" type="t1134:NameDescription"/>
+
+    <!-- PARTNERSHIP -->
+    <xsd:complexType name="PartnershipType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:PartnershipName"   minOccurs="0"/>
+            <xsd:element ref="t1134:PartnershipNumber" minOccurs="0"/>
+            <xsd:element ref="t1134:PartnershipCode"   minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="PartnershipName" type="t1134:NameDescription"/>
+
+    <xsd:element name="PartnershipCode">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Valid codes are 1, 2 or 3.  1=Individuals or Trusts. 2=Corporations. 3=Combination of Individuals, Trusts or Corporations</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Les codes valides sont 1, 2 ou 3. 1=Particuliers ou Fiducies. 2=Sociétés. 3=Combinaison de Particuliers, Fiducies ou Sociétés</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:enumeration value="1"/>
+                <xsd:enumeration value="2"/>
+                <xsd:enumeration value="3"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!-- Reporting Entity Address -->
+    <xsd:element name="ReportingTaxpayerAddress" type="t1134:ReportingTaxpayerAddressType"/>
+    <xsd:complexType name="ReportingTaxpayerAddressType">
+        <xsd:sequence>
+            <xsd:element ref="comm:AddressStreetText"/>
+            <xsd:element ref="comm:AddressMunicipalityName"/>
+            <xsd:element ref="t1134:GlobalProvinceTerritoryStateCode"/>
+            <xsd:element ref="t1134:GlobalPostalZipCode"/>
+            <xsd:element ref="t1134:CountryCode"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Taxation Year Start End Dates      -->
+    <xsd:element name="TaxationYear" type="t1134:TaxationYearType"/>
+    <xsd:complexType name="TaxationYearType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:TaxationYearStartDate"/>
+            <xsd:element ref="t1134:TaxationYearEndDate"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="TaxationYearStartDate"   type="sdt:DateType"/>
+    <xsd:element name="TaxationYearEndDate"     type="sdt:DateType"/>
+
+    <xsd:element name="ShortTaxationYearIndicator"  type="t1134:BooleanIndicatorType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Indication that the t1134 includes 2 or more short taxation years - Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Indication que le t1134 inclue 2 ou plus années d'imposition - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+    <xsd:element name="DeclaredSlipCount">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Number of slips associated with this form.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Nombre de feuillets associés à ce formulaire </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CountType">
+                <xsd:totalDigits value="4"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part I, Section 2 - Certification -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="CertificationDetail" type="t1134:CertificationDetailType"/>
+    <xsd:complexType name="CertificationDetailType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:ContactPersonFirstName"/>
+            <xsd:element ref="t1134:ContactPersonLastName"/>
+            <xsd:element ref="t1134:ContactPersonPhoneNumber"/>
+            <xsd:element ref="t1134:CertifierName"/>
+            <xsd:element ref="t1134:CertificationDate"/>
+            <xsd:element ref="t1134:CertifierPositionTitle"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ContactPersonFirstName"      type="t1134:NameThirtyCharacterType"/>
+    <xsd:element name="ContactPersonLastName"       type="t1134:NameThirtyCharacterType"/>
+    <xsd:element name="ContactPersonPhoneNumber"    type="t1134:PhoneNumberType"/>
+    <xsd:element name="CertifierName"               type="ccms:Name60CharacterType"/>
+    <xsd:element name="CertificationDate"           type="sdt:DateType"/>
+    <xsd:element name="CertifierPositionTitle"      type="ccms:Name60CharacterType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part I, Section 3 - Organizational Structure -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="OrganizationalStructureName"             type="ccms:Name60CharacterType"/>
+    <xsd:element name="OrganizationalStructureClientCode"       type="t1134:OrganizationalStructureClientCodeType"/>
+    <xsd:element name="OrganizationalStructureAccountNumber"    type="t1134:TextFifteenType"/>
+
+    <!-- Part I, Section 3 - Table A -->
+    <xsd:element name="RelatedCorporation" type="t1134:RelatedCorporationType"/>
+    <xsd:complexType name="RelatedCorporationType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:RelatedCorporationName" minOccurs="0"/>
+            <xsd:element ref="t1134:CorporationResidenceCountryCode" minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAffiliateCorporationName" minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAffiliateCorporationResidenceCountryCode" minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAffiliateCorporationEquityPercentage" minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAffiliateCorporationDirectEquityPercentage" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="RelatedCorporationName"                            type="ccms:Name60CharacterType"/>
+    <xsd:element name="CorporationResidenceCountryCode"                   type="ccms:CountryCodeType"/>
+    <xsd:element name="ForeignAffiliateCorporationName"                   type="ccms:Name60CharacterType"/>
+    <xsd:element name="ForeignAffiliateCorporationResidenceCountryCode"   type="ccms:CountryCodeType"/>
+    <xsd:element name="ForeignAffiliateCorporationEquityPercentage"       type="t1134:PercentageType"/>
+    <xsd:element name="ForeignAffiliateCorporationDirectEquityPercentage" type="t1134:PercentageType"/>
+
+    <!-- Part I, Section 3 - Table B -->
+    <xsd:element name="ForeignAffiliate" type="t1134:ForeignAffiliateType"/>
+    <xsd:complexType name="ForeignAffiliateType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:ForeignAffiliatePercentageName" minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAffiliateResidenceCountryCode" minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAffiliateOtherName" minOccurs="0"/>
+            <xsd:element ref="t1134:OtherForeignAffiliateResidenceCountryCode" minOccurs="0"/>
+            <xsd:element ref="t1134:OtherForeignAffiliateEquityPercentage" minOccurs="0"/>
+            <xsd:element ref="t1134:OtherForeignAffiliateDirectEquityPercentage" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ForeignAffiliatePercentageName"              type="ccms:Name60CharacterType"/>
+    <xsd:element name="ForeignAffiliateResidenceCountryCode"        type="ccms:CountryCodeType"/>
+    <xsd:element name="ForeignAffiliateOtherName"                   type="ccms:Name60CharacterType"/>
+    <xsd:element name="OtherForeignAffiliateResidenceCountryCode"   type="ccms:CountryCodeType"/>
+    <xsd:element name="OtherForeignAffiliateEquityPercentage"       type="t1134:PercentageType"/>
+    <xsd:element name="OtherForeignAffiliateDirectEquityPercentage" type="t1134:PercentageType"/>
+
+    <!-- Part I, Section 3 - Table C -->
+    <xsd:element name="Partner" type="t1134:PartnerType"/>
+    <xsd:complexType name="PartnerType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:PartnerName" minOccurs="0"/>
+            <xsd:element ref="t1134:PartnerAddress" minOccurs="0"/>
+            <xsd:element ref="t1134:ResidencePartnerCountryCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="PartnerName"                 type="ccms:Name60CharacterType"/>
+    <xsd:element name="PartnerAddress"              type="t1134:TextSixtyType"/>
+    <xsd:element name="ResidencePartnerCountryCode" type="ccms:CountryCodeType"/>
+
+    <!-- Part I, Section 3 - Table D -->
+    <xsd:element name="PartnershipForeignAffiliate" type="t1134:PartnershipForeignAffiliateType"/>
+    <xsd:complexType name="PartnershipForeignAffiliateType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:ForeignAffiliateMemberPartnershipName"         minOccurs="0"/>
+            <xsd:element ref="t1134:PartnershipAddress"                            minOccurs="0"/>
+            <xsd:element ref="t1134:LocationPartnershipCountryCode"                minOccurs="0"/>
+            <xsd:element ref="t1134:PartnershipForeignAffiliateName"               minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAffiliatePartnershipInterestPercentage" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ForeignAffiliateMemberPartnershipName"         type="ccms:Name60CharacterType"/>
+    <xsd:element name="PartnershipAddress"                            type="t1134:TextEightyType"/>
+    <xsd:element name="LocationPartnershipCountryCode"                type="ccms:CountryCodeType"/>
+    <xsd:element name="PartnershipForeignAffiliateName"               type="t1134:TextSixtyType"/>
+    <xsd:element name="ForeignAffiliatePartnershipInterestPercentage" type="t1134:PercentageType"/>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part II, Supplement -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="SupplementSequenceIdentifier" type="t1134:SupplementSequenceIdentifierType"/>
+    <xsd:element name="SupplementActionCode"         type="t1134:ActionCodeType"/>
+    <xsd:element name="SupplementDeleteReasonCode"   type="t1134:SupplementDeleteReasonCodeType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part II, Section 2.A - Identificaiton of foreign affiliate -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xsd:element name="ForeignAffiliateIdentification" type="t1134:ForeignAffiliateIdentificationType"/>
+    <xsd:complexType name="ForeignAffiliateIdentificationType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:ForeignAffiliateIdentificationName"/>
+            <xsd:element ref="t1134:HeadOfficeAddress"/>
+            <xsd:element ref="t1134:ForeignAffiliateStartYear"/>
+            <xsd:element ref="t1134:CeaseToBeForeignAffiliateIndicator"/>
+            <xsd:element ref="t1134:NorthAmericanIndustryClassificationSystem"/>
+            <xsd:element ref="t1134:BusinessIncomeEarningCountry"/>
+            <xsd:element ref="t1134:ForeignAffiliateJurisdictionResidenceCountryCode"/>
+            <xsd:element ref="t1134:ReportingEntityFirstTimeFilerIndicator"/>
+            <xsd:element ref="t1134:ControlledForeignAffiliateIndicator"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ForeignAffiliateIdentificationName"                type="t1134:NameDescription"/>
+    <xsd:element name="HeadOfficeAddress"                                 type="t1134:TextEightyType"/>
+    <xsd:element name="ForeignAffiliateStartYear"                         type="sdt:YearType"/>
+    <xsd:element name="CeaseToBeForeignAffiliateIndicator"                type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="NorthAmericanIndustryClassificationSystem"         type="t1134:NorthAmericanIndustryClassificationSystemType"/>
+    <xsd:element name="BusinessIncomeEarningCountry"                      type="t1134:CountryType"/>
+    <xsd:element name="ForeignAffiliateJurisdictionResidenceCountryCode"  type="ccms:CountryCodeType"/>
+    <xsd:element name="ReportingEntityFirstTimeFilerIndicator"            type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="ControlledForeignAffiliateIndicator"               type="t1134:BooleanIndicatorType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part II, Section 2.B - Capital stock of foreign affliliate -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="ReportingEntitySharesOwnedBookCostAmount"            type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ControlledForeignAffiliateSharesOwnedBookCostAmount" type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ControlledForeignAffiliateSharesOwnedCurrencyCode"   type="t1134:GlobalCurrencyCodeType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part II, Section 2.C - Other information of foreign affliliate -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="ForeignAffiliateOtherInformation" type="t1134:ForeignAffiliateOtherInformationType"/>
+    <xsd:complexType name="ForeignAffiliateOtherInformationType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:ReportingEntityEquityTaxationYearStartPercentage"/>
+            <xsd:element ref="t1134:ReportingEntityEquityTaxationYearEndPercentage"/>
+            <xsd:element ref="t1134:QualifyingInterestTaxationYearStartIndicator"/>
+            <xsd:element ref="t1134:QualifyingInterestTaxationYearEndIndicator"/>
+            <xsd:element ref="t1134:GrossDebtOwedReportingEntityTaxationYearEndAmount" minOccurs="0"/>
+            <xsd:element ref="t1134:GrossDebtReportingEntityOwedForeignAffiliateTaxationYearEndAmount" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="ReportingEntityEquityTaxationYearStartPercentage"  type="t1134:PercentageType"/>
+    <xsd:element name="ReportingEntityEquityTaxationYearEndPercentage"    type="t1134:PercentageType"/>
+    <xsd:element name="QualifyingInterestTaxationYearStartIndicator"      type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="QualifyingInterestTaxationYearEndIndicator"        type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="GrossDebtOwedReportingEntityTaxationYearEndAmount" type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="GrossDebtReportingEntityOwedForeignAffiliateTaxationYearEndAmount" type="t1134:HundredTrillionAmountType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part II, Section 3 - Financial formation of foreign affliliate -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="ForeignAffiliateFinancialInformation" type="t1134:ForeignAffiliateFinancialInformationType"/>
+    <xsd:complexType name="ForeignAffiliateFinancialInformationType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:ForeignAffiliateTaxationYear"/>
+            <xsd:element ref="t1134:AttachedFinancialsIndicator"/>
+            <xsd:element ref="t1134:TotalAssetAmount"                               minOccurs="0"/>
+            <xsd:element ref="t1134:TotalAssetCurrencyCode"                         minOccurs="0"/>
+            <xsd:element ref="t1134:AccountingNetIncomeBeforeTaxAmount"             minOccurs="0"/>
+            <xsd:element ref="t1134:AccountingNetIncomeCurrencyCode"                minOccurs="0"/>
+            <xsd:element ref="t1134:IncomeProfitTaxPaidPayableOnIncomeAmount"       minOccurs="0"/>
+            <xsd:element ref="t1134:IncomeProfitTaxPaidPayableOnIncomeCurrencyCode" minOccurs="0"/>
+            <xsd:element ref="t1134:IncomeProfitTaxPaidCountry"                     minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ForeignAffiliateTaxationYear"                   type="t1134:TaxationYearType"/>
+    <xsd:element name="AttachedFinancialsIndicator"                    type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="TotalAssetAmount"                               type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="TotalAssetCurrencyCode"                         type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="AccountingNetIncomeBeforeTaxAmount"             type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="AccountingNetIncomeCurrencyCode"                type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="IncomeProfitTaxPaidPayableOnIncomeAmount"       type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="IncomeProfitTaxPaidPayableOnIncomeCurrencyCode" type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="IncomeProfitTaxPaidCountry"                     type="t1134:CountryType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part II, Section 4.A - Surplus accounts of foreign affiliates -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="ForeignAffiliateSurplusAccount" type="t1134:ForeignAffiliateSurplusAccountType"/>
+    <xsd:complexType name="ForeignAffiliateSurplusAccountType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:DividendShareCapitalStockForeignAffiliateIndicator"/>
+            <xsd:element ref="t1134:ExemptSurplusAmount"                 minOccurs="0"/>
+            <xsd:element ref="t1134:TaxableSurplusAmount"                minOccurs="0"/>
+            <xsd:element ref="t1134:PreAcquisitionSurplusAmount"         minOccurs="0"/>
+            <xsd:element ref="t1134:HybridSurplusAmount"                 minOccurs="0"/>
+            <xsd:element ref="t1134:Subsection93_1_ElectionIndicator"/>
+            <xsd:element ref="t1134:Subsection93_1_ElectionAmount"       minOccurs="0"/>
+            <xsd:element ref="t1134:Subsection93_1_ElectionCurrencyCode" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="DividendShareCapitalStockForeignAffiliateIndicator" type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="ExemptSurplusAmount"                                type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="TaxableSurplusAmount"                               type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="PreAcquisitionSurplusAmount"                        type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="HybridSurplusAmount"                                type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="Subsection93_1_ElectionIndicator"                   type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="Subsection93_1_ElectionAmount"                      type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="Subsection93_1_ElectionCurrencyCode"                type="t1134:GlobalCurrencyCodeType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part II, Section 4.B - Surplus accounts and share transacations of controlled foreign affiliates -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="ControlledForeignAffiliateSurplusAccountShareTransaction" type="t1134:ControlledForeignAffiliateSurplusAccountShareTransactionType"/>
+    <xsd:complexType name="ControlledForeignAffiliateSurplusAccountShareTransactionType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:InvolvedIndicator"/>
+            <xsd:element ref="t1134:InvolvedDescription"        minOccurs="0"/>
+            <xsd:element ref="t1134:AcquireDisposeIndicator"/>
+            <xsd:element ref="t1134:AcquireDisposeDescription"  minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="InvolvedIndicator"         type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="InvolvedDescription"       type="t1134:TextFourThousandType"/>
+    <xsd:element name="AcquireDisposeIndicator"   type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="AcquireDisposeDescription" type="t1134:TextFourThousandType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part III, Section 1 - Employees per business -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="EmployeesPerBusiness"      type="t1134:EmployeesPerBusinessType"/>
+    <xsd:complexType name="EmployeesPerBusinessType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:BusinessNorthAmericanIndustryClassificationSystemCode"/>
+            <xsd:element ref="t1134:EmployeeCountCode"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="BusinessNorthAmericanIndustryClassificationSystemCode" type="t1134:NorthAmericanIndustryClassificationSystemCodeType"/>
+    <xsd:element name="EmployeeCountCode"    type="t1134:EmployeeCountCodeType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part III, Section 2 - Composition of revenue -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="ControlledForeignAffiliateRevenueComposition" type="t1134:ControlledForeignAffiliateRevenueCompositionType"/>
+    <xsd:complexType name="ControlledForeignAffiliateRevenueCompositionType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:InterestAmount"                               minOccurs="0"/>
+            <xsd:element ref="t1134:InterestCurrencyCode"                         minOccurs="0"/>
+            <xsd:element ref="t1134:InterestOtherAmount"                          minOccurs="0"/>
+            <xsd:element ref="t1134:InterestOtherCurrencyCode"                    minOccurs="0"/>
+            <xsd:element ref="t1134:DividendAmount"                               minOccurs="0"/>
+            <xsd:element ref="t1134:DividendCurrencyCode"                         minOccurs="0"/>
+            <xsd:element ref="t1134:DividendOtherAmount"                          minOccurs="0"/>
+            <xsd:element ref="t1134:DividendOtherCurrencyCode"                    minOccurs="0"/>
+            <xsd:element ref="t1134:RoyaltyAmount"                                minOccurs="0"/>
+            <xsd:element ref="t1134:RoyaltyCurrencyCode"                          minOccurs="0"/>
+            <xsd:element ref="t1134:RentalLeaseActivityAmount"                    minOccurs="0"/>
+            <xsd:element ref="t1134:RentalLeaseActivityCurrencyCode"              minOccurs="0"/>
+            <xsd:element ref="t1134:LoanLendingActivityAmount"                    minOccurs="0"/>
+            <xsd:element ref="t1134:LoanLendingActivityCurrencyCode"              minOccurs="0"/>
+            <xsd:element ref="t1134:InsuranceReinsuranceRiskAmount"               minOccurs="0"/>
+            <xsd:element ref="t1134:InsuranceReinsuranceRiskCurrencyCode"         minOccurs="0"/>
+            <xsd:element ref="t1134:FactoringTradeAccountsRecievableAmount"       minOccurs="0"/>
+            <xsd:element ref="t1134:FactoringTradeAccountsRecievableCurrencyCode" minOccurs="0"/>
+            <xsd:element ref="t1134:DispositionInvestmentPropertyAmount"          minOccurs="0"/>
+            <xsd:element ref="t1134:DispositionInvestmentPropertyCurrencyCode"    minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="InterestAmount"                               type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="InterestCurrencyCode"                         type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="InterestOtherAmount"                          type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="InterestOtherCurrencyCode"                    type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="DividendAmount"                               type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="DividendCurrencyCode"                         type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="DividendOtherAmount"                          type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="DividendOtherCurrencyCode"                    type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="RoyaltyAmount"                                type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="RoyaltyCurrencyCode"                          type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="RentalLeaseActivityAmount"                    type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="RentalLeaseActivityCurrencyCode"              type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="LoanLendingActivityAmount"                    type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="LoanLendingActivityCurrencyCode"              type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="InsuranceReinsuranceRiskAmount"               type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="InsuranceReinsuranceRiskCurrencyCode"         type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="FactoringTradeAccountsRecievableAmount"       type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="FactoringTradeAccountsRecievableCurrencyCode" type="t1134:GlobalCurrencyCodeType"/>
+    <xsd:element name="DispositionInvestmentPropertyAmount"          type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="DispositionInvestmentPropertyCurrencyCode"    type="t1134:GlobalCurrencyCodeType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part III, Section 3 - Foreign accrual property income  -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="ForeignAccrualPropertyIncome" type="t1134:ForeignAccrualPropertyIncomeType"/>
+    <xsd:complexType name="ForeignAccrualPropertyIncomeType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomeIndicator"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomePercentage"                                    minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomePropertyAmount"                                minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomeSaleOfPropertyAmount"                          minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomeRiskInsuranceReinsuranceAmount"                minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomeCanadianIndebtednessLeaseObligationsAmount"    minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomePartnershipIndebtednessLeaseObligationsAmount" minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomeProvidingServicesAmount"                       minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomeDispositionOfCapitalPropertyAmount"            minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomeDescriptionCInDefinitionAmount"                minOccurs="0"/>
+            <xsd:element ref="t1134:ForeignAccrualPropertyIncomeTotalAmount"                                   minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="ForeignAccrualPropertyIncomeIndicator"                                     type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomePercentage"                                    type="t1134:PercentageType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomePropertyAmount"                                type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomeSaleOfPropertyAmount"                          type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomeRiskInsuranceReinsuranceAmount"                type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomeCanadianIndebtednessLeaseObligationsAmount"    type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomePartnershipIndebtednessLeaseObligationsAmount" type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomeProvidingServicesAmount"                       type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomeDispositionOfCapitalPropertyAmount"            type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomeDescriptionCInDefinitionAmount"                type="t1134:HundredTrillionAmountType"/>
+    <xsd:element name="ForeignAccrualPropertyIncomeTotalAmount"                                   type="t1134:HundredTrillionAmountType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part III, Section 4 - Capital gains and losses  -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="ExcludedPropertyIndicator"     type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="NotExcludedPropertyIndicator"  type="t1134:BooleanIndicatorType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part III, Section 5 - Income included in income from an active business  -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="OtherActiveBusinessIncome" type="t1134:OtherActiveBusinessIncomeType"/>
+    <xsd:complexType name="OtherActiveBusinessIncomeType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:DueToAct_95_2_a_i_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_95_2_a_ii_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_95_2_a_iii_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_95_2_a_iv_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_95_2_a_v_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_95_2_a_vi_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_95_1_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_95_2_I_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_90PercentTest_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_95_2_3_Indicator"/>
+            <xsd:element ref="t1134:DueToAct_95_2_4_Indicator"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="DueToAct_95_2_a_i_Indicator"      type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_95_2_a_ii_Indicator"     type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_95_2_a_iii_Indicator"    type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_95_2_a_iv_Indicator"     type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_95_2_a_v_Indicator"      type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_95_2_a_vi_Indicator"     type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_95_1_Indicator"          type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_95_2_I_Indicator"        type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_90PercentTest_Indicator" type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_95_2_3_Indicator"        type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="DueToAct_95_2_4_Indicator"        type="t1134:BooleanIndicatorType"/>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Part IV - Disclosure -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <xsd:element name="InformationRequestedNotAvailableIndicator"          type="t1134:BooleanIndicatorType"/>
+    <xsd:element name="InformationRequestedNotAvailableSummaryDescription" type="t1134:TextFourThousandType"/>
+
+
+
+    <!-- COMMON TYPES USED IN THIS SCHEMA FILE -->
+
+    <xsd:simpleType name="SupplementSequenceIdentifierType">
+        <xsd:restriction base="sdt:IDType">
+            <xsd:pattern value="[1-9]([0-9])*"/>
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="4"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="ActionCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Valid Codes are: 1=new; 2=unmodified; 3=amended; 4=delete</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Les codes valides sont: 1=nouveau; 2=non modifié; 3=modifié; 4=détruit  </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:enumeration value="1"/>
+            <xsd:enumeration value="2"/>
+            <xsd:enumeration value="3"/>
+            <xsd:enumeration value="4"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="SupplementDeleteReasonCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Valid Codes are: 1=duplicate; 2=filed in error; 3=other</xsd:documentation>
+            <xsd:documentation xml:lang="fr"/>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:enumeration value="1"/>
+            <xsd:enumeration value="2"/>
+            <xsd:enumeration value="3"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="OrganizationalStructureClientCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Valid Codes are: 1=Corporation; 2=Individual; 3=Trust; 4=Partnership</xsd:documentation>
+            <xsd:documentation xml:lang="fr"/>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:enumeration value="1"/>
+            <xsd:enumeration value="2"/>
+            <xsd:enumeration value="3"/>
+            <xsd:enumeration value="4"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType  name="BooleanIndicatorType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"> Value "1" (Yes); Value "0" (No)</xsd:documentation>
+            <xsd:documentation xml:lang="fr"> - Valeur "1" (Oui); Valeur "0" (Non)</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:IndicatorType"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="EmployeeCountCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Employee count code: 1-One to five; 2-More than five.</xsd:documentation>
+            <xsd:documentation xml:lang="fr"></xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:CodeType">
+                <xsd:length value="1"/>
+                <xsd:enumeration value="1"/>
+                <xsd:enumeration value="2"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="GlobalProvinceTerritoryStateCode">
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:minLength value="1"/>
+                <xsd:maxLength value="100"/>
+                <xsd:pattern value="([A-Za-z])*"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="CountryCode" type="ccms:CountryCodeType"/>
+
+    <xsd:element name="GlobalAddress" type="t1134:NameDescription"/>
+
+    <xsd:element name="GlobalPostalZipCode">
+        <xsd:simpleType>
+            <xsd:restriction base="sdt:CodeType">
+                <xsd:minLength value="1"/>
+                <xsd:maxLength value="20"/>
+                <xsd:pattern value="([A-Za-z0-9\-])*"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:complexType name="NameThirtyCharacterType">
+        <xsd:simpleContent>
+            <xsd:restriction base="sdt:NameType">
+                <xsd:maxLength value="30"/>
+                <xsd:whiteSpace value="collapse"/>
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="NameDescription">
+        <xsd:simpleContent>
+            <xsd:restriction base="sdt:NameType">
+                <xsd:maxLength value="255"/>
+                <xsd:whiteSpace value="collapse"/>
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="HundredTrillionAmountType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">The field is used to capture the dollar amount (no decimals).  The dollar value cannot exceed +/- $99,999,999,999,999. </xsd:documentation>
+            <xsd:documentation xml:lang="fr">Le champ est utilisé pour capturer le montant en dollar (pas de décimales). La valeur en dollar ne peut pas dépasser +/- 99.999.999.999.999 $.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:AmountDollarsOnlyType">
+            <xsd:totalDigits value="14"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="PhoneNumberType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">To capture any North American or International phone number with (possible) extension.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Pour capturer tout numéro de téléphone nord-américain ou international avec (possible) l'extension.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+            <xsd:pattern value="([0-9xX\(\)\-\.])*"/>
+            <xsd:maxLength value="20"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="BusinessNumber" type="t1134:BNRCType"/>
+    <xsd:simpleType name="BNRCType">
+        <xsd:restriction base="sdt:NumberType">
+            <xsd:pattern value="([0-9]{9}RC[0-9]{4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="PartnershipNumber" type="t1134:BNRZType"/>
+    <xsd:simpleType name="BNRZType">
+        <xsd:restriction base="sdt:NumberType">
+            <xsd:pattern value="([0-9]{9}RZ[0-9]{4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name ="PercentageType">
+        <xsd:restriction base="sdt:PercentType">
+            <xsd:fractionDigits value="2"/>
+            <xsd:minInclusive value="0.00"/>
+            <xsd:maxInclusive value="999.99"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="TextFifteenType">
+        <xsd:simpleContent>
+            <xsd:restriction base="sdt:TextType">
+                <xsd:minLength value="9"/>
+                <xsd:maxLength value="15"/>
+                <xsd:whiteSpace value="collapse"/>
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="TextSixtyType">
+        <xsd:simpleContent>
+            <xsd:restriction base="sdt:TextType">
+                <xsd:maxLength value="60"/>
+                <xsd:whiteSpace value="collapse"/>
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="TextEightyType">
+        <xsd:simpleContent>
+            <xsd:restriction base="sdt:TextType">
+                <xsd:maxLength value="80"/>
+                <xsd:whiteSpace value="collapse"/>
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="TextFourThousandType">
+        <xsd:simpleContent>
+            <xsd:restriction base="sdt:TextType">
+                <xsd:maxLength value="4000"/>
+                <xsd:whiteSpace value="collapse"/>
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="CountryType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en"/>
+            <xsd:documentation xml:lang="fr"/>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="t1134:CountryCode" maxOccurs="4"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="NorthAmericanIndustryClassificationSystemType">
+        <xsd:sequence>
+            <xsd:element ref="t1134:NorthAmericanIndustryClassificationSystemCode" maxOccurs="4"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="NorthAmericanIndustryClassificationSystemCode" type="t1134:NorthAmericanIndustryClassificationSystemCodeType"/>
+    <xsd:simpleType name="NorthAmericanIndustryClassificationSystemCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Must be valid North American Industry Classification System (NAICS) Code from list provided</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Doit être un code valide du Système de Classification des Industries de l'Amérique du Nord (SCIAN) de la liste fournie.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:maxLength value="6"/>
+            <xsd:pattern value="[0-9][0-9]([0-9])*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="AccountType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">SIN / BN Root / Other account number</xsd:documentation>
+            <xsd:documentation xml:lang="fr">NAS / NE / Autre numéro de compte</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:NumberType">
+            <xsd:length value="9"/>
+            <xsd:pattern value="[0-9]{9}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="GlobalCurrencyCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Acceptable currency codes.</xsd:documentation>
+            <xsd:documentation xml:lang="fr">Codes des monnaies acceptables.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="sdt:CodeType">
+            <xsd:length value="3"/>
+            <xsd:enumeration value="AED"/>
+            <xsd:enumeration value="aed"/>
+            <xsd:enumeration value="ANG"/>
+            <xsd:enumeration value="ang"/>
+            <xsd:enumeration value="ARS"/>
+            <xsd:enumeration value="ars"/>
+            <xsd:enumeration value="AUD"/>
+            <xsd:enumeration value="aud"/>
+            <xsd:enumeration value="BRL"/>
+            <xsd:enumeration value="brl"/>
+            <xsd:enumeration value="BSD"/>
+            <xsd:enumeration value="bsd"/>
+            <xsd:enumeration value="CAD"/>
+            <xsd:enumeration value="cad"/>
+            <xsd:enumeration value="chf"/>
+            <xsd:enumeration value="CHF"/>
+            <xsd:enumeration value="CLP"/>
+            <xsd:enumeration value="clp"/>
+            <xsd:enumeration value="CNY"/>
+            <xsd:enumeration value="cny"/>
+            <xsd:enumeration value="cop"/>
+            <xsd:enumeration value="COP"/>
+            <xsd:enumeration value="CRC"/>
+            <xsd:enumeration value="crc"/>
+            <xsd:enumeration value="czk"/>
+            <xsd:enumeration value="CZK"/>
+            <xsd:enumeration value="dkk"/>
+            <xsd:enumeration value="DKK"/>
+            <xsd:enumeration value="dop"/>
+            <xsd:enumeration value="DOP"/>
+            <xsd:enumeration value="eur"/>
+            <xsd:enumeration value="EUR"/>
+            <xsd:enumeration value="FJD"/>
+            <xsd:enumeration value="fjd"/>
+            <xsd:enumeration value="GBP"/>
+            <xsd:enumeration value="gbp"/>
+            <xsd:enumeration value="GHS"/>
+            <xsd:enumeration value="ghs"/>
+            <xsd:enumeration value="gtq"/>
+            <xsd:enumeration value="GTQ"/>
+            <xsd:enumeration value="hkd"/>
+            <xsd:enumeration value="HKD"/>
+            <xsd:enumeration value="HNL"/>
+            <xsd:enumeration value="hnl"/>
+            <xsd:enumeration value="HRK"/>
+            <xsd:enumeration value="hrk"/>
+            <xsd:enumeration value="huf"/>
+            <xsd:enumeration value="HUF"/>
+            <xsd:enumeration value="idr"/>
+            <xsd:enumeration value="IDR"/>
+            <xsd:enumeration value="ILS"/>
+            <xsd:enumeration value="ils"/>
+            <xsd:enumeration value="inr"/>
+            <xsd:enumeration value="INR"/>
+            <xsd:enumeration value="ISK"/>
+            <xsd:enumeration value="isk"/>
+            <xsd:enumeration value="JMD"/>
+            <xsd:enumeration value="jmd"/>
+            <xsd:enumeration value="JPY"/>
+            <xsd:enumeration value="jpy"/>
+            <xsd:enumeration value="krw"/>
+            <xsd:enumeration value="KRW"/>
+            <xsd:enumeration value="lkr"/>
+            <xsd:enumeration value="LKR"/>
+            <xsd:enumeration value="MAD"/>
+            <xsd:enumeration value="mad"/>
+            <xsd:enumeration value="MMK"/>
+            <xsd:enumeration value="mmk"/>
+            <xsd:enumeration value="mxn"/>
+            <xsd:enumeration value="MXN"/>
+            <xsd:enumeration value="myr"/>
+            <xsd:enumeration value="MYR"/>
+            <xsd:enumeration value="nok"/>
+            <xsd:enumeration value="NOK"/>
+            <xsd:enumeration value="nzd"/>
+            <xsd:enumeration value="NZD"/>
+            <xsd:enumeration value="pab"/>
+            <xsd:enumeration value="PAB"/>
+            <xsd:enumeration value="pen"/>
+            <xsd:enumeration value="PEN"/>
+            <xsd:enumeration value="php"/>
+            <xsd:enumeration value="PHP"/>
+            <xsd:enumeration value="PKR"/>
+            <xsd:enumeration value="pkr"/>
+            <xsd:enumeration value="PLN"/>
+            <xsd:enumeration value="pln"/>
+            <xsd:enumeration value="RON"/>
+            <xsd:enumeration value="ron"/>
+            <xsd:enumeration value="rsd"/>
+            <xsd:enumeration value="RSD"/>
+            <xsd:enumeration value="rub"/>
+            <xsd:enumeration value="RUB"/>
+            <xsd:enumeration value="SEK"/>
+            <xsd:enumeration value="sek"/>
+            <xsd:enumeration value="sgd"/>
+            <xsd:enumeration value="SGD"/>
+            <xsd:enumeration value="THB"/>
+            <xsd:enumeration value="thb"/>
+            <xsd:enumeration value="TND"/>
+            <xsd:enumeration value="tnd"/>
+            <xsd:enumeration value="try"/>
+            <xsd:enumeration value="TRY"/>
+            <xsd:enumeration value="TTD"/>
+            <xsd:enumeration value="ttd"/>
+            <xsd:enumeration value="TWD"/>
+            <xsd:enumeration value="twd"/>
+            <xsd:enumeration value="UAH"/>
+            <xsd:enumeration value="uah"/>
+            <xsd:enumeration value="USD"/>
+            <xsd:enumeration value="usd"/>
+            <xsd:enumeration value="VEF"/>
+            <xsd:enumeration value="vef"/>
+            <xsd:enumeration value="VND"/>
+            <xsd:enumeration value="vnd"/>
+            <xsd:enumeration value="XAF"/>
+            <xsd:enumeration value="xaf"/>
+            <xsd:enumeration value="XCD"/>
+            <xsd:enumeration value="xcd"/>
+            <xsd:enumeration value="XOF"/>
+            <xsd:enumeration value="xof"/>
+            <xsd:enumeration value="XPF"/>
+            <xsd:enumeration value="xpf"/>
+            <xsd:enumeration value="zar"/>
+            <xsd:enumeration value="ZAR"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

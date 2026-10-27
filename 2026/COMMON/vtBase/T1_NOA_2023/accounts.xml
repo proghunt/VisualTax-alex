@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Accounts>
+ <account>
+    <hash>15E2B0D3C33891EBB0F1EF609EC419420C20E320CE94C65FBC8C3312448EB225</hash>
+    <GivenName>John</GivenName>
+    <LastName>Doe</LastName>
+    <Mask>XXX XXX 123</Mask>
+  </account>
+</Accounts>

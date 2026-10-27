@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.840,D:\IHOR\VisualTax\VisualTax_V2\2026\Projects\VT2025.dproj=D:\IHOR\VisualTax\VisualTax_V2\2026\Projects\VT2026.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.340,D:\IHOR\VisualTax\VisualTax_V2\2025\Projects\VT2024.dproj=D:\IHOR\VisualTax\VisualTax_V2\2025\Projects\VT2025.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,5 @@
+Trust Name|  Trust Account|  Province|  CRA exp Tot Income|  VT calc Tot Income|  CRA exp Net Income|  VT calc Tot Income|  CRA exp Tax Income|  VT calc Tax Income|  CRA exp Balance|  VT calc Balance
+TEST                |  T11111111 |    |  10,000.00   | 19,999.00   | 10,000.00   | 8,000.00    | 10,000.00   | 7,000.00    | .00         | 700.00      |  *
+BOLD EAGLE TRUST    |  T53175898 |  ON|  2,627,234.00| .00         | 1,945,896.34| .00         | 1,945,896.34| .00         | .00         | .00         |  *
+DUMMY               |  T12345678 |    |  .00         | .00         | .00         | .00         | .00         | .00         | .00         | .00         | 
+TEST-2025           |  T12345678 |    |  100,000.00  | .00         | 100,000.00  | .00         | 100,000.00  | .00         | .00         | .00         |  *

@@ -1,0 +1,154 @@
+unit us3;
+interface
+uses
+    SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+    Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask, vtEditBox, vtLabel,
+    vtShape, Buttons;
+type
+TS3 = class(TForm)
+   VTLABELUS3_1_6: TVTLABEL;
+   VTLABELUS3_1_8: TVTLABEL;
+   VTLABELUS3_1_9: TVTLABEL;
+   VTEDIT46: TVTEDIT;
+   VTEDIT45: TVTEDIT;
+   VTEDIT44: TVTEDIT;
+   VTEDIT43: TVTEDIT;
+   VTEDIT42: TVTEDIT;
+   VTEDIT41: TVTEDIT;
+   VTEDIT40: TVTEDIT;
+   VTEDIT39: TVTEDIT;
+   VTEDIT38: TVTEDIT;
+   VTEDIT37: TVTEDIT;
+   VTEDIT36: TVTEDIT;
+   VTEDIT35: TVTEDIT;
+   VTEDIT34: TVTEDIT;
+   VTEDIT33: TVTEDIT;
+   VTEDIT32: TVTEDIT;
+   VTEDIT31: TVTEDIT;
+   VTEDIT30: TVTEDIT;
+   VTEDIT29: TVTEDIT;
+   VTEDIT28: TVTEDIT;
+   VTEDIT27: TVTEDIT;
+   VTEDIT26: TVTEDIT;
+   VTEDIT25: TVTEDIT;
+   VTEDIT24: TVTEDIT;
+   VTEDIT23: TVTEDIT;
+   VTEDIT22: TVTEDIT;
+   VTEDIT21: TVTEDIT;
+   VTEDIT20: TVTEDIT;
+   VTEDIT19: TVTEDIT;
+   VTEDIT18: TVTEDIT;
+   VTEDIT17: TVTEDIT;
+   VTEDIT16: TVTEDIT;
+   VTEDIT15: TVTEDIT;
+   VTEDIT12: TVTEDIT;
+   VTEDIT8: TVTEDIT;
+   VTEDIT5: TVTEDIT;
+   VTEDIT2: TVTEDIT;
+   VTEDIT1: TVTEDIT;
+   vtShapePB1: TvtShape;
+   VTSHAPEUS3_2_1: TVTSHAPE;
+   VTEDIT129: TVTEDIT;
+   VTEDIT128: TVTEDIT;
+   VTEDIT127: TVTEDIT;
+   VTEDIT126: TVTEDIT;
+   VTEDIT125: TVTEDIT;
+   VTEDIT124: TVTEDIT;
+   VTEDIT123: TVTEDIT;
+   VTEDIT122: TVTEDIT;
+   VTEDIT121: TVTEDIT;
+   VTEDIT120: TVTEDIT;
+   VTEDIT119: TVTEDIT;
+   VTEDIT118: TVTEDIT;
+   VTEDIT117: TVTEDIT;
+   VTEDIT116: TVTEDIT;
+   VTEDIT115: TVTEDIT;
+   VTEDIT114: TVTEDIT;
+   VTEDIT113: TVTEDIT;
+   VTEDIT112: TVTEDIT;
+   VTEDIT111: TVTEDIT;
+   VTEDIT110: TVTEDIT;
+   VTEDIT109: TVTEDIT;
+   VTEDIT108: TVTEDIT;
+   VTEDIT107: TVTEDIT;
+   VTEDIT106: TVTEDIT;
+   VTEDIT105: TVTEDIT;
+   VTEDIT104: TVTEDIT;
+   VTEDIT103: TVTEDIT;
+   VTEDIT102: TVTEDIT;
+   VTEDIT101: TVTEDIT;
+    vtShape5: TvtShape;
+    vtLabel30: TvtLabel;
+    vtLabel2: TvtLabel;
+    vtShape29: TvtShape;
+    vtLabel6: TvtLabel;
+    vtLabel4: TvtLabel;
+    vtLabel8: TvtLabel;
+    vtShape10: TvtShape;
+    vtLabel9: TvtLabel;
+    vtLabel11: TvtLabel;
+    vtLabel12: TvtLabel;
+    vtLabel13: TvtLabel;
+    vtLabel14: TvtLabel;
+    vtLabel15: TvtLabel;
+    vtLabel16: TvtLabel;
+    vtLabel17: TvtLabel;
+    vtLabel18: TvtLabel;
+    vtLabel5: TvtLabel;
+    vtLabel19: TvtLabel;
+    vtLabel20: TvtLabel;
+    vtShape11: TvtShape;
+    vtShape12: TvtShape;
+    vtShape13: TvtShape;
+    vtShape6: TvtShape;
+    vtShape7: TvtShape;
+    vtLabel27: TvtLabel;
+    vtLabel56: TvtLabel;
+    vtLabel1: TvtLabel;
+    vtLabel3: TvtLabel;
+    vtLabel7: TvtLabel;
+    vtLabel22: TvtLabel;
+    vtLabel23: TvtLabel;
+    vtLabel24: TvtLabel;
+    vtLabel25: TvtLabel;
+    vtLabel26: TvtLabel;
+    vtLabel28: TvtLabel;
+    vtLabel29: TvtLabel;
+    vtLabel31: TvtLabel;
+    vtLabel32: TvtLabel;
+    vtLabel33: TvtLabel;
+    vtLabel34: TvtLabel;
+    vtLabel35: TvtLabel;
+    vtLabel45: TvtLabel;
+    vtLabel46: TvtLabel;
+    vtLabel48: TvtLabel;
+    vtLabel49: TvtLabel;
+    vtLabel47: TvtLabel;
+    vtLabel50: TvtLabel;
+    vtLabel51: TvtLabel;
+    vtS3_1Label64: TvtLabel;
+    vtLabel52: TvtLabel;
+    vtLabel53: TvtLabel;
+    vtLabel54: TvtLabel;
+    vtLabel55: TvtLabel;
+    vtLabel57: TvtLabel;
+    vtLabel58: TvtLabel;
+    vtLabel59: TvtLabel;
+    vtLabel61: TvtLabel;
+    vtLabel62: TvtLabel;
+    vtLabel60: TvtLabel;
+    vtEdit4: TvtEdit;
+    vtLabel21: TvtLabel;
+    vtLabel64: TvtLabel;
+    vtLabel65: TvtLabel;
+    vtLabel66: TvtLabel;
+private
+  { Private declarations }
+public
+  { Public declarations }
+end;
+var
+S3: TS3;
+implementation
+{$R *.DFM}
+end.

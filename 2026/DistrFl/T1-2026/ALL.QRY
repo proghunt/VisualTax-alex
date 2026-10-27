@@ -1,0 +1,4 @@
+Select *
+FROM clients
+As clients
+Order By Last_Name

@@ -1,0 +1,234 @@
+{
+  "header":  
+  {
+    "trustNumber":"A00002633",
+    "softwareId":"064",
+    "softwareRevisionDate":"2025-02-01",
+    "firstTimeFilerIndicator":false,
+    "additionalTaxReturnIndicator":false,
+    "testCaseIdentifier":    1054,
+    "originatingIp":"0.0.0.0",
+    "taxProfessionalData":    
+    {
+      "transmitterEFilerNumber":"B0865",
+      "passwordId":"767AJ5X",
+      "taxPreparerEfilerNumber":"B0865",
+      "taxPreparerEfilerPassword":"767AJ5X",
+      "taxPreparerReturnControlNumber":"23050643",
+      "taxPreparerAuthorizationIndicator":true,
+      "taxPreparerAuthorizationExpiryDate":"2025-09-18",
+      "taxPreparerPreAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "taxPreparerPostAssessmentReviewContactCode":"CONTACT_WITH_CLIENT",
+      "representativeId":"JL3R2RC",
+      "t183ElectronicSignature":      
+      {
+        "t183ElectronicSignatureIndicator":true,
+        "t183ElectronicSignatureDate":"2025-09-18",
+        "t183ElectronicSignatureTime":"17:20:19"      
+      }    
+    }  
+  },
+  "trustIdentification":  
+  {
+    "trustIdentifier":    
+    {
+      "countryOfResidence":"CAN",
+      "provinceOfResidence":"BC",
+      "trustName":"JOYCE WRAPPER ALTER EGO TRUST",
+      "trustAccountNumber":"A00002633"    
+    },
+    "primaryTrusteeContactInformation":    
+    {
+      "trusteeNameChangeIndicator":false,
+      "isNonIndividualIndicator":true,
+      "nonIndividualTrusteeContactInformation":      
+      {
+        "nonIndividualName":"H&R BLOCK",
+        "contactPerson":        
+        {
+          "firstName":"RICHARD",
+          "lastName":"BOY"        
+        },
+        "address":        
+        {
+          "addressLineOne":"PO BOX 1323",
+          "city":"OSOYOOS",
+          "provinceTerritoryState":"BC",
+          "globalPostalZipCode":"V0H1V0",
+          "country":"CAN"        
+        },
+        "telephoneNumber":        
+        {
+          "countryCode":"1",
+          "areaCode":"250",
+          "localNumber":"3188511"        
+        }      
+      }    
+    },
+    "trustResidencyInformation":    
+    {
+      "trustDeemedCanadianResidentIndicator":false,
+      "languageOfCorrespondence":"ENGLISH"    
+    }  
+  },
+  "trustTypeInformation":  
+  {
+    "trustType":"TYPE_336",
+    "trustCreationDate":"2004-08-07"  
+  },
+  "filingInformation":  
+  {
+    "trustFiscalPeriodStart":"2025-01-01",
+    "trustFiscalPeriodEnd":"2025-01-16",
+    "firstYearFilingIndicator":false,
+    "previousFilingYear":    2024,
+    "trustFinalReturnIndicator":false  
+  },
+  "foreignPropertyInExcessOf100000":false,
+  "otherInformation":  
+  {
+    "electingTrustIndicator":false,
+    "trustIncomePaymentToBeneficiariesRequired":false,
+    "trustDistributedNonCashAssetsToBeneficiary":false,
+    "trustBeneficiariesChanged":false,
+    "trustDeemedDispositionBeneficiaryDeathIndicator":true,
+    "trustDeemedDispositionBeneficiaryDeathDate":"2025-01-16",
+    "trustNonArmsLengthDebtTransactionIndicator":false,
+    "trustCapitalIncomeInterestOwnershipChangeIndicator":false,
+    "trustHoldsSharesInPrivateCorporation":false,
+    "trustAdditionalContributionPropertyReceiptIndicator":true,
+    "trustAdditionalContributionPropertyReceiptYear":    2024,
+    "publicTrust":false,
+    "trustUsedInternationalFinancialReportingStandards":false,
+    "trustLossRestrictionEventIndicator":false,
+    "assetsHeldListedUnderParagraph150NotExceeding50kIndicator":true,
+    "trustRequiredToHoldFundsUnderRelevantRulesIndicator":true,
+    "interestOrFinancingExpensesIndicator":false,
+    "unitTrustUnderSubSection108Indicator":false,
+    "trustWhichAllUnitsListedOnStockExchangeIndicator":false,
+    "trustMeetConditionsInParagraph150Indicator":true,
+    "propertyForSpecifiedPurposeIndicator":true,
+    "indigenousGroupsIndicator":false  
+  },
+  "memoIndicators":  
+  {
+    "alterEgoIndicator":false,
+    "preferredBeneficiaryIndicator":false,
+    "mutualFundReorganizatonIndicator":false,
+    "mutualFundExtensionApprovalIndicator":false,
+    "insuranceSegregatedFundReorganizationIndicator":false,
+    "insuranceSegregatedFundExtensionApprovalIndicator":false,
+    "mutualFundElectingDec15FPEIndicator":false  
+  },
+  "returnLines":  
+  [
+    {
+      "fieldCode":"01",
+      "fieldValue":      4521    
+    },
+    {
+      "fieldCode":"11",
+      "fieldValue":      6789    
+    },
+    {
+      "fieldCode":"20",
+      "fieldValue":      11310    
+    },
+    {
+      "fieldCode":"47",
+      "fieldValue":      4521    
+    },
+    {
+      "fieldCode":"50",
+      "fieldValue":      6789    
+    },
+    {
+      "fieldCode":"56",
+      "fieldValue":      6789    
+    },
+    {
+      "fieldCode":"81",
+      "fieldValue":2240.04    
+    },
+    {
+      "fieldCode":"82",
+      "fieldValue":1391.64    
+    },
+    {
+      "fieldCode":"84",
+      "fieldValue":3631.68    
+    },
+    {
+      "fieldCode":"94",
+      "fieldValue":3631.68    
+    },
+    {
+      "fieldCode":"471",
+      "fieldValue":      4521    
+    },
+    {
+      "fieldCode":"1031",
+      "fieldValue":      19980    
+    },
+    {
+      "fieldCode":"1032",
+      "fieldValue":      9042    
+    },
+    {
+      "fieldCode":"1220",
+      "fieldValue":      4521    
+    },
+    {
+      "fieldCode":"9001",
+      "fieldValue":      1    
+    },
+    {
+      "fieldCode":"9211",
+      "fieldValue":      4521    
+    },
+    {
+      "fieldCode":"11080",
+      "fieldValue":2240.04    
+    },
+    {
+      "fieldCode":"14601",
+      "fieldValue":1391.64    
+    }  
+  ],
+  "t1055Submission":  
+  {
+    "deceasedSettlorName":    
+    {
+      "firstName":"JOYCE",
+      "lastName":"WRAPPER"    
+    },
+    "settlorAddress":"PO BOX 1323 OSOYOOS BC V0H1V0",
+    "settlorSocialInsuranceNumber":"870037223",
+    "deceasedSettlorDateOfDeath":"2025-01-16",
+    "propertyTransferredIndicator":true,
+    "ceasedToBeResidentDate":"2025-01-16",
+    "returnLines":    
+    [
+      {
+        "fieldCode":"55031",
+        "fieldValue":        101920      
+      },
+      {
+        "fieldCode":"55032",
+        "fieldValue":        13577      
+      },
+      {
+        "fieldCode":"55250",
+        "fieldValue":        6789      
+      },
+      {
+        "fieldCode":"55320",
+        "fieldValue":        6789      
+      },
+      {
+        "fieldCode":"55420",
+        "fieldValue":        6789      
+      }    
+    ]  
+  }
+}

@@ -1,0 +1,11 @@
+<DacRequest xmlns="http://www.cra-arc.gc.ca/xmlns/sres/1-0-0" xmlns:common="http://www.cra-arc.gc.ca/xmlns/srescommon/1-0-0">
+   <common:SoftwareCode>VT51</common:SoftwareCode>
+   <common:ClientId>982926404RC0001</common:ClientId>
+   <SharedSecrets>
+      <CorporateEntity>
+         <IncorporationDate>2022-02-03</IncorporationDate>
+         <PostalCode>K2K 0G2</PostalCode>
+      </CorporateEntity>
+   </SharedSecrets>
+   <Year>2026</Year>
+</DacRequest>

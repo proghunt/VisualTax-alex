@@ -1,0 +1,183 @@
+Non Vt components found
+AB428.FlagFrameAB1: TFlagFrameAB
+***    No Page Break    *** ACCOUNTS
+***    No Page Break    *** ACKNLDG
+***    No Page Break    *** ADDINFO
+ALETTER.wwDBRichEdit1: TwwDBRichEdit
+ALETTER.LetterPanel: TPanel
+ALETTER.LetterDesignBtn: TBitBtn
+ALETTER.PrintLetterBtn: TBitBtn
+***    No Page Break    *** ALETTER
+***    No Page Break    *** ANNINC
+***    No Page Break    *** ASSETSUM
+***    No Page Break    *** ASSUME
+***    No Page Break    *** AUTOS#1
+***    No Page Break    *** BANKADV#1
+BC428.FlagFrameBC1: TFlagFrameBC
+***    No Page Break    *** BONDS#1
+***    No Page Break    *** BUSINESS#1
+BUYFUNDS.SelectPortfolioBtn: TBitBtn
+BUYFUNDS.BitBtn1: TBitBtn
+***    No Page Break    *** BUYFUNDS
+***    No Page Break    *** CARLOANS#1
+***    No Page Break    *** CASH#1
+CASHFLOW.InvestStrategyBtn: TBitBtn
+CASHFLOW.PCASHFLOWBTN: TBitBtn
+***    No Page Break    *** CASHFLOW
+CLETTER.LetterPanel: TPanel
+CLETTER.LetterDesignBtn: TBitBtn
+CLETTER.PrintLetterBtn: TBitBtn
+CLETTER.SaveBtn: TBitBtn
+CLETTER.wwDBRichEdit1: TwwDBRichEdit
+***    No Page Break    *** CLETTER
+***    No Page Break    *** CREDITCARDS#1
+***    No Page Break    *** CSB#1
+***    No Page Break    *** DEFPLANS#1
+***    No Page Break    *** DISABLT
+DTC.Shape3: TShape
+DTC.Shape2: TShape
+DTC.Label13: TLabel
+DTC.Label2: TLabel
+DTC.Label16: TLabel
+DTC.Label19: TLabel
+DTC.Label6: TLabel
+DTC.Label7: TLabel
+DTC.Shape1: TShape
+DTC.Label10: TLabel
+DTC.Label11: TLabel
+DTC.Label12: TLabel
+DTC.Label14: TLabel
+DTC.Label15: TLabel
+DTC.Label1: TLabel
+***    No Page Break    *** EDUPLN#1
+ENGAGE.LetterPanel: TPanel
+ENGAGE.LetterDesignBtn: TBitBtn
+ENGAGE.PrintLetterBtn: TBitBtn
+ENGAGE.wwDBRichEdit1: TwwDBRichEdit
+***    No Page Break    *** ENGAGE
+EXECSUM.LetterPanel: TPanel
+EXECSUM.LetterDesignBtn: TBitBtn
+EXECSUM.PrintLetterBtn: TBitBtn
+EXECSUM.SaveBtn: TBitBtn
+EXECSUM.wwDBRichEdit1: TwwDBRichEdit
+***    No Page Break    *** EXECSUM
+***    No Page Break    *** FLDMEM#1
+***    No Page Break    *** FLDTAPE#1
+***    No Page Break    *** FPSUM
+***    No Page Break    *** GENOBJ
+***    No Page Break    *** GENPLAN#1
+***    No Page Break    *** GIC#1
+***    No Page Break    *** GOALS
+INCPROJECTION.InitFromCashFlowBtn: TBitBtn
+INCPROJECTION.PCASHFLOWBTN: TBitBtn
+***    No Page Break    *** INCPROJECTION
+***    No Page Break    *** INSNEED
+***    No Page Break    *** INV_1
+***    No Page Break    *** INV_2
+INVESTSTRATEGY.RetPlanBtn: TBitBtn
+***    No Page Break    *** INVESTSTRATEGY
+***    No Page Break    *** LETR_1
+***    No Page Break    *** LIABSUM
+LIFEEVENTS.PNONSHBTN: TBitBtn
+LIFEEVENTS.PSHELTBTN: TBitBtn
+LIFEEVENTS.PSEMSHBTN: TBitBtn
+***    No Page Break    *** LIFEEVENTS
+***    No Page Break    *** LIFEINS#1
+***    No Page Break    *** LIVINGEXP_1
+***    No Page Break    *** LIVINGEXP_2
+***    No Page Break    *** LOANS#1
+MB428.FlagFrameMB1: TFlagFrameMB
+***    No Page Break    *** MORTGAGES#1
+***    No Page Break    *** MUTFUNDS#1
+NB428.FlagFrameNB1: TFlagFrameNB
+NETWORTH.PNETWBTN: TBitBtn
+***    No Page Break    *** NETWORTH
+NL428.FlagFrameNF1: TFlagFrameNF
+***    No Page Break    *** NPAD#1
+***    No Page Break    *** NPADC#1
+NS428.FlagFrameNS1: TFlagFrameNS
+NT428.FlagFrameNW1: TFlagFrameNW
+NU428.FlagFrameNU1: TFlagFrameNU
+ON428.Shape7: TShape
+ON428.Shape6: TShape
+ON428.Shape5: TShape
+ON428.Shape4: TShape
+ON428.Shape3: TShape
+ON428.Shape2: TShape
+ON428.Shape1: TShape
+ON428.Shape9: TShape
+ON428.FlagFrameON1: TFlagFrameON
+***    No Page Break    *** OTHASS
+***    No Page Break    *** OTHASSETS#1
+***    No Page Break    *** OTHERLTL#1
+***    No Page Break    *** OTHFIXED#1
+***    No Page Break    *** PASSSUM
+***    No Page Break    *** PCASHFLOW#1
+PE428.FlagFramePE1: TFlagFramePE
+***    No Page Break    *** PEVENTS
+***    No Page Break    *** PINVPLN#1
+PIPEDA.LetterPanel: TPanel
+PIPEDA.LetterDesignBtn: TBitBtn
+PIPEDA.PrintLetterBtn: TBitBtn
+PIPEDA.wwDBRichEdit1: TwwDBRichEdit
+***    No Page Break    *** PIPEDA
+***    No Page Break    *** PLIAB#1
+***    No Page Break    *** PNETW#1
+PNONSH#1.NonShChart: TImage
+***    No Page Break    *** PNONSH#1
+PORTFOLIO#1.SaveModelPortfolioBtn: TBitBtn
+PORTFOLIO#1.ImportModelPortfolioBtn: TBitBtn
+***    No Page Break    *** PORTFOLIO#1
+***    No Page Break    *** PRIVAT#1
+***    No Page Break    *** PROBLEMS
+PROFILE.ImportT1BTN: TBitBtn
+***    No Page Break    *** PROFILE
+PROJECTIONCHARTS.FixedAssetsChart: TImage
+PROJECTIONCHARTS.LiabilitiesChart: TImage
+PROJECTIONCHARTS.NetWorthChart: TImage
+PROJECTIONCHARTS.CashFlChart: TImage
+PROJECTIONCHARTS.NonShChart: TImage
+PROJECTIONCHARTS.SheltChart: TImage
+PROJECTIONCHARTS.SemShChart: TImage
+PROJECTIONCHARTS.TotalInvestmentsChart: TImage
+PROJECTIONCHARTS.IncomeChart: TImage
+PROJECTIONCHARTS.FixedAssetsChartBtn: TBitBtn
+PROJECTIONCHARTS.LiabilitiesChartBtn: TBitBtn
+PROJECTIONCHARTS.NetWorthChartBtn: TBitBtn
+PROJECTIONCHARTS.CashFlChartBtn: TBitBtn
+PROJECTIONCHARTS.IncomeChartBtn: TBitBtn
+PROJECTIONCHARTS.NonShChartBtn: TBitBtn
+PROJECTIONCHARTS.SheltChartBtn: TBitBtn
+PROJECTIONCHARTS.SemShChartBtn: TBitBtn
+***    No Page Break    *** PRRSP#1
+***    No Page Break    *** PSEMSH#1
+***    No Page Break    *** PSHELT#1
+***    No Page Break    *** PSMINV#1
+***    No Page Break    *** REALEST#1
+***    No Page Break    *** RETPLAN
+***    No Page Break    *** SELLFUNDS
+SK428.FlagFrameSK1: TFlagFrameSK
+***    No Page Break    *** SPECIFICPLAN#1
+***    No Page Break    *** STATUS
+***    No Page Break    *** STOCKS#1
+***    No Page Break    *** SUMOBJ
+***    No Page Break    *** T1036_1
+***    No Page Break    *** T1036_2
+***    No Page Break    *** T1058
+***    No Page Break    *** T2033_1
+***    No Page Break    *** T2033_2
+***    No Page Break    *** T2151_1
+***    No Page Break    *** T2151_2
+***    No Page Break    *** T2220_1
+***    No Page Break    *** T2220_2
+***    No Page Break    *** T3012_1
+***    No Page Break    *** T3012_2
+***    No Page Break    *** TAXP_1#1
+***    No Page Break    *** TAXP_2#1
+***    No Page Break    *** TAXPAYABLE#1
+***    No Page Break    *** TERMDEP#1
+***    No Page Break    *** TXSUM_1
+***    No Page Break    *** TXSUM_2
+***    No Page Break    *** UNPAIDBILLS#1
+***    No Page Break    *** WILLS
+YT428.FlagFrameYK1: TFlagFrameYK

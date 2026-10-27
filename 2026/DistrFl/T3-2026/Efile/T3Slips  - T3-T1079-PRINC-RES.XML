@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Submission xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="layout-topologie.xsd">
+   <T619>
+      <TransmitterAccountNumber>
+         <bn15>666666664rp0001</bn15>
+      </TransmitterAccountNumber>
+      <sbmt_ref_id>26061659</sbmt_ref_id>
+      <summ_cnt>1</summ_cnt>
+      <lang_cd>E</lang_cd>
+      <TransmitterName>
+         <l1_nm>Microsophic</l1_nm>
+      </TransmitterName>
+      <TransmitterCountryCode>CAN</TransmitterCountryCode>
+      <CNTC>
+         <cntc_nm>Constantin Zantiris</cntc_nm>
+         <cntc_area_cd>905</cntc_area_cd>
+         <cntc_phn_nbr>238-6159</cntc_phn_nbr>
+         <cntc_email_area>xx@yyy.com</cntc_email_area>
+      </CNTC>
+   </T619>
+   <Return>
+      <T3>
+         <T3Summary>
+            <tr_acct_nbr></tr_acct_nbr>
+            <TR_NM>
+               <l1_nm>T3-T1079-PRINC-RES</l1_nm>
+            </TR_NM>
+            <tre_exctr_admnr_nm></tre_exctr_admnr_nm>
+            <TRE_ADDR>
+               <addr_l1_txt></addr_l1_txt>
+               <pstl_cd></pstl_cd>
+            </TRE_ADDR>
+            <CNTC>
+               <cntc_nm> </cntc_nm>
+               <cntc_area_cd></cntc_area_cd>
+               <cntc_phn_nbr></cntc_phn_nbr>
+            </CNTC>
+            <tx_yr>2025</tx_yr>
+            <rpt_tcd>O</rpt_tcd>
+            <slp_cnt>0</slp_cnt>
+            <TR_TX_SDT>
+               <dy>01</dy>
+               <mo>01</mo>
+               <yr>2025</yr>
+            </TR_TX_SDT>
+            <TR_TX_NDT>
+               <sec_dy>22</sec_dy>
+               <sec_mo>03</sec_mo>
+               <sec_yr>2025</sec_yr>
+            </TR_TX_NDT>
+            <T3_TAMT>
+            </T3_TAMT>
+         </T3Summary>
+      </T3>
+   </Return>
+</Submission>

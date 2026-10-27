@@ -1,0 +1,228 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{2A3ED8EA-4C76-47A5-BCB5-3BDBEFA2F205}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="AnyDAC_ComI_D17.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="AnyDAC_Phys_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysTDBX_D17.dproj">
+				<Dependencies>AnyDAC_Phys_D17.dproj;AnyDAC_ComI_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysODBC_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysMSAcc_D17.dproj">
+				<Dependencies>AnyDAC_PhysODBC_D17.dproj;AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysMSSQL_D17.dproj">
+				<Dependencies>AnyDAC_PhysODBC_D17.dproj;AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysDb2_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_PhysODBC_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysASA_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_PhysODBC_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysADS_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysMySQL_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysOracle_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysIB_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysPg_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_PhysSQLITE_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_Comp_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_GUIxForms_D17.dproj">
+				<Dependencies>AnyDAC_ComI_D17.dproj;AnyDAC_Phys_D17.dproj;AnyDAC_Comp_D17.dproj</Dependencies>
+			</Projects>
+			<Projects Include="AnyDAC_Dcl_D17.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="AnyDAC_ComI_D17">
+			<MSBuild Projects="AnyDAC_ComI_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_ComI_D17:Clean">
+			<MSBuild Projects="AnyDAC_ComI_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_ComI_D17:Make">
+			<MSBuild Projects="AnyDAC_ComI_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_Phys_D17" DependsOnTargets="AnyDAC_ComI_D17">
+			<MSBuild Projects="AnyDAC_Phys_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Phys_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean">
+			<MSBuild Projects="AnyDAC_Phys_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_Phys_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make">
+			<MSBuild Projects="AnyDAC_Phys_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysTDBX_D17" DependsOnTargets="AnyDAC_Phys_D17;AnyDAC_ComI_D17">
+			<MSBuild Projects="AnyDAC_PhysTDBX_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysTDBX_D17:Clean" DependsOnTargets="AnyDAC_Phys_D17:Clean;AnyDAC_ComI_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysTDBX_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysTDBX_D17:Make" DependsOnTargets="AnyDAC_Phys_D17:Make;AnyDAC_ComI_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysTDBX_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysODBC_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysODBC_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysODBC_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysODBC_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysODBC_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysODBC_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSAcc_D17" DependsOnTargets="AnyDAC_PhysODBC_D17;AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysMSAcc_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSAcc_D17:Clean" DependsOnTargets="AnyDAC_PhysODBC_D17:Clean;AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysMSAcc_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSAcc_D17:Make" DependsOnTargets="AnyDAC_PhysODBC_D17:Make;AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysMSAcc_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSSQL_D17" DependsOnTargets="AnyDAC_PhysODBC_D17;AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysMSSQL_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSSQL_D17:Clean" DependsOnTargets="AnyDAC_PhysODBC_D17:Clean;AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysMSSQL_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMSSQL_D17:Make" DependsOnTargets="AnyDAC_PhysODBC_D17:Make;AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysMSSQL_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysDb2_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_PhysODBC_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysDb2_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysDb2_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_PhysODBC_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysDb2_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysDb2_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_PhysODBC_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysDb2_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysASA_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_PhysODBC_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysASA_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysASA_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_PhysODBC_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysASA_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysASA_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_PhysODBC_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysASA_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysADS_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysADS_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysADS_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysADS_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysADS_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysADS_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMySQL_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysMySQL_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMySQL_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysMySQL_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysMySQL_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysMySQL_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysOracle_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysOracle_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysOracle_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysOracle_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysOracle_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysOracle_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysIB_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysIB_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysIB_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysIB_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysIB_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysIB_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysPg_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysPg_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysPg_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysPg_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysPg_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysPg_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_PhysSQLITE_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_PhysSQLITE_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_PhysSQLITE_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_PhysSQLITE_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_PhysSQLITE_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_PhysSQLITE_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_Comp_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_Phys_D17">
+			<MSBuild Projects="AnyDAC_Comp_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Comp_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean">
+			<MSBuild Projects="AnyDAC_Comp_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_Comp_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make">
+			<MSBuild Projects="AnyDAC_Comp_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_GUIxForms_D17" DependsOnTargets="AnyDAC_ComI_D17;AnyDAC_Phys_D17;AnyDAC_Comp_D17">
+			<MSBuild Projects="AnyDAC_GUIxForms_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_GUIxForms_D17:Clean" DependsOnTargets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean;AnyDAC_Comp_D17:Clean">
+			<MSBuild Projects="AnyDAC_GUIxForms_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_GUIxForms_D17:Make" DependsOnTargets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make;AnyDAC_Comp_D17:Make">
+			<MSBuild Projects="AnyDAC_GUIxForms_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="AnyDAC_Dcl_D17">
+			<MSBuild Projects="AnyDAC_Dcl_D17.dproj"/>
+		</Target>
+		<Target Name="AnyDAC_Dcl_D17:Clean">
+			<MSBuild Projects="AnyDAC_Dcl_D17.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="AnyDAC_Dcl_D17:Make">
+			<MSBuild Projects="AnyDAC_Dcl_D17.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="AnyDAC_ComI_D17;AnyDAC_Phys_D17;AnyDAC_PhysTDBX_D17;AnyDAC_PhysODBC_D17;AnyDAC_PhysMSAcc_D17;AnyDAC_PhysMSSQL_D17;AnyDAC_PhysDb2_D17;AnyDAC_PhysASA_D17;AnyDAC_PhysADS_D17;AnyDAC_PhysMySQL_D17;AnyDAC_PhysOracle_D17;AnyDAC_PhysIB_D17;AnyDAC_PhysPg_D17;AnyDAC_PhysSQLITE_D17;AnyDAC_Comp_D17;AnyDAC_GUIxForms_D17;AnyDAC_Dcl_D17"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="AnyDAC_ComI_D17:Clean;AnyDAC_Phys_D17:Clean;AnyDAC_PhysTDBX_D17:Clean;AnyDAC_PhysODBC_D17:Clean;AnyDAC_PhysMSAcc_D17:Clean;AnyDAC_PhysMSSQL_D17:Clean;AnyDAC_PhysDb2_D17:Clean;AnyDAC_PhysASA_D17:Clean;AnyDAC_PhysADS_D17:Clean;AnyDAC_PhysMySQL_D17:Clean;AnyDAC_PhysOracle_D17:Clean;AnyDAC_PhysIB_D17:Clean;AnyDAC_PhysPg_D17:Clean;AnyDAC_PhysSQLITE_D17:Clean;AnyDAC_Comp_D17:Clean;AnyDAC_GUIxForms_D17:Clean;AnyDAC_Dcl_D17:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="AnyDAC_ComI_D17:Make;AnyDAC_Phys_D17:Make;AnyDAC_PhysTDBX_D17:Make;AnyDAC_PhysODBC_D17:Make;AnyDAC_PhysMSAcc_D17:Make;AnyDAC_PhysMSSQL_D17:Make;AnyDAC_PhysDb2_D17:Make;AnyDAC_PhysASA_D17:Make;AnyDAC_PhysADS_D17:Make;AnyDAC_PhysMySQL_D17:Make;AnyDAC_PhysOracle_D17:Make;AnyDAC_PhysIB_D17:Make;AnyDAC_PhysPg_D17:Make;AnyDAC_PhysSQLITE_D17:Make;AnyDAC_Comp_D17:Make;AnyDAC_GUIxForms_D17:Make;AnyDAC_Dcl_D17:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

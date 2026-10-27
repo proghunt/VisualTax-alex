@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<soapenv:Envelope 
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:t2rq="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0">
+<soapenv:Body>
+<t2rq:T2EfileReturnRequest 
+xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" 
+xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2024/1-0-0" 
+xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" 
+xmlns:t106="http://www.cra-arc.gc.ca/xmlns/t106/2025/1-0-0" 
+xmlns:t2rq="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0" 
+xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0 t2efilefrrmsrequest.xsd ">
+<ef:TransmitterEfilerNumber>F3119</ef:TransmitterEfilerNumber>
+<ef:PasswordID>2101CQP</ef:PasswordID>
+<ef:RepresentativeID>C4SD3QH</ef:RepresentativeID>
+<t2rq:TaxYear>2023</t2rq:TaxYear>
+<t2rq:SoftwareID>VT49</t2rq:SoftwareID>
+<t2rq:TaxForm>
+<t106:NonArmsLengthTransactionWithNonResidentInformationReturn>
+    <t106:NonArmsLengthWithNonResidentTransactionSummary>
+        <t106:SummaryActionCode>1</t106:SummaryActionCode>
+        <t106:AmendedReturnIndicator>0</t106:AmendedReturnIndicator>
+        <t106:ReportingTaxpayerIdentification>
+            <t106:Corporation>
+                <t106:CorporationName></t106:CorporationName>
+                <t106:BusinessNumber></t106:BusinessNumber>
+            </t106:Corporation>
+        </t106:ReportingTaxpayerIdentification>
+        <t106:ReportingTaxpayerAddress>
+            <t106:AddressStreetText> </t106:AddressStreetText>
+            <t106:AddressMunicipalityName>TORONTO</t106:AddressMunicipalityName>
+            <t106:GlobalProvinceTerritoryStateCode></t106:GlobalProvinceTerritoryStateCode>
+            <t106:GlobalPostalZipCode></t106:GlobalPostalZipCode>
+            <t106:CountryCode>CAN</t106:CountryCode>
+        </t106:ReportingTaxpayerAddress>
+        <t106:TaxationYearData>
+            <t106:TaxationYearStartDate>2023-01-01</t106:TaxationYearStartDate>
+            <t106:TaxationYearEndDate>2023-12-31</t106:TaxationYearEndDate>
+        </t106:TaxationYearData>
+        <t106:FirstTimeFilerIndicator>0</t106:FirstTimeFilerIndicator>
+        <t106:LastReturnFilingPeriodEndDate></t106:LastReturnFilingPeriodEndDate>
+        <t106:DeclaredSlipCount>0</t106:DeclaredSlipCount>
+        <t106:SlipBoxTotalAmount>0</t106:SlipBoxTotalAmount>
+        <t106:ReportingTaxpayerGrossRevenueAmount>0</t106:ReportingTaxpayerGrossRevenueAmount>
+        <t106:NorthAmericanIndustryClassificationSystem>
+        </t106:NorthAmericanIndustryClassificationSystem>
+        <t106:AffectedReportedAmountCompetentAuthorityIndicator>0</t106:AffectedReportedAmountCompetentAuthorityIndicator>
+        <t106:AdjustedReportedAmountForeignTaxAdministrationAssessmentIndicator>0</t106:AdjustedReportedAmountForeignTaxAdministrationAssessmentIndicator>
+        <t106:ReportingTaxpayerUltimateParentIndicator>0</t106:ReportingTaxpayerUltimateParentIndicator>
+        <t106:ReportingTaxpayerMNEIndicator>0</t106:ReportingTaxpayerMNEIndicator>
+        <t106:MNECbCRRequiredIndicator>0</t106:MNECbCRRequiredIndicator>
+        <t106:ReportingTaxpayerFileOtherReturnIndicator>0</t106:ReportingTaxpayerFileOtherReturnIndicator>
+        <t106:ReportingTaxpayerNonResidentNonMonetaryConsiderationIndicator>0</t106:ReportingTaxpayerNonResidentNonMonetaryConsiderationIndicator>
+        <t106:ReportingTaxpayerNonResidentNilConsiderationIndicator>0</t106:ReportingTaxpayerNonResidentNilConsiderationIndicator>
+        <t106:CertificationDetail>
+            <t106:ContactPersonFirstName></t106:ContactPersonFirstName>
+            <t106:ContactPersonLastName></t106:ContactPersonLastName>
+            <t106:ContactPersonPhoneNumber>()X</t106:ContactPersonPhoneNumber>
+            <t106:CertifierName> </t106:CertifierName>
+            <t106:CertificationDate>2025-01-16</t106:CertificationDate>
+            <t106:CertifierPositionTitle></t106:CertifierPositionTitle>
+        </t106:CertificationDetail>
+    </t106:NonArmsLengthWithNonResidentTransactionSummary>
+</t106:NonArmsLengthTransactionWithNonResidentInformationReturn>
+ </t2rq:TaxForm>
+ </t2rq:T2EfileReturnRequest>
+</soapenv:Body>
+</soapenv:Envelope>

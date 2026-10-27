@@ -1,0 +1,121 @@
+unit uGoals;
+interface
+uses
+  SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask, vtEditBox, vtShape,
+  vtLabel;
+type
+TGoals = class(TForm)
+    vtGoalsShape2:TvtShape;
+    vtGoalsShape9:TvtShape;
+    vtGoalsShape3:TvtShape;
+    vtGoalsShape1:TvtShape;
+    vtGoalsLabel4:TvtLabel;
+    vtGoalsLabel5:TvtLabel;
+    vtGoalsLabel2:TvtLabel;
+    vtGoalsLabel8:TvtLabel;
+    vtGoalsLabel13:TvtLabel;
+    vtGoalsLabel14:TvtLabel;
+    vtGoalsLabel22:TvtLabel;
+    vtGoalsLabel23:TvtLabel;
+    vtGoalsLabel38:TvtLabel;
+    vtGoalsLabel44:TvtLabel;
+    vtGoalsLabel49:TvtLabel;
+    vtGoalsLabel50:TvtLabel;
+    vtGoalsLabel51:TvtLabel;
+    vtGoalsLabel52:TvtLabel;
+    vtGoalsLabel53:TvtLabel;
+    vtGoalsLabel54:TvtLabel;
+    vtGoalsLabel3:TvtLabel;
+    vtGoalsLabel7:TvtLabel;
+    vtGoalsLabel45:TvtLabel;
+    vtGoalsLabel46:TvtLabel;
+    vtGoalsLabel47:TvtLabel;
+    vtGoalsLabel16:TvtLabel;
+    vtGoalsShape4:TvtShape;
+    vtGoalsLabel34:TvtLabel;
+    vtGoalsLabel35:TvtLabel;
+    vtGoalsLabel36:TvtLabel;
+    vtGoalsLabel32:TvtLabel;
+    vtGoalsLabel40:TvtLabel;
+    vtGoalsLabel41:TvtLabel;
+    vtGoalsLabel37:TvtLabel;
+    vtEdit1:TvtEdit;
+    vtEdit2:TvtEdit;
+    vtEdit3:TvtEdit;
+    vtEdit4:TvtEdit;
+    vtEdit6:TvtEdit;
+    vtEdit9:TvtEdit;
+    vtEdit10:TvtEdit;
+    vtEdit12:TvtEdit;
+    vtEdit5:TvtEdit;
+    vtEdit7:TvtEdit;
+    vtEdit15:TvtEdit;
+    vtEdit16:TvtEdit;
+    vtEdit17:TvtEdit;
+    vtEdit18:TvtEdit;
+    vtEdit19:TvtEdit;
+    vtEdit20:TvtEdit;
+    vtEdit21:TvtEdit;
+    vtEdit22:TvtEdit;
+    vtEdit23:TvtEdit;
+    vtEdit24:TvtEdit;
+    vtEdit25:TvtEdit;
+    vtEdit26:TvtEdit;
+    vtEdit27:TvtEdit;
+    vtEdit28:TvtEdit;
+    vtEdit29:TvtEdit;
+    vtEdit30:TvtEdit;
+    vtEdit31:TvtEdit;
+    vtEdit32:TvtEdit;
+    vtEdit33:TvtEdit;
+    vtEdit34:TvtEdit;
+    vtEdit35:TvtEdit;
+    vtEdit36:TvtEdit;
+    vtEdit37:TvtEdit;
+    vtEdit38:TvtEdit;
+    vtEdit39:TvtEdit;
+    vtEdit40:TvtEdit;
+    vtEdit41:TvtEdit;
+    vtEdit42:TvtEdit;
+    vtEdit43:TvtEdit;
+    vtEdit44:TvtEdit;
+    vtEdit45:TvtEdit;
+    vtEdit46:TvtEdit;
+    vtEdit47:TvtEdit;
+    vtEdit48:TvtEdit;
+    vtEdit49:TvtEdit;
+    vtEdit50:TvtEdit;
+    vtEdit51:TvtEdit;
+    vtEdit52:TvtEdit;
+    vtEdit53:TvtEdit;
+    vtEdit54:TvtEdit;
+    vtEdit55:TvtEdit;
+    vtEdit111:TvtEdit;
+    vtEdit112:TvtEdit;
+    vtEdit56:TvtEdit;
+    vtEdit57:TvtEdit;
+    vtEdit58:TvtEdit;
+    vtEdit59:TvtEdit;
+    vtEdit60:TvtEdit;
+    vtEdit61:TvtEdit;
+    vtEdit62:TvtEdit;
+    vtEdit63:TvtEdit;
+    vtEdit64:TvtEdit;
+    vtEdit65:TvtEdit;
+    vtEdit66:TvtEdit;
+    vtEdit67:TvtEdit;
+    vtEdit68:TvtEdit;
+    vtShape4: TvtShape;
+    vtLabel16: TvtLabel;
+    vtShape1: TvtShape;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+Goals: TGoals;
+implementation
+{$R *.DFM}
+end.

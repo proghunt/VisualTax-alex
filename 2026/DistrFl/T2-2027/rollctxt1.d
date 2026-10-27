@@ -1,0 +1,859 @@
+FC005\0001S=SIN^SIN^INFO^3
+FC005\0004R=Birthdate^DATE^INFO^9
+FC005\0042S=Title^^INFO^33
+FC005\0043S=FirstNM^^INFO^2
+FC005\0044S=LastNm^^INFO^5
+FC005\0084S=Apartment^^INFO^22
+FC005\0004S=CareOf^^INFO^8
+FC005\0046S=Street^^INFO^6
+FC005\0069S=PO Box^^INFO^68
+FC005\0085S=RR^^INFO^163
+FC005\0047S=City^^INFO^10
+FC005\0048S=Province^^INFO^14
+FC005\0049S=Postal^UPPERCASE^INFO^15
+FC005\0050S=Phone Area Code^AREA^INFO^54
+FC005\0050S=Phone No^PHONE^INFO^55
+FC005\0011S=Phone work area Code^AREA^INFO^71
+FC005\0011S=Phone work No^PHONE^INFO^72
+FC005\0012S=Phone work Ext^^INFO^114
+FC005\0013S=Cell Phone area code^AREA^INFO^74
+FC005\0013S=Cell phone No^PHONE^INFO^75
+FC005\0014S=Faxareacode^AREA^INFO^62
+FC005\0014S=FaxNo^PHONE^INFO^63
+FC005\0015S=Pager AreaCode^AREA^INFO^118
+FC005\0015S=Pager Number^PHONE^INFO^117
+FC005\0039S=EMail^^INFO^64
+FC005\0003B=MarStatus^^INFO^11
+FC005\0001B=ProvResidence^PROVINCE^INFO^1
+FC005\0016B=ProvSelfEmpl^PROVINCE^INFO^21
+FC005\0009B=EfileIt^YESNO^INFO^46
+FC005\0044B=CND Citizen^X^INFO^164
+FC005\0013B=Elections^X^INFO^43
+FC005\0021S=SpouseSin^SIN^INFO^4
+FC005\0023S=SpouseFirstName^^INFO^20
+FC005\0024S=SpouseLastName^^INFO^45
+FC005\0007R=SpouseBirthDate^DATE^INFO^59
+
+
+FC004\0178R=RSP lim^^RRSP^1
+FC031\0026R=Unclaimed Contr^^CFR_1^31
+
+FC086\044R=HBP balance^^RRSP^80
+FC086\088R=LLP balance^^RRSP^84
+
+FC004\0169R=CNILExpensesPriorYrs^^CFR_1^29
+FC004\0170R=CNILIncomePriorYears^^CFR_1^30
+
+FC004\0191R=Tuition cf Fed^^S11^13
+FC004\0264R=Tuition cf prv^^S11PRV^13
+
+FC004\0192R=student loan-2001^^STLOAN^15
+FC004\0272R=student loan-2002^^STLOAN^19
+FC004\0278R=student loan-2003^^STLOAN^23
+FC004\0246R=student loan-2004^^STLOAN^27
+
+FC004\0186R=MovingExpenses^^CFR_1^38
+FC004\0197R=CEE^^RESEXP^1
+FC004\0198R=CDE^^RESEXP^2
+FC004\0199R=COGPE^^RESEXP^3
+FC004\0200R=ForExplAndDev^^RESEXP^4
+
+FC004\0001S=Notes 1^^PRIVAT#1^2
+FC004\0002S=Notes 1^^PRIVAT#1^3
+FC004\0003S=Notes 1^^PRIVAT#1^4
+FC004\0004S=Notes 1^^PRIVAT#1^5
+FC004\0005S=Notes 1^^PRIVAT#1^6
+FC004\0006S=Notes 1^^PRIVAT#1^7
+FC004\0007S=Notes 1^^PRIVAT#1^8
+FC004\0008S=Notes 1^^PRIVAT#1^9
+FC004\0009S=Notes 1^^PRIVAT#1^10
+FC004\0010S=Notes 1^^PRIVAT#1^11
+
+FC004\0124R=NonCapLoss95^^CFR_2^2
+FC004\0125R=NonCapLoss96^^CFR_2^7
+FC004\0126R=NonCapLoss97^^CFR_2^12
+FC004\0127R=NonCapLoss98^^CFR_2^17
+FC004\0128R=NonCapLoss99^^CFR_2^22
+FC004\0129R=NonCapLoss2000^^CFR_2^27
+FC004\0130R=NonCapLoss2001^^CFR_2^32
+
+FC004\0111R=RestrFarmLoss92^^CFR_2^105
+FC004\0112R=RestrFarmLoss93^^CFR_2^110
+FC004\0113R=RestrFarmLoss94^^CFR_2^115
+FC004\0114R=RestrFarmLoss95^^CFR_2^120
+FC004\0115R=RestrFarmLoss96^^CFR_2^125
+FC004\0116R=RestrFarmLoss97^^CFR_2^130
+FC004\0117R=RestrFarmLoss98^^CFR_2^135
+FC004\0118R=RestrFarmLoss99^^CFR_2^140
+FC004\0119R=RestrFarmLoss2000^^CFR_2^145
+FC004\0120R=RestrFarmLoss2000^^CFR_2^150
+
+
+FC004\0101R=FarmLoss92^^CFR_2^46
+FC004\0102R=FarmLoss93^^CFR_2^51
+FC004\0103R=FarmLoss94^^CFR_2^56
+FC004\0104R=FarmLoss95^^CFR_2^61
+FC004\0105R=FarmLoss96^^CFR_2^66
+FC004\0106R=FarmLoss97^^CFR_2^71
+FC004\0107R=FarmLoss98^^CFR_2^76
+FC004\0108R=FarmLoss99^^CFR_2^81
+FC004\0109R=FarmLoss2000^^CFR_2^86
+FC004\0110R=FarmLoss2000^^CFR_2^91
+
+//dependants -------------------------------------------------
+FC003\01.01.000S=Dep#1 First Name^^DEPEND^5
+FC003\01.01.001S=Dep#1 Last Name^^DEPEND^6
+FC003\01.01.002S=Dep#1 SIN^SIN^DEPEND^7
+FC003\01.01.000R=Dep#1 Birth Day^DATE^DEPEND^10
+FC003\01.01.000B=Dep#1 ^RELATIONSHIP^DEPEND^11
+
+FC003\01.02.000S=Dep#2 First Name^^DEPEND^20
+FC003\01.02.001S=Dep#2 Last Name^^DEPEND^21
+FC003\01.02.002S=Dep#2 SIN^SIN^DEPEND^22
+FC003\01.02.000R=Dep#2 Birth Day^DATE^DEPEND^25
+FC003\01.02.000B=Dep#2 ^RELATIONSHIP^DEPEND^26
+
+FC003\01.03.000S=Dep#3 First Name^^DEPEND^35
+FC003\01.03.001S=Dep#3 Last Name^^DEPEND^36
+FC003\01.03.002S=Dep#3 SIN^SIN^DEPEND^37
+FC003\01.03.000R=Dep#3 Birth Day^DATE^DEPEND^40
+FC003\01.03.000B=Dep#3 ^RELATIONSHIP^DEPEND^41
+
+FC003\01.04.000S=Dep#4 First Name^^DEPEND^50
+FC003\01.04.001S=Dep#4 Last Name^^DEPEND^51
+FC003\01.04.002S=Dep#4 SIN^SIN^DEPEND^52
+FC003\01.04.000R=Dep#4 Birth Day ^DATE^DEPEND^55
+FC003\01.04.000B=Dep#4 ^RELATIONSHIP^DEPEND^56
+
+FC003\01.05.000S=Dep#5 First Name^^DEPEND^65
+FC003\01.05.001S=Dep#5 Last Name^^DEPEND^66
+FC003\01.05.002S=Dep#5 SIN^SIN^DEPEND^67
+FC003\01.05.000R=Dep#5 Birth Day ^DATE^DEPEND^70
+FC003\01.05.000B=Dep#5 ^RELATIONSHIP^DEPEND^71
+
+FC003\01.06.000S=Dep#6 First Name^^DEPEND^80
+FC003\01.06.001S=Dep#6 Last Name^^DEPEND^81
+FC003\01.06.002S=Dep#6 SIN^SIN^DEPEND^82
+FC003\01.06.000R=Dep#6 Birth Day ^DATE^DEPEND^85
+FC003\01.06.000B=Dep#6 ^RELATIONSHIP^DEPEND^86
+
+FC003\01.07.000S=Dep#7 First Name^^DEPEND^95
+FC003\01.07.001S=Dep#7 Last Name^^DEPEND^96
+FC003\01.07.002S=Dep#7 SIN^SIN^DEPEND^97
+FC003\01.07.000R=Dep#7 Birth Day ^DATE^DEPEND^100
+FC003\01.07.000B=Dep#7 ^RELATIONSHIP^DEPEND^101
+
+FC003\01.08.000S=Dep#8 First Name^^DEPEND^110
+FC003\01.08.001S=Dep#8 Last Name^^DEPEND^111
+FC003\01.08.002S=Dep#8 SIN^SIN^DEPEND^112
+FC003\01.08.000R=Dep#8 Birth Day ^DATE^DEPEND^115
+FC003\01.08.000B=Dep#8 ^RELATIONSHIP^DEPEND^116
+
+FC003\01.09.000S=Dep#9 First Name^^DEPEND^125
+FC003\01.09.001S=Dep#9 Last Name^^DEPEND^126
+FC003\01.09.002S=Dep#9 SIN^SIN^DEPEND^127
+FC003\01.09.000R=Dep#9 Birth Day ^DATE^DEPEND^130
+FC003\01.09.000B=Dep#9 ^RELATIONSHIP^DEPEND^131
+//end dependants -------------------------------------------------
+
+FC101\0070R=CapLoss-pre85^^CFR_3^65
+FC101\0071R=CapLoss-May2285ToBefr88^^CFR_3^70
+FC101\0072R=CapLoss-88and89^^CFR_3^75
+FC101\0073R=CapLoss-90to99^^CFR_3^80
+FC101\0089R=CapLoss-2000^^CFR_3^85
+FC101\0095R=CapLoss-2001^^CFR_3^90
+FC074\0030R=CapLoss-2003^^CFR_2^211
+
+FC004\0274R=CapLoss-2005^^CFR_2^110
+FC074\0030R=CapLoss-2005^^CFR_3^110
+FC029\0221R=Incl rate-2000^^CFR_1^040
+//FC000\000R=InclusionRate2000^^CFR_2^203
+
+FC004\0181R=Donations97^^DON^136
+FC004\0182R=Donations98^^DON^141
+FC004\0183R=Donations99^^DON^90
+FC004\0184R=Donations2000^^DON^95
+FC004\0185R=Donations2000^^DON^100
+
+// comp summary-------------------------------------------------
+FC005\0021R=101 Employment Income^^YRSUM_1^009
+FC005\0022R=102 Commissions on T4's^^YRSUM_1^014
+FC005\0023R=104 Other employment income^^YRSUM_1^019
+FC005\0025R=113 OAS^^YRSUM_1^024
+FC005\0026R=114 Canada or Quebec Pension^^YRSUM_1^029
+FC005\0046R=152 Disability benefits^^YRSUM_1^034
+FC005\0027R=115 Other pensions^^YRSUM_1^039
+FC005\0029R=119 UI benefits^^YRSUM_1^044
+FC005\0030R=120 Taxable dividends^^YRSUM_1^049
+FC005\0031R=121 Interest^^YRSUM_1^054
+FC005\0032R=122 Partnership Income^^YRSUM_1^059
+FC005\0033R=126 Rental income - Net^^YRSUM_1^064
+FC005\0034R=127 Taxable capital gains^^YRSUM_1^069
+FC005\0035R=128 Alimony/separation income^^YRSUM_1^074
+FC005\0069R=129 RRSP income^^YRSUM_1^079
+FC005\0037R=130 Other income^^YRSUM_1^084
+FC005\0038R=135 Business income^^YRSUM_1^089
+FC005\0039R=137 Professional income^^YRSUM_1^094
+FC005\0040R=139 Commission income^^YRSUM_1^099
+FC005\0041R=141 Farming income^^YRSUM_1^104
+FC005\0042R=143 Fishing income^^YRSUM_1^109
+//FC000\000R=133 Worker's Compensation^^YRSUM_1^094
+FC005\0026R=145 Social assistance payments^^YRSUM_1^119
+FC005\0063R=146 Net federal supplement^^YRSUM_1^124
+FC005\0043R=150 Total Income^^YRSUM_1^129
+
+FC006\0011R=206 Pension adjustment^^YRSUM_1^134
+FC006\0022R=207 RPP  contributions^^YRSUM_1^139
+FC006\0023R=208 RRSP contributions^^YRSUM_1^144
+FC006\0024R=209 Sask Pension Plan^^YRSUM_1^149
+FC006\0025R=212 Union\ professional dues^^YRSUM_1^154
+FC006\0026R=214 Child care expenses^^YRSUM_1^159
+FC006\0038R=215 Attendant care expenses^^YRSUM_1^164
+FC006\0027R=217 Business investment losses^^YRSUM_1^169
+FC006\0028R=219 Moving expenses^^YRSUM_1^174
+FC006\0029R=220 Alimony/separation paid^^YRSUM_1^179
+FC006\0030R=221 Carrying charges^^YRSUM_1^184
+FC006\0031R=224 Expl. and development^^YRSUM_1^189
+FC006\0032R=229 Other employment expenses^^YRSUM_1^194
+FC006\0033R=232 Other deductions^^YRSUM_1^199
+FC006\0040R=235 Social Benefits repayment^^YRSUM_1^204
+FC006\0035R=236 Net Income^^YRSUM_1^209
+//FC000\000R=237 Acc. frwrd avrg withdrawal^^YRSUM_2^009
+FC006\0041R=248 Employee home reloc. loan^^YRSUM_2^014
+FC006\0042R=249 Stock and shares deduction^^YRSUM_2^019
+FC006\0043R=250 Other payments deduction^^YRSUM_2^024
+FC006\0044R=251 Losses of other years^^YRSUM_2^029
+FC006\0045R=252 Non-cap losses of other yrs^^YRSUM_2^034
+FC006\0046R=253 Net Cap losses of other yrs^^YRSUM_2^039
+FC006\0047R=254 Capital gains deduction^^YRSUM_2^044
+FC006\0048R=255 Northern residents ded.^^YRSUM_2^049
+FC006\0049R=256 Additional deductions^^YRSUM_2^054
+FC006\0061R=260 Taxable Income^^YRSUM_2^059
+
+FC076\0011R=300 Basic personal amount^^YRSUM_2^064
+FC076\0012R=301 Age amount^^YRSUM_2^069
+FC076\0013R=303 Spousal amount^^YRSUM_2^074
+FC076\0014R=305 Equivalent to spouse amt^^YRSUM_2^079
+FC076\0015R=306 Infirm dependants^^YRSUM_2^084
+FC076\0016R=308 CPP contribut.^^YRSUM_2^094
+FC076\0017R=310 CPP on self-empl. earnings^^YRSUM_2^099
+FC076\0018R=312 UIC premiums^^YRSUM_2^104
+FC076\0019R=314 Pension Income Amount^^YRSUM_2^109
+FC076\0080R=315 Caregiver amount^^YRSUM_2^114
+FC076\0020R=316 Disability for self^^YRSUM_2^119
+FC076\0021R=318 Disability for dependants^^YRSUM_2^124
+FC076\0022R=319 Interest paid on your student loans^^YRSUM_2^129
+//FC000\000R=320 Tuition fees for self^^YRSUM_2^134
+//FC000\000R=322 Education amount for self^^YRSUM_2^144
+FC076\0024R=324 Transfers from child^^YRSUM_2^154
+FC076\0025R=326 Transfers from spouse^^YRSUM_2^159
+FC076\0001R=330 Medical expenses^^YRSUM_2^164
+FC076\0026R=332 Medical expenses^^YRSUM_2^169
+FC076\0028R=338 Non-refundable Tax credits^^YRSUM_2^174
+FC076\0031R=349 Charitable donations^^YRSUM_2^179
+FC076\0061R=350 Total Non-Refundable Crdts^^YRSUM_2^184
+
+FC018\0032R=406 Federal Tax^^YRSUM_3^009
+FC008\0008R=410 Fed. pol. contr. tax credit^^YRSUM_3^019
+FC008\0009R=412 Investment tax credit^^YRSUM_3^024
+FC008\0006R=413 Labour-Sponsored Funds\Cost^^YRSUM_3^029
+FC008\0010R=414 Labour-Sponsored Funds Crdt^^YRSUM_3^034
+FC008\0025R=418 Additional tax on RESP income^^YRSUM_3^039
+//FC000\000R=419 Federal individual surtax^^YRSUM_3^044
+FC008\0005R=420 Net Federal Tax^^YRSUM_3^049
+FC008\0031R=421 CPP on self-employment^^YRSUM_3^054
+FC008\0032R=422 Social Benefits Repayment^^YRSUM_3^059
+FC008\0026R=428 Provincial Tax^^YRSUM_3^064
+//FC000\000R=431 Net Provincial Tax^^YRSUM_3^134
+FC008\0034R=435 Total Tax Payable^^YRSUM_3^069
+FC008\0055R=437 Total Tax per slips^^YRSUM_3^074
+//FC000\000R=438 Quebec Tax deducted xfer^^YRSUM_3^079
+//FC000\000R=439 Tax applicable to Fed. Tax^^YRSUM_3^084
+FC008\0041R=440 Refundable Quebec Abatement^^YRSUM_3^089
+FC008\0048R=448 CPP Overpayment^^YRSUM_3^094
+FC008\0049R=450 UI Overpayment^^YRSUM_3^099
+FC008\0050R=454 Refund of ITC^^YRSUM_3^104
+FC008\0051R=456 Part XII.2 Tax Credit^^YRSUM_3^109
+FC008\0047R=457 Empl/Partner GST rebate^^YRSUM_3^114
+FC008\0058R=476 Tax paid by instalments^^YRSUM_3^119
+//FC000\000R=478 Forward averaging tax crdt^^YRSUM_3^124
+FC008\0053R=479 Provincial Tax Credits^^YRSUM_3^129
+//FC000\000R=480 Alberta SS Plan Credit^^YRSUM_3^134
+FC008\0062R=484 Refund^^YRSUM_3^139
+FC008\0063R=485 Balance Due^^YRSUM_3^144
+
+// 2001
+FC095\0005R=101 Employment Income^^YRSUM_1^010
+//FC000\000R=113 OAS^^YRSUM_1^025
+//FC000\000R=114 Canada or Quebec Pension^^YRSUM_1^030
+//FC000\000R=152 Disability benefits^^YRSUM_1^034
+FC095\0009R=115 Other pensions^^YRSUM_1^040
+FC095\0013R=119 UI benefits^^YRSUM_1^045
+//FC000\000R=120 Taxable dividends^^YRSUM_1^050
+FC095\0017R=121 Interest^^YRSUM_1^055
+//FC000\000R=122 Partnership Income^^YRSUM_1^060
+FC095\0021R=126 Rental income - Net^^YRSUM_1^065
+FC095\0025R=127 Taxable capital gains^^YRSUM_1^070
+FC095\0029R=128 Alimony/separation income^^YRSUM_1^075
+FC095\0033R=129 RRSP income^^YRSUM_1^080
+//FC000\000R=130 Other income^^YRSUM_1^085
+FC095\0037R=135 Business income^^YRSUM_1^090
+//FC000\000R=133 Worker's Compensation^^YRSUM_1^115
+FC095\0041R=145 Social assistance payments^^YRSUM_1^120
+//FC000\000R=146 Net federal supplement^^YRSUM_1^124
+FC095\0045R=150 Total Income^^YRSUM_1^130
+//FC000\000R=206 Pension adjustment^^YRSUM_1^135
+FC095\0049R=207 RPP  contributions^^YRSUM_1^140
+FC095\0053R=208 RRSP contributions^^YRSUM_1^145
+//FC000\000R=209 Sask Pension Plan^^YRSUM_1^149
+FC095\0057R=212 Union\ professional dues^^YRSUM_1^155
+FC095\0065R=214 Child care expenses^^YRSUM_1^160
+//FC000\000R=215 Attendant care expenses^^YRSUM_1^165
+//FC000\000R=217 Business investment losses^^YRSUM_1^170
+FC095\0061R=219 Moving expenses^^YRSUM_1^175
+FC095\0077R=220 Alimony/separation paid^^YRSUM_1^180
+FC095\0069R=221 Carrying charges^^YRSUM_1^185
+//FC000\000R=224 Expl. and development^^YRSUM_1^190
+FC095\0073R=229 Other employment expenses^^YRSUM_1^195
+//FC000\000R=232 Other deductions^^YRSUM_1^200
+FC095\0081R=235 Social Benefits repayment^^YRSUM_1^205
+FC095\0085R=236 Net Income^^YRSUM_1^210
+//FC000\000R=237 Acc. frwrd avrg withdrawal^^YRSUM_2^174
+//FC000\000R=248 Employee home reloc. loan^^YRSUM_2^015
+//FC000\000R=249 Stock and shares deduction^^YRSUM_2^020
+FC095\0101R=250 Other payments deduction^^YRSUM_2^025
+FC095\0093R=251 Losses of other years^^YRSUM_2^030
+//FC000\000R=252 Non-cap losses of other yrs^^YRSUM_2^034
+//FC000\000R=253 Net Cap losses of other yrs^^YRSUM_2^040
+FC095\0089R=254 Capital gains deduction^^YRSUM_2^045
+//FC000\000R=255 Northern residents ded.^^YRSUM_2^050
+FC095\0105R=256 Additional deductions^^YRSUM_2^055
+FC095\0109R=260 Taxable Income^^YRSUM_2^060
+
+FC095\0117R=300 Basic personal amount^^YRSUM_2^065
+//FC000\000R=301 Age amount^^YRSUM_2^070
+//FC000\000R=303 Spousal amount^^YRSUM_2^075
+//FC000\000R=305 Equivalent to spouse amt^^YRSUM_2^079
+//FC000\000R=306 Infirm dependants^^YRSUM_2^085
+FC095\0121R=308 CPP contribut.^^YRSUM_2^095
+//FC000\000R=310 CPP on self-empl. earnings^^YRSUM_2^099
+FC095\0125R=312 UIC premiums^^YRSUM_2^105
+//FC000\000R=314 Pension Income Amount^^YRSUM_2^110
+//FC000\000R=315 Caregiver amount^^YRSUM_2^115
+//FC000\000R=316 Disability for self^^YRSUM_2^120
+//FC000\000R=318 Disability for dependants^^YRSUM_2^124
+//FC000\000R=319 Interest paid on your student loans^^YRSUM_2^130
+//FC000\000R=320 Tuition fees for self^^YRSUM_2^135
+//FC000\000R=322 Education amount for self^^YRSUM_2^058
+//FC000\000R=324 Transfers from child^^YRSUM_2^154
+//FC000\000R=326 Transfers from spouse^^YRSUM_2^160
+//FC000\000R=330 Medical expenses^^YRSUM_2^164
+FC095\0129R=332 Medical expenses^^YRSUM_2^170
+//FC000\000R=338 Non-refundable Tax credits^^YRSUM_2^174
+FC095\0145R=349 Charitable donations^^YRSUM_2^180
+FC095\0141R=350 Total Non-Refundable Crdts^^YRSUM_2^185
+
+FC095\0113R=406 Federal Tax^^YRSUM_3^010
+//FC000\000R=410 Fed. pol. contr. tax credit^^YRSUM_3^019
+//FC000\000R=412 Investment tax credit^^YRSUM_3^024
+//FC000\000R=413 Labour-Sponsored Funds\Cost^^YRSUM_3^029
+//FC000\000R=414 Labour-Sponsored Funds Crdt^^YRSUM_3^035
+//FC000\000R=418 Additional tax on RESP income^^YRSUM_3^040
+//FC000\000R=419 Federal individual surtax^^YRSUM_3^044
+
+//FC000\000R=420 Net Federal Tax^^YRSUM_3^049
+//FC000\000R=421 CPP on self-employment^^YRSUM_3^055
+FC095\0169R=422 Social Benefits Repayment^^YRSUM_3^060
+FC095\0165R=428 Provincial Tax^^YRSUM_3^065
+//FC000\000R=431 Net Provincial Tax^^YRSUM_3^134
+FC095\0173R=435 Total Tax Payable^^YRSUM_3^070
+FC095\0177R=437 Total Tax per slips^^YRSUM_3^075
+//FC000\000R=438 Quebec Tax deducted xfer^^YRSUM_3^150
+//FC000\000R=439 Tax applicable to Fed. Tax^^YRSUM_3^154
+//FC000\000R=440 Refundable Quebec Abatement^^YRSUM_3^090
+FC095\0185R=448 CPP Overpayment^^YRSUM_3^095
+//FC000\000R=450 UI Overpayment^^YRSUM_3^100
+//FC000\000R=454 Refund of ITC^^YRSUM_3^105
+//FC000\000R=456 Part XII.2 Tax Credit^^YRSUM_3^110
+FC095\0193R=457 Empl/Partner GST rebate^^YRSUM_3^115
+FC095\0181R=476 Tax paid by instalments^^YRSUM_3^120
+//FC000\000R=478 Forward averaging tax crdt^^YRSUM_3^124
+FC095\0197R=479 Provincial Tax Credits^^YRSUM_3^130
+//FC000\000R=480 Alberta SS Plan Credit^^YRSUM_3^134
+FC095\0209R=484 Refund^^YRSUM_3^140
+//FC000\000R=485 Balance Due^^YRSUM_3^144
+//----------------------------------------------------
+
+// 2000
+FC095\0006R=101 Employment Income^^YRSUM_1^011
+//FC000\000R=113 OAS^^YRSUM_1^025
+//FC000\000R=114 Canada or Quebec Pension^^YRSUM_1^030
+//FC000\000R=152 Disability benefits^^YRSUM_1^034
+FC095\0010R=115 Other pensions^^YRSUM_1^041
+FC095\0014R=119 UI benefits^^YRSUM_1^046
+//FC000\000R=120 Taxable dividends^^YRSUM_1^050
+FC095\0018R=121 Interest^^YRSUM_1^056
+//FC000\000R=122 Partnership Income^^YRSUM_1^060
+FC095\0022R=126 Rental income - Net^^YRSUM_1^066
+FC095\0026R=127 Taxable capital gains^^YRSUM_1^071
+FC095\0030R=128 Alimony/separation income^^YRSUM_1^076
+FC095\0034R=129 RRSP income^^YRSUM_1^081
+//FC000\000R=130 Other income^^YRSUM_1^086
+FC095\0038R=135 Business income^^YRSUM_1^091
+//FC000\000R=133 Worker's Compensation^^YRSUM_1^115
+FC095\0042R=145 Social assistance payments^^YRSUM_1^121
+//FC000\000R=146 Net federal supplement^^YRSUM_1^124
+FC095\0046R=150 Total Income^^YRSUM_1^131
+//FC000\000R=206 Pension adjustment^^YRSUM_1^135
+FC095\0050R=207 RPP  contributions^^YRSUM_1^141
+FC095\0054R=208 RRSP contributions^^YRSUM_1^146
+//FC000\000R=209 Sask Pension Plan^^YRSUM_1^149
+FC095\0058R=212 Union\ professional dues^^YRSUM_1^156
+FC095\0066R=214 Child care expenses^^YRSUM_1^161
+//FC000\000R=215 Attendant care expenses^^YRSUM_1^165
+//FC000\000R=217 Business investment losses^^YRSUM_1^170
+FC095\0062R=219 Moving expenses^^YRSUM_1^176
+FC095\0078R=220 Alimony/separation paid^^YRSUM_1^181
+FC095\0070R=221 Carrying charges^^YRSUM_1^186
+//FC000\000R=224 Expl. and development^^YRSUM_1^190
+FC095\0074R=229 Other employment expenses^^YRSUM_1^196
+//095\0000R=232 Other deductions^^YRSUM_1^200
+FC095\0082R=235 Social Benefits repayment^^YRSUM_1^206
+FC095\0086R=236 Net Income^^YRSUM_1^211
+//FC000\000R=237 Acc. frwrd avrg withdrawal^^YRSUM_2^174
+//FC000\000R=248 Employee home reloc. loan^^YRSUM_2^015
+//FC000\000R=249 Stock and shares deduction^^YRSUM_2^020
+FC095\0102R=250 Other payments deduction^^YRSUM_2^026
+FC095\0094R=251 Losses of other years^^YRSUM_2^031
+//FC000\000R=252 Non-cap losses of other yrs^^YRSUM_2^034
+//FC000\000R=253 Net Cap losses of other yrs^^YRSUM_2^040
+FC095\0090R=254 Capital gains deduction^^YRSUM_2^046
+//FC000\000R=255 Northern residents ded.^^YRSUM_2^050
+FC095\0106R=256 Additional deductions^^YRSUM_2^056
+FC095\0110R=260 Taxable Income^^YRSUM_2^061
+
+FC095\0118R=300 Basic personal amount^^YRSUM_2^066
+//FC000\000R=301 Age amount^^YRSUM_2^070
+//FC000\000R=303 Spousal amount^^YRSUM_2^075
+//FC000\000R=305 Equivalent to spouse amt^^YRSUM_2^079
+//FC000\000R=306 Infirm dependants^^YRSUM_2^085
+FC095\0122R=308 CPP contribut.^^YRSUM_2^096
+//FC000\000R=310 CPP on self-empl. earnings^^YRSUM_2^099
+FC095\0126R=312 UIC premiums^^YRSUM_2^106
+//FC000\000R=314 Pension Income Amount^^YRSUM_2^110
+//FC000\000R=315 Caregiver amount^^YRSUM_2^115
+//FC000\000R=316 Disability for self^^YRSUM_2^120
+//FC000\000R=318 Disability for dependants^^YRSUM_2^124
+//FC000\000R=319 Interest paid on your student loans^^YRSUM_2^130
+//FC000\000R=320 Tuition fees for self^^YRSUM_2^135
+//FC000\000R=322 Education amount for self^^YRSUM_2^058
+//FC000\000R=324 Transfers from child^^YRSUM_2^154
+//FC000\000R=326 Transfers from spouse^^YRSUM_2^160
+//FC000\000R=330 Medical expenses^^YRSUM_2^164
+FC095\0130R=332 Medical expenses^^YRSUM_2^171
+//FC000\000R=338 Non-refundable Tax credits^^YRSUM_2^174
+FC095\0146R=349 Charitable donations^^YRSUM_2^181
+FC095\0142R=350 Total Non-Refundable Crdts^^YRSUM_2^186
+
+FC095\0114R=406 Federal Tax^^YRSUM_3^011
+//FC000\000R=410 Fed. pol. contr. tax credit^^YRSUM_3^019
+//FC000\000R=412 Investment tax credit^^YRSUM_3^024
+//FC000\000R=413 Labour-Sponsored Funds\Cost^^YRSUM_3^029
+//FC000\000R=414 Labour-Sponsored Funds Crdt^^YRSUM_3^035
+//FC000\000R=418 Additional tax on RESP income^^YRSUM_3^040
+//FC000\000R=419 Federal individual surtax^^YRSUM_3^044
+
+//FC000\000R=420 Net Federal Tax^^YRSUM_3^049
+//FC000\000R=421 CPP on self-employment^^YRSUM_3^055
+FC095\0170R=422 Social Benefits Repayment^^YRSUM_3^061
+FC095\0166R=428 Provincial Tax^^YRSUM_3^066
+//FC000\000R=431 Net Provincial Tax^^YRSUM_3^134
+FC095\0174R=435 Total Tax Payable^^YRSUM_3^071
+FC095\0178R=437 Total Tax per slips^^YRSUM_3^076
+//FC000\000R=438 Quebec Tax deducted xfer^^YRSUM_3^150
+//FC000\000R=439 Tax applicable to Fed. Tax^^YRSUM_3^154
+//FC000\000R=440 Refundable Quebec Abatement^^YRSUM_3^090
+FC095\0186R=448 CPP Overpayment^^YRSUM_3^096
+//FC000\000R=450 UI Overpayment^^YRSUM_3^100
+//FC000\000R=454 Refund of ITC^^YRSUM_3^105
+//FC000\000R=456 Part XII.2 Tax Credit^^YRSUM_3^110
+FC095\0194R=457 Empl/Partner GST rebate^^YRSUM_3^116
+FC095\0182R=476 Tax paid by instalments^^YRSUM_3^121
+//FC000\000R=478 Forward averaging tax crdt^^YRSUM_3^124
+FC095\0198R=479 Provincial Tax Credits^^YRSUM_3^131
+//FC000\000R=480 Alberta SS Plan Credit^^YRSUM_3^134
+FC095\0210R=484 Refund^^YRSUM_3^141
+//FC000\000R=485 Balance Due^^YRSUM_3^144
+
+//---------------------------------------------------------
+// 1999
+FC095\0007R=101 Employment Income^^YRSUM_1^012
+//FC000\000R=113 OAS^^YRSUM_1^026
+//FC000\000R=114 Canada or Quebec Pension^^YRSUM_1^031
+//FC000\000R=152 Disability benefits^^YRSUM_1^035
+FC095\0011R=115 Other pensions^^YRSUM_1^042
+FC095\0015R=119 UI benefits^^YRSUM_1^047
+//FC000\000R=120 Taxable dividends^^YRSUM_1^051
+FC095\0019R=121 Interest^^YRSUM_1^057
+//FC000\000R=122 Partnership Income^^YRSUM_1^060
+FC095\0023R=126 Rental income - Net^^YRSUM_1^067
+FC095\0027R=127 Taxable capital gains^^YRSUM_1^072
+FC095\0031R=128 Alimony/separation income^^YRSUM_1^077
+FC095\0035R=129 RRSP income^^YRSUM_1^082
+//FC000\000R=130 Other income^^YRSUM_1^086
+FC095\0039R=135 Business income^^YRSUM_1^092
+//FC000\000R=133 Worker's Compensation^^YRSUM_1^115
+FC095\0043R=145 Social assistance payments^^YRSUM_1^122
+//FC000\000R=146 Net federal supplement^^YRSUM_1^124
+FC095\0047R=150 Total Income^^YRSUM_1^132
+//FC000\000R=206 Pension adjustment^^YRSUM_1^135
+FC095\0051R=207 RPP  contributions^^YRSUM_1^142
+FC095\0055R=208 RRSP contributions^^YRSUM_1^147
+//FC000\000R=209 Sask Pension Plan^^YRSUM_1^149
+FC095\0059R=212 Union\ professional dues^^YRSUM_1^157
+FC095\0067R=214 Child care expenses^^YRSUM_1^162
+//FC000\000R=215 Attendant care expenses^^YRSUM_1^165
+//FC000\000R=217 Business investment losses^^YRSUM_1^170
+FC095\0063R=219 Moving expenses^^YRSUM_1^177
+FC095\0079R=220 Alimony/separation paid^^YRSUM_1^182
+FC095\0071R=221 Carrying charges^^YRSUM_1^187
+//FC000\000R=224 Expl. and development^^YRSUM_1^190
+FC095\0075R=229 Other employment expenses^^YRSUM_1^197
+//FC000\000R=232 Other deductions^^YRSUM_1^201
+FC095\0083R=235 Social Benefits repayment^^YRSUM_1^207
+FC095\0087R=236 Net Income^^YRSUM_1^212
+//FC000\000R=237 Acc. frwrd avrg withdrawal^^YRSUM_2^174
+//FC000\000R=248 Employee home reloc. loan^^YRSUM_2^015
+//FC000\000R=249 Stock and shares deduction^^YRSUM_2^020
+FC095\0103R=250 Other payments deduction^^YRSUM_2^027
+FC095\0095R=251 Losses of other years^^YRSUM_2^032
+//FC000\000R=252 Non-cap losses of other yrs^^YRSUM_2^034
+//FC000\000R=253 Net Cap losses of other yrs^^YRSUM_2^040
+FC095\0091R=254 Capital gains deduction^^YRSUM_2^047
+//FC000\000R=255 Northern residents ded.^^YRSUM_2^050
+FC095\0107R=256 Additional deductions^^YRSUM_2^057
+FC095\0111R=260 Taxable Income^^YRSUM_2^062
+
+FC095\0119R=300 Basic personal amount^^YRSUM_2^067
+//FC000\000R=301 Age amount^^YRSUM_2^070
+//FC000\000R=303 Spousal amount^^YRSUM_2^075
+//FC000\000R=305 Equivalent to spouse amt^^YRSUM_2^079
+//FC000\000R=306 Infirm dependants^^YRSUM_2^085
+FC095\0123R=308 CPP contribut.^^YRSUM_2^097
+//FC000\000R=310 CPP on self-empl. earnings^^YRSUM_2^099
+FC095\0127R=312 UIC premiums^^YRSUM_2^107
+//FC000\000R=314 Pension Income Amount^^YRSUM_2^110
+//FC000\000R=315 Caregiver amount^^YRSUM_2^115
+//FC000\000R=316 Disability for self^^YRSUM_2^120
+//FC000\000R=318 Disability for dependants^^YRSUM_2^124
+//FC000\000R=319 Interest paid on your student loans^^YRSUM_2^130
+//FC000\000R=320 Tuition fees for self^^YRSUM_2^135
+//FC000\000R=322 Education amount for self^^YRSUM_2^058
+//FC000\000R=324 Transfers from child^^YRSUM_2^154
+//095\0000R=326 Transfers from spouse^^YRSUM_2^160
+//FC000\000R=330 Medical expenses^^YRSUM_2^164
+FC095\0131R=332 Medical expenses^^YRSUM_2^172
+//FC000\000R=338 Non-refundable Tax credits^^YRSUM_2^174
+FC095\0147R=349 Charitable donations^^YRSUM_2^182
+FC095\0143R=350 Total Non-Refundable Crdts^^YRSUM_2^187
+
+FC095\0115R=406 Federal Tax^^YRSUM_3^012
+//FC000\000R=410 Fed. pol. contr. tax credit^^YRSUM_3^019
+//FC000\000R=412 Investment tax credit^^YRSUM_3^024
+//FC000\000R=413 Labour-Sponsored Funds\Cost^^YRSUM_3^029
+//FC000\000R=414 Labour-Sponsored Funds Crdt^^YRSUM_3^035
+//FC000\000R=418 Additional tax on RESP income^^YRSUM_3^040
+//FC000\000R=419 Federal individual surtax^^YRSUM_3^044
+
+//FC000\000R=420 Net Federal Tax^^YRSUM_3^049
+//FC000\000R=421 CPP on self-employment^^YRSUM_3^055
+FC095\0171R=422 Social Benefits Repayment^^YRSUM_3^062
+FC095\0167R=428 Provincial Tax^^YRSUM_3^067
+//FC000\000R=431 Net Provincial Tax^^YRSUM_3^134
+FC095\0175R=435 Total Tax Payable^^YRSUM_3^072
+FC095\0179R=437 Total Tax per slips^^YRSUM_3^077
+//FC000\000R=438 Quebec Tax deducted xfer^^YRSUM_3^150
+//FC000\000R=439 Tax applicable to Fed. Tax^^YRSUM_3^154
+//FC000\000R=440 Refundable Quebec Abatement^^YRSUM_3^090
+FC095\0187R=448 CPP Overpayment^^YRSUM_3^097
+//FC000\000R=450 UI Overpayment^^YRSUM_3^100
+//FC000\000R=454 Refund of ITC^^YRSUM_3^105
+//FC000\000R=456 Part XII.2 Tax Credit^^YRSUM_3^110
+FC095\0195R=457 Empl/Partner GST rebate^^YRSUM_3^117
+FC095\0183R=476 Tax paid by instalments^^YRSUM_3^122
+//FC000\000R=478 Forward averaging tax crdt^^YRSUM_3^124
+FC095\0199R=479 Provincial Tax Credits^^YRSUM_3^132
+//FC000\000R=480 Alberta SS Plan Credit^^YRSUM_3^134
+FC095\0211R=484 Refund^^YRSUM_3^142
+//FC000\000R=485 Balance Due^^YRSUM_3^144
+
+//---------------------------------------------------------
+
+//FC016\010R=Gst Rebate^^OTHEMPL^5 fails to read????
+//FC041\122R=Gst Rebate^^OTHEMPL^5 fails to read????
+
+//FC000\000R=T1139#y-Bus name^^T1139_1#y^38
+//FC000\000R=T1139#y-ReservLYr1^^T1139_1#y^8
+//FC000\000R=T1139#y-AddIncLYr1^^T1139_1#y^10
+//FC000\000R=T1139#y-1995Inc1^^T1139_1#y^12
+//FC000\000R=T1139#y-ReservLYr2^^T1139_1#y^20
+//FC000\000R=T1139#y-AddIncLYr2^^T1139_1#y^22
+//FC000\000R=T1139#y-1995Inc2^^T1139_1#y^24
+
+//2125-------------------------------------------------
+FC036\0016R=T2125#y-Fiscal1^INCYEAR^T2125_1#y^4
+FC036\0017R=T2125#y-Fiscal2^INCYEAR^T2125_1#y^5
+FC036\0001B=T2125#y-BusOrComm^^T2125_1#y^73
+FC036\0001S=T2125#y-Bus name^^T2125_1#y^8
+FC036\0002S=T2125#y-adress1^^T2125_1#y^10
+FC036\0031S=T2125#y-City^^T2125_1#y^13
+FC036\0032S=T2125#y-postal^^T2125_1#y^14
+FC036\0005S=T2125#y-main Product^^T2125_1#y^9
+FC036\0015R=T2125#y-NAICS^NAICS^T2125_1#y^12
+FC036\0033S=T2125#y-partnership id^^T2125_1#y^15
+FC036\0034S=T2125#y-taxShelterNo^^T2125_1#y^16
+FC036\0004S=T2125#y-BusNum1^^T2125_1#y^19
+FC036\0004S=T2125#y-BusNum2^^T2125_1#y^20
+FC036\0004S=T2125#y-BusNum3^^T2125_1#y^21
+FC036\0090R=T2125#y-Percent^^T2125_1#y^18
+FC036\0035R=T2125#y-GrossInc^^T2125_5#y^23
+FC036\0126R=T2125#y-CFHomeUseCF^^T2125_3#y^31
+FC034\0130R=T2125#y-CFCEC^^T2125_5#y^42
+FC036\0091R=T2125#y-spouse percent^^T2125_3#y^38
+FC036\0019S=T2125#y-Partn1FirstNm^^T2125_3#y^58
+FC036\0044S=T2125#y-Partn1LastNm^^T2125_3#y^48
+FC036\0045S=T2125#y-Partn1Sin^^T2125_3#y^62
+FC036\0026S=T2125#y-Partn1Adress1^^T2125_3#y^45
+FC036\0092R=T2125#y-p1  percent^^T2125_3#y^41
+FC036\0020S=T2125#y-Partn2FirstNm^^T2125_3#y^59
+FC036\0046S=T2125#y-Partn2LastNm^^T2125_3#y^64
+FC036\0047S=T2125#y-Partn2Sin^^T2125_3#y^65
+FC036\0027S=T2125#y-Partn2dress1^^T2125_3#y^63
+FC036\0093R=T2125#y-p1  percent^^T2125_3#y^44
+FC036\0021S=T2125#y-Partn3FirstNm^^T2125_3#y^60
+FC036\0048S=T2125#y-Partn3LastNm^^T2125_3#y^67
+FC036\0049S=T2125#y-Partn3Sin^^T2125_3#y^68
+FC036\0028S=T2125#y-Partn3dress1^^T2125_3#y^66
+FC036\0094R=T2125#y-p1  percent^^T2125_3#y^47
+FC036\0022S=T2125#y-Partn4FirstNm^^T2125_3#y^61
+FC036\0050S=T2125#y-Partn4LastNm^^T2125_3#y^70
+FC036\0051S=T2125#y-Partn4Sin^^T2125_3#y^71
+FC036\0029S=T2125#y-Partn4dress1^^T2125_3#y^69
+FC036\0095R=T2125#y-p1 percent^^T2125_3#y^50
+
+//776-------------------------------------------------
+FC148\0013R=T776_1#y-from date^INCYEAR^T776_1#y^3
+FC148\0014R=T776_1#y-to date^INCYEAR^T776_1#y^6
+
+FC148\0012S=T776_1#y-Rental Name^^T776_1#y^109
+FC148\0001S=T776_1#y-Rental Addy^^T776_1#y^110
+FC148\0002S=T776_1#y-Rentat Post^UPPERCASE^T776_1#y^111
+
+FC148\0010S=T776_1#y-partnershId^^T776_1#y^11
+FC148\0011S=T776_1#y-tax sh no^^T776_1#y^13
+FC148\0014S=T776_1#y-bus no^^T776_1#y^15
+FC148\0014S=T776_1#y-bus no^^T776_1#y^16
+FC148\0014S=T776_1#y-bus no^^T776_1#y^17
+FC148\0072R=T776_1#y-percent^^T776_1#y^18
+FC148\0021R=T776_1#y-Income^^T776_1#y^47
+
+FC148\0015S=T776_1#y-str^^T776_1#y^45
+FC148\0012R=T776_1#y-Units_1^^T776_1#y^46
+FC148\0016S=T776_1#y-str^^T776_1#y^48
+FC148\0015R=T776_1#y-Units^^T776_1#y^49
+FC148\0017S=T776_1#y-str^^T776_1#y^51
+FC148\0016R=T776_1#y-Units^^T776_1#y^52
+
+FC148\0001R=T776_1#y-sp percent^^T776_1#y^24
+
+FC148\0025S=T776_1#y-prtn1 f-name^^T776_1#y^25
+FC148\0027S=T776_1#y-prtn1 l-name^^T776_1#y^26
+FC148\0028S=T776_1#y-prtn1 sin^^T776_1#y^120
+FC148\0026S=T776_1#y-prtn1 addr^^T776_1#y^121
+FC148\0002R=T776_1#y-prtnr1 percent^^T776_1#y^28
+FC148\0003S=T776_1#y-prtn2 f-name^^T776_1#y^29
+FC148\0029S=T776_1#y-prtn2 l-name^^T776_1#y^30
+FC148\0030S=T776_1#y-prtn2 sin^^T776_1#y^122
+FC148\0004S=T776_1#y-prtn2 addr^^T776_1#y^123
+FC148\0003R=T776_1#y-prtnr2 percent^^T776_1#y^32
+FC148\0005S=T776_1#y-prtn3 f-name^^T776_1#y^33
+FC148\0031S=T776_1#y-prtn3 l-name^^T776_1#y^34
+FC148\0032S=T776_1#y-prtn3 sin^^T776_1#y^124
+FC148\0006S=T776_1#y-prtn3 addr^^T776_1#y^125
+FC148\0004R=T776_1#y-prtnr3 percent^^T776_1#y^36
+FC148\0007S=T776_1#y-prtn4 f-name^^T776_1#y^37
+FC148\0033S=T776_1#y-prtn4 l-name^^T776_1#y^38
+FC148\0034S=T776_1#y-prtn4 sin^^T776_1#y^126
+FC148\0008S=T776_1#y-prtn4 addr^^T776_1#y^127
+FC148\0005R=T776_1#y-prtnr4 percent^^T776_1#y^40
+
+// T2121 Fishing-------------------------------------------------
+// T2121 Fishing-------------------------------------------------
+FC068\0016R=T2121#y-Fiscal1^INCYEAR^T2121_1#y^4
+FC068\0017R=T2121#y-Fiscal2^INCYEAR^T2121_1#y^5
+FC068\0015R=T2121#y-Industry Code^NAICS^T2121_1#y^11
+FC068\0006S=T2121#y-Boat name^^T2121_1#y^8
+FC068\0007S=T2121#y-CV license^^T2121_1#y^10
+FC068\0002S=T2121#y-adress1^^T2121_1#y^75
+FC068\0016S=T2121#y-City^^T2121_1#y^77
+FC068\0004S=T2121#y-postal^^T2121_1#y^78
+//FC000\000R=T2121#y-Province^^T2121_1#y^14????????????
+FC068\0015S=T2121#y-Main Species^^T2121_1#y^9
+FC068\0008S=T2121#y-partnership id^^T2121_1#y^12
+FC068\0009S=T2121#y-taxShelterNo^^T2121_1#y^14
+FC068\0013S=T2121#y-BusNum1^^T2121_1#y^15
+FC068\0013S=T2121#y-BusNum2^^T2121_1#y^16
+FC068\0013S=T2121#y-BusNum3^^T2121_1#y^17
+FC068\0090R=T2121#y-Percent^^T2121_1#y^18
+FC068\0030R=T2121#y-GrossInc^^T2121_1#y^20
+
+FC068\0126R=T2121#y-CFHomeUse^^T2121_2#y^28
+FC066\0130R=T2121#y-CFCEC^^T2121_4#y^23
+
+FC068\0156R=T2121#y-Sp percent^^T2121_4#y^5
+
+FC068\0023S=T2121#y-Partn1FirstNm^^T2121_4#y^7
+FC068\0055S=T2121#y-Partn1LastNm^^T2121_4#y^39
+FC068\0056S=T2121#y-Partn1Sin^^T2121_4#y^40
+FC068\0051S=T2121#y-Partn1Adress1^^T2121_4#y^10
+FC068\0157R=T2121#y-P1 percent^^T2121_4#y^9
+
+FC068\0024S=T2121#y-Partn2FirstNm^NAICS^T2121_4#y^11
+FC068\0057S=T2121#y-Partn2LastNm^^T2121_4#y^41
+FC068\0058S=T2121#y-Partn2Sin^^T2121_4#y^42
+FC068\0052S=T2121#y-Partn2dress1^^T2121_4#y^14
+FC068\0158R=T2121#y-P2 percent^^T2121_4#y^13
+
+FC068\0025S=T2121#y-Partn3FirstNm^^T2121_4#y^15
+FC068\0059S=T2121#y-Partn3LastNm^^T2121_4#y^43
+FC068\0060S=T2121#y-Partn3Sin^^T2121_4#y^44
+FC068\0053S=T2121#y-Partn3dress1^^T2121_4#y^18
+FC068\0159R=T2121#y-P2 percent^^T2121_4#y^17
+
+FC068\0026S=T2121#y-Partn4FirstNm^^T2121_4#y^19
+FC068\0061S=T2121#y-Partn4LastNm^^T2121_4#y^45
+FC068\0062S=T2121#y-Partn4Sin^^T2121_4#y^46
+FC068\0054S=T2121#y-Partn4dress1^^T2121_4#y^22
+FC068\0160R=T2121#y-P2 percent^^T2121_4#y^21
+// T2121 Fishing END -------------------------------------------------
+
+//T2042 Farming-------------------------------------------------
+FC054\0016R=T2042#y-Fiscal1^INCYEAR^T2042_1#y^4
+FC054\0017R=T2042#y-Fiscal2^INCYEAR^T2042_1#y^5
+FC054\0015R=T2042#y-Industry Code^NAICS^T2042_1#y^17
+FC054\0001S=T2042#y-Farm Name^^T2042_1#y^8
+FC054\0002S=T2042#y-Farm Address1^^T2042_1#y^10
+FC054\0010S=T2042#y-Town Muni and Prov^^T2042_1#y^12
+FC054\0004S=T2042#y-Postal^^T2042_1#y^13
+FC054\0018R=T2042#y-Acres owned^^T2042_1#y^9
+FC054\0019R=T2042#y-Acres farmed^^T2042_1#y^11
+FC054\0007S=T2042#y-Main Product^^T2042_1#y^16
+FC054\0008S=T2042#y-partnership id^^T2042_1#y^18
+//FC000\000R=T2042#y-taxShelterNo^^T2042_1#y^20
+FC054\0005S=T2042#y-BusNum1^^T2042_1#y^21
+FC054\0005S=T2042#y-BusNum2^^T2042_1#y^22
+FC054\0005S=T2042#y-BusNum3^^T2042_1#y^23
+FC054\0170R=T2042#y-Percent^^T2042_1#y^24
+FC054\0060R=T2042#y-GrossInc^^T2042_1#y^26
+
+FC054\0126R=T2042#y-CFHomeUseCF^^T2042_5#y^32
+
+FC052\0130R=T2042#y-CFCEC^^T2042_4#y^149
+
+FC054\0156R=T2042#y-Sp percent^^T2042_5#y^42
+
+FC054\0023S=T2042#y-Partn1FirstNm^^T2042_5#y^44
+FC054\0055S=T2042#y-Partn1LastNm^^T2042_5#y^66
+FC054\0056S=T2042#y-Partn1Sin^^T2042_5#y^67
+FC054\0051S=T2042#y-Partn1Adress1^^T2042_5#y^47
+FC054\0157R=T2042#y-p1 percent^^T2042_5#y^46
+
+
+FC054\0024S=T2042#y-Partn2FirstNm^^T2042_5#y^48
+FC054\0057S=T2042#y-Partn2LastNm^^T2042_5#y^68
+FC054\0058S=T2042#y-Partn2Sin^^T2042_5#y^69
+FC054\0052S=T2042#y-Partn2dress1^^T2042_5#y^51
+FC054\0158R=T2042#y-p2 percent^^T2042_5#y^50
+
+FC054\0025S=T2042#y-Partn3FirstNm^^T2042_5#y^52
+FC054\0059S=T2042#y-Partn3LastNm^^T2042_5#y^70
+FC054\0060S=T2042#y-Partn3Sin^^T2042_5#y^71
+FC054\0053S=T2042#y-Partn3dress1^^T2042_5#y^55
+FC054\0159R=T2042#y-p3 percent^^T2042_5#y^54
+
+FC054\0026S=T2042#y-Partn4FirstNm^^T2042_5#y^56
+FC054\0061S=T2042#y-Partn4LastNm^^T2042_5#y^72
+FC054\0062S=T2042#y-Partn4Sin^^T2042_5#y^73
+FC054\0054S=T2042#y-Partn4dress1^^T2042_5#y^59
+FC054\0160R=T2042#y-p4 percent^^T2042_5#y^58
+//T2042 Farming END-------------------------------------------------
+
+//T2125 cca-------------------------------------------------
+FC035\001R=T2125#y-class1^TEST^T2125_4#y^1
+FC035\201R=T2125#y-UCC1^^T2125_4#y^2
+FC035\002R=T2125#y-class2^^T2125_4#y^11
+FC035\202R=T2125#y-UCC2^^T2125_4#y^12
+FC035\003R=T2125#y-class3^^T2125_4#y^21
+FC035\203R=T2125#y-UCC3^^T2125_4#y^22
+FC035\004R=T2125#y-class4^^T2125_4#y^31
+FC035\204R=T2125#y-UCC4^^T2125_4#y^32
+FC035\005R=T2125#y-class5^^T2125_4#y^41
+FC035\205R=T2125#y-UCC5^^T2125_4#y^42
+FC035\006R=T2125#y-class5^^T2125_4#y^51
+FC035\206R=T2125#y-UCC5^^T2125_4#y^52
+FC035\007R=T2125#y-class5^^T2125_4#y^61
+FC035\207R=T2125#y-UCC5^^T2125_4#y^62
+FC035\008R=T2125#y-class5^^T2125_4#y^71
+FC035\208R=T2125#y-UCC5^^T2125_4#y^72
+//T2125 cca END-------------------------------------------------
+
+//T2121 CCA-------------------------------------------------
+FC067\001R=T2121#y-class1^^T2121_2#y^37
+FC067\201R=T2121#y-UCC1^^T2121_2#y^38
+FC067\002R=T2121#y-class2^^T2121_2#y^47
+FC067\202R=T2121#y-UCC2^^T2121_2#y^48
+FC067\003R=T2121#y-class3^^T2121_2#y^57
+FC067\203R=T2121#y-UCC3^^T2121_2#y^58
+FC067\004R=T2121#y-class4^^T2121_2#y^67
+FC067\204R=T2121#y-UCC4^^T2121_2#y^68
+FC067\005R=T2121#y-class5^^T2121_2#y^77
+FC067\205R=T2121#y-UCC5^^T2121_2#y^78
+FC067\006R=T2121#y-class5^^T2121_2#y^87
+FC067\206R=T2121#y-UCC5^^T2121_2#y^88
+FC067\007R=T2121#y-class5^^T2121_2#y^97
+FC067\207R=T2121#y-UCC5^^T2121_2#y^98
+FC067\008R=T2121#y-class5^^T2121_2#y^107
+FC067\208R=T2121#y-UCC5^^T2121_2#y^108
+//T2121 CCA END-------------------------------------------------
+
+//T2042 CCA-------------------------------------------------
+FC053\001R=T2042#y-class1^^T2042_4#y^1
+FC053\201R=T2042#y-UCC1^^T2042_4#y^2
+FC053\002R=T2042#y-class2^^T2042_4#y^11
+FC053\202R=T2042#y-UCC2^^T2042_4#y^12
+FC053\003R=T2042#y-class3^^T2042_4#y^21
+FC053\203R=T2042#y-UCC3^^T2042_4#y^22
+FC053\004R=T2042#y-class4^^T2042_4#y^31
+FC053\204R=T2042#y-UCC4^^T2042_4#y^32
+FC053\005R=T2042#y-class5^^T2042_4#y^41
+FC053\205R=T2042#y-UCC5^^T2042_4#y^42
+FC053\006R=T2042#y-class6^^T2042_4#y^51
+FC053\206R=T2042#y-UCC6^^T2042_4#y^52
+FC053\007R=T2042#y-class7^^T2042_4#y^61
+FC053\207R=T2042#y-UCC7^^T2042_4#y^62
+FC053\008R=T2042#y-class8^^T2042_4#y^71
+FC053\208R=T2042#y-UCC8^^T2042_4#y^72
+//T2042 CCA END-------------------------------------------------
+
+//T776 CCA-------------------------------------------------
+FC166\055B=T776_2#y-Class^^T776_2#y^1
+FC166\056B=T776_2#y-Class^^T776_2#y^10
+FC166\057B=T776_2#y-Class^^T776_2#y^19
+FC166\058B=T776_2#y-Class^^T776_2#y^28
+FC166\059B=T776_2#y-Class^^T776_2#y^37
+FC166\124R=T776_2#y-UCC^^T776_2#y^2
+FC166\125R=T776_2#y-UCC^^T776_2#y^11
+FC166\126R=T776_2#y-UCC^^T776_2#y^20
+FC166\127R=T776_2#y-UCC^^T776_2#y^29
+FC166\128R=T776_2#y-UCC^^T776_2#y^38
+//T776 CCA END-------------------------------------------------

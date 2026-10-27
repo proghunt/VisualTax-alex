@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<soapenv:Envelope 
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:t2rq="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0">
+<soapenv:Body>
+<t2rq:T2EfileReturnRequest 
+xmlns:ccms="http://www.cra-arc.gc.ca/xmlns/ccms/1-1-0" 
+xmlns:ef="http://www.cra-arc.gc.ca/xmlns/ef/2025/1-0-0" 
+xmlns:sdt="http://www.cra-arc.gc.ca/xmlns/sdt/2-2-0" 
+xmlns:t106="http://www.cra-arc.gc.ca/xmlns/t106/2025/1-0-0" 
+xmlns:t2rq="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0" 
+xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.cra-arc.gc.ca/xmlns/t2rq/t2efilerequest/1-0-0 t2efilefrrmsrequest.xsd">
+<ef:TransmitterEfilerNumber>B0865</ef:TransmitterEfilerNumber>
+<ef:PasswordID>767AJ5X</ef:PasswordID>
+<ef:RepresentativeID>C4SD3QH</ef:RepresentativeID>
+<t2rq:TaxYear>2026</t2rq:TaxYear>
+<t2rq:SoftwareID>VT51</t2rq:SoftwareID>
+<t2rq:TaxForm>
+<t106:NonArmsLengthTransactionWithNonResidentInformationReturn>
+    <t106:NonArmsLengthWithNonResidentTransactionSummary>
+        <t106:SummaryActionCode>1</t106:SummaryActionCode>
+        <t106:AmendedReturnIndicator>0</t106:AmendedReturnIndicator>
+        <t106:ReportingTaxpayerIdentification>
+            <t106:Corporation>
+                <t106:CorporationName>ATEST-2026</t106:CorporationName>
+                <t106:BusinessNumber>111111118RC0001</t106:BusinessNumber>
+            </t106:Corporation>
+        </t106:ReportingTaxpayerIdentification>
+        <t106:ReportingTaxpayerAddress>
+            <t106:AddressStreetText>1283 GRYPHON </t106:AddressStreetText>
+            <t106:AddressMunicipalityName>TORONTO</t106:AddressMunicipalityName>
+            <t106:GlobalProvinceTerritoryStateCode>ON</t106:GlobalProvinceTerritoryStateCode>
+            <t106:GlobalPostalZipCode>L4W3E5</t106:GlobalPostalZipCode>
+            <t106:CountryCode>CAN</t106:CountryCode>
+        </t106:ReportingTaxpayerAddress>
+        <t106:TaxationYearData>
+            <t106:TaxationYearStartDate>2025-06-01</t106:TaxationYearStartDate>
+            <t106:TaxationYearEndDate>2026-05-31</t106:TaxationYearEndDate>
+        </t106:TaxationYearData>
+        <t106:FirstTimeFilerIndicator>0</t106:FirstTimeFilerIndicator>
+        <t106:LastReturnFilingPeriodEndDate></t106:LastReturnFilingPeriodEndDate>
+        <t106:DeclaredSlipCount>0</t106:DeclaredSlipCount>
+        <t106:SlipBoxTotalAmount>0</t106:SlipBoxTotalAmount>
+        <t106:ReportingTaxpayerGrossRevenueAmount>200000</t106:ReportingTaxpayerGrossRevenueAmount>
+        <t106:NorthAmericanIndustryClassificationSystem>
+        </t106:NorthAmericanIndustryClassificationSystem>
+        <t106:AffectedReportedAmountCompetentAuthorityIndicator>0</t106:AffectedReportedAmountCompetentAuthorityIndicator>
+        <t106:AdjustedReportedAmountForeignTaxAdministrationAssessmentIndicator>0</t106:AdjustedReportedAmountForeignTaxAdministrationAssessmentIndicator>
+        <t106:ReportingTaxpayerUltimateParentIndicator>0</t106:ReportingTaxpayerUltimateParentIndicator>
+        <t106:ReportingTaxpayerMNEIndicator>0</t106:ReportingTaxpayerMNEIndicator>
+        <t106:MNECbCRRequiredIndicator>0</t106:MNECbCRRequiredIndicator>
+        <t106:ReportingTaxpayerFileOtherReturnIndicator>0</t106:ReportingTaxpayerFileOtherReturnIndicator>
+        <t106:ReportingTaxpayerNonResidentNonMonetaryConsiderationIndicator>0</t106:ReportingTaxpayerNonResidentNonMonetaryConsiderationIndicator>
+        <t106:ReportingTaxpayerNonResidentNilConsiderationIndicator>0</t106:ReportingTaxpayerNonResidentNilConsiderationIndicator>
+        <t106:CertificationDetail>
+            <t106:ContactPersonFirstName></t106:ContactPersonFirstName>
+            <t106:ContactPersonLastName></t106:ContactPersonLastName>
+            <t106:ContactPersonPhoneNumber>()X</t106:ContactPersonPhoneNumber>
+            <t106:CertifierName> </t106:CertifierName>
+            <t106:CertificationDate>2024-07-05</t106:CertificationDate>
+            <t106:CertifierPositionTitle></t106:CertifierPositionTitle>
+        </t106:CertificationDetail>
+    </t106:NonArmsLengthWithNonResidentTransactionSummary>
+    <t106:NonArmsLengthWithNonResidentTransactionSlip>
+        <t106:SlipSequenceIdentifier>1</t106:SlipSequenceIdentifier>
+        <t106:SlipActionCode>1</t106:SlipActionCode>
+        <t106:NonResidentName></t106:NonResidentName>
+        <t106:NonResidentAddress></t106:NonResidentAddress>
+        <t106:NonResidentCountryCode></t106:NonResidentCountryCode>
+        <t106:NonResidentTypeCode></t106:NonResidentTypeCode>
+        <t106:DifferentClassificationIndicator>0</t106:DifferentClassificationIndicator>
+        <t106:RelationshipTypeCode></t106:RelationshipTypeCode>
+        <t106:NorthAmericanIndustryClassificationSystem>
+        </t106:NorthAmericanIndustryClassificationSystem>
+        <t106:Country>
+        </t106:Country>
+        <t106:ContemporaneousDocumentationIndicator>0</t106:ContemporaneousDocumentationIndicator>
+        <t106:TransferPricingMethodologyChangeIndicator>0</t106:TransferPricingMethodologyChangeIndicator>
+        <t106:InvestmentInReportEntity>
+            <t106:IncreaseAmount>111</t106:IncreaseAmount>
+            <t106:EndingBalanceAmount>111</t106:EndingBalanceAmount>
+        </t106:InvestmentInReportEntity>
+        <t106:NonArmsLengthNonResidentLoanAdvanceInvestmentIncreaseTotalAmount>111</t106:NonArmsLengthNonResidentLoanAdvanceInvestmentIncreaseTotalAmount>
+        <t106:PLOIElectionMade>0</t106:PLOIElectionMade>
+        <t106:NonArmsLengthNonResidentDerivativeContractTotalCount>0</t106:NonArmsLengthNonResidentDerivativeContractTotalCount>
+        <t106:BoxTotalAmount>111</t106:BoxTotalAmount>
+    </t106:NonArmsLengthWithNonResidentTransactionSlip>
+</t106:NonArmsLengthTransactionWithNonResidentInformationReturn>
+ </t2rq:TaxForm>
+ </t2rq:T2EfileReturnRequest>
+</soapenv:Body>
+</soapenv:Envelope>

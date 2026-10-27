@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<APPMON>
+    <APPMONTYPE>OnRead</APPMONTYPE>
+    <!-- <APPMONTYPE>OnRead</APPMONTYPE> -->
+    <!-- <APPMONTYPE>OnEfile</APPMONTYPE> -->
+    <!-- <APPMONTYPE>None</APPMONTYPE> -->
+    <APPNAMES>
+       <ELEMENT>ALL</ELEMENT>
+        <!-- <ELEMENT>NONE</ELEMENT> -->        
+        <!-- <ELEMENT>T1-2025,T2-2026,T3-2025,TF-2025,T4T5-2025,FP-2026</ELEMENT> -->        
+    </APPNAMES>
+    <PGMKEYS>
+        <ELEMENT>ALL</ELEMENT>
+        <!-- <ELEMENT>NONE</ELEMENT> -->        
+        <!-- <ELEMENT>T206-3302-4572-1232,T302-0614-6924-1337</ELEMENT> -->
+        <!-- <ELEMENT>T402-6218-5527-1980</ELEMENT> -->
+    </PGMKEYS>
+    <EXCLUDEDPGMKEYS>
+        <ELEMENT>NONE</ELEMENT>
+        <!-- <ELEMENT>T206-3302-4572-1232,T302-0614-6924-1337</ELEMENT> -->
+        <!-- <ELEMENT>T402-6218-5527-1980</ELEMENT> -->
+    </EXCLUDEDPGMKEYS>
+    <DATES>
+        <!-- <ELEMENT>ALL</ELEMENT> -->
+        <!-- <ELEMENT>NONE</ELEMENT> -->
+        <FROM>2026-02-21</FROM>        
+        <TO>2026-12-31</TO>        
+    </DATES>
+</APPMON>

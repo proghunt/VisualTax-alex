@@ -1,0 +1,1385 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'vtMobile'
+  ClientHeight = 697
+  ClientWidth = 405
+  StyleBook = StyleBookMain
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 3
+  object tcMain: TTabControl
+    Align = Client
+    Size.Width = 405.000000000000000000
+    Size.Height = 631.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = Top
+    object tabWelcome: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 101.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabWelcome'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object GridPanelLayout2: TGridPanelLayout
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = btnStart
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = wbNews
+            Row = 1
+          end>
+        RowCollection = <
+          item
+            SizeStyle = Absolute
+            Value = 70.000000000000000000
+          end
+          item
+            Value = 100.000000000000000000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object btnStart: TButton
+          Action = actStart
+          Align = Client
+          Enabled = True
+          StyledSettings = [Family, Style, FontColor]
+          Images = dmMain.ImageList1
+          ImageIndex = -1
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          TextSettings.Font.Size = 22.000000000000000000
+          Visible = True
+        end
+        object wbNews: TWebBrowser
+          Align = Client
+          Anchors = []
+          Size.Width = 30.000000000000000000
+          Size.PlatformDefault = False
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+        end
+      end
+    end
+    object tabSettings: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 101.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabSettings'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ScrollBox1: TScrollBox
+        Align = Client
+        Size.Width = 405.000000000000000000
+        Size.Height = 532.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 400.000000000000000000
+        Viewport.Height = 532.000000000000000000
+        object GridPanelLayout1: TGridPanelLayout
+          Align = Top
+          Size.Width = 400.000000000000000000
+          Size.Height = 561.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              SizeStyle = Absolute
+              Value = 160.000000000000000000
+            end
+            item
+              Value = 100.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 45.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = Label1
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = chbSettingSkipWelcomePage
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Label2
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = edSettingClientID
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = Label3
+              Row = 2
+            end
+            item
+              Column = 1
+              Control = edSettingToken
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = Label4
+              Row = 3
+            end
+            item
+              Column = 1
+              Control = edSettingCloudPath
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = Label5
+              Row = 4
+            end
+            item
+              Column = 1
+              Control = chbSettingSaveAutorization
+              Row = 4
+            end
+            item
+              Column = 2
+              Control = btnUseDefaultClientID
+              Row = 1
+            end
+            item
+              Column = 2
+              Control = btnAutorizeNow
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = lblUpdateUnStart
+              Row = 5
+            end
+            item
+              Column = 1
+              Control = chbUpdateOnStart
+              Row = 5
+            end
+            item
+              Column = 0
+              Control = lblCloudHelper
+              Row = 6
+            end
+            item
+              Column = 1
+              ColumnSpan = 2
+              Control = cbCloudHelper
+              Row = 6
+            end
+            item
+              Column = 0
+              ColumnSpan = 3
+              Control = btnUpdateDBNow
+              Row = 8
+            end
+            item
+              Column = 0
+              ColumnSpan = 3
+              Control = btnUpdateProgram
+              Row = 9
+            end
+            item
+              Column = 1
+              ColumnSpan = 2
+              Control = cbStyle
+              Row = 7
+            end
+            item
+              Column = 0
+              Control = lblStyle
+              Row = 7
+            end>
+          RowCollection = <
+            item
+              SizeStyle = Absolute
+              Value = 45.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 45.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 45.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 45.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 45.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 45.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 45.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 60.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 60.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 60.000000000000000000
+            end
+            item
+              SizeStyle = Absolute
+              Value = 60.000000000000000000
+            end>
+          object Label1: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Size.Width = 162.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Skip welcome page'
+          end
+          object chbSettingSkipWelcomePage: TCheckBox
+            Align = Left
+            Position.X = 160.000000000000000000
+            Size.Width = 65.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+          object Label2: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 45.000000000000000000
+            Size.Width = 73.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Client ID'
+          end
+          object edSettingClientID: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 3
+            TextSettings.Font.Size = 22.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+          end
+          object Label3: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 90.000000000000000000
+            Size.Width = 53.999996185302730000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Token'
+          end
+          object edSettingToken: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            OnTap = edSettingTokenTap
+            Align = Client
+            TabOrder = 5
+            Password = True
+            TextSettings.Font.Size = 22.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+          end
+          object Label4: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 135.000000000000000000
+            Size.Width = 94.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Cloud Path'
+          end
+          object edSettingCloudPath: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 7
+            TextSettings.Font.Size = 22.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+          end
+          object Label5: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 180.000000000000000000
+            Size.Width = 146.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Save autorization'
+          end
+          object chbSettingSaveAutorization: TCheckBox
+            Align = Left
+            Position.X = 160.000000000000000000
+            Position.Y = 180.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 10
+          end
+          object btnUseDefaultClientID: TButton
+            Action = actUseDefaultClientID
+            Align = Client
+            Enabled = True
+            Images = dmMain.ImageList1
+            ImageIndex = -1
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 37.000000000000000000
+            Size.Height = 37.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 12
+            Visible = True
+          end
+          object btnAutorizeNow: TButton
+            Action = actAutorizeNow
+            Align = Client
+            Enabled = True
+            Images = dmMain.ImageList1
+            ImageIndex = -1
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 37.000000000000000000
+            Size.Height = 37.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 11
+            Visible = True
+          end
+          object lblUpdateUnStart: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 225.000000000000000000
+            Size.Width = 131.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Update on start'
+          end
+          object chbUpdateOnStart: TCheckBox
+            Align = Left
+            Position.X = 160.000000000000000000
+            Position.Y = 225.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+          end
+          object lblCloudHelper: TLabel
+            Align = Left
+            AutoSize = True
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 270.000000000000000000
+            Size.Width = 107.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Cloud helper'
+          end
+          object cbCloudHelper: TComboBox
+            Align = Client
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 230.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 15
+          end
+          object btnUpdateDBNow: TButton
+            Action = actUpdateDBNow
+            Align = Client
+            Enabled = True
+            Images = dmMain.ImageList1
+            ImageIndex = -1
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 390.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 17
+            Visible = True
+          end
+          object btnUpdateProgram: TButton
+            Action = actUpdateProgram
+            Align = Client
+            Enabled = True
+            Images = dmMain.ImageList1
+            ImageIndex = -1
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 390.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 16
+            Visible = True
+          end
+          object cbStyle: TComboBox
+            Align = Client
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 230.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 18
+            OnChange = cbStyleChange
+          end
+          object lblStyle: TLabel
+            Align = Client
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Style'
+          end
+        end
+      end
+      object Panel1: TPanel
+        Align = Bottom
+        Position.Y = 532.000000000000000000
+        Size.Width = 405.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object GridPanelLayout3: TGridPanelLayout
+          Align = Client
+          Size.Width = 405.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = btnSettingsSave
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = btnSettingsCancel
+              Row = 0
+            end>
+          RowCollection = <
+            item
+              Value = 100.000000000000000000
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object btnSettingsSave: TButton
+            Action = actSettingsSave
+            Align = Client
+            Enabled = True
+            StyledSettings = [Family, Style, FontColor]
+            Images = dmMain.ImageList1
+            ImageIndex = -1
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 192.500000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            TextSettings.Font.Size = 22.000000000000000000
+            Visible = True
+          end
+          object btnSettingsCancel: TButton
+            Action = actSettingsCancel
+            Align = Client
+            Enabled = True
+            StyledSettings = [Family, Style, FontColor]
+            Images = dmMain.ImageList1
+            ImageIndex = -1
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 192.500000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            TextSettings.Font.Size = 22.000000000000000000
+            Visible = True
+          end
+        end
+      end
+    end
+    object tabWork: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 101.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabWork'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object tcWork: TTabControl
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabHeight = 49.000000000000000000
+        TabIndex = 2
+        TabOrder = 0
+        TabPosition = PlatformDefault
+        object tabWorkClients: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 16.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Clients'
+          ExplicitSize.cx = 127.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object lvClients: TListView
+            ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+            ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnItemClick = lvClientsItemClick
+            SearchVisible = True
+          end
+        end
+        object tabWorkDocuments: TTabItem
+          Touch.InteractiveGestures = [Zoom, Pan, LongTap]
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 16.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Documents'
+          ExplicitSize.cx = 127.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object lvDocuments: TListView
+            Touch.GestureManager = GestureManager1
+            ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+            ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnItemClick = lvDocumentsItemClick
+            SearchVisible = True
+          end
+        end
+        object tabWorkHTMLView: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 18.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tabWorkHTMLView'
+          ExplicitSize.cx = 130.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object wbHTMLView: TWebBrowser
+            Touch.GestureManager = GestureManager1
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.Height = 1.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+    object tabUpdate: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 102.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabUpdate'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object tcUpdate: TTabControl
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabHeight = 49.000000000000000000
+        TabIndex = 1
+        TabOrder = 0
+        TabPosition = PlatformDefault
+        object tabUpdateLogin: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 16.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tabUpdateLogin'
+          ExplicitSize.cx = 128.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object wbUpdateLogin: TWebBrowser
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.PlatformDefault = False
+            OnDidFinishLoad = wbUpdateLoginDidFinishLoad
+            OnShouldStartLoadWithRequest = wbUpdateLoginShouldStartLoadWithRequest
+          end
+          object Panel2: TPanel
+            Align = Bottom
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object GridPanelLayout4: TGridPanelLayout
+              Align = Client
+              Size.Width = 50.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              ColumnCollection = <
+                item
+                  Value = 50.000000000000000000
+                end
+                item
+                  Value = 50.000000000000000000
+                end>
+              ControlCollection = <
+                item
+                  Column = 1
+                  Control = Button2
+                  Row = 0
+                end>
+              RowCollection = <
+                item
+                  Value = 100.000000000000000000
+                end>
+              object Button2: TButton
+                Action = actCancelAuthorize
+                Align = Client
+                AutoTranslate = False
+                Enabled = True
+                Images = dmMain.ImageList1
+                ImageIndex = -1
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 15.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Visible = True
+              end
+            end
+          end
+        end
+        object tabUpdateSelectDataBase: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 16.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tabUpdateSelectDataBase'
+          ExplicitSize.cx = 128.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object lvCloudFiles: TListView
+            ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+            ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+          end
+          object lblNoDBInCloud: TLabel
+            Align = Center
+            AutoSize = True
+            Size.Width = 226.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+            Text = 'No DataBase in Your cloud.'
+            Visible = False
+          end
+          object pnlUpdateSelectDB: TPanel
+            Align = Bottom
+            Position.Y = -49.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object GridPanelLayout5: TGridPanelLayout
+              Align = Client
+              Size.Width = 50.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              ColumnCollection = <
+                item
+                  Value = 50.000000000000000000
+                end
+                item
+                  Value = 50.000000000000000000
+                end>
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = btnUpdateSelectDBBack
+                  Row = 0
+                end
+                item
+                  Column = 1
+                  Control = btnUpdateSelectDBNext
+                  Row = 0
+                end>
+              RowCollection = <
+                item
+                  Value = 100.000000000000000000
+                end
+                item
+                  SizeStyle = Auto
+                end>
+              object btnUpdateSelectDBBack: TButton
+                Align = Client
+                AutoTranslate = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 15.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Back'
+                OnClick = btnUpdateSelectDBBackClick
+              end
+              object btnUpdateSelectDBNext: TButton
+                Align = Client
+                AutoTranslate = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 15.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Next'
+                OnClick = btnUpdateSelectDBNextClick
+              end
+            end
+          end
+        end
+        object tabUpdateFinish: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 18.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tabUpdateFinish'
+          ExplicitSize.cx = 130.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          object pnlUpdateFinish: TPanel
+            Align = Bottom
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object GridPanelLayout6: TGridPanelLayout
+              Align = Client
+              Size.Width = 50.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              ColumnCollection = <
+                item
+                  Value = 50.000000000000000000
+                end
+                item
+                  Value = 50.000000000000000000
+                end>
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = btnUpdateFinishCancel
+                  Row = 0
+                end
+                item
+                  Column = 1
+                  Control = btnUpdateFinishNext
+                  Row = 0
+                end>
+              RowCollection = <
+                item
+                  Value = 100.000000000000000000
+                end
+                item
+                  SizeStyle = Auto
+                end>
+              object btnUpdateFinishCancel: TButton
+                Align = Client
+                AutoTranslate = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 15.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Back'
+                OnClick = btnUpdateFinishCancelClick
+              end
+              object btnUpdateFinishNext: TButton
+                Align = Client
+                AutoTranslate = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 15.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Next'
+                OnClick = btnUpdateFinishNextClick
+              end
+            end
+          end
+          object mmoDownloadLog: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Viewport.Width = 42.000000000000000000
+            Viewport.Height = 0.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object pnlHead: TPanel
+    Align = Top
+    Size.Width = 405.000000000000000000
+    Size.Height = 66.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'pnlHeadStyle1'
+    TabOrder = 6
+    object lblVisualTax: TLabel
+      Align = Top
+      StyledSettings = []
+      Size.Width = 405.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Times New Roman'
+      TextSettings.Font.Size = 32.000000000000000000
+      TextSettings.FontColor = claRed
+      TextSettings.HorzAlign = Center
+      TextSettings.VertAlign = Trailing
+      TextSettings.WordWrap = False
+      Text = 'VisualTax'
+    end
+    object lblMobileEdition: TLabel
+      Align = Top
+      StyledSettings = []
+      Position.Y = 42.000000000000000000
+      Size.Width = 405.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Times New Roman'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = xFF005078
+      TextSettings.HorzAlign = Center
+      Text = 'Mobile edition'
+    end
+    object btnBack: TButton
+      Action = actBack
+      Enabled = True
+      Images = dmMain.ImageList1
+      ImageIndex = -1
+      Position.X = 10.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      TabOrder = 0
+      Visible = False
+    end
+    object Image1: TImage
+      MultiResBitmap.Height = 48
+      MultiResBitmap.Width = 48
+      MultiResBitmap = <
+        item
+          Width = 48
+          Height = 48
+          PNG = {
+            89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+            87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            0C65494441546843ED99097053C719C7BFF774D83A7CC996E50BCBC607E686A1
+            0413424A0E020D218410489300069249535A4AC0E924CD4CA0A433E974A6E064
+            523234C72484DCC101CC11CE8009C60412B031F8B6B12D4BBEE543F2A9E3F5FB
+            9E9E6449966468DDE94C27FF41ECDB7DEFEDFEBEDD6F77BF7D869FF53F1623A4
+            63A64737FC3184B5DB6EB0C0240A45BCAC36A895F6DBA7ECDF9FD32F148D89C6
+            DC80E5EBB62E4C4D4E3CB9E585354289433B77EF851A5DE3FC831FEEBA20148D
+            8958211D33311C333739315EC80D4B3B2E0E583B3357C88E99C6DC0060EC99DE
+            06D8ED1C6813E300387BA6503466BA2D03B66FDFCE2ECFCA5EF2D89A57228522
+            7F6270083293B50942D6016FE7ECA08D8FC5D6581A81806EFBC8F35BA3A82D6A
+            53280AA8511FA28AAED79BDE8D56AB8ED8394BD98AF55B9FC2626F086659D64B
+            3396AFCB7E4315AE8A080D51F0854E780ED3B0B010080D51C6E21CF9F38AB52F
+            4DA377F88786C5AC58BF6575B015CA551161474AEA4DBB6FC78880BDC1C3DF32
+            BF979EAADDF0DB0DABA0A9B90D3EDD7F0C0CCDCD474536E94618A8D5DBE4894F
+            73C06CD3266852674CCD80C919A9101F1BED016FE7F0876963530B9455D44049
+            691534B5B45562F33BA66A155F94E8CCE3C00E7B34D1518B1F5E782FA8C2C3E1
+            CB83C7A051DFB467AA36E4773B76ECB00B4823E4D700822FA933BD9F9692B49E
+            E0A512095F6EB7DBE1D4B942F8F6F879B385B3364C9F3271D2E207E6416202BA
+            88205FF094A7D459D6D06880730557A0BCA6EE262B1225DD3777B662CE2F7060
+            387C1FEF0F0E5A607FDEB7A037340734C2AF018FAFCB5EAA8E52E5FDE9C5675D
+            F0EE6A6D374257B709D253B4428943B7034F9D4029E56BEA74E45ABC8B79BF33
+            8446ECFBF220F4749917E57EFCF79342131EF2EB63769BE4625B5B577B534BBB
+            50E2A9E828D57F0C4FA9765CBC4F78CA5327217CCB80557C4568628402CE81E5
+            595B9F4988D37CF2F21F9EC50524E0A37CC39D3D2628ABD24143533B7474F6C0
+            C0C010DF42709014D4AA3088D7A800E70AC830EF0DEB9DB7E2D6FDE9D779D0D1
+            D5B5F2C0873BF70BCD8C9048487DAABCB8F04642EAF43912A9243525699C503A
+            529DDD663871FE2A9CBA50043A840F42978B8F514142AC1A62A22240A990415F
+            FF20E85B3AA04EDF0A7D6858A8520EAC88F1094FD7977E2C82EA9ABA43073EDA
+            B55D68C6A702772B6A59D6E6A46010DD7CF5E58D72756484503AAC928A7A38F5
+            FD55FE7AE6E414989CAE05853C8887188673B84D6FDF003418DAC0D062048958
+            04A9DA38080F538C806F3776C227B9477A4416CBA4FD1FE7E8F9CAFD68D47556
+            DA67D00D71A0EBE9310B25C3BA74AD028E9DBD0231EA08C85AF10064CECCF00B
+            4F797225829E3D3D0DC270AF686C6E076397C9039E9E35997B8119B2D54F4E0E
+            6D129AF2AB510DB0CA129E99397DE28494644F17A29ECFFFA10432521260F9A2
+            B9209705F320FEE01D794AED20158B21352916D77B25749B7AA1BF7FC805CFE1
+            2F094391A4E484A9D7EBCCAB84E6FC6A3403303410BDB6F8FE7942D621F27972
+            9BC438353C347F2696303CD8EDC03BF3F80FD49161A040C3FB0787C086CF133C
+            2D162CC342E6EC19606780FC3FA09B079CC4CBD76F998E81D9AB8B1FB8472871
+            AC362710BEBBA7171EFFD53CF465310FE6841FB258A1E0876B70F4543E1C3FFD
+            3D7C5FF8235454DD028BD58A4B2F865288E33486362D7A9FC0452C0B2211CBC3
+            931161A14AA8A9A98F4ACE98F9556951619BD0FC08051A015C22D89533A66408
+            D9E1A5B2B256CF4F587930FABB1BBCB1BB07767FF0191CFFEE42AEBEA575BEBD
+            CB22EF63658AA6A6B65F9E3A5B90B7F7F303D0832EE31A09FC914152899837C4
+            09EF1C850969C93832406EE477145C3756AFCE56F4B1F6BB381663763B64DA6C
+            4CA6263A4CFDC2FA5510AB51BB7AEDD2D572B888BF0D2B17824C86EBB9003F68
+            B1C03BEF7F0EAD46E3565CB773846ADDC5E0EEFE0AEEEE6F3CFDC452CA627DE4
+            4A0EB709924A79186AC369486B5B07E41E3E013D3D9DAD1C482EE1ED4B0C0785
+            8341CACB47DEDDD1C7574AFF911E5DBBB90E67AA966279FE8721B1AFA8F2EB6F
+            0B6070C802AB96DCE3822790F3177F8493670BBEFEE6A39D81261E1AB1E5F082
+            7BE62E993A39C3C3E765B22010E3BE30386815466178347A7BFB418F8160A3A1
+            1903BC660C3F1AAB0EEDCB49A70A5D2E2466C55A3A063EF6F0FD307DCA049FF0
+            044A3B6C344E3E77789AB0C537CB31FC607CF5BCBB383CB1E59457D57AC0532A
+            42781A056F78BA4FF361CAC434A048F5F9754F022762C70BF5055E85BCE1296F
+            C149AA94077BC053DAD6DE099201C54FC2AB7E156CB55C311ABB5C704E50112B
+            42032478ED09EFB81652CA339ED3C1AF01BEE0292F958AF915C31D9E9E219962
+            8C7E279B53430A392ECDD8B01B3C5D4B7005A2C9EC5EE6B8768317F2EEF26980
+            3F784A4330AE19C451F05EE7717242B059325BA8C2AFAC4396BB22551102CC30
+            98147B9F5F46BD607DE5DDE53280BEDBD0A78FDCC3A7E1EAF552E8445FF78627
+            58557828987152B9C3D33DF251F4EF6CAC2AD028301C3E336942EA0830DAC949
+            BEE0BB71E9BE5E5A0979C7CFC2DBEF7D4A0D54F10FA35C1BD9D4F4CCF73A064C
+            C7EBEB0DE545D7CB4CF9853F85FFF0D3F590D4F1892097CB5CB043435668EDE8
+            86B86815DF88D3408D3A12AA6AEB3312D367F69717155E14AA7517AE405BB7C5
+            68D4CF2DBCEF6EDEE79DA0E49651186EF70F0CF21BA113DED0D406FF78FF3338
+            73B6C0505C5675B25EA7FFB0BBBBF7F530506E2F2ECEB7F295F255FB164307F0
+            871FBC77DBFCCC59424FDB31141E84CB4595A08D8F86384D240FEF348E02BEDC
+            BC1338A18D4770177C93262CF93CB90DF57CAC266AD18AA50F6178AD70C1534A
+            6785C888508C545BF90E71F6FC99F385B8345FDC7660EFAEBF084C23146815E2
+            583B9B5B8243E784A794627D8A3E3BF038499B97BB1BC9717E3CB572292C983F
+            E7114D4CF4699B5CD12D02A62B2E467372E182BB173D83F7BCE169E52178EA7D
+            77784AE9F0CFD96D7E0F33A44023406296ADD952F1FBE79E4ED368A25CB074E0
+            AE6D6CE603B1E8C8707E4D778D84F08CF73AEF79ED4869D226E148CA7159BEA5
+            6BE13BC9F94C436313BCFDEEBED2031FBF3905391CCB9C0F051A01128721CAEB
+            E70A2E7BF4B448CC422C8E02356832F7FDDBF0E362A2200437CCE6B64E0F787A
+            E6747E21C28976108303C5B74633005873E3E737AA6ACB6F35E8054007AC0C03
+            B9706C9C6AB7586C77041F142481E4841888080F811684A7939AFB3395357550
+            5E71AB784AB232A0FB904635C0A68CD706619811A2C4A39FDB84256009AE1E32
+            84A1E36130A60426C66B7FF0749FE64F7A523CBA4D107F22A3038DB7819138A9
+            2512D1F8A27AD3C8AFC45E0A781E403113A7CDFBF2BE7BE74C188F27327778A7
+            3198E5CBC4B88B528811AA94612AE347488E011A1DE8C33196D14485F36E472E
+            63EEED037D73072EC99611F0F40B552A697606555737A49515177E21B0F85440
+            031ECFCA5E131313F5D292450B784FF48677771B9BCD065674258A556857A5B3
+            7128C22BF047A343CF9B70036C6E35428FD9F1370E5FF0CEB234DC7F8A6E54A4
+            27A44E2B2B2B2ABCC9BFE0437E5721FA4A4C1F5AB39E5A11A951470584776FD8
+            F33A40D968CF6047D4EB0CF0979D1FB44983EC19FB3FC8310A681EF23B07A443
+            CCDCB0D0F048FAD0EA0BBEA3B30B74FA26AF86BD20FC95B9E5AB6BEBF9BABCE1
+            E93A214E03319A08351EAE66095823E4D785562D7BA8BABEA5274E67689E959E
+            321EB07E1E9EBE985DBE5A0C474EE49BCB2B2AABDB3B3AD511181F85A29FDF09
+            3CADF3B9874FC1B1EF2EDCBC70A548216658692ACE338A74E93E85ED397BF6E1
+            21A665F7818F76ED16B046C8AF01F9F9F91C1A71B44AD71E8B27A159E9E393D1
+            7FDBE1D0B1D3505553976767B825D39342FF5651DF5159545A31B9B6B621AA7F
+            6080FFF6C31BE3039E629B2BD74AB08EEFE04CFEC5D27663D7A669DA904DAD5D
+            839F9457D6A563C0969694188B8B809C87AFBEA5DB8D27BC4D88E3772F186D27
+            163EB39BDF090B0BF98DD1D4D9CC8278139E7973F1967BA5CC8AB52F4EE258D1
+            93787A7A6DF30B6B7DF6FC1B39FFC4C8D2BC8DC28383FBDE2AC7F73CEB58BFF5
+            D7160BF3562CBA4D5B47E7A8F0A4510D209111376EF53E68652C970FED7DAB4B
+            28F62566E9EAECF65736AF57D131D01D9E42E2BFEEDC63F866DF9BF4F727BF50
+            4F3CBB45453E8F6E731AB301E1FF2B7A6C6DF6D1AFF2CE70A5550D5C798D8EAB
+            ACD573D57506EE9B63E7B8E5EBB247DD59EF54A3EEC4772A86E12EE90D2DAE9E
+            77BA114D5AEC50FA3432A61A7B0358B69096D761EF74A4B4A6331C5BC867C650
+            B73507EE442B376E545A7B65D76C0C240B45BCB0A1AA704E3973EFDE1D0342D1
+            CFFA3F10C0BF00FA536CC0BB67FEB00000000049454E44AE426082}
+        end>
+      Anchors = [akTop, akRight]
+      Position.X = 349.000000000000000000
+      Position.Y = 8.000000000000000000
+      OnClick = actSettingsExecute
+    end
+  end
+  object AniIndicator1: TAniIndicator
+    Align = Center
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+  object pbDownLoad: TProgressBar
+    Align = Top
+    Orientation = Horizontal
+    Position.Y = 66.000000000000000000
+    Size.Width = 386.000000000000000000
+    Size.Height = 10.000000000000000000
+    Size.PlatformDefault = False
+    Value = 50.000000000000000000
+    Visible = False
+  end
+  object StyleBookMain: TStyleBook
+    UseStyleManager = True
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 7'
+        ResourcesBin = {
+          464D585F5354594C4520322E350106105370656564427574746F6E7374796C65
+          031207005450463007544C61796F757400095374796C654E616D650610537065
+          6564427574746F6E7374796C650A506F736974696F6E2E580500000000000000
+          8708400A506F736974696F6E2E590500000000000000B707400A53697A652E57
+          696474680500000000000000A205400B53697A652E4865696768740500000000
+          000000A404401453697A652E506C6174666F726D44656661756C740808546162
+          4F726465720200001254427574746F6E5374796C654F626A6563740009537479
+          6C654E616D65060A6261636B67726F756E6405416C69676E0708436F6E74656E
+          74730C536F757263654C6F6F6B7570061257696E646F777320377374796C652E
+          706E670A53697A652E57696474680500000000000000A205400B53697A652E48
+          65696768740500000000000000A404401453697A652E506C6174666F726D4465
+          6661756C740807486F744C696E6B0E010E436170496E736574732E4C65667405
+          000000000000008001400D436170496E736574732E546F700500000000000000
+          8001400F436170496E736574732E526967687405000000000000008001401043
+          6170496E736574732E426F74746F6D05000000000000008001400F536F757263
+          65526563742E4C6566740500000000000000A205400E536F7572636552656374
+          2E546F700500000000000000C5064010536F75726365526563742E5269676874
+          0500000000000000D4054011536F75726365526563742E426F74746F6D050000
+          0000000000DC064000000B466F63757365644C696E6B0E010E436170496E7365
+          74732E4C65667405000000000000008001400D436170496E736574732E546F70
+          05000000000000008001400F436170496E736574732E52696768740500000000
+          00000080014010436170496E736574732E426F74746F6D050000000000000080
+          01400F536F75726365526563742E4C6566740500000000000000A205400E536F
+          75726365526563742E546F700500000000000000AA064010536F757263655265
+          63742E52696768740500000000000000D4054011536F75726365526563742E42
+          6F74746F6D0500000000000000C2064000000A4E6F726D616C4C696E6B0E010E
+          436170496E736574732E4C65667405000000000000008001400D436170496E73
+          6574732E546F7005000000000000008001400F436170496E736574732E526967
+          6874050000000000000080014010436170496E736574732E426F74746F6D0500
+          0000000000008001400F536F75726365526563742E4C65667405000000000000
+          00A205400E536F75726365526563742E546F700500000000000000AA06401053
+          6F75726365526563742E52696768740500000000000000D4054011536F757263
+          65526563742E426F74746F6D0500000000000000C2064000000B507265737365
+          644C696E6B0E010E436170496E736574732E4C65667405000000000000008001
+          400D436170496E736574732E546F7005000000000000008001400F436170496E
+          736574732E5269676874050000000000000080014010436170496E736574732E
+          426F74746F6D05000000000000008001400F536F75726365526563742E4C6566
+          740500000000000000A205400E536F75726365526563742E546F700500000000
+          000000E0064010536F75726365526563742E52696768740500000000000000D4
+          054011536F75726365526563742E426F74746F6D0500000000000000F7064000
+          0013546F756368416E696D6174696F6E2E4C696E6B0E0000000654476C797068
+          00095374796C654E616D65060A676C7970687374796C650C4D617267696E732E
+          4C6566740500000000000000C000400B4D617267696E732E546F700500000000
+          0000008000400D4D617267696E732E5269676874050000000000000080FF3F0E
+          4D617267696E732E426F74746F6D050000000000000080004005416C69676E07
+          044C6566740A53697A652E57696474680500000000000000C004400B53697A65
+          2E4865696768740500000000000000C004401453697A652E506C6174666F726D
+          44656661756C740800001654427574746F6E5374796C65546578744F626A6563
+          7400095374796C654E616D6506047465787405416C69676E0706436C69656E74
+          064C6F636B6564090C4D617267696E732E4C656674050000000000000080FF3F
+          0B4D617267696E732E546F7005000000000000008000400D4D617267696E732E
+          5269676874050000000000000080FF3F0E4D617267696E732E426F74746F6D05
+          000000000000008000400A53697A652E576964746805000000000000009E0540
+          0B53697A652E48656967687405000000000000009404401453697A652E506C61
+          74666F726D44656661756C74080D536861646F7756697369626C650808486F74
+          436F6C6F720708636C61426C61636B0C466F6375736564436F6C6F720708636C
+          61426C61636B0B4E6F726D616C436F6C6F720708636C61426C61636B0C507265
+          73736564436F6C6F720708636C61426C61636B000000}
+      end>
+    Left = 8
+    Top = 16
+  end
+  object alMain: TActionList
+    Images = dmMain.ImageList1
+    OnUpdate = alMainUpdate
+    Left = 262
+    Top = 232
+    object actStart: TAction
+      Text = 'Start'
+      OnExecute = actStartExecute
+    end
+    object actSettingsSave: TAction
+      Text = 'Save'
+      OnExecute = actSettingsSaveExecute
+    end
+    object actSettingsCancel: TAction
+      Text = 'Cancel'
+      OnExecute = actSettingsCancelExecute
+    end
+    object actUseDefaultClientID: TAction
+      Text = '...'
+      OnExecute = actUseDefaultClientIDExecute
+    end
+    object actAutorizeNow: TAction
+      Text = '...'
+      OnExecute = actAutorizeNowExecute
+    end
+    object actCancelAuthorize: TAction
+      Text = 'Cancel'
+      OnExecute = actCancelAuthorizeExecute
+    end
+    object actSettings: TAction
+      Text = 'Settings'
+      ImageIndex = 0
+      OnExecute = actSettingsExecute
+      ImageIndex = 0
+    end
+    object actBack: TAction
+      Text = 'Back'
+      Visible = False
+      OnExecute = actBackExecute
+    end
+    object actUpdateDBNow: TAction
+      Text = 'Update DB Now'
+      OnExecute = actUpdateDBNowExecute
+    end
+    object actUpdateProgram: TAction
+      Text = 'Update program'
+      OnExecute = actUpdateProgramExecute
+    end
+  end
+  object bsClients: TBindSourceDB
+    DataSet = dmMain.qryClients
+    ScopeMappings = <>
+    Left = 136
+    Top = 176
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 68
+    Top = 221
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = bsClients
+      FieldName = 'Name'
+      Control = lvClients
+      FillExpressions = <
+        item
+          SourceMemberName = 'Detail'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = bsDocuments
+      FieldName = 'DocumentName'
+      Control = lvDocuments
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakFieldName = 'DocumentType'
+      FillHeaderFieldName = 'DocumentType'
+      FillBreakGroups = <>
+    end
+  end
+  object bsDocuments: TBindSourceDB
+    DataSet = dmMain.qryDocuments
+    ScopeMappings = <>
+    Left = 224
+    Top = 168
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 164
+    Top = 280
+    GestureData = <
+      item
+        Control = lvDocuments
+        Collection = <
+          item
+            Action = actBack
+            GestureID = sgiRight
+          end>
+      end
+      item
+        Control = wbHTMLView
+        Collection = <
+          item
+            Action = actBack
+            GestureID = sgiRight
+          end>
+      end>
+  end
+end

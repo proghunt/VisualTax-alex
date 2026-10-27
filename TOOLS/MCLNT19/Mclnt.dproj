@@ -1,0 +1,163 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{e2478110-fa75-490c-9725-b8629ef0b476}</ProjectGuid>
+    <MainSource>Mclnt.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_EnabledPackages>true</DCC_EnabledPackages>
+    <DCC_UsePackage>VCL50;VCLX50;VCLSMP50;QRPT50;VCLDB50;VCLBDE50;VCLDBX50;TEEUI50;TEEDB50;TEE50;TEEQR50;VCLIE50;INETDB50;INET50;NMFAST50;dclocx50;ibevnt50</DCC_UsePackage>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Mclnt.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Alignment>1</DCC_Alignment>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LongStrings>False</DCC_LongStrings>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Alignment>1</DCC_Alignment>
+    <DCC_LongStrings>False</DCC_LongStrings>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <Language>
+      <Language Name="ProjectLang">$00000409</Language>
+    </Language>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">1033</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">Mclnt.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="Mclnt.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="CHILDWIN.PAS">
+      <Form>MDIChild</Form>
+    </DCCReference>
+    <DCCReference Include="COMMON.PAS" />
+    <DCCReference Include="MAIN.PAS">
+      <Form>MainForm</Form>
+    </DCCReference>
+    <DCCReference Include="OUTPUT.PAS">
+      <Form>display</Form>
+    </DCCReference>
+    <DCCReference Include="PRNINFO.PAS">
+      <Form>printpanel</Form>
+    </DCCReference>
+    <DCCReference Include="UABOUT.PAS">
+      <Form>About</Form>
+    </DCCReference>
+    <DCCReference Include="UCALC.PAS" />
+    <DCCReference Include="uclients.pas">
+      <Form>Clients</Form>
+    </DCCReference>
+    <DCCReference Include="UDBRESTR.PAS">
+      <Form>Restruct</Form>
+    </DCCReference>
+    <DCCReference Include="udeclare.pas" />
+    <DCCReference Include="UDESKTOP.PAS">
+      <Form>DeskTop</Form>
+    </DCCReference>
+    <DCCReference Include="UDIROPT.PAS">
+      <Form>DirOpt</Form>
+    </DCCReference>
+    <DCCReference Include="UFEES.PAS">
+      <Form>Fees</Form>
+    </DCCReference>
+    <DCCReference Include="UFILEVU.PAS">
+      <Form>FileVu</Form>
+    </DCCReference>
+    <DCCReference Include="UFIXDB.PAS">
+      <Form>FixDBForm</Form>
+    </DCCReference>
+    <DCCReference Include="UIMPRTT4.PAS">
+      <Form>ImportT4</Form>
+    </DCCReference>
+    <DCCReference Include="Ukeys.pas" />
+    <DCCReference Include="ULOGON.PAS">
+      <Form>Logon</Form>
+    </DCCReference>
+    <DCCReference Include="UMERGE.PAS">
+      <Form>Merge</Form>
+    </DCCReference>
+    <DCCReference Include="UMPSWD.PAS">
+      <Form>Mpswd</Form>
+    </DCCReference>
+    <DCCReference Include="UOPTIONS.PAS">
+      <Form>Options</Form>
+    </DCCReference>
+    <DCCReference Include="UPOPLIST.PAS">
+      <Form>PopList</Form>
+    </DCCReference>
+    <DCCReference Include="UPRINT.PAS" />
+    <DCCReference Include="UPROGRES.PAS">
+      <Form>Progress</Form>
+    </DCCReference>
+    <DCCReference Include="UPRPOPT.PAS">
+      <Form>PrpOpt</Form>
+    </DCCReference>
+    <DCCReference Include="UReadEMail.pas">
+      <Form>ReadEMail</Form>
+    </DCCReference>
+    <DCCReference Include="UREBUILD.PAS">
+      <Form>Rebuild</Form>
+    </DCCReference>
+    <DCCReference Include="USTATBOX.PAS">
+      <Form>StatusBox</Form>
+    </DCCReference>
+    <DCCReference Include="UTIPS.PAS">
+      <Form>Tip</Form>
+    </DCCReference>
+    <DCCReference Include="UUSERS.PAS">
+      <Form>UserSetup</Form>
+    </DCCReference>
+    <DCCReference Include="UWARNING.PAS">
+      <Form>Warning</Form>
+    </DCCReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

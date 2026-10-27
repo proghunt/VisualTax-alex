@@ -1,0 +1,817 @@
+inherited frmADGUIxFormsQEdit: TfrmADGUIxFormsQEdit
+  Left = 303
+  Height = 540
+  Top = 144
+  Width = 547
+  BorderStyle = bsSizeable
+  Caption = 'FireDAC Query Editor'
+  ClientHeight = 540
+  ClientWidth = 547
+  OnCreate = FormCreate
+  OnShow = FormShow
+  inherited pnlTop: TPanel
+    Width = 547
+    ClientWidth = 547
+    inherited Bevel2: TBevel
+      Width = 538
+    end
+    inherited lblPrompt: TLabel
+      Width = 244
+      Caption = 'Setup query SQL, parameters, macros and options'
+    end
+  end
+  inherited pnlButtons: TPanel
+    Height = 37
+    Top = 503
+    Width = 547
+    ClientHeight = 37
+    ClientWidth = 547
+    TabOrder = 3
+    inherited Bevel3: TBevel
+      Top = 2
+      Width = 537
+    end
+    inherited btnOk: TButton
+      Left = 386
+      Top = 9
+    end
+    inherited btnCancel: TButton
+      Left = 467
+      Top = 9
+    end
+  end
+  object Splitter1: TSplitter[2]
+    Cursor = crVSplit
+    Left = 0
+    Height = 3
+    Top = 308
+    Width = 547
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object Panel16: TPanel[3]
+    Left = 0
+    Height = 269
+    Top = 39
+    Width = 547
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 269
+    ClientWidth = 547
+    TabOrder = 1
+    object pcMain: TPageControl
+      Left = 6
+      Height = 265
+      Top = 2
+      Width = 421
+      ActivePage = tsSQL
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      TabIndex = 0
+      TabOrder = 0
+      OnChanging = pcMainChanging
+      object tsSQL: TTabSheet
+        Caption = 'SQL Command'
+      end
+      object tsParameters: TTabSheet
+        Caption = 'Parameters'
+        ClientHeight = 239
+        ClientWidth = 413
+        ImageIndex = 1
+        object lbParams: TListBox
+          Left = 5
+          Height = 227
+          Top = 5
+          Width = 139
+          Anchors = [akTop, akLeft, akBottom]
+          ItemHeight = 0
+          OnClick = lbParamsClick
+          TabOrder = 0
+        end
+        object Panel19: TPanel
+          Left = 152
+          Height = 225
+          Top = 5
+          Width = 255
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BevelOuter = bvNone
+          ClientHeight = 225
+          ClientWidth = 255
+          TabOrder = 1
+          object Bevel4: TBevel
+            Left = 0
+            Height = 117
+            Top = 2
+            Width = 255
+            Align = alTop
+            Shape = bsBottomLine
+          end
+          object Bevel1: TBevel
+            Left = 0
+            Height = 63
+            Top = 119
+            Width = 255
+            Align = alTop
+            Shape = bsBottomLine
+          end
+          object Bevel7: TBevel
+            Left = 0
+            Height = 2
+            Top = 0
+            Width = 255
+            Align = alTop
+            Shape = bsSpacer
+          end
+          object Label1: TLabel
+            Left = 0
+            Height = 14
+            Top = 11
+            Width = 60
+            Caption = '&Param type:'
+            FocusControl = cbParamType
+            ParentColor = False
+          end
+          object Label2: TLabel
+            Left = 0
+            Height = 14
+            Top = 65
+            Width = 49
+            Caption = 'Data &size:'
+            FocusControl = edtDataSize
+            ParentColor = False
+          end
+          object Label3: TLabel
+            Left = 0
+            Height = 14
+            Top = 38
+            Width = 53
+            Caption = '&Data type:'
+            FocusControl = cbDataType
+            ParentColor = False
+          end
+          object Label4: TLabel
+            Left = 0
+            Height = 14
+            Top = 92
+            Width = 31
+            Caption = '&Value:'
+            FocusControl = edtValue
+            ParentColor = False
+          end
+          object Label5: TLabel
+            Left = 0
+            Height = 14
+            Top = 128
+            Width = 57
+            Caption = '&Array type:'
+            FocusControl = cbArrayType
+            ParentColor = False
+          end
+          object Label6: TLabel
+            Left = 0
+            Height = 14
+            Top = 155
+            Width = 53
+            Caption = 'Array si&ze:'
+            FocusControl = edtArraySize
+            ParentColor = False
+          end
+          object Label7: TLabel
+            Left = 0
+            Height = 14
+            Top = 191
+            Width = 42
+            Caption = 'P&osition:'
+            FocusControl = edtPosition
+            ParentColor = False
+          end
+          object cbDataType: TComboBox
+            Left = 62
+            Height = 21
+            Top = 35
+            Width = 193
+            Anchors = [akTop, akLeft, akRight]
+            ItemHeight = 13
+            OnExit = edtParametersExit
+            Style = csDropDownList
+            TabOrder = 1
+          end
+          object edtDataSize: TEdit
+            Left = 62
+            Height = 21
+            Top = 62
+            Width = 121
+            OnExit = edtParametersExit
+            TabOrder = 2
+            Text = 'edtDataSize'
+          end
+          object cbParamType: TComboBox
+            Left = 62
+            Height = 21
+            Top = 8
+            Width = 193
+            Anchors = [akTop, akLeft, akRight]
+            ItemHeight = 13
+            OnExit = edtParametersExit
+            Style = csDropDownList
+            TabOrder = 0
+          end
+          object edtValue: TEdit
+            Left = 62
+            Height = 21
+            Top = 89
+            Width = 193
+            Anchors = [akTop, akLeft, akRight]
+            OnExit = edtParametersExit
+            TabOrder = 3
+            Text = 'edtValue'
+          end
+          object cbArrayType: TComboBox
+            Left = 62
+            Height = 21
+            Top = 125
+            Width = 193
+            Anchors = [akTop, akLeft, akRight]
+            ItemHeight = 13
+            OnExit = edtParametersExit
+            Style = csDropDownList
+            TabOrder = 4
+          end
+          object edtArraySize: TEdit
+            Left = 62
+            Height = 21
+            Top = 152
+            Width = 121
+            OnExit = edtParametersExit
+            TabOrder = 5
+            Text = 'edtArraySize'
+          end
+          object edtPosition: TEdit
+            Left = 62
+            Height = 21
+            Top = 188
+            Width = 121
+            OnExit = edtParametersExit
+            TabOrder = 6
+            Text = 'edtPosition'
+          end
+        end
+      end
+      object tsMacros: TTabSheet
+        Caption = 'Macros'
+        ClientHeight = 239
+        ClientWidth = 413
+        ImageIndex = 5
+        object lbMacros: TListBox
+          Left = 5
+          Height = 226
+          Top = 5
+          Width = 139
+          Anchors = [akTop, akLeft, akBottom]
+          ItemHeight = 0
+          OnClick = lbMacrosClick
+          TabOrder = 0
+        end
+        object Panel1: TPanel
+          Left = 152
+          Height = 226
+          Top = 5
+          Width = 255
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BevelOuter = bvNone
+          ClientHeight = 226
+          ClientWidth = 255
+          TabOrder = 1
+          object Bevel9: TBevel
+            Left = 0
+            Height = 2
+            Top = 0
+            Width = 255
+            Align = alTop
+            Shape = bsSpacer
+          end
+          object Label10: TLabel
+            Left = 0
+            Height = 14
+            Top = 11
+            Width = 53
+            Caption = '&Data type:'
+            FocusControl = cbMacroType
+            ParentColor = False
+          end
+          object Label11: TLabel
+            Left = 0
+            Height = 14
+            Top = 38
+            Width = 31
+            Caption = '&Value:'
+            FocusControl = edtMacroValue
+            ParentColor = False
+          end
+          object cbMacroType: TComboBox
+            Left = 62
+            Height = 21
+            Top = 8
+            Width = 193
+            Anchors = [akTop, akLeft, akRight]
+            ItemHeight = 13
+            OnExit = edtMacrosExit
+            Style = csDropDownList
+            TabOrder = 0
+          end
+          object edtMacroValue: TEdit
+            Left = 62
+            Height = 21
+            Top = 35
+            Width = 193
+            Anchors = [akTop, akLeft, akRight]
+            OnExit = edtMacrosExit
+            TabOrder = 1
+            Text = 'edtValue'
+          end
+        end
+      end
+      object tsAdvOptions: TTabSheet
+        Caption = 'Options'
+        ClientHeight = 239
+        ClientWidth = 413
+        ImageIndex = 1
+        object ptAdvOptions: TADGUIxFormsPanelTree
+          Left = 5
+          Height = 227
+          Top = 5
+          Width = 403
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          ClientHeight = 206
+          ClientWidth = 382
+          TabOrder = 0
+          object frmFormatOptions: TfrmADGUIxFormsFormatOptions
+            Left = 240
+            Height = 177
+            Hint = 'Format Options'
+            Top = -24
+            Width = 265
+            Color = clWindow
+            Font.CharSet = RUSSIAN_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            ParentColor = False
+            ParentFont = False
+            TabOrder = 1
+            TabStop = True
+            OnModified = frmOptionsModified
+          end
+          object frmFetchOptions: TfrmADGUIxFormsFetchOptions
+            Left = 8
+            Height = 73
+            Hint = 'Fetch Options'
+            Top = 8
+            Width = 217
+            Color = clWindow
+            Font.CharSet = RUSSIAN_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            ParentColor = False
+            ParentFont = False
+            TabOrder = 0
+            OnModified = frmOptionsModified
+          end
+          object frmUpdateOptions: TfrmADGUIxFormsUpdateOptions
+            Left = 16
+            Height = 121
+            Hint = 'Update Options'
+            Top = 96
+            Width = 201
+            Color = clWindow
+            Font.CharSet = RUSSIAN_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            ParentColor = False
+            ParentFont = False
+            TabOrder = 2
+            OnModified = frmOptionsModified
+          end
+          object frmResourceOptions: TfrmADGUIxFormsResourceOptions
+            Left = 248
+            Height = 156
+            Hint = 'Resource Options'
+            Top = 184
+            Width = 417
+            Color = clWindow
+            Font.CharSet = RUSSIAN_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            ParentColor = False
+            ParentFont = False
+            TabOrder = 3
+            OnModified = frmOptionsModified
+          end
+        end
+      end
+    end
+    object pnlRight: TPanel
+      Left = 433
+      Height = 269
+      Top = 0
+      Width = 114
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 269
+      ClientWidth = 114
+      Constraints.MinHeight = 158
+      TabOrder = 1
+      object Bevel5: TBevel
+        Left = 1
+        Height = 94
+        Top = -10
+        Width = 106
+        Shape = bsBottomLine
+      end
+      object btnExecute: TButton
+        Left = 0
+        Height = 23
+        Top = 23
+        Width = 108
+        Action = acExecute
+        TabOrder = 0
+      end
+      object btnNextRecordSet: TButton
+        Left = 0
+        Height = 23
+        Top = 52
+        Width = 108
+        Action = acNextRS
+        TabOrder = 1
+      end
+      object btnQBuilder: TButton
+        Left = 0
+        Height = 23
+        Top = 119
+        Width = 108
+        Action = acQueryBuilder
+        TabOrder = 2
+      end
+      object BitBtn1: TButton
+        Left = 0
+        Height = 23
+        Top = 90
+        Width = 108
+        Action = acUpdateSQLEditor
+        TabOrder = 3
+      end
+      object cbRollback: TCheckBox
+        Left = 1
+        Height = 17
+        Top = 148
+        Width = 83
+        Caption = 'Auto Rollback'
+        TabOrder = 4
+      end
+    end
+  end
+  object pnlResult: TPanel[4]
+    Left = 0
+    Height = 192
+    Top = 311
+    Width = 547
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 192
+    ClientWidth = 547
+    TabOrder = 2
+    object pcResult: TPageControl
+      Left = 6
+      Height = 188
+      Top = 1
+      Width = 537
+      ActivePage = tsRecordSet
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      TabIndex = 0
+      TabOrder = 0
+      object tsRecordSet: TTabSheet
+        Caption = 'RecordSet'
+        ClientHeight = 162
+        ClientWidth = 529
+        object DBGrid1: TDBGrid
+          Left = 5
+          Height = 149
+          Top = 5
+          Width = 518
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          Color = clWindow
+          Columns = <>
+          DataSource = DataSource1
+          TabOrder = 0
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+        end
+      end
+      object tsStructure: TTabSheet
+        Caption = 'Structure'
+        ClientHeight = 162
+        ClientWidth = 529
+        ImageIndex = 1
+        object lvStructure: TListView
+          Left = 5
+          Height = 149
+          Top = 5
+          Width = 518
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          Columns = <
+            item
+              Caption = 'Name'
+              Width = 80
+            end
+            item
+              Caption = 'DataType'
+              Width = 100
+            end
+            item
+              Caption = 'Attributes'
+              Width = 120
+            end
+            item
+              Caption = 'Source column'
+              Width = 80
+            end
+            item
+              Caption = 'Source DataType'
+              Width = 100
+            end
+            item
+              Caption = 'Source type name'
+              Width = 130
+            end>
+          ColumnClick = False
+          RowSelect = True
+          TabOrder = 0
+          ViewStyle = vsReport
+        end
+      end
+      object tsMessages: TTabSheet
+        Caption = 'Messages'
+        ClientHeight = 162
+        ClientWidth = 529
+        ImageIndex = 2
+        object mmMessages: TMemo
+          Left = 5
+          Height = 149
+          Top = 5
+          Width = 518
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object DataSource1: TDatasource[5]
+    DataSet = FQuery
+    left = 356
+    top = 323
+  end
+  object FQuery: TADQuery[6]
+    FilterOptions = []
+    FetchOptions.AssignedValues = [evItems]
+    FetchOptions.Items = [fiBlobs, fiDetails]
+    SQL.Strings = (
+      ''
+    )
+    left = 324
+    top = 323
+  end
+  object alActions: TActionList[7]
+    Images = ilImages
+    left = 237
+    top = 324
+    object acNextRS: TAction
+      Caption = '&Next RecordSet  '
+      ImageIndex = 2
+      OnExecute = acNextRSExecute
+      OnUpdate = acNextRSUpdate
+    end
+    object acQueryBuilder: TAction
+      Caption = '&Query Builder      '
+      ImageIndex = 3
+      OnExecute = acQueryBuilderExecute
+    end
+    object acExecute: TAction
+      Caption = '&Execute               '
+      ImageIndex = 4
+      OnExecute = acExecuteExec
+      OnUpdate = acExecuteUpdate
+    end
+    object acUpdateSQLEditor: TAction
+      Caption = '&UpdateSQL Editor'
+      ImageIndex = 5
+      OnExecute = acUpdateSQLEditorExecute
+      OnUpdate = acUpdateSQLEditorUpdate
+    end
+    object acCodeEditor: TAction
+      Caption = '&Code Editor'
+    end
+  end
+  object ilImages: TImageList[8]
+    BkColor = clForeground
+    left = 236
+    top = 358
+    Bitmap = {
+      4C69060000001000000010000000000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF6B84C6FF0021A5FF0021A5FF0021
+      A5FF0021A5FF0021A5FF0021A5FF0021A5FF0021A5FF0021A5FF0021A5FF0021
+      A5FF0021A5FF6B84C6FF000000FF000000FF0021A5FFB5C6FFFF9CBDFFFF9CBD
+      FFFF9CB5FFFF9CB5FFFF9CB5FFFF638CF7FF638CF7FF638CF7FF638CF7FF526B
+      F7FF526BF7FF0021A5FF000000FF000000FF0021A5FF9494F7FF0029E7FF0029
+      E7FF0029E7FF0029E7FF0029E7FF0029E7FF0029E7FF0029E7FF0029E7FF0029
+      E7FF0029E7FF0021A5FF000000FF000000FF6B84C6FF0021A5FF0021A5FF0021
+      A5FF0021A5FF0021A5FF0021A5FF0021A5FF0021A5FF0021A5FF0021A5FF0021
+      A5FF0021A5FF6B84C6FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF6BAD84FF63A563FF63A563FF6BAD84FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF63A563FF94DE8CFF39B552FF218429FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF63A563FF94DE8CFF39B552FF218429FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF63A563FF94DE8CFF39B552FF218429FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF63A563FF94DE8CFF39B552FF218429FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF6BAD84FF63A563FF63A563FF63A5
+      63FF63A563FF63A563FF94DE8CFF39B552FF218429FF218429FF218429FF2184
+      29FF218429FF6BAD84FF000000FF000000FF63A563FF94DE8CFF94DE8CFF94DE
+      8CFF94DE8CFF94DE8CFF94DE8CFF39B552FF94DE8CFF94DE8CFF94DE8CFF94DE
+      8CFF94DE8CFF218429FF000000FF000000FF63A563FF39B552FF39B552FF39B5
+      52FF39B552FF39B552FF39B552FF39B552FF39B552FF39B552FF39B552FF39B5
+      52FF39B552FF218429FF000000FF000000FF6BAD84FF218429FF218429FF2184
+      29FF218429FF218429FF94DE8CFF39B552FF218429FF218429FF218429FF2184
+      29FF218429FF6BAD84FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF63A563FF94DE8CFF39B552FF218429FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF63A563FF94DE8CFF39B552FF218429FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF63A563FF94DE8CFF39B552FF218429FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF63A563FF94DE8CFF39B552FF218429FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF6BAD84FF218429FF218429FF6BAD84FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFB5DEB5FF73BD73FF63B563FF5AAD
+      5AFF52A552FF52A552FF4AA54AFF4AA54AFF42A542FF429C42FF399C39FF3194
+      31FF218C21FF8CBD8CFFFFFFFFFFFFFFFFFF73BD73FF9CCE9CFF8CC68CFF7BBD
+      7BFF73BD73FF6BB56BFF63B563FF63AD63FF5AAD5AFF52AD52FF4AA54AFF42A5
+      42FF319431FF187318FFFFFFFFFFFFFFFFFF6BB56BFF8CC68CFF7BBD7BFF6BB5
+      6BFF63B563FF63AD63FFB5DEB5FFFFFFFFFF4AA54AFF4AA54AFF42A542FF399C
+      39FF319431FF217B21FFFFFFFFFFFFFFFFFF5AAD5AFF7BBD7BFF73BD73FF63AD
+      63FF5AAD5AFF52A552FFFFFFFFFFFFFFFFFFFFFFFFFF319C31FF319C31FF3194
+      31FF319431FF217B21FFFFFFFFFFFFFFFFFF52A552FF6BB56BFF6BB56BFF5AAD
+      5AFF52A552FF4AA54AFF429C42FFFFFFFFFFFFFFFFFFFFFFFFFF299429FF2994
+      29FF299429FF217B21FFFFFFFFFFFFFFFFFF52A552FF63AD63FF63AD63FF5AAD
+      5AFF52A552FF4AA54AFF429C42FF399C39FFFFFFFFFFFFFFFFFFFFFFFFFF299C
+      29FF299429FF217B21FFFFFFFFFFFFFFFFFF42A542FF5AAD5AFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF219C21FF217B21FFFFFFFFFFFFFFFFFF429C42FF52A552FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF219C21FF188418FFFFFFFFFFFFFFFFFF319C31FF4AA54AFF52A552FF52A5
+      52FF4AA54AFF4AA54AFF42A542FF39AD39FFFFFFFFFFFFFFFFFFFFFFFFFF18AD
+      18FF18A518FF108410FFFFFFFFFFFFFFFFFF299429FF429C42FF4AA54AFF52A5
+      52FF4AA54AFF42A542FF42AD42FFFFFFFFFFFFFFFFFFFFFFFFFF18B518FF10AD
+      10FF10A510FF088408FFFFFFFFFFFFFFFFFF219421FF399C39FF42A542FF4AA5
+      4AFF42A542FF42A542FFFFFFFFFFFFFFFFFFFFFFFFFF21B521FF18B518FF10AD
+      10FF08A508FF087B08FFFFFFFFFFFFFFFFFF188C18FF299429FF399C39FF399C
+      39FF399C39FF39A539FFA5D6A5FFFFFFFFFF21AD21FF18AD18FF10B510FF08AD
+      08FF009C00FF007B00FFFFFFFFFFFFFFFFFF108410FF218C21FF299429FF3194
+      31FF319431FF299429FF299C29FF219C21FF18A518FF18A518FF10A510FF08A5
+      08FF009400FF006B00FFFFFFFFFFFFFFFFFF84B584FF107310FF187318FF1873
+      18FF187318FF187B18FF187B18FF107B10FF107B10FF087B08FF087B08FF007B
+      00FF007300FF7BB57BFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FF000000FF000000FF636363FFB5B5B5FF9C9C
+      9CFF8C8C8CFFA5A5A5FFDEDEDEFFCECECEFFBDBDBDFFADADADFF949C9CFF6B73
+      73FF000000FF000000FF000000FF000000FF000000FF527B84FFB5B5B5FF6363
+      63FFF7F7F7FF6B6B6BFF949494FFADADADFFB5B5B5FFC6C6C6FFBDBDBDFF9C9C
+      9CFF6B7373FF000000FF000000FF000000FF000000FF527B84FFD6D6D6FF6363
+      63FF8C8C8CFF5A5252FF949494FFC6C6C6FFC6C6C6FF000000FF000000FF5A52
+      52FF6B7373FF000000FF000000FF000000FF000000FF000000FF8C8C8CFF8C8C
+      8CFF000000FF5A5252FFA5A5A5FFB5B5B5FF5A5252FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF5A5252FFA5A5A5FF6B6B6BFF5A5252FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF635242FFA57B5AFFA56342FF846B63FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF9C9C9CFF9C9C9CFF8484
+      84FF000000FF7B736BFFF7BD7BFFCE7331FF84635AFF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF9C9C9CFFA5A5A5FFB5B5B5FFA5A5
+      A5FF848484FF63635AFFD6A573FFDE7331FF7B5A4AFF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF9C9C9CFF636363FF636363FFC6C6
+      C6FFBDBDBDFF7B7363FFDEA56BFFD67321FF734A39FF848484FF848484FF8484
+      84FF848484FF848484FF000000FF000000FF000000FF000000FF000000FFB5B5
+      B5FFC6C6C6FF736B63FFCE9C63FFD67321FF734A39FFB5B5B5FFADADADFFADAD
+      ADFFB5B5B5FFA594A5FF5A5252FF000000FF848484FF848484FF848484FFC6C6
+      C6FFBDBDBDFF736B63FFCE9C6BFFD67318FF8C5A39FF5A5252FF5A5252FF5A52
+      52FF5A5252FF636363FF000000FF000000FF848484FFB5B5B5FFBDBDBDFFB5B5
+      B5FFA5A5A5FF736B63FFA58C73FFD67318FF8C5231FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF5A5252FF5A5252FF5A52
+      52FF000000FF6B635AFF9C8463FFD67318FF945A29FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF6B635AFF9C8463FFD67318FFA55A29FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF6B7373FF8C7363FFA56321FF734A29FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF6B7373FF6B7373FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF008000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FFC0DCC0FF008000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FFC0DCC0FFC0DCC0FF008000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FFC0DCC0FF00FF00FF80E020FF008000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF80E020FF00FF00FF00FF00FF80E020FF008000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF80E020FF00FF00FF00FF00FF00FF00FF00E020FF008000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF40E0A0FF00FF00FF00FF00FF00E020FF00E000FF40E0A0FF008000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF40E0A0FF00FF00FF00E020FF00E000FF00FF00FF00E000FF00E000FF0080
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF40E000FF00E020FF00E000FF00FF00FF00E000FF00E000FF00C020FF4040
+      40FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF00E020FF00E000FF00FF00FF00E000FF00E000FF00C020FF404040FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF00E000FF00FF00FF00E000FF00E000FF00C020FF404040FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF00E000FF00E000FF00E000FF00C020FF404040FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF00E000FF00E000FF00C020FF404040FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0080
+      00FF00E000FF00C020FF404040FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF404040FF404040FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FFBDB5ADFFADA5
+      9CFF9C948CFFCE8C42FFD68431FFD67310FFD66B00FF949494FF000000FF0000
+      00FF000000FF000000FF000000FF000000FFBDB5ADFFE78C29FFC65A00FFC65A
+      00FFC65A00FFBD5200FFC65A10FFC67B42FFC67339FF5A4A31FF949494FF0000
+      00FF000000FF000000FF000000FF000000FFADA59CFFCE6310FFC67339FFD694
+      63FFDEB59CFFEFCEC6FFF7EFE7FFFFFFFFFFE7BD94FF5A4229FF848484FF0000
+      00FF000000FF000000FF000000FF000000FFAD8C6BFFCE7B42FFFFF7F7FFFFFF
+      FFFFFFFFFFFFFFFFFFFFD6EFEFFFCEE7E7FFF7BD84FF523121FF848484FF0000
+      00FF000000FF000000FF000000FF000000FF9C846BFFCE7B42FFFFF7F7FFFFFF
+      FFFFFFF7F7FFFFF7EFFFADD6D6FFCEE7E7FFF7BD94FF523121FF848484FF0000
+      00FFBDB5ADFF426BD6FF424A9CFF000000FF9C846BFFC66B29FFFFF7EFFFFFF7
+      F7FFFFF7E7FFFFF7E7FF4AADCEFFF7EFDEFFE7BD94FF633918FF8C7B63FFEFB5
+      8CFFAD9C9CFF315AD6FF4A52B5FF000000FF9C846BFFC66B29FFF7EFE7FFF7F7
+      EFFFFFF7E7FFDEE7DEFF39A5BDFFFFE7C6FFE7AD73FFC6844AFFFFCE94FFFFCE
+      94FFBD946BFF5A5A84FF6B6B6BFF000000FF9C846BFFC66B29FFFFE7D6FF39AD
+      D6FFBDD6DEFFADD6D6FF009CCEFFA59C84FFEFB58CFFFFCE94FFC6844AFF9463
+      39FF6B6B6BFF949494FF000000FF000000FF948C7BFFBD6318FFFFDEC6FFDEE7
+      DEFF009CCEFF009CCEFFBDBDA5FF949473FFD69463FF844A18FF848484FF9494
+      94FF000000FF000000FF000000FF000000FF948C7BFFBD6318FFE7CEB5FFFFEF
+      D6FFCED6CEFF009CCEFFFFDEB5FFFFC65AFFF7B573FF633921FF848484FF0000
+      00FF000000FF000000FF000000FF000000FF948C7BFFB55210FFE7C6ADFFFFE7
+      D6FFFFDEC6FFFFDEB5FFFFE7BDFFFFD684FFFFAD5AFF733910FF949494FF0000
+      00FF000000FF000000FF000000FF000000FF9C948CFFB55210FFE7BD94FFFFEF
+      D6FFFFDEC6FFFFDEB5FFF7BD84FFC6844AFF9C5229FF523121FF000000FF0000
+      00FF000000FF000000FF000000FF000000FFA59C94FFAD4A08FFDEAD7BFFEFB5
+      8CFFC67B42FF9C5229FF633921FF4A4A4AFFBDB5ADFF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FFADA59CFF9C5229FF844A21FF7342
+      21FF633921FF4A4A4AFFBDB5ADFF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FFADADA5FF8C8C8CFF6B6B6BFFBDB5
+      ADFF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF
+    }
+  end
+end

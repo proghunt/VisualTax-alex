@@ -1,0 +1,87 @@
+LazarusResources.Add('TfrmADGUIxFormsUpdateOptions','FORMDATA',[
+  'TPF0'#28'TfrmADGUIxFormsUpdateOptions'#27'frmADGUIxFormsUpdateOptions'#4'Lef'
+  +'t'#2#0#3'Top'#2#0#5'Width'#3#26#2#6'Height'#3'z'#1#4'Hint'#6#14'Update Opti'
+  +'ons'#12'Font.Charset'#7#15'RUSSIAN_CHARSET'#10'Font.Color'#7#12'clWindowTex'
+  +'t'#11'Font.Height'#2#245#9'Font.Name'#6#6'Tahoma'#10'Font.Style'#11#0#10'Pa'
+  +'rentFont'#8#8'TabOrder'#2#0#0#6'TPanel'#9'uo_Panel6'#4'Left'#2#0#3'Top'#2#0
+  +#5'Width'#3#157#1#6'Height'#2'{'#7'Caption'#6#17' General Updating'#8'TabOrd'
+  +'er'#2#2#0#12'TSpeedButton'#15'uo_SpeedButton1'#4'Left'#2#11#3'Top'#2'['#5'W'
+  +'idth'#2'K'#6'Height'#2#22#7'Caption'#6#13'Shortcuts ...'#4'Flat'#9#9'PopupM'
+  +'enu'#7#13'uo_PopupMenu1'#7'OnClick'#7#20'uo_SpeedButton1Click'#0#0#9'TCheck'
+  +'Box'#17'uo_cbEnableInsert'#4'Left'#2#11#3'Top'#2#12#5'Width'#2'^'#6'Height'
+  +#2#17#7'Caption'#6#14'Enable &insert'#8'TabOrder'#2#0#7'OnClick'#7#9'uo_Chan'
+  +'ge'#0#0#9'TCheckBox'#17'uo_cbEnableUpdate'#4'Left'#2#11#3'Top'#2'%'#5'Width'
+  +#2'Z'#6'Height'#2#17#7'Caption'#6#14'Enable u&pdate'#8'TabOrder'#2#1#7'OnCli'
+  +'ck'#7#9'uo_Change'#0#0#9'TCheckBox'#17'uo_cbEnableDelete'#4'Left'#2#11#3'To'
+  +'p'#2'>'#5'Width'#2'^'#6'Height'#2#17#7'Caption'#6#14'Enable &delete'#8'TabO'
+  +'rder'#2#2#7'OnClick'#7#9'uo_Change'#0#0#0#6'TPanel'#12'uo_GroupBox2'#4'Left'
+  +#3#5#1#3'Top'#3#128#0#5'Width'#3#244#0#6'Height'#2']'#7'Caption'#6#9' Lockin'
+  +'g '#8'TabOrder'#2#0#0#6'TLabel'#9'uo_Label1'#4'Left'#2#11#3'Top'#2#11#5'Wid'
+  +'th'#2'6'#6'Height'#2#13#7'Caption'#6#11'&Lock mode:'#12'FocusControl'#7#14
+  +'uo_cbxLockMode'#0#0#6'TLabel'#9'uo_Label2'#4'Left'#2#12#3'Top'#2'&'#5'Width'
+  +#2'4'#6'Height'#2#13#7'Caption'#6#12'Lock &point:'#12'FocusControl'#7#15'uo_'
+  +'cbxLockPoint'#0#0#9'TComboBox'#14'uo_cbxLockMode'#4'Left'#2'k'#3'Top'#2#7#5
+  +'Width'#2'}'#6'Height'#2#21#10'ItemHeight'#2#13#8'TabOrder'#2#0#7'OnClick'#7
+  +#9'uo_Change'#13'Items.Strings'#1#6#6'lmNone'#6#13'lmPessimistic'#6#12'lmOpt'
+  +'imistic'#0#0#0#9'TComboBox'#15'uo_cbxLockPoint'#4'Left'#2'k'#3'Top'#2'"'#5
+  +'Width'#2'}'#6'Height'#2#21#10'ItemHeight'#2#13#8'TabOrder'#2#1#7'OnClick'#7
+  +#9'uo_Change'#13'Items.Strings'#1#6#11'lpImmediate'#6#10'lpDeferred'#0#0#0#9
+  +'TCheckBox'#13'uo_cbLockWait'#4'Left'#2#11#3'Top'#2'B'#5'Width'#2'a'#6'Heigh'
+  +'t'#2#16#7'Caption'#6#14'&Wait for lock'#8'TabOrder'#2#2#7'OnClick'#7#9'uo_C'
+  +'hange'#0#0#0#6'TPanel'#12'uo_GroupBox4'#4'Left'#3#5#1#3'Top'#3#246#0#5'Widt'
+  +'h'#3#241#0#6'Height'#2'"'#7'Caption'#6#13' Refreshing  '#8'TabOrder'#2#1#0#6
+  +'TLabel'#6'Label1'#4'Left'#2#11#3'Top'#2#11#5'Width'#2'G'#6'Height'#2#13#7'C'
+  +'aption'#6#14'&Refresh mode:'#12'FocusControl'#7#16'uo_cbRefreshMode'#0#0#9
+  +'TComboBox'#16'uo_cbRefreshMode'#4'Left'#2'k'#3'Top'#2#7#5'Width'#2'}'#6'Hei'
+  +'ght'#2#21#10'ItemHeight'#2#13#8'TabOrder'#2#0#7'OnClick'#7#9'uo_Change'#13
+  +'Items.Strings'#1#6#8'rmManual'#6#10'rmOnDemand'#6#5'rmAll'#0#0#0#0#6'TPanel'
+  +#12'uo_GroupBox5'#4'Left'#3#5#1#3'Top'#3#30#1#5'Width'#3#244#0#6'Height'#2']'
+  +#7'Caption'#6#24' Automatic incrementing '#8'TabOrder'#2#4#0#6'TLabel'#9'uo_'
+  +'Label7'#4'Left'#2#11#3'Top'#2#4#5'Width'#2'W'#6'Height'#2#26#7'Caption'#6#31
+  +'Fetch next gener.'#13#10'value point:'#12'FocusControl'#7#26'uo_cbxFetchGen'
+  +'eratorsPoint'#0#0#6'TLabel'#9'uo_Label8'#4'Left'#2#11#3'Top'#2'%'#5'Width'#2
+  +'5'#6'Height'#2#13#7'Caption'#6#11'&Generator:'#12'FocusControl'#7#19'uo_edt'
+  +'GeneratorName'#0#0#6'TLabel'#9'uo_Label9'#4'Left'#2#11#3'Top'#2'@'#5'Width'
+  +#2'D'#6'Height'#2#13#7'Caption'#6#16'&Autoinc fields:'#12'FocusControl'#7#19
+  +'uo_edtAutoIncFields'#0#0#9'TComboBox'#26'uo_cbxFetchGeneratorsPoint'#4'Left'
+  +#2'k'#3'Top'#2#7#5'Width'#2'}'#6'Height'#2#21#10'ItemHeight'#2#13#8'TabOrder'
+  +#2#0#7'OnClick'#7#9'uo_Change'#13'Items.Strings'#1#6#6'gpNone'#6#11'gpImmedi'
+  +'ate'#6#10'gpDeferred'#0#0#0#5'TEdit'#19'uo_edtGeneratorName'#4'Left'#2'k'#3
+  +'Top'#2'"'#5'Width'#2'}'#6'Height'#2#21#8'TabOrder'#2#1#8'OnChange'#7#9'uo_C'
+  +'hange'#0#0#5'TEdit'#19'uo_edtAutoIncFields'#4'Left'#2'k'#3'Top'#2'='#5'Widt'
+  +'h'#2'}'#6'Height'#2#21#8'TabOrder'#2#2#8'OnChange'#7#9'uo_Change'#0#0#0#6'T'
+  +'Panel'#12'uo_GroupBox3'#4'Left'#2#11#3'Top'#3#129#0#5'Width'#3#244#0#6'Heig'
+  +'ht'#3#207#0#7'Caption'#6#16' Posting Changes'#8'TabOrder'#2#3#0#6'TLabel'#9
+  +'uo_Label4'#4'Left'#2#11#3'Top'#2#10#5'Width'#2'D'#6'Height'#2#13#7'Caption'
+  +#6#13'Update &mode:'#12'FocusControl'#7#16'uo_cbxUpdateMode'#0#0#6'TLabel'#9
+  +'uo_Label6'#4'Left'#2#11#3'Top'#2'%'#5'Width'#2'2'#6'Height'#2#13#7'Caption'
+  +#6#12'&Key fields:'#12'FocusControl'#7#15'uo_edtKeyFields'#0#0#6'TLabel'#9'u'
+  +'o_Label5'#4'Left'#2#11#3'Top'#2'A'#5'Width'#2'B'#6'Height'#2#13#7'Caption'#6
+  +#14'Update &table:'#12'FocusControl'#7#21'uo_edtUpdateTableName'#0#0#5'TEdit'
+  +#15'uo_edtKeyFields'#4'Left'#2'k'#3'Top'#2'"'#5'Width'#2'}'#6'Height'#2#21#8
+  +'TabOrder'#2#1#8'OnChange'#7#9'uo_Change'#0#0#5'TEdit'#21'uo_edtUpdateTableN'
+  +'ame'#4'Left'#2'k'#3'Top'#2'>'#5'Width'#2'}'#6'Height'#2#21#8'TabOrder'#2#2#8
+  +'OnChange'#7#9'uo_Change'#0#0#9'TComboBox'#16'uo_cbxUpdateMode'#4'Left'#2'k'
+  +#3'Top'#2#7#5'Width'#2'}'#6'Height'#2#21#8'TabOrder'#2#0#7'OnClick'#7#9'uo_C'
+  ,'hange'#13'Items.Strings'#1#6#10'upWhereAll'#6#14'upWhereChanged'#6#14'upWhe'
+  +'reKeyOnly'#0#0#0#9'TCheckBox'#24'uo_cbUpdateChangedFields'#4'Left'#2#11#3'T'
+  +'op'#2'Z'#5'Width'#3#163#0#6'Height'#2#17#7'Caption'#6#22'&Update changed fi'
+  +'elds'#8'TabOrder'#2#3#7'OnClick'#7#9'uo_Change'#0#0#9'TCheckBox'#24'uo_cbCo'
+  +'untUpdatedRecords'#4'Left'#2#11#3'Top'#3#136#0#5'Width'#3#163#0#6'Height'#2
+  +#17#7'Caption'#6#28'&Check updated records count'#8'TabOrder'#2#5#7'OnClick'
+  +#7#9'uo_Change'#0#0#9'TCheckBox'#18'uo_cbCheckRequired'#4'Left'#2#11#3'Top'#3
+  +#159#0#5'Width'#3#163#0#6'Height'#2#17#7'Caption'#6#29'Check "re&quired" fie'
+  +'lds flag'#8'TabOrder'#2#6#7'OnClick'#7#9'uo_Change'#0#0#9'TCheckBox'#18'uo_'
+  +'cbCheckReadOnly'#4'Left'#2#11#3'Top'#3#182#0#5'Width'#3#163#0#6'Height'#2#17
+  +#7'Caption'#6#29'Check "rea&donly" fields flag'#8'TabOrder'#2#7#7'OnClick'#7
+  +#9'uo_Change'#0#0#9'TCheckBox'#24'uo_cbUpdateNonBaseFields'#4'Left'#2#11#3'T'
+  +'op'#2'q'#5'Width'#3#163#0#6'Height'#2#17#7'Caption'#6#23'U&pdate non-base f'
+  +'ields'#8'TabOrder'#2#4#7'OnClick'#7#9'uo_Change'#0#0#0#10'TPopupMenu'#13'uo'
+  +'_PopupMenu1'#9'AutoPopup'#8#4'Left'#3#152#0#3'Top'#2#24#0#9'TMenuItem'#12'u'
+  +'o_ReadOnly1'#7'Caption'#6#9'Read only'#7'OnClick'#7#17'uo_ReadOnly1Click'#0
+  +#0#9'TMenuItem'#13'uo_ReadWrite1'#7'Caption'#6#11'Read, write'#7'OnClick'#7
+  +#18'uo_ReadWrite1Click'#0#0#9'TMenuItem'#5'uo_N1'#7'Caption'#6#1'-'#0#0#9'TM'
+  +'enuItem'#15'uo_Fastupdates1'#7'Caption'#6#12'Fast updates'#7'OnClick'#7#20
+  +'uo_Fastupdates1Click'#0#0#9'TMenuItem'#19'uo_Standardupdates1'#7'Caption'#6
+  +#16'Standard updates'#7'OnClick'#7#24'uo_Standardupdates1Click'#0#0#0#0
+]);

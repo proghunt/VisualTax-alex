@@ -1,0 +1,136 @@
+CINQUANTE R.   -87000137.7          419  
+EIGHT A.       -87000012.2          58     
+EIGHTEEN C.    -87000135.1          151
+EIGHTY         -87003071.5          1163
+EIGHTYEIGHT B. -87000124.5          639
+EIGHTYFIVE Y.  -87000128.6          620      
+EIGHTYFOUR K.  -87000121.1          614      
+EIGHTYNINE P.  -87000141.9          644      
+EIGHTYSEVEN K. -87000123.7          630  
+Cert 82NB = TCI # 1313
+Cert 82NL = TCI # 1311
+Cert 82NS = TCI # 1307
+Cert 82PE = TCI # 1309    
+ELEVEN A.      -87000015.5          81      
+FIFTEEN D.     -87000020.5          120
+FIFTEEN D.     -87000020.5A         117
+FIFTYEIGHT A.  -87000073.4          492
+FIFTYFIVE D.   -87000068.4          473
+FIFTYFOUR M.   -87000067.6          467
+FIFTYNINE A.   -87000074.2          498
+FIFTYONE M.    -87000063.5          428
+FIFTYSEVEN L.  -87000071.8          487
+FIFTYSIX M.    -87000069.2          480
+FIFTYTHREE P.  -87000065.0BC        440
+FIFTYTHREE P.  -87000065.0MB        448
+FIFTYTHREE P.  -87000065.0ON        454
+FIFTYTHREE P.  -87000065.0QC        459
+FIFTYTHREE P.  -87000065.0YT        463
+FIFTYTWO S.    -87000064.3          434
+FIVE D.        -87000140.1          26
+FORTY D.       -87000051.0          341
+FORTYFIVE M.   -87000057.7          379
+FORTYEIGHT P.  -87003070.7          1162
+FORTYONE Y.    -87000052.8          349
+FOUR M.        -87000005.6          18
+FOURTEEN B.    -87000019.7          111
+NINE A.        -87000013.0          65
+NINETEEN J.    -87000026.2          165
+NINETY W.      -87000142.7          650
+ONE M.         -87000000.7          1
+QUARANTEDEUX Y.-87000053.6          357
+QUARANTENEUF S.-87000061.9          408
+QUARANTEQUATREL-87000056.9          373
+QUARANTESEPT J.-87000059.3          393
+QUARANTESIX cJ.-87000058.5          386
+QUARANTETROIS F-87000055.1          367
+SEVEN L.       -87000011.4AB        42
+SEVEN L.       -87000011.4NB        45
+SEVEN L.       -87000011.4PE        50
+SEVEN L.       -87000011.4SK        55
+SEVENTEEN J.   -87000024.7          139
+SEVENTY C.     -87000096.5          570
+SEVENTYEIGHT P.-87003072.3          593
+SEVENTYFIVE G. -87000109.6          586
+SEVENTYFOUR S. -87000108.8          582
+SEVENTYNINE G. -87000143.5          599
+SEVENTYONE L.  -87000105.4          574
+SEVENTYSEVEN L.-87000115.3          592
+SEVENTYSIX D.  -87000102.1          589
+SEVENTYTHREE S.-87000103.9          579
+SEVENTYTWO J.  -87000106.2          577
+SIX M.         -87000009.8          34
+SIXTEEN W.     -87000022.1          131
+SIXTY L.       -87000075.9          506
+SIXTYEIGHT B.  -87000094.0          558
+SIXTYFIVE S.   -87000091.6          539
+SIXTYFOUR W.   -87000090.8          531
+SIXTYNINE S.   -87000097.3          564
+SIXTYONE B.    -87000086.6          515
+SIXTYSEVEN M.  -87000093.2          552
+SIXTYSIX J.    -87000092.4          546
+SIXTYTHREE L.  -87000089.0          527
+SIXTYTWO J.    -87000088.2          521
+TEN L.         -87000014.8          72
+THIRTEEN C.    -87000017.1          103
+THIRTYEIGHT A. -87000049.4          326
+THIRTYFIVE D.  -87000046.0          299
+THIRTYFOUR S.  -87000045.2          290
+THIRTYNINE R.  -87000050.2          333
+THIRTYONE A.   -87000136.9BC        253
+THIRTYONE A.   -87000136.9MB        256
+THIRTYONE A.   -87000136.9NL        259
+THIRTYONE A.   -87000136.9NS        262
+THIRTYONE A.   -87000136.9NU        264
+THIRTYONE A.   -87000136.9ON        268
+THIRTYSEVENGOIN-87000048.6          321
+THIRTYSIX A.   -87000047.8          310
+THIRTYTHREE P. -87000044.5          279
+THIRTYTWO S.   -87000043.7          272
+THREE P.       -87000003.1          12
+TRENTE N.      -87000040.3          245
+TWELVE C.      -87000016.3A         93
+TWENTY L.      -87000027.0          173
+TWENTYFOUR     -87000018.9          737
+TWO S.         -87000002.3          6
+VINGTCINQ A.   -87000034.6          200
+VINGTTROIS23 j.-87003069.9          1161
+VINGTDEUX D.   -87000029.6          186
+VINGTETUN M.   -87000028.8          181
+VINGTHUIT C.   -87000037.9          231
+VINGTNEUF G.   -87000039.5          237
+VINGTSEPT P.   -87000036.1          218
+VINGTSIX L.    -87000035.3          211
+NINETYONE      -87001999.9          867
+NINETYTWO      -87002943.6          869
+
+Refile
+Cert01         -87000240.9          973      
+Cert02         -87000241.7          977
+EIGHTYFIVE Y.  -87000084.1          981    //cert03
+Cert04         -87000062.7          983
+Cert05         -xxxxxxxxxx          984
+Cert06         -xxxxxxxxxx          1215
+Cert07         ninenty              1315 
+
+T1135
+Cert35         -87000076.0          794
+Cert57         -87000071.8          795
+Cert90         -87000026.2          796
+/////Cert90AMD      -87000026.2          988
+
+
+MJ
+Cert01         -87000113.8          698
+Cert02         -87000200.3          699
+Cert03         -87000201.1          700
+Cert04         -87000122.9          701
+Cert05         -87000033.8          702
+Cert06         -87000147.6          703
+Cert07         -87000202.9          704
+Cert08         -87000203.7          705
+Cert09         -87000118.7          706
+Cert10         -87000120.3          707
+Cert11         -87000060.1          708
+Cert12         -87000204.5          709
+Cert13         -87000205.2          710

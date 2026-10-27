@@ -1,0 +1,83 @@
+PAGE_1   001 003 006 PRV RESIDENCE (destFrm,DestElm,SourceFrm,SourcElm)
+PAGE_1   002 003 003 first
+PAGE_1   003 003 001 sin
+PAGE_1   070 003 002 title
+PAGE_1   004 003 008 sp sin
+PAGE_1   005 003 004 last
+PAGE_1   006 005 001 street
+PAGE_1   010 005 002 city
+PAGE_1   011 003 005 mar status       convert
+PAGE_1   014 005 003 province addr
+PAGE_1   020 003 009 spouse name
+
+PAGE_4   041 005 006 area
+PAGE_4   042 005 007 teleph
+
+RRSP     010 009 018 dedroom
+RRSP     012 201 010 RRSP Unclaimed-s7
+RRSP     007 001 206 PA
+S1_2     006 130 009 MinTaxCF
+
+
+CFR_1    005 010 005 txbl cap gains
+CFR_1    010 010 026 cap gains other
+CFR_1    025 010 011 abil
+
+CFR_1    033 142 042 B1
+CFR_1    034 142 044 P1
+CFR_1    035 142 045 F1
+CFR_1    036 142 046 Fish
+CFR_1    037 057 022 for T777
+
+T936_2   002 250 013 CnilExp
+T936_2   006 250 014 CnilInc
+DON      100 036 063 Don
+
+T2124_1#1008 081 001 bus nam
+T2124_1#1010 081 002 bus adr
+T2124_1#1013 081 003 bus city
+T2124_1#1014 081 004 bus postal
+T2124_1#1009 081 007 bus prod
+T2124_1#1012 081 025 bus sic
+T2124_1#1019 081 029 bus b/n
+T2124_1#1020 081 031 bus b/n
+T2124_1#1021 081 031 bus b/n
+T2124_1#1018 081 028 bus %
+T2124_1#1015 081 026 bus partid
+T2124_1#1016 081 027 bus tx sh
+
+T2032_1#1012 089 001 bus nam
+T2032_1#1014 089 002 bus adr
+T2032_1#1016 089 003 bus city
+T2032_1#1017 089 004 bus postal
+T2032_1#1013 089 007 bus prod
+T2032_1#1015 089 023 bus sic
+T2032_1#1022 089 029 bus b/n
+T2032_1#1009 089 031 bus b/n
+T2032_1#1023 089 031 bus b/n
+T2032_1#1021 089 028 bus %
+T2032_1#1018 089 026 bus partid
+T2032_1#1019 089 027 bus tx sh
+
+
+T2042_1#1008 135 005 bus nam
+T2042_1#1010 135 008 bus adr
+T2042_1#1012 135 009 bus city
+T2042_1#1013 135 010 bus postal
+T2042_1#1017 135 019 bus sic
+T2042_1#1021 135 014 bus b/n
+T2042_1#1022 135 015 bus b/n
+T2042_1#1023 135 016 bus b/n
+T2042_1#1024 135 022 bus %
+T2042_1#1018 135 020 bus partid
+T2042_1#1020 135 021 bus tx sh
+
+T2121_1#1008 203 005 bus nam
+T2121_1#1011 203 011 bus sic
+T2121_1#1015 203 015 bus b/n
+T2121_1#1016 203 016 bus b/n
+T2121_1#1017 203 017 bus b/n
+T2121_1#1018 203 022 bus %
+T2121_1#1012 203 020 bus partid
+T2121_1#1014 203 021 bus tx sh
+

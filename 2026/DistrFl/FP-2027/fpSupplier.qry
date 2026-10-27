@@ -1,0 +1,7 @@
+{ Changing AGC to AGf
+UPDATE Transactions SET Supplier = 'AGF'  WHERE Transactions.Supplier = 'AGC'
+UPDATE Assets SET Supplier = 'AGF'  WHERE Assets.Supplier = 'AGC'
+UPDATE MutualFunds SET Supplier = 'AGF'  WHERE MutualFunds.Supplier = 'AGC'
+UPDATE Accounts SET Supplier = 'AGF'  WHERE Accounts.Supplier = 'AGC'
+UPDATE PortfolioDetails SET Supplier = 'AGF'  WHERE PortfolioDetails.Supplier = 'AGC'
+UPDATE ActionPlan SET Supplier = 'AGF'  WHERE ActionPlan.Supplier = 'AGC'

@@ -1,0 +1,67 @@
+package AnyDAC_GUIxForms_D14;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'da-soft AnyDAC GUIx Forms Package for Delphi 2010'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+{$I uAD.inc}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  vclx,
+  vcldb,
+{$IFDEF AnyDAC_SynEdit}
+  SynEdit_R2010,
+{$ENDIF}
+  AnyDAC_ComI_D14,
+  AnyDAC_Comp_D14;
+
+contains
+  uADGUIxManager,
+  uADGUIxFormsfAbout,
+  uADGUIxFormsfAsync,
+  uADGUIxFormsfError,
+  uADGUIxFormsfFetchOptions,
+  uADGUIxFormsfFormatOptions,
+  uADGUIxFormsfLogin,
+  uADGUIxFormsfOptsBase,
+  uADGUIxFormsfUpdateOptions,
+  uADGUIxFormsfConnEdit,
+  uADGUIxFormsfQEdit,
+  uADGUIxFormsfUSEdit,
+  uADGUIxFormsfResourceOptions,
+  uADGUIxFormsControls,
+  uADGUIxFormsfScript,
+  uADGUIxFormsMemo,
+  uADGUIxFormsfDesignTimeOptions,
+  uADGUIxFormsfFields,
+  uADGUIxFormsWait,
+  uADGUIxConsoleWait,
+  uADGUIxConsoleScript;
+
+end.
+

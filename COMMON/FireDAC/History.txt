@@ -1,0 +1,3091 @@
+History FireDAC
+---------------
+
+============================================================
+v 8.0.5.3365 (28.05.13)
+
++ added: ADDataSet: EmptyView method to delete all filtered records
+- fixed: ADDataSet: AV when dataset serialization failed at stream creating
+- fixed: ADDataSet: TField.Required may be True for a field with a DB default value
+- fixed: ADDataSet: after several Append's / SaveToStream / Delete's / LoadFromStream rows are in invalid state
+- fixed: ExprFuncs: {LENGTH(col)} | {CHAR_LENGTH(col)} returns NULL for empty strings instead of 0
+- fixed: DatS: possible AV (SIGSEGV(11)) at dtAnsiString comparision on a Posix (Mac OS, iOS) system
+- fixed: DatS: possible "assertion failure" at row deletion with a sorted view
+
+- fixed: Phys: possible AV at preparing a query after AbortJob was called for async query
+- fixed: Phys: "is not a valid floating point value" possible on fetching Currency / Float columns
+- fixed: Phys: StrsTrim trims non-space characters, eg CR / LF
+- fixed: Phys: error possible on sending a BLOB / binary value of zero length and StrsEmpty2Null=False
+- fixed: Phys: TADParam.AsAnsiString = '' is converted to NULL disregarding FormatOptions.StrsEmpty2Null
+- fixed: Phys: "Delete command deleted [0] instead of [1] record" when deleting several records without PK fields and with NULL values in the fields
+
+- fixed: Moni: flat file tracing fails to produce an output file on Mac OS X using a default path
+
++ added: IB: InterBase 2007 UNICODE_BE and UNICODE_LE support
+- fixed: FB / IB: services are broken. "Invalid clumplet buffer structure" error or any attempt to execute a service.
+- fixed: IB: "Fetch command returned [0] instead of [1] rows" error with TADTable
+
+- fixed: SQLite: "Invalid argument to time encode" at time value with fractional part with more than 3 digitis
+
+- fixed: Oracle: initial "connection lost" exception is replaced by "ORA-03114: not connected to ORACLE" at failed SQL command execution
+
++ added: ODBC: support for SolidDB
+
+- fixed: DataSnap: several incompatibilities with DataSnap XE4
+
+- fixed: Installer: does not uninstall / overwrite existing read-only files, eg uADStanCipher.dcu and sqlite3.obj
+
+============================================================
+v 8.0.3.3291 (01.05.13)
+
+- fixed: RAD Studio Prof: several incompatibilities
+
+- fixed: C++ Builder: setting GUIx Provider='Console' leads to "include file not found"
+- fixed: C++ Builder: FMX application links both VCL and FMX
+
+- fixed: OS X support is broken
+
+- fixed: SQL Anywhere: fails to connect with a password containing '!' inside
+
+- fixed: Interbase: fails to connect to a named instance
+
+- fixed: TDBX: connection definition editing for TDBX driver was broken
+
+- fixed: ADTable: infinite loop with editing a field limited by range
+
+============================================================
+v 8.0.1.3279 (18.04.13)
+
++ added: XE4 support, including iOS Simulator and Device
+
+- fixed: ADConnection: Connection Editor SQL Script tab doesn't enable run icons when the cursor is at the end of a line
+
+- fixed: ADDataSet: possible AV in M/D
+- fixed: ADDataSet: AV on closing a dataset cloned from a detail dataset in centralized cached updates mode
+- fixed: ADDataSet: cloning and removing a dataset leaves a callback, limiting dataset functionality
+- fixed: ADDataSet: editing an inserted record in cached updates mode moves the record to the end of the change log
+- fixed: ADDataSet: FilterChanges with rtDeleted does not show deleted records
+- fixed: ADDataSet: in cached updates mode UpdateStatus = usDeleted when dataset State = dsInsert
+
+- fixed: ADQuery: RecordCountMode = cmTotal may return incorrect result, when multiple transactions are used
+- fixed: ADQuery: AV on assigning a macro value with a parameter maker inside
+
+- fixed: ADTable: empty result set with LDW turned off and empty master dataset
+- fixed: ADTable: "assertion failure" on using OnFilter
+
++ added: Local SQL: support for INSERT OR REPLACE using primary keys
+- fixed: Local SQL: "invalid date format" on WHERE with date or time fields
+
+/ changed: ADDataMove: added TextDataDef.TrimLeft and TrimRight, improved GuessTextFormat, fixed empty lines handling
+
+/ changed: ADGUIxLoginDialog: LoginRetries = -1 disables login retries
+
++ added: Moni: TADMoniFlatFileClientLink.ShowTraces property to control trace notification dialog
+/ changed: FormatOptions.StrsEmpty2Null is now False by default
+/ changed: Phys: extended environment report to provide platform information
+- fixed: XE3: AV when MonitorBy=Remote
+- fixed: MacOS: possible invalid client library name in environment report
+- fixed: DApt: "Exact update affected [N] rows, while [1] was requested" possible even with UpdateOptions.CountUpdatedRecords = False
+- fixed: Phys: writing a BLOB value of zero length always coverted to NULL
+
++ added: IB: static linking of IbTogo for iOS
++ added: IB/FB: TADIBRestore.PageBuffers property
+/ changed: IB: improved Interbase XE3 support
+- fixed: IB: possible AV on next query after canceling an async query
+- fixed: IB/FB: execution of ROLLBACK TO <name> finishes an active transaction
+
++ added: MySQL: support for 4 byte UTF8
+- fixed: MySQL: TADScript fails to execute CALL <stored proc> command
+- fixed: MySQL: ADScript fails on SET AUTOCOMMIT = 1
+
+- fixed: PgSQL: "invalid byte sequence 0x00" on posting empty string (AsString := '')
+- fixed: PgSQL: failed to connect using user name or password with international characters
+
+- fixed: SQLite: "unable to close due to unfinalized statements ..." on Array DML with pbByNumber
+- fixed: SQLite: fails to apply a macro &1=::type to SELECT xxxx AS "nm&1"
+- fixed: SQlite: AddOn\SQLiteIniFile demo is broken
+- fixed: SQLite: TADEventAlerter.Signal does not work
+- fixed: SQLite: wrong column_position value in mkForeignKeyFields result set
+
++ added: ODBC / MySQL: querying Foreign Keys/Foreign Key Columns information via INFORMATION_SCHEMA
+- fixed: ODBC: "fixed length data mismatch" on fetching mkForeignKeyFields
+
++ added: DB2: ExtendedMetadata connection definition parameter
+
+- fixed: Sybase ASE: "Assertion failure" on executing a command with a BLOB parameter
+- fixed: Sybase ASE: AV or "range error" after connecting in x64 mode
+
+- fixed: DataSnap: fetch blobs on demand through CDS/provider is broken
+- fixed: DataSnap: exception in TADQuery.PSExecuteStatement leads to memory leak
+- fixed: DataSnap: fails to transfer BLOB to DB
+
+- fixed: ADExplorer: BDE alias importer silently ignores not supported drivers
+- fixed: ADOUDLImporter: fails to import UDL
+
+- fixed: Installation: not copying compiled bpl/dcp files when RAD Studio is installed for one user only
+- fixed: C++ Builder: fails to compile after installation on C++ Builder XE3
+- fixed: C++ Builder: all EOF / BOF replaced with Eof / Bof to avoid a conflict with C++ BOF / EOF
+- fixed: C++ Builder: fails to compile / install on C++ Builder x64
+- fixed: FPC: a console application links in the LCL
+
+============================================================
+v 7.0.1.3119 (27.02.13)
+
+/ changed: product rebranded from AnyDAC to FireDAC
+Library itself calls "FireDAC", including "[FireDAC]" in error messages.
+Library API remains the same, including uAD*.pas unit and TADXxx class names.
+
+- fixed: ADDataSet: stream incompatibility between v5 and v6
+- fixed: ADDataSet: detail dataset may be not cleared on master dataset insert
+- fixed: ADDataSet: Refresh inside of BeginBatch / EndBatch leads to non-empty updates cache. 
+Now it is prohibited to call Refresh inside of BeginBatch / EndBatch.
+
+- fixed: ADMemTable: Refresh does nothing. Now rebuilds internal dataset views.
+
+- fixed: ADTable: IndexDefs[].Options does not include ixDescending for descending indexes
+- fixed: ADTable: range with equal border values uses more slow BETWEEN instead of EQUAL
+
+- fixed: ADUpdateSQL: FetchRowSQL may not be used at some conditions
+
++ added: Local SQL: support for INSERT OR REPLACE using primary keys
+
+- fixed: Phys: RecsMax & SELECT TOP leads to syntax error
+- fixed: Phys: AV when an event alerter was registered, connection was losted and recovered
+- fixed: Phys: not needed parameters recreation on IADPhysCommand.Prepare
+
+- fixed: IB/FB: {IFNULL} with a parameter as a first argument fails
+- fixed: FB: possible duplicate records after Array DML & error & eaSkip
+
+- fixed: MySQL: default fields aren't refreshed when UpdateOptions.RefreshMode = rmOnDemand
+- fixed: MySQL: wrong error message when a client version is not valid
+- fixed: MySQL: fails to refresh a record with auto_inc after inserting. Regression from 2976
+
+- fixed: Oracle: do not use MaxStringSize to limit maximum string parameter size in PL/SQL blocks
+
+/ changed: MSSQL: SQLDMO SQL Server listing replaced with ODBC based
+/ changed: MSSQL: ODBC CLI header updated to SQLNC10
+- fixed: MSSQL: TADScript fails to execute EXEC <stored proc> command
+
+- fixed: SQLite: inserted value with >= 16 digits into DECIMAL(21+) is fetched as n.nnn;nn
+
+- fixed: PgSQL: "insufficient data left in message" error with dtExtended parameter
+
+- fixed: XE3: TBinaryField.GetAsString does not return any data
+
+============================================================
+v 6.0.9.3011 (28.01.13)
+
+/ changed: EULA text updated
+- removed: Query Builder
+- removed: all 3d party product integrations
+- removed: all FastCode code
+
+- fixed: ADS: fails to fetch metadata
+
+- fixed: SQLite: "ssqlite3_blob_open not found" in dynamic linking mode
+
+- fixed: ADDataSet: LoadFromStream may fail on repeating calls with "assertion failure"
+- fixed: ADDataSet: possible error at detail dataset refreshing when fiBlobs is excluded from FetchOptions.Meta
+
+- fixed: TADTable: "Field not found" exception on LocateEx(<expression>)
+
+- fixed: ADUpdateSQL: design-time editor does not quote column or table names when a corresponding checkbox is checked
+
+- fixed: "[AnyDAC][DApt]-400. Fetch command fetched [0] instead of [1] record" when RefreshMode=rmAll and auto incrementing field is of unsigned type (eg, MySQL int unsigned)
+
+- fixed: Installer: Getting Started\MySQL folder is empty, Getting Started\Firebird contains MySQL project
+
+- fixed: D7: AV at IDE shutdown
+
+============================================================
+v 6.0.7.2969 (18.01.13)
+
+Metadata
+-----------------------------
++ added: CatalogName and SchemaName design-time editors
+/ changed: ADConnectionDefs.ini, ADDrivers.ini switched to UTF8 encodings
+/ changed: fiBlobs in FetchOptions.Items / Cache handling switched from data types to caBlobData
+- fixed: excluding fiMeta from FetchOptions.Cache does not always work
+
+Others
+-----------------------------
+/ changed: a column with unsupported data type will be defined as read-only dtAnsiString(1) containing NULL values
+- fixed: TADParam.GetDataSize does not count trailing null character for string data types
+- fixed: DatSTable: losing Round2Scale property value on DatSTable.Assign
+
+- fixed: storage: default backup file extension is not set to '.bak'
+- fixed: storage: duplicating unique constraints on DatSTable deserializing
+- fixed: BIN storage: stream is not set to beginning on storage opening
+- fixed: XML Storage: doesn't store the stream version to a result file/stream
+
+DBMS support and drivers
+-----------------------------
++ added: SQLite: support for sqlite3.obj x64 static linking, produced by VC++ x64
++ added: SQLite: support for incremental BLOB API
+/ changed: SQLite: upgraded to v 3.7.15
+- fixed: SQLite: "table TAB has no column named NAME" on posting updates, where NAME has non-ASCII characters (eg russian)
+- fixed: SQLite: "Range check error" at encrypting a DB if "range checking" is turned on
+
+- fixed: MySQL: `name` does not work in TADTable.Filter
+- fixed: MySQL: failing to trim CHAR fields
+
+- fixed: PostgreSQL: SchemaName was not used to restrict mkTables, mkProcs and mkGenerators
+- fixed: PostgreSQL: "cannot insert multiple commands into a prepared statement" with DirectExecute=True
+
++ added: Oracle: TADPhysOracleDriverLink.Threaded property to control OCI initialization mode. Default is True.
+- fixed: Oracle: RETURNING INTO may not define parameters as ptOutput
+- fixed: Oracle: fails to connect when ApplicationName is specified
+- fixed: Oracle: failed to return Oracle Home names for XE instances
+
+/ changed: IB/FB: now SORT_ORDER in mkIndexFields returns actual value
+
+/ changed: ODBC: now DSN and driver lists are sorted
+
++ added: Informix: added support for ADPhysODBCDriverLink1.VendorLib = 'ICLIT09B.DLL' to fix international characters support and improve performance
+- fixed: Informix: old Informix versions do not support LoginTimeout
+
+Main components
+-----------------------------
+- fixed: ADManager: ConnectionDefFileName and DriverDefFileName return an expanded path instead of an assigned one. Added ActualConnectionDefFileName and ActualDriverDefFileName to return an expanded path.
+
+/ changed: ADConnection: added AObjName parameter to RefreshMetadataCache method, allowing to clear metadata only for specified object
+
++ added: ADTransaction: Options.EnableNested to enable / disable nested transactions
+- fixed: ADTransaction: finishes outer transaction on Destroy, when a DB does not support multiple parallel Tx
+- fixed: ADTransaction: StartTransaction calls ADDataSet.Cancel, even when it is not required
+
+- fixed: ADDataSet: MasterFields has wrong fields order after re-linking MasterSource
+
++ added: ADTable: RefreshMetadata method
+/ changed: ADTable: optimized detail table refreshing
+- fixed: ADTable: a visually duplicated records or a "Duplicate record found" error on Refresh / RefreshRecord with OnFilterRecord assigned
+- fixed: ADTable: LDV may lost synchronization after several Edit / Post of indexed fields
+- fixed: ADTable: fails to locate record using LocateEx with lxoFromCurrent
+
+- fixed: Local SQL: improper ordering of resultset from joined virtual tables on SQLite v 3.7.15 and higher
+- fixed: LocalSQL: "syntax error" on registering a dataset with special characters in the field names
+
+- fixed: ADDataMove: "Cannot generate update query. WHERE condition is empty" when a source dataset has only single BLOB column
+
+Tracing
+-----------------------------
+- fixed: Moni: TADMoniRemoteClient may hang on application termination
+- fixed: fails to compile when AnyDAC_Monitor is undefined
+
+GUI
+-----------------------------
+- fixed: GUIx: TfrmADGUIxFormsConnEdit.Execute does not use a custom form
+
+Installer
+---------
+- fixed: AD Installer: two Installer entries in Add/Remove Programs
+
+============================================================
+v 6.0.5.2837 (15.11.12)
+
+DBMS support and drivers
+-----------------------------
++ added: Tracing: TADMoniCustomClientLink.Synchronize property
++ added: FormatOptions: QuoteIdentifiers option to mandatory surround column names in quotes
+/ changed: Phys: added bitness info to the "cannot load library" error message
+/ changed: Phys: all dtInt16 metadata columns changed to dtInt32
+/ changed: TADParam.SetData for fixed length strings now uses Size if it is > 0 and ALen = 0
+- fixed: Phys: ekNoDataFound is not raised at Array DML, and in some other cases
+- fixed: Phys: "Column Xxx cannot be repeated in UPDATE statement" or similar error when a SELECT has several occurrences of the same field (SELECT F1 AS A, F1 AS B ...)
+- fixed: Phys: "Assertion failure" in uADStanPool when too many simultaneous pooled connections are opened
+
+- fixed: ASA: "record is locked" error is not recognized as ekRecordLocked
+- fixed: ASA: Array DML does not call OnExecuteError on SQL_NO_DATA
+
+- fixed: Oracle / LocalSQL: fails to edit BLOB / CLOB / BFILE columns
+- fixed: Oracle: Commit / Rollback does not finish some implicitly started transactions
+
+- fixed: MSSQL: a dtBCD(4,2) to dtDouble map rule leads to a precision lost
+- fixed: MSSQL: committing / rolling back a nested transaction commits full transaction
+- fixed: MSSQL: improper defining of table primary keys for case sensitive databases
+
+- fixed: FB: RETURNING {INTO} does not work with output parameters in INTO
+- fixed: FB: "[AnyDAC]-326. Cannot perform action, because previous is in progress" on opening a ADQuery in amSync mode
+- fixed: FB: AV at connecting to Firebird from Linux / Mac OS X
+- fixed: Interbase: fails to connect to Interbase on Mac OS X
+
+- fixed: PG: "column is readonly" error on closing a dataset with array typed columns
+
+/ changed: SQLite: custom functions, collations and rtrees now are installed into all (including active) connections
+- fixed: SQLite: REAL was mapped to dtSingle instead of dtDouble
+- fixed: SQLite: "Source and Destination must be distinct" possible on TADSQLiteBackup reusing
+- fixed: SQLite: datetime(jdatetime,'localtime') returns invalid result
+
++ added: Informix: added support for ADPhysODBCDriverLink1.VendorLib = 'ICLIT09B.DLL' to fix international characters support and improve performance
+
+- fixed: ADS: AV on empty connection definition
+
+- fixed: ODBC: may fail to connect, when both DataSource and TADPhysODBCDriverLink.ODBCDriver are specified
+- fixed: ODBC: ADPhysODBCBaseDriverLink.GetDSNs returns empty list
+
+- fixed: DataSnap: does not use Port connection definition parameter
+
+Main components
+-----------------------------
++ added: ADDataSet: DetailFields property, defining which fields to fill when a new record is appended to a detail dataset
+- fixed: ADDataSet: LocateEx with lxoBackward fails when an index is used
+- fixed: ADDataSet: OnUpdateRecord provides all TField.NewValue, OldValue and CurValue equal to the Value
+- fixed: ADDataSet: excluding fiBlobs from FetchOptions.Cache may lead to empty string field values
+- fixed: ADDataSet: FetchOptions.DetailCascade=True and different number of columns in IndexFieldNames and MasterFields fails
+- fixed: ADDataSet: FetchOptions.DetailCascade=True and SchemaAdapter=nil leads to "[name] object is not found"
+
++ added: ADManager: CloseConnectionDef method
+/ changed: ADManager: renamed OnShutdown -> AfterShutdown, OnStartup -> AfterStartup. Added BeforeStartup, BeforeShutdown
+/ changed: ADConnection: optimized transaction management
+- fixed: ADManager.AddConnectionDef may lead to "Duplicate connection definition" exception
+- fixed: ADConnection: a connection cloned by Assign may fail with "DriverID is not specified"
+- fixed: ADTransaction: Commit / Rollback calls ADDataSet.Cancel, even when it is not required
+- fixed: ADScript: output / inputoutput parameter values are not transfered to the next commands
+- fixed: ADTable: "dublicate row" error in several cases
+- fixed: ADQuery: the UpdateTransaction is not used when TADUpdateSQL assigned
+
+- fixed: Local SQL: improper results returned if WHERE (f1 > N) and (f1 >= M) conditions are used in query
+- fixed: Local SQL: ORDER BY clause is disregarded if JOIN to another VTab was used
+
+GUI
+-----------------------------
+/ changed: GUIx: added standard window buttons to the standard dialogs
+- fixed: GUIx: ADConnection editor layout improved
+
+General Delphi and C++ Builder support
+--------------------------------------
+- fixed: XE3: incompatibility with C++ Builder XE3
+- fixed: XE3: memory overrun at reading / writing a persistent string field with Size less than specified in DB
+- fixed: XE3: LoginPrompt set to False at design-time is not stored in DFM
+
+- fixed: BCB5: fails to compile and install full version
+- fixed: D5 incompatibility
+
+Installer
+---------
+- fixed: Installer: XE3 trial support does not work, ADConnectionDefs.ini may be overwritten on 2nd installation, Uninstall icon is missed
+- fixed: Installer: installer overwrites Delphi "Search Path" on the second installation
+
+Addon's and 3d party products
+-----------------------------
+- fixed: FR4 AddOn: disregarding parameter Value if Expression is empty
+/ changed: EhLib Addon: updated to latest EhLib version
+
+============================================================
+v 6.0.3.2713 (17.09.12)
+
+Main
+-----------------------------
++ added: RAD Studio XE3 support
++ added: Unicode metadata support
+/ changed: Phys: ADConnectionDefs.ini, ADDrivers.ini switched to UTF8 encodings
+- fixed: FPC: x64 and iOS incompatibilities
+
+DBMS support and drivers
+-----------------------------
++ added: Unicode metadata support
+/ changed: Phys: ADConnectionDefs.ini, ADDrivers.ini switched to UTF8 encodings
+/ changed: Phys: if fiBlobs is not in Cache and BLOB's were discarded, then on second reading they will be loaded again into cache
+/ changed: Phys: skSelectForUpdate renamed to skSelectForLock. Added skSelectForUnlock.
+- fixed: MacOS: "Cannot create file ''" when ad.conf is missed
+- fixed: Phys: MonitorBy=Xxx- does not initially disable trace output
+- fixed: Phys: a fast query in asynchronous execution mode may lead to AV
+- fixed: Phys: with UpdateOptions.UpdateNonBaseFields = True non-base fields may be read-only. Regression from 2623.
+- fixed: Phys: UpdateOptions.UpdateNonBaseFields fails to work with views. UpdateNonBaseFields default value set to False.
+
+- fixed: FB: isc_att_shutdown is not recognized as ekServerGone
+
+/ changed: MySQL: now libmysql.dll will be searched before libmysqld.dll
+
+- fixed: MSSQL: "Out of memory" on fetching large resultset with VARBINARY(MAX) and fiBlobs excluded from FetchOptions.Cache
+
++ added: SQLite: mkForeignKeys, mkForeignKeyFields support
++ added: SQLite: custom RTree support
+/ changed: SQLite: upgraded to v 3.7.14
+/ changed: SQLite: removed Functions and Collations connection definition parameters
+- fixed: SQLite: fails to work with UTF8 data using FPC / Unix
+- fixed: SQLite: fields of BINARY datatype defined as ftVarBytes instead of ftBytes
+
++ added: ODBC: NumericFormat=Binary|String controlling NUMBER bind mode
+
+- fixed: Informix: "System error occured in network function" is not recognized as ekServerGone
+
+/ changed: ADS: improved metadata handling for the local ADS connections
+
+Main components
+-----------------------------
++ ADConnection: added ConnectionString public property
+/ changed: ADConnection: AFullName parameter added to GetTableNames, GetStoredProcNames, GetPackageNames, GetGeneratorNames methods with default True / changed: Design Time: "Use full object names" design time option added
+- fixed: ADConnection: possible AV at shutdown of multi-threaded program with multiple dynamic connections
+
+- fixed: ADDataSet: UpdateOptions.CheckReadOnly = False does not work with UpdateNonBaseFields = False
+- fixed: FPC: improved IProviderSupport support
+
++ added: ADLocalSQL: OnReadDataSet event
+- fixed: ADLocalSQL: empty resultset is returned if date/datetime fields used in WHERE clause
+- fixed: ADLocalSQL: empty resultset is returned if WHERE (f1 > N) and (f1 = M) conditions are used in query
+- fixed: ADLocalSQL: TIME fields return empty values
+- fixed: ADLocalSQL: TIME fields aren't updated
+- fixed: ADLocalSQL: inserting values to source dataset fields of binary datatypes fails
+- fixed: ADLocalSQL: "invalid number" error with non '.' decimal separator
+- fixed: ADLocalSQL: Assertion failure if WHERE conditions count is greater than fields count and ORDER BY clause is used
+- fixed: ADLocalSQL: 'List index out of bounds' exception if WHERE conditions count is greater than fields count
+
+- fixed: Stan: DATE(), TIME() expression functions fails with text arguments
+- fixed: XML Storage: does not provide XML text formating
+
+- fixed: DataSnap: TADParam.LoadFromStream fails to load a data from a chunked DataSnap stream
+
+GUI
+-----------------------------
++ added: QBuilder: Unicode support
+
+Addon's and 3d party products
+-----------------------------
++ added: FR4: usage of AD escape sequences inside FR4 variables and parameters
+
+Free Pascal Compiler
+--------------------
+- fixed: FPC: ftFixedWideChar fields does not work
+- fixed: FPC: reading a dataset from a binary storage fails
+- fixed: FPC: x64 incompatibility
+- fixed: FPC: iOS incompatibility
+
+Installer
+---------
++ added: RAD Studio XE3 support
+- fixed: Trial: impossible to build FM app, because xxx.fmx are missed
+
+============================================================
+v 6.0.1.2603 (30.07.12)
+
+Possibly breaking changes:
+1) Editing of the queries with expressional columns and JOIN's may lead to different experience.
+2) UpdateOptions.UpdateJoinedFields renamed to UpdateNonBaseFields.
+3) All Oracle related entities renamed from Oracl to Oracle (AnyDAC_PhysOracl_xxx packages -> AnyDAC_PhysOracle_xxx, uADPhysOraclXxxx units -> uADPhysOracleXxxx, TADPhysOraclDriverLink component -> TADPhysOracleDriverLink)
+4) TADGUIxFormsXxx components are replaced by TADGUIxXxx components with Provider property.
+5) REAL / FLOAT (32 bit float value) DB data types are mapped now to ftSingle instead of ftFloat
+6) FetchOptions.LiveWindowMode renamed to LiveWindowParanoic, added LiveWindowFastFirst
+
+Main
+-----------------------------
++ added: iOS Emulator / ARM support
++ added: new DataSnap driver for RAD Studio XE2 Enterprise and higher
++ added: FireMonkey implementation for most AnyDAC dialogs, Provider property and major GUIx redesign
+         http://www.da-soft.com/blogs/anydac-for-delphi-and-firemonkey.html
++ added: new Centralized Cached Updates with master-detail propagation, TADSchemaAdapter component
+         http://www.da-soft.com/blogs/anydac-for-delphi-and-centralized-cached-updates.html
++ added: new Local SQL query engine to query local datasets, TADLocalSQL component
+         http://www.da-soft.com/blogs/anydac-for-delphi-and-local-sql.html
+
+DBMS support and drivers
+-----------------------------
++ added: DataSnap: new DataSnap driver for RAD Studio XE2 Enterprise and higher
++ added: Phys: added caBase, caExpr attributes for SELECT list columns to distinguish base and non-base table columns. Extended general result set metadata options and correctness
++ added: EADException.ADObjName property to identify object raised an exception
+/ changed: Major cleanup and extension of the columns metadata. SourceDataType returns the original (not mapped) data type. OriginalColName and OriginalTabName return valid information. Added caBase, caExpr column attributes, allowing to distinguish base table, joined tables and expressional columns.
+/ changed: UpdateOptions.UpdateJoinedFields renamed to UpdateNonBaseFields
+/ changed: Phys: drivers with Array DML mode aeOnErrorUndoAll now are capable to process errors using OnExecuteError
+/ changed: improved ftString / ftWideString parameters handling on Unicode Delphi's
+/ changed: to enable binary sort order set FormatOptions.SortLocale to 0 instead of defining AnyDAC_NOLOCALE_DATA
+/ changed: REAL / FLOAT (32 bit float value) are mapped to ftSingle instead of ftFloat
+/ changed: general library optimization
+/ changed: Phys: Error "Param data type is changed" now includes data type names
+- fixed: Phys: fails to extract base table name from a SELECT FROM (SELECT ...) and a SELECT where comment starts right after table name
+- fixed: Phys: repeating ADConnection.Create / Open / Free leads to growing memory consumption
+- fixed: Phys: fails to map dtBCD to dtCurrency on DXE or less
+- fixed: Phys: fails to convert values > $7F(15) between dtUIn64 and dtFmtBCD
+- fixed: Phys: dtSByte, dtInt16, dtIn32 -> dtUInt64 conversion fails
+- fixed: Phys: "ADPhysManager shutdown timeout" after a pooled connection failed to connect
+- fixed: Stan: creates hkcu/software/da-soft registry key when it does not exist is not needed
+- fixed: Phys: "ADPhysManager shutdown timeout" after a pooled connection failed to connect
+- fixed: Phys: connection recovery does not work for pooled connections
+- fixed: Phys: after connection recovery the ADConnection.DriverName is empty
+- fixed: Stan: "[AnyDAC][DatS]-3. Column type is unknown or undefined" when a mapping rule has TargetDataType = dtUnknown
+- fixed: Stan: TIMESTAMPADD escape function returns float instead of datetime value
+- fixed: Phys: possibly incorrect column attributes on Delphi x64
+- fixed: Stan: impossible to set UpdateOptions.FastUpdates to True at design time
+
+/ changed: Oracle: all files and other entities renamed from Oracl to Oracle (AnyDAC_PhysOracl_xxx packages -> AnyDAC_PhysOracle_xxx, uADPhysOraclXxxx units -> uADPhysOracleXxxx, TADPhysOraclDriverLink component -> TADPhysOracleDriverLink)
+/ changed: Oracle: added NLS_NCHAR_CHARACTERSET to environment report
+/ changed: Oracle: reduced ROWID buffer size to 23 bytes from 64 bytes
+/ changed: Oracle: TOCIPLSQLDescriber.LocateProc returns True if is called for an overloaded proc with Overload = 0
+- fixed: Oracle: ORA-12704 on inserting a value into NCLOB column
+- fixed: Oracle: fails to call SP with PL/SQL record parameter defined in a package not in current schema
+- fixed: Oracle: fails to prepare a stored proc with an argument of a PL/SQL record type with nested sub records
+- fixed: Oracle: AV on non-Unicode Delphi when CharacterSet conn def parameter is specified
+- fixed: Oracle: connection recovery inside of Ping call may lead to memory leaks
+
+/ changed: ADS: CharacterSet set of values trimmed to ANSI / OEM, as normally other values will lead to error
+
+- fixed: ASA: incompatibility with ASA v 7
+
+- fixed: FB: driver does not use ResourceOptions.DirectExecute=True
+- fixed: FB: fixed few ADScript incompatibilities with Firebird iSQL
+- fixed: FB: password is output into a trace as is
+- fixed: FB: "Invalid parameter in transaction parameter block" is possible when TxOptions.Params are specified
+
++ added: MySQL: ReadTimeout and WriteTimeout connection definition parameters
+- fixed: MySQL: "range check error" on editing INT UNSIGNED AUTO_INCREMENT on pre D2009
+- fixed: MySQL: wrong trace output for mysql_real_escape
+- fixed: MySQL: fails to process Array DML errors
+
+/ changed: PG: {TIMESTAMPDIFF(MONTH, ....)} now can use MONTHS_BETWEEN - custom DB function for better compatibility with other DB's
+- fixed: PG: fails to process a command with $$ nested into {IF}{FI}, like {IF PG} DO $$ {FI}
+- fixed: PG: {fn TIMESTAMPADD} fails with a syntax error, when second argument is an expression
+- fixed: PG: fails to read CHAR value with spaces only on Linux platform
+
++ added: SQLite: TADSQLiteBackup.DatabaseObj and DestDatabaseObj properties to simplify work with an in-memory database
++ added: SQLite: DateTimeFormat = DateTime format, allowing to store raw TDateTime values
+/ changed: SQLite: 'GRAPHIC', 'PICTURE', 'PHOTO' now recognized as dtBLOB
+/ changed: SQLite: {TIMESTAMPDIFF} now returns negative / positive values
+- fixed: SQLite: repeating ADQuery.Open / Close leads to growing memory consumption
+- fixed: SQLite: possible memory leak
+- fixed: SQLite: fails to return a time part for the DateTime values in ISO 8601 format (<date>T<time>)
+
++ added: MSSQL: VariantFormat=string|binary connection definition parameter
+- fixed: MSSQL: Array DML & INSERT & VARBINARY(MAX) may fail with AV or "String data, length mismatch"
+
+- fixed: MSAccess: syntax error on UPDATE/INSERT INTO with a field named "password"
+- fixed: MSAccess: "invalid syntax" on posting a new record and UpdateOptions.RefreshMode = rmAll
+
++ added: ODBC: TADPhysODBCBaseDriverLink.GetDrivers and GetDSNs methods
+- fixed: ODBC: fails to execute parameterized query on Cache
+
+- fixed: Informix: does not recognize "Cannot connect to database server" (08004) as ekServerGone
+- fixed: Informix: Array DML operation returns RowsAffected=0. Failed Array DML does not raise an exception.
+- fixed: Informix: AV on Informix Connect v 3.70.TC5DE
+- fixed: Informix: may fail to discover a connection lost
+
+Main components
+-----------------------------
++ added: ADConnection: Assign method to clone connection
+
++ added: ADDataSet: centralized change journal and TADSchemaAdapter
++ added: ADDataSet: RowError property to read an exception associated with the current record
++ added: ADDataSet: AfterGetRecord event, firing one time for each fetched record
+/ changed: ADDataSet: FilterChanges now is of TADUpdateRecordTypes type. New value rtHasErrors is added.
+/ changed: ResourceOptions.DefaultStoreFormat default value is changed to sfAuto
+/ changed: ADDataSet: CopyDataSet now copies also TField ProviderFlags, Origin, etc when coStructure in AOptions
+/ changed: ADDataSet: implemented support for fiBlobs excluded from FetchOptions.Cache
+/ changed: ADDataSet: ResourceOptions.DefaultStoreFormat default value is changed to sfAuto
+/ changed: ADDataSet: XML storage format upgraded to support date & time in ISO-8601
+- fixed: ADDataSet: BookmarkValid does not return False after Table was cleared
+- fixed: ADDataSet: "could not convert variant of type (UnicodeString) into type (Double)" on 'date(Created) = ''2012-05-12''' filtering expression
+- fixed: ADDataSet: RecNo returns invalid info when dataset is in dsInsert state
+- fixed: ADDataSet: exception on application closing when dataset is in editing state
+- fixed: ADDataSet: UpdateOptions.KeyFields and AutoIncFields in 5.0.7 does not work with persistent fields
+- fixed: ADDataSet: "Cannot change table structure" when dataset has IndexFieldNames / IndexName specified and an auto-inc field
+- fixed: ADDataSet: "Variable length column overflow" at assigning a long value to ftWideString / ftFixedWideChar columns (in contrast to ftString)
+- fixed: ADDataSet: fails to switch sort order using IndexFieldNames between <field> and <field>:D
+
+/ changed: ADTable: FetchOptions.LiveWindowMode renamed to LiveWindowParanoic, added LiveWindowFastFirst
+- fixed: ADTable: Locate on closed dataset leads to "Assertion failure" instead of "Cannot perform operation on closed dataset"
+- fixed: ADTable: fails to work when the name of an indexed field has spaces inside
+- fixed: ADTable: AV when adding a new record, and table is connected to DevEx grid
+
+- fixed: ADDataMove: fails to re-throw exceptions occurred on inserting data to a table
+
+- fixed: ADUpdateSQL: UpdateSQL Editor fails to describe quoted fields using the dataset info
+
+- fixed: ADScript: COPY command fails with syntax error when using FROM / TO SQL with a SELECT command
+- fixed: ADScript: @<script> does not use the parent arguments
+
+GUI
+-----------------------------
++ added: FMX support and major GUIx redesign. TADGUIxFormsXxx components are replaced by TADGUIxXxx components with Provider property.
++ added: Demo: Getting Started\FireMonkey demo
+
+Addon's and 3d party products
+-----------------------------
+- fixed: FR4: unnecessary evaluation of dataset parameter expressions at design time
+
+- fixed: RB DADE: "Index out of range" under multi threaded loaded
+- fixed: RB DADE: "Parameter [] datatype is unknown" error on previewing detail RB queries
+
+- fixed: RO SDK: AV when creating AD objects in OnCreate and using DM as AOwner
+
+/ changed: DataSnap: improved compatibility
+- fixed: DataSnap: PSGetTableName returns empty value when dataset is closed
+- fixed: DataSnap: PSExecuteStatement modifies parent command options
+
++ added: AddOn: TUser driver
+
+Tools, demos, installer, help
+-----------------------------
+/ changed: Installer: updated to support XE2 Upd 4 HF 1
+- fixed: C++ Builder: few incompatibilites with BCB2007
+- fixed: C++ Builder: installer may fail to register components under BCB XE2
+- fixed: Help: CHM does no allow searching
+
+============================================================
+v 5.0.7.2333 (12.04.12)
+
+Possibly breaking changes:
+1) Removed TADDataSet.MasterScrollDelay, added FetchOptions.DetailDelay and DetailOptimize.
+2) TADGUIxWaitCursor wait cursor gcrOther renamed to gcrNone, added gcrAppWait.
+3) SQL Anywhere BINARY is equivalent of VARBINARY. Now both types are described as ftVarBytes. In 5.0.5 BINARY was described as ftBytes.
+4) Delphi 5 data type mapping schema for numeric data types may be changed.
+5) Setting UpdateOptions.KeyFields, AutoIncFields now has effect only, when a dataset is inactive and unprepared.
+6) Instead of EADException.Code = er_AD_DAptRecordIsLocked now is raised EADDBEngineException.Kind = ekRecordLocked.
+
+Common
+-----------------------------
++ added: Delphi XE2 support for Mac OS X
++ added: FPC 2.6.0 & Lazarus 0.9.30.4 support for Windows x86 / x64, Linux x86 / x64 and Mac OS X x86 platforms
+/ changed: Help: major update
+
+Main components
+-----------------------------
++ added: UpdateOptions.CheckUpdatable option to enable any field at any time updates
++ added: TADMapRule.NameMask to map a data type using a column name mask
++ added: UpdateOptions.UpdateJoinedFields option to enable enable / disable updates to non-base table columns
++ added: Expr: support for {xx yyy} escape sequences in local expressions (Filter, DefaultExpression, etc)
++ added: AnyDAC_ODBC_ALLMETA, AnyDAC_STRG_XML, AnyDAC_STRG_BIN defines to disable not needed features and reduce EXE size
+
+/ changed: major auto-inc fields cleanup and optimization
+- fixed: DApt: update posting to / refreshing of an aliased column may fail
+- fixed: DApt: fails to edit SELECT when ResourceOptions.PreprocessCmdText = False
+- fixed: DApt: update hides EADDBEngineException.Kind = ekRecordLocked and reraises EADException. Now original exception is raised.
+
+/ changed: ADDataSet: removed TADDataSet.MasterScrollDelay, added FetchOptions.DetailDelay and DetailOptimize
+- fixed: ADDataSet: RecordCount is not updated after Refresh or detail navigating when FetchOptions.RecordCountMode = cmTotal
+- fixed: ADDataSet: fails to store to a file with an unknown extension
+- fixed: ADDataSet: fails to store to file with ResourceOptions.DefaultStoreFormat = sfBinary and file name has no extension
+
++ added: ADStoredProc: ExecFunc overloaded method without arguments
++ added: ADStoredProc: ExecFunc / ExecProc support for "<name>;<index>" syntax for overloaded SP
+
+- fixed: ADTable: result set may be truncated when Commit is issued on Firebird
+- fixed: ADTable: "Capability is not supported" on Open with FetchOptions.RecordCountMode = cmTotal
+- fixed: ADTable: Post after Insert / Append / Edit leads to invalid set of viewable records
+- fixed: ADTable: "Duplicate row found on unique index" at Locate call
+
+- fixed: ADTransaction: does not finish transaction on Destroy, when a DB does not support multiple parallel Tx
+
+- fixed: ADUpdateSQL: ADUpdateSQL.Commands[ARequest].RowsAffected is always -1
+
++ added: ADDataMove: TextStream and LogStream properties to read / write a text from an external stream
+- fixed: ADDataMove: fails to move data to / from ADMemTable
+
+DBMS support and drivers
+-----------------------------
+/ changed: Phys: added tracing point to automatic connection recovery code
+/ changed: Phys: optimized environment report layout
+- fixed: Phys: AV when exception object is processed after an initiated object (eg ADQuery) is destroyed
+- fixed: Phys: memory leak on multiple simultaneous ADConnection open calls
+- fixed: Phys: AV in Ping method at connection recovery
+- fixed: Phys: possible "range check error" when MonitorBy=Remote
+- fixed: MSSQL, MSAcc, DB2: EXxxxNativeException classes were in implementation sections
+
+- fixed: FB / IB: TADTable.Locate with lxoPartialKey where key value length >= character field length leads to "string right truncation"
+- fixed: FB: TADIBValidate.Analyze fails to analyze indexes with quoted identifiers
+- fixed: FB: ERangeError on assigning AsCurrency to Int64 parameter
+- fixed: FB: ResourceOptions.ArrayDMLSize = 1 & OnError & Action = eaSkip fails
+- fixed: FB: "Too many contexts of relation/procedure/views" at Update & ArrayDML
+- fixed: FB: EADDBEngineException[0].ObjName is empty when "violation of PRIMARY or UNIQUE KEY" is raised
+- fixed: FB: fails to execute a script with EXECUTE BLOCK statement
+- fixed: FB: {CONVERT(..., VARBINARY)} fails with syntax error
+- fixed: FB: RollbackRetaining / CommitReataining may lead to "Unable to find a savepoint"
+
++ added: SQLite: upgraded to SQLite v 3.7.11
++ added: SQLite: Array DML support using 3.7.11 INSERT with multiple VALUES. Used when Params.BindMode = pbByNumber
+- fixed: SQLite: returns Precision = 0 for NUMERIC(N,0)
+
++ added: MSSQL: SQL Server 2012 support
++ added: MSSQL: ExtendedMetadata connection definition parameter. When True then provides correct origin table and column names.
+- fixed: MSSQL: TADPhysMSSQLCommandGenerator.GetLimitSelect uses OFFSET / FETCH feature if query contains UNION
+
+/ changed: Oracle: improved driver loading feedback, provided extended trace output for character set setup
+/ changed: Oracle: extended diagnostic for incorrect DB character set
+- fixed: Oracle: "Range check error" at fetching VARCHAR2(2048) with v 10 client
+- fixed: Oracle: fails to return mkGenerators metadata
+- fixed: Oracle: compilation error when AnyDAC_OCI_NLSParams or AnyDAC_OCI_Versions are defined
+- fixed: Oracle: fails to choose a correct overload packaged stored procedure when Overload > 0
+- fixed: Oracle: C++ Builder incompatibility in Oracle driver
+- fixed: Oracle: ORA-12514 "listener does not currently know of service" is not recognized as ekServerGone
+- fixed: Oracle: ORA-03135 "connection lost contact" is not recognized as ekServerGone
+- fixed: Oracle: fails to fetch rows when FormatOptions.MaxStringSize = 255
+- fixed: Oracle: fails to send '-123456789012345678901234567890.12345678' BCD parameter value
+
+- fixed: MySQL: not all reserved words used as identifiers are quoted
+- fixed: MySQL: fails to work with UTF8 data using FPC / Lazarus
+
+- fixed: PgSQL: fails to execute a script with $xxx$ delimited strings
+- fixed: PgSQL: fails to execute "SELECT MyProc()" command, where MyProc returns VOID
+
++ added: ADS: TADADSUtility service component
++ added: ADS: TablePassword connection definition parameter
++ added: ADS: added support for ads.ini aliases
+- fixed: ADS: "Expected lexical element not found: FROM" on ADS v < 10 and FetchOptions.RecsMax > 0
+- fixed: ADS: TADConnection.OnError may be not called
+- fixed: ADS: fails to open ADTable when TableName = "<name>.DBF"
+
++ added: MSAcc: ability to set/reset database password for CreateDB, Compact and Repair calls
+- fixed: MSAcc: fails with Database or DestDatabase values with spaces inside
+- fixed: MSAcc: fails with empty DestDatabase for Compact call
+- fixed: MSAcc: fails with password protected databases at Compact call
+- fixed: MSAcc: mapping dtMemo to dtAnsiString leads to "Integer overflow"
+
+/ changed: ASA: BINARY is equivalent of VARBINARY. Now both types are described as ftVarBytes
+- fixed: ASA: fails to open a database file with '!' in the path
+
+- fixed: DB2: fails to connect using latest "IBM Data Server Driver for ODBC and CLI"
+
++ added: Informix: support for BIGINT and BIGSERIAL datatypes
+- fixed: Informix: fails to parse some of the Informix object names
+- fixed: Informix: BCD Overflow exception on reading data from decimal(13,6) columns
+
+- fixed: DBISAM: ADTable.Locate fails with syntax error
+
+GUI
+-----------------------------
+/ changed: GUIx: wait cursor gcrOther renamed to gcrNone, added gcrAppWait
+- fixed: GUIx: double click in Open dialog of Connection Editor does not save a file name
+- fixed: GUIx: Change Password dialog has an invalid layout
+
+FPC / Lazarus
+-----------------------------
++ added: FPC: AnyDAC trial version for Lazarus / FPC
++ added: FPC: Support for FPC 2.6.0 and Lazarus 0.9.30.4
+- fixed: FPC: "No matching implementation for interface method IUnknown.QueryInterface" with  FPC 2.5 and higher
+- fixed: FPC: multiple issues. Now provided the same quality as for Delphi.
+
+Tools, demos and installer
+-----------------------------
+- fixed: Tools: inability to use custom color for SQL script background
+
++ added: Packages: AnyDAC_Dcl_D16Starter.dproj - support for XE2 Starter Edition
+- fixed: Installer: packages not registered in IDE's under limited Vista/Win 7 user
+
++ added: Samples: "getting started" demo for MS Access, MSSQL, SQLite and Firebird
+- fixed: Demos: inability to create demo db for SQL 2005 and higher
+- fixed: Demos: Comp Layer\TADSchemaAdapter\Main is fixed
+
+Addon's and 3d party products
+-----------------------------
++ added: FR4: example of usage FR4 AddOn
++ added: FR4: support for FR4.x under XE2
+- fixed: FR4: storing expressions instead of values in TfrxParams
+
++ added: RB Addon: RBuilder 14.02 under XE2 support
++ added: RB DADE: readme.txt with known issues and limitations
+/ changed: RB DADE: improved work with manually edited RB queries
+- fixed: RB DADE: multiple errors
+- fixed: RB DADE: getting available table names for TppDesigner
+
+/ changed: DataAbstract: DAD updated to support FPC 2.5.1 and 2.6.0
+- fixed: DataAbstract: "Fetching all records cannot be performed unidirectionally" on any operation
+- fixed: DataAbstract: "Fetching all records cannot be performed unidirectionally" if BiDirectionalDataSets=1
+- fixed: DataAbstract: "Invalid typecast" error on compiling under Win64
+
+- fixed: GExperts fails to copy TADQuery
+
+============================================================
+v 5.0.5.2073 (20.12.11)
+
+Possibly breaking changes:
+1) SQL Server and SQL Anywhere 'App' connection definition parameter removed. Use 'ApplicationName' instead. Supported by SQL Server, SQL Anywhere, Oracle and PostgreSQL driver.
+2) ParamBindMode property is removed. Use Params.BindMode instead.
+3) Oracle NUMBER (no precision and scale) now is described as dtFmtBCD (38,38) instead of dtFmtBCD (38,0).
+4) RoundToScale option renamed to Round2Scale.
+5) Fetching All & Unidirectional is prohibited and will raise an exception.
+
+  + added: IB: Interbase v 6-7 support
+  + added: FB: Firebird v 3 support, including packaged procedures, PSQL functions, identity columns, BOOLEAN data type, etc
+  + added: FB: "DROP DATABASE" support through ADScript and DropDatabase connection parameter
+  + added: FB: COMPUTED BY columns support
+  + added: FB: TADIBService.SqlRoleName property
+  + added: PgSQL: PostgreSQL v 9 support, including named parameters and anonymous blocks
+  + added: PgSQL: support for ENUM data type
+  + added: ADS: Advantage v 8 and 9 support
+  + added: ASA: SQL Anywhere v 12 support
+  + added: SQLite: SQLite v 3.7.9 support
+  + added: SQLite: TADSQLiteSecurity.Options with soSetLargeCache option
+  + added: Phys: ApplicationName conn def parameter, allowing to identify the application. MSSQL and ASA "App" parameters are removed.
+  + added: Phys: IADPhysConnectionMetadata.IsUnicode property returning True when connection is in Unicode mode
+  + added: ADStoredProc: ExecFunc method to execute a stored function and return it value
+  + added: ADConnection: AbortJob method allowing to cancel all running tasks on this connection
+  + added: Stan: FormatOptions.StrsTrim2Len property
+  + added: Stan: EADDBEngineException.ErrorCode property - shortcut to EADDBEngineException[0].ErrorCode
+  + added: ADDataSet: new CopyDataSet options: coIndexesReset, coIndexesCopy, coConstraintsReset, coConstraintsCopy, coAggregatesReset, coAggregatesCopy, coRefresh
+  + added: AddOn: ReportBuilder DADE
+  + added: Samples: Oracle specific Samples\DBMS Specific\Oracle\BFile demo
+  + added: Design Time: few property editors
+  / changed: Lazarus / FPC: support updated to Lazarus 0.9.30.2 and FPC 2.4.4
+  / changed: Help: major cleanup and multiple extensions
+  / changed: Phys: removed IADPhysCommand.ParamBindMode. Use Params.BindMode instead
+  / changed: Phys: simplified CliHandle / SharedCliHandle usage. DLL Tx state is synchronized with host app, no need to set DriverID in DLL.
+  / changed: Phys: Fetching All & Unidirectional is prohibited and will raise an exception
+  / changed: Oracle: NUMBER (no precision and scale) now is described as dtFmtBCD (38,38) instead of dtFmtBCD (38,0)
+  / changed: FormatOptions.StrsTrimToLen -> StrsTrim2Len, RoundToScale -> Round2Scale
+  - fixed: ADConnection: GetTableNames, GetPackageNames, GetStoredProcNames, GetGeneratorNames does not use ACatalogName / ASchemaName to limit the list of objects
+  - fixed: ADConnection: AfterCommit is never called
+  - fixed: ADConnection: "assertion failed" when connection was losted before before Edit / Post call and OnRecover returned faFail
+  - fixed: ADTransaction: AV is raised, when connection was losted in StartTransaction / Commit / Rollback and connection recovery was aborted
+  - fixed: ADManager: memory leak when Application.Run is not called but DataModule with AnyDAC components is created
+  - fixed: ADDataSet: does not fire OnUpdateRecord event, when there is no Adapter attached
+  - fixed: ADDataSet: Insert / Post when CachedUpdates=True and not all records are fetched, ApplyUpdates may change the current position
+  - fixed: ADDataSet: Insert / Cancel in a DBGrid may jump to the last record
+  - fixed: ADDataSet: SourceEOF set incidentally to False after moving to top of dataset
+  - fixed: ADDataSet: GotoNearest may locate prior to the correct record
+  - fixed: ADDataSet: when UpdateOptions.EnableXxx is False, then exception with empty message is raised
+  - fixed: ADDataSet: "assertion failed" in BookmarkValid after dataset records deletion
+  - fixed: ADDataSet: "AnyDAC-400. Command updated [0] instead of [1] record" exception is not recorded into changes log at ApplyUpdates call
+  - fixed: ADDataSet: AV in detail InfoPower grid
+  - fixed: ADTable: multiple stability and performance issues. Reduced the number of the SQL queries sent by ADTable.
+  - fixed: ADTable: after changing TableName, Field Editor / Add fields may raise "field does not exist"
+  - fixed: ADTable: does not use LDV when UpdateOptions.KeyFields is specified
+  - fixed: ADTable: fails to populate detail table, when master fields have a NULL value
+  - fixed: ADTable: "bookmark not found" with InfoPower grid
+  - fixed: ADTable: raises "bookmark not found" instead "bookmark key fields are incompatible"
+  - fixed: ADTable: does not handle NULL values in master-detail relation and indexes columns
+  - fixed: ADTable: after editing filtered ADTable record does not go away
+  - fixed: ADMemTable: loading a ADMemTable saved file into ADQuery and ApplyUpdates on FB gives "Data too large for variable Xxx. Max len =[0]"
+  - fixed: ADScript: fails to change AUTOCOMMIT setting without active connection
+  - fixed: ADDataMove: "command text must be not empty" when moving to ADTable
+  - fixed: Phys: when UpdateOptions.GeneratorName is set and DBMS does not support generators then "capability not supported" will be raised
+  - fixed: Phys: "ADPhysManager shutdown timeout" is possible when IADStanAsyncExecutor is not linked
+  - fixed: Phys: AV is possible when IADGUIxWaitCursor is not linked
+  - fixed: Phys: FindParam(Position) may raise "List index out of bounds"
+  - fixed: Phys: possible AV at application termination in ADManager.Close
+  - fixed: Phys: possible AV when tracing is ON
+  - fixed: Oracle: "index [SYS_ILXxxx] definition is not completed" when open a table with BLOB fields using TADTable
+  - fixed: Oracle: ADStoredProc requires upper cased names
+  - fixed: Oracle: fails to edit BFILE column value
+  - fixed: Oracle: two DATE values with 1 sec difference are considered as equal, leading to TADTable "Duplicate row found on unique index"
+  - fixed: ADS: AV when application is using both AnyDAC and Advantage native components
+  - fixed: ADS: TADSTable was broken
+  - fixed: ADS: fails to get metadata for dictionary based connection tables, when tables are stored in different than dictionary folder
+  - fixed: ADS: mkForeignKeys - DELETE_RULE and UPDATE_RULE are misinterpreted
+  - fixed: MSSQL: SQL_ERROR when INSERT into table with VARCHAR(MAX) fails with "UK violated"
+  - fixed: MSSQL / ASA: "Invalid string or buffer length" with Array DML, where one parameter is BLOB and one of the cells is NULL
+  - fixed: MSSQL: fails to connect using a password with ';' inside
+  - fixed: MSSQL: the PRINT output includes a message with SQLState, ErrorCode, etc. Now includes only the message.
+  - fixed: MySQL: AV in embedded server, when no EmbeddedArgs is specified
+  - fixed: MySQL: fails to update record, when WHERE has ftFloat parameter
+  - fixed: MySQL: places a shared instead of write lock in lpImmediate mode
+  - fixed: MySQL: "table does not exists" on SELECT * FROM dual
+  - fixed: FB: AV on TADIBSecurity.AddUser / DeleteUser calls
+  - fixed: IB: AV is possible when using ftWideString parameters in non-Unicode Delphi
+  - fixed: FB: pessimistic lock is released immediately in auto-commit mode with long result set
+  - fixed: SQLite: fails to parse hh:mi:ss.z time value (expected zzz)
+  - fixed: SQLite: TSQLiteLib.VersionStr is empty when static linking mode
+  - fixed: SQLite: AV / memory leak is possible with dynamically linked library
+  - fixed: SQLite: failed to detect invalid password for aes-ctr encrypted database
+  - fixed: SQLite: "Invalid Floating Point Operation" exception possible on some operations
+  - fixed: SQLite: invalid default value OpenMode=CreateUTF16
+  - fixed: SQLite: character column with ROWID alias is recognised as dtInt64 [caROWID] and getting UnnamedN column name
+  - fixed: SQLite: AV on reading exception SQL property in OnError event handler
+  - fixed: SQLite: ADTable does not use ROWID in SELECT list, and produces non optimal update SQL commands for a table without PK
+  - fixed: SQLite: incorrect BusyTimeout default value - 1s instead of 10s
+  - fixed: SQLite: fails with AV on Sweep when uADStanAsync is not linked
+  - fixed: MSAccess: fails to update BOOLEAN columns
+  - fixed: ODBC: incompatibilities with ElevateDB ODBC driver
+  - fixed: DataSnap: AV at Oracle stored procedure call with PL/SQL Table parameter
+  - fixed: XE2 & MacOS: incompatibility with Update 2
+
+============================================================
+v 5.0.3.1917 (18.09.11)
+
+More about major and possibly breaking changes:
+1) XE2 and x64 support:
+http://www.da-soft.com/blogs/anydac-for-delphi-and-rad-studio-xe2.html
+2) ADDataSet.Ranged is renamed to IsRanged.
+3) Oracle: removed SQL_TRACE, OPTIMIZER_GOAL, HASH_JOIN_ENABLED connection def params.
+4) DB2: CharFormat connection def param renamed to StringFormat.
+
+  + added: RAD Studio XE2 Windows x32 / x64 support
+  + added: preliminary RAD Studio XE2 MacOS support
+  + added: FPC / Lazarus Windows and Linux x64 support
+  + added: russian License-ru.txt
+  + added: Stan: TADParams.AssignFieldValue overloaded method (one param, assigns field value)
+  + added: ADQuery: design-time preference - double click calls Query Editor or Field Editor
+  + added: ADDataSet: TADMasterDataLink.ScrollEnable / ScrollDisable to temporary disable / enable M/D
+  / changed: SQLite: upgraded to SQLite v 3.7.7.1
+  / changed: Oracle: removed SQL_TRACE, OPTIMIZER_GOAL, HASH_JOIN_ENABLED connection def parameters. Added OracleAdvanced parameter.
+  / changed: FPC: updated to support pure FPC and FreeBSD
+  / changed: DB2: connection definition parameters CharFormat renamed to StringFormat
+  / changed: FR Addon: major update performed by Francisco Duenas (more http://www.da-soft.com/forums/anydac-general-english/anydac-connector-for-fast-report-improved-and-submitted-to-support-team.html)
+  / changed: ADDataSet: Ranged renamed to IsRanged and made R/O
+  - fixed: ADConnection: connection linking by name (ConnectionName) was half broken
+  - fixed: Phys: possible deadlock with pooled connections, when connection establishment is slow
+  - fixed: Phys: "Integer overflow" possible after AnyDAC app is running for many days
+  - fixed: DApt: a failed pessimistic locking leaves a transaction active till a program termination
+  - fixed: ADDataSet: Lookup does not do FetchAll
+  - fixed: ADDataSet: "record not found" at FindNearest on empty dataset
+  - fixed: ADDataSet: AV with persistent fields & OnCalcFields event handler
+  - fixed: ADDataSet: possible "assertion failure" at ApplyUpdates
+  - fixed: ADDataSet: "cannot change table structure" using persistent fields with Required = False
+  - fixed: ADDataSet: setting OnFilterRecord before opening dataset may lead to AV or "field not found" error
+  - fixed: ADDataSet: possible AV after FieldDefs.Update and IndexDefs.Update calls
+  - fixed: ADDataSet: Refresh may not do FetchAll to locate the current record
+  - fixed: ADTable: infinite loop in SetKey method
+  - fixed: ADTable: insert then update with UpdateMode=upWhereAll leads to "command updated [0] records"
+  - fixed: ADTable: fails to open a table with field names requiring quoting
+  - fixed: ADTable: error "Object [COLUMN_NAME] is not found"
+  - fixed: ADTable: fails to open a table with field names requiring quoting
+  - fixed: ADTable: AV on setting OnFilterRecord to nil when table is active
+  - fixed: ADTable: AV after SetKey, Close, Open calls sequence
+  - fixed: ADScript: Params usage leads to "invalid parameters" on Oracle
+  - fixed: ADScript: AV at script execution using D2006
+  - fixed: ADDataMove: fails to transfer UTF8 text data files
+  - fixed: DataSnap: PSExecuteStatement with '?' param markers fails on Oracle
+  - fixed: Expr: regression from 1028, T / F constants had lower priority than field names
+  - fixed: FB: commented RETURNING leads to invalid parameters
+  - fixed: FB: pessimistic locking does not work (added WITH LOCK phrase)
+  - fixed: FB: ADStoredProc.Open returns only single record
+  - fixed: FB: mkTables does not return RDB$ system tables
+  - fixed: Oracle: fails to fetch a date with negative year
+  - fixed: Oracle: fails to read / write an international text to NXxxx fields at non-UTF8 database 
+  - fixed: Oracle: fails to recognize Instant Client when there is oracle.key file
+  - fixed: SQLite: TADSQLiteValidate.CheckOnly provides invalid output
+  - fixed: SQLite: empty strings may be converted to NULL values disregarding StrsEmpty2Null
+  - fixed: SQLite: AV executing a SQL batch, where one of the commands has a syntax error
+  - fixed: MySQL: possible 5.0.x incompatibility
+  - fixed: ADS: "Error 5023" when MonitorBy specified
+  - fixed: ADS: "The specified table, memo file, or index file was unable to be opened" after create, open and drop table
+  - fixed: ADS: missed CLI incompatibility reporting
+  - fixed: ODBC: fails to work with SQL Base ODBC data source
+  - fixed: PgSQL: ADEventAlerter fails to work
+  - fixed: PgSQL: fails to work with UTF8 data using FPC / Lazarus
+  - fixed: MSSQL: AV on executing an SP with a pivot with many columns
+  - fixed: MSSQL: "command is busy with result set" on executing a batch SQL command
+  - fixed: Tracing: design-time tracing was not working. FADMoniEnabled is removed.
+
+============================================================
+v 5.0.1.1845 (04.07.11)
+  / changed: ADDataSet: expression based indexes now are using locale and sort options
+  - fixed: ADDataSet: expression based indexes are broken
+  - fixed: Demos: few demo projects fails to compile
+  - fixed: ADTable: when GotoKey returns False, then ADTable records are corrupted
+  - fixed: Phys: connection pooling is broken
+  - fixed: Stan: enXxxx encodings renamed to ecXxxx to avoid conflicting with Indy in C++Builder
+  - fixed: Stan: AV at converting '    0  ' to TBcd
+
+============================================================
+v 5.0.1.1835 (27.06.11)
+
+More about major changes:
+1) Advantage driver: 
+   http://www.da-soft.com/blogs/anydac-for-delphi-advantage-database-support.html
+2) TADTable with live data window: 
+   http://www.da-soft.com/blogs/anydac-tadtable-with-live-data-window.html
+3) Other changes:
+   http://www.da-soft.com/blogs/anydac-5.0-other-changes.html
+ 
+  + added: ADS: native Advantage Database ACE API driver
+  + added: ADTable: new implementation with live data window, FormatOptions.SortLocale and SortOptions options, TADFetchOptions.LiveWindowMode option to control live data window performance
+  + added: GUIx: IADGUIxWaitCursor.ForceStopWait method
+  + added: Oracle: TADPhysOracleDriverLink.VendorHome design-time editor
+  + added: MSAccess: StringFormat connection def parameter
+  + added: Stan: UpdateOptions.CheckReadOnly property
+  + added: ADDataSet: set of FormatOptions.FmtDisplayXxx and FmtEditXxx options to specify the default fields display and edit format
+  + added: ADConnection: Before/After StartTransaction, Commit, Rollback events
+  / changed: DFMChanger: added exit code, ability to add, multiple units, renamed to ADDFMChanger
+  / changed: Moni: major refactoring of Stan, Phys and Moni interaction (removed ADSettings from ADConnectionDefs.ini, removed implicit monitor activation - now only by TADMoniXxxxClientLink.Tracing, added ability to turn on / off Tracing, added initial state to MonitorBy, extended connection info)
+  / changed: ADConnection: major refactoring of GetInfoReport (new declaration, extended information, driver loading reports, session analysis reports)
+  / changed: Phys: major refactoring of the IADPhysManager and IADPhysDriver infrastructure (removed packaged drivers support, removed unloading of inactive drivers, CLI library loading moved from driver constructor to Load method, etc)
+  / changed: DApt: "command updated [n] records instead of [1]" now contains optional DBMS warning message
+  / changed: Lazarus: reworked Lazarus / FPC documentation
+  / changed: MSSQL: updated event alerter
+  / changed: ADManager: allowed to have few TADManager's at design-time
+  - fixed: Phys: tab character was specified as #7 instead of #9
+  - fixed: Phys: TADEncoder.Encode / Decode may fail with ERROR_INSUFFICIENT_BUFFER when ADest address > 3Gb
+  - fixed: Phys: empty string data's may be returned on UTF8 data sources
+  - fixed: Phys: FormatOptions.StrsEmpty2Null=False does not work for strings longer than FormatOptions.InlineDataSize
+  - fixed: Phys: AV possible on a connection recovering
+  - fixed: Phys: AV at converting '    0' to TBcd
+  - fixed: Phys: event alerter may raise "connection is active" exception on pooled connection
+  - fixed: Phys: "manager shutdown timeout" when MonitorBy=Remote and ADMonitor was closed in the middle
+  - fixed: Phys: "manager shutdown timeout" when ADQuery + ADTransaction + DataSnap
+  - fixed: Oracle: dtXxxMemo -> dtXxxString mapping rule fails
+  - fixed: Oracle: fails to call a ADStoredProc for a SP with db link
+  - fixed: Oracle: memory leak at preparing stored ADStoredProc referencing to a public alias
+  - fixed: Oracle: fails to recognize "sequence does not exist" as asObjNotExists
+  - fixed: Oracle: setting TxOptions.AutoStop=False and AutoStart=True does not mark a transaction started on first DML command
+  - fixed: ASE: fails to post updates to table with a NUMERIC(6) column
+  - fixed: MSSQL: AV in GetFieldNames on a table with long (> 300 chars) comments or default values
+  - fixed: MSSQL: SQL State 08S02 is not recognized as ekServerGone
+  - fixed: MSSQL: fails to get metainformation, depending on server collation
+  - fixed: MSSQL: fails to send VARCHAR(MAX) (ftString with Size=MAXINT) parameter to server
+  - fixed: FB: EventAlerter may raise "Error writing data to the connection"
+  - fixed: FB: mkTables with TableKinds=tkTable returns views too
+  - fixed: FB: "database @1 already exists. To replace it, use the -REP switch" on TADIBRestore with roReplace
+  - fixed: FB: does not recorgnize "deadlock update conflicts with concurrent update" as ekRecordLocked
+  - fixed: FB: CreateDatabase=Yes ignores CharacterSet
+  - fixed: FB: "unsuccessful metadata update" error on auto Commit does not close transaction
+  - fixed: FB: milliseconds are dropped from dtTime values
+  - fixed: IB: demo DB fails to install on IB7, 2007, 2009
+  - fixed: PgSQL: "range check" on ftString parameter with Size >= 40000
+  - fixed: PgSQL: AV on SQL executing with DirectExecute=True and tracing enabled
+  - fixed: PgSQL: "invalid input syntax for type timestamp with time zone" at connecting to a database
+  - fixed: PgSQL: fails to recognize "password authentication failed for user" as ekUserPwdInvalid
+  - fixed: PgSQL: ADScript does not support $$ quoted string
+  - fixed: Sybase ASE: fails to transfer SQL_C_DECIMAL value to a DB
+  - fixed: SQLite: when Encrypt condef parameter is specified, then Password=xxx and NewPassword= does not work
+  - fixed: MSAccess: {fn CONVERT(..., VARCHAR)} does not work
+  - fixed: MSAccess: fails to work with BOOLEAN columns
+  - fixed: ADQuery: FieldDefs may not refresh after changing SQL
+  - fixed: ADQuery: AV when uADStanAsync is not linked
+  - fixed: ADDataSet: an exception raised while refreshing dataset may be hidden
+  - fixed: ADDataSet: TADIndex.Assign(TADIndex) fails when indexes belong to different datasets
+  - fixed: GUIx: Query Editor does not show precision and scale for non floating point fields
+  - fixed: DataSnap: AV in CDS when reading ftWideMemo TADQuery field
+  - fixed: Lazarus: some demos fail to compile
+  - fixed: Lazarus: Async Dialog has invalid layout
+  - fixed: Lazarus: TADConnection.LoginDialog is not published
+  - fixed: Lazarus: TADConnection.Offline does not work
+  - fixed: Lazarus: *.lfm, *.lrs files from Source folder are missed
+  - fixed: C++ Builder: incompatibility with BCB6
+  - fixed: ADMonitor: does not show ekComponent output
+  - fixed: ADExplorer: cannot edit connection definition
+  - fixed: ADExplorer: "step" in SQL scripts executes current and next commands when first command fails
+
+============================================================
+v 4.0.7.1723 (01.03.11)
+
+Note, the following changes may break your applications:
+1) Renamed UnifyParamNames -> UnifyParams
+2) Renamed DataSnapComptability -> DataSnapCompatibility
+3) Param behaviour is changed. Details:
+   http://www.da-soft.com/blogs/changes-in-anydac-parameters-handling.html
+
+  + added: MSSQL: ADEventAlterter support 
+  + added: MSSQL: MetaCaseIns conn def parameter for case-insensitive metadata search
+  + added: MySQL: TinyIntFormat connection def parameter controlling TINYINT(1) representation
+  + added: MySQL: SQLSTATE support
+  + added: Informix: support for BLOB / CLOB
+  + added: SQLite: automatic recognition of an expression column data type
+  + added: SQLite: TADSQLiteBackup.BusyTimeout property
+  + added: Oracle: NLSLang and TNSAdmin TADPhysOracleDriverLink properties and driver config params
+  + added: PgSQL: support for NOTIFY payload parameter in v9
+  + added: PgSQL: UnknownFormat=Error|BYTEA conn def parameter for unknown data type fields help update
+  + added: ADDataMove: ability to recognize the text file format - TextAnalyze, GuessTextFormat members
+  + added: ADDataSet: ResourceOptions.StoreItems option, controlling items to write when saving a dataset
+  + added: ADTable: Exists property
+  + added: FR4: Delphi XE packages
+  + added: Berkeley DB support
+  / changed: Lazarus: revamped FPC v 2.4.2 + Lazarus v 0.9.31 support on Win32, Linux. Preliminary x64 port.
+  / changed: Params: major rework of the SQL parameters handling. Now pbByName and pbByPosition bind modes are fully unified and supported by all DBMS's.
+  / changed: Oracle: connection definition parameter BooleanValues replaced with BooleanFormat
+  / changed: ADManager: GetDriverNames now have 3d parameter - ABaseOnly, allowing to return only base driver ID's
+  / changed: ADDataSet: added AClearRecord parameter to RefreshRecord method
+  / changed: SQLite: upgraded to v 3.7.5
+  / changed: SQLite: wrapper code optimization
+  / changed: SQLite: improved handling of shared cache
+  / changed: Params: allowed to include '.'  into param names (with exception of Oracle)
+  / changed: Options: UnifyParamNames renamed to UnifyParams
+  / changed: Options: DataSnapComptability renamed to DataSnapCompatibility
+  / changed: DataAbstract: few issues resolved in DAD ("concurrent" default SQLite connection params, correct URL's in info, etc)
+  / changed: Help: major cleanup and multiple extensions
+  / changed: VSE: moved from main sources to AddOn's
+  / changed: DataAbstract: few issues
+  / changed: MSSQL: demo DB installer is configured for MSSQL 2005 and higher
+  - fixed: SQLite: fails to fetch Int64 expressional column
+  - fixed: SQLite: NTEXT(N) is dtWideMemo instead of dtWideString
+  - fixed: SQLite: TADEventAlerter does not return specified arguments
+  - fixed: SQLite: TADSQLiteBackup raises a not needed "not an error" exception
+  - fixed: SQLite: TADSQLiteBackup end-less loop when a destination DB is locked
+  - fixed: SQLite: extra "database is locked" with -DSQLITE_DEFAULT_LOCKING_MODE=1
+  - fixed: FB: mkIndexes returns only single primary key index, if it exists
+  - fixed: FB: "shutdown timeout" error after losting a connection
+  - fixed: FB: "assertion failed" on writing 9.99992333 to DECIMAL(18,5)
+  - fixed: MSSQL: fails to edit table in a TURKISH_CI_AS database
+  - fixed: MSSQL: exception is not raised, when SQL batch has few successful commands following by a failed command
+  - fixed: MSSQL: app hangs on a StartTransaction call with active cursors and CmdExecTimeout > 0
+  - fixed: MySQL: fails to install demo DB on a server with enabled binary logging
+  - fixed: MySQL: fails to create demo database on a 5.5 server
+  - fixed: MySQL: fails to call TIMESTAMPADD / TIMESTAMPDIFF (FRAC_SECOND) escape on a 5.5 server
+  - fixed: MySQL: fails to return stored procedure BOOLEAN output parameters on a 5.5 server
+  - fixed: MySQL: fails to return stored procedure DECIMAL output parameters on a 5.1 server
+  - fixed: MySQL: fails to send ftBoolean value to a 4.0 server
+  - fixed: MySQL: some character columns and expressions in SELECT recognized as binary typed
+  - fixed: PgSQL: memory overrun on writing a large numeric value to a DB
+  - fixed: PgSQL: fails to send 0.000001 numeric value to a DB
+  - fixed: PgSQL: AV on an alerter unregistering immediately after registration
+  - fixed: PgSQL: fails to call TIMESTAMPDIFF on 9.0 server
+  - fixed: PgSQL: fails to work with 7.x client 
+  - fixed: PgSQL: ignores ResourceOptions.DirectExecute
+  - fixed: MS Access: Connection Wizard fails to setup parameters help update
+  - fixed: ODBC: "invalid precision value" on parameterized query to DBF
+  - fixed: ADDataSet: detail empty dataset leads to requery when connection is offline
+  - fixed: ADDataSet: second editing of the same record leads to inconsistent order in updates journal
+  - fixed: ADDataSet: after FieldDefs.Update changing param values & Open does not have effect (regression from 1426)
+  - fixed: ADDataSet: BLOB field changes may be losted, when fiBlobs excluded from FetchOptions.Items and record has multiple BLOB fields
+  - fixed: ADTable: may not use GetCustomWhere or GetCustomOrderBy
+  - fixed: ADEventAlterter: memory leaks are possible
+  - fixed: ADDataMove: fails to move data into ADMemTable
+  - fixed: GUIx: WaitCursor returns cursor back to crDefault when FADGUIxSilentMode = True
+  - fixed: Installer: Delphi XE Prof incompatibility
+  - fixed: Installer: fails to compile on a system where was installed Arch, then reinstalled Prof
+  - fixed: C++Builder: "ambiguous definition of LCID" error
+  - fixed: C++Builder: "ambiguous definition of BOOL" error
+  - fixed: C++Builder: "unresolved external SetPortA" error
+  - fixed: C++Builder: "object factory missing"
+  - fixed: C++Builder: FR4 addon do not support C++Builder
+  - fixed: Stan: ADShutdown does not terminate all AnyDAC service threads, so app may hangup on dll unloading even after ADShutdown call
+  - fixed: DataAbstract: DAD fails to transfer Unicode data on SQL Server
+
+============================================================
+v 4.0.5.1605 (24.11.10)
+  + added: SQLite: TADSQLiteValidate component
+  + added: SQLite: SharedCache connection definition parameter
+  + added: ADTable: Open(ATableName) method
+  + added: Phys: MetaCurSchema / MetaCurCatalog = '*' avoids implicit inclusion of schema / catalog names into full object name
+  + added: mkCatalogs, mkSchemas meta data kinds and GetCatalogNames, GetSchemaNames methods
+  + added: base x64 support
+  + added: AddOn: EhLib support
+  / updated: Help: major cleanup and multiple extensions
+  / updated: ADDataSet: major optimization
+  / changed: DatS: optimized view building code
+  / changed: IB: optimized driver code
+  / changed: DatS: improved fetch performance
+  / changed: PgSQL: improved fetch performance
+  / changed: AddOn: updated SQL Ini File
+  / changed: DBX: added AnyDAC_DBX define to control AnyDAC linking to dbExpress
+  / changed: multiple extensions and changes to AnyDAC service components
+  / changed: SQLite: optimized build defines
+  / changed: ADManager: the GetDriverNames method now has AValidate, allowing to check is the DBMS CLI installed and it may be loaded
+  - fixed: SQLite: few multi-threading issues in encryption code
+  - fixed: SQLite: does not use TFormatOptions.StrsTrim and StrsEmpty2Null
+  - fixed: SQLite: "Cannot rollback transaction - SQL statements in progress" on Rollback with active result sets
+  - fixed: SQLite: CheckEncryption fails to validate DB. Also, improved reporting.
+  - fixed: SQLite: TADSQLiteSecurity.RemovePassword was not working
+  - fixed: MSSQL: "The data types varbinary(max) and image are incompatible in the equal to operator"
+  - fixed: MSSQL / ASA: "No column was specified for column 1 of 'A'." on a query with RecsMax specified
+  - fixed: MSSQL: "invalid object name" on SELECT FROM ::fn_xxxx()
+  - fixed: MSSQL: MARS is always enabled for a connection and cannot be disabled
+  - fixed: PgSQL: returns incorrect value for TIMESTAMPTZ columns
+  - fixed: PgSQL: escape functions CURDATE, CURTIME, NOW does not work
+  - fixed: PgSQL: AV when fetching UTF8 string with mapping WideString -> AnsiString
+  - fixed: PgSQL: fails to edit query with ONLY keyword
+  - fixed: IB/FB: fails to use quoted identifiers
+  - fixed: FB/IB/MySQL: possible AV at application exiting, when using embedded engines
+  - fixed: Oracle: fails to execute AnyDAC QA scripts
+  - fixed: Oracle: a failed execution in autocommit mode leads to an active transaction
+  - fixed: DB2: fails to fetch meta data after SET SCHEMA=xxx command
+  - fixed: ASA: fails to execute stored proc with inout params in a loop
+  - fixed: ADS: memory corruption at metadata retrieval
+  - fixed: MSAccess: does not support ` and " as object name quote chars
+  - fixed: Informix: exception is not raised on posting update using invalid SQL in TADUpdateSQL
+  - fixed: ODBC: improved compatibility with old drivers
+  - fixed: ODBC: does not recognise ADS DSN as mkADS
+  - fixed: ODBC: fails to execute PostgreSQL parameterized query
+  - fixed: Stan: AV is possible on application exiting
+  - fixed: Phys: Memo -> String mapping is completely broken
+  - fixed: Phys: transaction properties are not updated after reconnection
+  - fixed: Phys: MetaDefXxx and MetaCurXxx are not visible in connection editor
+  - fixed: Phys: issues with executing COMMIT / ROLLBACK commands directly
+  - fixed: Tracing: impossible to set TADMoniXxxClientLink.Tracing to True at design-time
+  - fixed: ADDataSet: SaveToStream does not store field captions
+  - fixed: ADDataSet: Refresh on indexed detail dataset empties dataset
+  - fixed: ADDataSet: BeforeGetRecords / AfterGetRecords does not fire for async queries
+  - fixed: ADDataSet: AV is possible on ADConnection destroying
+  - fixed: ADDataSet: refresh on detail dataset does not work if master dataset is in editing / inserting state
+  - fixed: ADDataSet: after deletion of last fetched record the query position may change to next+1 record
+  - fixed: ADDataSet: AV at assigning empty string to TGuidField
+  - fixed: ADDataSet: setting UpdateOptions.CheckRequired to False after Open and before Append has no effect
+  - fixed: DApt: fails to edit dataset with quoted field names
+  - fixed: Query Editor may hang up at design-time
+  - fixed: DatS: BeginBatch / EndBatch fails with unidirectional query
+  - fixed: GUIx: connection editor fails to store database path
+  - fixed: GUIx: few ADUpdateSQL editor issues
+  - fixed: GUIx: wrong help link
+  - fixed: ADConnection: possible AV at application exiting
+  - fixed: AnyDAC fails to install on Delphi XE Professional
+  - fixed: memory leak is possible on application exiting
+  - fixed: Demo: TADEventAlerter demo was broken
+  - fixed: D5: major incompatibility
+
+============================================================
+v 4.0.3.1489 (21.09.10)
+  + added: Phys: Multiple quoted name delimiters support by a single driver (SQLite, MSSQL, MySQL)
+  + added: IB: TOGO edition support
+  / changed: ADS: improved support
+  / changed: SQLite: updated to v 3.7.2
+  - fixed: IB: demo DB installation script may fail with UTF8
+  - fixed: IB: few Interbase incompatibilities
+  - fixed: IB/FB: fails to use quoted identifiers (regression in 1487)
+  - fixed: Oracle, FB: DataMove fails to move data between ADTable's
+  - fixed: Oracle: fails to fetch VC data when a rule dtAnsiString -> dtMemo is active
+  - fixed: Oracle: fails to execute AnyDAC QA scripts  
+  - fixed: PostgreSQL: "invalid byte sequence for encoding "UTF8": 0x00"
+  - fixed: PostgreSQL: D5 fails to read money field data
+  - fixed: TDBX: Delphi XE 3886 incompatibility
+  - fixed: ADDataSet: fails to filter on a field with the name equal to some function name
+  - fixed: ADTable: fails to sort by descending or case-insensitive order
+  - fixed: AnyDAC fails to install on Delphi XE Professional
+
+============================================================
+v 4.0.1.1463 (22.08.10)
+
+Note: The following properties default values were changed:
+1) TADMemTable.ResourceOptions.SilentMode is now True
+2) TADMemTable.UpdateOptions.CheckRequired is now False
+3) TADDataSet.ConstraintsEnabled is now False
+
+  + added: MSSQL: SQL Azure support
+  + added: SQLite: strong AES encryption support. Provided in partnership with StreamSec company.
+  + added: SQLite: v 3.7.0.1 support
+  + added: ASA: v 12 support
+  + added: DBMS service components - backup, restore, repair, etc for Firebird, SQLite, MS Access, SQL Anywhere
+  + added: ftSingle, ftExtended data types support
+  + added: ADMemTable: few APIs for CDS compatibility: LogChanges, Set/GetOptionalParams, etc
+  + added: ADDataSet: UpdateOptions.CheckRequired option to control TField.Required
+  + added: ADDataSet: OnMasterSetValues event allowing to override detail dataset parameters
+  + added: ADConnection: few more Open overload methods
+  + added: ADScript: Transaction property
+  + added: ADScript: ScriptOptions.RaisePLSQLErrors option
+  + added: GUIx: TADGUIxFormsAsyncExecuteDialog.Prompt
+  + added: GUIx: open dialog for Database parameter
+  + added: DataAbs: AnyDAC DAD added to the installer
+  + added: DesignTime: ability to enable / disable AnyDAC IDE menu using AnyDAC_DesignTimeMenu define
+  + added: GetBaseDriverID and GetRDBMSKind methods
+  + added: Phys: skMerge command kind for MERGE / INSERT OR UPDATE commands
+  + added: RAD Studio XE support
+  / changed: SQLite: extended session information
+  / changed: Oracle: optimized driver performance by removing Describe call
+  / changed: Oracle: optimized the mkIndexes performance
+  / changed: ADDataSet & ADMemTable: major optimization
+  / changed: Informix: major optimization
+  / changed: TDBX: improved Delphi 2010 support
+  / changed: SQLiteIniFile: added compression support to the addon
+  / changed: ADScript: improved compatibility with IBScript, added SET SQL DIALECT, CLIENTLIB, etc commands and support for CREATE DATABASE
+  / changed: Help: extended and reorganized
+  - fixed: SQLite: fails to return "file not found" error message
+  - fixed: FB/IB: may fail to assign a string value to a number or date typed parameter
+  - fixed: FB: Array DML and INSERT OR UPDATE may fail with "too many contexts"
+  - fixed: FB: Array DML & UTF8 column & no client charset fails to insert data into the column
+  - fixed: Oracle: exclusion of fiBlob from FetchOptions.Items leads to AV
+  - fixed: Oracle: out CLOB parameter reading may fail with error
+  - fixed: Oracle: fails to connect using Oracle 10g easy connection string
+  - fixed: AD-0360: Oracle: does not distinguish 32 and 64 bit Oracle Homes
+  - fixed: PgSQL: AV with high-precision numeric values
+  - fixed: Informix: does not raise an exception for a constraint violation
+  - fixed: MSSQL: {LIMIT} escape sequence may lead to syntax error when a query has ORDER BY, UNION, DISTINCT, etc
+  - fixed: MSSQL: SQL_NO_DATA error on UPDATE with ftWideMemo param and not records found
+  - fixed: MSSQL: "ADPhysmanager shutdown timeout" after pinging a broken connection
+  - fixed: MySQL: does not return precision for integer typed columns
+  - fixed: TDBX: "cannot parse object name" exception
+  - fixed: TDBX: 2 memory leaks
+  - fixed: TDBX: fails to fetch Unicode Memo fields
+  - fixed: ADConnection: AV with ADConnection.ExecSQL & connection recovery
+  - fixed: ADConnection: changing MonitorBy has no effect
+  - fixed: Phys: memory leak is possible if connecting is failed
+  - fixed: Phys: changing IADPhysConnection.Tracing has no effect
+  - fixed: ADDataSet: SetKey / GotoKey may fail to locate a record on a sorted dataset
+  - fixed: ADDataSet: ftBCD calculated field returns invalid value
+  - fixed: ADDataSet: Stream format incompatibility between 2.0.13 and 3.0.1
+  - fixed: ADDataSet: fails to serialize WideString values
+  - fixed: ADDataSet: exception in AppendRecord / InsertRecord leads to memory leak
+  - fixed: ADDataSet / Stan: Exception.Errors are not stored with row
+  - fixed: ADDataSet: TADIndex.Distinct may fail to remove duplicated records
+  - fixed: ADDataSet: AV on ApplyUpdates, when all record are deleted and OnUpdateRecord is assigned
+  - fixed: ADDataSet: AV is possible after record deletion with a TDBGrid in multy row select mode
+  - fixed: ADDataSet: adding fields at design-time leads to Indexes deletion
+  - fixed: ADMemTable: CloneCursor & OnFilterRecord lead to AV
+  - fixed: ADMemTable: FieldDefs and IndexDefs are not stored in DFM. For that StoreDefs must be set to True by hands.  - fixed: TADTable: "Unique constraint violated" on unique index creation with NULL values in indexed columns
+  - fixed: GUIx: fails to call TADGUIxFormsLoginDialog.Execute directly
+  - fixed: DataSnap: Param.ParamType = ptUnknown made compatible with DataSnap
+  - fixed: FR: fails to produce a report with the duplicate parameter names in a query
+
+============================================================
+v 3.0.1.1335 (11.05.10)
+  + added: AD-0174: All drivers: unified support for DBMS events (WIP)
+  + added: Help: AnyDAC wiki, faq is now part of the help
+  + added: Help: web online documentation, minor non-Unicode compatibility issues
+  + added: Oracle: extended server version info output
+  + added: Oracle: support for descending and expression columns in mkTableFields output
+  + added: AddOn: TADSQliteIniFile
+  + added: VSE: Virtual Storage Engine preview
+  + added: ADDataSet: lxoNoFetchAll option
+  + added: Stan: ADExpandStr expanded to support custom variables
+  + added: SQLite: compile options are included into info report
+  / changed: DesignTime: added few new items to the AnyDAC IDE menu
+  / changed: Options: AutoManage replaced with AutoFetchAll and AutoConnect
+  / changed: Help: updated to the current library state
+  / changed: rebrand from RemObjects to DA-SOFT
+  / changed: Phys: preparing the general static linking infrastracture
+  / changed: ADDataSet: improved offline mode - less attempts to contact to a DBMS
+  / changed: SQLite: updated to SQLite v 3.6.23.1
+  / changed: Stan & Phys: renamed TADPhysRequest -> TADActionRequest, TADPhysUpdateRequest -> TADUpdateRequest, TADPhysUpdateRowOptions -> TADUpdateRowOptions. Enum types are moved to uADStanOption.
+  / changed: Options: fetch options class is now options container constructor parameter
+  / changed: reworked FastReport plugin
+  / changed: RO AnyDAC wiki and AnyDAC_FAQ.doc moved to AnyDAC Help removed D5 hints
+  - fixed: Demo: few minor issues
+  - fixed: ADTable: issues related to IndexName handling
+  - fixed: ADTable: issues related to IndexName handling
+  - fixed: DB2: the incorrect unit name case leads to  VCS issues
+  - fixed: ADQuery: LoadFromFile leads to inability to edit dataset
+  - fixed: regression bug in SVN # 1271
+  - fixed: AD-0357: Oracle: The madata fetching performance is very slow on Oracle
+  - fixed: AD-0358: ADDataSet: AV on DataSet.Delete when dataset has active indexes
+  - fixed: PgSQL: connection recovery workflow may be terminated by the extra exceptions
+  - fixed: TADConnection.OnLosted may be not called
+  - fixed: AD-0289: MSSQL: Fails to get metainformation, depending on server collation and other related
+  - fixed: ADDataSet: CloneCursor on a dataset in CachedUpdates mode may lead to missbehaviour
+  - fixed: Oracle: fixed Oracle8 and Unicode compatibility issues
+  - fixed: PgSQL: "Type must be an array or a composite type" on simple domain types
+  - fixed: SQLite: setting TSQLiteDatabase.ProgressNOpers does not update the API
+  - fixed: AD-0357: Oracle: The madata fetching performance is very slow on Oracle
+  - fixed: ADMemTable: CloneCursor / Close leads to losted MetadataCallback for main dataset
+  - fixed: FB: may fail to fetch values from %GUID% and %BOOL% columns
+  - fixed: ADDAtaSet: RefreshRecord erases BLOB field values
+  - fixed: D5: AV at dropping TADConnection on a form
+  - fixed: ADDataMove: FormatSettings.DecimalSeparator is not stored in dfm
+  - fixed: DataSnap: "Could not convert variant of type (Null) into type (String)" on Null parameter value
+  - fixed: IB: "Invalid parameter in transaction parameter block" when TADTransaction.Options.Params are specified
+  - fixed: ADDataSet: "Cannot perform operation on unidirectional dataset" with unidirectional dataset on FB at Rollback
+  - fixed: ADDataSet: AV is possible on form destruction when dataset is in editing state and has persistent calculated fields
+  - fixed: MSAccess: fails with "invalid file name" error, when the Database parameter contains '(', ')', etc.
+  - fixed: GUI: Query and UpdateSQL editors do not process escape key
+  - fixed: SQLite: fails to return mkTableFields metadata for a view
+  - fixed: Alert: disable OnTimeout event processing when Options.Timeout < 0
+  - fixed: DatS: stream incompatibility between 2.0.15 and 2.0.17
+  - fixed: IB: "Dynamic SQL Error - Column unknown" with ExtendedMetadata=True and few tables in SQL
+
+============================================================
+v 2.0.17.1267 (26.02.10)
+  + added: DatS: TADDatSColumn.Evaluator property
+  - fixed: SQLite: static linking installation fails
+  - fixed: ODBC: Error with ODBC v 2 driver and MonitorBy=Xxx
+  - fixed: GUIx: FormatOptions.MapRules editor was missing few data types
+  - fixed: DataSnap: fails to post updates to MSSQL 2005 VARCHAR(MAX)
+  - fixed: AD-0353: DatS / Phys: Fails to use GUID fields with AutoInc attribute
+  - fixed: AD-0352: Stan: Expression evaluator fails to handle GUID values
+  - fixed: AD-0351: Stan: XML storage may fail to save Boolean value
+  - fixed: AD-0350: SQLite: Fails to convert GUID values on non-Unicode Delphi
+
+============================================================
+v 2.0.16.1255 (18.02.10)
+  + added: AD-0339: SQLite: Add static linking of SQLite3 amalgamation
+  + added: SQLite: sqlite3_progress_handler support
+  + added: ADConnection: KeepConnection option
+  + added: MySQL: SSL connection support
+  + added: AD-0335: MSSQL 2008: TIME2 support
+  + added: AD-0328: ODBC, ASA: Add support for ODBC v 2 drivers.
+  + added: GUIx: added TADGUIxFormsAsyncExecuteDialog.ShowDelay and HideDelay properties
+  + added: TADGUIxFormsErrorDialog: StayOnTop property
+  + added: AnyDAC FAQ is included, see - AnyDAC\Help\AnyDAC_FAQ.pdf
+  / changed: SQLite, Stan: optimized Array DML speed for 20%
+  / changed: DatS: optimize streaming support to outperform the ADO. Now AnyDAC streaming is about 1.5 times faster on saving.
+  / changed: TADTransaction.IsActive renamed to Active
+  / changed: Phys: SYS and INFORMATION_SCHEMA are the osSystem scoped schemas
+  / changed: GUIx: using Consts.SOK / SCancel for dialog buttons
+  / changed: GUIx: OK button is not the default button of the error dialog
+  / changed: ADConnection: SetTransaction is now virtual
+  / changed: ADConnection: GetLastAutoGenValue reviewed, tested and few issues are fixed
+  / changed: ADMetaInfoQuery: ResourceOptions is now published
+  - fixed: ODBC: fails to recognize a driver kind and create correct metadata object
+  - fixed: ODBC: fails to fetch blob values using Oracle and Firebird ODBC drivers
+  - fixed: AD-0345: Access + ODBC / Driver-Version check raises AV
+  - fixed: MSAccess: the Access 2007 driver raises "integer overflow"
+  - fixed: MSSQL 2008: DATE data type support was broken
+  - fixed: ASA: fails to recover broken connection
+  - fixed: ASA: not all "disconnected" error are recognized as ekServerGone
+  - fixed: PgSQL: the UUID support was broken
+  - fixed: AD-0338: PgSQL: "DECLARE CURSOR can only be used in transaction blocks" with multiple TADTransaction's
+  - fixed: PgSQL: not always correct cursors management in transaction
+  - fixed: PgSQL & ADT: A number of fixes and improovements for PgSQL composite and general ADT data types handling
+  - fixed: AD-0342: Oracle: fails to open a query with CHAR(...) parameters
+  - fixed: AD-0334: DB2: Cannot properly detect Unicode columns
+  - fixed: IB/FB: invalid variable label in a trace output
+  - fixed: MySQL: fails to initialize embedded MySQL
+  - fixed: Phys: when connection was recovered with active transaction, then exception may be raised on connection closing
+  - fixed: Phys: AV is possible on canceling of the very fast queries
+  - fixed: DatS: fails to load stream saved with v 2.0.13 version with "Cannot read DatSRow object"
+  - fixed: DatS: fails to load a blob value from XML storage
+  - fixed: ADMemTable: fails to load a stream with an custom extra table added to dats manager
+  - fixed: ADQuery: AV is possible with ResourceOptions.ExecMode = amBlocking and ExecTimeout > 0
+  - fixed: ADQuery: AV is possible, when an exception is raised (Open / ExecSQL) and the query is destroyed before exc. object
+  - fixed: TADDataSet: impossible to post changes in OnBeforeClose
+  - fixed: AD-0333: ADDataSet: Refresh of detail dataset makes current a first record
+  - fixed: ADDataSet: fails to call NextRecordSet in AfterOpen in Async mode. And few other issues related to Async mode and multiple result sets.
+  - fixed: ADStoredProc: changing param data type (AsXxxx) before Prepare call may lead to a parameter value loss
+  - fixed: AD-0330: ADStoredProc: GetResults has no effect
+  - fixed: ADUpdateSQL: AV is possible on destruction
+  - fixed: AD-0329: ADUpdateSQL: AV at run time create / destroy
+  - fixed: ADTransaction: may fail to destroy a dataset linked to a transaction
+  - fixed: ADManager: TADManager.DriverDefFileName has no property editor.
+  - fixed: AD-0331: ADConnection: OnError event handler may lead to "ADManager shutdown timeout"
+  - fixed: AD-0349: ADParam: Assign(TParam) incorrectly assigns BLOB value
+  - fixed: AD-0334: ADScript: fails to execute script with the phrase ESCAPE '\'
+  - fixed: ADScript: ScriptOptions.CommitEachNCommands does not work properly
+  - fixed: ADScript: BYTES / VARBYTES column dumping was broken
+  - fixed: AD-0332: Stan: Mapping of dtByte to dtAnsiString / dtWideString fails
+  - fixed: GUIx: QBuilder fails to load saved query model
+  - fixed: ADExplorer: fails to work with some of connection definition settings
+  - fixed: ADExplorer: fails to show foreign key columns
+  - fixed: ADMonitor: the TADMonitor + MonitorBy=Remote leads to "interface is not supported"
+  - fixed: AD-0337: DataSnap: ORA-01036 on posting updates to Oracle DB
+  - fixed: AD-0336: DataSnap: "BCD Overflow" on Oracle "SELECT COUNT(*) from MyTab"
+  - fixed: FPC: few FPC / Linux incompatibilities
+
+============================================================
+v 2.0.15.1163 (26.11.09)
+  + added: PgSQL: support for array and composite types
+  + added: Firebird: supported for trusted authentification
+  + added: AD-0315: GUIx: Add exception handling control to the TADGUIxFormsErrorDialog
+  + added: MSAccess: support for INSERT INTO .. DEFAULT VALUES
+  + added: ADExplorer: added support for connection recovery
+  + added: Demo: TADScript demos are added
+  + added: Help: TADScript is described
+  / changed: GUIx: "Advanced Options" captions are renamed into "Options". Few other similar changes.
+  / changed: ADDataSet: dataset constraint error message now is more informative
+  / changed: ADDataMove: in DS -> DS mode data move now will add to mapping only the same named fields
+  / changed: TADScript: multiple improvement and code cleanup
+  - fixed: DApt: AV when monitoring is enabled and SchemaAdapter is using
+  - fixed: AD-0324: PgSQL: 44000000 is fetched as 4400
+  - fixed: AD-0322: ADQuery: Does not post update for a field change 0.5 -> 0.05
+  - fixed: MySQL: stored procedure may fail to return data correctly
+  - fixed: Oracl: the support of inserting into a field with a sequence in a trigger was half broked
+  - fixed: MySQL: BIT(1) is mapping to dtByteString, instead of dtBoolean
+  - fixed: Oracl: does not support ftBoolean parameters
+  - fixed: GUIx: syntax memo does not correctly use the Delphi syntax highlighting schema
+  - fixed: AD-0321: ADDataSet: CopyDataSet may raise AV
+  - fixed: TADConnection: ExecSQL and ExecSQLScalar do not route an error to the OnError event
+  - fixed: AD-0320: ADDataSet: TField.OldValue, NewValue and CurValue does not work in TField.OnValidate
+  - fixed: AnyDAC may fail if to compile with different aligment, than {$A8}
+  - fixed: MySQL: stored procedure does not support BINARY / VARBINARY parameters
+  - fixed: AD-0319: ADQuery: Multiple issues with dataset editing, locking and transaction handling
+  - fixed: TADDataSet: "Out of bounds" if add a fkInternalCalc field after creating the normal fields
+  - fixed: AV in ADScript when connection is losted
+  - Oracle, MySQL, etc: fails to fetch date column with year < 1900
+  - Oracle: fails to fetch date column with year < 1900
+  - fixed: TDBX: fails to fetch resultset with ADT columns ("invalid attribute" on Oracle)
+  - fixed: ADScript: incorrect error message when command unit is not linked
+  - fixed: AD-0316: DatS: Constraint checking does not work on the long string columns
+  - fixed: Conn edit: incorrect links to the wiki
+  - fixed: ADScript: incorrect error message when command unit is not linked
+  - fixed: AD-0313: Design time: "TByteField class is not found" exception
+  - fixed: AD-0312: FB: Some procedures are not shown for StoredProcName
+
+============================================================
+v 2.0.14.1109 (27.10.09)
+  + added: SQLite: support for PRAGMA = FOREIGN_KEYS
+  + added: DatS: add versioning to the DatS streaming. Added TADResourceOptions.DefaultStoreVersion property.
+  + added: TADDataSet: Add Distinct property to TADIndex
+  / changed: Phys: now ExtendedMetaData is False by default
+  / changed: Phys: reconnection logic will be used for setting Connected to True
+  / changed: Phys: Ping method may be used when connection is not active
+  / changed: better diagnostic for "factory is not found" error
+  / changed: FR4 addon: added D2010 package files, minor fix
+  / changed: [IB|PG]ExtendedMetaData renamed to ExtendedMetaData
+  / changed: Tools: now is Unicode 
+  / changed: added uADStanAsync to script engine
+  / changed: Stan: Options implementation is reworked to make it possible to implement profiles, etc. Also, now it is few ten % faster.
+  - fixed: Installer: fails to detect environment with "invalid data type for 'Xxxx'"
+  - fixed: AD-0286: Installer: Fails to install on D2010 Prof
+  - fixed: Installer: fails to compile with undefined AnyDAC_MONITOR
+  - fixed: D7: Internal error: E5916 on ADConnection.Connected := True
+  - fixed: AD-0285: TADDataSet: Post/Next statement leads to an infinite loop
+  - fixed: TADDataSet: assertion is failed if to call Cancel from BeforePost
+  - fixed: TADDataSet: GetNextPacket returns 0, while there were records fetched
+  - fixed: AD-0290: TADDataSet: FetchAll does not refresh the DB-controls
+  - fixed: AD-0294: ASA: AnyDAC fails to connect to ASA v 11
+  - fixed: MSAcc 2007: "Syntax error in INSERT INTO statement" with TEXT column
+  - fixed: ADS: few issues
+  - fixed: ADS: does not support SQL_C_NUMERIC
+  - fixed: AD-0307: Oracle: "Variable length data column [DUMMY] overflow" on connection transfered to DLL & UTF8
+  - fixed: IB: "Unavailable database" is not recognized as a losted connection
+  - fixed: AD-0288: IB: Setting IBAdvanced=set_db_readonly=0 does not work minor changes for DBX bridge driver
+  - fixed: AD-0305: PgSQL: CurrentSchema returns invalid data. So, metadata is not returned correctly too.
+  - fixed: AD-0296: PgSQL: "Cannot parse object name" is raised on a query with sub-queries
+  - fixed: AD-0295: MSSQL: Wrong TEXT value fetched from a resultset on D2009
+  - fixed: AD-0289: MSSQL: Fails to get metainformation, depending on server collation and other related
+  - fixed: AD-0283: MSSQL: Index Names select for MSSQL 2000 does not work (but works with MSSQL 2005)
+  - fixed: AD-0282: MSSQL: fails to apply RecsMax and RecsSkip to SELECT DISTINCT ORDER BY
+  - fixed: ODBC: AV on fetching mkTableFields with Parkway ODBC driver
+  - fixed: ODBC: Parkway Micro Focus ODBC driver fails to handle SQL_C_NUMERIC
+  - fixed: AD-0293: ODBC: AV when CATALOG_NAME_SEPARATOR is empty
+  - fixed: ODBC: AV on fetching using Parkway Micro Focus ODBC driver
+  - fixed: FPC / Linux: AV when a client library is not found
+  - fixed: FPC: fails to reprepare a query
+  - fixed: AD-0308: DataAbstract / Advantage: DAD does not recognise Advantage AUTOINC fields
+  - fixed: AD-0306: AV with SafeMM
+  - fixed: Stan: improved D2010 support in RegExp
+  - fixed: DatS: BLOB fields are reading as NULL's from XML storage
+  - fixed: TADParam.Create has wrong argument type
+  - fixed: ADScript: AV is possible at Destroy
+  - fixed: AD-0301: DApt: DELETE ... WHERE ID=:ID deletes not records
+  - fixed: ADMemTable: Seting TField.DefaultExpression does not work
+  - fixed: Tracer: an exception is created but not raised
+  - fixed: AD-0299: BDE: Migration of D5 TQuery to D2010 TADQuery fails
+  - fixed: AD-0297: ADQuery: does not raise an exception if a transaction is specified without a connection
+  - fixed: AD-0287: fails to call a SP with quoted name and a mixed identifier case
+  - fixed: AD-0291: GUIx: Connection editor: AV at calling the editor at design time
+  - fixed: GUIx: exception in dialog component constructors leads to an AV
+  - fixed: AD-0311: DAbs: AnyDAC DAD fails to compile with the trial AnyDAC version
+
+============================================================
+v 2.0.14.1078 (09.09.09)
+  - changed: [IB|PG]ExtendedMetaData renamed to ExtendedMetaData
+  - changed: now ExtendedMetaData is False by default
+  - fixed: AD-0299: BDE: Migration of D5 TQuery to D2010 TADQuery fails
+  - fixed: AD-0297: ADQuery: does not raise an exception if a transaction is specified without a connection
+  / changed: Phys: changed uADPhysXxxMeta to use AnsiQuotedStr
+  / changed: ADS: few issues fixed
+  + added: TADDataSet: Add Distinct property to TADIndex
+  - fixed: ODBC: Parkway Micro Focus ODBC driver fails to handle SQL_C_NUMERIC
+  - fixed: AD-0296: PgSQL: "Cannot parse object name" is raised on a query with sub-queries
+  - fixed: ODBC: AV on fetching using Parkway Micro Focus ODBC driver
+  - fixed: AD-0295: MSSQL: Wrong TEXT value fetched from a resultset on D2009
+  - fixed: AD-0294: ASA: AnyDAC fails to connect to ASA v 11
+  - fixed: AD-0293: ODBC: AV when CATALOG_NAME_SEPARATOR is empty
+  - fixed: FPC / Linux: AV when a client library is not found
+  - fixed: FPC: fails to reprepare a query
+  - fixed: D7: Internal error: E5916 on ADConnection.Connected := True
+  / changed: FR4 addon: added D2010 package files, minor fix
+  - fixed: AD-0291: Connection editor: AV at calling the editor at design time
+  - fixed: AD-0283: Index Names select for MSSQL 2000 does not work (but works with MSSQL 2005)
+  - fixed: fails to compile with undefined AnyDAC_MONITOR
+  - fixed: TADDataSet: assertion is failed if to call Cancel from BeforePost
+  - fixed: TADDataSet: GetNextPacket returns 0, while there were records fetched
+  - fixed: AD-0290: TADDataSet: FetchAll does not refresh the DB-controls
+  - fixed: AD-0289: MSSQL: Fails to get metainformation, depending on server collation and other related
+  - fixed: AD-0288: IB: Setting IBAdvanced=set_db_readonly=0 does not work
+  - fixed: AD-0287: fails to call a SP with quoted name and a mixed identifier case
+  - fixed: exception in dialog component constructors leads to an AV
+  - fixed: AD-0286: Fails to install on D2010 Prof
+  - fixed: AD-0285: Post/Next statement leads to an infinite loop
+  - fixed: AD-0282: MSSQL: fails to apply RecsMax and RecsSkip to SELECT DISTINCT ORDER BY
+
+============================================================
+v 2.0.13.1041 (09.09.09)
+  + added: PgSQL: support for array data type 
+  + added: AD-0278: Expressions: Support for F* and T* as False and True names
+  / changed: PgSQL: updated, improved, fixed support for basic data types
+  / changed: Help: updated few topics
+  - fixed: AD-0281: TADTable: does not automatically fill detail fields from a master dataset
+  - fixed: AD-0280: Oracle: AV on opening "select cursor(select systimestamp from dual) as cur from dual"
+  - fixed: AD-0279: TADAdaptedDataSet: locks immediately in cached updates mode and deferred locking
+  - fixed: AD-0277: MSSQL: Fails to get PK fields on a server with Latin1_General_BIN default instance collation
+  - fixed: DApt: "Cannot perform action without SelectCommand" if the Lock command has failed and DBMS invalidates all commands in TX after that (PgSQL)
+  - fixed: TADQuery: AV is possible is uADDaptManager is not linked
+  - fixed: TADDataSet: AV on closing when "bad" TField.DefaultExpression and 2 assigned TADTransaction's
+  - fixed: DatS: incorrect "fixed length mismatch" error message
+
+============================================================
+v 2.0.13.1025 (27.08.09)
+  + added: D2010 support
+  + added: AD-0271: PgSQL: Add support for UUID data type
+  + added: AD-0264: FB: Add automatic support for auto-generated columns
+  + added: AD-0263: FB: Add support for BOOLEAN domain columns
+  + added: AD-0206: FB: Add FB 2.5 features, including SQLState,  isc_dpb_utf8_filename, fb_cancel_operation, 
+           SQL_NULL, new keywords and password changing
+  + added: AD-0258: Add XML data type support
+  + added: AD-0255: Add time interval data type support
+  + added: TADTable: Add GetCustomWhere and GetCustomOrderBy
+  + added: AD-0248: Phys: Add ability to specify current catalog / schema for connection
+  + added: AD-0023: Phys: Add LIMIT escape sequence and TADFetchOptions.RowsSkip option
+  + added: AD-0177: Provide origin table name as part of the TField.Origin property value
+  + added: ADO UDL Importer: Add GetRDBMSKind public method
+  + added: ADO UDL Importer: Add MapDataTypes property, allowing to disable data type mapping
+  + added: AD-0237: Implement ActiveStoredUsage inheritance
+  + added: Help: multiple topics added and updated
+  / changed: AD-0008: Move all SQL generation to IADPhysCommandGenerator
+  / changed: Phys: unified many driver SQL generator code parts
+  / changed: Phys: unified many driver code parts and moved to the TADPhysCommand base class
+  / changed: TADDataSet: AssignField call is replaced with AssignFieldValue
+  / changed: TADDataSet: few methods moved from private to protected section for better compatibility with BDE
+  / changed: Northwind.Products.Discontinued made BOOLEAN in some of DB's
+  / changed: Oracle: improved trace output (added read attribute values)
+  / changed: Oracle: reduced number of ROW_COUNT readings
+  / changed: improved many error messages
+  / changed: ADQA: many tests are updated to the current product state
+  / changed: corrected alignment for CLI units
+  / changed: EADPhysArrayExecuteError renamed to EADDBArrayExecuteError and moved to uADStanError
+  / changed: removed SOUNDEX and DIFFERENCE escape and expression functions
+  - fixed: AD-0262: cxGrid: Inserting a new record using cxGrid is slow
+  - fixed: AD-0273: Single row Execute call does not fire OnError with EADPhysArrayExecuteError
+  - fixed: AD-0261: AV on Delphi exiting, if to install custom components using AnyDAC
+  - fixed: Help: few mistyped property names
+  - fixed: ADMonitor: cannot handle more than one client. May hang at exiting.
+  - fixed: reduced CPU utilization at idling
+  - fixed: AD-0269: AV with MSSQL if refresh called after network disconnect
+  - fixed: AD-0268: ADQuery: may hangup in async mode
+  - fixed: AD-0267: "Connection is not defined for [ADQuery1]" if binded by bbObject to a connection with ConnectionName specified
+  - fixed: AD-0266: DatS: Incorrect "Column [%s] value must be not null" for ReadOnly columns
+  - fixed: AD-0226: TADMemTable: make it more light wheight
+  - fixed: AD-0260: Stan: AV is possible in the timer pool
+  - fixed: FPC: ftWideMemo was not supported on FPC
+  - fixed: AD-0261: AV on Delphi exiting, if to install custom components using AnyDAC
+  - fixed: TADDataSet: delayed scrolling is enabled, even when it should not
+  - fixed: AD-0257: Phys: Incorrect error message, when base driver for a virtual driver is not registered
+  - fixed: Async: possible AV if some service is not linked to app
+  - fixed: AD-0254: TADConnection: ExecSQL / ExecSQLScale may raise "[AnyDAC][Phys][SQLite]-310"
+  - fixed: AD-0236: Moni: Improve control of tracing on/off
+  - fixed: "automatic connection recovery" does not fire OnLosted when died connection is discovered
+  - fixed: AD-0249: CmdPreproc: Recognizes SELECT INTO as skSelect, while it is skInsert
+  - fixed: AD-0244: Partial search works incorrectly
+  - fixed: D2009: variable oMech in uADDatSManager raises a warning
+  - fixed: AD-0240: Failed to build project if AnyDAC_NOLOCALE_DATA is defined
+  - fixed: ConnEdit: the Help button does not work for virtual drivers
+  - fixed: AD-0239: QEdit: "Capability is not supported" on editing a query with escape functions
+  - fixed: ASA: if connecting is failed, then incorrect exception will be raised
+  - fixed: AD-0256: Oracle: "Name [...] is not a callable PL/SQL object (NOE130/SP)" with packed stored proc
+  - fixed: AD-0212: Oracle: "Cannot initialize OCI environment" after 30 sec timeout
+  - fixed: AD-0242: Oracle: "ORA-01036: illegal variable name/number" on parameter names longer than 30 chars
+  - fixed: AD-0246: MySQL: "Table 'test._time' doesen't exist" on SELECT FROM_TIME FROM Tab
+  - fixed: MySQL: the "Commands out of sync" error is possible in some cases
+  - fixed: AD-0265: PgSQL: DataSnap server fails to post updates
+  - fixed: AD-0270: PgSQL: AnyDac with Postgres getting a "data length mismatch" on accessing REAL fields
+  - fixed: AD-0259: FB: TADUpdateSQL.InsertSQL with RETURNING does not refresh auto gen values
+  - fixed: AD-0250: FB: "ADPhysManager shutdown timeout" is possible after TADQuery.Append call
+  - fixed: AD-0276: SQLite: "Updated command updated [0] instead of [1] record" on batch update SQL's
+  - fixed: AD-0275: SQLite: "Index out of bounds" at execution of parameterized batch SQL command
+  - fixed: AD-0241: SQLite: "No such table" / SQLITE_SCHEMA
+  - fixed: AD-0238: SQLite: Fails to execute or open PRAGMA command
+  - fixed: TADCustomManager.GetBaseDriverID does not resolve virtual driver id to a top level id
+
+============================================================
+v 2.0.11.895 (25.05.09)
+  + added: AD-0019: FPC: Linux support
+  / changed: Demos: Northwind.Products.Discontinued made BOOLEAN in some of DB's
+  / changed: Oracle: PREFETCH_ROWS is set to ActualRowsetSize
+  / changed: TADCustomConnection: ValidateName is renamed to DoValidateName and made virtual
+  / changed: DApt: removed server side SELECT items comparision with client values at arLock due to multiple potential rounding errors
+  / changed: Oracle: conndef importers does not need to map dtDateTimeStamp to dtDateTime anymore
+  / changed: Oracle: DATE type mapped to ftDateTime (was ftTimeStamp)
+  - fixed: TADConnection: a password may be removed incorrectly from conn def params
+  - fixed: Demos: incorrect path in project group
+  - fixed: DatS: AV is possible in Find method
+  - fixed: Expression evaluator: to_date('96-08-29', 'yy-mm-dd') raises "96-08-29 is not a valid date" exception
+  - fixed: FB: fails to recognize "table/view does not exists" error on FB 1.5
+  - fixed: Demos: multiple issues
+  - fixed: BCB: C++Builder 2006 incompatibility
+  - fixed: TADConnection.ValidateName
+  - fixed: Oracle: failed to execute "explain plan" for parameterized SELECT
+
+============================================================
+v 2.0.10.873 (12.05.09)
+  - fixed: Trial: AD-0229: AnyDAC Trial version fails to install on Delphi Professional
+
+============================================================
+v 2.0.10.870 (05.05.09)
+  + added: AD-0216: SQLite: An expression type may be specified in SELECT list like a 'count(*) as "cnt::int"'
+  + added: AD-0195: SQLite: finished with ADQA
+  + added: SQLite: support for savepoints
+  + added: MySQL: object names support in error messages
+  + added: Oracle, MSSQL, ASA, MSAccess, DB2, PostgreSQL: AD-0173: Support for binary numeric binding
+  + adding: AD-0019: FPC: Linux support (WIP)
+  + added: AD-0200: C++Builder: CB 2007 and 2009 support
+  + added: Demo: expression evaluating engine demo in folder Samples\Stan Layer\ExprEval
+  + added: AD-0207: TADDataSet: UpdateConstraints method, actualizing constraints, changed after dataset opening
+  + added: TADDataFormat: RoundToScale property, controlling time data types rounding
+  + added: TADMapRules: Add/Remove methods to simplify map rules management
+  + added: ConDefs: IADStanConnectionDef.MetaDefSchema, MetaDefCatalog properties
+  + added: ADRandomNumber function allowing to generate BCD's with arbitrary precision and scale
+  + added: different parameter markers support for ParamByName and ParamByNumber
+  + added: TADOUDLImporter: OnBeforeWriteOptions event
+  + added: AD-0201: TADOUDLImporter: support for the MSDASQL
+  / changed: AD-0152: Pool: the connection pooling is reimplemented to avoid hang-ups and other issues
+  / changed: Phys: optimized and unified the internal parameter and column management across all the drivers
+  / changed: Phys: unified class names for all the driver classes
+  / changing: AD-0158: Phys: Phys manager thread and connection pool threads replaced by tasks, running by a single thread. And some other threading related changes.
+  / changed: Phys: improved trace output and monitor integration for transaction objects
+  / changed: Phys: cleanup and optimization
+  / changed: ConDefs: major implementation cleanup
+  / changed: Async: added Launched method, plus cleanup and optimization
+  / changed: GUIx: removed TADGUIxFormsListView control, uADGUIxFormsUtil unit, few other changes
+  / changed: GUIx: cleanup of Async dialog API
+  / changed: Oracle: EOCISystemException replaced by EOCINativeException
+  / changed: Oracle: improved trace output for the variables
+  / changed: Oracle: specific demos moved to Samples\DBMS Specific\Oracle
+  / changed: Oracle: ADQA packages are joined into single package
+  / changed: IB: improved trace output
+  / changed: PgSQL: improved support for :param::type
+  / changed: PgSQL: improved support for VendorHome, VendorLib
+  / changed: ODBC: code refactoring and cleanup
+  / changed: TADConnection: AD-0222: Code virtualized to allow the handling of the temporary Connections within a inherited class
+  / changed: TADConnection: optimized TADCustomConnection.ExecSQL and ExecSQLScalar
+  / changed: TADDataSet: improved protection against running an action, while other is in a progress
+  / changed: improved GetLastAutoGenValue support
+  / changed: Help: improved few topics and added RoundToScale description
+  / changed: ADSpeed: added IB/FB support for test data generator
+  / changed: Tools: default compiler for all tools now is D2009
+  / changed: ADQA: reimplemented connection pool tests
+  / changed: ADQA: updated, fixed, added tests
+  - fixed: AD-0219: Oracle: fetch performance degradation on the slow networks
+  - fixed: Oracle: TIMESTAMP support was broken
+  - fixed: Oracle: incorrect list of values for the CharacterSet parameter
+  - fixed: AD-0217: Oracle: AV on DROP TABLE <non-existant one>
+  - fixed: IB: "Attempt to reopen an open cursor" onsecond call for SELECT FOR UPDATE statement
+  - fixed: IB: cannot recognize ekObjNotExists error in some situations
+  - fixed: IB: fails to perform {fn CONVERT(..., DATETIME)}
+  - fixed: PGSQL: incidential call to Win32 API
+  - fixed: PGSQL: TADPhysPgTransaction is in a "dead" state after error in transaction. Application must explicitly Commit / Rollback this transaction.
+  - fixed: AD-0209: PGSQL: Fails to process '::'
+  - fixed: PGSQL: fails to encode / decode some BCD's
+  - fixed: AD-0138: PGSQL: finished with ADQA, multiple fixes and optimizations done
+  - fixed: AD-0030: MSSQL, MSAccess, DB2, ASA: Fetch all and close cursors before Commit/Rollback/StartTransaction
+  - fixed: MSSQL: failed to fetch from systypes with "number out of presion" exception
+  - fixed: MySQL: fails to cancel a running query on v 5.x
+  - fixed: MySQL: BIT support was broken. Now it is mapped to ftBytes.
+  - fixed: MySQL: BOOL support was broken. Now a TINYINT(1) (=BOOL) is mapped to ftBoolean.
+  - fixed: MySQL: BINARY support was portionally broken. Now a binary-string type SELECT item is mapped to ftVarBytes.
+  - fixed: SQLite: published load extensions API
+  - fixed: SQLite: BindNyNumber was broken
+  - fixed: SQLite: transaction begin / end checking was broken
+  - fixed: SQLite: multiple meta-data issues
+  - fixed: SQLite: multiple resultsets support may fail
+  - fixed: AD-0225: ASA: The v 7 and 8 support is broken
+  - fixed: MSAcc: {fn CONVERT} was broken
+  - fixed: AD-0224: ODBC: "Invalid cursor position" at fetching BLOB's from Informix DB
+  - fixed: ODBC: when TADPhysXXXXDriverLink.ODBCDriver is specified, then driver does not use ODBCAdvanced default value
+  - fixed: DB2: few minor issues
+  - fixed: TADDataSet: impossible to post changes in OnBeforeClose
+  - fixed: AD-0211: TADDataSet: Setting ConstraintsEnabled to False does not disable contraints checking
+  - fixed: AD-0205: TADDataSet: fails to assign date string constant to ftTimeStamp field
+  - fixed: AD-0203: TADDataSet: CloneCursor + persistent fkInternalCalc fields fails
+  - fixed: TADDataSet: "Out of bounds" if update FieldDefs with persistent fields and fkInternalCalc
+  - fixed: TADDataSet: SetData fails to import dataset with fkInternalCalc fields
+  - fixed: TADDataSet: Prepare call on detail dataset may fail
+  - fixed: TADScript: AV is possible in some case
+  - fixed: AD-0204: TADScript: ADManager timeout on an application termination
+  - fixed: TADConnection: ExecSQLScalar gives AV on an erroneous SQL command
+  - fixed: TADConnection: memory leak after call to Open(...) method
+  - fixed: AD-0228: TADTransaction: fails to start TX after reconnecting
+  - fixed: AD-0208: TADTransaction: AV is possible on destruction
+  - fixed: AD-0213: Fetching: RecsMax / Mode = fmExactRecsMax fetches more records, than specified
+  - fixed: AD-0227: Metadata: most of the drivers do not return ClientVersion / ServerVersion
+  - fixed: AD-0210: UpdateSQL: Mixing macros and parameters in update SQL command text kills parameters
+  - fixed: AD-0218: Update of a fresh inserted Record fails / DApt-400 Error
+  - removed: Basic, Standard, Prof and Enterprise editions. Now only Trial and Full are supported.
+  - fixed: Samples: few D5-D7 incompatibilities
+  - fixed: AD-0215: Install AnyDAC Packages does fails to finish properly (on D2007)
+  - fixed: QBuilder: ASSERT on line 846 if to build cartesian join
+  - fixed: ADMonitor: D2009 incompatibility
+  - fixed: AD-0221: Expression: Comparision of boolean column with True / False always evaluating to False
+  - fixed: AD-0220: Storage: serializing a DatS table to XML gives a mem leak
+  - fixed: parameter value index checking misses the ArraySize = 0 and AIndex <= 0
+  - fixed: Moni: Tracer does not flush all data on timeout
+
+============================================================
+v 2.0.9.737 (01.03.09)
+  + added: SQLite: API for collations, functions, callbacks, etc and few specific demos
+  - fixed: SQLite: multiple result sets support was broked
+  - fixed: PgSQL: unified TypeName format (removed length, precision, scale)
+  - fixed: AV is possible
+
+============================================================
+v 2.0.9.729 (27.02.09)
+  + added: ADScript: new SET IGNORE[error] command
+  / changed: Oracle: {INTO} escape sequence is expanded into INTO keyword
+  / changed: SQLite: TSQLiteCollation splitted into TSQLiteCollation and TSQLiteCollationCompareStringW
+  / changed: implemented CliObj for all driver objects
+  - fixed: PgSQL, MySQL, IB: unified TypeName format (removed length, precision, scale)
+  - fixed: PgSQL: bind by number, output parameter, CliObj, TID handling issues
+  - fixed: AD-0193: Demo: CachedUpdates demo fails on few DBMS's
+  - fixed: PgSQL: issues are demo database installation
+  - fixed: AD-0192: Blobs demo does not work
+  - fixed: AD-0191: GUIx: LoginDialog/Main demo does not work
+  - fixed: AD-0190: MSSQL: "Connection is busy" if to open few meta-data cursors
+  - fixed: AD-0189: MemTab: Appending record to a DS with nested dataset raised AV
+  - fixed: AD-0188: ADExplorer does not show the MySQL database names
+  - fixed: AD-0187: Second call to the CloneDataset for the same DS fails
+  - fixed: AD-0186: CmdGen: Update SQL Editor generates incorrect FetchRowSQL
+  - fixed: AD-0185: TADDataSet: After failed posting of an insert to DB, record position will be changed to bottom
+  - fixed: AD-0184: IB: [AnyDAC][DApt]-400 on posting new record using INSERT ... RETURNING
+  - changed: finalizing / improving CopyDataSet, CopyRecord
+
+============================================================
+v 2.0.8.705 (24.02.09)
+  + added: TADCustomConnection.ConnectionMetaDataIntf property
+  + added: TADCustomConnection.ExecSQLScalar method
+  + added: TADCustomConection.GetInfoReport method to obtain info about environment
+  + added: Demo: Oracle PL/SQL table Samples\Comp Layer\TADStoredProc\Oracl_PLSQLTable
+  + added: Demo: Info reporting Samples\Comp Layer\TADConnection\InfoReport
+  + added: ADDataMove: new property TextDataDef.StrsEmpty2Null 
+  + added: ADDataMove: ability to define conversion expression for mapping item
+  + added: TADDataSet: new options coAppend, coEdit for CopyDataSet method
+  + added: MySQL: support for ServerOutput
+  + added: AD-0180: Login Dialog: add ability to translate the option captions
+  / changing: optimizing numbers binding
+  / changed: Extended connection reporting info
+  / changed: utilities are updated to D2009
+  / changed: AD-0179: RefreshRecord should delete client record if corresponding one in DB is deleted
+             Also added UpdateOptions.RefreshDelete option controlling that.
+  - fixed: MySQL: fails to to assign MinInt value to ftInteger parameter
+  - fixed: MySQL: fails to transfer non-ASCII value using AsString when UTF8
+  - fixed: MySQL: TIBYBLOB, TINYTEXT support was broken
+  - fixed: Oracle: temporary tables metadata was incorrect
+  - fixed: Oracle: does not support PL/SQL table of zero length
+  - fixed: Oracle: CLOB / BLOB update issue
+  - fixed: PgSQL: multiple issues
+  - fixed: SQLite: multiple issues
+  - fixed: DataSnap: oracle, multiple refcursor and CDS does not work
+  - fixed: TADDataSet: fails to serialize dtTime
+  - fixed: fails to open the demos in IDE, as some of the GUIx components are not registered
+  - fixed: {IIF} escape sequence fails, if any of values contains ')'
+  - fixed: AD-0181: AV at inserting new record into empty dataset if locking is on
+  - fixed: IB: does not return correct field origin
+  - fixed: dtGUID to dtWideString / dtAnsiString value coversion was broken
+
+============================================================
+v 2.0.8.635 (21.01.09)
+  - fixed: TADDataSet: setting filter while editing discards new record
+  - fixed: TADDataSet: ServerDeleteAll erroneously requires dataset to be opened
+  - fixed: TADDataSet: CopyDataSet was broken
+  - fixed: AD-0146: MSSQL: fails to retrieve osMy metadata on 2005 and higher server
+  - fixed: MySQL: returns incorrect character field length for UTF8 client character set
+  - fixed: MySQL, PGSQL: removed password from driver trace
+  - fixed: Oracle: "file not found" at login if tnsnames.ora does not exist
+  - fixed: AD-0105: IB/FB: improve / finish Unicode handling
+  - fixed: PgSQL: multiple issues
+  - fixed: D2009 does not register just introduced field types
+  - fixed: memory leaks and deadlocks are possible in TADThread
+
+============================================================
+v 2.0.8.616 (09.01.09)
+  - fixed: possible "Parameter data type is changed" in AnyDAC DAD
+  - fixed: DataSnap server hang-ups on exiting, if before was database error
+  - fixed: TADScript: AV at exiting command of 4092 byte length or greater
+  - fixed: MySQL: stored procedure support was broken
+  - fixed: MSSQL: "class is not registered" hidden exception if SQLDMO is not installed
+
+============================================================
+v 2.0.8.601 (17.12.08)
+  / changed: Help: improoved auto-inc related topics
+  / changed: improved and unified FetchOptions.RecsMax support for most of drivers
+  / changed: optimized bookmarks comparision. May raise performance on dbGrid's with many rows.
+  - fixed: PGSQL: few bugs
+  - fixed: SQLite: few bugs
+  - fixed: MSAccess: driver may return Memo for Varchar result set columns
+  - fixed: dynamically added connection definitions does not "see" monitor parameters
+  - fixed: AnyDAC fails to compile on Korean Windows
+  - fixed: MySQL: int unsigned auto_increment is not recognized as TADAutoIncField
+  - fixed: $(TEMP)\trace$(NEXT).txt fails to return next file name
+  - fixed: possible incorrect transaction handling if to use the same transaction object as default and as update transaction
+  - fixed: few ADExplorer issues
+  - fxied: FetchAll may lead to unlimited recursion for cloned datasets
+  - fixed: installer fails to detect D5-D7 professional SKU
+
+============================================================
+v 2.0.7.551 (28.11.08)
+  + added: PostgreSQL driver pre-release
+  + added: SQLite driver pre-release
+  + added: MSAccess: added support for Access 2007
+  / changed: now MonitorByFlatFile_Append is False by default
+  / changed: now MonitorByFlatFile_Encoding is ANSI by default
+  / changed: improved support for row refreshing
+  / changed: now {IF ...} supports as DBMS id's, as DBMS name's
+  / changed: all registry root keys switched to HKCU 
+  - fixed: "this name may not contain the 'xxx'" at streaming to XML dataset with special characters in column names, like a '#' or '$'
+  - fixed: fails to edit SELECT columns with aliases
+  - removed: TADUpdateOptions.CacheUpdateCommands is removed
+  - fixed: Oracle: CurrentSchema was not updated
+  - fixed: DataSnap: fails to transfer AnsiString parameters
+  - fixed: IB: "assertion failed" at Ping call 
+  - fixed: AV at parameterized query execution if to use AsFloat and dtBCD -> dtDouble data type mapping
+  - fixed: AV at recovering of losted connection 
+  - fixed: hangup at application exit after recovering of losted connection
+  - fixed: hangup at Commit/Rollback after recovering of losted connection
+  - fixed: DB2: UK violation exception is not raised, but put into Messages
+  - fixed: ADExplorer fails to work on clear workstation
+
+============================================================
+v 2.0.6.475 (7.11.08)
+  + added: Help: few more topic described and updated old ones  
+  + added: UnifyParamNames property, controlling striping of '@' from MSSQL SP param names (False by default)
+  + added: ADTracer shows message on application exit with list of produced trace files
+  + added: MSSQL: added basic support for MSSQL 2008
+  + added: Added support for Delphi Professional SKU
+  + added: TADCustomConnection.ReleaseClients
+  / changed: default settings of FlatFile monitor unified with ADConnectionDefs.sample
+  / changed: MSSQL: improved MSSQL cursor type control
+  / changed: MSSQL: does not work properly with EOL = #13. AnyDAC now adjust EOL to #13#10
+  / changed: TADDataSet.Execute now is virtual
+  - fixed: TADTextWriter fails to write UTF16 text
+  - fixed: ADMemTable does not use CachedUpdates property
+  - fixed: if required field is not included into persistent field list, then AnyDAC raises error, that field value is required
+  - fixed: explicit setting TADxxxOptions option value to its default value, does not override inherited value
+  - fixed: MSSQL: only first PRINT statement result is returned 
+  - fixed: MSSQL: RowsAffected may be incorrect in some cases 
+  - fixed: ASA: fails to fetch rowset with BLOB in the middle
+  - fixed: Persistent and Backup properties was always overwritten by design time editors
+  - fixed: Oracle: password is put into trace
+  - fixed: AV possible in TADGUIxFormsAsyncDialog
+
+============================================================
+v 2.0.5.435 (20.10.08)
+  + added: Help: many new topic described and updated old ones,
+           adjusted general Help structure
+  + added: multiple new design-time editors and improoved / fixed old ones
+  + added: ekComponent tracing category and few component tracing points
+  - fixed: few nested dataset issues
+  - fixed: IB: AV on getting meta info kind = mkPackages
+
+============================================================
+v 2.0.5.419 (07.10.08)
+  + added: MySQL: support for embedded MySQL server - LIBMYSQLD
+           See http://wiki.remobjects.com/wiki/Connect_to_MySQL_Server_(AnyDAC) for setup details
+  + added: at design time TADMemTable with ResourceOptions.Persistent = True and 
+           empty FileName stores content into DFM file
+  + added: TADDataSet: RefreshUnknownRecord method allowing to insert into 
+           internal data storage not fetched record and refresh it
+  + added: TADDataSet: MasterScrollDelay property allowing to delay refresh 
+           of detail dataset on master scroll event
+  + added: TADAutoIncField.GeneratorName property
+  / changed: TADMemTable.Open may be used instead of CreateDataSet
+  / changed: improved design time TADConnection editor
+  - fixed: MSAccess: does not allow insert value into autoincrement column
+  - fixed: TADMemTable.SaveToStream(sfBinary) fails with "index 2047 out of bounds"
+  - fixed: IB: if Unidirectional = True, then "cannot perform this operation 
+           on unidir dataset" after Next on last dataset record
+  - fixed: MSSQL: ADDataMove cannot insert identity value into BIGINT IDENNTITY field
+
+============================================================
+v 2.0.5.393 (22.09.08)
+  + added: design time setup dialog to control metadata to return
+  + added: few more (PGSQL, ASE, BSQL) connection definitions to ADConnectionDefs.sample
+  - fixed: settingup TADStoredProc at design time gives AV
+  - fixed: assignment to the TBCDField.Value truncates value
+  - fixed: [AnyDAC][Stan][Def]-250, if to setup driver link
+  - fixed: "object xxx is not found" if to specify custom parameter in TADUpdateSQL.XxxxSQL
+  - fixed: MSSQL: possible "WHERE must be not empty" on generating INSERT command
+  - fixed: UpdateOptions.UpdateTableName is ignored
+  - fixed: few cloned dataset issues
+  - fixed: sequences / generator support was broken
+  - fixed: asynchronous command execution potential timing issues
+
+============================================================
+v 2.0.5.375 (5.09.08)
+  / chngd: Tiburon # 3168 incompatibility
+
+============================================================
+v 2.0.5.373 (2.09.08)
+  / chngd: default driver id for new connection definition is set to MSAccess
+  - fixed: moved TADRDBMSDataSet.Prepared property to public
+
+============================================================
+v 2.0.5.365 (31.08.08)
+  / chngd: improoved D2009 install time support
+  / chngd: improoved TADTable design time support
+  / chngd: AD-0062: Prepared property move to public
+  - fixed: AD-0009: Oracle: automatic connection recovery fails in 2 additional cases
+  - fixed: AD-0114: AV / Invalid pointer operation in D5 applications
+  - fixed: ERegistryException at Delphi IDE startup
+  - fixed: AD-0059: few TADDataSet asynchronous mode issues
+
+============================================================
+v 2.0.4.351 (26.08.08)
+  + added: support for ReadOnly transactions for all ODBC based drivers
+  / chngd: improoved cursor type control all ODBC based drivers
+  - fixed: TBytesField can return garbage after actual value
+  - fixed: FetchOptions editor frame issues
+
+============================================================
+v 2.0.4.343 (26.08.08)
+  + added: AD-0085: MSSQL 2005: support for password changing, 
+           XML and UDT data types, snapshot transaction isolation
+  + added: AD-0110: snapshot transaction isolation level
+  + added: TADScript: SET ENCODING command
+  + added: TADAutoIncField.IdentityInsert property, 
+           TADDataMoveOptions.poIdentityInsert option
+  + added: MySQL: support for FetchOptions.RecsMax & SELECT
+  + added: AD-0087: FetchOptions.CursorKind property
+  / chngd: cleanup and updating to support Tiburon #3149, added UnicodeSynEdit support
+  / chngd: most of expression evaluator functions moved to uADStanExprFuncs unit
+  / chngd: TADQuery.DataSource renamed to MasterSource (keeping backward compatibility), 
+           MasterFields is published
+  - fixed: AD-0107: MSSQL: TADQuery.Edit / Post fires triggers, but it fails
+  - fixed: AD-0108: MSSQL: money type is mapped to BCD instead of Currency
+  - fixed: AD-0109: AV at assigning of empty string to TADParam.AsWideString
+  - fided: AD-0111: Client autoincrementing does not work for dataset in 
+           CachedUpdated mode with default fields
+  - fixed: AD-0103: TADDataMove fails to assign value to auto-increment fields
+  - fixed: AD-0112: Too large memory consumption on fetching large datasets
+  - fixed: AD-0042: Inserting into detail TADQuery, does not fill detail fields
+  - fixed: AD-0067: TADQuery.MasterFields is cleared after setting DataSource
+
+============================================================
+v 2.0.4.301 (14.08.08)
+  + added: ADQA now remembers selected connection definition names
+  + added: TADDataMove.TextFileEncoding, LogFileEncoding new properties
+  + added: MonitorByFlatFile_Encoding new parameter
+  / chngd: cleanup and updating to support Tiburon #3137
+  - fixed: AD-0100: MSSQL: Array DML fails on MSSQL 2005
+  - fixed: AD-0099: ODBC: Fixed char data type support is broken in all ODBC based drivers
+  - fixed: AD-0102: Oracle: fixed Oracle 10g incompatibilities
+  - fixed: ASA: fixed "invalid cursor position" error
+
+============================================================
+v 2.0.4.243 (04.08.08)
+  + added: AD-0088: FlatFile parameter MonitorByFlatFile_Columns
+  + added: AD-0094: trace output for non-EADDBEngineException's
+  + added: Oracle: added CharacterSetName connection definition parameter
+  / chngd: Oracle: removed BytesPerChar connection definition parameter
+  / chngd: AD-0088: improved and unified FlatFile and Remote output formats
+  - fixed: AD-0094: few tracing regression issues
+  - fixed: many Tiburon #3128 incompatibility and Unicode support issues
+  - fixed: AD-0096: Oracle: failed connect to Oracle 11g
+  - fixed: AD-0097: Tiburon - automatic installer does not work 100%
+
+============================================================
+v 2.0.4.228 (23.07.08)
+  + added: ADO UDL importer advanced parameters support for ASA
+  + added: ADO UDL importer support for AnyDAC native parameters (AD-75)
+  + added: support for WITH ... SELECT
+  + added: IADPhysConnection.CurrentCatalog & CurrentSchema read-only props
+  + added: MSSQL, ASA: support for {fn CATALOG()} escape sequence
+  + added: method TADCustomConnection.Open(AConnectionString)
+  + added: property TADCustomConnection.Messages
+  + added: MySQL: support for command execution abortion
+  + added: complete Unicode support (AD-17, AD-66)
+  / changed: unified variables naming for trace output
+  / changed: few TADParam / TADParams minor improvements
+  / changed: MonitorBy=FlatFile|Custom will not output at design time
+  / changed: Oracle: dumping V$NLS_PARAMETERS now is off by default
+  / changed: improved support for Sybase ASE / Informix DBMS's
+  / changed: cleanup and simplification of Query Builder
+  / changed: improved most of dataset error messages (AD-82)
+  / changed: improved cloned dataset support
+  / changed: improved Unidirectional=True handling
+  / changed: UpdateOptions.UseProviderFlags is removed (AD-81)
+  / changed: TADParam.Size < 0 is equivalent to = 0. Variable length data parameter 
+             values are checked agains TADParam.Size right at value assignment.
+  / changed: improoved API to get client / server / anydac info (AD-93)
+  / changed: MySQL: Utf8Mapping parameter is removed
+  - fixed: IB: "value too large for variable" on UTF8 strings and Array DML
+  - fixed: IB: UTF8 support was broken
+  - fixed: Oracle: ORA-00922 if set connection definition parameter SQLTrace=True 
+  - fixed: ODBC: cannot connect to MSSQL using ODBC bridge driver
+  - fixed: MSSQL: force direct execution for some of the queries (BACKUP, etc)
+  - fixed: {IF} ... {FI} escape sequences support was broken
+  - fixed: {S} escape sequence support was broken
+  - fixed: single #13 is removed from SQL command, giving syntax error
+  - fixed: wrong processing of '\', if not (piExpandEscapes in Instrs)
+  - fixed: Lock and update commands with UpdateChangedFields=False include non-updatable columns into SQL
+  - fixed: few issues with selecting metadata mkTables (AD-69)
+  - fixed: rounding issue at dtFmtBCD -> dtDouble mapping (AD-80, AD-79)
+  - fixed: issue at dtAnsiString -> dtIntXXX mapping (AD-1)
+  - fixed: if set MasterFields before IndexFieldNames, then ADMemTable will be emtied (AD-3)
+  - fixed: application hang ups if an unhandled EADDBEngineException exception was raised
+  - fixed: C++Builder 5 incompatibility in uADPhysODBCBase
+  - fixed: few issues in ADExplorer
+  - fixed: transaction remains active after posting updates with LockMode <> lmNone (AD-91)
+  - fixed: Query Builder does not return SQL text
+  - fixed: incompatibility with gsADOx (ANYDAC-90)
+  - fixed: setting UpdateOptions.KeyFields does not have effect after Open call (ANYDAC-81)
+                                                                    
+============================================================
+v 2.0.3.295 (30.05.08)
+  - fixed: fails to convert dtBlob to dtAnsiString
+  - fixed: memory leak if TADQuery.Post -> exception -> TADQuery.Free (AD-71)
+  - fixed: ADQuery does not fetch detail records if fiDetails is in FetchOptions.Cache 
+           and FetchOptions.RecordCountMode <> cmVisible (AD-72)
+  - fixed: IB: few array dml issues on FB & UTF8
+  - fixed: Oracle: "no data found" on REF CURSOR
+  - fixed: Oracle: ORA-01453 on repeating Edit/Post more than 2 times
+  - fixed: Oracle: ORA-01722 possible, if to map dtDouble to dtBCD on FLOAT(126) fields (AD-74)
+  - fixed: MSSQL: few array dml issues (AD-78, AD-65, etc)
+
+============================================================
+v 2.0.2.293 (22.05.08)
+  + added: ADO UDL importer parameter shortcuts support for ASA
+  + added: TADDataSet.CopyDataSet method
+  + added: TADCustomTransaction.NestingLevel property
+  + added: check that number of parameters remains the same after Prepare
+  / changed: optimized tracing / monitoring code. Now application
+             will run fast with {$DEFINE AnyDAC_Monitor}.
+  / changed: lock mode lmRely renamed into lmNone
+  / changed: added name reporting to few error messages
+  / changed: optimized internal query text handling
+  / changed: ODBC: optimized rows fetching for 5%
+  / changed: Oracle: optimized cursor opening
+  / changed: TADDatSRow.ValueXXX properties are now writable. 
+             Value[] is the default property.
+  - fixed: Oracle: possible ORA-24508 at fetching NVARCHAR(15)
+  - fixed: Oracle: erroneously recognizes :new. / :old. as parameters
+  - fixed: ADScript: AV at disconnected executing
+  - fixed: ADScript: COPY FROM FILE builds incorrect CSV file name
+  - fixed: ADScript: AV in ADDataMove in "silent" mode
+  - fixed: Prepare makes parameter references invalid (AD-63)
+  - fixed: TDataSet.GetCanModify is not overriden (AD-64)
+  - fixed: FastReport adapter does not set parameter values correctly
+  - fixed: command does not use TADTransaction assigned to TADConnection.Transaction
+  - fixed: "dataset must be active" error on DBGridEh connected to inactive dataset
+  - fixed: RecordCountMode=cmTotal on unidirectional dataset may fetch all records
+  - fixed: IB: Array DML has bugs in isc_dsql_batch_execute, so do not use it
+  - fixed: IB: TADParam.Size / Precision / Scale was not used
+  - fixed: IB: incorrectly recognizes "cannot create ..." error as "object does not exist"
+  - fixed: MSSQL: varchar(max) support was broken
+
+============================================================
+v 2.0.1.291 (20.04.08) 
+  - fixed: "ADMENU not found" at design time package loading
+  - fixed: FPC v 2.2.1 incompatibility issues
+
+============================================================
+v 2.0.1.289 (18.04.08) 
+  - fixed: FPC v 2.2.1 incompatibility issues
+  - fixed: "[RC fatal Error] uADSplash.res(1) Input and output file names are the same"
+  - fixed: ApplyUpdates, Reconcile does not use ResourceOptions.SilentMode
+
+============================================================
+v 2.0.1.287 (14.04.08) 
+  + added: Context Database Designer adapter added to the 3d party
+  + added: Fast Report 3 integration added to the 3d party
+  + added: IB/FB: added SQL dialect 1 support
+  + added: VendorHome, VendorLib, ODBCDriver, ODBCAdvanced driver link properties added
+  + added: FPC v 2.2.1 support
+  + added: {s ...} escape sequence added
+  + added: ADExecutor will execute command from standard input, if no scripts is specified
+  / changed: AnyDAC does not anymore depend on Indy.
+             Indy monitoring replaced by Remote one, use MonitorBy=Remote.
+  / changed: in uADCompDataMove.pas all AsciiXXX renamed to TextXXX
+  / changed: reorgonized TADTxOptions - added xoFinishRetaining to StopOptions,
+             StopAction renamed to DisconnectAction, DisconnectAction controls
+             only what will happen on connection closing
+  / changed: AutoCommit and TransIsolation connection definition parameters are removed
+             Use TxOptions properties instead.
+  - fixed: few issues in remote monitoring
+  - fixed: all dialogs will be now main form centered
+  - fixed: DBERR_NONE is not found on D7
+  - fixed: dataset with current index on InternalCalc field, losts position after post
+  - fixed: few issues in TADTable
+  - fixed: few issues in ADScript
+  - fixed: MSAccess: "Cannot parse name" on select * from "c:\db.mdb".MyTable
+  - fixed: TDBX: bridge multiple issues are fixed
+  - fixed: MySQL: Does not support &&
+  - fixed: IB: improved FB Embedded support
+  - fixed: MSSQL: "Invalid character value for cast specification" on Array DML
+  - fixed: MSSQL: possible wrong bytes in fetched BLOB values
+  - fixed: Oracle: NUMBER is defined as dtDouble, but must be dtFmtBCD
+  - fixed: Connection editor fails to edit active connection
+  - fixed: ODBC: few incompatibility issues (with Informix and Sybase Adaptive servers)
+
+============================================================
+v 2.0.1.285 (06.03.08) 
+  + added: IB: introduced Protocol and Server connection parameters
+  - fixed: trial version installer were broken
+
+============================================================
+v 2.0.1.283 (05.03.08) 
+  + added: TADQuery.ExecSQL will take parameter values from MasterSource, 
+           if specified
+  - added: TDBX: bridge updated to current DBX4 API, added correct 
+           meta data handling
+  / changed: after installation ADDrivers.ini will be empty 
+  / changed: renamed ResourceOptions.MaxBatchSize into ArrayDMLSize
+  / changed: ResourceOptions.AutoConnect, AutoDisconnect, AutoOnline 
+             replaced by AutoManage
+  / changed: AutoConnRestore renamed to AutoReconnect and 
+             published TADConnection.OnRecover/OnLosted/OnRestored
+  / changed: TADDataSet.Unidirectional moved to FetchOptions.Unidirectional
+  / changed: TADDataSet.UpdateRecordTypes renamed into FilterChanges
+  / changed: now AnyDAC_NOLOCALE_DATA and AnyDAC_NOLOCALE_META are not 
+             defined by default
+  - fixed: TDBX: MS SQL CE incompatibility issues in DBX Bridge
+  - fixed: DS: AV on insert record with dup key, then deleting last 
+           record in dataset
+  - fixed: DS: After adding new record with dup key, then canceling
+           addition, dataset position changes incorrectly
+  - fixed: DS: descending sorting using index does not work correctly
+  - fixed: DS: FindKey does not use case-insensitive index
+  - fixed: XML streaming of ftDateTime, ftTimeStamp does not work
+  - fixed: possible incorrect detection of stream format
+  - fixed: Oracle: generation of wrong PL/SQL block for stored 
+           procedure call from pre-specified parameters
+  - fixed: Oracle: possible incorrect handling of OCI_NO_DATA
+  - fixed: Oracle: PL/SQL table support were broken
+  - fixed: Sybase ASA: connection parameter Server does not work
+  - fixed: BCB5 incompatibility 
+  - fixed: ADExplorer does not show data for Sybase SQL Anywhere tables
+  - fixed: IB: OpenOrExecute does not work
+  - fixed: AV in DataSet Editor, when adding fields to active dataset
+  - fixed: Query Builder does not support quoted column names
+  - fixed: Support for quoted column names were broken
+
+============================================================
+v 2.0.1.281 (22.02.08) 
+  - fixed: installer issues
+
+============================================================
+v 2.0.0.279 (20.02.08) beta 10
+  + added: now the SQL code generator is SQL keywords aware
+  + added: DB2: SELECT FROM FINAL TABLE support for inline refreshing
+  / changed: DatS streaming now does not require resource options
+  / changed: ADExecutor now is console only program
+  / changed: no more tool sources is included, only tool binaries
+  / changed: MySQL, DB2: Host parameter is renamed into Server
+  - fixed: possible AV on ADConnection.Close and ADScript connected to this connection
+  - fixed: multiple issues with new GUI
+  - fixed: Update SQL Editor generates SQL with non-quoted name, when it must be quoted
+  - fixed: possible AV on pooled connection open in heavy threading environment 
+
+============================================================
+v 2.0.0.278 (06.02.08) beta 9
+  + added: Added mkGenerators meta info kind
+  + added: TADTable.IndexFieldNames may be also specified in form 
+           field[:[D][A][N]];... Where D-desc,A-asc,N-nocase.
+  / changed: "Driver is not registered" error message improved
+  / changed: TADGUIxFormsLoginDialog now by default has history disabled
+             and by default will show only UserName and Password
+  / changed: ASA: EngineName conn def parameter replaced with Server
+  / changed: ADConnectionDefs.ini AnyDACSettings section renamed 
+             into ADSettings
+  / changed: renamed some of the conn def parameters
+  / changed: new look of standard dialogs
+  - fixed: Query Builder may create table alias, which is SQL reserved word
+  - fixed: Phys-311, other errors on getting package list for non Oracle
+  - fixed: "invalid type cast" on selecting TADMemTable.UpdateOptions.UpdateTableName 
+           with no TableAdapter 
+  - fixed: AV after deleting transaction referenced by TADCommand.Transaction
+  - fixed: "Stack Overflow" at TADDataSet.ApplyUpdates call on D2007
+  - fixed: MSSQL: exception object always has empty ObjName property value
+  - fixed: MSSQL: {fn SCHEMA()} for MSSQL 2005 returning user not schema name
+  - fixed: MSSQL: possible "incorrect syntax near '{'" on Array DML
+  - fixed: MSSQL: possible SQL_NO_DATA on getting diag fields
+  - fixed: "Devs" page is visible in D2007
+  - fixed: Possible issues with sequence of ExecSQL('...', [...]) calls
+  - fixed: TADMemTable.Data property set method was broken
+  - fixed: ODBC: "Driver is not specified" error if to specify ODBCDriver
+  - fixed: Oracle: the PL/SQL exception NO_DATA_FOUND is not raised on client
+  - fixed: MSSQL: fails to execute script with CREATE PROCEDURE and ';' as
+           command separator
+
+============================================================
+v 2.0.0.276 (12.12.07) beta 8
+  / changed: updated IDE code to follow RO standards
+  / changed: MSSQL: general cleanup and optimization (~ 5% on rowset fetching)
+  / changed: default value for TxOptions.Options
+  - fixed: if to specify TADStoredProc.SchemaName or CatalogName, then at design
+           time choose StoredProcName, then will be built wrong SP name
+  - fixed: possible AV if inside of TADDataSet.Open will be called Close
+  - fixed: few issues of RecordCountMode = cmTotal
+  - fixed: Oracle: ORA-24801 on assigning empty string to CLOB parameter / field
+  - fixed: Oracle: ORA-03113 was not handled by automatic connection restore
+  - fixed: MSSQL: force direct execution for some of the queries
+  - fixed: MSSQL: optimized cursor closing
+  - fixed: MSSQL: "invalid descriptor index" if TEXT/IMAGE columns are not
+           at end of the SELECT list
+  - fixed: MSSQL: does not use SQL Native Client on 2005 server
+  - fixed: IB: AV on connection closing
+  - fixed: IB: possible [AnyDAC][Phys][IB]-1401. Data too large for variable
+  - fixed: IB: added automatic connection restore for Prepare call
+  - fixed: DBX: driver registration fails, if dbExpress is not installed 
+           correctly. Now AnyDAC in this case will not register driver.
+
+============================================================
+v 2.0.0.274 (28.11.07) beta 7
+  + added: all units are renamed from daADxxx into uADxxx. And all packages
+           are renamed from daADxxx into AnyDAC_xxx.
+  + added: TADCommand.Execute few overload methods
+  + added: new escape sequences for Firebird / Interbase usage. For example:
+             execute procedure proc3 {returning_values :out1, :out2}
+             insert into TABLE1(ID, K) values(gen_id(GEN_TABLE1_ID, 1), :K) returning K, ID {into :p1, :p2}
+  - fixed: Oracle: mapping dtBoolean to dtAnsiString(1) fails
+  - fixed: IB/FB: drivers gives AV, if to ask for DBMS kind before connecting to DB
+  - fixed: IB/FB: fails to return FK info
+  - fixed: TADRdbmsDataSet.Open fails for overloaded method, if command is stored proc
+  - fixed: TADScript hangs up, if after last command stays command separator without CRLF
+  - fixed: missed IB.bat, LoadData.sql files in installer
+  - fixed: AV on sequence oQry.Transaction:=ADTrans1; oQry.Free; ADTrans1.Commit
+  - fixed: MSAccess: mkTableFields does not return caAutoInc for counter columns
+  - fixed: MSAccess: 338 error on posting updates from DA client
+
+============================================================
+v 2.0.0.273 (1.11.07) beta 6
+  + added: TADDataMove.Mappings.Assign is aware of TStrings, where
+           source may be as field name as expression
+  + added: property TADCommand.Values[const AParamNames: String]: Variant; default;
+  / changed: TADDataMove will not control transactions, if CommitCount <= 0
+  / changed: by default FormatOptions.StrsTrim is True
+  / changed: if Indy in not installed, that will not switch off monitoring
+  - fixed: Oracle: ASSERT failure on batch execute with variable ATimes value
+  - fixed: Oracle: ORA-01036 on ADStoredProc.Prepare, if ParamBindMode=pbByNumber
+  - fixed: Oracle: dumps all parameter array values, not only from AOffset to ATimes-1
+  - fixed: Oracle: memory is corrupted on setting NCHAR parameter values on D2007
+  - fixed: Oracle: NCHAR and CHAR procedure parameters without maximum length
+           leads to failure to call stored proc
+  - fixed: Firebird: server side memory leak on each batch execute
+  - fixed: Firebird: syntax error on batch execution of SP with output params
+  - fixed: Firebird: ADScript does not support CREATE OR ALTER
+  - fixed: FB/IB: fails Fetch from EXECUTE PROCEDURE
+  - fixed: MySQL: failure to set character set on pre 4.1 system
+  - fixed: mapping WideString -> AnsiString appends zero byte to a value
+  - fixed: ftFixedWideChar is not supported on D2007/2006
+  - fixed: [AnyDAC][Phys]-326, if AOffset >= ATimes in Execute call
+  - fixed: D6, CB6, D2007 incompatibilities
+
+============================================================
+v 2.0.0 (17.10.07) beta 5
+  / changed: ActiveAtRuntime, ConnectedAtRuntime replaced with
+             ActiveStoredUsage, ConnectedStoredUsage
+  / changed: TADConnection.Execute renamed into ExecSQL and
+             introduced two overloaded methods
+  - fixed: ADScript: incorrectly handles alpha-numeric command
+           separators like GO
+  - fixed: ADScript: does not handle MySQL DELIMITER command
+  - fixed: ADScript: does not handle MySQL '\' escape sequences
+           in string literals
+  - fixed: ADScript: "file not found" on SET @P1 = 20
+  - fixed: ADScript: memory leaks
+  - fixed: IBFB: failure to execute SP with output parameters
+           but without suspend
+  - fixed: IBFB: error "invalid argument to encodedate" on
+           timestamp / time fields with fractions > 999
+  - fixed: MySQL: generates not needed SET AUTOCOMMIT commands
+  - fixed: MySQL: does not return output parameters for array DML
+  - fixed: ASA: possible incorrect Array DML processing
+  - fixed: Oracle: performance degradation on Array DML & error
+           handling & skiping errors
+  - fixed: automatic connection restore was broken
+  - fixed: automatic connection restore does not handle transaction
+           control methods
+  - fixed: "driver is not registered" with virtual drivers
+  - fixed: ascii -> dataset datamove mode was broken
+  - fixed: possible metadata corruption
+  - fixed: possible data truncation at String -> Memo mapping
+
+============================================================
+v 2.0.0 (05.10.07) beta 4
+  / changed: optimized general command live cycle
+  / changed: common code is optimized. About 10% on TADQuery.Open, etc
+  / changed: TADTable.GetIndexNames now returns also server side indexes
+  - fixed: ADMonitor does not save ID's and Time's into log file
+  - fixed: indy monitor client thread now starts only if ADMonitor is
+           running and application request monitorby=indy
+  - fixed: indy monitor client does not send "bye" to ADMonitor
+  - fixed: parameters added after setting TADQuery.SQL, will be removed
+           after Prepare/ExecSQL call
+  - fixed: BCB5, BCB6, D6, D2007 incompatibilities
+  - fixed: AV on repeating SetRange calls on cloned dataset
+  - fixed: multiple IB/FB issues
+  - fixed: multiple streaming issues
+
+============================================================
+v 2.0.0 (26.09.07) beta 3
+  + added: 2 overload TADRdbmsDataSet.Open methods
+        procedure Open(const AQuery: String); overload;
+        procedure Open(const AQuery: String; const AParams: array of const); overload;
+  + added: 2 overload TADQuery.ExecSQL methods
+        function ExecSQL(const AQuery: String): LongInt; overload;
+        function ExecSQL(const AQuery: String; const AParams: array of const): LongInt; overload;
+  + added: 2 overload TADStoredProc.ExecProc methods
+        function ExecProc(const AProcName: String): LongInt;
+        function ExecProc(const AProcName: String; const AParams: array of const): LongInt;
+  - fixed: multiple IB driver issues
+  - fixed: multiple streaming issues
+  - fixed: TADDataSet.CreateBlobStream does not work for non TBlobField
+  - fixed: removed direct references to FastMM
+
+============================================================
+v 2.0.0 (17.09.07) beta 3
+  + added: LocateEx and LookupEx with ability to search forward/backward,
+           from start/current position, by fields/expression
+  + added: TADResourceOptions.PreprocessCmdText allows to turn on/off
+           command text preprocessing. By default is True.
+  + added: TADUpdateOptions.UpdateKeyFields allows to specify key fields
+           for UPDATE / DELETE operations
+  + added: DB2: 'Database' connection parameter now correspond to 'Database',
+           'Alias' to 'DBAlias'. Also added other parameters for dsn-less connection
+  / changed: now '\' is escape character in SQL preprocessor insetad of '^'
+  / changed: now it is enough to include daADGUIxFormsfLogin into uses to have default login dialog
+  / changed: TADDataSet.LocateRecord is now protected method
+  / changed: TADGUIxFormsLoginDialog.DefaultDialog property is removed. Now,
+             if daADGUIxFormsfLogin unit is included into application, then
+             login dialog will be created.
+  - fixed: exception "invalid decimal" in TADDatSRow.SetData
+  - fixed: TADDatSMechSort.SortingOn
+  - fixed: D5 incompatibility
+  - fixed: Oracle: "invalid pointer" on reading / writing Unicode BLOB/CLOB
+  - fixed: Oracle: incorrect reading / writing Unicode BLOB/CLOB
+  - fixed: Oracle: "expected FROM" on metadata fetching
+  - fixed: MSSQL: "cannot prepare" on SET QUOTED_IDENTIFIER ON
+  - fixed: memory leak if application used ADManager, but had no active connections
+  - fixed: memory leak on transaction release
+  - fixed: possible AV in ODBC driver if monitoring was active
+  - fixed: possible AV in TADDataSet in M/D, unidirectional, etc usage cases
+  - fixed: possible AV after Delete & ApplyUpdates & CommitUpdates
+  - fixed: possible AV on logon failure
+  - fixed: few TADScript issues
+  - fixed: TADDataMove hangup
+  - fixed: MySQL: "Unvalid argument to time encode" on negative time value
+  - fixed: MySQL: Utf8 handling does not work on pre 5.0.7 systems
+  - fixed: incorrect SQL generated by query builder for multy table joins
+  - fixed: different errors if FetchOptions.RecordCountMode = cmTotal
+
+============================================================
+v 2.0.0 (4.09.07) beta 2
+  / changed: TADDatSTable.Import is optimized
+  - fixed: BCB5, BCB6, D2007 installation issues
+  - fixed: ADScript AV
+  - fixed: ADExecutor wannot compile without Synedit installed
+  - fixed: ODBC: possible AV in driver
+  - fixed: ODBC: possible error on multiple cursors
+  - fixed: MSSQL: 3604 handled as error
+  - fixed: "dublicate list entry" on havy threading
+  - fixed: MySQL: array DML fails with INSERT INTO table (a,b,c) VALUES (:p1,:p2,:p3) ON DUPLICATE KEY UPDATE c=VALUES(a)+VALUES(b)
+
+============================================================
+v 2.0.0 (24.08.07) beta 1
+  + added: IB/FB driver
+  + added: SQL script engine. Analogue of Oracle SQL*Plus with
+           extentions for other supported by AnyDAC DBMS's. ADPump
+           was removed. Now it is one of the commands of ADExecutor.
+  + added: dataset persistence (XML, BIN). TADDataSet.LoadFromStream,
+           LoadFromFile, SaveToStream, SaveToFile methods.
+           ResourceOptions.Persistent, PersistentFileName, Backup,
+           etc options.
+  + added: dataset disconnected mode (TADConnection.Offline, Online,
+           Offlined, ResourceOptions.AutoOnline)
+  + added: connection automatic recovery (TADConnection.
+           OnConnectionLost, OnConnectionFailed, OnConnectionRestored,
+           Ping, ResourceOptions.AutoConnRestore, etc)
+  + added: connection sharing between application modules
+           See new demo DEMO\Comp Layer\TADConnection\DLL_Sharing
+  + added: ResourceOptions.ServerOutput, ServerOutputSize.
+           These options are supported by Oracle and MSSQL.
+  + added: ResourceOptions.AutoConnect. If True, then connection
+           will automatically connect / disconnect, then it will be
+           required. Otherwise exception will be raised.
+  + added: TADConnection.Execute for simple SQL commands execution
+  + added: BeforeExecute, AfterExecute, BeforeApplyUpdates,
+           AfterApplyUpdates, BeforeGetRecords, AfterGetRecords,
+           etc dataset events
+  + added: Oracle: support for TIMESTAMP data type
+  + added: C_AD_Version constant containing AnyDAC sources version
+  + added: TADDataSet.OpenOrExecute method
+  + added: DBMS specific exception classes EASANativeException,
+           EMSSQLNativeException, EMSAccessNativeException,
+           EDB2NativeException, etc
+  + added: support for Sybase SQL Anywhere 9, 10
+  + added: support for ASA MESSAGE command
+  + added: {IF ...} macro sequence is not compatible with 1.x
+           Now use {IF...} ... {FI} or {IIF <cond>, <val>, ...} instead.
+  / changed: MIDAS / dbGo support improved
+  / changed: Removed TADDataSet.FetchParams method
+  / changed: Renamed TADClientDataSet into TADMemTable
+  / changed: "AnyDAC Devs" is now hidden by installer
+  / changed: Removed TADParam.Active property
+  / changed: MySQL: improved support for case-sensitivity modes
+  / changed: AsyncCmdXXX options renamed to CmdExecXXX
+  / changed: MSSQL2000 and MSSQL2005 driver ID's replaced by MSSQL.
+             It is not required anymore because - see sections MSSQL2000 and
+             MSSQL2005 in DB\ADDrivers.sample
+  / changed: Generic ODBC driver parameter 'Driver' renamed to 'ODBCDriver'
+  / changed: {<name>(...)} macro sequence is shortcut for {FN <name>(...)}
+  - fixed: Dont process escape sequences inside of string constants in SQL
+  - fixed: "Range error" exception on TWideStringField.Value := ''
+  - fixed: TADParam.Clear(i) clears all
+  - fixed: ftWideMemo support for D2006/D2007 was broken
+  - fixed: != and &= was handling as macros
+  - fixed: "DataSet not in edit mode" at assigning value to InternalCalc field in OnCalcFields event handler
+  - fixed: DisplayFormat for aggregate fields is not used
+  - fixed: Unidirectional = True and FetchAll gives "Out of memory" on big rowsets
+  - fixed: memory leak if preparing query with parameter of ftUnknown data types
+  - fixed: AV on IndexFieldNames has the field not in dataset
+  - fixed: AV on row deletion
+  - fixed: AV on sequenced execution of same query with different Params.ArraySize values
+  - fixed: AV on executing command with AsyncCmdTimeout > 0
+  - fixed: aggregates/filters on fkInternalCalc fields, calculated by OnCalFields event handler does not work
+  - fixed: sorting / ranging by Boolean and Binary fields does not work
+  - fixed: command preprocessor does not handle '', "", \x in string literals
+  - fixed: ODBC (MSSQL, ASA, DB2, etc): multiple issues with array execution
+  - fixed: MySQL: the datetime value was null if date and time parts are zeros. But it is enough a date part to be zero.
+  - fixed: MySQL: Array DML and MySQL REPLACE / INSERT ON DUPLICATE does not work
+  - fixed: MSSQL: raiseerror does not raise exception on client
+  - fixed: MSSQL: if posting changes from TADQuery fires some triggers, which will update other tables, then only single record will be updated
+  - fixed: MSSQL: TADConnection.GetLastAutoGenValue returns always Null
+  - fixed: MSSQL: assertion failure if ftBlob parameter has value of zero length, but not Null
+  - fixed: Oracle: Instant Client support was broken
+  - fixed: Oracle: if exception happened at array DML execution, then RowsAffected is not updated properly
+  - fixed: Oracle: metadata retrieval does not support ALTER SESSION SET CURRENT_SCHEMA
+  - fixed: Oracle: if SP does not exists, then raised '"PUBLIC".<SP name> does not exists'
+  - fixed: Oracle: ORA-24806 on utf8/ucs2 systems
+
+============================================================
+v 1.12.2 (13.04.07)
+  + added: TDBX tracing capabilities, etc
+  + added: Oracle: TADTable includes ROWID into SELECT list
+  - fixed: D2007: components are not installed into IDE
+  - fixed: Oracle: ORA-00942 on metadata fetching if user has
+           'SELECT ANY TABLE' priviledge
+
+============================================================
+v 1.12.1 (12.04.07)
+  - fixed: Oracle: ORA-00942 on connecting to DB
+
+============================================================
+v 1.12.0 (12.04.07)
+  + added: ADSpeed_InMem - benchmark for inmemory datasets
+  + added: all ODBC based drivers now supports (DSN | FIL)=<name>
+           in Database connection parameter
+  / changed: enhanced FastReport RTTI
+  - fixed: ADExecutor does not show all datasets, if command
+           returns more than one dataset
+  - fixed: AV/Range check error on consecutive executions of
+           stored procedure returning multiple result sets
+  - fixed: TDBX: driver was broken
+  - fixed: MySQL: memory leak on command returning rowsets
+  - fixed: Batch operation remains active after dataset close
+  - fixed: BCB 2006 installation issues
+  - fixed: Oracle: Instant Client support was broken
+  - fixed: Oracle: ORA-00942 on metadata fetching if user has
+           'SELECT ANY TABLE' priviledge
+
+============================================================
+v 1.11.0 (21.03.07)
+  + added: D2007 compatibility
+  + added: TDBX driver
+  / changed: improved sorting of dataset by nonunique fields
+  - fixed: MSSQL: PRINT result was erased before it is
+           accessible to the programmer
+  - fixed: MySQL: Utf8 parameter value is corrupted
+  - fixed: MySQL: Utf8 column leads to memory overwrite
+  - fixed: MySQL: SP output parameters was always NULL
+  - fixed: MySQL: 'Could not convert' error at getting value of
+                  numeric output parameter, if DecimalSeparator <> '.'
+  - fixed: GUIx was not thema API compatible
+
+============================================================
+v 1.10.1 (12.03.07)
+  + added: TADDataMove.OnError event handler
+  - fixed: few demo applications was broking
+  - fixed: incorrect AnsiString sorting possible
+  - fixed: after posting changes in dataset sorted by not unique
+           index, current record was moved to the bottom
+  - fixed: AV's in DbExpress driver
+  - fixed: MSSQL: "invalid cursor state" if cursor has long
+           values and record number is multiple of RowsetSize
+  - fixed: ASA 8: invalid length returning for zero length BLOB
+           (thanks to Markus Duttig)
+  - fixed: incorrect "Cannot compare rows" error
+
+============================================================
+v 1.10.0 (20.02.07)
+  + added: FastReport data access driver
+           (thanks to Serega Glazyrin <glserega at mezonplus dot ru>)
+  + added: FPC on Win32 support
+           (see AnyDAC\FPC\readme.txt for details)
+  / changed: ResourceOptions.Disconnectable now True by default
+  / changed: UpdateOptions.AutoRefresh is replaced with RefreshMode
+           (rmManual - AutoRefresh=False,
+            rmOnDemand - AutoRefresh=True,
+            rmAll - AutoRefresh=True, but will be refreshed all fields)
+  - fixed: AV on FastMM & exception & ADQuery.Free
+  - fixed: few C++Builder 5 issues in installer
+  - fixed: CountUpdatedRecords is not using if NO_DATA_FOUND is raised
+  - fixed: left AnyDAC_DEBUG defined
+  - fixed: incorrect refresh record SELECT command generation
+  - fixed: incorrect default value for TADAutoIncField.ProviderFlags
+  - fixed: possible AV at Delphi IDE exit
+  - fixed: possible incorrect time value (21:15:00 -> 21:14:59)
+  - fixed: AV on Oracle on numbers with > 38 digits
+  - fixed: "Data too large for variable" on MD using NVARCHAR fields
+  - fixed: "Invalid object name" on editing of SELECT * FROM Northwind..Orders
+  - fixed: *** multiple bugs founded by FPC compiler ***
+
+============================================================
+v 1.9.2 (16.01.07)
+  / changed: improved installer phrases
+  - fixed: MSSQL driver hang-up on update of data
+  - fixed: MSSQL error "connection busy" on updates using TADUpdateSQL
+  - fixed: non optimal settings of TADUpdateSQL commands
+  - fixed: ADQA does not compile
+
+============================================================
+v 1.9.1 (23.12.06)
+  - fixed: D5 incompatibility
+  - fixed: MySQL UTF8 support
+  - fixed: MySQL max supported version now is 5.2
+  - fixed: AV in Delphi IDE after editing SQL property, etc
+           most annoying bug is gone :)
+  / changed: improved ADSpeed
+
+============================================================
+v 1.9.0 (19.12.06)
+  + added: MSSQL driver VARCHAR(Max) support
+  + added: General AllowReconnect option. If True driver will
+           automatically restore losted connection with server.
+           Option is experimental. Oracle driver is not supported.
+  + added: MySQL UTF8 support
+  + added: Oracle driver ORACLE_HOME, TNS_ADMIN environment variables support
+  - fixed: SynEdit syntax highlighting shows some code parts in black
+  - fixed: MSSQL driver gives "[AnyDAC][DatS]-4" error at opening stored
+           procedure result set without columns and SET NOCOUNT OFF
+  - fixed: Oracle driver does not return "object exists" error, if to
+           execute the same CREATE command more than one time
+  - fixed: incorrect detection of ftBCD vs ftFmtBCD. If this fix affects
+           your application, then decrement MaxBcdPrecision for 4 units.
+  - fixed: TADClientDataSet cloning functionality was broken
+  - fixed: MySQL driver reconnect functionality does not work as expected
+  - fixed: "Out of range" exception on some SQL's
+  - fixed: AV on custom monitoring
+  - fixed: TADDatSViewList.Rebuild does not take into account
+           TADDatSView.SourceView
+  - fixed: tracing on & ODBC based drivers give 100% CPU utilization
+  - fixed: ODBC driver (ODBC, MSAcc, MySQL, Sybase ASA) invalid BLOB
+           content after 1Mb
+
+============================================================
+v 1.8.0 (14.11.06)
+  + added: BCB 5, BCB 2006 support (thanks to Serge Yakovlev <sergey@mag7.ru>)
+  + added: DbExpress D2006 support (thanks to Michal Abramczyk <miab3@o2.pl>)
+  + added: Oracle Instant Client support
+  + added: TDataSetProvder.ResolveToDataset = True support
+  + added: MYSQL driver AllowReconnect option. If True driver will
+           automatically restore losted connection to the server.
+  + added: MYSQL driver stored procedure / function support
+  + added: ResourceOptions.DefaultParamType
+  / changed: improved data type mapping editor
+  / changed: ADExplorer BDE aliases import improved
+  / changed: MySQL driver was mapping FLOAT/DOUBLE/REAL to ftFMTBcd
+             now it will map them to ftFloat
+  - fixed: DevEx adapting packages had incorrect package references
+  - fixed: incorrect SQL parsing
+  - fixed: "Interface not supported" error in ADExecutor / ADExplorer
+  - fixed: few SynEdit / ADExecutor integration issues
+  - fixed: "dbExp is not installed" in ADExplorer on the clean machine
+  - fixed: Oracle driver can fetch only single record from REF CURSOR
+           on some conditions
+  - fixed: cant edit DATE field in Oracle table using Delphi 5
+  - fixed: TADUpdateSQL editor does not allow editing of SQL's
+  - fixed: MSAccess driver trying to get PK fields for stored queries
+  - fixed: "No cols defined" error on RefreshRecord
+  - fixed: consequent async operations may give error "Async
+           operation in progress"
+  - fixed: Oracle driver can give ora-01002 on REF CURSOR
+
+============================================================
+v 1.7.0 (23.10.06)
+  + added: BCB 6 support (thanks to Serge Yakovlev <sergey@mag7.ru>)
+  / changed: improved text "Record changed/deleted" error
+  / changed: improved ADSpeed benchmark suite
+  / changed: BPL files now will be installed into one, specified
+             in "BPL output directory"
+  - fixed: TADUpdateSQL.FetchRowSQL was using only at most first call
+  - fixed: few Query Editor issues
+  - fixed: few TADParam array handling issues
+  - fixed: AV in MSSQL driver on too small TADParam.Precision
+  - fixed: Oracle: removed limitation for max 4000/3 character
+           length of parameter value
+
+============================================================
+v 1.6.1 (28.09.06)
+  / changed: license agreement text changed
+  - fixed: AnyDAC_GUIxForms_D7 was using SynEdit unconditionally
+  - fixed: demos were hard linked to monitor and dbExp for D10
+
+============================================================
+v 1.6.0 (22.09.06)
+  + added: SynEdit integration
+  / changed: changed packages set
+  / changed: many improvements for Query Editor
+  / changed: many compatibility propeerties was removed:
+
+           TADClientDataSet:
+
+           LogChanges -> CachedUpdates
+           PacketRecords -> FetchOptions.RowsetSize
+           FetchOnDemand = False -> FetchOptions.Mode = fmManual
+           FetchOnDemand = True -> FetchOptions.Mode = fmOnDemand
+           ConstraintsDisabled -> not ConstraintsEnabled
+           DisableStringTrim -> not FormatOptions.StrsTrim
+           HasChanges -> UpdatesPending
+           ReadOnly -> UpdateOptions.ReadOnly
+           MergeChangeLog -> CommitUpdates
+           StatusFilter -> UpdateRecordTypes
+
+           TADconnection:
+
+           TransIsolation -> TxOptions.Isolation
+
+           TADQuery, TADStoredProc, TADTable:
+
+           ParamCheck -> ResourceOptions.ParamCreate
+           MacroCheck -> ResourceOptions.MacroCreate
+           AutoRefresh -> UpdateOptions.AutoRefresh
+           CacheBlobs -> FetchItems.Cache & fiBlobs
+           UpdateMode -> FetchOptions.UpdateMode
+           RequestLive -> UpdateOptions.RequestLive
+           StatusFilter -> UpdateRecordTypes
+           ReadOnly -> UpdateOptions.ReadOnly
+
+  - fixed: macro value with parameters inside was not parsed
+  - fixed: RecordCountMode = cmTotal was broken
+  - fixed: Oracle: if procedure has cursor parameters, then
+           prepare was really executing procedure
+  - fixed: MSSQL: "Invalid Cursor State" error after failed update
+  - fixed: MSSQL: "Cannot parse object name" on names like Northwind..Orders
+
+============================================================
+v 1.5.4 (31.08.06)
+  / changed: Indy Monitor support is disabled by default
+  - fixed: refresh on detail CDS makes it empty
+  - fixed: incorrect handling of SourceEOF in CDS
+
+============================================================
+v 1.5.3 (29.08.06)
+  / changed: improved "condef not found" message
+  / changed: MSAcc conndef is created always
+  - fixed: locking on application termination
+  - fixed: improved installed Indy version detection
+  - fixed: QA tool was outdated
+
+============================================================
+v 1.5.2 (22.08.06)
+  - fixed: few RTC DB incompatibilities
+  - fixed: AV on Delphi IDE exit
+
+============================================================
+v 1.5.1 (19.08.06)
+  - fixed: D7 incompatibility
+  + added: pooled demo connections
+
+============================================================
+v 1.5.0 (18.08.06)
+  + added: DevEx DataController Adapter for AnyDAC. It is located
+           in $(ADHOME)\ADDON\DevEx.
+  / changed: TADDataSet adjusted to support asynchronous RTC DB
+  / changed: Expression evaluator does not evaluate all arguments
+             of IIF function, but only appropriate one
+  / changed: Expression evaluator supports First/Last aggregates
+  / changed: Expression evaluator supports in expression references
+             to view aggregates
+  / changed: TADAutoIncField.ServerAutoIncrement is True by default
+
+============================================================
+v 1.4.2 (17.05.06)
+  - fixed: DirectExecute handling (MSSQL & EXEC). It will be required
+           to explicityl set DirectExecute to True in some cases, like
+           a sp_setapprole.
+  - fixed: Oracle driver skips first 32768 bytes of LONG/LONG RAW column
+  - fixed: to refresh identities after insert used @@IDENTITY
+  - fixed: extracting table name from SELECT * FROM "aaa".bbb failed
+  - fixed: generic ODBC object name parsing failed
+  - fixed: generated invalid PL/SQL block for PL/SQL function and
+           manually filled parameter list
+  - fixed: installer issue
+  - fixed: Error 400 (Rec changed/deleted) after inserting into table
+           with autoinc field on generic ODBC source
+  - fixed: AV with ftWideString calculated field on D10
+  / changed: optimized detail query execution
+  / changed: FetchOptions.AutoClose = True will close stored procedure
+             also if it is returning multiple rowsets
+  / changed: out parameters of MSSQL stored proc will be fetched even
+             it does not have SET NOCOUNT ON
+  / changed: Query Editor minor improvements
+  / changed: reduced ODBC driver memory usage
+  + added: TADDataMove.OnFindDestRecord event
+  + added: FormatOptions.DefaultParamDataType
+  + added: IADPhysConnection/IADPhysCommand.CliObj method returns
+           appropriate wrapper object (eg, TODBCConnection for ODBC)
+  + added: initial ADS support
+
+============================================================
+v 1.4.1 (16.02.06)
+  - fixed: improved DirectExecute handling (MSSQL & EXEC). Now
+           it is not required to explicityl set DirectExecute to True.
+  - fixed: ODBC escapes was not processing, when required
+  - fixed: "Invalid expression" error on SELECT from table function (DB2)
+  - fixed: AV on D2006 & ftWideString
+  - fixed: MSSQL money and smallmoney fields always have 0 on D2006
+  - fixed: RefreshRecord was not notifying data-aware controls
+
+============================================================
+v 1.4.0 (8.02.06)
+  + added: base MSSQL 2005 support. Now inplace of MSSQL driver id
+           you should use MSSQL2000 or MSSQL20005.
+  - fixed: minor monitoring issues
+  - fixed: incorrect detection of ODBC parameter array support (MimerSQL)
+
+============================================================
+v 1.3.1 (25.01.06)
+  - fixed: D2006 issues
+  - fixed: TADTable and "command must be not empty" bug
+  - fixed: "Out of range" in ODBC driver
+
+============================================================
+v 1.3.0 (16.01.06)
+  + added: 3 new properties ResourceOptions.ProcessXXXX. Control
+           macro, param and escape expanding
+  + added: new property FetchOptions.RecordCountMode. Controls
+           dataset record counting (RecordCount)
+  + added: wizard to connection definition editor
+  + added: base Delphi 10 support (thanks to Gotze Gerrit)
+  / changed: back updated to support Indy10 stable release 10.0.52.
+             Installer will distinguish 10.0 and 10.1.
+  / changed: added third parameter to AsyncHandler.HandleFinished
+  - fixed: does not set MySQL character set
+  - fixed: broken Indy10 based remote monitoring
+  - fixed: if AsyncCmdMode = amAsync, and exception is raised
+           then exception object will be lost
+  - fixed: resource options editor was not updating some properties
+  - fixed: "Assertion failure" in ODBC driver (PostgreSQL, eg)
+  - fixed: "Invalid precision value" error at empty (not NULL)
+           string parameters (MSSQL)
+  - fixed: BeforeInsert was not firing
+  - fixed: "[AnyDAC][Phys]-321. Character [)] is missed." at some
+           kind of queries to MySQL
+  - fixed: does not set default connection, when component is
+           dropped onto DM
+  - fixed: Refresh uses RecNo, but not key value
+  - fixed: after Post dataset jumps to the last record
+  - fixed: Query Editor does not work on Delphi 6
+  - fixed: Incorrect detection of ODBC parameter array support (MimerSQL)
+
+============================================================
+v 1.2.11 (28.11.05)
+  + added: droped Command/Query/etc on form/datamodule with
+           Connection will be linked to this connection
+  - fixed: memory leak if no connection was activated
+  - fixed: AV at application shutdown
+  - fixed: AV after append/cancel/append to empty dataset
+  - fixed: AV after changing TADQuery.UpdateObject few times
+           for the same dataset
+  - fixed: seting TADUpdateSQL Connection or ConnectionName
+           properties was not updating underlying commands
+  - fixed: after inserting record into ordered dataset the
+           position was not on new record
+  - fixed: TADTable design time environment
+
+============================================================
+v 1.2.10 (09.11.05)
+  + added: IndexFieldNames now may be in form field[:[D][A][N]];...
+           there D-desc,A-asc,N-nocase
+  / changed: updated to support Indy10 latest code (at least 10.1.0.5)
+  - fixed: missed OnFilterRow assignment
+  - fixed: missed custom monitor type in connection editor
+  - fixed: AV in Query Editor on Delphi 5
+  - fixed: error on SELECT * FROM (SELECT ....)
+  - fixed: AV at application shutdown
+  - fixed: TADTable design time environment
+  - fixed: incorrect behaviour after aborting fetch operation
+
+============================================================
+v 1.2.9 (10.10.05)
+  - fixed: empty list of packaged procedures in Oracle
+  - fixed: cannot compile ADExplorer and ADMonitor after 1.2.8
+
+============================================================
+v 1.2.8 (05.10.05)
+  + added: Custom type of monitoring
+  - fixed: wrong FROM value if table name looks like
+           Schema."Something with spaces"
+  - fixed: possible wrong row versions at row editing
+  - fixed: monitoring issues
+  - fixed: threading issues
+
+============================================================
+v 1.2.7 (20.09.05)
+  + added: new TADQuery, TADCommand editors
+  / changed: ADDemoConnections.ini renamed to ADConnectionDefs.ini
+  - fixed: cant connect to not open Oracle database
+  - fixed: MySQL client was reporting itself always as non-interactive
+  - fixed: just introduced threading issues, AV in pooler
+  - fixed: "Value out of range" in pooler
+  - fixed: missed file updateIndy.bat, minor installer issues
+  - fixed: TADUpdateSQL does not use Connection property
+
+============================================================
+v 1.2.6 (15.09.05)
+  / changed: unified threading classes usage
+  / changed: removed strong dependency on Indy presence and it version
+  - fixed: once more, wrong row order in CDS with active index
+  - fixed: possible AV at PhysManager.Open/Close calls
+  - fixed: Query Builder does not generate SQL if model is
+           changed, SQL memo is not empty and user press OK
+  - fixed: datasets in inherited forms were losting design time positions
+  - fixed: uDatSUtils unit is not installed
+  - fixed: manual SP params control issue
+  - fixed: wrong row order in CDS without active index
+  - fixed: possible PhysManager timeout on app exit
+  - fixed: ADMonitor stay on top was broken
+  - fixed: no PK fields was returning for MSAccess
+  - fixed: AV if to use few TADUpdateSQL's with one dataset
+  - fixed: doubling rows after inserting new record into
+           dataset with non-unique index
+
+============================================================
+v 1.2.5 (23.08.05)
+  / changed: default Indy version for D5 is 10
+  / changed: default UpdateMode is upWhereKeyOnly
+  / changed: default CacheUpdateCommands is True
+  / changed: default TADDataMove.Mode to dmAlwaysInsert
+  - fixed: AV with master/detail
+  - fixed: ADExplorer was fetching PK info without need
+  - fixed: tables list in query builder was empty for MySQL
+  - fixed: D5 incompatibilities
+  - fixed: error message about empty DriverID was unclear
+  - fixed: connection editor was broken
+  - fixed: was not detecting MySQL case sensitive servers
+  - fixed: TADTable issues
+  - fixed: ORA-00936 on empty scope
+  - fixed: "invalid variant operation" on inheriting form
+           containing parameterized query
+  - fixed: "cannot assign TADParam to TParam" when using
+           TADQuery & DSP & CDS
+  - fixed: wrong row order in CDS with active index
+  - fixed: CDS IndexDefs management
+  - fixed: some incidental AV's with ODBC
+
+============================================================
+v 1.2.4 (04.08.05)
+  + added: ResourceOptions.ExecuteDirect option. Also AnyDAC will
+    set it to True for some update commands & DBMS automatically.
+  + added: all docu is now in PDF format
+  - fixed: DefaultSchemaName for MSSQL was UserName
+  - fixed: fiMeta was missing from TADQuery.FetchOptions.Items
+  - fixed: cannot set LoginDialog at design time
+  - fixed: cannot open pooled connection
+
+============================================================
+v 1.2.3 (01.08.05)
+  + added: CloseAll method to close command and all it rowsets
+  - fixed: ADExplorer was broken (#252)
+  - fixed: DBX driver was returning RDBMS param twice
+  - fixed: Update SQL Editor was raising AV then generating without dataset
+  - fixed: few issues related to processing multy rowset updating SQL
+  - fixed: D5 incompatibility errors
+  - fixed: Indy 10.0.52 incompatibility errors
+
+============================================================
+v 1.2.2 (28.07.05)
+  + added: RemObjects DataAbstract driver
+  + added: minor API additions
+  - fixed: refresing after UPDATE was using :OLD, but need :NEW values
+  - fixed: few issues in Update SQL Editor. Also improved usability
+  - fixed: unable to load DLL containing AnyDAC
+  - fixed: MSSQL & stored procs issue
+
+============================================================
+v 1.2.1 (22.07.05)
+  + added: Oracle: if not fiMeta in FetchOptions.Items, then AnyDAC
+    will use existing parameters to generate PL/SQL block for stored proc
+  + added: $(ADHOME)\DB\ADDrivers.sample
+  + added: metadata mkForeignKeys, mkForeignKeyFields
+  + added: [IADPhys|TAD]Connection.GetLastAutoGenValue
+  / changed: AnyDAC will not create parameter with empty name for TSQL label
+  / changed: Now property editors show by default only osMy objects
+  - fixed: cannot use FindKey, SetKey, ranges on ReadOnly = True fields
+  - fixed: few issues in Update SQL Editor. Also improved usability
+  - fixed: TADConnection.GetStoredProcNames was returning just last
+    proc from list
+  - fixed: ADSpeed.inc was missed
+  - fixed: packaged driver loading errors
+  - fixed: TADTable issue (AD-306)
+  - fixed: few Comp Layer demos was broken - "dmlMainComp cant be found"
+
+============================================================
+v 1.2.0 (5.07.05)
+  + added: "AnyDAC Speed Tester" benchmark application for Oracle and MSSQL
+  + added: MSSQL: analysis of SET NOCOUNT in data adapter
+  - fixed: few D5 incompatibility issues
+  - fixed: fiMeta was turned on for auto generated update commands
+  - fixed: not aliased expression columns missed from result set
+  - fixed: ADMonitor: was seriously broken after D5 port
+  - fixed: MSSQL: "Invalid descriptor index" & fetch mode fmAll
+  - fixed: MySQL: was treating MySQL /*! */ conditional comments
+    as AnyDAC macro
+  - fixed: MySQL: wrong mkTableFields data for server >= 4.1
+  - fixed: Query Builder does not show columns for Oracle tables
+  - fixed: TADParam of ftFixedChar was ingoring Size
+  - fixed: raised maximum metadata name size to 128
+
+============================================================
+v 1.1.0 (21.06.05)
+  - fixed: {IF(...)} was completely broken
+  - fixed ODBC: sometimes names was with trailing zeros
+  - fixed: error at changing TADQuery.SQL property
+  - fixed: AV at deletion of TableAdapter linked with CDS
+  - fixed: Invalid floating point operation on MySQL & Delphi 5,6
+  - fixed Oracle: invalid string meta data on Unicode DB
+  - fixed MySQL: "select host, host h1 from mysql.db" will return
+    single field on 4.1.x
+  - fixed: ADExecutor in console mode may produce unhandled exceptions
+  - fixed DB2: error on fetching BLOB's
+  / added shortcuts to Query Builder and it loads SQL from editing
+    query, although not visializing it
+  / optimized MSSQL driver
+  + '^' is escape character in SQL preprocessor. For example, '^,'
+    will be expanded into ','.
+  + Delphi 5 support
+  + added MySQL 5.0.6, 5.0.7 compatibility
+
+============================================================
+v 1.0.5 (3.06.05)
+  - fixed: ADVerStr2Int was ignoring version items with
+    letters. For MySQL (eg, 4.1.12b -> 4.1.0) it was source
+    of many strange errors, including AV's.
+  - fixed MySQL: 3.23.31 incompatibility
+  - fixed MySQL: Explorer was not hanling table names with
+    spaces
+  - fixed DB2: error at decimal separator detection
+  / reduced number of non-error messages "File Not Found"
+    and "No compilers installed" at install time
+  / updated FastCode files. That may avoid "Invalid floating
+    point operation" errors.
+  / Explorer improvements (Blob viewer supports HTML, JPEG,
+    query status is not hidden)
+
+============================================================
+v 1.0.4 (30.05.05)
+  - forgot to include fADSettingsDesc unit into installer
+  / reduced number of non-error messages "File Not Found" at
+    install time
+
+============================================================
+v 1.0.3 (30.05.05)
+  - fixed MySQL: error on connecting without DB specified
+  - fixed MySQL: ChangePassword
+  - fixed MySQL: unclear message if libmysql.dll is not found
+  - fixed ODBC: bind was ignoring ColumnSize in certain cases
+  - fixed ASA: cant parse parameters after wizard call
+  / updated: if error offset in command text is not known,
+    then CommandTextOffset will be -1
+  / updated: fixed few installer issues
+  + added ADExecutor: after connecting shows connection info
+  + added ADExplorer: now possible to edit monitoring params
+  + added MySQL: 4.1.12 and pre 3.23.57 compatibility
+  + added MySQL: additional session info
+
+============================================================
+v 1.0.2 (23.05.05)
+  - fixed Indy packaging issues
+  - fixed TADCommand.CommandKind issues
+  - fixed TADClientDataSet.MasterFields design time issue
+  - fixed "Bad relation" at DatS Manager destruction
+  - fixed Cant refresh/use-in-search readonly columns
+  - fixed Installer was building Demo DB's when tool
+    binaries is not checked
+  - fixed TADDatSRelation.XXXXConstraint was not cleared
+    after constraint removed
+  - fixed AV in TADDatSView.Create at invalid filter
+  - fixed AV on first EndEdit in table with PK and
+    sorting view is not created
+  - fixed DB2 & decimal separator issue
+  - Sybase ASA Demo DB installation issues
+  - TADDatSView.Aggregates was not updated when view is
+    not sorted or sorted on non aggregated column
+  - fkInternalCalc support made compatible with CDS
+  - fixed string fetching in ODBC (was - "value to large"
+    at fetching from ASA table)
+  - Cant DataMove into RO fields
+  / improved "factory not registered" error messages
+  / optimized TADDataSet.CheckDetailRecords in case
+    detail query does not depend on master query
+  / optimized ADExecutor
+  / extended QA
+  + added TADAutoIncField
+  + added TADCommand design time editor
+  + added MySQL 5.0 compatibility (no stored proc support
+    for a while)
+  + new demo $(ADHOME)\DEMO\Comp Layer\TADSchemaAdapter\Main
+
+============================================================
+v 1.0.1 (10.05.05)
+  / documentation updated
+  / cleaned sources
+  - fixed bugs
+
+============================================================
+v 1.0.0 (30.04.05)
+  / updated all demos and applications
+  / finished base set of documentation
+  / cleaned sources
+  - fixed many bugs, etc

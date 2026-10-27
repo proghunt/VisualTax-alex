@@ -1,0 +1,137 @@
+unit uS7RENT;
+interface
+uses
+  SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls, ExtCtrls,DBCtrls, Mask, vtEditBox, vtShape,
+  vtLabel;
+type
+TS7RENT = class(TForm)
+    vtS7RENTShape1:TvtShape;
+    vtS7RENTShape4:TvtShape;
+    vtS7RENTShape5:TvtShape;
+    vtS7RENTShape21:TvtShape;
+    vtS7RENTShape19:TvtShape;
+    vtS7RENTLabel3:TvtLabel;
+    vtS7RENTLabel7:TvtLabel;
+    vtS7RENTLabel4:TvtLabel;
+    vtS7RENTLabel5:TvtLabel;
+    vtS7RENTLabel64:TvtLabel;
+    vtS7RENTLabel1:TvtLabel;
+    vtS7RENTLabel2:TvtLabel;
+    vtS7RENTLabel6:TvtLabel;
+    vtS7RENTLabel9:TvtLabel;
+    vtS7RENTLabel10:TvtLabel;
+    vtS7RENTLabel11:TvtLabel;
+    vtS7RENTLabel12:TvtLabel;
+    vtS7RENTLabel14:TvtLabel;
+    vtS7RENTLabel15:TvtLabel;
+    vtS7RENTLabel17:TvtLabel;
+    vtS7RENTLabel18:TvtLabel;
+    vtS7RENTLabel13:TvtLabel;
+    vtS7RENTLabel20:TvtLabel;
+    vtS7RENTLabel23:TvtLabel;
+    vtS7RENTLabel36:TvtLabel;
+    vtS7RENTLabel37:TvtLabel;
+    vtS7RENTLabel39:TvtLabel;
+    vtS7RENTLabel47:TvtLabel;
+    vtS7RENTLabel57:TvtLabel;
+    vtS7RENTLabel58:TvtLabel;
+    vtS7RENTLabel59:TvtLabel;
+    vtS7RENTLabel62:TvtLabel;
+    vtS7RENTLabel24:TvtLabel;
+    vtS7RENTLabel41:TvtLabel;
+    vtS7RENTLabel54:TvtLabel;
+    vtS7RENTLabel55:TvtLabel;
+    vtS7RENTLabel63:TvtLabel;
+    vtS7RENTShape6:TvtShape;
+    vtS7RENTLabel42:TvtLabel;
+    vtS7RENTLabel16:TvtLabel;
+    vtS7RENTLabel21:TvtLabel;
+    vtS7RENTLabel22:TvtLabel;
+    vtEdit1:TvtEdit;
+    vtEdit2:TvtEdit;
+    vtEdit3:TvtEdit;
+    vtEdit4:TvtEdit;
+    vtEdit5:TvtEdit;
+    vtEdit7:TvtEdit;
+    vtEdit8:TvtEdit;
+    vtEdit9:TvtEdit;
+    vtEdit10:TvtEdit;
+    vtEdit11:TvtEdit;
+    vtEdit12:TvtEdit;
+    vtEdit13:TvtEdit;
+    vtEdit14:TvtEdit;
+    vtEdit15:TvtEdit;
+    vtEdit16:TvtEdit;
+    vtEdit17:TvtEdit;
+    vtEdit18:TvtEdit;
+    vtEdit19:TvtEdit;
+    vtEdit20:TvtEdit;
+    vtEdit21:TvtEdit;
+    vtEdit22:TvtEdit;
+    vtEdit23:TvtEdit;
+    vtEdit24:TvtEdit;
+    vtEdit25:TvtEdit;
+    vtEdit73:TvtEdit;
+    vtEdit74:TvtEdit;
+    vtEdit26:TvtEdit;
+    vtEdit27:TvtEdit;
+    vtEdit28:TvtEdit;
+    vtEdit29:TvtEdit;
+    vtEdit30:TvtEdit;
+    vtEdit31:TvtEdit;
+    vtEdit32:TvtEdit;
+    vtEdit33:TvtEdit;
+    vtEdit34:TvtEdit;
+    vtEdit35:TvtEdit;
+    vtEdit36:TvtEdit;
+    vtEdit37:TvtEdit;
+    vtEdit38:TvtEdit;
+    vtEdit39:TvtEdit;
+    vtEdit40:TvtEdit;
+    vtEdit41:TvtEdit;
+    vtEdit42:TvtEdit;
+    vtEdit43:TvtEdit;
+    vtEdit44:TvtEdit;
+    vtEdit45:TvtEdit;
+    vtEdit46:TvtEdit;
+    vtEdit47:TvtEdit;
+    vtEdit48:TvtEdit;
+    vtEdit49:TvtEdit;
+    vtEdit50:TvtEdit;
+    vtEdit51:TvtEdit;
+    vtEdit52:TvtEdit;
+    vtEdit53:TvtEdit;
+    vtEdit54:TvtEdit;
+    vtEdit55:TvtEdit;
+    vtEdit56:TvtEdit;
+    vtEdit57:TvtEdit;
+    vtEdit58:TvtEdit;
+    vtEdit59:TvtEdit;
+    vtEdit60:TvtEdit;
+    vtEdit61:TvtEdit;
+    vtEdit62:TvtEdit;
+    vtEdit63:TvtEdit;
+    vtEdit64:TvtEdit;
+    vtEdit65:TvtEdit;
+    vtEdit66:TvtEdit;
+    vtEdit67:TvtEdit;
+    vtEdit68:TvtEdit;
+    vtEdit69:TvtEdit;
+    vtEdit70:TvtEdit;
+    vtEdit71:TvtEdit;
+    vtEdit72:TvtEdit;
+    vtEdit75:TvtEdit;
+    vtEdit76:TvtEdit;
+    vtEdit77:TvtEdit;
+    vtShapePB1: TvtShape;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+var
+S7RENT: TS7RENT;
+implementation
+{$R *.DFM}
+end.

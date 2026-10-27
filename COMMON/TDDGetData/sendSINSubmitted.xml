@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Header>
+<wsse:Security S:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+<wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+<wsse:Username>064J</wsse:Username>
+<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">f2fBNyyMMtR3RWVkZvgDjo65hgU=</wsse:Password>
+<wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">MDExOTg3NTAyLzIxLzIwMTYyMDowMjozMC45Mjk=</wsse:Nonce>
+<wsu:Created>2016-02-22T01:02:25Z</wsu:Created>
+</wsse:UsernameToken>
+</wsse:Security>
+</S:Header>
+<S:Body>
+<StageTDDEFile xmlns="http://www.cra-arc.gc.ca/xmlns/tdd/2-0-0" xmlns:ns2="http://www.cra-arc.gc.ca/xmlns/ccms/1-0-0">
+<TaxYear>2015</TaxYear>
+</StageTDDEFile>
+</S:Body>
+</S:Envelope>
